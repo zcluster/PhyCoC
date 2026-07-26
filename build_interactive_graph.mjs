@@ -264,6 +264,29 @@ for (let index = 1; index < cases.length; index += 1) {
 
 const tokenSets = cases.map(tokensFor);
 const linkedPairs = new Set();
+
+// High-value scientific dependencies are curated rather than entrusted to the
+// title/domain similarity heuristic. This preserves conceptually necessary
+// cross-domain links whose vocabulary differs strongly between case titles.
+const curatedOverviewEdges = [
+  {
+    source: "D-SPECIAL-RELATIVITY-1905",
+    target: "D-QFT-FIELD-QUANTIZATION-1927",
+    relation: "provides-spacetime-symmetry-for",
+  },
+];
+for (const edge of curatedOverviewEdges) {
+  const sourceIndex = cases.findIndex((item) => item.id === edge.source);
+  const targetIndex = cases.findIndex((item) => item.id === edge.target);
+  if (sourceIndex < 0 || targetIndex < 0) {
+    throw new Error(`Curated overview edge references an unknown case: ${edge.source} -> ${edge.target}`);
+  }
+  const a = Math.min(sourceIndex, targetIndex);
+  const b = Math.max(sourceIndex, targetIndex);
+  linkedPairs.add(`${a}:${b}`);
+  overviewEdges.push({ ...edge, kind: "backbone" });
+}
+
 for (let left = 0; left < cases.length; left += 1) {
   const candidates = [];
   for (let right = 0; right < cases.length; right += 1) {
@@ -806,8 +829,8 @@ select { padding: 9px 30px 9px 10px; }
       const dx = target.x - source.x;
       const dy = target.y - source.y;
       const distance = Math.hypot(dx, dy) || 1;
-      const desired = edge.kind === "chronology" ? 72 : edge.kind === "theme" ? 135 : 82;
-      const strength = edge.kind === "chronology" ? .007 : edge.kind === "theme" ? .0035 : .012;
+      const desired = edge.kind === "chronology" ? 72 : edge.kind === "theme" ? 135 : edge.kind === "backbone" ? 110 : 82;
+      const strength = edge.kind === "chronology" ? .007 : edge.kind === "theme" ? .0035 : edge.kind === "backbone" ? .008 : .012;
       const force = (distance - desired) * strength * alpha;
       source.vx += dx / distance * force;
       source.vy += dy / distance * force;
@@ -890,15 +913,15 @@ select { padding: 9px 30px 9px 10px; }
     const end = { x: b.x - ux * (target.radius * transform.k + 4), y: b.y - uy * (target.radius * transform.k + 4) };
     const isLocal = edge.kind === "local" || edge.kind === "explicit";
     const backgroundEdge = Boolean(expandedCaseId) && !isLocal;
-    const edgeOpacity = isLocal ? .72 : edge.kind === "chronology" ? .38 : .2;
+    const edgeOpacity = isLocal ? .72 : edge.kind === "backbone" ? .58 : edge.kind === "chronology" ? .38 : .2;
     ctx.strokeStyle = css.getPropertyValue("--line").trim();
     ctx.globalAlpha = backgroundEdge ? edgeOpacity * .2 : edgeOpacity;
-    ctx.lineWidth = isLocal ? 1.3 : 1;
+    ctx.lineWidth = isLocal ? 1.3 : edge.kind === "backbone" ? 1.5 : 1;
     ctx.beginPath();
     ctx.moveTo(start.x, start.y);
     ctx.lineTo(end.x, end.y);
     ctx.stroke();
-    if (isLocal || edge.kind === "chronology") {
+    if (isLocal || edge.kind === "chronology" || edge.kind === "backbone") {
       ctx.beginPath();
       ctx.moveTo(end.x, end.y);
       ctx.lineTo(end.x - ux * 7 - uy * 3.5, end.y - uy * 7 + ux * 3.5);

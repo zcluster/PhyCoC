@@ -342,6 +342,14 @@ for (const file of files) {
   }
 }
 
+if (
+  !graphHtml.includes(
+    '"source":"D-SPECIAL-RELATIVITY-1905","target":"D-QFT-FIELD-QUANTIZATION-1927","relation":"provides-spacetime-symmetry-for","kind":"backbone"',
+  )
+) {
+  fail("index.html", "missing curated Special Relativity -> QFT backbone edge");
+}
+
 function escapeForHtmlCheck(value) {
   return value
     .replaceAll("&", "&amp;")

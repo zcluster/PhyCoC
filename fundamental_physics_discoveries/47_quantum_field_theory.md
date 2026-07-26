@@ -226,6 +226,7 @@ The Standard Model is a QFT but omits a complete quantum theory of gravity and d
 A-CLASSICAL-FIELDS --provides-modes-for--> D-QFT-FIELD-QUANTIZATION-1927
 A-HARMONIC-OSCILLATORS --is-quantized-by--> CREATION-ANNIHILATION-ALGEBRA
 A-LIGHT-QUANTA --motivates--> D-QFT-FIELD-QUANTIZATION-1927
+D-SPECIAL-RELATIVITY-1905 --provides-spacetime-symmetry-for--> D-QFT-FIELD-QUANTIZATION-1927
 D-QFT-FIELD-QUANTIZATION-1927 --explains--> SPONTANEOUS-EMISSION
 FIELD-OPERATOR --creates-excitations-called--> PARTICLES
 FIXED-PARTICLE-QM --approximates--> LOW-ENERGY-QFT-SECTOR
