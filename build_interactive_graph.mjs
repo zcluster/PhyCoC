@@ -653,6 +653,36 @@ select { padding: 9px 30px 9px 10px; }
         const target = item.target === focusCase.id ? focusCase.id : focusCase.id + "::" + item.target;
         edges.push({ source, target, relation: item.relation, kind: "explicit" });
       }
+
+      // Explicit edge lists may contain internally meaningful concept-to-concept
+      // components that never mention the discovery node. Preserve those relations,
+      // then add one semantic anchor per disconnected component so every local node
+      // has a path back to the case it belongs to.
+      const localIds = new Set([focusCase.id, ...localNodes.map((node) => node.id)]);
+      const adjacency = new Map([...localIds].map((id) => [id, new Set()]));
+      for (const edge of edges) {
+        if (!localIds.has(edge.source) || !localIds.has(edge.target)) continue;
+        adjacency.get(edge.source).add(edge.target);
+        adjacency.get(edge.target).add(edge.source);
+      }
+      const componentFrom = (start, allowed = localIds) => {
+        const found = new Set();
+        const queue = [start];
+        while (queue.length) {
+          const current = queue.shift();
+          if (found.has(current) || !allowed.has(current)) continue;
+          found.add(current);
+          for (const neighbor of adjacency.get(current) || []) queue.push(neighbor);
+        }
+        return found;
+      };
+      const connectedToCase = componentFrom(focusCase.id);
+      for (const node of localNodes) {
+        if (connectedToCase.has(node.id)) continue;
+        const component = componentFrom(node.id);
+        edges.push({ source: node.id, target: focusCase.id, relation: "belongs-to-case", kind: "local" });
+        for (const id of component) connectedToCase.add(id);
+      }
     }
     nodeById.clear();
     for (const node of nodes) nodeById.set(node.id, node);
