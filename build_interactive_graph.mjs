@@ -842,8 +842,10 @@ select { padding: 9px 30px 9px 10px; }
     const start = { x: a.x + ux * source.radius * transform.k, y: a.y + uy * source.radius * transform.k };
     const end = { x: b.x - ux * (target.radius * transform.k + 4), y: b.y - uy * (target.radius * transform.k + 4) };
     const isLocal = edge.kind === "local" || edge.kind === "explicit";
+    const backgroundEdge = Boolean(expandedCaseId) && !isLocal;
+    const edgeOpacity = isLocal ? .72 : edge.kind === "chronology" ? .38 : .2;
     ctx.strokeStyle = css.getPropertyValue("--line").trim();
-    ctx.globalAlpha = isLocal ? .72 : edge.kind === "chronology" ? .38 : .2;
+    ctx.globalAlpha = backgroundEdge ? edgeOpacity * .2 : edgeOpacity;
     ctx.lineWidth = isLocal ? 1.3 : 1;
     ctx.beginPath();
     ctx.moveTo(start.x, start.y);
@@ -858,7 +860,7 @@ select { padding: 9px 30px 9px 10px; }
       ctx.fillStyle = ctx.strokeStyle;
       ctx.fill();
     }
-    if (edgeLabelsInput.checked && transform.k > .45) {
+    if (edgeLabelsInput.checked && transform.k > .45 && !backgroundEdge) {
       const label = roundedLabel(edge.relation.replaceAll("-", " "), 28);
       const mx = (start.x + end.x) / 2;
       const my = (start.y + end.y) / 2;
@@ -880,15 +882,17 @@ select { padding: 9px 30px 9px 10px; }
     const radius = Math.max(3.2, node.radius * transform.k);
     const selectedNode = selected && selected.id === node.id;
     const highlighted = hovered && hovered.id === node.id;
+    const backgroundCase = Boolean(expandedCaseId) && node.type === "case" && node.id !== expandedCaseId;
+    const baseAlpha = backgroundCase ? (highlighted ? .55 : .18) : 1;
     const nodeColor = node.type === "case" ? color(node.category) : color(node.type);
     if (selectedNode || highlighted) {
-      ctx.globalAlpha = selectedNode ? .23 : .14;
+      ctx.globalAlpha = (selectedNode ? .23 : .14) * baseAlpha;
       ctx.fillStyle = nodeColor;
       ctx.beginPath();
       ctx.arc(point.x, point.y, radius + 8, 0, Math.PI * 2);
       ctx.fill();
     }
-    ctx.globalAlpha = 1;
+    ctx.globalAlpha = baseAlpha;
     ctx.fillStyle = nodeColor;
     ctx.beginPath();
     ctx.arc(point.x, point.y, radius, 0, Math.PI * 2);
@@ -911,16 +915,17 @@ select { padding: 9px 30px 9px 10px; }
       ctx.textAlign = "left";
       ctx.textBaseline = "middle";
       ctx.fillStyle = css.getPropertyValue("--text").trim();
-      ctx.globalAlpha = node.type === "case" ? .96 : .82;
+      ctx.globalAlpha = (node.type === "case" ? .96 : .82) * baseAlpha;
       ctx.fillText(label, point.x + radius + 5, point.y);
       if (chronologicalLayout && node.type === "case") {
         ctx.font = "10px ui-sans-serif, system-ui";
         ctx.fillStyle = css.getPropertyValue("--muted").trim();
-        ctx.globalAlpha = .9;
+        ctx.globalAlpha = .9 * baseAlpha;
         ctx.fillText(String(Math.floor(node.year)), point.x + radius + 5, point.y + 14);
       }
       ctx.globalAlpha = 1;
     }
+    ctx.globalAlpha = 1;
   }
 
   function draw() {
