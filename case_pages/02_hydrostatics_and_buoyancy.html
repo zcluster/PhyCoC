@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Hydrostatics and Buoyancy: Historical Knowledge Graph · PhyHist</title>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},svg:{fontCache:"global"},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+<style>
+:root{color-scheme:light;--bg:#f5f7fb;--paper:#fff;--text:#202938;--muted:#657286;--line:#dce2ea;--accent:#4f46a5;--soft:#f0efff;--code:#f4f6f8;--shadow:0 18px 55px rgba(31,41,55,.09)}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#10141b;--paper:#191f29;--text:#e9edf5;--muted:#aab4c3;--line:#354050;--accent:#b4a4ff;--soft:#2a2744;--code:#111720;--shadow:0 18px 55px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.72}.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper),transparent 7%);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.top-inner{max-width:1280px;margin:auto;padding:11px 22px;display:flex;align-items:center;gap:12px}.top a,.top button{border:1px solid var(--line);border-radius:9px;background:var(--paper);color:var(--text);text-decoration:none;padding:7px 10px;font:inherit;font-size:13px;cursor:pointer}.top .source{margin-left:auto;color:var(--accent)}.layout{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:250px minmax(0,820px);gap:42px;padding:34px 22px 80px;justify-content:center}.toc{position:sticky;top:72px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;border-right:1px solid var(--line);padding-right:22px}.toc-title{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0 0 10px}.toc a{display:block;color:var(--muted);text-decoration:none;font-size:13px;line-height:1.35;padding:5px 8px;border-radius:7px}.toc a:hover{color:var(--accent);background:var(--soft)}.toc-l3{padding-left:20px!important}.toc-l4{padding-left:32px!important}.paper{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:clamp(24px,5vw,62px);min-width:0}.paper h1{font-size:clamp(29px,5vw,46px);line-height:1.12;letter-spacing:-.035em;margin:0 0 34px}.paper h2{font-size:27px;line-height:1.25;margin:54px 0 19px;padding-top:8px;border-top:1px solid var(--line)}.paper h3{font-size:20px;line-height:1.35;margin:35px 0 12px}.paper h4{font-size:16px;margin:27px 0 9px}.anchor{opacity:0;margin-left:8px;color:var(--muted);font-weight:400;text-decoration:none}.paper h2:hover .anchor,.paper h3:hover .anchor,.paper h4:hover .anchor{opacity:1}.paper p{margin:13px 0}.paper a{color:var(--accent);text-underline-offset:2px}.paper ul,.paper ol{padding-left:25px}.paper li{margin:6px 0}.paper code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.9em;background:var(--code);border:1px solid var(--line);border-radius:5px;padding:1px 5px}.paper pre{background:var(--code);border:1px solid var(--line);border-radius:11px;padding:16px;overflow:auto;line-height:1.5}.paper pre code{border:0;padding:0}.table-wrap{overflow:auto;margin:22px 0;border:1px solid var(--line);border-radius:11px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}th{background:var(--soft);font-weight:650}tr:last-child td{border-bottom:0}th:last-child,td:last-child{border-right:0}.math-display{overflow-x:auto;overflow-y:hidden;margin:24px 0;padding:13px 8px;text-align:center}.MathJax{outline:0}blockquote{margin:20px 0;padding:4px 18px;border-left:4px solid var(--accent);background:var(--soft);color:var(--muted)}hr{border:0;border-top:1px solid var(--line);margin:34px 0}.footer{color:var(--muted);font-size:12px;margin-top:48px;padding-top:18px;border-top:1px solid var(--line)}.skip{position:absolute;left:-9999px}.skip:focus{left:10px;top:10px;z-index:20;background:var(--paper);padding:8px}
+@media(max-width:900px){.layout{display:block;padding-top:20px}.toc{position:static;max-height:none;border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:18px;columns:2}.toc-title{column-span:all}.paper{padding:26px 20px}.paper h2{font-size:23px}.top-inner{padding:9px 12px}}@media(max-width:560px){.toc{columns:1}.top .source{font-size:0}.top .source:after{content:"Markdown";font-size:13px}.paper{border-radius:12px}.layout{padding-left:10px;padding-right:10px}}
+@media print{.top,.toc{display:none}.layout{display:block;padding:0}.paper{border:0;box-shadow:none;padding:0}.anchor{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#article">Skip to article</a>
+<header class="top"><div class="top-inner"><a href="../index.html">← Knowledge graph</a><button type="button" onclick="window.print()">Print / PDF</button><a class="source" href="../fundamental_physics_discoveries/02_hydrostatics_and_buoyancy.md">Open source Markdown ↗</a></div></header>
+<main class="layout"><nav class="toc" aria-label="Table of contents"><div class="toc-title">On this page</div><a class="toc-l2" href="#graph-metadata">Graph metadata</a>
+<a class="toc-l2" href="#central-claim">Central claim</a>
+<a class="toc-l2" href="#time-slices">Time slices</a>
+<a class="toc-l2" href="#alternative-incomplete-or-superseded-pathways">Alternative, incomplete, or superseded pathways</a>
+<a class="toc-l3" href="#r-shape-only-floating">R-SHAPE-ONLY-FLOATING</a>
+<a class="toc-l3" href="#r-elemental-place">R-ELEMENTAL-PLACE</a>
+<a class="toc-l3" href="#pathway-comparison-ledger">Pathway comparison ledger</a>
+<a class="toc-l2" href="#knowledge-assets">Knowledge assets</a>
+<a class="toc-l2" href="#discovery-node-and-mathematical-core">Discovery node and mathematical core</a>
+<a class="toc-l2" href="#validation-and-explanatory-gains">Validation and explanatory gains</a>
+<a class="toc-l2" href="#limitations-and-retained-status">Limitations and retained status</a>
+<a class="toc-l2" href="#discovery-patterns">Discovery patterns</a>
+<a class="toc-l2" href="#edge-list">Edge list</a>
+<a class="toc-l2" href="#extended-historical-investigation">Extended historical investigation</a>
+<a class="toc-l3" href="#what-archimedes-actually-contributed">What Archimedes actually contributed</a>
+<a class="toc-l3" href="#full-pressure-force-derivation">Full pressure-force derivation</a>
+<a class="toc-l3" href="#worked-quantitative-example">Worked quantitative example</a>
+<a class="toc-l3" href="#floating-stability-is-a-separate-problem">Floating stability is a separate problem</a>
+<a class="toc-l3" href="#evidence-and-counterfactual-tests">Evidence and counterfactual tests</a>
+<a class="toc-l3" href="#retained-status-in-modern-physics">Retained status in modern physics</a>
+<a class="toc-l2" href="#ai-oriented-inference-notes">AI-oriented inference notes</a>
+<a class="toc-l2" href="#sources">Sources</a></nav><article class="paper" id="article"><h1 id="hydrostatics-and-buoyancy-historical-knowledge-graph">Hydrostatics and Buoyancy: Historical Knowledge Graph<a class="anchor" href="#hydrostatics-and-buoyancy-historical-knowledge-graph" aria-label="Link to this section">#</a></h1>
+<h2 id="graph-metadata">Graph metadata<a class="anchor" href="#graph-metadata" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Graph ID</td><td><code>KG-HYDROSTATICS-02</code></td></tr><tr><td>Central node</td><td><code>D-ARCHIMEDES-BUOYANCY</code></td></tr><tr><td>Focal discovery date</td><td>c. 250 BCE (Archimedes&#039; mature hydrostatics)</td></tr><tr><td>Principal period</td><td>Third century BCE</td></tr><tr><td>Main contributors</td><td>Archimedes</td></tr><tr><td>Domain</td><td>Equilibrium of fluids and immersed bodies</td></tr><tr><td>Epistemic status</td><td>A valid classical theory for continuum fluids in static equilibrium</td></tr></tbody></table></div>
+<h2 id="central-claim">Central claim<a class="anchor" href="#central-claim" aria-label="Link to this section">#</a></h2>
+<p>Archimedean hydrostatics converted qualitative observations about floating into a geometrical theory of pressure, displaced fluid, equilibrium, and stability. Its central buoyancy relation remains correct in the ordinary continuum domain, with corrections required for compressibility, surface tension, nonuniform fields, and microscopic scales.</p>
+<h2 id="time-slices">Time slices<a class="anchor" href="#time-slices" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Node</th><th>Period</th><th>Development</th><th>Transition</th></tr></thead><tbody><tr><td><code>TS-PRACTICAL-FLOATING</code></td><td>Pre-third century BCE</td><td>Shipbuilding and weighing supplied empirical knowledge</td><td>Practical rules lacked a general proof structure</td></tr><tr><td><code>TS-ARCHIMEDES</code></td><td>Third century BCE</td><td><em>On Floating Bodies</em> treated fluids mathematically</td><td>Buoyancy linked to displaced fluid and equilibrium</td></tr><tr><td><code>TS-EARLY-MODERN</code></td><td>16th–17th centuries</td><td>Hydrostatic pressure and instruments developed</td><td>Pascal&#039;s law and barometry extended fluid statics</td></tr><tr><td><code>TS-CONTINUUM-MECHANICS</code></td><td>18th–19th centuries</td><td>Local pressure fields and differential equations formalized</td><td>Hydrostatics embedded in general fluid mechanics</td></tr><tr><td><code>TS-MODERN</code></td><td>20th century onward</td><td>Molecular and relativistic limits identified</td><td>Classical relations retained as effective laws</td></tr></tbody></table></div>
+<h2 id="alternative-incomplete-or-superseded-pathways">Alternative, incomplete, or superseded pathways<a class="anchor" href="#alternative-incomplete-or-superseded-pathways" aria-label="Link to this section">#</a></h2>
+<h3 id="r-shape-only-floating"><code>R-SHAPE-ONLY-FLOATING</code><a class="anchor" href="#r-shape-only-floating" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> A qualitative model that treats an object&#039;s external geometry or intrinsic “lightness” as the direct cause of floating, without balancing its weight against the weight of displaced fluid.</li><li><strong>Proposed/active period:</strong> practical shipbuilding tradition before the third century BCE.</li><li><strong>Assumption:</strong> Floating depends only on geometric shape or an intrinsic “lightness.”</li><li><strong>Why reasonable:</strong> Hollow ships float while compact pieces of similar material may sink.</li><li><strong>Limitation:</strong> It misses density ratios and the role of displaced fluid.</li><li><strong>Repair:</strong> Include total mass, displaced volume, and equilibrium depth.</li><li><strong>Outcome:</strong> Replaced by a force-balance explanation.</li><li><strong>Retained element:</strong> Shape matters through displaced volume and stability.</li></ul>
+<h3 id="r-elemental-place"><code>R-ELEMENTAL-PLACE</code><a class="anchor" href="#r-elemental-place" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> The Aristotelian theory that each terrestrial element has a natural region in the cosmos and that unforced bodies rise or fall because their dominant element tends toward that natural place.</li><li><strong>Proposed/active period:</strong> c. 350 BCE (Aristotelian natural-place theory).</li><li><strong>Assumption:</strong> Bodies rise or fall primarily because elemental substances seek natural places.</li><li><strong>Why reasonable:</strong> It organized recurring vertical motions.</li><li><strong>Limitation:</strong> It did not give a precise magnitude for buoyant support.</li><li><strong>Outcome:</strong> Superseded by pressure gradients and force balance.</li><li><strong>Retained element:</strong> Density differences remain decisive, but without teleological motion.</li></ul>
+<h3 id="pathway-comparison-ledger">Pathway comparison ledger<a class="anchor" href="#pathway-comparison-ledger" aria-label="Link to this section">#</a></h3>
+<p><strong>Chronology rule:</strong> Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (c. 250 BCE (Archimedes&#039; mature hydrostatics)). The proposed/active period is stored in each pathway record.</p>
+<div class="table-wrap"><table><thead><tr><th>Pathway</th><th>What it predicts</th><th>Discriminator</th><th>Status</th></tr></thead><tbody><tr><td>Shape-only floating</td><td>Geometry directly determines floating</td><td>Loading the same hull changes immersion; flooding changes average density</td><td>Superseded</td></tr><tr><td>Elemental natural place</td><td>Materials rise or fall toward cosmically assigned regions</td><td>Quantitative support follows displaced-fluid weight and pressure gradients</td><td>Superseded</td></tr><tr><td><strong>Discovery/current: Archimedean hydrostatics</strong></td><td>Upthrust equals displaced-fluid weight; equilibrium requires \(F_B=mg\)</td><td>Weighing, displaced volume, fluid-density changes, and pressure measurements</td><td>Retained within ordinary fluid statics</td></tr></tbody></table></div>
+<p>The ancient elemental-place account was broader than a naïve mistake: it integrated terrestrial change into a purposive cosmology. Its weakness for this problem was lack of a measurable force magnitude. A shape-only repair can fit individual examples after the fact, but fails when the same object is loaded, the fluid density changes, or a sealed hull floods. Archimedean reasoning generates all of these contrasts from weight and displacement. Modern fluid statics then supplies the deeper local mechanism—pressure increases with depth—while retaining Archimedes&#039; integrated result.</p>
+<h2 id="knowledge-assets">Knowledge assets<a class="anchor" href="#knowledge-assets" aria-label="Link to this section">#</a></h2>
+<ul><li><code>A-LEVERS</code>: torque and center-of-gravity reasoning.</li><li><code>A-GEOMETRY</code>: volumes and areas of solids.</li><li><code>A-DENSITY-COMPARISON</code>: weighing materials and observing immersion.</li><li><code>A-EQUILIBRIUM</code>: balance as equality of opposed effects.</li></ul>
+<h2 id="discovery-node-and-mathematical-core">Discovery node and mathematical core<a class="anchor" href="#discovery-node-and-mathematical-core" aria-label="Link to this section">#</a></h2>
+<p><code>D-ARCHIMEDES-BUOYANCY</code> states that the upward buoyant force equals the weight of displaced fluid:</p>
+<div class="math-display">\[F_B=\rho_f g V_{\mathrm{disp}},\]</div>
+<p>where \(\rho_f\) is fluid density, \(g\) gravitational acceleration, and \(V_{\mathrm{disp}}\) displaced volume. Static vertical equilibrium requires:</p>
+<div class="math-display">\[F_B-mg=0.\]</div>
+<p>For a floating body of mean density \(\rho_b=m/V_b\):</p>
+<div class="math-display">\[\rho_f gV_{\mathrm{disp}}=\rho_b gV_b
+\quad\Longrightarrow\quad
+\frac{V_{\mathrm{disp}}}{V_b}=\frac{\rho_b}{\rho_f}.\]</div>
+<p>Thus an object floats partially immersed when \(\rho_b&lt;\rho_f\), is neutrally buoyant when the densities match, and sinks in the ideal model when \(\rho_b&gt;\rho_f\).</p>
+<p>The modern local derivation uses the hydrostatic pressure equation:</p>
+<div class="math-display">\[\frac{dp}{dz}=-\rho_f g.\]</div>
+<p>Integrating pressure forces over the closed surface \(S\) gives:</p>
+<div class="math-display">\[\mathbf{F}_B
+=-\oint_S p\,\mathbf{n}\,dA
+=-\int_V \nabla p\,dV
+=-\int_V \rho_f\mathbf g\,dV.\]</div>
+<p>Here \(\mathbf n\) is the outward normal and \(\mathbf g\) is the downward gravitational-acceleration vector, so \(-\rho_f\mathbf g\) points upward. For uniform density and gravity this reduces to the weight of displaced fluid. The differential derivation is modern, not Archimedes&#039; original notation.</p>
+<h2 id="validation-and-explanatory-gains">Validation and explanatory gains<a class="anchor" href="#validation-and-explanatory-gains" aria-label="Link to this section">#</a></h2>
+<ul><li>Predicts immersion fraction from density without needing object-specific rules.</li><li>Explains why a dense material can float when shaped to enclose low-density volume.</li><li>Connects apparent weight to displaced-fluid weight:</li></ul>
+<div class="math-display">\[W_{\mathrm{apparent}}=mg-F_B.\]</div>
+<ul><li>Supports quantitative stability analysis through the relative positions of center of mass and center of buoyancy.</li></ul>
+<h2 id="limitations-and-retained-status">Limitations and retained status<a class="anchor" href="#limitations-and-retained-status" aria-label="Link to this section">#</a></h2>
+<p>The simple equation assumes a continuum fluid, static conditions, and a nearly uniform gravitational field. Compressible atmospheres require \(\rho=\rho(z)\); capillary-scale objects require surface-tension forces; rapidly accelerating fluids require nonhydrostatic dynamics. At molecular scales, density and pressure are statistical fields. Within ordinary hydrostatics, Archimedean buoyancy remains fundamental and exact to the model.</p>
+<h2 id="discovery-patterns">Discovery patterns<a class="anchor" href="#discovery-patterns" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>ID</th><th>Instantiation</th></tr></thead><tbody><tr><td><code>P-01</code></td><td>Floating and sinking unified by density and displacement</td></tr><tr><td><code>P-02</code></td><td>Practical regularities upgraded to a force-generating pressure account</td></tr><tr><td><code>P-03</code></td><td>“Why is the object light in water?” reframed as a fluid-force balance</td></tr><tr><td><code>P-04</code></td><td>Distributed pressure accepted as the effective mechanism</td></tr><tr><td><code>P-05</code></td><td>Geometric volume and balance reasoning retained</td></tr><tr><td><code>P-06</code></td><td>Predictions are directly testable by weighing and volume measurement</td></tr></tbody></table></div>
+<h2 id="edge-list">Edge list<a class="anchor" href="#edge-list" aria-label="Link to this section">#</a></h2>
+<pre><code class="language-text">A-LEVERS --contributes-to--&gt; D-ARCHIMEDES-BUOYANCY
+A-GEOMETRY --enables--&gt; D-ARCHIMEDES-BUOYANCY
+R-SHAPE-ONLY-FLOATING --superseded-by--&gt; D-ARCHIMEDES-BUOYANCY
+R-ELEMENTAL-PLACE --superseded-by--&gt; D-ARCHIMEDES-BUOYANCY
+EQ-HYDROSTATIC-PRESSURE --derives--&gt; EQ-BUOYANT-FORCE
+EQ-BUOYANT-FORCE --explains--&gt; V-FLOATING
+D-ARCHIMEDES-BUOYANCY --retained-within--&gt; S-CONTINUUM-HYDROSTATICS
+D-ARCHIMEDES-BUOYANCY --instantiates--&gt; P-02
+D-ARCHIMEDES-BUOYANCY --instantiates--&gt; P-06</code></pre>
+<h2 id="extended-historical-investigation">Extended historical investigation<a class="anchor" href="#extended-historical-investigation" aria-label="Link to this section">#</a></h2>
+<h3 id="what-archimedes-actually-contributed">What Archimedes actually contributed<a class="anchor" href="#what-archimedes-actually-contributed" aria-label="Link to this section">#</a></h3>
+<p>The popular story of a crown, a bath, and a shouted “Eureka” comes from a later account by Vitruvius and is not the secure textual basis of Archimedean hydrostatics. The surviving <em>On Floating Bodies</em> is more important: it treats equilibrium positions and the shapes of floating bodies through geometrical reasoning. Archimedes&#039; achievement was not merely noticing that objects feel lighter in water. He made buoyancy part of a deductive science involving fluid equilibrium, displaced volume, centers of gravity, and stability.</p>
+<p>The ancient proof language differs from the modern pressure-field derivation. It is historically safer to distinguish:</p>
+<ul><li><code>ARCHIMEDES-PRINCIPLE-HISTORICAL</code>: propositions about bodies immersed in or floating on fluids;</li><li><code>ARCHIMEDES-PRINCIPLE-MODERN</code>: the net pressure force equals the weight of displaced fluid under specified conditions;</li><li><code>NAVIER-STOKES-DERIVATION</code>: the later continuum-field reconstruction.</li></ul>
+<p>This separation prevents anachronistically attributing vector calculus or a modern local pressure ontology to Archimedes.</p>
+<h3 id="full-pressure-force-derivation">Full pressure-force derivation<a class="anchor" href="#full-pressure-force-derivation" aria-label="Link to this section">#</a></h3>
+<p>Let \(z\) increase upward and let gravity be \(\mathbf g=-g\hat{\mathbf z}\). Static equilibrium of a fluid element requires:</p>
+<div class="math-display">\[0=-\nabla p+\rho_f\mathbf g,
+\qquad
+\nabla p=\rho_f\mathbf g.\]</div>
+<p>Pressure exerts inward traction \(-p\mathbf n\) on the surface of an immersed body. The total fluid force is:</p>
+<div class="math-display">\[\mathbf F_B=-\oint_{\partial V}p\mathbf n\,dA.\]</div>
+<p>Applying the divergence theorem componentwise:</p>
+<div class="math-display">\[\mathbf F_B=-\int_V\nabla p\,dV
+=-\int_V\rho_f\mathbf g\,dV.\]</div>
+<p>For uniform \(\rho_f\) and \(\mathbf g\):</p>
+<div class="math-display">\[\mathbf F_B=-\rho_fV_{\mathrm{disp}}\mathbf g.\]</div>
+<p>Its direction is opposite gravity and its magnitude is \(\rho_fV_{\mathrm{disp}}g\). If density varies, the correct expression is the volume integral:</p>
+<div class="math-display">\[\mathbf F_B=-\int_{V_{\mathrm{disp}}}\rho_f(\mathbf r)\mathbf g(\mathbf r)\,dV.\]</div>
+<p>This matters for balloons in a compressible atmosphere or objects spanning large density gradients.</p>
+<h3 id="worked-quantitative-example">Worked quantitative example<a class="anchor" href="#worked-quantitative-example" aria-label="Link to this section">#</a></h3>
+<p>Consider a wooden block of volume \(V_b=0.020\ \mathrm{m^3}\) and average density \(600\ \mathrm{kg\,m^{-3}}\) floating in fresh water with \(\rho_f\approx1000\ \mathrm{kg\,m^{-3}}\). Equilibrium gives:</p>
+<div class="math-display">\[\frac{V_{\mathrm{disp}}}{V_b}
+=\frac{\rho_b}{\rho_f}=0.60.\]</div>
+<p>Thus approximately 60% of the block&#039;s volume is below the waterline. If a \(4.0\ \mathrm{kg}\) load is placed on it, the added displaced volume is:</p>
+<div class="math-display">\[\Delta V=\frac{\Delta m}{\rho_f}
+=4.0\times10^{-3}\ \mathrm{m^3}.\]</div>
+<p>This inference is independent of the block&#039;s detailed shape as long as a stable equilibrium exists and water does not overflow or enter the body.</p>
+<h3 id="floating-stability-is-a-separate-problem">Floating stability is a separate problem<a class="anchor" href="#floating-stability-is-a-separate-problem" aria-label="Link to this section">#</a></h3>
+<p>Force balance determines whether vertical equilibrium is possible, not whether an orientation is stable. A floating body experiences weight through its center of mass \(G\) and buoyancy through the center of displaced volume \(B\). When the body tilts, the displaced shape changes and the buoyant line of action shifts. For small rotations, naval architecture uses the metacenter \(M\). A positive metacentric height:</p>
+<div class="math-display">\[GM&gt;0\]</div>
+<p>usually gives a restoring torque, while \(GM&lt;0\) indicates instability. In simplified form:</p>
+<div class="math-display">\[GM=KB+BM-KG,
+\qquad
+BM=\frac{I_{\mathrm{waterplane}}}{V_{\mathrm{disp}}}.\]</div>
+<p>Here \(I_{\mathrm{waterplane}}\) is the second moment of the waterplane area. This extends rather than contradicts Archimedean buoyancy: magnitude of lift and rotational stability are different graph nodes.</p>
+<h3 id="evidence-and-counterfactual-tests">Evidence and counterfactual tests<a class="anchor" href="#evidence-and-counterfactual-tests" aria-label="Link to this section">#</a></h3>
+<div class="table-wrap"><table><thead><tr><th>Test</th><th>Archimedean prediction</th><th>Competing intrinsic-lightness prediction</th></tr></thead><tbody><tr><td>Change fluid density</td><td>Immersion fraction changes as \(\rho_b/\rho_f\)</td><td>No necessary quantitative response</td></tr><tr><td>Measure apparent weight</td><td>Reduction equals displaced-fluid weight</td><td>Reduction lacks fixed volume relation</td></tr><tr><td>Hollow same-material body</td><td>Can float if mean density falls below fluid density</td><td>Material identity alone misclassifies it</td></tr><tr><td>Micro-object at interface</td><td>Surface tension may dominate</td><td>Simple buoyancy model becomes insufficient</td></tr></tbody></table></div>
+<p>The last row is an important scope guard. For an object of characteristic size \(L\), buoyancy scales approximately as \(L^3\), while capillary force scales as \(L\). At small \(L\), surface tension can dominate:</p>
+<div class="math-display">\[\frac{F_{\mathrm{buoyancy}}}{F_{\mathrm{surface}}}
+\sim\frac{\Delta\rho\,gL^2}{\gamma},\]</div>
+<p>which is the scaling of the Bond number \(Bo=\Delta\rho gL^2/\gamma\), up to geometry-dependent factors.</p>
+<p>a Bond-number-like ratio. An insect supported by a water surface is therefore not explained by buoyancy alone.</p>
+<h3 id="retained-status-in-modern-physics">Retained status in modern physics<a class="anchor" href="#retained-status-in-modern-physics" aria-label="Link to this section">#</a></h3>
+<p>Hydrostatics is an effective continuum theory. Molecular dynamics explains pressure statistically, but that does not make the field equation dispensable. The Archimedean result follows whenever a local pressure field satisfies static force balance. Generalizations exist in accelerating frames, rotating fluids, relativistic fluids, and nonuniform gravitational fields. The ordinary formula is powerful precisely because its assumptions are transparent and testable.</p>
+<h2 id="ai-oriented-inference-notes">AI-oriented inference notes<a class="anchor" href="#ai-oriented-inference-notes" aria-label="Link to this section">#</a></h2>
+<ul><li>Separate <code>VERTICAL-FORCE-BALANCE</code> from <code>ROTATIONAL-STABILITY</code>.</li><li>Attach <code>uniform-density</code> and <code>uniform-gravity</code> as assumptions to the compact formula.</li><li>When surface tension is important, add rather than replace forces.</li><li>Label the crown anecdote <code>later-tradition</code>, not <code>secure-primary-evidence</code>.</li></ul>
+<h2 id="sources">Sources<a class="anchor" href="#sources" aria-label="Link to this section">#</a></h2>
+<ul><li>Stanford Encyclopedia of Philosophy, <a href="https://plato.stanford.edu/entries/galileo/" target="_blank" rel="noopener noreferrer">“Galileo Galilei,” discussion of Archimedean hydrostatics and natural motion</a>.</li><li>Archimedes Palimpsest Project, <a href="https://archimedespalimpsest.org/about/history/archimedes.php" target="_blank" rel="noopener noreferrer">Archimedes and his works</a>.</li><li>Encyclopaedia Britannica, <a href="https://www.britannica.com/science/Archimedes-principle" target="_blank" rel="noopener noreferrer">“Archimedes&#039; principle”</a>.</li><li>NASA Glenn Research Center, <a href="https://www.grc.nasa.gov/www/k-12/WindTunnel/Activities/buoy_Archimedes.html" target="_blank" rel="noopener noreferrer">“Buoyancy”</a>.</li></ul><footer class="footer">Reader-friendly rendering of <code>02_hydrostatics_and_buoyancy.md</code>. The Markdown source remains the canonical corpus record.</footer></article></main>
+</body>
+</html>

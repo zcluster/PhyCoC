@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Statistical Mechanics: Historical Knowledge Graph · PhyHist</title>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},svg:{fontCache:"global"},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+<style>
+:root{color-scheme:light;--bg:#f5f7fb;--paper:#fff;--text:#202938;--muted:#657286;--line:#dce2ea;--accent:#4f46a5;--soft:#f0efff;--code:#f4f6f8;--shadow:0 18px 55px rgba(31,41,55,.09)}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#10141b;--paper:#191f29;--text:#e9edf5;--muted:#aab4c3;--line:#354050;--accent:#b4a4ff;--soft:#2a2744;--code:#111720;--shadow:0 18px 55px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.72}.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper),transparent 7%);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.top-inner{max-width:1280px;margin:auto;padding:11px 22px;display:flex;align-items:center;gap:12px}.top a,.top button{border:1px solid var(--line);border-radius:9px;background:var(--paper);color:var(--text);text-decoration:none;padding:7px 10px;font:inherit;font-size:13px;cursor:pointer}.top .source{margin-left:auto;color:var(--accent)}.layout{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:250px minmax(0,820px);gap:42px;padding:34px 22px 80px;justify-content:center}.toc{position:sticky;top:72px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;border-right:1px solid var(--line);padding-right:22px}.toc-title{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0 0 10px}.toc a{display:block;color:var(--muted);text-decoration:none;font-size:13px;line-height:1.35;padding:5px 8px;border-radius:7px}.toc a:hover{color:var(--accent);background:var(--soft)}.toc-l3{padding-left:20px!important}.toc-l4{padding-left:32px!important}.paper{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:clamp(24px,5vw,62px);min-width:0}.paper h1{font-size:clamp(29px,5vw,46px);line-height:1.12;letter-spacing:-.035em;margin:0 0 34px}.paper h2{font-size:27px;line-height:1.25;margin:54px 0 19px;padding-top:8px;border-top:1px solid var(--line)}.paper h3{font-size:20px;line-height:1.35;margin:35px 0 12px}.paper h4{font-size:16px;margin:27px 0 9px}.anchor{opacity:0;margin-left:8px;color:var(--muted);font-weight:400;text-decoration:none}.paper h2:hover .anchor,.paper h3:hover .anchor,.paper h4:hover .anchor{opacity:1}.paper p{margin:13px 0}.paper a{color:var(--accent);text-underline-offset:2px}.paper ul,.paper ol{padding-left:25px}.paper li{margin:6px 0}.paper code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.9em;background:var(--code);border:1px solid var(--line);border-radius:5px;padding:1px 5px}.paper pre{background:var(--code);border:1px solid var(--line);border-radius:11px;padding:16px;overflow:auto;line-height:1.5}.paper pre code{border:0;padding:0}.table-wrap{overflow:auto;margin:22px 0;border:1px solid var(--line);border-radius:11px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}th{background:var(--soft);font-weight:650}tr:last-child td{border-bottom:0}th:last-child,td:last-child{border-right:0}.math-display{overflow-x:auto;overflow-y:hidden;margin:24px 0;padding:13px 8px;text-align:center}.MathJax{outline:0}blockquote{margin:20px 0;padding:4px 18px;border-left:4px solid var(--accent);background:var(--soft);color:var(--muted)}hr{border:0;border-top:1px solid var(--line);margin:34px 0}.footer{color:var(--muted);font-size:12px;margin-top:48px;padding-top:18px;border-top:1px solid var(--line)}.skip{position:absolute;left:-9999px}.skip:focus{left:10px;top:10px;z-index:20;background:var(--paper);padding:8px}
+@media(max-width:900px){.layout{display:block;padding-top:20px}.toc{position:static;max-height:none;border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:18px;columns:2}.toc-title{column-span:all}.paper{padding:26px 20px}.paper h2{font-size:23px}.top-inner{padding:9px 12px}}@media(max-width:560px){.toc{columns:1}.top .source{font-size:0}.top .source:after{content:"Markdown";font-size:13px}.paper{border-radius:12px}.layout{padding-left:10px;padding-right:10px}}
+@media print{.top,.toc{display:none}.layout{display:block;padding:0}.paper{border:0;box-shadow:none;padding:0}.anchor{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#article">Skip to article</a>
+<header class="top"><div class="top-inner"><a href="../index.html">← Knowledge graph</a><button type="button" onclick="window.print()">Print / PDF</button><a class="source" href="../fundamental_physics_discoveries/12_statistical_mechanics.md">Open source Markdown ↗</a></div></header>
+<main class="layout"><nav class="toc" aria-label="Table of contents"><div class="toc-title">On this page</div><a class="toc-l2" href="#graph-metadata">Graph metadata</a>
+<a class="toc-l2" href="#central-claim">Central claim</a>
+<a class="toc-l2" href="#time-slices">Time slices</a>
+<a class="toc-l2" href="#alternative-incomplete-or-superseded-pathways">Alternative, incomplete, or superseded pathways</a>
+<a class="toc-l3" href="#r-pure-mechanical-deduction">R-PURE-MECHANICAL-DEDUCTION</a>
+<a class="toc-l3" href="#r-energetics-without-atoms">R-ENERGETICS-WITHOUT-ATOMS</a>
+<a class="toc-l3" href="#r-recurrence-refutes-statistics">R-RECURRENCE-REFUTES-STATISTICS</a>
+<a class="toc-l3" href="#r-naive-ergodicity">R-NAIVE-ERGODICITY</a>
+<a class="toc-l3" href="#pathway-comparison-ledger">Pathway comparison ledger</a>
+<a class="toc-l2" href="#knowledge-assets">Knowledge assets</a>
+<a class="toc-l2" href="#discovery-node-and-equations">Discovery node and equations</a>
+<a class="toc-l2" href="#validation-and-explanatory-gains">Validation and explanatory gains</a>
+<a class="toc-l2" href="#limitations-and-retained-status">Limitations and retained status</a>
+<a class="toc-l2" href="#discovery-patterns">Discovery patterns</a>
+<a class="toc-l2" href="#edge-list">Edge list</a>
+<a class="toc-l2" href="#extended-historical-investigation">Extended historical investigation</a>
+<a class="toc-l3" href="#maxwell-distribution-as-a-probabilistic-law">Maxwell distribution as a probabilistic law</a>
+<a class="toc-l3" href="#ensemble-logic">Ensemble logic</a>
+<a class="toc-l4" href="#deriving-the-canonical-distribution-rather-than-assuming-it">Deriving the canonical distribution rather than assuming it</a>
+<a class="toc-l3" href="#entropy-multiplicity-and-typicality">Entropy, multiplicity, and typicality</a>
+<a class="toc-l3" href="#reversibility-and-recurrence-objections">Reversibility and recurrence objections</a>
+<a class="toc-l3" href="#fluctuations-as-quantitative-evidence">Fluctuations as quantitative evidence</a>
+<a class="toc-l3" href="#phase-transitions-and-collective-behavior">Phase transitions and collective behavior</a>
+<a class="toc-l3" href="#classical-and-quantum-boundaries">Classical and quantum boundaries</a>
+<a class="toc-l3" href="#evidence-ledger">Evidence ledger</a>
+<a class="toc-l2" href="#ai-oriented-inference-notes">AI-oriented inference notes</a>
+<a class="toc-l2" href="#further-inference-and-regime-notes">Further inference and regime notes</a>
+<a class="toc-l2" href="#sources">Sources</a></nav><article class="paper" id="article"><h1 id="statistical-mechanics-historical-knowledge-graph">Statistical Mechanics: Historical Knowledge Graph<a class="anchor" href="#statistical-mechanics-historical-knowledge-graph" aria-label="Link to this section">#</a></h1>
+<h2 id="graph-metadata">Graph metadata<a class="anchor" href="#graph-metadata" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Graph ID</td><td><code>KG-STATMECH-11</code></td></tr><tr><td>Central node</td><td><code>D-STATISTICAL-MECHANICS-1859-1902</code></td></tr><tr><td>Focal discovery date</td><td>1859–1902 (Maxwell/Boltzmann through Gibbs)</td></tr><tr><td>Main contributors</td><td>James Clerk Maxwell, Ludwig Boltzmann, J. Willard Gibbs</td></tr><tr><td>Domain</td><td>Microscopic foundations of thermodynamics</td></tr><tr><td>Epistemic status</td><td>Fundamental probabilistic framework for equilibrium and nonequilibrium many-body physics</td></tr></tbody></table></div>
+<h2 id="central-claim">Central claim<a class="anchor" href="#central-claim" aria-label="Link to this section">#</a></h2>
+<p>Statistical mechanics explains thermodynamic regularities through probability distributions over vast numbers of microscopic states. It reconciles reversible microdynamics with overwhelmingly likely macroscopic irreversibility by adding boundary conditions, coarse descriptions, and typicality or probabilistic reasoning.</p>
+<h2 id="time-slices">Time slices<a class="anchor" href="#time-slices" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Node</th><th>Period</th><th>Development</th><th>Transition</th></tr></thead><tbody><tr><td><code>TS-KINETIC-PRECURSORS</code></td><td>18th–mid-19th century</td><td>Gas pressure associated with molecular motion</td><td>Atomic reality remained disputed</td></tr><tr><td><code>TS-MAXWELL</code></td><td>1859–1867</td><td>Velocity distribution and transport theory</td><td>Probability enters mechanics explicitly</td></tr><tr><td><code>TS-BOLTZMANN</code></td><td>1870s–1890s</td><td>Entropy and kinetic evolution tied to microstates</td><td>Irreversibility becomes statistical</td></tr><tr><td><code>TS-GIBBS</code></td><td>1902</td><td>Ensembles systematize equilibrium distributions</td><td>Framework generalizes beyond dilute gases</td></tr><tr><td><code>TS-QUANTUM-STATISTICS</code></td><td>1920s onward</td><td>Indistinguishability changes state counting</td><td>Bose–Einstein and Fermi–Dirac distributions</td></tr></tbody></table></div>
+<h2 id="alternative-incomplete-or-superseded-pathways">Alternative, incomplete, or superseded pathways<a class="anchor" href="#alternative-incomplete-or-superseded-pathways" aria-label="Link to this section">#</a></h2>
+<h3 id="r-pure-mechanical-deduction"><code>R-PURE-MECHANICAL-DEDUCTION</code><a class="anchor" href="#r-pure-mechanical-deduction" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> The program of deriving irreversible thermodynamic evolution as an unconditional theorem of reversible microscopic mechanics, without probabilistic assumptions, coarse graining, or special boundary conditions.</li><li><strong>Proposed/active period:</strong> nineteenth-century mechanical program.</li><li><strong>Assumption:</strong> Thermodynamic irreversibility follows from reversible equations with no probabilistic or boundary input.</li><li><strong>Limitation:</strong> Time reversal and recurrence objections expose missing assumptions.</li><li><strong>Repair:</strong> Low-entropy initial conditions, coarse graining, molecular chaos, and typicality.</li><li><strong>Outcome:</strong> Deterministic dynamics retained but not sufficient alone.</li></ul>
+<h3 id="r-energetics-without-atoms"><code>R-ENERGETICS-WITHOUT-ATOMS</code><a class="anchor" href="#r-energetics-without-atoms" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> A macroscopic research program that treats energy and thermodynamic relations as fundamental while declining to posit real atoms or molecules behind heat and matter.</li><li><strong>Proposed/active period:</strong> 1890s.</li><li><strong>Assumption:</strong> Thermodynamics should avoid molecular ontology.</li><li><strong>Why reasonable:</strong> Atoms were not directly observed and macroscopic laws stood independently.</li><li><strong>Limitation:</strong> Could not naturally explain fluctuation scales or Brownian motion.</li><li><strong>Outcome:</strong> Superseded as a complete account; phenomenological thermodynamics retained.</li></ul>
+<h3 id="r-recurrence-refutes-statistics"><code>R-RECURRENCE-REFUTES-STATISTICS</code><a class="anchor" href="#r-recurrence-refutes-statistics" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> The objection elevated into a rival conclusion that microscopic recurrence makes statistical entropy increase invalid rather than probabilistic and timescale-dependent.</li><li><strong>Proposed/active period:</strong> 1896 (Zermelo&#039;s objection).</li><li><strong>Limitation:</strong> Recurrence does not predict ordinary macroscopic evolution and typically occurs on astronomically large timescales.</li><li><strong>Outcome:</strong> Rejected as a refutation; retained as a limit on strictly monotonic microscopic claims.</li></ul>
+<h3 id="r-naive-ergodicity"><code>R-NAIVE-ERGODICITY</code><a class="anchor" href="#r-naive-ergodicity" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> The unqualified assumption that every isolated system explores its entire energy surface uniformly, so one long time average automatically equals an ensemble average.</li><li><strong>Proposed/active period:</strong> 1870s.</li><li><strong>Limitation:</strong> Many systems are nonergodic, finite, integrable, glassy, or otherwise fail the assumption.</li><li><strong>Outcome:</strong> Replaced by conditional ergodic, mixing, typicality, and ensemble arguments.</li></ul>
+<h3 id="pathway-comparison-ledger">Pathway comparison ledger<a class="anchor" href="#pathway-comparison-ledger" aria-label="Link to this section">#</a></h3>
+<p><strong>Chronology rule:</strong> Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (1859–1902 (Maxwell/Boltzmann through Gibbs)). The proposed/active period is stored in each pathway record.</p>
+<div class="table-wrap"><table><thead><tr><th>Objection or rival</th><th>Why serious</th><th>Statistical repair</th><th>Remaining caution</th></tr></thead><tbody><tr><td>Reversibility objection</td><td>Time-reversed microscopic motion is allowed</td><td>Entropy increase is overwhelmingly typical given low-entropy macroconditions</td><td>Low-entropy boundary condition is additional input</td></tr><tr><td>Recurrence objection</td><td>Finite isolated dynamics can return near its initial state</td><td>Recurrence times are generally enormous; thermodynamic claims are probabilistic and scale-bound</td><td>Not a strict monotonic theorem for every microtrajectory</td></tr><tr><td>Energetics without atoms</td><td>Macroscopic thermodynamics works without molecules</td><td>Brownian fluctuations and convergent \(N_A\) estimates add microscopic evidence</td><td>Thermodynamics remains autonomous</td></tr><tr><td>Naïve ergodicity</td><td>Time average assumed equal to ensemble average without proof</td><td>Mixing, typicality, and ensemble methods used where justified</td><td>Equivalence can fail for finite or long-range systems</td></tr><tr><td><strong>Discovery/current: statistical mechanics</strong></td><td>Macrostates arise from probability distributions over microscopic states plus specified boundary/coarse-graining assumptions</td><td>Thermodynamics, fluctuations, Brownian motion, transport, and phase behavior</td><td>Retained with regime and assumption metadata</td></tr></tbody></table></div>
+<p>Boltzmann&#039;s molecular-chaos assumption factorizes incoming-particle correlations and is time-asymmetric in its application. This is the hidden hinge in a simple \(H\)-theorem narrative. The theory did not derive the thermodynamic arrow solely from reversible mechanics; it connected overwhelmingly likely macroscopic behavior to statistical assumptions and special boundary conditions. The retained older structure is exact microscopic mechanics plus phenomenological thermodynamics, linked rather than one erased by the other.</p>
+<h2 id="knowledge-assets">Knowledge assets<a class="anchor" href="#knowledge-assets" aria-label="Link to this section">#</a></h2>
+<ul><li><code>A-THERMODYNAMICS</code>: \(U,T,S,p,V\) and equilibrium laws.</li><li><code>A-KINETIC-GAS</code>: pressure from molecular collision.</li><li><code>A-PROBABILITY</code>: distributions rather than exact trajectories.</li><li><code>A-COMBINATORICS</code>: counting microscopic arrangements.</li><li><code>A-ENSEMBLES</code>: probability measures over phase space.</li></ul>
+<h2 id="discovery-node-and-equations">Discovery node and equations<a class="anchor" href="#discovery-node-and-equations" aria-label="Link to this section">#</a></h2>
+<p>Boltzmann&#039;s entropy relation is:</p>
+<div class="math-display">\[S=k_B\ln\Omega,\]</div>
+<p>where \(\Omega\) counts compatible microstates. More generally, Gibbs entropy is:</p>
+<div class="math-display">\[S=-k_B\sum_i p_i\ln p_i.\]</div>
+<p>The canonical distribution follows by maximizing entropy subject to normalization and fixed mean energy:</p>
+<div class="math-display">\[p_i=\frac{e^{-\beta E_i}}{Z},
+\qquad
+Z=\sum_i e^{-\beta E_i},
+\qquad
+\beta=\frac{1}{k_BT}.\]</div>
+<p>Thermodynamic quantities derive from the partition function:</p>
+<div class="math-display">\[F=-k_BT\ln Z,
+\qquad
+U=-\frac{\partial \ln Z}{\partial\beta},
+\qquad
+S=-\left(\frac{\partial F}{\partial T}\right)_V.\]</div>
+<p>For a classical ideal monatomic gas:</p>
+<div class="math-display">\[pV=Nk_BT,
+\qquad
+\langle K\rangle=\frac{3}{2}Nk_BT.\]</div>
+<h2 id="validation-and-explanatory-gains">Validation and explanatory gains<a class="anchor" href="#validation-and-explanatory-gains" aria-label="Link to this section">#</a></h2>
+<ul><li>Maxwell&#039;s velocity distribution predicts transport and effusion.</li><li>Equipartition explains many classical heat capacities and also reveals classical theory&#039;s failures.</li><li>Brownian motion connects fluctuations to molecular scales.</li><li>Critical phenomena and phase transitions become collective statistical behavior.</li><li>Partition functions unify equations of state, response, and fluctuations:</li></ul>
+<div class="math-display">\[\operatorname{Var}(E)=k_BT^2C_V.\]</div>
+<h2 id="limitations-and-retained-status">Limitations and retained status<a class="anchor" href="#limitations-and-retained-status" aria-label="Link to this section">#</a></h2>
+<p>Classical state counting fails for quantum indistinguishable particles and low temperatures. Equilibrium ensembles do not automatically explain every approach-to-equilibrium problem. Gravitational systems and nonequilibrium steady states can violate simple extensivity assumptions. Statistical mechanics remains the bridge between microphysics and thermodynamics, with quantum and stochastic extensions.</p>
+<h2 id="discovery-patterns">Discovery patterns<a class="anchor" href="#discovery-patterns" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>ID</th><th>Instantiation</th></tr></thead><tbody><tr><td><code>P-01</code></td><td>Mechanics, probability, and thermodynamics unified</td></tr><tr><td><code>P-02</code></td><td>Macroscopic laws generated from distributions of microstates</td></tr><tr><td><code>P-03</code></td><td>Exact trajectory prediction reframed as typical macrobehavior</td></tr><tr><td><code>P-04</code></td><td>Probability treated as physically explanatory</td></tr><tr><td><code>P-05</code></td><td>Thermodynamic state functions retained</td></tr><tr><td><code>P-06</code></td><td>Fluctuations and transport provide quantitative tests</td></tr></tbody></table></div>
+<h2 id="edge-list">Edge list<a class="anchor" href="#edge-list" aria-label="Link to this section">#</a></h2>
+<pre><code class="language-text">A-THERMODYNAMICS --constrains--&gt; D-STATISTICAL-MECHANICS-1859-1902
+A-PROBABILITY --enables--&gt; D-MAXWELL-DISTRIBUTION
+A-COMBINATORICS --enables--&gt; EQ-BOLTZMANN-ENTROPY
+R-PURE-MECHANICAL-DEDUCTION --repaired-by--&gt; PROBABILISTIC-BOUNDARY-CONDITIONS
+EQ-CANONICAL-DISTRIBUTION --generates--&gt; THERMODYNAMIC-STATE-FUNCTIONS
+D-STATISTICAL-MECHANICS-1859-1902 --explains--&gt; LAW-THERMODYNAMICS
+D-QUANTUM-STATISTICS --limits--&gt; CLASSICAL-COUNTING
+D-STATISTICAL-MECHANICS-1859-1902 --instantiates--&gt; P-02</code></pre>
+<h2 id="extended-historical-investigation">Extended historical investigation<a class="anchor" href="#extended-historical-investigation" aria-label="Link to this section">#</a></h2>
+<h3 id="maxwell-distribution-as-a-probabilistic-law">Maxwell distribution as a probabilistic law<a class="anchor" href="#maxwell-distribution-as-a-probabilistic-law" aria-label="Link to this section">#</a></h3>
+<p>For an ideal gas in equilibrium, velocity components are independent Gaussians:</p>
+<div class="math-display">\[f(v_x)
+=\sqrt{\frac{m}{2\pi k_BT}}
+\exp\left(-\frac{mv_x^2}{2k_BT}\right).\]</div>
+<p>Combining three components and integrating over directions gives the speed distribution:</p>
+<div class="math-display">\[f(v)
+=4\pi
+\left(\frac{m}{2\pi k_BT}\right)^{3/2}
+v^2e^{-mv^2/(2k_BT)}.\]</div>
+<p>It predicts different characteristic speeds:</p>
+<div class="math-display">\[v_{\mathrm{mp}}=\sqrt{\frac{2k_BT}{m}},
+\qquad
+\langle v\rangle=\sqrt{\frac{8k_BT}{\pi m}},
+\qquad
+v_{\mathrm{rms}}=\sqrt{\frac{3k_BT}{m}}.\]</div>
+<p>The distribution is not merely ignorance about one exact common molecular speed. It predicts a stable population distribution and measurable effusion, pressure, and transport properties.</p>
+<h3 id="ensemble-logic">Ensemble logic<a class="anchor" href="#ensemble-logic" aria-label="Link to this section">#</a></h3>
+<p>A microcanonical ensemble describes fixed \(E,V,N\), a canonical ensemble fixed \(T,V,N\), and a grand canonical ensemble fixed \(T,V,\mu\). Their partition functions differ:</p>
+<div class="math-display">\[Z=\sum_i e^{-\beta E_i},\]</div>
+<div class="math-display">\[\mathcal Z
+=\sum_{N=0}^{\infty}
+e^{\beta\mu N}Z_N.\]</div>
+<p>For large short-range systems, ensembles often agree for bulk observables, but they are not definitionally identical. Long-range interactions, finite systems, and phase coexistence can make equivalence subtle.</p>
+<h4 id="deriving-the-canonical-distribution-rather-than-assuming-it">Deriving the canonical distribution rather than assuming it<a class="anchor" href="#deriving-the-canonical-distribution-rather-than-assuming-it" aria-label="Link to this section">#</a></h4>
+<p>Let \(p_i\) be the probabilities of microstates with energies \(E_i\). Maximize Gibbs entropy subject to normalization and a fixed mean energy:</p>
+<div class="math-display">\[\mathcal L
+=-k_B\sum_i p_i\ln p_i
+-\alpha\left(\sum_i p_i-1\right)
+-k_B\beta\left(\sum_i p_iE_i-U\right).\]</div>
+<p>Independent variations of every \(p_i\) give</p>
+<div class="math-display">\[\frac{\partial\mathcal L}{\partial p_i}
+=-k_B(\ln p_i+1)-\alpha-k_B\beta E_i=0.\]</div>
+<p>Therefore \(p_i=C e^{-\beta E_i}\). Normalization fixes \(C=1/Z\), with</p>
+<div class="math-display">\[Z(\beta)=\sum_i e^{-\beta E_i},
+\qquad
+p_i=\frac{e^{-\beta E_i}}{Z}.\]</div>
+<p>The derivative identities then follow rather than being separate postulates:</p>
+<div class="math-display">\[U=\langle E\rangle=-\frac{\partial\ln Z}{\partial\beta},
+\qquad
+\operatorname{Var}(E)=\frac{\partial^2\ln Z}{\partial\beta^2}.\]</div>
+<p>Substituting \(\ln p_i=-\beta E_i-\ln Z\) into the entropy gives</p>
+<div class="math-display">\[S=k_B(\ln Z+\beta U).\]</div>
+<p>With \(\beta=1/(k_BT)\), the Helmholtz free energy is therefore</p>
+<div class="math-display">\[F=U-TS=-k_BT\ln Z.\]</div>
+<p>This chain shows exactly how one generating object, \(Z\), yields equilibrium probabilities, energy, entropy, fluctuations, and free energy. The physical input is not “maximum entropy” alone: one must specify which constraints and microstates are appropriate.</p>
+<h3 id="entropy-multiplicity-and-typicality">Entropy, multiplicity, and typicality<a class="anchor" href="#entropy-multiplicity-and-typicality" aria-label="Link to this section">#</a></h3>
+<p>If a macrostate \(M\) corresponds to phase-space volume \(|\Gamma_M|\), Boltzmann entropy is:</p>
+<div class="math-display">\[S_B(M)
+=k_B\ln\!\left(
+\frac{|\Gamma_M|}{\Gamma_0}
+\right).\]</div>
+<p>The reference cell \(\Gamma_0\) makes the logarithm&#039;s argument dimensionless; changing it adds an entropy constant. In a classical \(N\)-particle treatment, factors such as \(h^{3N}\) and \(N!\) enter the coarse-grained state count. Equilibrium occupies overwhelmingly more compatible microstates than a constrained low-entropy macrostate. If:</p>
+<div class="math-display">\[\frac{|\Gamma_{\mathrm{eq}}|}
+{|\Gamma_{\mathrm{accessible}}|}
+\approx1,\]</div>
+<p>then most compatible microstates appear macroscopically equilibrated. The approximation is a thermodynamic-limit typicality claim, not an identity for every finite or long-range system. It explains robustness through typicality, but it does not by itself explain why the universe began in a low-entropy condition.</p>
+<h3 id="reversibility-and-recurrence-objections">Reversibility and recurrence objections<a class="anchor" href="#reversibility-and-recurrence-objections" aria-label="Link to this section">#</a></h3>
+<p>Boltzmann&#039;s kinetic equation uses an assumption of molecular chaos: pre-collision velocities are approximately uncorrelated. The \(H\)-theorem then gives monotonic behavior for:</p>
+<div class="math-display">\[H=\int f\ln f\,d^3v,
+\qquad
+\frac{dH}{dt}\le0.\]</div>
+<p>The sign can be traced explicitly. For binary collisions, pair the forward occupation product \(x=f_1f_2\) with the reverse product \(y=f&#039;_1f&#039;_2\). After symmetrizing the collision integral,</p>
+<div class="math-display">\[\frac{dH}{dt}
+=-\frac14\int d\Gamma\,W\,(x-y)\ln\frac{x}{y},\]</div>
+<p>where the transition weight \(W\ge0\) and \(d\Gamma\) includes the colliding velocities and scattering angles. Since</p>
+<div class="math-display">\[(x-y)\ln\frac{x}{y}\ge0
+\quad\text{for }x,y&gt;0,\]</div>
+<p>the integral is nonpositive. Equality requires detailed balance, \(x=y\), which yields the equilibrium Maxwell form. The inequality is mathematical; applying it to a dilute gas depends on the molecular-chaos factorization used to close the one-particle kinetic equation.</p>
+<p>Because entropy is related schematically by \(S\sim-k_BH\), it increases. Loschmidt objected that reversing every velocity produces a valid mechanical trajectory that runs toward lower entropy. Zermelo invoked recurrence. The modern response is not that mechanics ceases to be reversible. Rather:</p>
+<ul><li>the kinetic equation uses statistical independence assumptions;</li><li>entropy increase is overwhelmingly probable, not logically exceptionless;</li><li>special time-reversed microstates exist but require extraordinary correlations;</li><li>a low-entropy boundary condition supplies temporal asymmetry.</li></ul>
+<p>These points should be explicit in a discovery graph; “microscopic laws imply entropy always rises” is too strong.</p>
+<div class="table-wrap"><table><thead><tr><th>Logical role</th><th>Content</th></tr></thead><tbody><tr><td>Microscopic input</td><td>States, energies, Hamiltonian evolution, and collision conservation laws.</td></tr><tr><td>Statistical input</td><td>A probability measure or typicality claim plus selected macroscopic constraints.</td></tr><tr><td>Additional kinetic assumption</td><td>Molecular chaos for incoming particles; it is not a theorem of reversible mechanics alone.</td></tr><tr><td>Derived equilibrium structure</td><td>Canonical weights and thermodynamic potentials from \(Z\).</td></tr><tr><td>Derived conditional arrow</td><td>\(dH/dt\le0\) under the kinetic closure, not for every exact microtrajectory.</td></tr></tbody></table></div>
+<h3 id="fluctuations-as-quantitative-evidence">Fluctuations as quantitative evidence<a class="anchor" href="#fluctuations-as-quantitative-evidence" aria-label="Link to this section">#</a></h3>
+<p>Canonical energy variance is:</p>
+<div class="math-display">\[\operatorname{Var}(E)
+=\frac{\partial^2\ln Z}{\partial\beta^2}
+=k_BT^2C_V.\]</div>
+<p>Relative fluctuations often scale as:</p>
+<div class="math-display">\[\frac{\Delta E}{E}\sim\frac{1}{\sqrt N}.\]</div>
+<p>For macroscopic \(N\sim10^{23}\), fluctuations are negligible, explaining stable thermodynamics. For nanosystems they become measurable. Brownian motion, Johnson noise, photon counting, and critical fluctuations show that statistical mechanics predicts noise rather than merely averaging it away.</p>
+<h3 id="phase-transitions-and-collective-behavior">Phase transitions and collective behavior<a class="anchor" href="#phase-transitions-and-collective-behavior" aria-label="Link to this section">#</a></h3>
+<p>The partition function encodes phase structure. For finite \(N\), \(Z\) is usually analytic; sharp nonanalytic transitions arise in an ideal thermodynamic limit:</p>
+<div class="math-display">\[N,V\rightarrow\infty,
+\qquad
+\frac NV=\text{constant}.\]</div>
+<p>Near a continuous critical point:</p>
+<div class="math-display">\[\xi\sim|T-T_c|^{-\nu},\]</div>
+<p>where correlation length \(\xi\) diverges. Systems with very different microscopic constituents can share critical exponents. This universality shows why statistical mechanics is more than ideal-gas theory: it explains how collective laws become insensitive to microscopic detail.</p>
+<h3 id="classical-and-quantum-boundaries">Classical and quantum boundaries<a class="anchor" href="#classical-and-quantum-boundaries" aria-label="Link to this section">#</a></h3>
+<p>Equipartition predicts \(\tfrac12k_BT\) per quadratic degree of freedom, but fails when excitation gaps exceed \(k_BT\). Quantum statistics repairs low-temperature heat capacities, black-body radiation, electron degeneracy, and condensation. The classical limit is controlled roughly when phase-space occupation is dilute:</p>
+<div class="math-display">\[n\lambda_{\mathrm{th}}^3\ll1,
+\qquad
+\lambda_{\mathrm{th}}
+=\frac{h}{\sqrt{2\pi mk_BT}}.\]</div>
+<h3 id="evidence-ledger">Evidence ledger<a class="anchor" href="#evidence-ledger" aria-label="Link to this section">#</a></h3>
+<div class="table-wrap"><table><thead><tr><th>Evidence</th><th>Statistical-mechanical content</th></tr></thead><tbody><tr><td>Gas viscosity and diffusion</td><td>Velocity distributions and collisions</td></tr><tr><td>Brownian motion</td><td>Fluctuation–dissipation connection</td></tr><tr><td>Heat capacities</td><td>Degrees of freedom and quantum freeze-out</td></tr><tr><td>Critical opalescence</td><td>Diverging density correlations</td></tr><tr><td>Johnson noise</td><td>Thermal voltage fluctuations</td></tr><tr><td>Bose condensation and Fermi pressure</td><td>Quantum indistinguishability</td></tr></tbody></table></div>
+<h2 id="ai-oriented-inference-notes">AI-oriented inference notes<a class="anchor" href="#ai-oriented-inference-notes" aria-label="Link to this section">#</a></h2>
+<ul><li>Store entropy definitions with their framework: Boltzmann, Gibbs, von Neumann, thermodynamic.</li><li>Do not derive a time arrow from reversible equations without boundary/statistical assumptions.</li><li>Treat fluctuations as predictions, not experimental imperfections.</li><li>Attach ensemble and thermodynamic-limit conditions to phase-transition claims.</li></ul>
+<h2 id="further-inference-and-regime-notes">Further inference and regime notes<a class="anchor" href="#further-inference-and-regime-notes" aria-label="Link to this section">#</a></h2>
+<p>The canonical distribution follows by considering a small system exchanging energy with a much larger reservoir:</p>
+<div class="math-display">\[p_i=\frac{e^{-\beta E_i}}{Z},
+\qquad
+Z=\sum_i e^{-\beta E_i},
+\qquad
+F=-k_BT\ln Z.\]</div>
+<p>Derivatives of \(\ln Z\) generate mean energy and fluctuations, so one compact object connects microscopic spectra with macroscopic response. For example,</p>
+<div class="math-display">\[\langle(\Delta E)^2\rangle=k_BT^2C_V.\]</div>
+<p>Boltzmann&#039;s \(H\)-theorem required assumptions about molecular correlations; recurrence and reversibility objections clarified that macroscopic irreversibility is overwhelmingly probable rather than a violation of reversible microscopic equations. Coarse graining, typicality, boundary conditions, and environmental interaction each play roles in modern accounts. Ensemble equivalence can fail for finite systems, long-range interactions, or phase coexistence, so thermodynamic-limit metadata belongs in any machine-readable claim.</p>
+<h2 id="sources">Sources<a class="anchor" href="#sources" aria-label="Link to this section">#</a></h2>
+<ul><li>Stanford Encyclopedia of Philosophy, <a href="https://plato.stanford.edu/entries/statphys-statmech/" target="_blank" rel="noopener noreferrer">“Philosophy of Statistical Mechanics”</a>.</li><li>NIST, <a href="https://www.nist.gov/si-redefinition/kelvin/kelvin-boltzmann-constant" target="_blank" rel="noopener noreferrer">“Kelvin: Boltzmann Constant”</a>.</li><li>Gibbs, <a href="https://archive.org/details/elementaryprinci00gibbrich" target="_blank" rel="noopener noreferrer"><em>Elementary Principles in Statistical Mechanics</em></a>.</li></ul><footer class="footer">Reader-friendly rendering of <code>12_statistical_mechanics.md</code>. The Markdown source remains the canonical corpus record.</footer></article></main>
+</body>
+</html>

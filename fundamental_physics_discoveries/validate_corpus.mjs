@@ -305,6 +305,51 @@ if (files.length !== 58) {
   fail("corpus", `expected 58 case files, found ${files.length}`);
 }
 
+const historyDir = path.dirname(corpusDir);
+const casePagesDir = path.join(historyDir, "case_pages");
+const casePageFiles = fs.existsSync(casePagesDir)
+  ? fs.readdirSync(casePagesDir).filter((name) => /^\d{2}_.+\.html$/.test(name)).sort()
+  : [];
+if (casePageFiles.length !== files.length) {
+  fail("case_pages", `expected ${files.length} reader HTML pages, found ${casePageFiles.length}`);
+}
+const graphHtmlPath = path.join(historyDir, "index.html");
+const graphHtml = fs.existsSync(graphHtmlPath) ? fs.readFileSync(graphHtmlPath, "utf8") : "";
+for (const file of files) {
+  const htmlFile = file.replace(/\.md$/, ".html");
+  const fullPath = path.join(casePagesDir, htmlFile);
+  if (!fs.existsSync(fullPath)) {
+    fail("case_pages", `missing reader page ${htmlFile}`);
+    continue;
+  }
+  const page = fs.readFileSync(fullPath, "utf8");
+  if (!page.includes("mathjax@3.2.2/es5/tex-svg.js")) {
+    fail(htmlFile, "missing pinned MathJax renderer");
+  }
+  if (!page.includes(`../fundamental_physics_discoveries/${file}`)) {
+    fail(htmlFile, `missing backlink to canonical Markdown ${file}`);
+  }
+  if (!page.includes('href="../index.html"')) {
+    fail(htmlFile, "missing backlink to knowledge graph");
+  }
+  const sourceTitle = fs.readFileSync(path.join(corpusDir, file), "utf8").match(/^#\s+(.+)$/m)?.[1];
+  if (sourceTitle && !page.includes(escapeForHtmlCheck(sourceTitle))) {
+    fail(htmlFile, "reader page does not contain its source title");
+  }
+  if (!graphHtml.includes(`\"htmlFile\":\"case_pages/${htmlFile}\"`)) {
+    fail("index.html", `graph data lacks reader-page link for ${htmlFile}`);
+  }
+}
+
+function escapeForHtmlCheck(value) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
 const newtonPath = path.join(corpusDir, newtonFile);
 const newton = fs.readFileSync(newtonPath, "utf8");
 const newtonLines = newton.split("\n");

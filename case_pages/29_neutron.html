@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>The Neutron: Historical Knowledge Graph · PhyHist</title>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},svg:{fontCache:"global"},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+<style>
+:root{color-scheme:light;--bg:#f5f7fb;--paper:#fff;--text:#202938;--muted:#657286;--line:#dce2ea;--accent:#4f46a5;--soft:#f0efff;--code:#f4f6f8;--shadow:0 18px 55px rgba(31,41,55,.09)}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#10141b;--paper:#191f29;--text:#e9edf5;--muted:#aab4c3;--line:#354050;--accent:#b4a4ff;--soft:#2a2744;--code:#111720;--shadow:0 18px 55px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.72}.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper),transparent 7%);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.top-inner{max-width:1280px;margin:auto;padding:11px 22px;display:flex;align-items:center;gap:12px}.top a,.top button{border:1px solid var(--line);border-radius:9px;background:var(--paper);color:var(--text);text-decoration:none;padding:7px 10px;font:inherit;font-size:13px;cursor:pointer}.top .source{margin-left:auto;color:var(--accent)}.layout{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:250px minmax(0,820px);gap:42px;padding:34px 22px 80px;justify-content:center}.toc{position:sticky;top:72px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;border-right:1px solid var(--line);padding-right:22px}.toc-title{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0 0 10px}.toc a{display:block;color:var(--muted);text-decoration:none;font-size:13px;line-height:1.35;padding:5px 8px;border-radius:7px}.toc a:hover{color:var(--accent);background:var(--soft)}.toc-l3{padding-left:20px!important}.toc-l4{padding-left:32px!important}.paper{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:clamp(24px,5vw,62px);min-width:0}.paper h1{font-size:clamp(29px,5vw,46px);line-height:1.12;letter-spacing:-.035em;margin:0 0 34px}.paper h2{font-size:27px;line-height:1.25;margin:54px 0 19px;padding-top:8px;border-top:1px solid var(--line)}.paper h3{font-size:20px;line-height:1.35;margin:35px 0 12px}.paper h4{font-size:16px;margin:27px 0 9px}.anchor{opacity:0;margin-left:8px;color:var(--muted);font-weight:400;text-decoration:none}.paper h2:hover .anchor,.paper h3:hover .anchor,.paper h4:hover .anchor{opacity:1}.paper p{margin:13px 0}.paper a{color:var(--accent);text-underline-offset:2px}.paper ul,.paper ol{padding-left:25px}.paper li{margin:6px 0}.paper code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.9em;background:var(--code);border:1px solid var(--line);border-radius:5px;padding:1px 5px}.paper pre{background:var(--code);border:1px solid var(--line);border-radius:11px;padding:16px;overflow:auto;line-height:1.5}.paper pre code{border:0;padding:0}.table-wrap{overflow:auto;margin:22px 0;border:1px solid var(--line);border-radius:11px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}th{background:var(--soft);font-weight:650}tr:last-child td{border-bottom:0}th:last-child,td:last-child{border-right:0}.math-display{overflow-x:auto;overflow-y:hidden;margin:24px 0;padding:13px 8px;text-align:center}.MathJax{outline:0}blockquote{margin:20px 0;padding:4px 18px;border-left:4px solid var(--accent);background:var(--soft);color:var(--muted)}hr{border:0;border-top:1px solid var(--line);margin:34px 0}.footer{color:var(--muted);font-size:12px;margin-top:48px;padding-top:18px;border-top:1px solid var(--line)}.skip{position:absolute;left:-9999px}.skip:focus{left:10px;top:10px;z-index:20;background:var(--paper);padding:8px}
+@media(max-width:900px){.layout{display:block;padding-top:20px}.toc{position:static;max-height:none;border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:18px;columns:2}.toc-title{column-span:all}.paper{padding:26px 20px}.paper h2{font-size:23px}.top-inner{padding:9px 12px}}@media(max-width:560px){.toc{columns:1}.top .source{font-size:0}.top .source:after{content:"Markdown";font-size:13px}.paper{border-radius:12px}.layout{padding-left:10px;padding-right:10px}}
+@media print{.top,.toc{display:none}.layout{display:block;padding:0}.paper{border:0;box-shadow:none;padding:0}.anchor{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#article">Skip to article</a>
+<header class="top"><div class="top-inner"><a href="../index.html">← Knowledge graph</a><button type="button" onclick="window.print()">Print / PDF</button><a class="source" href="../fundamental_physics_discoveries/29_neutron.md">Open source Markdown ↗</a></div></header>
+<main class="layout"><nav class="toc" aria-label="Table of contents"><div class="toc-title">On this page</div><a class="toc-l2" href="#graph-metadata">Graph metadata</a>
+<a class="toc-l2" href="#central-claim">Central claim</a>
+<a class="toc-l2" href="#time-slices">Time slices</a>
+<a class="toc-l2" href="#alternative-incomplete-or-superseded-pathways">Alternative, incomplete, or superseded pathways</a>
+<a class="toc-l3" href="#r-high-energy-gamma">R-HIGH-ENERGY-GAMMA</a>
+<a class="toc-l3" href="#r-proton-electron-nucleus">R-PROTON-ELECTRON-NUCLEUS</a>
+<a class="toc-l3" href="#r-neutral-proton-electron-bound-neutron">R-NEUTRAL-PROTON-ELECTRON-BOUND-NEUTRON</a>
+<a class="toc-l3" href="#pathway-comparison-ledger">Pathway comparison ledger</a>
+<a class="toc-l2" href="#knowledge-assets">Knowledge assets</a>
+<a class="toc-l2" href="#discovery-node-and-inference">Discovery node and inference</a>
+<a class="toc-l2" href="#validation-and-explanatory-gains">Validation and explanatory gains</a>
+<a class="toc-l2" href="#limitations-and-retained-status">Limitations and retained status</a>
+<a class="toc-l2" href="#discovery-patterns">Discovery patterns</a>
+<a class="toc-l2" href="#edge-list">Edge list</a>
+<a class="toc-l2" href="#extended-historical-investigation">Extended historical investigation</a>
+<a class="toc-l3" href="#why-the-gamma-ray-interpretation-strained">Why the gamma-ray interpretation strained</a>
+<a class="toc-l3" href="#reaction-energetics">Reaction energetics</a>
+<a class="toc-l3" href="#nuclear-bookkeeping-transformed">Nuclear bookkeeping transformed</a>
+<a class="toc-l3" href="#bound-and-free-neutron">Bound and free neutron</a>
+<a class="toc-l3" href="#magnetic-and-internal-structure">Magnetic and internal structure</a>
+<a class="toc-l3" href="#neutron-scattering-and-wavelength">Neutron scattering and wavelength</a>
+<a class="toc-l3" href="#evidence-and-downstream-inference-ledger">Evidence and downstream inference ledger</a>
+<a class="toc-l3" href="#measurement-tension">Measurement tension</a>
+<a class="toc-l2" href="#ai-oriented-inference-notes">AI-oriented inference notes</a>
+<a class="toc-l2" href="#additional-quantitative-and-epistemic-notes">Additional quantitative and epistemic notes</a>
+<a class="toc-l2" href="#sources">Sources</a></nav><article class="paper" id="article"><h1 id="the-neutron-historical-knowledge-graph">The Neutron: Historical Knowledge Graph<a class="anchor" href="#the-neutron-historical-knowledge-graph" aria-label="Link to this section">#</a></h1>
+<h2 id="graph-metadata">Graph metadata<a class="anchor" href="#graph-metadata" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Graph ID</td><td><code>KG-NEUTRON-28</code></td></tr><tr><td>Central node</td><td><code>D-CHADWICK-NEUTRON-1932</code></td></tr><tr><td>Focal discovery date</td><td>February 1932</td></tr><tr><td>Main contributors</td><td>James Chadwick, building on experiments by Bothe, Becker, Irène Joliot-Curie and Frédéric Joliot-Curie</td></tr><tr><td>Domain</td><td>Nuclear constitution</td></tr><tr><td>Epistemic status</td><td>The neutron is a composite neutral baryon made primarily of \(udd\) valence quarks plus sea quarks and gluons</td></tr></tbody></table></div>
+<h2 id="central-claim">Central claim<a class="anchor" href="#central-claim" aria-label="Link to this section">#</a></h2>
+<p>Chadwick interpreted penetrating radiation from beryllium bombarded by alpha particles as massive neutral particles. Collision kinematics showed that a photon interpretation required implausibly high energies, while a neutral particle with mass near the proton fit recoil data.</p>
+<h2 id="time-slices">Time slices<a class="anchor" href="#time-slices" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Node</th><th>Period</th><th>Problem/evidence</th><th>Transition</th></tr></thead><tbody><tr><td><code>TS-PROTON-ELECTRON-NUCLEUS</code></td><td>1920s</td><td>Nuclei modeled from protons and nuclear electrons</td><td>Spin/statistics and confinement problems</td></tr><tr><td><code>TS-BERYLLIUM-RADIATION</code></td><td>1930</td><td>Penetrating neutral radiation observed</td><td>Initially called gamma radiation</td></tr><tr><td><code>TS-PARAFFIN-RECOILS</code></td><td>1932</td><td>Radiation ejects energetic protons</td><td>Photon energy requirements problematic</td></tr><tr><td><code>TS-CHADWICK</code></td><td>1932</td><td>Elastic-collision analysis</td><td>Neutron inferred</td></tr><tr><td><code>TS-NUCLEAR-MODELS</code></td><td>1932 onward</td><td>Proton–neutron nucleus adopted</td><td>Isotopes and beta decay clarified</td></tr><tr><td><code>TS-QUARK</code></td><td>1960s onward</td><td>Nucleon substructure revealed</td><td>Neutron becomes composite</td></tr></tbody></table></div>
+<h2 id="alternative-incomplete-or-superseded-pathways">Alternative, incomplete, or superseded pathways<a class="anchor" href="#alternative-incomplete-or-superseded-pathways" aria-label="Link to this section">#</a></h2>
+<h3 id="r-high-energy-gamma"><code>R-HIGH-ENERGY-GAMMA</code><a class="anchor" href="#r-high-energy-gamma" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> The hypothesis that the neutral penetrating radiation emitted from alpha-bombarded beryllium consists of exceptionally energetic gamma-ray photons rather than massive neutral particles.</li><li><strong>Proposed/active period:</strong> January–February 1932.</li><li><strong>Why reasonable:</strong> Radiation was neutral and penetrating.</li><li><strong>Limitation:</strong> Compton recoil of protons and nitrogen required inconsistent photon energies.</li><li><strong>Outcome:</strong> Replaced by massive neutral projectile.</li></ul>
+<h3 id="r-proton-electron-nucleus"><code>R-PROTON-ELECTRON-NUCLEUS</code><a class="anchor" href="#r-proton-electron-nucleus" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> A pre-neutron nuclear model in which a nucleus contains enough protons to account for its mass number plus confined electrons that reduce the net charge to the observed atomic number.</li><li><strong>Proposed/active period:</strong> 1911–early 1932.</li><li><strong>Limitation:</strong> Nuclear electron confinement conflicts with quantum scales; spin and statistics fail.</li><li><strong>Outcome:</strong> Replaced by proton–neutron nuclei.</li></ul>
+<h3 id="r-neutral-proton-electron-bound-neutron"><code>R-NEUTRAL-PROTON-ELECTRON-BOUND-NEUTRON</code><a class="anchor" href="#r-neutral-proton-electron-bound-neutron" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> A model of the neutron itself as a very tightly bound proton–electron composite rather than a new nucleon.</li><li><strong>Proposed/active period:</strong> 1920.</li><li><strong>Outcome:</strong> Spin, magnetic moment, confinement energy, and beta-decay theory reject it; neutron&#039;s quark compositeness is different.</li></ul>
+<h3 id="pathway-comparison-ledger">Pathway comparison ledger<a class="anchor" href="#pathway-comparison-ledger" aria-label="Link to this section">#</a></h3>
+<p><strong>Chronology rule:</strong> Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (February 1932). The proposed/active period is stored in each pathway record.</p>
+<div class="table-wrap"><table><thead><tr><th>Hypothesis</th><th>Quantitative repair/test</th><th>Failure</th><th>Retention</th></tr></thead><tbody><tr><td>Very energetic gamma ray</td><td>Use Compton scattering to transfer energy to recoil protons</td><td>Photon energy required by hydrogen conflicted with other target recoils and production energetics</td><td>Gamma radiation remains penetrating neutral background</td></tr><tr><td>Neutral proton–electron bound state</td><td>Bind charges tightly into a neutron</td><td>Confinement scale, magnetic moment, spin/statistics and beta-decay description fail</td><td>Beta decay still links neutron, proton, electron and antineutrino</td></tr><tr><td>Proton–electron nucleus</td><td>Add nuclear electrons to reconcile mass and charge</td><td>Nuclear spin/statistics and uncertainty-energy estimates conflict</td><td>Proton count still sets charge</td></tr><tr><td><strong>Discovery/current: neutron and proton–neutron nucleus</strong></td><td>Treat a proton-mass neutral projectile as a new nucleon</td><td>Multi-target recoil, isotopes, nuclear spin and reactions</td><td>Retained, with neutron described by QCD</td></tr></tbody></table></div>
+<p>Chadwick&#039;s argument compared recoil kinematics across materials rather than relying only on paraffin. The gamma hypothesis was reasonable because neutral penetrating nuclear radiation was known. Its rejection came when one photon-energy choice could not coherently explain the ensemble of recoil and reaction data. The neutron itself later proved composite, but that revision does not restore either discarded hypothesis.</p>
+<h2 id="knowledge-assets">Knowledge assets<a class="anchor" href="#knowledge-assets" aria-label="Link to this section">#</a></h2>
+<ul><li><code>A-ALPHA-SOURCE</code>: initiates beryllium reaction.</li><li><code>A-PARAFFIN</code>: hydrogen-rich recoil target.</li><li><code>A-COLLISION-KINEMATICS</code>: infers projectile mass.</li><li><code>A-IONIZATION-CHAMBER</code>: measures recoil energy.</li></ul>
+<h2 id="discovery-node-and-inference">Discovery node and inference<a class="anchor" href="#discovery-node-and-inference" aria-label="Link to this section">#</a></h2>
+<p>Production reaction:</p>
+<div class="math-display">\[{}^9\mathrm{Be}+\alpha
+\rightarrow{}^{12}\mathrm{C}+n.\]</div>
+<p>For elastic head-on collision of projectile mass \(m\) and stationary target \(M\), the maximum transferred energy fraction is:</p>
+<div class="math-display">\[\frac{E_{R,\max}}{E}
+=\frac{4mM}{(m+M)^2}.\]</div>
+<p>Large proton recoil is natural when \(m\approx M\), pointing to neutron mass near proton mass. The free neutron later decays:</p>
+<div class="math-display">\[n\rightarrow p+e^-+\bar\nu_e,\]</div>
+<p>with mean lifetime of roughly fifteen minutes.</p>
+<h2 id="validation-and-explanatory-gains">Validation and explanatory gains<a class="anchor" href="#validation-and-explanatory-gains" aria-label="Link to this section">#</a></h2>
+<ul><li>Recoil energies across different target nuclei fit a neutral massive particle.</li><li>Proton–neutron counting explains isotopes without nuclear electrons.</li><li>Neutrons penetrate Coulomb barriers and induce nuclear reactions.</li><li>Nuclear spin and statistics become consistent.</li></ul>
+<h2 id="limitations-and-retained-status">Limitations and retained status<a class="anchor" href="#limitations-and-retained-status" aria-label="Link to this section">#</a></h2>
+<p>The neutron is not elementary; deep-inelastic scattering and QCD reveal quark–gluon structure. Bound neutrons can be stable, while free neutrons beta decay. A neutron has zero net charge but nonzero magnetic moment and internal charge distribution.</p>
+<h2 id="discovery-patterns">Discovery patterns<a class="anchor" href="#discovery-patterns" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>ID</th><th>Instantiation</th></tr></thead><tbody><tr><td><code>P-01</code></td><td>Recoil kinematics and nuclear composition unified</td></tr><tr><td><code>P-02</code></td><td>Collision equations infer invisible projectile mass</td></tr><tr><td><code>P-03</code></td><td>“Penetrating gamma ray” reframed as neutral matter</td></tr><tr><td><code>P-04</code></td><td>Massive uncharged particle accepted</td></tr><tr><td><code>P-05</code></td><td>Proton nucleus retained with new partner</td></tr><tr><td><code>P-06</code></td><td>Multiple target recoil energies discriminate hypotheses</td></tr></tbody></table></div>
+<h2 id="edge-list">Edge list<a class="anchor" href="#edge-list" aria-label="Link to this section">#</a></h2>
+<pre><code class="language-text">A-ALPHA-SOURCE --produces--&gt; BERYLLIUM-RADIATION
+R-HIGH-ENERGY-GAMMA --attempts-to-explain--&gt; BERYLLIUM-RADIATION
+A-PARAFFIN --reveals--&gt; PROTON-RECOIL
+A-COLLISION-KINEMATICS --infers--&gt; NEUTRON-MASS
+D-CHADWICK-NEUTRON-1932 --supersedes--&gt; R-HIGH-ENERGY-GAMMA
+D-CHADWICK-NEUTRON-1932 --supersedes--&gt; R-PROTON-ELECTRON-NUCLEUS
+D-QCD --reframes--&gt; NEUTRON-AS-COMPOSITE
+D-CHADWICK-NEUTRON-1932 --instantiates--&gt; P-02</code></pre>
+<h2 id="extended-historical-investigation">Extended historical investigation<a class="anchor" href="#extended-historical-investigation" aria-label="Link to this section">#</a></h2>
+<h3 id="why-the-gamma-ray-interpretation-strained">Why the gamma-ray interpretation strained<a class="anchor" href="#why-the-gamma-ray-interpretation-strained" aria-label="Link to this section">#</a></h3>
+<p>Neutral penetrating radiation from alpha-bombarded beryllium could eject protons from paraffin. If interpreted as photons scattering from stationary protons, energy–momentum conservation required very energetic gamma rays. Recoil behavior across hydrogen and heavier nuclei did not fit a single plausible photon energy comfortably.</p>
+<p>For a massive neutral projectile of mass \(m\), maximum elastic recoil fraction against target \(M\) is:</p>
+<div class="math-display">\[\frac{E_R^{\max}}{E}
+=\frac{4mM}{(m+M)^2}.\]</div>
+<p>Hydrogen recoil is most efficient when:</p>
+<div class="math-display">\[m\approx M=m_p.\]</div>
+<p>Chadwick compared recoil data and inferred a neutral particle with mass close to the proton. This was not a direct image; it was inverse kinematics across multiple targets.</p>
+<h3 id="reaction-energetics">Reaction energetics<a class="anchor" href="#reaction-energetics" aria-label="Link to this section">#</a></h3>
+<p>The production reaction:</p>
+<div class="math-display">\[{}^9_4\mathrm{Be}
++{}^4_2\mathrm{He}
+\rightarrow
+{}^{12}_6\mathrm C
++{}^1_0n\]</div>
+<p>obeys:</p>
+<div class="math-display">\[Q
+=\left(
+m_{\mathrm{initial}}-m_{\mathrm{final}}
+\right)c^2.\]</div>
+<p>Measured kinetic energies and conservation constrain neutron mass. Because the neutron is uncharged, it penetrates Coulomb barriers more readily than charged projectiles, making it a powerful nuclear probe.</p>
+<h3 id="nuclear-bookkeeping-transformed">Nuclear bookkeeping transformed<a class="anchor" href="#nuclear-bookkeeping-transformed" aria-label="Link to this section">#</a></h3>
+<p>Before the neutron, nuclei were often modeled with protons plus internal electrons to reduce charge. This created confinement and spin-statistics problems. With neutrons:</p>
+<div class="math-display">\[Z=N_p,
+\qquad
+A=N_p+N_n.\]</div>
+<p>Isotopes become:</p>
+<div class="math-display">\[\text{same }Z,\quad\text{different }N_n.\]</div>
+<p>Beta electrons are created in weak decay rather than stored as nuclear constituents.</p>
+<h3 id="bound-and-free-neutron">Bound and free neutron<a class="anchor" href="#bound-and-free-neutron" aria-label="Link to this section">#</a></h3>
+<p>A free neutron decays:</p>
+<div class="math-display">\[n\rightarrow p+e^-+\bar\nu_e.\]</div>
+<p>The available energy is:</p>
+<div class="math-display">\[Q
+=\left(
+m_n-m_p-m_e
+\right)c^2
+\approx0.782\ \mathrm{MeV}.\]</div>
+<p>Inside a nucleus, energy conservation can forbid or permit neutron beta decay depending on binding energies. Thus free instability does not mean every bound neutron decays.</p>
+<h3 id="magnetic-and-internal-structure">Magnetic and internal structure<a class="anchor" href="#magnetic-and-internal-structure" aria-label="Link to this section">#</a></h3>
+<p>Despite zero net charge, the neutron has magnetic moment:</p>
+<div class="math-display">\[\mu_n\approx-1.913\,\mu_N.\]</div>
+<p>It also has a nontrivial electric form factor and internal charge distribution. In the quark model:</p>
+<div class="math-display">\[n=udd.\]</div>
+<p>The charges sum:</p>
+<div class="math-display">\[\frac23e-\frac13e-\frac13e=0.\]</div>
+<p>But a neutron is not only three static valence quarks; gluons and sea quark–antiquark pairs contribute to momentum, spin, and mass.</p>
+<h3 id="neutron-scattering-and-wavelength">Neutron scattering and wavelength<a class="anchor" href="#neutron-scattering-and-wavelength" aria-label="Link to this section">#</a></h3>
+<p>Thermal neutrons have de Broglie wavelength:</p>
+<div class="math-display">\[\lambda=\frac{h}{p}
+=\frac{h}{\sqrt{2m_nE}}.\]</div>
+<p>Wavelengths comparable to atomic spacing make neutron diffraction a structural probe. Because neutrons interact with nuclei and magnetic moments rather than electron density alone, neutron scattering complements X-rays. Isotope sensitivity can differ strongly even for chemically similar samples.</p>
+<h3 id="evidence-and-downstream-inference-ledger">Evidence and downstream inference ledger<a class="anchor" href="#evidence-and-downstream-inference-ledger" aria-label="Link to this section">#</a></h3>
+<div class="table-wrap"><table><thead><tr><th>Node</th><th>What it establishes</th></tr></thead><tbody><tr><td>Proton recoil</td><td>Massive neutral projectile</td></tr><tr><td>Multi-target kinematics</td><td>Mass near proton</td></tr><tr><td>Nuclear isotope systematics</td><td>Proton–neutron composition</td></tr><tr><td>Beta decay</td><td>Weak transformation and neutrino energy sharing</td></tr><tr><td>Magnetic moment</td><td>Internal charged constituents/dynamics</td></tr><tr><td>Deep-inelastic scattering</td><td>Quark and gluon substructure</td></tr><tr><td>Neutron diffraction</td><td>Wave behavior and material structure</td></tr></tbody></table></div>
+<h3 id="measurement-tension">Measurement tension<a class="anchor" href="#measurement-tension" aria-label="Link to this section">#</a></h3>
+<p>Modern free-neutron lifetime measurements using trapped “bottle” neutrons and decay-beam counting have shown a persistent difference at the several-second level. This does not challenge neutron existence; it signals unresolved experimental systematics or possible new-physics interest. The case is valuable for representing a discovery as secure while a parameter remains actively disputed.</p>
+<h2 id="ai-oriented-inference-notes">AI-oriented inference notes<a class="anchor" href="#ai-oriented-inference-notes" aria-label="Link to this section">#</a></h2>
+<ul><li>Represent neutron discovery as kinematic inference, not direct visualization.</li><li>Do not infer “uncharged means structureless.”</li><li>Separate free lifetime from stability inside nuclei.</li><li>Store current lifetime discrepancy as unresolved parameter measurement, not theory overthrow.</li></ul>
+<h2 id="additional-quantitative-and-epistemic-notes">Additional quantitative and epistemic notes<a class="anchor" href="#additional-quantitative-and-epistemic-notes" aria-label="Link to this section">#</a></h2>
+<p>Bothe and Becker observed unusually penetrating neutral radiation from beryllium bombarded by alpha particles. Joliot-Curie experiments showed that it ejected energetic protons from hydrogen-rich materials, initially interpreted through very energetic gamma rays. Chadwick compared recoil energies for different nuclei and showed that Compton kinematics would demand implausible photon energies; elastic collision with a neutral particle of mass near the proton fit naturally.</p>
+<p>For a head-on elastic collision, the maximum transferred fraction is</p>
+<div class="math-display">\[\frac{K_{\rm recoil}}{K_n}
+=\frac{4m_nM}{(m_n+M)^2},\]</div>
+<p>which is largest for hydrogen \(M\approx m_n\). This explains why paraffin was an effective recoil-proton converter. The neutron resolved the mismatch between nuclear charge and mass number without packing nuclei with nuclear electrons. It opened isotope, moderation, activation, fission, and nuclear-force research. Free neutrons beta-decay; neutrons bound in stable nuclei need not, showing that environment and energy balance matter.</p>
+<h2 id="sources">Sources<a class="anchor" href="#sources" aria-label="Link to this section">#</a></h2>
+<ul><li>Nobel Prize, <a href="https://www.nobelprize.org/prizes/physics/1935/chadwick/facts/" target="_blank" rel="noopener noreferrer">James Chadwick facts</a>.</li><li>Chadwick, <a href="https://royalsocietypublishing.org/doi/10.1098/rspa.1932.0112" target="_blank" rel="noopener noreferrer">“Possible Existence of a Neutron”</a>.</li><li>Jefferson Lab, <a href="https://www.jlab.org/news/releases/scientists-probe-quark-structure-neutron" target="_blank" rel="noopener noreferrer">“The Quark Structure of the Neutron”</a>.</li></ul><footer class="footer">Reader-friendly rendering of <code>29_neutron.md</code>. The Markdown source remains the canonical corpus record.</footer></article></main>
+</body>
+</html>

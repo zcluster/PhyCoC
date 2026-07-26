@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { chronology } from "./fundamental_physics_discoveries/chronology_data.mjs";
+import { buildCasePages } from "./build_case_pages.mjs";
 
 const historyDir = path.dirname(fileURLToPath(import.meta.url));
 const corpusDir = path.join(historyDir, "fundamental_physics_discoveries");
@@ -36,6 +37,8 @@ const files = fs
   .readdirSync(corpusDir)
   .filter((name) => /^\d{2}_.+\.md$/.test(name))
   .sort((left, right) => chronology[left].discovery[1] - chronology[right].discovery[1]);
+
+buildCasePages({ historyDir, corpusDir, files });
 
 function stripMarkdown(value = "") {
   return value
@@ -226,6 +229,7 @@ const cases = files.map((file, index) => {
     categoryOverrides.get(file) || categoryFor(title, meta.Domain || meta["Primary domain"] || "");
   return {
     file: `fundamental_physics_discoveries/${file}`,
+    htmlFile: `case_pages/${file.replace(/\.md$/, ".html")}`,
     id: centralNode,
     title,
     date: meta["Focal discovery date"] || chronology[file].discovery[0],
@@ -427,7 +431,8 @@ select { padding: 9px 30px 9px 10px; }
 .detail-section h3 { font-size: 12px; margin: 0 0 7px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { border: 1px solid var(--border); border-radius: 999px; padding: 4px 7px; font-size: 11px; }
-.source-link { display: inline-block; text-decoration: none; color: var(--accent); font-size: 13px; margin-top: 7px; }
+.source-actions { display: grid; gap: 3px; margin-top: 7px; }
+.source-link { display: inline-block; text-decoration: none; color: var(--accent); font-size: 13px; padding: 3px 0; }
 .empty { color: var(--muted); }
 .stats { font-variant-numeric: tabular-nums; }
 .mobile-details-button { display: none; }
@@ -1025,7 +1030,10 @@ select { padding: 9px 30px 9px 10px; }
           '<span class="chip">' + owner.sourceCount + ' sources</span>' +
         '</div></div>' +
         (owner.status ? '<div class="detail-section"><h3>Epistemic status</h3><p>' + escapeHtml(owner.status) + '</p></div>' : '') +
-        '<a class="source-link" href="' + encodeURI(owner.file) + '" target="_blank" rel="noopener">Open source Markdown ↗</a>';
+        '<div class="source-actions">' +
+          '<a class="source-link" href="' + encodeURI(owner.file) + '" target="_blank" rel="noopener">Open source Markdown ↗</a>' +
+          '<a class="source-link" href="' + encodeURI(owner.htmlFile) + '" target="_blank" rel="noopener">Open source HTML ↗</a>' +
+        '</div>';
     } else {
       const typeLabel = node.type === "timeslice" ? "Time slice" : node.type[0].toUpperCase() + node.type.slice(1);
       details.innerHTML =
@@ -1034,7 +1042,10 @@ select { padding: 9px 30px 9px 10px; }
         '<h2>' + escapeHtml(node.label) + '</h2>' +
         (node.meta ? '<div class="meta">' + escapeHtml(node.meta) + '</div>' : '') +
         '<p>' + escapeHtml(node.detail || "No additional description extracted.") + '</p>' +
-        '<a class="source-link" href="' + encodeURI(owner.file) + '" target="_blank" rel="noopener">Open source Markdown ↗</a>';
+        '<div class="source-actions">' +
+          '<a class="source-link" href="' + encodeURI(owner.file) + '" target="_blank" rel="noopener">Open source Markdown ↗</a>' +
+          '<a class="source-link" href="' + encodeURI(owner.htmlFile) + '" target="_blank" rel="noopener">Open source HTML ↗</a>' +
+        '</div>';
     }
     details.querySelector(".details-close").addEventListener("click", () => {
       details.classList.remove("open");

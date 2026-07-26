@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Hamiltonian Mechanics, Phase Space, and Canonical Structure: Historical Knowledge Graph · PhyHist</title>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},svg:{fontCache:"global"},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+<style>
+:root{color-scheme:light;--bg:#f5f7fb;--paper:#fff;--text:#202938;--muted:#657286;--line:#dce2ea;--accent:#4f46a5;--soft:#f0efff;--code:#f4f6f8;--shadow:0 18px 55px rgba(31,41,55,.09)}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#10141b;--paper:#191f29;--text:#e9edf5;--muted:#aab4c3;--line:#354050;--accent:#b4a4ff;--soft:#2a2744;--code:#111720;--shadow:0 18px 55px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.72}.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper),transparent 7%);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.top-inner{max-width:1280px;margin:auto;padding:11px 22px;display:flex;align-items:center;gap:12px}.top a,.top button{border:1px solid var(--line);border-radius:9px;background:var(--paper);color:var(--text);text-decoration:none;padding:7px 10px;font:inherit;font-size:13px;cursor:pointer}.top .source{margin-left:auto;color:var(--accent)}.layout{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:250px minmax(0,820px);gap:42px;padding:34px 22px 80px;justify-content:center}.toc{position:sticky;top:72px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;border-right:1px solid var(--line);padding-right:22px}.toc-title{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0 0 10px}.toc a{display:block;color:var(--muted);text-decoration:none;font-size:13px;line-height:1.35;padding:5px 8px;border-radius:7px}.toc a:hover{color:var(--accent);background:var(--soft)}.toc-l3{padding-left:20px!important}.toc-l4{padding-left:32px!important}.paper{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:clamp(24px,5vw,62px);min-width:0}.paper h1{font-size:clamp(29px,5vw,46px);line-height:1.12;letter-spacing:-.035em;margin:0 0 34px}.paper h2{font-size:27px;line-height:1.25;margin:54px 0 19px;padding-top:8px;border-top:1px solid var(--line)}.paper h3{font-size:20px;line-height:1.35;margin:35px 0 12px}.paper h4{font-size:16px;margin:27px 0 9px}.anchor{opacity:0;margin-left:8px;color:var(--muted);font-weight:400;text-decoration:none}.paper h2:hover .anchor,.paper h3:hover .anchor,.paper h4:hover .anchor{opacity:1}.paper p{margin:13px 0}.paper a{color:var(--accent);text-underline-offset:2px}.paper ul,.paper ol{padding-left:25px}.paper li{margin:6px 0}.paper code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.9em;background:var(--code);border:1px solid var(--line);border-radius:5px;padding:1px 5px}.paper pre{background:var(--code);border:1px solid var(--line);border-radius:11px;padding:16px;overflow:auto;line-height:1.5}.paper pre code{border:0;padding:0}.table-wrap{overflow:auto;margin:22px 0;border:1px solid var(--line);border-radius:11px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}th{background:var(--soft);font-weight:650}tr:last-child td{border-bottom:0}th:last-child,td:last-child{border-right:0}.math-display{overflow-x:auto;overflow-y:hidden;margin:24px 0;padding:13px 8px;text-align:center}.MathJax{outline:0}blockquote{margin:20px 0;padding:4px 18px;border-left:4px solid var(--accent);background:var(--soft);color:var(--muted)}hr{border:0;border-top:1px solid var(--line);margin:34px 0}.footer{color:var(--muted);font-size:12px;margin-top:48px;padding-top:18px;border-top:1px solid var(--line)}.skip{position:absolute;left:-9999px}.skip:focus{left:10px;top:10px;z-index:20;background:var(--paper);padding:8px}
+@media(max-width:900px){.layout{display:block;padding-top:20px}.toc{position:static;max-height:none;border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:18px;columns:2}.toc-title{column-span:all}.paper{padding:26px 20px}.paper h2{font-size:23px}.top-inner{padding:9px 12px}}@media(max-width:560px){.toc{columns:1}.top .source{font-size:0}.top .source:after{content:"Markdown";font-size:13px}.paper{border-radius:12px}.layout{padding-left:10px;padding-right:10px}}
+@media print{.top,.toc{display:none}.layout{display:block;padding:0}.paper{border:0;box-shadow:none;padding:0}.anchor{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#article">Skip to article</a>
+<header class="top"><div class="top-inner"><a href="../index.html">← Knowledge graph</a><button type="button" onclick="window.print()">Print / PDF</button><a class="source" href="../fundamental_physics_discoveries/57_hamiltonian_mechanics.md">Open source Markdown ↗</a></div></header>
+<main class="layout"><nav class="toc" aria-label="Table of contents"><div class="toc-title">On this page</div><a class="toc-l2" href="#graph-metadata">Graph metadata</a>
+<a class="toc-l2" href="#central-claim">Central claim</a>
+<a class="toc-l2" href="#time-slices">Time slices</a>
+<a class="toc-l2" href="#alternative-incomplete-or-superseded-pathways">Alternative, incomplete, or superseded pathways</a>
+<a class="toc-l3" href="#r-direct-trajectory-integration">R-DIRECT-TRAJECTORY-INTEGRATION</a>
+<a class="toc-l3" href="#r-configuration-velocity-only">R-CONFIGURATION-VELOCITY-ONLY</a>
+<a class="toc-l3" href="#r-optics-dynamics-separation">R-OPTICS-DYNAMICS-SEPARATION</a>
+<a class="toc-l3" href="#pathway-comparison-ledger">Pathway comparison ledger</a>
+<a class="toc-l2" href="#knowledge-assets">Knowledge assets</a>
+<a class="toc-l2" href="#discovery-node-and-derivation">Discovery node and derivation</a>
+<a class="toc-l3" href="#self-contained-derivation-spine">Self-contained derivation spine</a>
+<a class="toc-l2" href="#validation-and-explanatory-gains">Validation and explanatory gains</a>
+<a class="toc-l2" href="#limitations-and-retained-status">Limitations and retained status</a>
+<a class="toc-l2" href="#discovery-patterns">Discovery patterns</a>
+<a class="toc-l2" href="#edge-list">Edge list</a>
+<a class="toc-l2" href="#extended-historical-investigation">Extended historical investigation</a>
+<a class="toc-l2" href="#ai-oriented-inference-notes">AI-oriented inference notes</a>
+<a class="toc-l2" href="#sources">Sources</a></nav><article class="paper" id="article"><h1 id="hamiltonian-mechanics-phase-space-and-canonical-structure-historical-knowledge-graph">Hamiltonian Mechanics, Phase Space, and Canonical Structure: Historical Knowledge Graph<a class="anchor" href="#hamiltonian-mechanics-phase-space-and-canonical-structure-historical-knowledge-graph" aria-label="Link to this section">#</a></h1>
+<h2 id="graph-metadata">Graph metadata<a class="anchor" href="#graph-metadata" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Graph ID</td><td><code>KG-HAMILTONIAN-MECHANICS-57</code></td></tr><tr><td>Central node</td><td><code>D-HAMILTONIAN-MECHANICS-1834</code></td></tr><tr><td>Focal discovery date</td><td>1834–1835 Hamiltonian dynamics synthesis</td></tr><tr><td>Main contributors</td><td>William Rowan Hamilton; with subsequent development by Jacobi and later canonical and symplectic formulations</td></tr><tr><td>Domain</td><td>Hamiltonian mechanics, phase space, canonical transformations, Hamilton–Jacobi theory, and dynamical generators</td></tr><tr><td>Epistemic status</td><td>An equivalent regular classical formulation with foundational extensions to statistical mechanics and quantization; constrained and dissipative systems require additional structure</td></tr></tbody></table></div>
+<h2 id="central-claim">Central claim<a class="anchor" href="#central-claim" aria-label="Link to this section">#</a></h2>
+<p>Hamilton reorganized regular Lagrangian dynamics as first-order flow in coordinates and conjugate momenta and linked dynamics to his earlier characteristic-function methods in optics. With</p>
+<div class="math-display">\[p_i=\frac{\partial L}{\partial\dot q_i},
+\qquad
+H(q,p,t)=\sum_i p_i\dot q_i-L,\]</div>
+<p>the equations of motion become</p>
+<div class="math-display">\[\dot q_i=\frac{\partial H}{\partial p_i},
+\qquad
+\dot p_i=-\frac{\partial H}{\partial q_i}.\]</div>
+<p>The transformation is more than renaming energy: it places \(q_i\) and \(p_i\) on equal canonical footing, represents evolution as a phase-space flow, and makes generators, Poisson brackets and canonical transformations central. Modern symplectic language is a later mathematical reconstruction, not Hamilton&#039;s own terminology.</p>
+<h2 id="time-slices">Time slices<a class="anchor" href="#time-slices" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Node</th><th>Period</th><th>Problem</th><th>Transition</th></tr></thead><tbody><tr><td><code>TS-LAGRANGIAN-FOUNDATION</code></td><td>1788 onward</td><td>Generalized-coordinate equations organize constrained motion</td><td>Configuration–velocity dynamics becomes systematic</td></tr><tr><td><code>TS-HAMILTON-OPTICS</code></td><td>1827–1833</td><td>Optical systems described by characteristic functions</td><td>Rays generated through derivatives of one scalar function</td></tr><tr><td><code>TS-HAMILTON-DYNAMICS</code></td><td>1834–1835</td><td>Optical method transferred to mechanics</td><td>Canonical first-order equations and principal function emerge</td></tr><tr><td><code>TS-JACOBI</code></td><td>1836–1837</td><td>Hamilton&#039;s partial-differential method systematized</td><td>Hamilton–Jacobi theory connects dynamics and canonical transformations</td></tr><tr><td><code>TS-STATISTICAL-MECHANICS</code></td><td>late nineteenth century</td><td>Ensembles occupy spaces of canonical states</td><td>Phase-space volume and Hamiltonian flow organize probability</td></tr><tr><td><code>TS-QUANTIZATION</code></td><td>1920s onward</td><td>Classical canonical variables become noncommuting observables</td><td>Poisson-bracket structure guides canonical quantization</td></tr></tbody></table></div>
+<h2 id="alternative-incomplete-or-superseded-pathways">Alternative, incomplete, or superseded pathways<a class="anchor" href="#alternative-incomplete-or-superseded-pathways" aria-label="Link to this section">#</a></h2>
+<h3 id="r-direct-trajectory-integration"><code>R-DIRECT-TRAJECTORY-INTEGRATION</code><a class="anchor" href="#r-direct-trajectory-integration" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> A strategy that treats solving mechanics as direct integration of Newtonian or Lagrangian ordinary differential equations for each trajectory, without seeking a generating function whose derivatives encode whole families of solutions.</li><li><strong>Proposed/active period:</strong> seventeenth century–1833.</li><li><strong>Core assumption:</strong> Individual trajectories are the primary and sufficient mathematical objects.</li><li><strong>Why reasonable at the time:</strong> Initial-value equations directly predict positions and velocities and had solved major celestial and terrestrial problems.</li><li><strong>Successful scope:</strong> Integrable few-body systems, perturbative or numerical trajectories and practical prediction.</li><li><strong>Anomaly or limitation:</strong> It does not expose transformations between complete families of trajectories or unify optics and dynamics through one partial differential structure.</li><li><strong>Repair program:</strong> Search for characteristic functions, complete integrals and transformations that encode many solutions at once.</li><li><strong>Discriminator:</strong> Derivatives of Hamilton&#039;s principal function generate canonical momenta and evolving trajectories from a single solution of the Hamilton–Jacobi equation.</li><li><strong>Outcome:</strong> Retained as numerical and direct solution practice; no longer the only architecture of mechanics.</li><li><strong>Retained structure:</strong> Initial-value prediction and all correctly integrated trajectories.</li></ul>
+<h3 id="r-configuration-velocity-only"><code>R-CONFIGURATION-VELOCITY-ONLY</code><a class="anchor" href="#r-configuration-velocity-only" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> The complete Lagrangian description \(L(q,\dot q,t)\) treated as the final natural state representation, with momenta used only as derived bookkeeping rather than independent canonical coordinates.</li><li><strong>Proposed/active period:</strong> 1788–1833.</li><li><strong>Core assumption:</strong> Configuration and velocity space is sufficient for every structural question in mechanics.</li><li><strong>Why reasonable at the time:</strong> Euler–Lagrange equations already handled generalized coordinates and constraints powerfully.</li><li><strong>Successful scope:</strong> Regular classical dynamics, variational derivations and constrained motion.</li><li><strong>Anomaly or limitation:</strong> Canonical transformations, phase-space invariants, ensemble flow and later quantization are less transparent.</li><li><strong>Repair program:</strong> Legendre-transform velocities into momenta and seek symmetric first-order evolution equations.</li><li><strong>Discriminator:</strong> Hamilton equations reproduce Lagrange trajectories while revealing canonical generators and phase-space structure.</li><li><strong>Outcome:</strong> Retained as an equivalent formulation; bounded as the sole preferred representation.</li><li><strong>Retained structure:</strong> Lagrangian, action, generalized coordinates and Euler–Lagrange equations.</li></ul>
+<h3 id="r-optics-dynamics-separation"><code>R-OPTICS-DYNAMICS-SEPARATION</code><a class="anchor" href="#r-optics-dynamics-separation" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> The view that geometrical optics and particle mechanics are mathematically analogous only in isolated examples, with optical characteristic functions and mechanical trajectories belonging to separate calculational theories.</li><li><strong>Proposed/active period:</strong> seventeenth century–1833.</li><li><strong>Core assumption:</strong> No single generating-function method organizes both ray systems and dynamical systems.</li><li><strong>Why reasonable at the time:</strong> Light and material bodies had different ontologies, equations and experimental domains.</li><li><strong>Successful scope:</strong> Independent development of geometrical optics and analytical mechanics.</li><li><strong>Anomaly or limitation:</strong> Fermat-type optical variation and mechanical action displayed increasingly parallel structures.</li><li><strong>Repair program:</strong> Hamilton developed characteristic functions for optical systems and then transferred the method to dynamics.</li><li><strong>Discriminator:</strong> The Hamilton–Jacobi equation and eikonal equation share a generating-function architecture, with rays or trajectories normal to action surfaces.</li><li><strong>Outcome:</strong> Superseded as a mathematical separation, while the physical domains remain distinct.</li><li><strong>Retained structure:</strong> Domain-specific optical and mechanical observables.</li></ul>
+<h3 id="pathway-comparison-ledger">Pathway comparison ledger<a class="anchor" href="#pathway-comparison-ledger" aria-label="Link to this section">#</a></h3>
+<p><strong>Chronology rule:</strong> Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (1834–1835 Hamiltonian dynamics synthesis). The proposed/active period is stored in each pathway record.</p>
+<div class="table-wrap"><table><thead><tr><th>Pathway</th><th>Repair strategy</th><th>Limitation</th><th>Retained content</th></tr></thead><tbody><tr><td>Direct trajectory integration</td><td>Integrate each orbit separately</td><td>Hides generating functions and families of solutions</td><td>Initial-value prediction</td></tr><tr><td>Configuration–velocity only</td><td>Use \(L(q,\dot q,t)\) as final representation</td><td>Canonical and phase-space structure remains implicit</td><td>Full Lagrangian mechanics</td></tr><tr><td>Optics–dynamics separation</td><td>Develop two independent calculi</td><td>Misses common characteristic-function form</td><td>Domain-specific laws</td></tr><tr><td><strong>Discovery/current: Hamiltonian canonical mechanics</strong></td><td>Legendre transform to phase space and generator flow</td><td>Regularity and constraint qualifications required</td><td>Canonical foundation of modern dynamics</td></tr></tbody></table></div>
+<h2 id="knowledge-assets">Knowledge assets<a class="anchor" href="#knowledge-assets" aria-label="Link to this section">#</a></h2>
+<ul><li><code>A-LAGRANGIAN-MECHANICS</code>: generalized-coordinate dynamics and canonical momenta.</li><li><code>A-LEGENDRE-TRANSFORM</code>: exchange of velocity variables for conjugate momenta.</li><li><code>A-HAMILTON-OPTICS</code>: characteristic functions generating ray systems.</li><li><code>A-VARIATIONAL-ACTION</code>: path functionals and endpoint derivatives.</li><li><code>A-PARTIAL-DIFFERENTIAL-EQUATIONS</code>: functions whose complete integrals encode solution families.</li><li><code>A-CONSERVATION-ENERGY</code>: a distinguished scalar that often, but not always, coincides with \(H\).</li></ul>
+<h2 id="discovery-node-and-derivation">Discovery node and derivation<a class="anchor" href="#discovery-node-and-derivation" aria-label="Link to this section">#</a></h2>
+<p>For a regular Lagrangian, define</p>
+<div class="math-display">\[p_i=\frac{\partial L}{\partial\dot q_i}.\]</div>
+<p>Regularity means the Hessian</p>
+<div class="math-display">\[W_{ij}=\frac{\partial^2L}{\partial\dot q_i\partial\dot q_j}\]</div>
+<p>is invertible, so \(\dot q_i\) can be written in terms of \((q,p,t)\). The Legendre transform is</p>
+<div class="math-display">\[H(q,p,t)=\sum_i p_i\dot q_i-L(q,\dot q,t).\]</div>
+<p>Differentiating,</p>
+<div class="math-display">\[dH
+=\sum_i\dot q_i\,dp_i
+-\sum_i\dot p_i\,dq_i
+-\frac{\partial L}{\partial t}\,dt,\]</div>
+<p>where the Euler–Lagrange relation \(\dot p_i=\partial L/\partial q_i\) has been used. Comparing coefficients yields</p>
+<div class="math-display">\[\dot q_i=\frac{\partial H}{\partial p_i},
+\qquad
+\dot p_i=-\frac{\partial H}{\partial q_i},
+\qquad
+\frac{\partial H}{\partial t}=-\frac{\partial L}{\partial t}.\]</div>
+<p>For any phase-space function \(f(q,p,t)\), define the Poisson bracket</p>
+<div class="math-display">\[\{f,g\}
+=\sum_i\left(
+\frac{\partial f}{\partial q_i}\frac{\partial g}{\partial p_i}
+-\frac{\partial f}{\partial p_i}\frac{\partial g}{\partial q_i}
+\right).\]</div>
+<p>Then evolution is generated by \(H\):</p>
+<div class="math-display">\[\frac{df}{dt}=\{f,H\}+\frac{\partial f}{\partial t}.\]</div>
+<p>Hamilton&#039;s principal function \(S(q,t)\) satisfies the modern Hamilton–Jacobi equation</p>
+<div class="math-display">\[H\left(q,\frac{\partial S}{\partial q},t\right)
++\frac{\partial S}{\partial t}=0,
+\qquad
+p_i=\frac{\partial S}{\partial q_i}.\]</div>
+<p>The equation turns trajectory finding into a partial differential problem. In semiclassical quantum mechanics, the phase \(e^{iS/\hbar}\) exposes a later structural bridge, but Hamilton did not possess the quantum interpretation.</p>
+<h3 id="self-contained-derivation-spine">Self-contained derivation spine<a class="anchor" href="#self-contained-derivation-spine" aria-label="Link to this section">#</a></h3>
+<p>Begin with the differential of the Lagrangian,</p>
+<div class="math-display">\[dL
+=\sum_i\frac{\partial L}{\partial q_i}dq_i
++\sum_i p_i\,d\dot q_i
++\frac{\partial L}{\partial t}dt.\]</div>
+<p>For \(H=\sum_i p_i\dot q_i-L\),</p>
+<div class="math-display">\[dH
+=\sum_i\dot q_i\,dp_i
++\sum_i p_i\,d\dot q_i-dL.\]</div>
+<p>The \(p_i\,d\dot q_i\) terms cancel. Along an Euler–Lagrange trajectory, \(\partial L/\partial q_i=\dot p_i\), giving</p>
+<div class="math-display">\[dH
+=\sum_i\dot q_i\,dp_i
+-\sum_i\dot p_i\,dq_i
+-\frac{\partial L}{\partial t}dt.\]</div>
+<p>Because \(H\) is now regarded as \(H(q,p,t)\), its ordinary differential is</p>
+<div class="math-display">\[dH
+=\sum_i\frac{\partial H}{\partial q_i}dq_i
++\sum_i\frac{\partial H}{\partial p_i}dp_i
++\frac{\partial H}{\partial t}dt.\]</div>
+<p>Matching independent coefficients yields Hamilton&#039;s equations and \(\partial H/\partial t=-\partial L/\partial t\). The regularity condition on the velocity Hessian is what permits the change of variables; without it, matching coefficients after eliminating \(\dot q\) is not valid.</p>
+<p>For a phase-space function \(f(q,p,t)\), the chain rule gives</p>
+<div class="math-display">\[\frac{df}{dt}
+=\sum_i\left(
+\frac{\partial f}{\partial q_i}\dot q_i
++\frac{\partial f}{\partial p_i}\dot p_i
+\right)+\frac{\partial f}{\partial t}.\]</div>
+<p>Substituting Hamilton&#039;s equations produces</p>
+<div class="math-display">\[\frac{df}{dt}=\{f,H\}+\frac{\partial f}{\partial t}.\]</div>
+<p>Thus \(H\) is a generator, not merely a renamed energy.</p>
+<p>The Hamilton–Jacobi equation follows from seeking a canonical transformation generated by \(S(q,P,t)\) for which the transformed Hamiltonian vanishes. With</p>
+<div class="math-display">\[p_i=\frac{\partial S}{\partial q_i},
+\qquad
+K=H+\frac{\partial S}{\partial t}=0,\]</div>
+<p>one obtains</p>
+<div class="math-display">\[H\left(q,\frac{\partial S}{\partial q},t\right)
++\frac{\partial S}{\partial t}=0.\]</div>
+<p>A complete integral containing \(n\) constants \(P_i\) generates a family of trajectories; derivatives \(\partial S/\partial P_i\) provide the conjugate constants.</p>
+<div class="table-wrap"><table><thead><tr><th>Logical role</th><th>Content</th></tr></thead><tbody><tr><td>Assumed</td><td>A regular Lagrangian and Euler–Lagrange dynamics</td></tr><tr><td>Defined</td><td>Canonical momentum, Legendre transform and Poisson bracket</td></tr><tr><td>Derived</td><td>Hamilton equations and generator form of time evolution</td></tr><tr><td>Additional construction</td><td>Hamilton–Jacobi equation from a canonical transformation with \(K=0\)</td></tr></tbody></table></div>
+<h2 id="validation-and-explanatory-gains">Validation and explanatory gains<a class="anchor" href="#validation-and-explanatory-gains" aria-label="Link to this section">#</a></h2>
+<p>Hamilton equations reproduce all regular Lagrangian trajectories. For \(H=p^2/(2m)+V(q)\), they give \(\dot q=p/m\) and \(\dot p=-\nabla V\), hence Newton&#039;s equation. Canonical transformations preserve the Hamiltonian form; Poisson brackets identify generators; phase-space flow supports Liouville&#039;s theorem and statistical ensembles; action–angle variables organize integrable systems and perturbation theory.</p>
+<p>The framework also supplied correspondence clues for quantum theory. Replacing Poisson brackets schematically by commutators,</p>
+<div class="math-display">\[\{f,g\}\longrightarrow\frac{1}{i\hbar}[\hat f,\hat g],\]</div>
+<p>helped construct canonical quantization. This is a structural correspondence, not a universally valid algorithm for all classical observables or constrained systems.</p>
+<h2 id="limitations-and-retained-status">Limitations and retained status<a class="anchor" href="#limitations-and-retained-status" aria-label="Link to this section">#</a></h2>
+<p>The elementary Legendre transform fails for singular Lagrangians, including gauge theories, because not all velocities determine independent momenta. Dirac–Bergmann constraint methods or reduced phase spaces are then required. The Hamiltonian need not equal physical energy when coordinates or Lagrangians depend explicitly on time, when velocity-dependent interactions occur, or in generally covariant systems where the canonical Hamiltonian can be constraint-dominated.</p>
+<p>Ordinary Hamiltonian flow is conservative and volume-preserving; friction and open-system dynamics require extensions. Canonical coordinates are not unique, and phase-space points can include gauge redundancy. Quantization is not obtained simply by replacing every Poisson bracket with a commutator without ordering, domain and anomaly issues. Hamiltonian mechanics remains foundational, not ultimate or universally simplest.</p>
+<h2 id="discovery-patterns">Discovery patterns<a class="anchor" href="#discovery-patterns" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>ID</th><th>Instantiation</th></tr></thead><tbody><tr><td><code>P-01</code></td><td>Optics, particle motion, statistical ensembles and later quantization share canonical generator structure</td></tr><tr><td><code>P-02</code></td><td>Energy-like regularities become a function that generates the full phase-space flow</td></tr><tr><td><code>P-03</code></td><td>“Which trajectory solves these equations?” becomes “Which generator or principal function encodes all trajectories?”</td></tr><tr><td><code>P-04</code></td><td>Phase space, conjugate momentum, Poisson brackets and canonical transformations become primary ontology-like structures</td></tr><tr><td><code>P-05</code></td><td>All regular Lagrangian and Newtonian trajectories are retained under the Legendre transformation</td></tr><tr><td><code>P-06</code></td><td>A proposed Hamiltonian generates explicit flows, invariants, perturbations and measurable trajectories</td></tr></tbody></table></div>
+<h2 id="edge-list">Edge list<a class="anchor" href="#edge-list" aria-label="Link to this section">#</a></h2>
+<pre><code class="language-text">A-LAGRANGIAN-MECHANICS --enables--&gt; D-HAMILTONIAN-MECHANICS-1834
+A-LEGENDRE-TRANSFORM --maps--&gt; CONFIGURATION-VELOCITY-SPACE
+A-LEGENDRE-TRANSFORM --produces--&gt; PHASE-SPACE
+A-HAMILTON-OPTICS --transfers-method-to--&gt; D-HAMILTONIAN-MECHANICS-1834
+HAMILTONIAN --generates--&gt; PHASE-SPACE-FLOW
+POISSON-BRACKET --expresses--&gt; CANONICAL-EVOLUTION
+HAMILTON-PRINCIPAL-FUNCTION --satisfies--&gt; HAMILTON-JACOBI-EQUATION
+D-HAMILTONIAN-MECHANICS-1834 --retains--&gt; D-LAGRANGIAN-MECHANICS-1788
+D-HAMILTONIAN-MECHANICS-1834 --prefigures--&gt; CANONICAL-QUANTIZATION
+D-HAMILTONIAN-MECHANICS-1834 --instantiates--&gt; P-03</code></pre>
+<h2 id="extended-historical-investigation">Extended historical investigation<a class="anchor" href="#extended-historical-investigation" aria-label="Link to this section">#</a></h2>
+<p>Hamiltonian mechanics is often described as “the same mechanics with \(H=T+V\).” That is inadequate. \(H=T+V\) holds for an important class of natural conservative systems, but the general definition is a Legendre transform. The discovery gain is the canonical architecture: states occupy a \(2n\)-dimensional space, evolution is a first-order flow, functions generate transformations, and one principal function can encode a family of solutions.</p>
+<p>Hamilton&#039;s route through optics is central. His characteristic-function optics did not merely inspire a metaphor; it supplied a mathematical method he explicitly adapted to dynamics. Later wave mechanics made the optics–mechanics analogy deeper, but one should not retroactively attribute Schrödinger&#039;s or Feynman&#039;s quantum interpretations to Hamilton.</p>
+<p>Worked example: for the harmonic oscillator,</p>
+<div class="math-display">\[L=\frac12m\dot q^2-\frac12m\omega^2q^2,
+\qquad
+p=m\dot q,\]</div>
+<p>so</p>
+<div class="math-display">\[H=\frac{p^2}{2m}+\frac12m\omega^2q^2.\]</div>
+<p>Hamilton&#039;s equations give</p>
+<div class="math-display">\[\dot q=\frac{p}{m},
+\qquad
+\dot p=-m\omega^2q,\]</div>
+<p>and phase-space trajectories are ellipses of constant \(H\). The same motion appears as a sinusoidal coordinate trajectory in Newtonian form, a stationary configuration-space path in Lagrangian form, and a closed canonical flow in Hamiltonian form. The different representations expose different discovery opportunities.</p>
+<h2 id="ai-oriented-inference-notes">AI-oriented inference notes<a class="anchor" href="#ai-oriented-inference-notes" aria-label="Link to this section">#</a></h2>
+<ul><li>Define \(H\) by Legendre transform before identifying it with energy.</li><li>Test Hessian regularity; singular systems require constraints rather than naive inversion.</li><li>Keep classical Poisson brackets distinct from quantum commutators while recording their correspondence.</li><li>Treat canonical transformations as structure-preserving maps, not arbitrary coordinate changes.</li><li>Label symplectic and modern phase-space language as later reconstruction when discussing Hamilton&#039;s original papers.</li><li>Link Hamilton&#039;s optics to Fermat and his dynamics to Lagrange, statistical mechanics, quantum mechanics and QFT.</li></ul>
+<h2 id="sources">Sources<a class="anchor" href="#sources" aria-label="Link to this section">#</a></h2>
+<ul><li>Trinity College Dublin, <a href="https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/Dynamics/" target="_blank" rel="noopener noreferrer">Hamilton&#039;s <em>On a General Method in Dynamics</em> and related papers</a>.</li><li>William Rowan Hamilton, <a href="https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/Dynamics/GenMeth.pdf" target="_blank" rel="noopener noreferrer"><em>On a General Method in Dynamics</em> (1834 PDF)</a>.</li><li>William Rowan Hamilton, <a href="https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/Dynamics/SecEssay.pdf" target="_blank" rel="noopener noreferrer"><em>Second Essay on a General Method in Dynamics</em> (1835 PDF)</a>.</li><li>MIT OpenCourseWare, <a href="https://ocw.mit.edu/courses/8-09-classical-mechanics-iii-fall-2014/pages/lecture-notes/" target="_blank" rel="noopener noreferrer">Classical Mechanics III lecture notes</a>.</li><li>MIT OpenCourseWare, <a href="https://live.ocw.mit.edu/courses/8-223-classical-mechanics-ii-january-iap-2017/09ab68ae8e7987debc025892e00c0f1f_MIT8_223IAP17_Lec15.pdf" target="_blank" rel="noopener noreferrer">Introduction to Hamiltonian Mechanics</a>.</li></ul><footer class="footer">Reader-friendly rendering of <code>57_hamiltonian_mechanics.md</code>. The Markdown source remains the canonical corpus record.</footer></article></main>
+</body>
+</html>

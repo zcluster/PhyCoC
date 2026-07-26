@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>The Electron: Historical Knowledge Graph · PhyHist</title>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},svg:{fontCache:"global"},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+<style>
+:root{color-scheme:light;--bg:#f5f7fb;--paper:#fff;--text:#202938;--muted:#657286;--line:#dce2ea;--accent:#4f46a5;--soft:#f0efff;--code:#f4f6f8;--shadow:0 18px 55px rgba(31,41,55,.09)}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#10141b;--paper:#191f29;--text:#e9edf5;--muted:#aab4c3;--line:#354050;--accent:#b4a4ff;--soft:#2a2744;--code:#111720;--shadow:0 18px 55px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.72}.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper),transparent 7%);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.top-inner{max-width:1280px;margin:auto;padding:11px 22px;display:flex;align-items:center;gap:12px}.top a,.top button{border:1px solid var(--line);border-radius:9px;background:var(--paper);color:var(--text);text-decoration:none;padding:7px 10px;font:inherit;font-size:13px;cursor:pointer}.top .source{margin-left:auto;color:var(--accent)}.layout{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:250px minmax(0,820px);gap:42px;padding:34px 22px 80px;justify-content:center}.toc{position:sticky;top:72px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;border-right:1px solid var(--line);padding-right:22px}.toc-title{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0 0 10px}.toc a{display:block;color:var(--muted);text-decoration:none;font-size:13px;line-height:1.35;padding:5px 8px;border-radius:7px}.toc a:hover{color:var(--accent);background:var(--soft)}.toc-l3{padding-left:20px!important}.toc-l4{padding-left:32px!important}.paper{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:clamp(24px,5vw,62px);min-width:0}.paper h1{font-size:clamp(29px,5vw,46px);line-height:1.12;letter-spacing:-.035em;margin:0 0 34px}.paper h2{font-size:27px;line-height:1.25;margin:54px 0 19px;padding-top:8px;border-top:1px solid var(--line)}.paper h3{font-size:20px;line-height:1.35;margin:35px 0 12px}.paper h4{font-size:16px;margin:27px 0 9px}.anchor{opacity:0;margin-left:8px;color:var(--muted);font-weight:400;text-decoration:none}.paper h2:hover .anchor,.paper h3:hover .anchor,.paper h4:hover .anchor{opacity:1}.paper p{margin:13px 0}.paper a{color:var(--accent);text-underline-offset:2px}.paper ul,.paper ol{padding-left:25px}.paper li{margin:6px 0}.paper code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.9em;background:var(--code);border:1px solid var(--line);border-radius:5px;padding:1px 5px}.paper pre{background:var(--code);border:1px solid var(--line);border-radius:11px;padding:16px;overflow:auto;line-height:1.5}.paper pre code{border:0;padding:0}.table-wrap{overflow:auto;margin:22px 0;border:1px solid var(--line);border-radius:11px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}th{background:var(--soft);font-weight:650}tr:last-child td{border-bottom:0}th:last-child,td:last-child{border-right:0}.math-display{overflow-x:auto;overflow-y:hidden;margin:24px 0;padding:13px 8px;text-align:center}.MathJax{outline:0}blockquote{margin:20px 0;padding:4px 18px;border-left:4px solid var(--accent);background:var(--soft);color:var(--muted)}hr{border:0;border-top:1px solid var(--line);margin:34px 0}.footer{color:var(--muted);font-size:12px;margin-top:48px;padding-top:18px;border-top:1px solid var(--line)}.skip{position:absolute;left:-9999px}.skip:focus{left:10px;top:10px;z-index:20;background:var(--paper);padding:8px}
+@media(max-width:900px){.layout{display:block;padding-top:20px}.toc{position:static;max-height:none;border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:18px;columns:2}.toc-title{column-span:all}.paper{padding:26px 20px}.paper h2{font-size:23px}.top-inner{padding:9px 12px}}@media(max-width:560px){.toc{columns:1}.top .source{font-size:0}.top .source:after{content:"Markdown";font-size:13px}.paper{border-radius:12px}.layout{padding-left:10px;padding-right:10px}}
+@media print{.top,.toc{display:none}.layout{display:block;padding:0}.paper{border:0;box-shadow:none;padding:0}.anchor{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#article">Skip to article</a>
+<header class="top"><div class="top-inner"><a href="../index.html">← Knowledge graph</a><button type="button" onclick="window.print()">Print / PDF</button><a class="source" href="../fundamental_physics_discoveries/17_electron.md">Open source Markdown ↗</a></div></header>
+<main class="layout"><nav class="toc" aria-label="Table of contents"><div class="toc-title">On this page</div><a class="toc-l2" href="#graph-metadata">Graph metadata</a>
+<a class="toc-l2" href="#central-claim">Central claim</a>
+<a class="toc-l2" href="#time-slices">Time slices</a>
+<a class="toc-l2" href="#alternative-incomplete-or-superseded-pathways">Alternative, incomplete, or superseded pathways</a>
+<a class="toc-l3" href="#r-ether-wave-cathode-rays">R-ETHER-WAVE-CATHODE-RAYS</a>
+<a class="toc-l3" href="#r-indivisible-atom">R-INDIVISIBLE-ATOM</a>
+<a class="toc-l3" href="#r-material-specific-cathode-ion">R-MATERIAL-SPECIFIC-CATHODE-ION</a>
+<a class="toc-l3" href="#pathway-comparison-ledger">Pathway comparison ledger</a>
+<a class="toc-l2" href="#knowledge-assets">Knowledge assets</a>
+<a class="toc-l2" href="#discovery-inference-and-equations">Discovery inference and equations</a>
+<a class="toc-l2" href="#validation-and-explanatory-gains">Validation and explanatory gains</a>
+<a class="toc-l2" href="#limitations-and-retained-status">Limitations and retained status</a>
+<a class="toc-l2" href="#discovery-patterns">Discovery patterns</a>
+<a class="toc-l2" href="#edge-list">Edge list</a>
+<a class="toc-l2" href="#extended-historical-investigation">Extended historical investigation</a>
+<a class="toc-l3" href="#cathode-rays-wave-process-or-particle">Cathode rays: wave, process, or particle?</a>
+<a class="toc-l3" href="#crossed-field-reconstruction">Crossed-field reconstruction</a>
+<a class="toc-l3" href="#independent-separation-of-charge-and-mass">Independent separation of charge and mass</a>
+<a class="toc-l3" href="#atomic-consequences">Atomic consequences</a>
+<a class="toc-l3" href="#wave-behavior-and-quantum-identity">Wave behavior and quantum identity</a>
+<a class="toc-l3" href="#evidence-ledger">Evidence ledger</a>
+<a class="toc-l3" href="#scale-and-classical-limits">Scale and classical limits</a>
+<a class="toc-l2" href="#ai-oriented-inference-notes">AI-oriented inference notes</a>
+<a class="toc-l2" href="#additional-quantitative-and-epistemic-notes">Additional quantitative and epistemic notes</a>
+<a class="toc-l2" href="#sources">Sources</a></nav><article class="paper" id="article"><h1 id="the-electron-historical-knowledge-graph">The Electron: Historical Knowledge Graph<a class="anchor" href="#the-electron-historical-knowledge-graph" aria-label="Link to this section">#</a></h1>
+<h2 id="graph-metadata">Graph metadata<a class="anchor" href="#graph-metadata" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Graph ID</td><td><code>KG-ELECTRON-16</code></td></tr><tr><td>Central node</td><td><code>D-ELECTRON-1897</code></td></tr><tr><td>Focal discovery date</td><td>1897 (Thomson&#039;s corpuscle experiments)</td></tr><tr><td>Main contributors</td><td>J. J. Thomson; precursors and validators included George Stoney, Jean Perrin, Robert Millikan and others</td></tr><tr><td>Domain</td><td>Subatomic charged matter</td></tr><tr><td>Epistemic status</td><td>The electron is an elementary spin-\(\tfrac12\) lepton in the Standard Model</td></tr></tbody></table></div>
+<h2 id="central-claim">Central claim<a class="anchor" href="#central-claim" aria-label="Link to this section">#</a></h2>
+<p>Cathode-ray deflection showed a universal negatively charged constituent with a charge-to-mass ratio far exceeding that of known ions. Atoms were therefore divisible. Later charge measurements separated the electron&#039;s charge and mass.</p>
+<h2 id="time-slices">Time slices<a class="anchor" href="#time-slices" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Node</th><th>Period</th><th>Debate</th><th>Transition</th></tr></thead><tbody><tr><td><code>TS-ELECTROLYSIS</code></td><td>19th century</td><td>Charge appears in repeatable units</td><td>“Electron” named as charge unit</td></tr><tr><td><code>TS-CATHODE-RAY</code></td><td>1870s–1890s</td><td>Rays interpreted as waves or particles</td><td>Electric and magnetic deflection studied</td></tr><tr><td><code>TS-THOMSON</code></td><td>1897</td><td>Universal \(e/m\) measured</td><td>Corpuscle identified below atomic mass</td></tr><tr><td><code>TS-MILLIKAN</code></td><td>1909–1913</td><td>Elementary charge measured</td><td>Electron mass inferred</td></tr><tr><td><code>TS-QUANTUM</code></td><td>1920s onward</td><td>Wave behavior, spin, and antiparticle established</td><td>Electron becomes quantum field excitation</td></tr></tbody></table></div>
+<h2 id="alternative-incomplete-or-superseded-pathways">Alternative, incomplete, or superseded pathways<a class="anchor" href="#alternative-incomplete-or-superseded-pathways" aria-label="Link to this section">#</a></h2>
+<h3 id="r-ether-wave-cathode-rays"><code>R-ETHER-WAVE-CATHODE-RAYS</code><a class="anchor" href="#r-ether-wave-cathode-rays" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> A wave interpretation in which cathode rays are disturbances or stresses propagating through the ether inside a discharge tube rather than streams of material charged particles.</li><li><strong>Proposed/active period:</strong> 1870s–1890s.</li><li><strong>Why reasonable:</strong> Rays create fluorescence and propagate through evacuated tubes.</li><li><strong>Limitation:</strong> Deflection and momentum transfer fit charged particles with universal \(e/m\).</li><li><strong>Outcome:</strong> Replaced by electron beams.</li></ul>
+<h3 id="r-indivisible-atom"><code>R-INDIVISIBLE-ATOM</code><a class="anchor" href="#r-indivisible-atom" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> The chemical-atom model that treats atoms as the smallest physically structured units of matter, containing no detachable universal subatomic constituents.</li><li><strong>Proposed/active period:</strong> ancient origins; strong nineteenth-century chemical form.</li><li><strong>Limitation:</strong> A constituent much lighter than hydrogen occurs across cathode materials and gases.</li><li><strong>Outcome:</strong> Superseded; atoms retained as chemically meaningful composite units.</li></ul>
+<h3 id="r-material-specific-cathode-ion"><code>R-MATERIAL-SPECIFIC-CATHODE-ION</code><a class="anchor" href="#r-material-specific-cathode-ion" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> The hypothesis that cathode rays are ordinary charged atoms or ions whose identity and mass depend on the cathode material or residual gas.</li><li><strong>Proposed/active period:</strong> 1880s–1890s.</li><li><strong>Outcome:</strong> Universal \(e/m\) across materials rejected it.</li></ul>
+<h3 id="pathway-comparison-ledger">Pathway comparison ledger<a class="anchor" href="#pathway-comparison-ledger" aria-label="Link to this section">#</a></h3>
+<p><strong>Chronology rule:</strong> Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (1897 (Thomson&#039;s corpuscle experiments)). The proposed/active period is stored in each pathway record.</p>
+<p>The cathode-ray dispute included serious particle and wave positions. Dependence on tube conditions seemed medium-like, while straight tracks, paddle-wheel momentum transfer, and magnetic deflection seemed corpuscular. Thomson&#039;s crossed-field measurements supplied a universal \(e/m\) far larger than that of any ion.</p>
+<div class="table-wrap"><table><thead><tr><th>Rival</th><th>Protective explanation</th><th>Decisive convergence</th><th>Outcome</th></tr></thead><tbody><tr><td>Ether disturbance</td><td>Deflection attributed to polarized medium</td><td>Negative charge, momentum, universal \(e/m\), later discrete \(e\)</td><td>Rejected</td></tr><tr><td>Material-specific charged atom/ion</td><td>Cathode substance supplies the carrier</td><td>Same ratio across gases and electrodes</td><td>Rejected</td></tr><tr><td>Indivisible chemical atom</td><td>Electron treated as detachable electrical condition</td><td>Charge quantization, scattering, spectroscopy</td><td>Atom becomes composite</td></tr><tr><td><strong>Discovery/current: universal electron</strong></td><td>A stable negatively charged subatomic particle/field excitation common to matter</td><td>Universal \(e/m\), quantized charge, scattering and spectroscopy</td><td>Retained and embedded in QED</td></tr></tbody></table></div>
+<p>Millikan&#039;s charge measurement did not repeat Thomson&#039;s inference; it supplied the missing \(e\), allowing \(m=e/(e/m)\). The electron&#039;s later spin, wave behavior, antiparticle, and field description show that discovery of a stable entity does not freeze its ontology.</p>
+<h2 id="knowledge-assets">Knowledge assets<a class="anchor" href="#knowledge-assets" aria-label="Link to this section">#</a></h2>
+<ul><li><code>A-VACUUM-TUBE</code>: accelerates and guides cathode rays.</li><li><code>A-ELECTRIC-FIELD</code>: deflects charge.</li><li><code>A-MAGNETIC-FIELD</code>: velocity-dependent deflection.</li><li><code>A-ELECTROLYSIS</code>: suggests charge quantization.</li><li><code>A-DROPLET-BALANCE</code>: resolves elementary charge.</li></ul>
+<h2 id="discovery-inference-and-equations">Discovery inference and equations<a class="anchor" href="#discovery-inference-and-equations" aria-label="Link to this section">#</a></h2>
+<p>An electron moving perpendicular to magnetic field \(B\) follows:</p>
+<div class="math-display">\[evB=\frac{mv^2}{r}
+\quad\Longrightarrow\quad
+\frac{e}{m}=\frac{v}{Br}.\]</div>
+<p>If crossed electric and magnetic fields select undeflected particles:</p>
+<div class="math-display">\[eE=evB
+\quad\Longrightarrow\quad
+v=\frac{E}{B}.\]</div>
+<p>Combining:</p>
+<div class="math-display">\[\frac{e}{m}=\frac{E}{B^2r}.\]</div>
+<p>The very large, material-independent magnitude implied a common low-mass constituent. In the oil-drop balance:</p>
+<div class="math-display">\[qE\approx mg_{\mathrm{effective}},\]</div>
+<p>and measured charges clustered near:</p>
+<div class="math-display">\[q=ne.\]</div>
+<h2 id="validation-and-explanatory-gains">Validation and explanatory gains<a class="anchor" href="#validation-and-explanatory-gains" aria-label="Link to this section">#</a></h2>
+<ul><li>\(e/m\) was insensitive to cathode material and residual gas.</li><li>Millikan-type data supported charge quantization.</li><li>Electron diffraction later established matter-wave behavior:</li></ul>
+<div class="math-display">\[\lambda=\frac{h}{p}.\]</div>
+<ul><li>Spin and magnetic moment revealed intrinsic quantum structure.</li><li>Positron discovery confirmed the electron&#039;s antiparticle.</li></ul>
+<h2 id="limitations-and-retained-status">Limitations and retained status<a class="anchor" href="#limitations-and-retained-status" aria-label="Link to this section">#</a></h2>
+<p>Thomson&#039;s corpuscle was not a tiny classical ball; electron localization, spin, and self-interaction require quantum field theory. The classical electron radius is not a measured hard size. No substructure has been observed; “elementary” remains an experimentally bounded status.</p>
+<h2 id="discovery-patterns">Discovery patterns<a class="anchor" href="#discovery-patterns" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>ID</th><th>Instantiation</th></tr></thead><tbody><tr><td><code>P-01</code></td><td>Electricity, cathode rays, and atomic constitution linked</td></tr><tr><td><code>P-02</code></td><td>Deflection trajectories generated by Lorentz force</td></tr><tr><td><code>P-03</code></td><td>“What kind of ray?” reframed as constituent-property inference</td></tr><tr><td><code>P-04</code></td><td>Subatomic universal particle accepted</td></tr><tr><td><code>P-05</code></td><td>Atomic and electrochemical regularities retained</td></tr><tr><td><code>P-06</code></td><td>Crossed-field \(e/m\) supplied quantitative identification</td></tr></tbody></table></div>
+<h2 id="edge-list">Edge list<a class="anchor" href="#edge-list" aria-label="Link to this section">#</a></h2>
+<pre><code class="language-text">A-VACUUM-TUBE --produces--&gt; CATHODE-RAYS
+A-ELECTRIC-FIELD --deflects--&gt; CATHODE-RAYS
+A-MAGNETIC-FIELD --deflects--&gt; CATHODE-RAYS
+V-UNIVERSAL-E-OVER-M --supports--&gt; D-ELECTRON-1897
+D-ELECTRON-1897 --refutes--&gt; R-INDIVISIBLE-ATOM
+A-DROPLET-BALANCE --measures--&gt; ELEMENTARY-CHARGE
+ELEMENTARY-CHARGE --with--&gt; E-OVER-M
+E-OVER-M --yields--&gt; ELECTRON-MASS
+D-ELECTRON-1897 --instantiates--&gt; P-03</code></pre>
+<h2 id="extended-historical-investigation">Extended historical investigation<a class="anchor" href="#extended-historical-investigation" aria-label="Link to this section">#</a></h2>
+<h3 id="cathode-rays-wave-process-or-particle">Cathode rays: wave, process, or particle?<a class="anchor" href="#cathode-rays-wave-process-or-particle" aria-label="Link to this section">#</a></h3>
+<p>Discharge tubes produced fluorescence and shadows, but researchers disagreed about whether cathode rays were material particles or disturbances in an ether. The debate was not irrational: rays displayed wave-like propagation features, while residual gas, electrode material, and vacuum quality complicated results. Jean Perrin&#039;s charge collection and Thomson&#039;s combined electric and magnetic deflection strengthened the particle interpretation.</p>
+<p>Thomson called the entities “corpuscles.” The term “electron,” introduced earlier in a charge context by Stoney, later became standard. Discovery credit should distinguish naming, measurement of \(e/m\), charge measurement, and integration into atomic theory.</p>
+<h3 id="crossed-field-reconstruction">Crossed-field reconstruction<a class="anchor" href="#crossed-field-reconstruction" aria-label="Link to this section">#</a></h3>
+<p>Let the beam travel along \(x\), electric field \(E\) along \(y\), and magnetic field \(B\) along \(z\). With no net transverse deflection:</p>
+<div class="math-display">\[eE=evB
+\quad\Longrightarrow\quad
+v=\frac{E}{B}.\]</div>
+<p>With electric field removed, circular curvature satisfies:</p>
+<div class="math-display">\[evB=\frac{mv^2}{r}.\]</div>
+<p>Therefore:</p>
+<div class="math-display">\[\frac{e}{m}
+=\frac{v}{Br}
+=\frac{E}{B^2r}.\]</div>
+<p>The decisive pattern was that the magnitude of \(e/m\) was far larger than for hydrogen ions and remained similar across gases and cathode materials. If charge magnitude was comparable to the electrochemical unit, mass had to be much smaller than an atom.</p>
+<h3 id="independent-separation-of-charge-and-mass">Independent separation of charge and mass<a class="anchor" href="#independent-separation-of-charge-and-mass" aria-label="Link to this section">#</a></h3>
+<p>The oil-drop method balances electric, gravitational, buoyant, and drag effects. For a stationary charged drop:</p>
+<div class="math-display">\[qE=(\rho_{\mathrm{oil}}-\rho_{\mathrm{air}})Vg.\]</div>
+<p>Drop radius can be inferred from terminal fall using a corrected Stokes law:</p>
+<div class="math-display">\[6\pi\eta av
+\approx
+(\rho_{\mathrm{oil}}-\rho_{\mathrm{air}})
+\frac{4\pi a^3}{3}g.\]</div>
+<p>Repeated inferred charges cluster near integer multiples:</p>
+<div class="math-display">\[q=ne.\]</div>
+<p>Then:</p>
+<div class="math-display">\[m_e=\frac{e}{(e/m_e)}.\]</div>
+<p>Historical discussion of Millikan includes data-selection questions and the importance of correcting Stokes drag for very small drops. The result is robust, but the experiment is a good case for retaining methodological scrutiny rather than teaching a frictionless triumph story.</p>
+<h3 id="atomic-consequences">Atomic consequences<a class="anchor" href="#atomic-consequences" aria-label="Link to this section">#</a></h3>
+<p>An atom with electrons must also contain positive charge and most of its mass. Thomson&#039;s diffuse-positive “plum pudding” model was a serious attempt to construct a stable neutral composite:</p>
+<div class="math-display">\[\sum q_{\mathrm{atom}}=0.\]</div>
+<p>Rutherford scattering later concentrated positive charge in the nucleus. Bohr and quantum mechanics reorganized electron states. Thus <code>ELECTRON-DISCOVERY</code> did not by itself entail the modern nuclear atom.</p>
+<h3 id="wave-behavior-and-quantum-identity">Wave behavior and quantum identity<a class="anchor" href="#wave-behavior-and-quantum-identity" aria-label="Link to this section">#</a></h3>
+<p>De Broglie wavelength:</p>
+<div class="math-display">\[\lambda=\frac{h}{p}\]</div>
+<p>was confirmed for electrons by diffraction. A classical particle trajectory is insufficient. The electron&#039;s spin:</p>
+<div class="math-display">\[s=\frac12\]</div>
+<p>and magnetic moment:</p>
+<div class="math-display">\[\boldsymbol\mu
+=g\frac{e}{2m_e}\mathbf S\]</div>
+<p>require relativistic quantum theory and QED corrections.</p>
+<p>The electron is represented in the Standard Model as a lepton field excitation. Its mass comes from Yukawa coupling to the Higgs field in the minimal model:</p>
+<div class="math-display">\[m_e=\frac{y_ev}{\sqrt2}.\]</div>
+<p>Its electric charge is exact in magnitude relative to the elementary-charge convention, but why charges are quantized in the observed pattern remains connected to gauge structure and anomaly cancellation.</p>
+<h3 id="evidence-ledger">Evidence ledger<a class="anchor" href="#evidence-ledger" aria-label="Link to this section">#</a></h3>
+<div class="table-wrap"><table><thead><tr><th>Evidence</th><th>Supports</th><th>Does not alone establish</th></tr></thead><tbody><tr><td>Cathode-ray deflection</td><td>Negative charged beam</td><td>Exact charge or mass separately</td></tr><tr><td>Universal \(e/m\)</td><td>Common subatomic constituent</td><td>Modern quantum field ontology</td></tr><tr><td>Oil-drop charge steps</td><td>Elementary charge magnitude</td><td>Nuclear atom</td></tr><tr><td>Electron diffraction</td><td>Matter-wave amplitude</td><td>Classical wave made of continuous charge</td></tr><tr><td>Positron</td><td>Antiparticle structure</td><td>Complete QED</td></tr><tr><td>High-energy scattering</td><td>No resolved substructure to tested scale</td><td>Metaphysical pointlikeness at all scales</td></tr></tbody></table></div>
+<h3 id="scale-and-classical-limits">Scale and classical limits<a class="anchor" href="#scale-and-classical-limits" aria-label="Link to this section">#</a></h3>
+<p>The “classical electron radius”:</p>
+<div class="math-display">\[r_e
+=\frac{e^2}{4\pi\epsilon_0m_ec^2}\]</div>
+<p>is a useful combination of constants, not a measured hard surface. Quantum localization below the Compton scale:</p>
+<div class="math-display">\[\lambda_C=\frac{h}{m_ec}\]</div>
+<p>encounters relativistic particle-creation physics. Treating the electron as a tiny charged billiard ball gives incorrect self-energy and localization intuition.</p>
+<h2 id="ai-oriented-inference-notes">AI-oriented inference notes<a class="anchor" href="#ai-oriented-inference-notes" aria-label="Link to this section">#</a></h2>
+<ul><li>Separate <code>CORPUSCLE</code>, <code>ELEMENTARY-CHARGE</code>, and <code>MODERN-ELECTRON-FIELD</code>.</li><li>Infer mass only after combining \(e/m\) with \(e\).</li><li>Do not assign a hard radius from \(r_e\).</li><li>Treat material-independent \(e/m\) as key universality evidence.</li></ul>
+<h2 id="additional-quantitative-and-epistemic-notes">Additional quantitative and epistemic notes<a class="anchor" href="#additional-quantitative-and-epistemic-notes" aria-label="Link to this section">#</a></h2>
+<p>Thomson deflected cathode rays using electric and magnetic fields and inferred the charge-to-mass ratio rather than charge or mass separately. With crossed fields adjusted for no deflection,</p>
+<div class="math-display">\[v=\frac{E}{B},\]</div>
+<p>and magnetic curvature then gives</p>
+<div class="math-display">\[\frac{|q|}{m}=\frac{v}{Br}.\]</div>
+<p>The large, approximately material-independent \(e/m\) implied constituents much lighter than hydrogen ions and common to different cathodes and gases. Millikan&#039;s later oil-drop work measured charge in integer multiples of a basic \(e\); combining this with Thomson&#039;s ratio yielded the electron mass. Each inference had systematic issues—field calibration, droplet dynamics, selection of stable drops—but their convergence transformed “cathode rays” from a discharge-tube effect into a universal subatomic particle.</p>
+<p>The electron discovery did not immediately establish the modern quantum field. It first defeated atomic indivisibility and forced new atomic models; spin, antimatter, and QED were later theoretical layers.</p>
+<h2 id="sources">Sources<a class="anchor" href="#sources" aria-label="Link to this section">#</a></h2>
+<ul><li>Nobel Prize, <a href="https://www.nobelprize.org/prizes/physics/1906/thomson/facts/" target="_blank" rel="noopener noreferrer">J. J. Thomson facts</a>.</li><li>American Physical Society, <a href="https://www.aps.org/apsnews/2000/10/discovery-electron" target="_blank" rel="noopener noreferrer">“The Discovery of the Electron”</a>.</li><li>Nobel Prize, <a href="https://www.nobelprize.org/prizes/physics/1923/millikan/lecture/" target="_blank" rel="noopener noreferrer">Robert Millikan&#039;s Nobel lecture</a>.</li></ul><footer class="footer">Reader-friendly rendering of <code>17_electron.md</code>. The Markdown source remains the canonical corpus record.</footer></article></main>
+</body>
+</html>
