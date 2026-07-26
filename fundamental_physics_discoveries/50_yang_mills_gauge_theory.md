@@ -160,6 +160,55 @@ $$
 (D_\mu F^{\mu\nu})^a=gJ^{a\nu}.
 $$
 
+#### Complete localization-to-dynamics inference
+
+The transformation law for \(A_\mu\) is not an independent guess. Demand \(D'_\mu\psi'=UD_\mu\psi\) and insert \(\psi'=U\psi\) and \(D'_\mu=\partial_\mu-igA'_\mu\):
+
+$$
+(\partial_\mu U)\psi+U\partial_\mu\psi-igA'_\mu U\psi
+=U\partial_\mu\psi-igUA_\mu\psi.
+$$
+
+Because this must hold for every \(\psi\),
+
+$$
+A'_\mu
+=UA_\mu U^{-1}
+-\frac{i}{g}(\partial_\mu U)U^{-1}.
+$$
+
+Covariance of \(D_\mu\) implies covariance of its commutator:
+
+$$
+[D'_\mu,D'_\nu]=U[D_\mu,D_\nu]U^{-1},
+\qquad
+F'_{\mu\nu}=UF_{\mu\nu}U^{-1}.
+$$
+
+Taking a trace gives a gauge-invariant kinetic scalar by cyclicity. Varying its action uses
+
+$$
+\delta F_{\mu\nu}=D_\mu\delta A_\nu-D_\nu\delta A_\mu.
+$$
+
+Antisymmetry of \(F^{\mu\nu}\), covariant integration by parts, and a vanishing boundary variation then give
+
+$$
+\delta S_{\mathrm{YM}}
+=\int d^4x\,(D_\mu F^{\mu\nu})^a\delta A_\nu^a.
+$$
+
+Adding matter changes the stationary-action condition to \((D_\mu F^{\mu\nu})^a=gJ^{a\nu}\). Because \(F\) contains \(g f^{abc}A^bA^c\), expanding \(F^2\) necessarily creates cubic and quartic gauge-field vertices; these are deductions from noncommutativity, not optional extra forces.
+
+| Logical role | Content |
+|---|---|
+| Starting symmetry | A global internal group acting on matter multiplets. |
+| New demand | Permit independent basis choices \(U(x)\) at neighboring spacetime points. |
+| Forced compensator | A connection \(A_\mu\) with an inhomogeneous transformation law. |
+| Derived curvature | \(F_{\mu\nu}=(i/g)[D_\mu,D_\nu]\), transforming covariantly. |
+| Minimal dynamics | The local Lorentz scalar \(-\tfrac14F^a_{\mu\nu}F^{a\mu\nu}\). |
+| Empirical choices still required | Gauge group, representations, couplings, vacuum/mass mechanism, and quantum consistency. |
+
 ## Validation and explanatory gains
 
 The original isospin gauge model was not validated as the nuclear force. The later architecture was. Electroweak theory uses an \(SU(2)_L\times U(1)_Y\) gauge structure with spontaneous symmetry breaking; QCD uses \(SU(3)_c\), whose non-Abelian dynamics produces gluon self-interaction, asymptotic freedom, and confinement. Neutral currents, \(W\) and \(Z\) bosons, jets, scaling violations, and the pattern of strong interactions validate concrete Yang–Mills-based theories.

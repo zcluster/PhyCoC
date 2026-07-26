@@ -183,6 +183,87 @@ $$
 
 This result prefigures, but does not replace, Noether's general symmetry theorem.
 
+### Self-contained derivation spine
+
+The kinetic-energy identity used above should not be treated as a black box. For
+
+$$
+T=\frac12\sum_a m_a\dot{\mathbf r}_a^2,
+\qquad
+\dot{\mathbf r}_a
+=\sum_j\frac{\partial\mathbf r_a}{\partial q_j}\dot q_j
++\frac{\partial\mathbf r_a}{\partial t},
+$$
+
+differentiation with respect to $\dot q_i$ gives
+
+$$
+\frac{\partial T}{\partial\dot q_i}
+=\sum_a m_a\dot{\mathbf r}_a\cdot
+\frac{\partial\mathbf r_a}{\partial q_i}.
+$$
+
+Taking a time derivative,
+
+$$
+\frac{d}{dt}\frac{\partial T}{\partial\dot q_i}
+=\sum_a m_a\mathbf a_a\cdot
+\frac{\partial\mathbf r_a}{\partial q_i}
++\sum_a m_a\dot{\mathbf r}_a\cdot
+\frac{d}{dt}\frac{\partial\mathbf r_a}{\partial q_i}.
+$$
+
+Meanwhile, direct differentiation of $T$ with respect to $q_i$ gives precisely the second sum because mixed derivatives commute:
+
+$$
+\frac{\partial T}{\partial q_i}
+=\sum_a m_a\dot{\mathbf r}_a\cdot
+\frac{\partial\dot{\mathbf r}_a}{\partial q_i}
+=\sum_a m_a\dot{\mathbf r}_a\cdot
+\frac{d}{dt}\frac{\partial\mathbf r_a}{\partial q_i}.
+$$
+
+Subtracting proves
+
+$$
+\sum_a m_a\mathbf a_a\cdot
+\frac{\partial\mathbf r_a}{\partial q_i}
+=\frac{d}{dt}\frac{\partial T}{\partial\dot q_i}
+-\frac{\partial T}{\partial q_i}.
+$$
+
+Substitution into d'Alembert's virtual-work equation gives
+
+$$
+\sum_i\left[
+Q_i-\frac{d}{dt}\frac{\partial T}{\partial\dot q_i}
++\frac{\partial T}{\partial q_i}
+\right]\delta q_i=0.
+$$
+
+The $q_i$ are independent, so every bracket vanishes. If $Q_i=-\partial V/\partial q_i$ and $V$ has no velocity dependence, defining $L=T-V$ yields the Euler–Lagrange equations.
+
+For the action route, the crucial boundary step is
+
+$$
+\int_{t_1}^{t_2}
+\frac{\partial L}{\partial\dot q_i}\delta\dot q_i\,dt
+=\left[
+\frac{\partial L}{\partial\dot q_i}\delta q_i
+\right]_{t_1}^{t_2}
+-\int_{t_1}^{t_2}
+\frac{d}{dt}\frac{\partial L}{\partial\dot q_i}\delta q_i\,dt.
+$$
+
+Fixed endpoints make the bracket zero. The fundamental lemma of the calculus of variations then turns stationarity for arbitrary interior $\delta q_i$ into the local Euler–Lagrange equations.
+
+| Logical role | Content |
+|---|---|
+| Assumed | Newtonian particle dynamics, ideal constraints and independent generalized coordinates |
+| Defined | Generalized forces, kinetic energy and $L=T-V$ for conservative natural systems |
+| Derived | Elimination of ideal constraint reactions and Euler–Lagrange equations |
+| Additional condition | Fixed endpoint variations for the action formulation |
+
 ## Validation and explanatory gains
 
 Lagrange's equations reproduce Newtonian motion in Cartesian coordinates and simplify systems with constraints: pendula use angles instead of tensions and Cartesian coordinates; rigid bodies use orientation variables; coupled oscillators use normal coordinates. The same equation form extends to fields by replacing $L$ with a Lagrangian density and ordinary derivatives with spacetime derivatives.

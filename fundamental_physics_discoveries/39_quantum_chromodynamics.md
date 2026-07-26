@@ -111,6 +111,50 @@ $$
 
 for the observed number of active flavors. Hence \(\alpha_s\) decreases as momentum scale \(Q\) increases.
 
+### Self-contained running-coupling inference
+
+Write the one-loop coefficient without absorbing factors of \(\pi\):
+
+$$
+\beta_0=11-\frac{2}{3}n_f,
+\qquad
+\mu\frac{dg_s}{d\mu}
+=-\frac{\beta_0}{16\pi^2}g_s^3.
+$$
+
+Since \(\alpha_s=g_s^2/(4\pi)\), the chain rule gives
+
+$$
+\frac{d\alpha_s}{d\ln\mu}
+=\frac{g_s}{2\pi}\frac{dg_s}{d\ln\mu}
+=-\frac{\beta_0}{2\pi}\alpha_s^2.
+$$
+
+Separating variables and integrating between \(\mu\) and \(Q\),
+
+$$
+\frac{1}{\alpha_s(Q)}
+=\frac{1}{\alpha_s(\mu)}
++\frac{\beta_0}{2\pi}\ln\frac{Q}{\mu}.
+$$
+
+Define the integration constant \(\Lambda_{\mathrm{QCD}}\) as the scale where this one-loop denominator extrapolates to zero. Then
+
+$$
+\alpha_s(Q^2)
+=\frac{4\pi}{\beta_0\ln(Q^2/\Lambda_{\mathrm{QCD}}^2)}.
+$$
+
+For \(n_f<17\), \(\beta_0>0\), so increasing \(Q\) decreases \(\alpha_s\): asymptotic freedom. Conversely, the one-loop expression grows toward low \(Q\); its divergence is a warning that perturbation theory has failed, not itself a proof of confinement.
+
+| Logical role | Content |
+|---|---|
+| Microscopic input | \(SU(3)_c\) Yang–Mills fields coupled to colored quarks. |
+| Quantum calculation | Gauge, ghost, and quark loop contributions to the one-loop beta function. |
+| Derived ultraviolet result | Logarithmically decreasing \(\alpha_s(Q)\) for the observed flavor count. |
+| Empirical bridge | Approximate parton scaling plus calculable logarithmic violations and jets. |
+| Separate nonperturbative claim | Confinement is supported by spectrum, lattice calculations, and phenomenology; it does not follow from one-loop running alone. |
+
 ## Validation and explanatory gains
 
 - Scaling violations follow QCD evolution.

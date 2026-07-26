@@ -152,6 +152,86 @@ $$
 
 and rays follow normals to nearly constant-phase surfaces. The variational ray is therefore an emergent high-frequency structure, not evidence that a photon evaluates possible routes as a conscious optimizer.
 
+### Self-contained derivation spine
+
+For a smooth ray $\mathbf r(\lambda)$, write
+
+$$
+\mathcal L_{\rm opt}=\int F(\mathbf r,\mathbf r')\,d\lambda,
+\qquad
+F=n(\mathbf r)\sqrt{\mathbf r'\cdot\mathbf r'},
+$$
+
+where $\mathbf r'=d\mathbf r/d\lambda$. Vary the path while fixing both endpoints:
+
+$$
+\mathbf r(\lambda)\rightarrow\mathbf r(\lambda)+\epsilon\boldsymbol\eta(\lambda),
+\qquad
+\boldsymbol\eta(\lambda_A)=\boldsymbol\eta(\lambda_B)=0.
+$$
+
+To first order,
+
+$$
+\delta\mathcal L_{\rm opt}
+=\int\left(
+\frac{\partial F}{\partial\mathbf r}\cdot\boldsymbol\eta
++\frac{\partial F}{\partial\mathbf r'}\cdot\boldsymbol\eta'
+\right)d\lambda.
+$$
+
+Integrating the second term by parts removes the endpoint contribution and gives
+
+$$
+\delta\mathcal L_{\rm opt}
+=\int\left[
+\frac{\partial F}{\partial\mathbf r}
+-\frac{d}{d\lambda}
+\left(\frac{\partial F}{\partial\mathbf r'}\right)
+\right]\cdot\boldsymbol\eta\,d\lambda.
+$$
+
+Because $\boldsymbol\eta$ is arbitrary, stationarity requires the vector Euler–Lagrange equation. Here
+
+$$
+\frac{\partial F}{\partial\mathbf r}
+=\nabla n\,|\mathbf r'|,
+\qquad
+\frac{\partial F}{\partial\mathbf r'}
+=n\frac{\mathbf r'}{|\mathbf r'|}.
+$$
+
+Choose arc length $s$ as parameter, so $|d\mathbf r/ds|=1$. Division by $ds/d\lambda=|\mathbf r'|$ then yields
+
+$$
+\boxed{
+\frac{d}{ds}\left(n\frac{d\mathbf r}{ds}\right)=\nabla n
+}.
+$$
+
+For constant $n$, the right-hand side vanishes and the unit tangent is constant, so rays are straight. Across a sharp interface, translational invariance parallel to the boundary conserves the tangential canonical momentum $n\sin\theta$, producing Snell's law.
+
+The wave-optics limit can also be exposed rather than asserted. For a monochromatic scalar field satisfying
+
+$$
+\nabla^2\psi+n^2k_0^2\psi=0,
+$$
+
+insert the rapidly varying ansatz $\psi=Ae^{ik_0S}$. The leading $k_0^2$ terms give
+
+$$
+|\nabla S|^2=n^2.
+$$
+
+Surfaces $S=\text{constant}$ are wavefronts and their normals are rays. Thus the variational ray equation is recovered when wavelength is short compared with the scale of amplitude and index variation.
+
+| Logical role | Content |
+|---|---|
+| Assumed | Isotropic refractive index, smooth path, fixed endpoints and geometrical-optics scale separation |
+| Defined | Optical-length functional $\int n\,ds$ |
+| Derived | Euler–Lagrange ray equation, straight rays and Snell tangential invariant |
+| Independently connected | Eikonal equation from the leading short-wavelength wave equation |
+
 ## Validation and explanatory gains
 
 The principle reproduces straight propagation in a uniform medium, equal angles in reflection, Snell refraction, total-internal-reflection conditions and ray bending in graded-index media. It makes lens design and optical path comparison systematic. Its reuse in the brachistochrone and Hamilton's optical–mechanical analogy demonstrated that one functional can generate an entire family of local equations.

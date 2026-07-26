@@ -129,6 +129,59 @@ $$
 a_e=\frac{\alpha}{2\pi}+\mathcal{O}(\alpha^2).
 $$
 
+#### From local phase covariance to the interaction
+
+For the free Dirac term, a position-dependent phase gives
+
+$$
+\partial_\mu(e^{-ie\chi}\psi)
+=e^{-ie\chi}(\partial_\mu\psi-ie\,\partial_\mu\chi\,\psi),
+$$
+
+so the extra derivative spoils invariance. With \(D_\mu=\partial_\mu+ieA_\mu\) and \(A'_\mu=A_\mu+\partial_\mu\chi\), however,
+
+$$
+D'_\mu\psi'=e^{-ie\chi}D_\mu\psi.
+$$
+
+Expanding the covariant derivative shows the interaction is forced into the matter Lagrangian:
+
+$$
+\bar\psi i\gamma^\mu D_\mu\psi
+=\bar\psi i\gamma^\mu\partial_\mu\psi
+-e\bar\psi\gamma^\mu A_\mu\psi.
+$$
+
+The Maxwell term is invariant because \(F'_{\mu\nu}=F_{\mu\nu}\). Varying \(A_\nu\) gives
+
+$$
+\partial_\mu F^{\mu\nu}=e\bar\psi\gamma^\nu\psi\equiv j^\nu,
+$$
+
+and the Dirac equation plus its adjoint imply \(\partial_\nu j^\nu=0\). At a fermion-photon vertex, the same conservation appears as
+
+$$
+q_\mu\bar u(p')\gamma^\mu u(p)
+=\bar u(p')(\not p'-\not p)u(p)=0,
+$$
+
+using the external Dirac equations. This is the tree-level seed of the Ward–Takahashi constraints that make charge renormalization systematic.
+
+#### What renormalization actually proves at fixed order
+
+Introduce a regulator and rewrite bare fields and parameters as \(\psi_0=Z_2^{1/2}\psi\), \(A_0=Z_3^{1/2}A\), \(m_0=m+\delta m\), and \(e_0=Z_e e\). A loop amplitude and the allowed counterterms depend on the regulator separately. Renormalization conditions fix \(m\) and \(e\) through chosen observables; after combining all diagrams and counterterms at a stated order, regulator dependence cancels up to higher-order errors. Gauge symmetry further gives \(Z_1=Z_2\) in QED, relating the vertex and electron-field factors.
+
+This is a constrained prediction pipeline, not “subtract infinity”: a finite set of calibration inputs must account for many other cross sections and level shifts.
+
+| Logical role | Content |
+|---|---|
+| Symmetry input | Local \(U(1)\) phase covariance. |
+| Forced interaction | Minimal coupling \(-e\bar\psi\gamma^\mu A_\mu\psi\). |
+| Quantum organization | Perturbative loops plus every symmetry-allowed counterterm at the relevant order. |
+| Calibration | A finite set of renormalized masses, charge, and field normalizations. |
+| Predictions | Remaining scattering, spectroscopy, magnetic-moment, and running-coupling observables. |
+| Scope condition | Stated perturbative order, scale, scheme, and included particle sectors. |
+
 ## Validation and explanatory gains
 
 QED explains the Lamb shift, anomalous magnetic moments, scattering cross sections, positronium, vacuum polarization, and running electromagnetic coupling. Agreement between calculated and measured \(a_e\) is among science's most precise theory–experiment comparisons.

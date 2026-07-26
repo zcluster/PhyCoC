@@ -98,19 +98,19 @@ Internal energy $U$ is a state function, whereas heat and work depend on the pro
 For Joule's paddle-wheel arrangement, a descending mass transfers approximately
 
 $$
-W_{m in}=mgh
+W_{\mathrm{in}}=mgh
 $$
 
-of mechanical work to an insulated liquid after corrections for bearing friction, apparatus heat capacity and environmental exchange. If the combined calorimetric heat capacity is $C_{m tot}$ and the measured rise is $\Delta T$,
+of mechanical work to an insulated liquid after corrections for bearing friction, apparatus heat capacity and environmental exchange. If the combined calorimetric heat capacity is $C_{\mathrm{tot}}$ and the measured rise is $\Delta T$,
 
 $$
-Q_{m cal}=C_{m tot}\Delta T.
+Q_{\mathrm{cal}}=C_{\mathrm{tot}}\Delta T.
 $$
 
 Repeating the experiment at different loads and through different conversion routes tests
 
 $$
-W_{m in}=JQ_{m cal},
+W_{\mathrm{in}}=JQ_{\mathrm{cal}},
 $$
 
 where $J$ is the mechanical equivalent of a chosen historical heat unit. In modern SI both quantities are measured in joules, so the conversion constant is absorbed into the unit system. The discovery was not one dramatic temperature rise: the signal was small, and credibility came from corrections, replication and convergence among mechanical, electrical and gas experiments.
@@ -138,6 +138,50 @@ $$
 $$
 
 Energy conservation therefore permits a cyclic heat engine. It does not determine how much of its heat input can become work. That logical gap is the reason the second law must be represented separately.
+
+### Self-contained inference ledger
+
+Unlike a mathematical theorem, the first law is an empirically generalized conservation principle. Its discovery inference can nevertheless be made explicit. Suppose an insulated apparatus begins and ends with the same macroscopic mechanical configuration except that a falling mass has descended through height $h$. The loss of gravitational energy is $mgh$. If the corrected calorimeter rises by $\Delta T$, repeatable proportionality
+
+$$
+mgh=J C_{\mathrm{tot}}\Delta T
+$$
+
+defines the historical mechanical equivalent $J$. Repeat with electrical work,
+
+$$
+W_{\rm elec}=\int VI\,dt,
+$$
+
+and with gas compression,
+
+$$
+W_{\rm gas}=-\int p_{\rm ext}\,dV.
+$$
+
+Convergence on the same conversion factor rejects an apparatus-specific source and supports a common conserved magnitude. The inference requires calibration of heat capacities, correction for heat leakage and bearings, and closure of every external energy channel.
+
+Internal energy can then be defined operationally. For any adiabatic process between equilibrium states $A$ and $B$, set
+
+$$
+U(B)-U(A)\equiv W_{\rm on}^{\rm adiabatic}.
+$$
+
+The empirical content of the first law is that this adiabatic work is path independent. If two adiabatic routes required different net work, traversing one forward and the other backward would yield cyclic work with no other change. With $W$ defined as work done **by** the system, a general nonadiabatic path gives
+
+$$
+\Delta U=Q-W.
+$$
+
+Heat is thereby the residual energy transfer not classified as work, not a stored material contained in the system.
+
+| Logical role | Content |
+|---|---|
+| Measured | Mechanical, electrical or compression work and calorimetric temperature change |
+| Corrected | Leakage, apparatus heat capacity, friction outside the intended boundary and incomplete return cycles |
+| Empirically generalized | Route-independent equivalence of work and thermal change |
+| Defined | State function $U$ and boundary transfers $Q,W$ |
+| Not derived | Directionality, reversibility and efficiency bounds |
 
 ## Validation and explanatory gains
 

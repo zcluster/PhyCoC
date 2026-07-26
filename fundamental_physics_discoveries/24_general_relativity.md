@@ -199,6 +199,62 @@ $$
 
 is nonlinear because the metric determines curvature and gravitational fields themselves influence geometry. The slogan “matter tells spacetime how to curve” is useful but incomplete: gravitational radiation can propagate through vacuum where \(T_{\mu\nu}=0\) while curvature is nonzero.
 
+### Self-contained recovery of Newtonian gravity
+
+A viable relativistic gravity theory must reproduce Newtonian mechanics when fields are weak, sources move slowly, and test bodies have \(|\mathbf v|\ll c\). Write the static weak-field metric as
+
+$$
+g_{00}=-\left(1+\frac{2\Phi}{c^2}\right),
+\qquad
+\left|\frac{\Phi}{c^2}\right|\ll1.
+$$
+
+For slow motion, \(dx^0/d\tau\simeq c\,dt/d\tau\) dominates the spatial four-velocity. The spatial geodesic equation therefore reduces to
+
+$$
+\frac{d^2x^i}{dt^2}\simeq-c^2\Gamma^i{}_{00}.
+$$
+
+Staticity removes time derivatives, and to first order
+
+$$
+\Gamma^i{}_{00}\simeq-\frac12\partial_i g_{00}
+=\frac{1}{c^2}\partial_i\Phi.
+$$
+
+Consequently,
+
+$$
+\frac{d^2\mathbf x}{dt^2}=-\boldsymbol\nabla\Phi,
+$$
+
+which is Newton's test-body equation. On the source side, the \(00\) component of the Einstein equation has the weak-field limits
+
+$$
+G_{00}\simeq\frac{2}{c^2}\nabla^2\Phi,
+\qquad
+T_{00}\simeq\rho c^2.
+$$
+
+Thus
+
+$$
+\frac{2}{c^2}\nabla^2\Phi
+=\frac{8\pi G}{c^4}\rho c^2
+\quad\Longrightarrow\quad
+\nabla^2\Phi=4\pi G\rho.
+$$
+
+This two-sided reduction is stronger than resemblance: it recovers both Newtonian motion and the Poisson source equation, while identifying \(g_{00}\) as the carrier of the Newtonian potential at leading order.
+
+| Logical role | Content |
+|---|---|
+| Limiting assumptions | Weak, static field; nonrelativistic matter and test bodies; first order in \(\Phi/c^2\). |
+| Geometric input | Geodesic motion and the metric-compatible connection. |
+| Dynamical input | Einstein field equation with \(T_{00}\simeq\rho c^2\). |
+| Derived predecessor limit | Newton's force law and Poisson equation. |
+| Not established by this limit | Strong-field dynamics, radiation, horizons, or quantum gravity. |
+
 ### Schwarzschild geometry and weak-field tests
 
 Outside a static spherical mass:
@@ -231,6 +287,28 @@ $$
 =\frac{6\pi GM}
 {a(1-e^2)c^2}.
 $$
+
+The dynamical origin of that result can be displayed without solving the full orbit. For equatorial Schwarzschild geodesics, define \(u=1/r\) and the specific angular momentum \(h=r^2d\phi/d\tau\). The radial first integral differentiates to
+
+$$
+\frac{d^2u}{d\phi^2}+u
+=\frac{GM}{h^2}+\frac{3GM}{c^2}u^2.
+$$
+
+The first two terms are the Newtonian Binet equation; the last term is the relativistic correction. Insert the zeroth-order ellipse
+
+$$
+u_0=\frac{GM}{h^2}(1+e\cos\phi)
+$$
+
+into the small correction. Its resonant \(\cos\phi\) component shifts the radial oscillation frequency from \(1\) to approximately \(1-3G^2M^2/(h^2c^2)\). Hence the periapsis advances by
+
+$$
+\Delta\varpi\simeq\frac{6\pi G^2M^2}{h^2c^2}
+=\frac{6\pi GM}{a(1-e^2)c^2},
+$$
+
+where the last equality uses the Newtonian relation \(h^2=GMa(1-e^2)\), sufficient at this perturbative order.
 
 For light passing with impact parameter \(b\), leading deflection is:
 

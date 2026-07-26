@@ -190,7 +190,23 @@ $$
 =\langle(\hat A-\langle A\rangle)^2\rangle.
 $$
 
-Cauchy–Schwarz implies:
+Set \(|f\rangle=(\hat A-\langle A\rangle)|\psi\rangle\) and \(|g\rangle=(\hat B-\langle B\rangle)|\psi\rangle\). Cauchy–Schwarz gives
+
+$$
+\Delta A^2\Delta B^2
+=\langle f|f\rangle\langle g|g\rangle
+\ge|\langle f|g\rangle|^2.
+$$
+
+Writing \(\delta A=\hat A-\langle A\rangle\) and similarly for \(B\), split the product into Hermitian and anti-Hermitian parts:
+
+$$
+\langle\delta A\,\delta B\rangle
+=\frac12\langle\{\delta A,\delta B\}\rangle
++\frac12\langle[\hat A,\hat B]\rangle.
+$$
+
+The anticommutator expectation is real and the commutator expectation is purely imaginary. Hence their squared magnitudes add. Discarding the nonnegative anticommutator contribution yields the Robertson bound:
 
 $$
 \Delta A\,\Delta B
@@ -256,15 +272,58 @@ This is the quantum version of symmetry-linked conservation structure.
 
 ### Tunneling as a nonclassical prediction
 
-For a rectangular barrier of height \(V_0>E\) and width \(a\), transmission is exponentially suppressed:
+For a rectangular barrier of height \(V_0>E\) occupying \(0<x<a\), define
 
 $$
-T\sim e^{-2\kappa a},
+k=\frac{\sqrt{2mE}}{\hbar},
+\qquad
+\kappa=\frac{\sqrt{2m(V_0-E)}}{\hbar}.
+$$
+
+The stationary Schrödinger equation has the regional solutions
+
+$$
+\psi_I=e^{ikx}+R_a e^{-ikx},
+\qquad
+\psi_{II}=C e^{\kappa x}+D e^{-\kappa x},
+\qquad
+\psi_{III}=T_a e^{ikx}.
+$$
+
+Continuity of \(\psi\) and \(d\psi/dx\) at both \(x=0\) and \(x=a\) gives four linear equations for \(R_a,C,D,T_a\). Eliminating the internal amplitudes produces the flux transmission probability
+
+$$
+\mathcal T
+=\left[
+1+\frac{V_0^2\sinh^2(\kappa a)}{4E(V_0-E)}
+\right]^{-1}.
+$$
+
+For an opaque barrier, \(\kappa a\gg1\), \(\sinh^2(\kappa a)\simeq e^{2\kappa a}/4\), so
+
+$$
+\mathcal T
+\simeq
+\frac{16E(V_0-E)}{V_0^2}e^{-2\kappa a}.
+$$
+
+Thus the often-quoted scaling
+
+$$
+\mathcal T\sim e^{-2\kappa a},
 \qquad
 \kappa=\frac{\sqrt{2m(V_0-E)}}{\hbar}.
 $$
 
 Tunneling explains alpha decay, scanning tunneling microscopy, Josephson effects, and reaction rates. It is not a particle borrowing energy in violation of conservation; the stationary state has definite total energy.
+
+| Logical role | Content |
+|---|---|
+| State-space input | Complex Hilbert space, normalized states, and Hermitian observables. |
+| Dynamical input | Linear Schrödinger evolution and boundary matching. |
+| Mathematical theorem | Cauchy–Schwarz plus noncommutativity gives the uncertainty bound. |
+| Derived nonclassical prediction | Nonzero barrier transmission for finite width and height. |
+| Interpretive caution | Neither uncertainty nor tunneling licenses temporary energy nonconservation. |
 
 ### Measurement, decoherence, and interpretation
 

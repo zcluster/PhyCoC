@@ -276,6 +276,28 @@ $$
 
 with measured light speed supported the identification of light as electromagnetic.
 
+For the plane-wave ansatz $\mathbf E=\mathbf E_0e^{i(\mathbf k\cdot\mathbf r-\omega t)}$, Gauss's law gives
+
+$$
+\mathbf k\cdot\mathbf E_0=0,
+$$
+
+while Faraday's law gives
+
+$$
+\mathbf k\times\mathbf E_0=\omega\mathbf B_0.
+$$
+
+Ampère–Maxwell gives $\mathbf k\times\mathbf B_0=-\omega\mu_0\epsilon_0\mathbf E_0$. Combining them yields
+
+$$
+k^2=\mu_0\epsilon_0\omega^2,
+\qquad
+c=\frac{\omega}{k}=\frac{1}{\sqrt{\mu_0\epsilon_0}},
+$$
+
+and $B_0=E_0/c$. Transversality and wave speed therefore follow from the field equations rather than being appended as optical facts.
+
 ### Energy, momentum, and local conservation
 
 Field energy density is:
@@ -302,6 +324,44 @@ $$
 $$
 
 states that field-energy loss plus outward flow equals work on matter. This changes the explanatory picture of circuits: energy can flow through surrounding fields rather than being imagined as carried only inside wires.
+
+The conservation law follows directly. Dot Ampère–Maxwell with $\mathbf E$ and Faraday's law with $\mathbf B/\mu_0$:
+
+$$
+\mathbf E\cdot(\nabla\times\mathbf B)
+=\mu_0\mathbf J\cdot\mathbf E
++\mu_0\epsilon_0\mathbf E\cdot\frac{\partial\mathbf E}{\partial t},
+$$
+
+$$
+\frac{\mathbf B}{\mu_0}\cdot(\nabla\times\mathbf E)
+=-\frac{\mathbf B}{\mu_0}\cdot\frac{\partial\mathbf B}{\partial t}.
+$$
+
+Use
+
+$$
+\nabla\cdot(\mathbf E\times\mathbf B)
+=\mathbf B\cdot(\nabla\times\mathbf E)
+-\mathbf E\cdot(\nabla\times\mathbf B)
+$$
+
+and collect time derivatives. The result is
+
+$$
+\frac{\partial}{\partial t}
+\left(\frac{\epsilon_0E^2}{2}+\frac{B^2}{2\mu_0}\right)
++\nabla\cdot\left(\frac{\mathbf E\times\mathbf B}{\mu_0}\right)
+=-\mathbf J\cdot\mathbf E.
+$$
+
+| Logical role | Content |
+|---|---|
+| Empirical inputs | Coulomb/Gauss behavior, induction, magnetic circulation and charge conservation |
+| Consistency repair | Displacement current restores the continuity equation |
+| Derived in vacuum | Electromagnetic wave equations, transverse fields and speed $1/\sqrt{\mu_0\epsilon_0}$ |
+| Derived locally | Poynting energy density and flux balance |
+| Additional input in matter | Constitutive relations such as $\mathbf D(\mathbf E)$ and $\mathbf B(\mathbf H)$ |
 
 Radiation carries momentum. For an absorbing surface:
 

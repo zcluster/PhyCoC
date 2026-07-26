@@ -212,6 +212,54 @@ $$
 
 For large short-range systems, ensembles often agree for bulk observables, but they are not definitionally identical. Long-range interactions, finite systems, and phase coexistence can make equivalence subtle.
 
+#### Deriving the canonical distribution rather than assuming it
+
+Let \(p_i\) be the probabilities of microstates with energies \(E_i\). Maximize Gibbs entropy subject to normalization and a fixed mean energy:
+
+$$
+\mathcal L
+=-k_B\sum_i p_i\ln p_i
+-\alpha\left(\sum_i p_i-1\right)
+-k_B\beta\left(\sum_i p_iE_i-U\right).
+$$
+
+Independent variations of every \(p_i\) give
+
+$$
+\frac{\partial\mathcal L}{\partial p_i}
+=-k_B(\ln p_i+1)-\alpha-k_B\beta E_i=0.
+$$
+
+Therefore \(p_i=C e^{-\beta E_i}\). Normalization fixes \(C=1/Z\), with
+
+$$
+Z(\beta)=\sum_i e^{-\beta E_i},
+\qquad
+p_i=\frac{e^{-\beta E_i}}{Z}.
+$$
+
+The derivative identities then follow rather than being separate postulates:
+
+$$
+U=\langle E\rangle=-\frac{\partial\ln Z}{\partial\beta},
+\qquad
+\operatorname{Var}(E)=\frac{\partial^2\ln Z}{\partial\beta^2}.
+$$
+
+Substituting \(\ln p_i=-\beta E_i-\ln Z\) into the entropy gives
+
+$$
+S=k_B(\ln Z+\beta U).
+$$
+
+With \(\beta=1/(k_BT)\), the Helmholtz free energy is therefore
+
+$$
+F=U-TS=-k_BT\ln Z.
+$$
+
+This chain shows exactly how one generating object, \(Z\), yields equilibrium probabilities, energy, entropy, fluctuations, and free energy. The physical input is not “maximum entropy” alone: one must specify which constraints and microstates are appropriate.
+
 ### Entropy, multiplicity, and typicality
 
 If a macrostate \(M\) corresponds to phase-space volume \(|\Gamma_M|\), Boltzmann entropy is:
@@ -243,6 +291,22 @@ H=\int f\ln f\,d^3v,
 \frac{dH}{dt}\le0.
 $$
 
+The sign can be traced explicitly. For binary collisions, pair the forward occupation product \(x=f_1f_2\) with the reverse product \(y=f'_1f'_2\). After symmetrizing the collision integral,
+
+$$
+\frac{dH}{dt}
+=-\frac14\int d\Gamma\,W\,(x-y)\ln\frac{x}{y},
+$$
+
+where the transition weight \(W\ge0\) and \(d\Gamma\) includes the colliding velocities and scattering angles. Since
+
+$$
+(x-y)\ln\frac{x}{y}\ge0
+\quad\text{for }x,y>0,
+$$
+
+the integral is nonpositive. Equality requires detailed balance, \(x=y\), which yields the equilibrium Maxwell form. The inequality is mathematical; applying it to a dilute gas depends on the molecular-chaos factorization used to close the one-particle kinetic equation.
+
 Because entropy is related schematically by \(S\sim-k_BH\), it increases. Loschmidt objected that reversing every velocity produces a valid mechanical trajectory that runs toward lower entropy. Zermelo invoked recurrence. The modern response is not that mechanics ceases to be reversible. Rather:
 
 - the kinetic equation uses statistical independence assumptions;
@@ -251,6 +315,14 @@ Because entropy is related schematically by \(S\sim-k_BH\), it increases. Loschm
 - a low-entropy boundary condition supplies temporal asymmetry.
 
 These points should be explicit in a discovery graph; “microscopic laws imply entropy always rises” is too strong.
+
+| Logical role | Content |
+|---|---|
+| Microscopic input | States, energies, Hamiltonian evolution, and collision conservation laws. |
+| Statistical input | A probability measure or typicality claim plus selected macroscopic constraints. |
+| Additional kinetic assumption | Molecular chaos for incoming particles; it is not a theorem of reversible mechanics alone. |
+| Derived equilibrium structure | Canonical weights and thermodynamic potentials from \(Z\). |
+| Derived conditional arrow | \(dH/dt\le0\) under the kinetic closure, not for every exact microtrajectory. |
 
 ### Fluctuations as quantitative evidence
 

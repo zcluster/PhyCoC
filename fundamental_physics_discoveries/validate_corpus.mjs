@@ -13,6 +13,29 @@ const files = fs
   .sort();
 const canonicalFiles = files.filter((name) => name !== newtonFile);
 
+// These are the nodes tagged as the interactive graph's Core theoretical backbone.
+// The additional checks guard against future edits collapsing a generative case into
+// a list of final formulas with no reproducible inference chain.
+const coreBackboneFiles = [
+  "08_newtonian_mechanics.md",
+  "11_thermodynamics_and_energy_conservation.md",
+  "12_statistical_mechanics.md",
+  "13_maxwell_electromagnetic_field_theory.md",
+  "19_special_relativity.md",
+  "24_general_relativity.md",
+  "26_quantum_mechanics.md",
+  "32_quantum_electrodynamics.md",
+  "38_electroweak_theory.md",
+  "39_quantum_chromodynamics.md",
+  "40_standard_model.md",
+  "47_quantum_field_theory.md",
+  "50_yang_mills_gauge_theory.md",
+  "55_fermat_principle.md",
+  "56_lagrangian_mechanics.md",
+  "57_hamiltonian_mechanics.md",
+  "58_second_law_of_thermodynamics.md",
+];
+
 const requiredHeadings = [
   "Graph metadata",
   "Central claim",
@@ -398,6 +421,25 @@ newtonLines.forEach((line, index) => {
     fail(newtonFile, `tab character at line ${index + 1}`);
   }
 });
+
+for (const file of coreBackboneFiles) {
+  const text = fs.readFileSync(path.join(corpusDir, file), "utf8");
+  const wordCount = text.trim().split(/\s+/).length;
+  const displayMathBlocks = (text.match(/^\$\$$/gm) ?? []).length / 2;
+  const hasInferenceAudit =
+    text.includes("| Logical role | Content |") ||
+    text.includes("### 11. Assumption-versus-conclusion ledger") ||
+    text.includes("### From inverse-square gravity to Keplerian motion");
+  if (wordCount < 1800) {
+    fail(file, `core-backbone case has only ${wordCount} words; derivation floor is 1800`);
+  }
+  if (displayMathBlocks < 8) {
+    fail(file, `core-backbone case has only ${displayMathBlocks} display-math blocks`);
+  }
+  if (!hasInferenceAudit) {
+    fail(file, "core-backbone case lacks an explicit assumption/inference-role audit");
+  }
+}
 
 if (errors.length > 0) {
   console.error(`Corpus validation failed with ${errors.length} error(s):`);

@@ -182,7 +182,38 @@ x=\pm ct,
 x'=\pm ct'.
 $$
 
-Requiring both light rays to have speed \(c\) and imposing reciprocity yields:
+To make that often-compressed step explicit, write the most general compatible time transformation as
+
+$$
+t'=B(t-\alpha x).
+$$
+
+For the right-moving ray, \(x=ct\) and \(x'=ct'\), so
+
+$$
+A(c-v)=Bc(1-\alpha c).
+$$
+
+For the left-moving ray, \(x=-ct\) and \(x'=-ct'\), giving
+
+$$
+A(c+v)=Bc(1+\alpha c).
+$$
+
+Adding and subtracting these equations gives \(A=B\) and \(\alpha=v/c^2\). Thus light invariance fixes the *form* but not yet the scale:
+
+$$
+x'=A(x-vt),\qquad
+t'=A\left(t-\frac{vx}{c^2}\right).
+$$
+
+Reciprocity supplies the inverse by replacing \(v\) with \(-v\). Substituting the inverse into the forward transformation requires
+
+$$
+A^2\left(1-\frac{v^2}{c^2}\right)=1.
+$$
+
+Continuity at \(v=0\) selects the positive root:
 
 $$
 A=\gamma
@@ -196,6 +227,36 @@ t'=\gamma\left(t-\frac{vx}{c^2}\right).
 $$
 
 The mixed \(x\)-term in \(t'\) is the mathematical source of relative simultaneity.
+
+Direct substitution also verifies the invariant interval:
+
+$$
+c^2t'^2-x'^2=c^2t^2-x^2.
+$$
+
+For a clock at rest in \(S'\), \(\Delta x'=0\), so interval invariance gives \(c^2\Delta\tau^2=c^2\Delta t^2-\Delta x^2\). With \(\Delta x=v\Delta t\),
+
+$$
+\Delta t=\gamma\Delta\tau.
+$$
+
+For a rod at rest in \(S'\), its proper length \(L_0=\Delta x'\) must be compared using simultaneous endpoint events in \(S\), \(\Delta t=0\). The spatial transformation then gives
+
+$$
+L_0=\gamma\Delta x,
+\qquad
+L=\frac{L_0}{\gamma}.
+$$
+
+The simultaneity condition is essential: using events simultaneous in the rod frame would not measure its length in the laboratory frame.
+
+| Logical role | Content |
+|---|---|
+| Empirical postulate | Inertial observers obtain the same vacuum light speed. |
+| Structural assumptions | Homogeneity gives linearity; isotropy and reciprocity exclude a preferred inertial direction or frame. |
+| Algebraic consequence | Light rays fix the time-space mixing; reciprocity fixes \(A=\gamma\). |
+| Derived observables | Relativity of simultaneity, time dilation, and length contraction. |
+| Scope condition | Inertial frames in flat spacetime; acceleration and gravitation require additional treatment. |
 
 ### Time dilation and the twin asymmetry
 

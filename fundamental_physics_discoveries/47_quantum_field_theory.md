@@ -124,6 +124,32 @@ $$
 =(2\pi)^3\delta^{(3)}(\mathbf p-\mathbf q).
 $$
 
+#### Why the mode expansion is a system of quantum oscillators
+
+The Euler–Lagrange equation of the free scalar Lagrangian is
+
+$$
+(\Box+m^2)\phi=0.
+$$
+
+In a finite box, expand \(\phi(t,\mathbf x)=V^{-1/2}\sum_{\mathbf p}q_{\mathbf p}(t)e^{i\mathbf p\cdot\mathbf x}\), with the reality condition \(q_{-\mathbf p}=q_{\mathbf p}^{*}\). Substitution into the action and spatial orthogonality separate the field into modes:
+
+$$
+L=\frac12\sum_{\mathbf p}
+\left(|\dot q_{\mathbf p}|^2-E_{\mathbf p}^2|q_{\mathbf p}|^2\right),
+\qquad
+E_{\mathbf p}^2=\mathbf p^2+m^2.
+$$
+
+Each independent mode is therefore a harmonic oscillator of frequency \(E_{\mathbf p}\). Canonical quantization promotes its amplitude and momentum to operators. Defining normalized ladder operators converts the equal-time field commutator into \([a_{\mathbf p},a_{\mathbf q}^{\dagger}]=\delta_{\mathbf p\mathbf q}\) in the box, or the delta-function version above in the continuum. The Hamiltonian becomes
+
+$$
+H=\sum_{\mathbf p}E_{\mathbf p}
+\left(a_{\mathbf p}^{\dagger}a_{\mathbf p}+\frac12\right).
+$$
+
+Thus \(N_{\mathbf p}=a_{\mathbf p}^{\dagger}a_{\mathbf p}\) counts excitations with relativistic energy \(E_{\mathbf p}\) and momentum \(\mathbf p\). The infinite zero-point sum is not automatically an observable absolute energy; its treatment depends on gravity, boundaries, and the renormalization prescription.
+
 The operators change occupation:
 
 $$
@@ -140,6 +166,14 @@ $$
 $$
 
 implementing exclusion. Interactions such as QED's \(-e\bar\psi\gamma^\mu A_\mu\psi\) couple matter and radiation fields and generate transition amplitudes.
+
+| Logical role | Content |
+|---|---|
+| Classical input | A local field action and its normal-mode decomposition. |
+| Quantum postulate | Equal-time canonical (anti)commutators. |
+| Derived structure | Every free bosonic mode is an oscillator; its ladder operators generate Fock sectors. |
+| Interaction step | Nonquadratic terms connect sectors and permit scattering, decay, creation, and annihilation. |
+| Scope caution | The particle basis is sharp for free/asymptotic modes and can be background- or observer-dependent. |
 
 ## Validation and explanatory gains
 

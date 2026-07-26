@@ -114,6 +114,65 @@ $$
 
 This shows how the apparent contact interaction emerges from exchange of a heavy mediator.
 
+### Self-contained symmetry-breaking and mixing derivation
+
+Take one scalar doublet of hypercharge \(Y=1\), with
+
+$$
+D_\mu=\partial_\mu
+-i\frac{g}{2}\tau^aW^a_\mu
+-i\frac{g'}{2}B_\mu,
+\qquad
+\Phi=\frac{1}{\sqrt2}\begin{pmatrix}0\\v+h\end{pmatrix}
+$$
+
+in unitary gauge. Keeping only terms quadratic in gauge fields, \(|D_\mu\Phi|^2\) supplies
+
+$$
+\mathcal L_{\mathrm{mass}}
+=\frac{v^2}{8}\left[
+g^2\big((W^1_\mu)^2+(W^2_\mu)^2\big)
++(gW^3_\mu-g'B_\mu)^2
+\right].
+$$
+
+Define \(W^\pm=(W^1\mp iW^2)/\sqrt2\). The charged term immediately gives \(m_W=gv/2\). The neutral mass matrix has determinant zero, so one eigenstate must remain massless. With
+
+$$
+\tan\theta_W=\frac{g'}{g},
+\qquad
+A_\mu=\sin\theta_W W^3_\mu+\cos\theta_W B_\mu,
+$$
+
+$$
+Z_\mu=\cos\theta_W W^3_\mu-\sin\theta_W B_\mu,
+$$
+
+diagonalization yields
+
+$$
+m_\gamma=0,
+\qquad
+m_Z=\frac{v}{2}\sqrt{g^2+g'^2},
+\qquad
+\frac{m_W}{m_Z}=\cos\theta_W.
+$$
+
+The coefficient of the unbroken electromagnetic current is the same whether inherited from \(W^3\) or \(B\), so \(e=g\sin\theta_W=g'\cos\theta_W\). At \(|q^2|\ll m_W^2\), replacing the \(W\) propagator by \(-1/m_W^2\) gives
+
+$$
+\frac{G_F}{\sqrt2}=\frac{g^2}{8m_W^2}
+=\frac{1}{2v^2}.
+$$
+
+| Logical role | Content |
+|---|---|
+| Chiral gauge input | \(SU(2)_L\times U(1)_Y\), matter representations, and couplings \(g,g'\). |
+| Vacuum input | A scalar doublet with nonzero \(v\); the potential parameters are empirical. |
+| Algebraic consequence | One massless neutral state, massive \(W^\pm,Z\), mixing relations, and fixed current structure. |
+| Low-energy inference | Heavy \(W\) exchange reduces to Fermi's contact interaction. |
+| Not predicted internally | Fermion Yukawa values, generation count, and the numerical values of \(g,g',v\). |
+
 ## Validation and explanatory gains
 
 - Neutral weak currents observed at CERN in 1973.
