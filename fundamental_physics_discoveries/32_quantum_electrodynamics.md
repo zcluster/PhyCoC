@@ -1,0 +1,254 @@
+# Quantum Electrodynamics: Historical Knowledge Graph
+
+## Graph metadata
+
+| Field | Value |
+|---|---|
+| Graph ID | `KG-QED-31` |
+| Central node | `D-QED-1940S` |
+| Focal discovery date | 1947–1949 renormalized QED |
+| Main contributors | Tomonaga, Schwinger, Feynman, Dyson and many precursors and experimentalists |
+| Domain | Quantum theory of charged particles and electromagnetic fields |
+| Epistemic status | Exceptionally precise quantum field theory; electromagnetic sector of the Standard Model |
+
+## Central claim
+
+QED combines quantum mechanics, special relativity, and electromagnetic gauge symmetry. Renormalization turns divergent intermediate expressions into finite relations among measured quantities, enabling predictions of unprecedented precision.
+
+## Time slices
+
+| Node | Period | Problem | Transition |
+|---|---:|---|---|
+| `TS-EARLY-QED` | 1927–1930s | Quantized radiation and Dirac electrons | Infinities and self-energy appear |
+| `TS-EXPERIMENTAL-ANOMALIES` | 1940s | Lamb shift and electron magnetic moment measured | Corrections demand consistent theory |
+| `TS-RENORMALIZED-QED` | 1940s | Covariant and canonical methods developed | Finite observable predictions |
+| `TS-DYSON` | 1949 | Formulations shown equivalent | Diagrammatic perturbation organized |
+| `TS-GAUGE-THEORY` | 1950s onward | QED becomes prototype | Standard Model gauge theories follow |
+
+## Alternative, incomplete, or superseded pathways
+
+### `R-UNRENORMALIZED-POINT-PARTICLE-PERTURBATION`
+
+- **What it is:** A direct perturbative quantum-field calculation using point electrons and photons in which bare masses and charges are inserted without a systematic regulator, counterterm, and renormalization-condition framework.
+- **Proposed/active period:** late 1920s–1940s.
+- **Limitation:** Loop integrals diverge without a consistent parameter relation.
+- **Outcome:** Replaced by renormalized field theory.
+
+### `R-CLASSICAL-RADIATION-ONLY`
+
+- **What it is:** A hybrid model in which charged matter may be quantized but the electromagnetic field remains a continuous classical wave with no photon creation, annihilation, or vacuum fluctuations.
+- **Proposed/active period:** nineteenth century–1920s.
+- **Limitation:** Cannot explain spontaneous emission, vacuum corrections, or discrete scattering.
+- **Outcome:** Retained for coherent large-scale fields.
+
+### `R-HOLE-THEORY-QED`
+
+- **What it is:** Early QED built around a physically filled Dirac sea whose holes represent positrons.
+- **Proposed/active period:** 1930s.
+- **Outcome:** Superseded by Fock-space field operators.
+
+### `R-LITERAL-UV-CUTOFF-ELECTRON-SIZE`
+
+- **What it is:** The attempt to cure divergences by imposing an arbitrary maximum momentum interpreted as a literal unresolved electron size.
+- **Proposed/active period:** 1930s–1940s.
+- **Outcome:** Regulator dependence remains without renormalization; cutoffs retained in effective theories.
+
+### `R-AD-HOC-INFINITY-SUBTRACTION`
+
+- **What it is:** Removing each divergent expression independently without a finite parameter set, symmetry constraints, and common renormalization conditions.
+- **Proposed/active period:** 1930s–1947.
+- **Outcome:** Superseded by systematic renormalization.
+
+### Pathway comparison ledger
+
+**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (1947–1949 renormalized QED). The proposed/active period is stored in each pathway record.
+
+| Pathway | Repair strategy | Why inadequate or limited | Retained content |
+|---|---|---|---|
+| Classical radiation only | Quantize atomic matter but keep field continuous | Spontaneous emission, photon statistics and scattering require field quanta | Coherent/high-occupation limit |
+| Unrenormalized point-particle perturbation | Insert bare point-particle parameters directly | Loop divergences lack a common finite calibration | Superseded by systematic renormalization |
+| Hole-theory QED | Fill negative electron energies | Infinite sea and asymmetric treatment of species | Antiparticle insight |
+| Cutoff as literal electron-size physics | Stop divergent integrals at arbitrary high momentum | Predictions depend on unmeasured cutoff unless organized by renormalization | Effective cutoffs remain useful |
+| Ad hoc infinity subtraction | Remove each divergence independently | Risks unlimited fitting and symmetry violation | Replaced by finite counterterm set and renormalization conditions |
+| **Discovery/current: renormalized QED** | Gauge-constrained field theory expresses observables through finite measured parameters order by order | Lamb shift, \(g-2\), scattering, running coupling | Retained electromagnetic quantum theory |
+
+Renormalization did not show that “infinities cancel by magic.” Ward identities restrict counterterms, and the same measured mass, charge, and field normalization must predict many other observables. Competing formulations by Tomonaga, Schwinger, and Feynman were shown equivalent by Dyson. Their convergence transformed a repair program into a reusable theory architecture.
+
+## Knowledge assets
+
+- `A-DIRAC-FIELD`: relativistic electron/positron.
+- `A-MAXWELL-GAUGE`: electromagnetic field symmetry.
+- `A-PERTURBATION`: expansion in small coupling.
+- `A-LAMB-SHIFT`: precision spectral anomaly.
+- `A-G-2`: magnetic-moment correction.
+
+## Discovery node and equations
+
+In Heaviside–Lorentz natural units \(\hbar=c=1\), the QED Lagrangian is:
+
+$$
+\mathcal{L}_{\mathrm{QED}}
+=-\frac14F_{\mu\nu}F^{\mu\nu}
++\bar\psi(i\gamma^\mu D_\mu-m)\psi,
+$$
+
+with:
+
+$$
+D_\mu=\partial_\mu+ieA_\mu.
+$$
+
+Local gauge transformation:
+
+$$
+\psi\rightarrow e^{-ie\chi}\psi,
+\qquad
+A_\mu\rightarrow A_\mu+\partial_\mu\chi
+$$
+
+leaves the physics invariant.
+
+Restoring SI constants, the dimensionless coupling is:
+
+$$
+\alpha=\frac{e^2}{4\pi\epsilon_0\hbar c}\approx\frac{1}{137}.
+$$
+
+The electron magnetic moment is written:
+
+$$
+\boldsymbol{\mu}
+=g\frac{e}{2m}\mathbf{S},
+\qquad
+a_e=\frac{g-2}{2}.
+$$
+
+At leading QED order:
+
+$$
+a_e=\frac{\alpha}{2\pi}+\mathcal{O}(\alpha^2).
+$$
+
+## Validation and explanatory gains
+
+QED explains the Lamb shift, anomalous magnetic moments, scattering cross sections, positronium, vacuum polarization, and running electromagnetic coupling. Agreement between calculated and measured \(a_e\) is among science's most precise theory–experiment comparisons.
+
+## Limitations and retained status
+
+Perturbative series are asymptotic, not ordinary convergent sums. QED does not include weak, strong, or gravitational interactions by itself. At very high energies it is embedded in electroweak theory. “Virtual particles popping in and out” is a heuristic, not a literal unique ontology.
+
+## Discovery patterns
+
+| ID | Instantiation |
+|---|---|
+| `P-01` | Relativity, quantum particles, and fields unified |
+| `P-02` | Gauge Lagrangian generates interaction amplitudes |
+| `P-03` | Divergences reframed through scale-dependent parameters |
+| `P-04` | Quantum fields and vacuum corrections accepted |
+| `P-05` | Dirac and Maxwell theories retained as limits |
+| `P-06` | Precision spectroscopy and \(g-2\) dominate validation |
+
+## Edge list
+
+```text
+A-DIRAC-FIELD --contributes-to--> D-QED-1940S
+A-MAXWELL-GAUGE --contributes-to--> D-QED-1940S
+A-LAMB-SHIFT --challenges--> EARLY-QED
+RENORMALIZATION --repairs--> EARLY-QED
+QED-LAGRANGIAN --generates--> SCATTERING-AMPLITUDES
+QED-LOOPS --explain--> A-G-2
+D-QED-1940S --prototype-for--> STANDARD-MODEL-GAUGE-THEORY
+D-QED-1940S --instantiates--> P-06
+```
+
+## Extended historical investigation
+
+### From a successful first theory to a crisis of infinities
+
+The first relativistic quantum descriptions of radiation were already productive. Dirac's 1927 treatment of the electromagnetic field explained emission and absorption using field quanta, while his relativistic electron equation supplied spin, the electron magnetic moment at leading order, and—after a difficult interpretive history—the positron. Yet the same framework generated ultraviolet divergences when interactions were calculated beyond the lowest approximation. A point electron acted on by its own quantized field, and vacuum fluctuations modified both masses and charges, producing integrals that grew without bound at high momentum.
+
+It would be misleading to describe pre-1945 QED as simply “wrong.” Its lowest-order scattering and radiation calculations worked, and several subtraction ideas existed. The unresolved question was whether one could make the procedure systematic without merely hiding arbitrary infinities. Wartime advances in microwave spectroscopy then made small atomic-energy differences measurable. In 1947, the Lamb–Retherford result showed that the \(2S_{1/2}\) and \(2P_{1/2}\) hydrogen levels—degenerate in the simplest Dirac treatment—were separated. Measurements of the electron's magnetic moment likewise revealed a small departure from \(g=2\). The anomalies were not failures of quantum field thinking; they were precisely sized opportunities for a more complete version of it.
+
+### The renormalization inference
+
+The theory begins with parameters in a Lagrangian, but experiments determine the mass and charge of the dressed, interacting electron. Schematically one writes
+
+$$
+m_0=m_{\mathrm{phys}}+\delta m,
+\qquad
+e_0=Z_e e_{\mathrm{phys}},
+$$
+
+where a regulator temporarily makes the divergent loop expressions well-defined, and counterterms \(\delta m\) and \(Z_e\) are fixed by specified measurement conditions. The important claim is not that the individual bare pieces are observable. It is that, order by order in \(\alpha\), all predictions for observables can be expressed using a finite set of measured parameters and become independent of the regulator.
+
+For an amplitude this logic has the schematic form
+
+$$
+\mathcal M
+=\mathcal M^{(0)}
++\alpha\mathcal M^{(1)}
++\alpha^2\mathcal M^{(2)}+\cdots .
+$$
+
+The loop terms include electron self-energy, vacuum polarization, and vertex corrections. Gauge symmetry constrains how their divergences fit together; the Ward–Takahashi identity relates the vertex and electron wavefunction renormalizations. This is why renormalization is not an unlimited permission to fit any answer. QED has only a small parameter set, while it predicts a very large family of spectral shifts, decay rates, and scattering distributions.
+
+Tomonaga and Schwinger developed covariant operator approaches, Feynman developed a spacetime and path-integral organization, and Dyson demonstrated the equivalence of the principal formulations and systematized perturbation theory. A Feynman diagram should be read as an indexed contribution to an amplitude—not normally as a photograph of a unique microscopic sequence. Internal “virtual particles” need not obey the external-particle mass relation and are representation-dependent bookkeeping elements.
+
+### Two precision examples
+
+The one-loop vertex correction gives Schwinger's celebrated result
+
+$$
+a_e^{(1)}=\frac{\alpha}{2\pi}\approx 0.0011614.
+$$
+
+Higher electromagnetic, hadronic, and electroweak corrections are required at modern precision. Agreement between theory and experiment is therefore a coupled test of field quantization, special relativity, gauge symmetry, perturbative computation, and independently measured constants—not a test of one diagram in isolation.
+
+The Lamb shift can be understood qualitatively as the result of radiative corrections that treat atomic states with different near-origin wavefunctions differently. For hydrogen,
+
+$$
+|\psi_{nS}(0)|^2\neq0,
+\qquad
+|\psi_{nP}(0)|^2=0
+$$
+
+in the nonrelativistic limit. Electron self-energy and vacuum-polarization effects therefore lift a degeneracy left by the ideal Dirac–Coulomb spectrum. A full calculation also includes recoil, finite proton size, and higher-order terms. This example illustrates how a “small anomaly” can contain several separable physical contributions rather than point to a single new object.
+
+### Scale dependence and effective-theory meaning
+
+Vacuum polarization screens electric charge, so the effective electromagnetic coupling depends on momentum scale. At leading logarithmic order for an electron contribution,
+
+$$
+\alpha(Q^2)\simeq
+\frac{\alpha(\mu^2)}
+{1-\dfrac{\alpha(\mu^2)}{3\pi}\ln(Q^2/\mu^2)}.
+$$
+
+Thus the familiar \(1/137\) is a low-energy value, not an immutable coupling at every scale. Renormalization-group flow turned the former nuisance of scale dependence into predictive structure. Modern effective-field-theory language further clarifies why QED can be extraordinarily successful without being ultimate: all interactions allowed by its symmetries may be organized by operator dimension, with high-dimension effects suppressed below a cutoff.
+
+### Evidence ledger and historiographic cautions
+
+| Evidence node | What it tested | What it did not establish alone |
+|---|---|---|
+| Lamb shift | Radiative modification of bound-state energies | The complete renormalization program |
+| Electron and muon \(g-2\) | Vertex corrections and contributions from many virtual sectors | A literal ontology of diagram lines |
+| Positronium spectra and decay | Bound-state QED and annihilation | The strong-force corrections in hadronic systems |
+| Bhabha/Møller scattering | Relativistic amplitudes, crossing, radiative corrections | Validity at arbitrarily high energy |
+| Running of \(\alpha\) | Vacuum polarization and scale dependence | Unification with the other interactions |
+
+Priority should not be compressed into a single “inventor of QED.” Tomonaga, Schwinger, Feynman, and Dyson made distinct theoretical contributions; Bethe produced an influential early Lamb-shift estimate; Kramers and others advanced renormalization ideas; experimentalists supplied the precision targets. The historical discovery node is therefore a coordinated repair and reorganization of quantum electrodynamics, not a solitary flash.
+
+## AI-oriented inference notes
+
+- **Separate unobservables from calibrated observables.** Bare parameters and individual diagrams are intermediate nodes; detector rates, level shifts, and cross sections are the comparison nodes.
+- **Track cancellation dependencies.** A finite prediction can depend on combining several divergent terms under symmetry constraints.
+- **Represent approximation order.** “QED predicts \(x\)” should link to perturbative order, included sectors, input constants, and uncertainty.
+- **Do not literalize calculational pictures.** Diagrammatic convenience is not sufficient evidence for a unique ontology of virtual particles.
+- **Attach domains to precision claims.** QED's success is within electromagnetic quantum phenomena and specified energy regimes; it is embedded in the electroweak Standard Model and omits quantum gravity.
+
+## Sources
+
+- Stanford Encyclopedia of Philosophy, [“The History of Quantum Field Theory”](https://plato.stanford.edu/archives/fall2023/entries/quantum-field-theory/qft-history.html).
+- Nobel Prize, [The 1965 Physics Prize](https://www.nobelprize.org/prizes/physics/1965/summary/).
+- Nobel Prize, [Richard Feynman lecture](https://www.nobelprize.org/prizes/physics/1965/feynman/lecture/).
+- NIST, [CODATA fundamental constants](https://physics.nist.gov/cuu/Constants/).
