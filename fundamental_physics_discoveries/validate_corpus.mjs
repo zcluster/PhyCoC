@@ -342,12 +342,74 @@ for (const file of files) {
   }
 }
 
-if (
-  !graphHtml.includes(
-    '"source":"D-SPECIAL-RELATIVITY-1905","target":"D-QFT-FIELD-QUANTIZATION-1927","relation":"provides-spacetime-symmetry-for","kind":"backbone"',
-  )
-) {
-  fail("index.html", "missing curated Special Relativity -> QFT backbone edge");
+const graphDataText = graphHtml.match(
+  /<script id="graph-data" type="application\/json">([\s\S]*?)<\/script>/,
+)?.[1];
+if (!graphDataText) {
+  fail("index.html", "missing embedded graph data");
+} else {
+  try {
+    const graphData = JSON.parse(graphDataText);
+    const mainlineIds = new Set(
+      graphData.cases.filter((item) => item.mainline).map((item) => item.id),
+    );
+    const backboneEdges = graphData.overviewEdges.filter((edge) => edge.kind === "backbone");
+    if (backboneEdges.length !== 23) {
+      fail("index.html", `expected 23 curated backbone edges, found ${backboneEdges.length}`);
+    }
+
+    const explicitEdgeKeys = new Set(
+      graphData.cases.flatMap((item) =>
+        item.explicitEdges.map(
+          (edge) => `${edge.source}|${edge.relation}|${edge.target}`,
+        ),
+      ),
+    );
+    for (const edge of backboneEdges) {
+      const key = `${edge.source}|${edge.relation}|${edge.target}`;
+      if (!mainlineIds.has(edge.source) || !mainlineIds.has(edge.target)) {
+        fail("index.html", `backbone edge does not join two mainline cases: ${key}`);
+      }
+      if (!explicitEdgeKeys.has(key)) {
+        fail("index.html", `backbone edge is absent from Markdown edge lists: ${key}`);
+      }
+    }
+
+    const mainlineThemeEdges = graphData.overviewEdges.filter(
+      (edge) =>
+        edge.kind === "theme" &&
+        mainlineIds.has(edge.source) &&
+        mainlineIds.has(edge.target),
+    );
+    if (mainlineThemeEdges.length > 0) {
+      fail(
+        "index.html",
+        `${mainlineThemeEdges.length} automatic theme edge(s) still join two mainline cases`,
+      );
+    }
+
+    const seenMainlinePairs = new Set();
+    for (const edge of graphData.overviewEdges) {
+      if (!mainlineIds.has(edge.source) || !mainlineIds.has(edge.target)) continue;
+      const pair = [edge.source, edge.target].sort().join("|");
+      if (seenMainlinePairs.has(pair)) {
+        fail("index.html", `duplicate mainline overview-edge pair: ${pair}`);
+      }
+      seenMainlinePairs.add(pair);
+    }
+  } catch (error) {
+    fail("index.html", `cannot parse embedded graph data: ${error.message}`);
+  }
+}
+
+if (!graphHtml.includes('edge.kind === "backbone" ? 1.5')) {
+  fail("index.html", "backbone edges lack the canonical 1.5-pixel line width");
+}
+if (!graphHtml.includes('edge.kind === "backbone" ? .58')) {
+  fail("index.html", "backbone edges lack the canonical opacity");
+}
+if (!graphHtml.includes('edge.kind === "chronology" || edge.kind === "backbone"')) {
+  fail("index.html", "backbone edges lack arrowheads");
 }
 
 function escapeForHtmlCheck(value) {

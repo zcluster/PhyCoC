@@ -264,6 +264,8 @@ NONCOMMUTING-GENERATORS --require--> NONLINEAR-FIELD-STRENGTH
 D-YANG-MILLS-1954 --generates--> GAUGE-BOSON-SELF-INTERACTION
 D-YANG-MILLS-1954 --underlies--> ELECTROWEAK-THEORY
 D-YANG-MILLS-1954 --underlies--> QCD
+D-YANG-MILLS-1954 --provides-nonabelian-gauge-structure-for--> D-ELECTROWEAK-1961-1973
+D-YANG-MILLS-1954 --provides-nonabelian-gauge-structure-for--> D-QCD-1973
 HIGGS-MECHANISM --repairs-mass-problem-of--> MASSLESS-ELECTROWEAK-YANG-MILLS
 D-YANG-MILLS-1954 --instantiates--> P-01
 ```

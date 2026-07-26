@@ -236,11 +236,14 @@ Perturbative series are asymptotic, not ordinary convergent sums. QED does not i
 ```text
 A-DIRAC-FIELD --contributes-to--> D-QED-1940S
 A-MAXWELL-GAUGE --contributes-to--> D-QED-1940S
+D-MAXWELL-FIELD-1861-1865 --is-quantized-in--> D-QED-1940S
+D-QFT-FIELD-QUANTIZATION-1927 --is-specialized-as-electromagnetism-in--> D-QED-1940S
 A-LAMB-SHIFT --challenges--> EARLY-QED
 RENORMALIZATION --repairs--> EARLY-QED
 QED-LAGRANGIAN --generates--> SCATTERING-AMPLITUDES
 QED-LOOPS --explain--> A-G-2
 D-QED-1940S --prototype-for--> STANDARD-MODEL-GAUGE-THEORY
+D-QED-1940S --is-embedded-in--> D-ELECTROWEAK-1961-1973
 D-QED-1940S --instantiates--> P-06
 ```
 

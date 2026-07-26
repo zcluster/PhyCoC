@@ -181,11 +181,13 @@ Nonrelativistic quantum mechanics does not allow particle creation and is not a 
 A-DE-BROGLIE --contributes-to--> D-WAVE-MECHANICS
 A-ATOMIC-SPECTRA --constrains--> D-QUANTUM-MECHANICS-1925-1927
 D-MATRIX-MECHANICS --equivalent-to--> D-WAVE-MECHANICS
+D-HAMILTONIAN-MECHANICS-1834 --provides-formal-structure-for--> D-QUANTUM-MECHANICS-1925-1927
 BORN-RULE --maps--> QUANTUM-STATE
 BORN-RULE --maps-to--> OUTCOME-PROBABILITIES
 NONCOMMUTATION --implies--> UNCERTAINTY-RELATION
 D-QUANTUM-MECHANICS-1925-1927 --supersedes--> R-BOHR-SOMMERFELD
 D-QUANTUM-MECHANICS-1925-1927 --retains-limit--> CLASSICAL-MECHANICS
+D-QUANTUM-MECHANICS-1925-1927 --is-extended-to-quantized-fields-by--> D-QFT-FIELD-QUANTIZATION-1927
 D-QUANTUM-MECHANICS-1925-1927 --instantiates--> P-03
 ```
 

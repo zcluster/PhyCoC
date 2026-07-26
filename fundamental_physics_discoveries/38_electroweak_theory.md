@@ -249,11 +249,14 @@ Electroweak theory does not explain three generations, Yukawa values, matter asy
 
 ```text
 A-QED-GAUGE --contributes-to--> D-ELECTROWEAK-1961-1973
+D-QED-1940S --is-embedded-in--> D-ELECTROWEAK-1961-1973
+D-YANG-MILLS-1954 --provides-nonabelian-gauge-structure-for--> D-ELECTROWEAK-1961-1973
 A-V-A --constrains--> SU2L-STRUCTURE
 A-HIGGS-MECHANISM --generates--> W-Z-MASSES
 R-FERMI-FUNDAMENTAL-CONTACT --reframed-as--> LOW-ENERGY-W-EXCHANGE
 D-ELECTROWEAK-1961-1973 --predicts--> NEUTRAL-CURRENT
 D-ELECTROWEAK-1961-1973 --predicts--> W-Z-BOSONS
+D-ELECTROWEAK-1961-1973 --constitutes-electroweak-sector-of--> D-STANDARD-MODEL-1970S
 V-NEUTRAL-CURRENT --validates--> D-ELECTROWEAK-1961-1973
 V-W-Z-DISCOVERY --validates--> D-ELECTROWEAK-1961-1973
 D-ELECTROWEAK-1961-1973 --instantiates--> P-01

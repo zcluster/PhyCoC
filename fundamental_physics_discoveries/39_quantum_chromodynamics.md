@@ -230,9 +230,11 @@ Confinement is strongly supported and reproduced in lattice calculations, but a 
 A-QUARKS --contributes-to--> D-QCD-1973
 A-COLOR --defines--> SU3C
 A-YANG-MILLS --enables--> D-QCD-1973
+D-YANG-MILLS-1954 --provides-nonabelian-gauge-structure-for--> D-QCD-1973
 GLUON-SELF-INTERACTION --causes--> ASYMPTOTIC-FREEDOM
 ASYMPTOTIC-FREEDOM --explains--> A-SCALING
 D-QCD-1973 --supersedes--> R-ABELIAN-COLOR-FORCE
+D-QCD-1973 --constitutes-strong-sector-of--> D-STANDARD-MODEL-1970S
 V-THREE-JET --supports--> GLUON
 LATTICE-QCD --tests-nonperturbatively--> D-QCD-1973
 D-QCD-1973 --instantiates--> P-03

@@ -252,29 +252,51 @@ const cases = files.map((file, index) => {
   };
 });
 
-const overviewEdges = [];
-for (let index = 1; index < cases.length; index += 1) {
-  overviewEdges.push({
-    source: cases[index - 1].id,
-    target: cases[index].id,
-    relation: "chronologically-precedes",
-    kind: "chronology",
-  });
-}
-
-const tokenSets = cases.map(tokensFor);
-const linkedPairs = new Set();
-
 // High-value scientific dependencies are curated rather than entrusted to the
 // title/domain similarity heuristic. This preserves conceptually necessary
 // cross-domain links whose vocabulary differs strongly between case titles.
 const curatedOverviewEdges = [
+  { source: "D-FERMAT-PRINCIPLE-1662", target: "D-LAGRANGIAN-MECHANICS-1788", relation: "anticipates-stationary-action-form" },
+  { source: "T-NEWTON-1687", target: "D-LAGRANGIAN-MECHANICS-1788", relation: "is-reformulated-by" },
+  { source: "D-LAGRANGIAN-MECHANICS-1788", target: "D-HAMILTONIAN-MECHANICS-1834", relation: "is-transformed-into" },
+  { source: "D-HAMILTONIAN-MECHANICS-1834", target: "D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902", relation: "provides-phase-space-for" },
+  { source: "D-HAMILTONIAN-MECHANICS-1834", target: "D-QUANTUM-MECHANICS-1925-1927", relation: "provides-formal-structure-for" },
+  { source: "D-FIRST-LAW-1847-1850", target: "D-SECOND-LAW-1850-1865", relation: "constrains-energy-accounting-in" },
+  { source: "D-FIRST-LAW-1847-1850", target: "D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902", relation: "supplies-energy-constraint-for" },
+  { source: "D-SECOND-LAW-1850-1865", target: "D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902", relation: "is-microscopically-grounded-by" },
+  { source: "D-MAXWELL-FIELD-1861-1865", target: "D-SPECIAL-RELATIVITY-1905", relation: "creates-covariance-problem-resolved-by" },
+  { source: "D-MAXWELL-FIELD-1861-1865", target: "D-QED-1940S", relation: "is-quantized-in" },
+  { source: "D-SPECIAL-RELATIVITY-1905", target: "D-GENERAL-RELATIVITY-1915", relation: "is-locally-embedded-in" },
   {
     source: "D-SPECIAL-RELATIVITY-1905",
     target: "D-QFT-FIELD-QUANTIZATION-1927",
     relation: "provides-spacetime-symmetry-for",
   },
+  { source: "D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902", target: "D-QUANTUM-STATISTICS-1924-1926", relation: "is-generalized-by" },
+  { source: "D-QUANTUM-STATISTICS-1924-1926", target: "D-QUANTUM-MECHANICS-1925-1927", relation: "constrains-identical-particle-sectors-of" },
+  { source: "D-QUANTUM-STATISTICS-1924-1926", target: "D-QFT-FIELD-QUANTIZATION-1927", relation: "supplies-occupation-number-rules-for" },
+  { source: "D-QUANTUM-MECHANICS-1925-1927", target: "D-QFT-FIELD-QUANTIZATION-1927", relation: "is-extended-to-quantized-fields-by" },
+  { source: "D-QFT-FIELD-QUANTIZATION-1927", target: "D-QED-1940S", relation: "is-specialized-as-electromagnetism-in" },
+  { source: "D-QFT-FIELD-QUANTIZATION-1927", target: "D-YANG-MILLS-1954", relation: "hosts-nonabelian-gauge-fields-in" },
+  { source: "D-QED-1940S", target: "D-ELECTROWEAK-1961-1973", relation: "is-embedded-in" },
+  { source: "D-YANG-MILLS-1954", target: "D-ELECTROWEAK-1961-1973", relation: "provides-nonabelian-gauge-structure-for" },
+  { source: "D-YANG-MILLS-1954", target: "D-QCD-1973", relation: "provides-nonabelian-gauge-structure-for" },
+  { source: "D-ELECTROWEAK-1961-1973", target: "D-STANDARD-MODEL-1970S", relation: "constitutes-electroweak-sector-of" },
+  { source: "D-QCD-1973", target: "D-STANDARD-MODEL-1970S", relation: "constitutes-strong-sector-of" },
 ];
+
+const pairKey = (left, right) => [left, right].sort().join("|");
+const curatedPairs = new Set(curatedOverviewEdges.map((edge) => pairKey(edge.source, edge.target)));
+const overviewEdges = [];
+for (let index = 1; index < cases.length; index += 1) {
+  const source = cases[index - 1].id;
+  const target = cases[index].id;
+  if (curatedPairs.has(pairKey(source, target))) continue;
+  overviewEdges.push({ source, target, relation: "chronologically-precedes", kind: "chronology" });
+}
+
+const tokenSets = cases.map(tokensFor);
+const linkedPairs = new Set();
 for (const edge of curatedOverviewEdges) {
   const sourceIndex = cases.findIndex((item) => item.id === edge.source);
   const targetIndex = cases.findIndex((item) => item.id === edge.target);
@@ -303,6 +325,7 @@ for (let left = 0; left < cases.length; left += 1) {
     const b = Math.max(left, candidate.right);
     const key = `${a}:${b}`;
     if (linkedPairs.has(key)) continue;
+    if (cases[a].mainline && cases[b].mainline) continue;
     linkedPairs.add(key);
     overviewEdges.push({
       source: cases[a].id,

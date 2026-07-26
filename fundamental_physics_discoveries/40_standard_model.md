@@ -225,6 +225,8 @@ The Standard Model omits quantum gravity, does not identify dark matter or dark 
 A-QFT --framework-for--> D-STANDARD-MODEL-1970S
 A-ELECTROWEAK --part-of--> D-STANDARD-MODEL-1970S
 A-QCD --part-of--> D-STANDARD-MODEL-1970S
+D-ELECTROWEAK-1961-1973 --constitutes-electroweak-sector-of--> D-STANDARD-MODEL-1970S
+D-QCD-1973 --constitutes-strong-sector-of--> D-STANDARD-MODEL-1970S
 A-HIGGS --part-of--> D-STANDARD-MODEL-1970S
 A-FLAVOR-DATA --constrains--> D-STANDARD-MODEL-1970S
 D-STANDARD-MODEL-1970S --predicts--> W-Z-GLUON-HIGGS
