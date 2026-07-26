@@ -125,6 +125,37 @@ $$
 \langle A\rangle=\langle\psi|\hat A|\psi\rangle.
 $$
 
+## Historically novel predictions and deductions
+
+### `NP-QM-01` — Barrier penetration and alpha decay
+
+- **Classification:** `EARLY-DERIVED-PREDICTION`.
+- **Prediction date and authorship:** Gamow and, independently, Gurney and Condon applied the new wave mechanics to alpha decay in 1928. Radioactivity was already known; the novel deduction was that a classically trapped particle could escape with a quantitatively energy-sensitive probability.
+- **Construction-data independence:** decay energies and lifetimes informed the nuclear application, so this is not a pristine prediction of an unknown phenomenon. Its value lies in the new mechanism and its quantitative scaling.
+- **Derivation provenance:** `MODERN-PEDAGOGICAL-DERIVATION` using the WKB approximation.
+
+In a region where $V(x)>E$, the local wave number is imaginary. Writing
+
+$$
+\kappa(x)=\frac{\sqrt{2m[V(x)-E]}}{\hbar},
+$$
+
+the decaying solution gives the transmission scale
+
+$$
+T\approx\exp\left[-2\int_{x_1}^{x_2}\kappa(x)\,dx\right].
+$$
+
+For an alpha particle confronting the Coulomb barrier outside a nucleus, the integral decreases sharply as the alpha energy rises. With an assault frequency $\nu$, the decay rate is
+
+$$
+\Gamma\sim \nu T,
+$$
+
+which explains the enormous lifetime variation behind the Geiger–Nuttall relation.
+- **What was new:** classical mechanics requires $T=0$ whenever $E<V$; wave mechanics predicts a nonzero, exponentially controlled escape rate.
+- **Historical caution:** this application followed the 1925–1926 formulation. It should not be presented as a result already derived in Heisenberg's or Schrödinger's foundational papers.
+
 ## Validation and explanatory gains
 
 Atomic spectra, tunneling, chemical bonds, diffraction of matter, Stern–Gerlach splitting, semiconductor behavior, superconductivity, and precision spectroscopy validate the framework. Classical motion emerges approximately through Ehrenfest relations, stationary phase, and decoherence.

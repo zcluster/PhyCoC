@@ -232,6 +232,27 @@ Surfaces $S=\text{constant}$ are wavefronts and their normals are rays. Thus the
 | Derived | Euler–Lagrange ray equation, straight rays and Snell tangential invariant |
 | Independently connected | Eikonal equation from the leading short-wavelength wave equation |
 
+## Historically novel predictions and deductions
+
+### `NP-FERMAT-NONE` — No clean independent contemporary prediction
+
+- **Classification:** `NO-CLEAN-CONTEMPORANEOUS-PREDICTION`.
+- **Reason:** Fermat's 1662 least-time principle was chiefly judged by its ability to derive already-known laws of reflection and refraction. Snell's sine law therefore belongs under `RETRODICTION-OR-EXPLANATION`, not under novel prediction.
+- **Discovery-AI significance:** a powerful representational principle can be scientifically fertile even when its first achievement is compression and unification rather than a new phenomenon. The corpus should not manufacture a prediction by silently using observations that selected the principle.
+- **Later theoretical consequence:** in a continuously varying isotropic index $n(\mathbf r)$, stationarity of
+
+$$
+\mathcal T=\frac1c\int n(\mathbf r)\,ds
+$$
+
+gives the ray equation
+
+$$
+\frac{d}{ds}\left(n\frac{d\mathbf r}{ds}\right)=\nabla n.
+$$
+
+This predicts continuous bending toward larger refractive index and underlies gradient-index optics, but this differential form is a later development of Fermat's principle, not a documented new prediction made by Fermat in 1662.
+
 ## Validation and explanatory gains
 
 The principle reproduces straight propagation in a uniform medium, equal angles in reflection, Snell refraction, total-internal-reflection conditions and ray bending in graded-index media. It makes lens design and optical path comparison systematic. Its reuse in the brachistochrone and Hamilton's optical–mechanical analogy demonstrated that one functional can generate an entire family of local equations.

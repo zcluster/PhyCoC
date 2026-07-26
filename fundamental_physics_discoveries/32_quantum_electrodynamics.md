@@ -182,6 +182,36 @@ This is a constrained prediction pipeline, not “subtract infinity”: a finite
 | Predictions | Remaining scattering, spectroscopy, magnetic-moment, and running-coupling observables. |
 | Scope condition | Stated perturbative order, scale, scheme, and included particle sectors. |
 
+## Historically novel predictions and deductions
+
+### `NP-QED-01` — Positronium bound states
+
+- **Classification:** `EARLY-DERIVED-PREDICTION` within the QED tradition.
+- **Prediction date and authorship:** after Dirac theory supplied the positron, Mohorovičić proposed the electron–positron atom in 1934; positronium was experimentally identified by Deutsch in 1951. This predates the mature postwar renormalization program, so it is not credited to that repair alone.
+- **Construction-data independence:** the bound state was inferred before its spectral and lifetime signatures were observed.
+- **Derivation provenance:** `MODERN-PEDAGOGICAL-DERIVATION` of the leading nonrelativistic spectrum.
+
+For equal constituent masses $m_e$, the relative coordinate has reduced mass
+
+$$
+\mu=\frac{m_em_e}{m_e+m_e}=\frac{m_e}{2}.
+$$
+
+Replacing the electron–proton reduced mass in the Coulomb spectrum gives
+
+$$
+\boxed{E_n=-\frac{\mu c^2\alpha^2}{2n^2}
+=-\frac{m_ec^2\alpha^2}{4n^2}}.
+$$
+
+Spin and annihilation then split the singlet and triplet states and give different lifetimes; precision values require full QED corrections.
+- **Observable discriminator and outcome:** a neutral short-lived $e^-e^+$ atom should show hydrogen-like levels with half the leading Rydberg energy and annihilation-dependent lifetimes. Those signatures were found.
+
+### `NP-QED-NONE` — Renormalized QED's famous early numbers were not all predictions
+
+- **Classification:** `RETRODICTION-OR-EXPLANATION` warning.
+- **Reason:** the Lamb shift and the electron's anomalous magnetic moment were crucial empirical stimuli during QED's postwar reconstruction. Their successful precision calculation is extraordinary, but calling both wholly independent predictions would erase their role in theory repair. Later higher-order coefficients and measurements do provide increasingly independent tests.
+
 ## Validation and explanatory gains
 
 QED explains the Lamb shift, anomalous magnetic moments, scattering cross sections, positronium, vacuum polarization, and running electromagnetic coupling. Agreement between calculated and measured \(a_e\) is among science's most precise theory–experiment comparisons.

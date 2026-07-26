@@ -183,6 +183,26 @@ Heat is thereby the residual energy transfer not classified as work, not a store
 | Defined | State function $U$ and boundary transfers $Q,W$ |
 | Not derived | Directionality, reversibility and efficiency bounds |
 
+## Historically novel predictions and deductions
+
+### `NP-FIRST-LAW-01` — Perpetual motion of the first kind is impossible
+
+- **Classification:** `NOVEL-THEORETICAL-CONSTRAINT`.
+- **Historical status:** this is a prospective no-go consequence of energy conservation, not a prediction of a new object. Joule's heating measurements and related equivalence evidence helped construct the first law and therefore are not independent predictions of it.
+- **Derivation provenance:** `HISTORICAL-RECONSTRUCTION` using the later compact notation $dU=\delta Q-\delta W$.
+
+For a cyclic device, the working substance returns to its initial state, so
+
+$$
+\Delta U_{\rm cycle}=0
+\quad\Longrightarrow\quad
+\oint\delta W=\oint\delta Q.
+$$
+
+If the device takes no net heat or other energy from its surroundings, $\oint\delta Q=0$, hence $\oint\delta W=0$. It cannot deliver positive net work each cycle without an equal energy input.
+- **Observable discriminator:** any claimed closed-cycle machine with $W_{\rm out}>Q_{\rm in}$ would falsify the bookkeeping law or reveal a missed energy channel.
+- **Why no stronger item is claimed:** the first law constrains conversions but, without constitutive equations and boundary conditions, does not uniquely predict a new material or celestial phenomenon. That limitation is itself useful training data.
+
 ## Validation and explanatory gains
 
 The first law unifies frictional heating, electrical resistance, gas compression, chemical reactions and mechanical work as energy transformations. It explains why a nominally “lost” mechanical energy reappears as internal energy and why perpetual-motion machines of the first kind fail when every reservoir is included.

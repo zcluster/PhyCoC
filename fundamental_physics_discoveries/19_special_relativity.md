@@ -116,6 +116,44 @@ E^2=p^2c^2+m^2c^4,
 E_0=mc^2.
 $$
 
+## Historically novel predictions and deductions
+
+### `NP-SR-01` — Inertia of energy and mass–energy equivalence
+
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION`.
+- **Prediction date and authorship:** in a separate 1905 paper, Einstein inferred that if a body loses energy $L$ as radiation, its mass decreases by $L/c^2$. The familiar universal equation $E_0=mc^2$ is a later, broader formulation of that result.
+- **Construction-data independence:** the inference was not fitted to nuclear mass defects or annihilation measurements, which came later.
+- **Derivation provenance:** first `HISTORICAL-ORIGINAL` in outline, then `MODERN-PEDAGOGICAL-DERIVATION` for the exact invariant statement.
+
+In the body's rest frame, let it emit two equal, opposite light pulses with total energy $L$, so there is no recoil. Viewed from a frame moving at speed $v$, relativity's transformation of radiation energy makes the radiated total $\gamma L$. Energy conservation in the two frames then gives the decrease in body kinetic energy
+
+$$
+K_{\rm before}-K_{\rm after}=L(\gamma-1).
+$$
+
+At low speed, $\gamma-1\simeq v^2/(2c^2)$, hence
+
+$$
+K_{\rm before}-K_{\rm after}
+\simeq \frac12\left(\frac{L}{c^2}\right)v^2.
+$$
+
+The body therefore behaves as though its inertial mass decreased by
+
+$$
+\boxed{\Delta m=\frac{L}{c^2}}.
+$$
+
+Modern four-momentum makes the exact general relation explicit:
+
+$$
+E^2-p^2c^2=m^2c^4,
+\qquad p=0\Longrightarrow E_0=mc^2.
+$$
+
+- **Novel content and outcome:** energy stored or released changes inertia by a definite amount. Later nuclear reactions, pair creation, and annihilation made the quantitative relation directly measurable; those outcomes validate the deduction but were not part of its construction.
+- **Historical caution:** Einstein's 1905 argument used an emission thought experiment and a low-velocity comparison. Presenting the four-vector proof as his original derivation would be anachronistic.
+
 ## Validation and explanatory gains
 
 Particle lifetimes, accelerator dynamics, relativistic Doppler shifts, atomic-clock comparisons, and mass–energy conversion confirm the framework. Electromagnetism and mechanics share Lorentz symmetry. Causality is organized by light cones rather than absolute time.
@@ -400,5 +438,6 @@ with \(E_0=mc^2\) at rest. Historical nuance matters: Lorentz and Poincaré deve
 ## Sources
 
 - Einstein Papers Project, [“On the Electrodynamics of Moving Bodies”](https://einsteinpapers.press.princeton.edu/vol2-trans/154).
+- AAPT ComPADRE, [English translation of Einstein's 1905 mass–energy paper](https://www.compadre.org/relativity/items/detail.cfm?Attached=1&ID=2134).
 - Stanford Encyclopedia of Philosophy, [“Einstein's Philosophy of Science”](https://plato.stanford.edu/entries/einstein-philscience/).
 - Einstein Online, [“Special Relativity”](https://www.einstein-online.info/en/category/elementary/special-relativity/).

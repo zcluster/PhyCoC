@@ -155,6 +155,45 @@ For \(n_f<17\), \(\beta_0>0\), so increasing \(Q\) decreases \(\alpha_s\): asymp
 | Empirical bridge | Approximate parton scaling plus calculable logarithmic violations and jets. |
 | Separate nonperturbative claim | Confinement is supported by spectrum, lattice calculations, and phenomenology; it does not follow from one-loop running alone. |
 
+## Historically novel predictions and deductions
+
+### `NP-QCD-01` — Logarithmic scaling violations
+
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION` of asymptotically free QCD.
+- **Prediction date and authorship:** after the 1973 discovery of asymptotic freedom, QCD predicted that deep-inelastic structure functions would not scale exactly; their $Q^2$ dependence would be logarithmic and correlated across momentum fraction $x$.
+- **Derivation provenance:** `MODERN-PEDAGOGICAL-DERIVATION`.
+
+For $n_f$ sufficiently small, the one-loop beta function is negative:
+
+$$
+\frac{d\alpha_s}{d\ln Q^2}
+=-\frac{\beta_0}{4\pi}\alpha_s^2+cdots,
+\qquad
+\beta_0=11-\frac{2n_f}{3}>0.
+$$
+
+Integration yields
+
+$$
+\alpha_s(Q^2)\simeq
+\frac{4\pi}{\beta_0\ln(Q^2/\Lambda_{\rm QCD}^2)}.
+$$
+
+Parton branching then evolves distributions through equations of the schematic form
+
+$$
+\frac{\partial f_i(x,Q^2)}{\partial\ln Q^2}
+=\frac{\alpha_s}{2\pi}\sum_j(P_{ij}\otimes f_j)(x,Q^2).
+$$
+
+- **Observable discriminator and outcome:** increasing $Q^2$ should deplete large-$x$ partons and populate smaller $x$ through radiation, with logarithmic rather than power-law evolution. Deep-inelastic data exhibited these systematic violations.
+
+### `NP-QCD-02` — Three-jet events from gluon radiation
+
+- **Classification:** `EARLY-DERIVED-PREDICTION`.
+- **Inference:** QCD permits $e^+e^-\to q\bar qg$ at order $\alpha_s$. A sufficiently energetic, wide-angle gluon hadronizes into its own collimated spray, converting the two-jet topology into three approximately coplanar jets.
+- **Outcome:** three-jet events observed at PETRA in 1979 supplied direct evidence for gluon bremsstrahlung and allowed tests of the gluon's spin and color coupling.
+
 ## Validation and explanatory gains
 
 - Scaling violations follow QCD evolution.
@@ -292,6 +331,7 @@ QCD also permits a CP-violating \(\theta\) term, yet neutron electric-dipole lim
 ## Sources
 
 - CERN Document Server, ['t Hooft, “The Evolution of Quantum Field Theory, From QED to Grand Unification”](https://cds.cern.ch/record/2003855).
+- Nobel Prize, [2004 scientific background on asymptotic freedom](https://www.nobelprize.org/prizes/physics/2004/popular-information/).
 - Nobel Prize, [The 2004 Physics Prize: asymptotic freedom](https://www.nobelprize.org/prizes/physics/2004/summary/).
 - CERN, [“The Strong Force”](https://home.cern/science/physics/standard-model).
 - Particle Data Group, [QCD review](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-qcd.pdf).

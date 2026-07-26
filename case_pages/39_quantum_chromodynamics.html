@@ -30,6 +30,9 @@
 <a class="toc-l2" href="#knowledge-assets">Knowledge assets</a>
 <a class="toc-l2" href="#discovery-node-and-equations">Discovery node and equations</a>
 <a class="toc-l3" href="#self-contained-running-coupling-inference">Self-contained running-coupling inference</a>
+<a class="toc-l2" href="#historically-novel-predictions-and-deductions">Historically novel predictions and deductions</a>
+<a class="toc-l3" href="#np-qcd-01-logarithmic-scaling-violations">NP-QCD-01 — Logarithmic scaling violations</a>
+<a class="toc-l3" href="#np-qcd-02-three-jet-events-from-gluon-radiation">NP-QCD-02 — Three-jet events from gluon radiation</a>
 <a class="toc-l2" href="#validation-and-explanatory-gains">Validation and explanatory gains</a>
 <a class="toc-l2" href="#limitations-and-retained-status">Limitations and retained status</a>
 <a class="toc-l2" href="#discovery-patterns">Discovery patterns</a>
@@ -99,6 +102,23 @@
 =\frac{4\pi}{\beta_0\ln(Q^2/\Lambda_{\mathrm{QCD}}^2)}.\]</div>
 <p>For \(n_f&lt;17\), \(\beta_0&gt;0\), so increasing \(Q\) decreases \(\alpha_s\): asymptotic freedom. Conversely, the one-loop expression grows toward low \(Q\); its divergence is a warning that perturbation theory has failed, not itself a proof of confinement.</p>
 <div class="table-wrap"><table><thead><tr><th>Logical role</th><th>Content</th></tr></thead><tbody><tr><td>Microscopic input</td><td>\(SU(3)_c\) Yang–Mills fields coupled to colored quarks.</td></tr><tr><td>Quantum calculation</td><td>Gauge, ghost, and quark loop contributions to the one-loop beta function.</td></tr><tr><td>Derived ultraviolet result</td><td>Logarithmically decreasing \(\alpha_s(Q)\) for the observed flavor count.</td></tr><tr><td>Empirical bridge</td><td>Approximate parton scaling plus calculable logarithmic violations and jets.</td></tr><tr><td>Separate nonperturbative claim</td><td>Confinement is supported by spectrum, lattice calculations, and phenomenology; it does not follow from one-loop running alone.</td></tr></tbody></table></div>
+<h2 id="historically-novel-predictions-and-deductions">Historically novel predictions and deductions<a class="anchor" href="#historically-novel-predictions-and-deductions" aria-label="Link to this section">#</a></h2>
+<h3 id="np-qcd-01-logarithmic-scaling-violations"><code>NP-QCD-01</code> — Logarithmic scaling violations<a class="anchor" href="#np-qcd-01-logarithmic-scaling-violations" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>Classification:</strong> <code>NOVEL-CONTEMPORANEOUS-PREDICTION</code> of asymptotically free QCD.</li><li><strong>Prediction date and authorship:</strong> after the 1973 discovery of asymptotic freedom, QCD predicted that deep-inelastic structure functions would not scale exactly; their \(Q^2\) dependence would be logarithmic and correlated across momentum fraction \(x\).</li><li><strong>Derivation provenance:</strong> <code>MODERN-PEDAGOGICAL-DERIVATION</code>.</li></ul>
+<p>For \(n_f\) sufficiently small, the one-loop beta function is negative:</p>
+<div class="math-display">\[\frac{d\alpha_s}{d\ln Q^2}
+=-\frac{\beta_0}{4\pi}\alpha_s^2+cdots,
+\qquad
+\beta_0=11-\frac{2n_f}{3}&gt;0.\]</div>
+<p>Integration yields</p>
+<div class="math-display">\[\alpha_s(Q^2)\simeq
+\frac{4\pi}{\beta_0\ln(Q^2/\Lambda_{\rm QCD}^2)}.\]</div>
+<p>Parton branching then evolves distributions through equations of the schematic form</p>
+<div class="math-display">\[\frac{\partial f_i(x,Q^2)}{\partial\ln Q^2}
+=\frac{\alpha_s}{2\pi}\sum_j(P_{ij}\otimes f_j)(x,Q^2).\]</div>
+<ul><li><strong>Observable discriminator and outcome:</strong> increasing \(Q^2\) should deplete large-\(x\) partons and populate smaller \(x\) through radiation, with logarithmic rather than power-law evolution. Deep-inelastic data exhibited these systematic violations.</li></ul>
+<h3 id="np-qcd-02-three-jet-events-from-gluon-radiation"><code>NP-QCD-02</code> — Three-jet events from gluon radiation<a class="anchor" href="#np-qcd-02-three-jet-events-from-gluon-radiation" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>Classification:</strong> <code>EARLY-DERIVED-PREDICTION</code>.</li><li><strong>Inference:</strong> QCD permits \(e^+e^-\to q\bar qg\) at order \(\alpha_s\). A sufficiently energetic, wide-angle gluon hadronizes into its own collimated spray, converting the two-jet topology into three approximately coplanar jets.</li><li><strong>Outcome:</strong> three-jet events observed at PETRA in 1979 supplied direct evidence for gluon bremsstrahlung and allowed tests of the gluon&#039;s spin and color coupling.</li></ul>
 <h2 id="validation-and-explanatory-gains">Validation and explanatory gains<a class="anchor" href="#validation-and-explanatory-gains" aria-label="Link to this section">#</a></h2>
 <ul><li>Scaling violations follow QCD evolution.</li><li>Three-jet events reveal gluon radiation.</li><li>Quarkonium spectra, hadronic event shapes, and collider cross sections fit QCD.</li><li>Lattice QCD calculates hadron masses from quark masses and gauge dynamics.</li><li>Most visible mass arises from QCD binding energy:</li></ul>
 <div class="math-display">\[M_{\mathrm{hadron}}c^2
@@ -159,6 +179,6 @@ F^a_{\mu\nu}F^{a\mu\nu}.\]</div>
 <p>Chiral symmetry supplies another low-energy bridge. Small light-quark masses make the QCD Lagrangian approximately chiral, while the vacuum breaks that symmetry spontaneously; pions behave as pseudo-Goldstone bosons. Chiral perturbation theory then organizes corrections in momenta and quark masses.</p>
 <p>QCD also permits a CP-violating \(\theta\) term, yet neutron electric-dipole limits require its coefficient to be extremely small. This strong-CP problem is not a failure of QCD predictions when \(\theta\) is fitted, but it is a major unexplained naturalness feature and motivates axion models.</p>
 <h2 id="sources">Sources<a class="anchor" href="#sources" aria-label="Link to this section">#</a></h2>
-<ul><li>CERN Document Server, <a href="https://cds.cern.ch/record/2003855" target="_blank" rel="noopener noreferrer">&#039;t Hooft, “The Evolution of Quantum Field Theory, From QED to Grand Unification”</a>.</li><li>Nobel Prize, <a href="https://www.nobelprize.org/prizes/physics/2004/summary/" target="_blank" rel="noopener noreferrer">The 2004 Physics Prize: asymptotic freedom</a>.</li><li>CERN, <a href="https://home.cern/science/physics/standard-model" target="_blank" rel="noopener noreferrer">“The Strong Force”</a>.</li><li>Particle Data Group, <a href="https://pdg.lbl.gov/2025/reviews/rpp2025-rev-qcd.pdf" target="_blank" rel="noopener noreferrer">QCD review</a>.</li></ul><footer class="footer">Reader-friendly rendering of <code>39_quantum_chromodynamics.md</code>. The Markdown source remains the canonical corpus record.</footer></article></main>
+<ul><li>CERN Document Server, <a href="https://cds.cern.ch/record/2003855" target="_blank" rel="noopener noreferrer">&#039;t Hooft, “The Evolution of Quantum Field Theory, From QED to Grand Unification”</a>.</li><li>Nobel Prize, <a href="https://www.nobelprize.org/prizes/physics/2004/popular-information/" target="_blank" rel="noopener noreferrer">2004 scientific background on asymptotic freedom</a>.</li><li>Nobel Prize, <a href="https://www.nobelprize.org/prizes/physics/2004/summary/" target="_blank" rel="noopener noreferrer">The 2004 Physics Prize: asymptotic freedom</a>.</li><li>CERN, <a href="https://home.cern/science/physics/standard-model" target="_blank" rel="noopener noreferrer">“The Strong Force”</a>.</li><li>Particle Data Group, <a href="https://pdg.lbl.gov/2025/reviews/rpp2025-rev-qcd.pdf" target="_blank" rel="noopener noreferrer">QCD review</a>.</li></ul><footer class="footer">Reader-friendly rendering of <code>39_quantum_chromodynamics.md</code>. The Markdown source remains the canonical corpus record.</footer></article></main>
 </body>
 </html>

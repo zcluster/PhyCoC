@@ -30,6 +30,8 @@
 <a class="toc-l2" href="#knowledge-assets">Knowledge assets</a>
 <a class="toc-l2" href="#discovery-node-and-derivation">Discovery node and derivation</a>
 <a class="toc-l3" href="#self-contained-derivation-spine">Self-contained derivation spine</a>
+<a class="toc-l2" href="#historically-novel-predictions-and-deductions">Historically novel predictions and deductions</a>
+<a class="toc-l3" href="#np-lagrange-none-no-model-independent-empirical-prediction-from-the-reformulation-alone">NP-LAGRANGE-NONE — No model-independent empirical prediction from the reformulation alone</a>
 <a class="toc-l2" href="#validation-and-explanatory-gains">Validation and explanatory gains</a>
 <a class="toc-l2" href="#limitations-and-retained-status">Limitations and retained status</a>
 <a class="toc-l2" href="#discovery-patterns">Discovery patterns</a>
@@ -137,6 +139,16 @@ Q_i-\frac{d}{dt}\frac{\partial T}{\partial\dot q_i}
 \frac{d}{dt}\frac{\partial L}{\partial\dot q_i}\delta q_i\,dt.\]</div>
 <p>Fixed endpoints make the bracket zero. The fundamental lemma of the calculus of variations then turns stationarity for arbitrary interior \(\delta q_i\) into the local Euler–Lagrange equations.</p>
 <div class="table-wrap"><table><thead><tr><th>Logical role</th><th>Content</th></tr></thead><tbody><tr><td>Assumed</td><td>Newtonian particle dynamics, ideal constraints and independent generalized coordinates</td></tr><tr><td>Defined</td><td>Generalized forces, kinetic energy and \(L=T-V\) for conservative natural systems</td></tr><tr><td>Derived</td><td>Elimination of ideal constraint reactions and Euler–Lagrange equations</td></tr><tr><td>Additional condition</td><td>Fixed endpoint variations for the action formulation</td></tr></tbody></table></div>
+<h2 id="historically-novel-predictions-and-deductions">Historically novel predictions and deductions<a class="anchor" href="#historically-novel-predictions-and-deductions" aria-label="Link to this section">#</a></h2>
+<h3 id="np-lagrange-none-no-model-independent-empirical-prediction-from-the-reformulation-alone"><code>NP-LAGRANGE-NONE</code> — No model-independent empirical prediction from the reformulation alone<a class="anchor" href="#np-lagrange-none-no-model-independent-empirical-prediction-from-the-reformulation-alone" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>Classification:</strong> <code>NO-CLEAN-CONTEMPORANEOUS-PREDICTION</code>.</li><li><strong>Reason:</strong> the 1788 <em>Mécanique analytique</em> reorganized and generalized mechanics; it did not by itself specify a new force law or material model. Without a chosen \(L(q,\dot q,t)\), the Euler–Lagrange operator</li></ul>
+<div class="math-display">\[\frac{d}{dt}\frac{\partial L}{\partial\dot q_i}-\frac{\partial L}{\partial q_i}=0\]</div>
+<p>does not produce a unique empirical number.</p>
+<ul><li><strong>What was genuinely new:</strong> systematic handling of constraints, generalized coordinates, virtual work, and coupled small oscillations. These generated many deductions once a physical Lagrangian was supplied, but their empirical novelty belongs jointly to the formalism and the system model.</li><li><strong>Prospective theoretical deduction:</strong> if a coordinate \(q_k\) is absent from \(L\), then</li></ul>
+<div class="math-display">\[\frac{\partial L}{\partial q_k}=0
+\quad\Longrightarrow\quad
+\frac{d}{dt}\left(\frac{\partial L}{\partial\dot q_k}\right)=0.\]</div>
+<p>Thus the conjugate momentum \(p_k\) is conserved. This is a generative inference rule, not an independent eighteenth-century observation claim; labeling it separately prevents methodological novelty from being confused with a historically successful prediction.</p>
 <h2 id="validation-and-explanatory-gains">Validation and explanatory gains<a class="anchor" href="#validation-and-explanatory-gains" aria-label="Link to this section">#</a></h2>
 <p>Lagrange&#039;s equations reproduce Newtonian motion in Cartesian coordinates and simplify systems with constraints: pendula use angles instead of tensions and Cartesian coordinates; rigid bodies use orientation variables; coupled oscillators use normal coordinates. The same equation form extends to fields by replacing \(L\) with a Lagrangian density and ordinary derivatives with spacetime derivatives.</p>
 <p>The method&#039;s explanatory gain lies in representation. A valid change of generalized coordinates changes formulas but not physical trajectories. Constraints and symmetries can be built into variables before solving. Scalar functions replace long lists of vector components and become inputs to systematic differentiation, conservation tests and later canonical or quantum formulations.</p>

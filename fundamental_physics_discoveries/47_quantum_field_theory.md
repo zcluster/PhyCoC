@@ -175,6 +175,28 @@ implementing exclusion. Interactions such as QED's \(-e\bar\psi\gamma^\mu A_\mu\
 | Interaction step | Nonquadratic terms connect sectors and permit scattering, decay, creation, and annihilation. |
 | Scope caution | The particle basis is sharp for free/asymptotic modes and can be background- or observer-dependent. |
 
+## Historically novel predictions and deductions
+
+### `NP-QFT-NONE` — No model-independent empirical prediction from the framework alone
+
+- **Classification:** `NO-CLEAN-CONTEMPORANEOUS-PREDICTION`.
+- **Reason:** quantum field theory is a framework. A prediction requires a specified field content, symmetry, Lagrangian, state, parameters, and approximation scheme. The generic functional integral
+
+$$
+Z[J]=\int\mathcal D\phi\,
+\exp\left\{\frac{i}{\hbar}\left[S[\phi]+\int J\phi\,d^4x\right]\right\}
+$$
+
+generates correlations only after $S[\phi]$ is chosen. Pair production, antiparticles, scattering amplitudes, and vacuum polarization belong to particular relativistic field theories and historical stages, not to a parameter-free universal prediction by “QFT” in isolation.
+- **Generative deduction:** once a concrete action and vacuum are fixed,
+
+$$
+\left.\frac{\delta^n Z[J]}{i^n\delta J(x_1)\cdots\delta J(x_n)}\right|_{J=0}
+$$
+
+produces time-ordered $n$-point functions, which in turn yield transition amplitudes. This is a prediction engine, not itself an empirical prediction.
+- **Discovery-AI significance:** frameworks should be evaluated partly by the space of testable models they make tractable. Crediting every descendant success directly to the abstract framework would destroy causal and historical resolution.
+
 ## Validation and explanatory gains
 
 Early field quantization accounts for stimulated and spontaneous emission in one framework and connects wave modes with photon-number transitions. Relativistic QFT accommodates particle–antiparticle creation and annihilation, decay, scattering, spin–statistics relations, and vacuum effects. Renormalized QED produced precision successes; Yang–Mills QFTs later described weak and strong interactions; second-quantized methods became indispensable for quantum many-body matter.

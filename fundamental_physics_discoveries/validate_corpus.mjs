@@ -470,6 +470,7 @@ newtonLines.forEach((line, index) => {
 
 for (const file of coreBackboneFiles) {
   const text = fs.readFileSync(path.join(corpusDir, file), "utf8");
+  const lines = text.split("\n");
   const wordCount = text.trim().split(/\s+/).length;
   const displayMathBlocks = (text.match(/^\$\$$/gm) ?? []).length / 2;
   const hasInferenceAudit =
@@ -484,6 +485,42 @@ for (const file of coreBackboneFiles) {
   }
   if (!hasInferenceAudit) {
     fail(file, "core-backbone case lacks an explicit assumption/inference-role audit");
+  }
+
+  const predictionHeadingCount = lines.filter(
+    (line) => line === "## Historically novel predictions and deductions",
+  ).length;
+  if (predictionHeadingCount !== 1) {
+    fail(
+      file,
+      `expected one historically-novel-predictions heading, found ${predictionHeadingCount}`,
+    );
+  }
+  const predictionRecords = [...text.matchAll(/^### `NP-[^`]+`/gm)];
+  if (predictionRecords.length < 1) {
+    fail(file, "historically-novel-predictions section has no NP-* record");
+  }
+  const allowedPredictionClasses = new Set([
+    "NOVEL-CONTEMPORANEOUS-PREDICTION",
+    "EARLY-DERIVED-PREDICTION",
+    "LATER-THEORETICAL-CONSEQUENCE",
+    "RETRODICTION-OR-EXPLANATION",
+    "NO-CLEAN-CONTEMPORANEOUS-PREDICTION",
+    "NOVEL-THEORETICAL-CONSTRAINT",
+  ]);
+  for (const record of predictionRecords) {
+    const start = record.index ?? 0;
+    const next = text.indexOf("\n### `NP-", start + record[0].length);
+    const recordText = text.slice(start, next < 0 ? text.length : next);
+    const classLine = recordText.match(/^- \*\*Classification:\*\* (.+)\.$/m)?.[1];
+    if (!classLine) {
+      fail(file, `${record[0]} lacks a canonical Classification field`);
+      continue;
+    }
+    const classes = [...classLine.matchAll(/`([^`]+)`/g)].map((match) => match[1]);
+    if (classes.length < 1 || classes.some((value) => !allowedPredictionClasses.has(value))) {
+      fail(file, `${record[0]} uses an unknown prediction classification`);
+    }
   }
 }
 

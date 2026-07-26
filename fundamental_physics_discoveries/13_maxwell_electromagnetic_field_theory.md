@@ -125,6 +125,34 @@ $$
 
 The numerical agreement with optical measurements motivated the inference that light is electromagnetic.
 
+## Historically novel predictions and deductions
+
+### `NP-MAXWELL-01` — Self-propagating electromagnetic waves with the speed of light
+
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION`.
+- **Prediction date and authorship:** Maxwell's 1861–1865 field theory implied waves in otherwise empty space and identified their computed speed with the measured speed of light. Hertz generated and detected radio waves in 1887–1888.
+- **Construction-data independence:** electrostatic, magnetic, and induction laws were inputs; freely propagating long-wavelength radiation with reflection, refraction, interference, and polarization was a new consequence.
+- **Derivation provenance:** `HISTORICAL-RECONSTRUCTION` in modern vector notation.
+
+In a source-free region, $\rho=0$ and $\mathbf J=0$. Taking the curl of Faraday's law and substituting the Maxwell–Ampère law gives
+
+$$
+\nabla\times(\nabla\times\mathbf E)
+=-\mu_0\epsilon_0\frac{\partial^2\mathbf E}{\partial t^2}.
+$$
+
+Because $\nabla\cdot\mathbf E=0$ and $\nabla\times(\nabla\times\mathbf E)=\nabla(\nabla\cdot\mathbf E)-\nabla^2\mathbf E$,
+
+$$
+\nabla^2\mathbf E
+-\mu_0\epsilon_0\frac{\partial^2\mathbf E}{\partial t^2}=0,
+\qquad
+c_{\rm EM}=\frac1{\sqrt{\mu_0\epsilon_0}}.
+$$
+
+The magnetic field obeys the same wave equation. Plane-wave solutions are transverse, with $\mathbf E\perp\mathbf B\perp\mathbf k$.
+- **Observable discriminator and outcome:** a spark transmitter should induce delayed, polarizable waves in a separated receiver and exhibit optical wave phenomena at wavelengths far beyond visible light. Hertz's experiments supplied those discriminators.
+
 ## Validation and explanatory gains
 
 - Predicts transverse electromagnetic waves and polarization.

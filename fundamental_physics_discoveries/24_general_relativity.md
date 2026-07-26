@@ -107,6 +107,45 @@ $$
 
 recovering Newtonian gravity.
 
+## Historically novel predictions and deductions
+
+### `NP-GR-01` — The full relativistic deflection of light
+
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION` for the 1915 value; light bending itself had earlier Newtonian-corpuscular precedents.
+- **Prediction date and authorship:** Einstein's completed field theory doubled the approximate value he had obtained in 1911 from equivalence arguments alone. The discriminating prediction for a ray grazing the Sun was about $1.75$ arcseconds.
+- **Construction-data independence:** Mercury's anomalous perihelion was known before the final equations and is a retrodiction; the doubled deflection had not been measured when derived.
+- **Derivation provenance:** `MODERN-PEDAGOGICAL-DERIVATION` from the Schwarzschild null geodesic, not Einstein's line-by-line 1915 calculation.
+
+For $u(\phi)=1/r$ and impact parameter $b$, the leading null-orbit equation is
+
+$$
+u''+u=\frac{3GM}{c^2}u^2.
+$$
+
+Use the undeflected trajectory $u_0=\cos\phi/b$ on the right-hand side and write $u=u_0+\delta u$. Solving to first order produces an asymptotic angular shift on each side of approximately $2GM/(bc^2)$, so
+
+$$
+\boxed{\alpha=\frac{4GM}{bc^2}}.
+$$
+
+For $b\simeq R_\odot$, this is approximately $1.75''$.
+- **Observable discriminator and outcome:** eclipse photographs could compare stellar positions near and far from the Sun. The 1919 result was historically influential, although its precision was limited; later radio and optical measurements test the coefficient far more accurately.
+
+### `NP-GR-02` — Gravitational waves
+
+- **Classification:** `EARLY-DERIVED-PREDICTION`.
+- **Prediction date:** Einstein derived weak gravitational waves in 1916, after the 1915 field equations but decades before indirect and then direct detection.
+- **Derivation provenance:** `MODERN-PEDAGOGICAL-DERIVATION`.
+
+Set $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$ with $|h_{\mu\nu}|\ll1$. In Lorenz gauge, the vacuum equations reduce to
+
+$$
+\Box\bar h_{\mu\nu}=0,
+$$
+
+so metric perturbations propagate at $c$. Gauge constraints leave two transverse tensor polarizations. Their leading radiative source is a changing mass quadrupole, not a mass dipole.
+- **Outcome:** binary-pulsar orbital decay supplied indirect evidence, and interferometers directly detected waves a century after the prediction.
+
 ## Validation and explanatory gains
 
 - Accounts for Mercury's anomalous perihelion advance.
@@ -394,5 +433,6 @@ The anomalous perihelion advance of Mercury, approximately \(43\) arcseconds per
 ## Sources
 
 - Einstein Papers Project, [Einstein's 1916 review of general relativity](https://einsteinpapers.press.princeton.edu/vol6-trans/158).
+- Einstein Online, [“Gravitational deflection of light”](https://www.einstein-online.info/en/spotlight/light_deflection/).
 - Einstein Online, [“General Relativity”](https://www.einstein-online.info/en/category/elementary/general-relativity/).
 - Stanford Encyclopedia of Philosophy, [“Early Philosophical Interpretations of General Relativity”](https://plato.stanford.edu/entries/genrel-early/).

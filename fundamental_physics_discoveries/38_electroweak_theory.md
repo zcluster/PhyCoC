@@ -173,6 +173,56 @@ $$
 | Low-energy inference | Heavy \(W\) exchange reduces to Fermi's contact interaction. |
 | Not predicted internally | Fermion Yukawa values, generation count, and the numerical values of \(g,g',v\). |
 
+## Historically novel predictions and deductions
+
+### `NP-EW-01` — Weak neutral currents
+
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION`.
+- **Prediction date and provenance:** the $SU(2)_L\times U(1)_Y$ theory developed in the 1960s contains a neutral weak interaction mediated by a massive $Z$ boson. Neutral-current neutrino events were reported at CERN in 1973, before direct $W$ and $Z$ production.
+- **Derivation provenance:** `MODERN-PEDAGOGICAL-DERIVATION` from gauge mixing.
+
+After symmetry breaking, the neutral gauge fields mix:
+
+$$
+\begin{pmatrix}A_\mu\\ Z_\mu\end{pmatrix}
+=
+\begin{pmatrix}
+\sin\theta_W & \cos\theta_W\\
+\cos\theta_W & -\sin\theta_W
+\end{pmatrix}
+\begin{pmatrix}W^3_\mu\\B_\mu\end{pmatrix}.
+$$
+
+The massless combination $A_\mu$ couples to electric charge, while the orthogonal massive field couples to
+
+$$
+J_Z^\mu=J_3^\mu-\sin^2\theta_W J_{\rm em}^\mu.
+$$
+
+Therefore neutrinos can scatter without changing charge or flavor, schematically
+
+$$
+\nu_\mu+N\rightarrow\nu_\mu+X,
+$$
+
+even though no charged lepton appears in the final state.
+- **Observable discriminator and outcome:** neutral-current events had to be separated from missed-muon charged-current backgrounds. Their observation strongly supported the gauge structure rather than merely one fitted mass.
+
+### `NP-EW-02` — Correlated masses of the charged and neutral weak bosons
+
+- **Classification:** `EARLY-DERIVED-PREDICTION`.
+- **Inference:** a Higgs doublet vacuum expectation value gives
+
+$$
+M_W=\frac{gv}{2},
+\qquad
+M_Z=\frac{v}{2}\sqrt{g^2+g'^2},
+\qquad
+\boxed{M_W=M_Z\cos\theta_W}.
+$$
+
+The relation and weak-scale range guided searches before the 1983 discoveries. Radiative corrections modify the tree-level relation in a controlled way.
+
 ## Validation and explanatory gains
 
 - Neutral weak currents observed at CERN in 1973.
@@ -295,6 +345,7 @@ Historically, the Nobel recognition of Glashow, Salam, and Weinberg emphasized u
 ## Sources
 
 - CERN Courier, [“Charm and synthesis,” historical account of electroweak unification](https://cern-courier.web.cern.ch/a/charm-and-synthesis/).
+- CERN Document Server, [“Forty years of neutral currents”](https://cds.cern.ch/record/1998137).
 - CERN Document Server, ['t Hooft, “The Evolution of Quantum Field Theory, From QED to Grand Unification”](https://cds.cern.ch/record/2003855).
 - Nobel Prize, [The 1979 Physics Prize](https://www.nobelprize.org/prizes/physics/1979/summary/).
 - CERN, [“The Standard Model”](https://home.cern/science/physics/standard-model).

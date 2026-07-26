@@ -123,6 +123,38 @@ pV=Nk_BT,
 \langle K\rangle=\frac{3}{2}Nk_BT.
 $$
 
+## Historically novel predictions and deductions
+
+### `NP-CLASSICAL-STAT-01` — Dilute-gas viscosity is nearly independent of density
+
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION`.
+- **Prediction date and authorship:** Maxwell drew this counterintuitive consequence from kinetic theory in 1860. It contrasted with the naive expectation that fewer molecules per volume must mean proportionally less momentum transport.
+- **Derivation provenance:** `HISTORICAL-RECONSTRUCTION`; numerical prefactors depend on the collision model, while the cancellation is the robust insight.
+
+Momentum transported across a plane over one mean free path gives the scale
+
+$$
+\eta\sim \frac13\rho\bar v\lambda.
+$$
+
+For a dilute gas of number density $n$, particle mass $m$, and collision cross section $\sigma$,
+
+$$
+\rho=mn,
+\qquad
+\lambda\sim\frac{1}{n\sigma}.
+$$
+
+Therefore
+
+$$
+\eta\sim\frac{m\bar v}{3\sigma},
+$$
+
+so the explicit factor of $n$ cancels. Lower density supplies fewer carriers but lengthens each carrier's momentum-transport path by the inverse factor.
+- **Observable discriminator and outcome:** at fixed temperature, dilute-gas viscosity should change little as pressure changes over the kinetic regime. Maxwell's own experiments broadly supported the surprising density independence, though real intermolecular forces make the temperature law and exact coefficient more complicated than the simplest hard-sphere estimate.
+- **Boundary:** this is not valid in dense fluids or so rarefied a gas that container size replaces the intermolecular mean free path.
+
 ## Validation and explanatory gains
 
 - Maxwell's velocity distribution predicts transport and effusion.

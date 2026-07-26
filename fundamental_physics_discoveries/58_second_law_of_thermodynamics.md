@@ -553,6 +553,35 @@ The actual process exchanges no heat, yet entropy increases. This demonstrates w
 | Derived | $\oint\delta Q_{\rm rev}/T=0$ and entropy as a state function |
 | Derived | $\oint\delta Q/T\le0$ and $\Delta S_{\rm isolated}\ge0$ |
 
+## Historically novel predictions and deductions
+
+### `NP-SECOND-LAW-01` — A universal ceiling on heat-engine efficiency
+
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION` and `NOVEL-THEORETICAL-CONSTRAINT`.
+- **Prediction date and provenance:** Carnot's 1824 reversible-cycle reasoning supplied the temperature-dependent universality; Kelvin and Clausius later recast it in absolute-temperature and entropy language. The compact formula below is therefore a `HISTORICAL-RECONSTRUCTION`, not a verbatim 1824 equation.
+- **Construction-data independence:** steam-engine practice motivated the question, but the conclusion applies to every reversible engine regardless of working substance and forbids any engine from doing better.
+
+For a reversible engine between reservoirs $T_h>T_c$, the self-contained argument given above establishes
+
+$$
+\frac{Q_c}{Q_h}=\frac{T_c}{T_h}.
+$$
+
+Since $W=Q_h-Q_c$,
+
+$$
+\eta_{\rm rev}=\frac{W}{Q_h}=1-\frac{T_c}{T_h}.
+$$
+
+If an irreversible engine had $\eta>\eta_{\rm rev}$, coupling it to the same reversible engine run backward would produce a composite cyclic device whose sole net effect violates the Clausius or Kelvin–Planck statement. Therefore
+
+$$
+\boxed{\eta\le 1-\frac{T_c}{T_h}}.
+$$
+
+- **Observable discriminator:** increasing engineering ingenuity or changing working substance cannot cross this ceiling; only changing reservoir temperatures can move it.
+- **Outcome:** later engine measurements and thermodynamic practice support the bound. It is best represented as a risky universal no-go prediction, not as a forecast of one particular machine.
+
 ## Validation and explanatory gains
 
 The second law explains why every heat engine requires both heat intake and heat rejection, why finite-temperature heat transfer is irreversible, why refrigerators require work, and why energy quality matters even when energy quantity is conserved. It provides universal bounds:

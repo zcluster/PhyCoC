@@ -209,6 +209,29 @@ Adding matter changes the stationary-action condition to \((D_\mu F^{\mu\nu})^a=
 | Minimal dynamics | The local Lorentz scalar \(-\tfrac14F^a_{\mu\nu}F^{a\mu\nu}\). |
 | Empirical choices still required | Gauge group, representations, couplings, vacuum/mass mechanism, and quantum consistency. |
 
+## Historically novel predictions and deductions
+
+### `NP-YM-NONE` — The 1954 isospin model had no successful clean new prediction
+
+- **Classification:** `NO-CLEAN-CONTEMPORANEOUS-PREDICTION`.
+- **Reason:** Yang and Mills's 1954 non-Abelian gauge construction was a profound mechanism proposal, but its direct identification of the gauge symmetry with nuclear isospin faced the massless-vector-boson problem and did not yield a confirmed novel particle or force in that original form.
+- **Structural deduction:** for
+
+$$
+F^a_{\mu\nu}=\partial_\mu A^a_\nu-\partial_\nu A^a_\mu
++gf^{abc}A^b_\mu A^c_\nu,
+$$
+
+the quadratic and cubic terms in
+
+$$
+\mathcal L_{\rm YM}=-\frac14F^a_{\mu\nu}F^{a\mu\nu}
+$$
+
+necessarily generate gauge-boson self-interactions. This was a novel formal consequence of noncommuting local symmetry, but it was not yet a successful quantitative prediction of the 1954 nuclear model.
+- **Later descendants:** weak neutral currents, $W/Z$ self-couplings, gluon radiation, and asymptotic freedom became successful predictions only after additional symmetry choices, matter representations, spontaneous symmetry breaking, and renormalization results. They are assigned to the electroweak and QCD cases rather than back-projected onto the original paper.
+- **Discovery-AI significance:** a failed first application can contain a reusable mechanism whose later instantiations succeed. Separate `MECHANISM-NOVELTY` from `EMPIRICAL-PREDICTION-SUCCESS`.
+
 ## Validation and explanatory gains
 
 The original isospin gauge model was not validated as the nuclear force. The later architecture was. Electroweak theory uses an \(SU(2)_L\times U(1)_Y\) gauge structure with spontaneous symmetry breaking; QCD uses \(SU(3)_c\), whose non-Abelian dynamics produces gluon self-interaction, asymptotic freedom, and confinement. Neutral currents, \(W\) and \(Z\) bosons, jets, scaling violations, and the pattern of strong interactions validate concrete Yang–Mills-based theories.

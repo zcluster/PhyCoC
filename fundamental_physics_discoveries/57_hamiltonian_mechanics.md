@@ -250,6 +250,24 @@ A complete integral containing $n$ constants $P_i$ generates a family of traject
 | Derived | Hamilton equations and generator form of time evolution |
 | Additional construction | Hamilton–Jacobi equation from a canonical transformation with $K=0$ |
 
+## Historically novel predictions and deductions
+
+### `NP-HAMILTON-01` — Conical refraction in biaxial crystals
+
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION`.
+- **Prediction date and authorship:** Hamilton predicted internal and external conical refraction in 1832 from Fresnel's wave-surface construction; Humphrey Lloyd observed the effect shortly afterward. This optics result immediately preceded Hamilton's 1834–1835 canonical mechanics and exemplifies the same characteristic-function style, but it is not a prediction extracted from $H(q,p)$ alone.
+- **Construction-data independence:** ordinary double refraction and Fresnel's biaxial-crystal surface were inputs; a narrow ray becoming a luminous cone or ring on an optic axis was the new output.
+- **Derivation provenance:** `HISTORICAL-RECONSTRUCTION` in geometrical language.
+
+For a fixed optical frequency, admissible wave-normal endpoints form Fresnel's two-sheeted surface. At a generic smooth point the group/ray direction is its unique normal,
+
+$$
+\mathbf v_g=\nabla_{\mathbf k}\omega(\mathbf k).
+$$
+
+At a conical singularity on a biaxial optic axis, the local surface has a cone rather than a unique tangent plane. Consequently $\nabla_{\mathbf k}\omega$ has a one-parameter family of limiting directions. A single incident direction therefore maps to a cone of rays; a screen cuts that cone in a bright ring.
+- **Observable discriminator and outcome:** a point-like incident beam aligned with the appropriate optic axis should not merely split into two rays. Lloyd observed the predicted ring, a particularly clean example of mathematical structure revealing an unsuspected phenomenon.
+
 ## Validation and explanatory gains
 
 Hamilton equations reproduce all regular Lagrangian trajectories. For $H=p^2/(2m)+V(q)$, they give $\dot q=p/m$ and $\dot p=-\nabla V$, hence Newton's equation. Canonical transformations preserve the Hamiltonian form; Poisson brackets identify generators; phase-space flow supports Liouville's theorem and statistical ensembles; action–angle variables organize integrable systems and perturbation theory.

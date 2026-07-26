@@ -105,6 +105,41 @@ $$
 \bar n\approx e^{-(\epsilon-\mu)/(k_BT)}.
 $$
 
+## Historically novel predictions and deductions
+
+### `NP-QUANTUM-STAT-01` — Bose–Einstein condensation of a material gas
+
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION`.
+- **Prediction date and authorship:** Einstein extended Bose's counting to massive particles in 1924–1925 and found a low-temperature condensation into the ground state. Direct realization in dilute atomic gases came in 1995.
+- **Construction-data independence:** Planck's radiation law motivated Bose counting, but the phase transition for conserved massive particles was not an observation used to build the argument.
+- **Derivation provenance:** `HISTORICAL-RECONSTRUCTION` in continuum notation.
+
+For an ideal three-dimensional Bose gas, the excited-state population is
+
+$$
+N_{\rm ex}=\frac{V}{\lambda_T^3}g_{3/2}(z),
+\qquad
+\lambda_T=\frac{h}{\sqrt{2\pi mk_BT}},
+$$
+
+where $z=e^{\beta\mu}\le1$. Since $g_{3/2}(z)$ has the finite maximum $\zeta(3/2)$ at $z=1$, excited states can hold at most
+
+$$
+N_{\rm ex}^{\max}=\frac{V}{\lambda_T^3}\zeta(3/2).
+$$
+
+If fixed $N$ exceeds this capacity, the surplus must occupy the ground state. Setting $N=N_{\rm ex}^{\max}$ defines
+
+$$
+\boxed{T_c=\frac{2\pi\hbar^2}{mk_B}
+\left(\frac{n}{\zeta(3/2)}\right)^{2/3}},
+\qquad
+\frac{N_0}{N}=1-\left(\frac{T}{T_c}\right)^{3/2}
+\quad(T<T_c).
+$$
+
+- **Observable discriminator and outcome:** below a density-dependent critical temperature, a macroscopic ground-state population and coherence should appear without attractive interactions being required. Seventy years later, dilute-gas experiments observed the predicted transition and occupation structure.
+
 ## Validation and explanatory gains
 
 - Pauli exclusion organizes atomic shells and chemistry.
@@ -456,5 +491,6 @@ These are not forces between particles. They are constraints on state space and 
 ## Sources
 
 - Nobel Prize, [Wolfgang Pauli facts](https://www.nobelprize.org/prizes/physics/1945/pauli/facts/).
+- Nobel Prize, [advanced scientific information on Bose–Einstein condensation](https://www.nobelprize.org/uploads/2018/06/advanced-physicsprize2001-4.pdf).
 - Nobel Prize, [The 2001 Physics Prize: Bose–Einstein condensation](https://www.nobelprize.org/prizes/physics/2001/summary/).
 - Stanford Encyclopedia of Philosophy, [“Quantum Statistics and the Identity of Indiscernibles”](https://plato.stanford.edu/entries/qt-idind/).

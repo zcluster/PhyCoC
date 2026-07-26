@@ -264,6 +264,29 @@ Fixed endpoints make the bracket zero. The fundamental lemma of the calculus of 
 | Derived | Elimination of ideal constraint reactions and Euler–Lagrange equations |
 | Additional condition | Fixed endpoint variations for the action formulation |
 
+## Historically novel predictions and deductions
+
+### `NP-LAGRANGE-NONE` — No model-independent empirical prediction from the reformulation alone
+
+- **Classification:** `NO-CLEAN-CONTEMPORANEOUS-PREDICTION`.
+- **Reason:** the 1788 *Mécanique analytique* reorganized and generalized mechanics; it did not by itself specify a new force law or material model. Without a chosen $L(q,\dot q,t)$, the Euler–Lagrange operator
+
+$$
+\frac{d}{dt}\frac{\partial L}{\partial\dot q_i}-\frac{\partial L}{\partial q_i}=0
+$$
+
+does not produce a unique empirical number.
+- **What was genuinely new:** systematic handling of constraints, generalized coordinates, virtual work, and coupled small oscillations. These generated many deductions once a physical Lagrangian was supplied, but their empirical novelty belongs jointly to the formalism and the system model.
+- **Prospective theoretical deduction:** if a coordinate $q_k$ is absent from $L$, then
+
+$$
+\frac{\partial L}{\partial q_k}=0
+\quad\Longrightarrow\quad
+\frac{d}{dt}\left(\frac{\partial L}{\partial\dot q_k}\right)=0.
+$$
+
+Thus the conjugate momentum $p_k$ is conserved. This is a generative inference rule, not an independent eighteenth-century observation claim; labeling it separately prevents methodological novelty from being confused with a historically successful prediction.
+
 ## Validation and explanatory gains
 
 Lagrange's equations reproduce Newtonian motion in Cartesian coordinates and simplify systems with constraints: pendula use angles instead of tensions and Cartesian coordinates; rigid bodies use orientation variables; coupled oscillators use normal coordinates. The same equation form extends to fields by replacing $L$ with a Lagrangian density and ordinary derivatives with spacetime derivatives.
