@@ -14,6 +14,7 @@ const mainlineFiles = new Set([
   "56_lagrangian_mechanics.md",
   "57_hamiltonian_mechanics.md",
   "11_thermodynamics_and_energy_conservation.md",
+  "58_second_law_of_thermodynamics.md",
   "12_statistical_mechanics.md",
   "13_maxwell_electromagnetic_field_theory.md",
   "19_special_relativity.md",

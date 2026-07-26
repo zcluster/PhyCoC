@@ -78,11 +78,11 @@ export const chronology = {
     },
   },
   "11_thermodynamics_and_energy_conservation.md": {
-    discovery: ["1824–1865 (Carnot through Clausius/Kelvin)", 1865],
+    discovery: ["1843–1850 mechanical equivalent of heat and first-law synthesis", 1847],
     pathways: {
-      "R-CALORIC": ["late eighteenth century", 1780],
-      "R-PERPETUAL-MOTION": ["medieval proposals through the eighteenth century", 1200],
-      "R-HEAT-AS-TRANSLATIONAL-MOTION-ONLY": ["seventeenth century–1798", 1650],
+      "R-CALORIC-CONSERVATION": ["late eighteenth century–1840s", 1780],
+      "R-HEAT-AS-SIMPLE-MOTION": ["seventeenth century–early 1840s", 1650],
+      "R-PERPETUAL-MOTION-FIRST-KIND": ["medieval proposals through the early nineteenth century", 1200],
     },
   },
   "12_statistical_mechanics.md": {
@@ -472,6 +472,15 @@ export const chronology = {
       "R-DIRECT-TRAJECTORY-INTEGRATION": ["seventeenth century–1833", 1650],
       "R-CONFIGURATION-VELOCITY-ONLY": ["1788–1833", 1788],
       "R-OPTICS-DYNAMICS-SEPARATION": ["seventeenth century–1833", 1650.1],
+    },
+  },
+  "58_second_law_of_thermodynamics.md": {
+    discovery: ["1850–1865 Clausius/Kelvin formulations through entropy", 1850],
+    pathways: {
+      "R-ENGINE-SPECIFIC-OPTIMIZATION": ["eighteenth century–1823", 1700],
+      "R-CALORIC-HEAT-DROP": ["late eighteenth century–1824 Carnot formulation", 1780],
+      "R-FIRST-LAW-SUFFICIENT": ["1840s–1849 implicit conservation-only reasoning", 1840],
+      "R-IRREVERSIBILITY-AS-FRICTION-ONLY": ["early nineteenth century–1849", 1800],
     },
   },
 };

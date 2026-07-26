@@ -2,7 +2,7 @@
 
 ## Review scope
 
-This review covers the 57 numbered case studies, their series README, and the executable validator. Newtonian mechanics is included at its chronological filename position as `08_newtonian_mechanics.md` and is checked through its specialized document schema. The review target is a discovery-AI corpus: historically nuanced, mathematically usable, explicit about rival pathways, and resistant to common label and scope errors.
+This review covers the 58 numbered case studies, their series README, and the executable validator. Newtonian mechanics is included at its chronological filename position as `08_newtonian_mechanics.md` and is checked through its specialized document schema. The review target is a discovery-AI corpus: historically nuanced, mathematically usable, explicit about rival pathways, and resistant to common label and scope errors.
 
 ## Checks completed
 
@@ -40,7 +40,7 @@ Run:
 node history/fundamental_physics_discoveries/validate_corpus.mjs
 ```
 
-The validator checks all 57 numbered cases, including the specialized Newtonian case. It imports `chronology_data.mjs`, checks exact rendered timestamps, verifies that the README lists every case once in sortable focal chronology, and fails if a predecessor pathway's sortable key is not earlier than its focal discovery. A passing result certifies structural, syntactic, and encoded chronology invariants, not the truth of every historical interpretation.
+The validator checks all 58 numbered cases, including the specialized Newtonian case. It imports `chronology_data.mjs`, checks exact rendered timestamps, verifies that the README lists every case once in sortable focal chronology, and fails if a predecessor pathway's sortable key is not earlier than its focal discovery. A passing result certifies structural, syntactic, and encoded chronology invariants, not the truth of every historical interpretation.
 
 ## Known limitations and responsible use
 
