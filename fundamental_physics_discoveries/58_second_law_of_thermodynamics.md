@@ -115,147 +115,443 @@ The law does not say that entropy must increase in every subsystem at every inst
 
 ## Discovery node and derivation
 
-### 1. Carnot's idealizing move
+### 1. Logical starting point: definitions, signs and assumptions
 
-Carnot replaced a complicated steam engine with a conceptual device operating cyclically between a hot reservoir at $T_h$ and a cold reservoir at $T_c$. The working substance returns to its initial state after each cycle, so the first law gives
+A self-contained derivation must separate what is **assumed** from what is **derived**. Use these definitions:
+
+- A **thermal reservoir** is an ideal body large enough to exchange finite heat without changing its uniform temperature.
+- A **cyclic device** returns its working substance to its initial thermodynamic state, so $\Delta U_{\rm cycle}=0$.
+- A **heat engine** absorbs the positive magnitude $Q_h$ from a hot reservoir, rejects the positive magnitude $Q_c$ to a cold reservoir, and delivers positive work $W$.
+- A **refrigerator** is the reverse-purpose device: it consumes work to remove heat from the cold reservoir and reject more heat to the hot reservoir.
+- A process is **reversible** when both the system and every part of its environment can be restored to their initial states by an infinitesimal reversal, leaving no other net effect.
+
+For a cyclic heat engine, the first law supplies only
 
 $$
-\Delta U_{\rm cycle}=0,
-\qquad
 W=Q_h-Q_c,
-$$
-
-where $Q_h>0$ is absorbed from the hot reservoir and $Q_c>0$ is rejected to the cold reservoir. Its efficiency is
-
-$$
-\eta=\frac{W}{Q_h}=1-\frac{Q_c}{Q_h}.
-$$
-
-The conceptual breakthrough was to ask for a limit that follows from cyclic structure and reservoir temperatures, not from piston shape, steam chemistry or manufacturing quality.
-
-### 2. Reversibility and the contradiction construction
-
-Let $R$ be a reversible engine and $E$ any competing engine between the same reservoirs. Suppose $E$ were more efficient than $R$. Scale their cycles so that their work magnitudes match, then use $E$ forward to produce work and spend exactly that work to drive $R$ backward as a refrigerator. The work transfers cancel.
-
-Because $E$ was assumed more efficient, the combined device would leave no net work exchange while transferring heat from the cold reservoir to the hot reservoir with no compensating change. Equivalently, a slightly different scaling would produce net work from a single reservoir. Either result violates the Clausius or Kelvin–Planck impossibility statement. Therefore
-
-$$
-\eta_E\le\eta_R.
-$$
-
-If two reversible engines had different efficiencies, the less efficient one could be reversed and coupled to the more efficient one to create the same contradiction. Thus all reversible engines between the same temperatures have equal efficiency, independent of working substance. This is Carnot's theorem in its mature first-and-second-law reconstruction.
-
-### 3. From composition to thermodynamic temperature
-
-Write the reversible heat ratio as
-
-$$
-\frac{Q_c}{Q_h}=g(T_c,T_h).
-$$
-
-Compose reversible engines across three reservoirs $T_1>T_2>T_3$. Consistency requires
-
-$$
-g(T_3,T_1)=g(T_3,T_2)g(T_2,T_1).
-$$
-
-Under ordinary regularity assumptions, this multiplicative relation implies that a monotonic temperature function $\Phi$ can be chosen such that
-
-$$
-g(T_c,T_h)=\frac{\Phi(T_c)}{\Phi(T_h)}.
-$$
-
-Choosing the thermodynamic temperature scale so that $\Phi(T)=T$ gives
-
-$$
-\frac{Q_c}{Q_h}=\frac{T_c}{T_h},
 \qquad
-\eta_{\rm Carnot}=1-\frac{T_c}{T_h}.
+\eta\equiv\frac{W}{Q_h}=1-\frac{Q_c}{Q_h}.
 $$
 
-This result is more than an ideal-gas calculation: it defines a temperature ratio through reversible-engine universality.
+The following physical impossibility statement is an independent starting postulate:
 
-### 4. Explicit ideal-gas Carnot cycle
+> **Kelvin–Planck form:** no cyclic device can have as its sole effect the absorption of heat from a single equilibrium reservoir and the production of an equal amount of work.
 
-For $n$ moles of an ideal gas, the cycle has two reversible isotherms and two reversible adiabats:
+Equivalently, one may start with:
 
-1. Isothermal expansion at $T_h$: the gas absorbs
-   $$
-   Q_h=nRT_h\ln\frac{V_2}{V_1}.
-   $$
-2. Adiabatic expansion lowers its temperature from $T_h$ to $T_c$ with $Q=0$.
-3. Isothermal compression at $T_c$ rejects the magnitude
-   $$
-   Q_c=nRT_c\ln\frac{V_3}{V_4}.
-   $$
-4. Adiabatic compression returns the gas to its initial state.
+> **Clausius form:** no cyclic device can have as its sole effect the transfer of heat from a colder equilibrium reservoir to a hotter one without work input.
 
-The reversible adiabatic relations imply
+The first law, reservoir idealization, cyclicity, composability of devices and one of these second-law postulates are assumptions. Carnot's theorem, reversible-engine universality, the thermodynamic temperature scale, the Clausius equality and inequality, and entropy increase are derived below.
+
+### 2. Why the Kelvin–Planck and Clausius statements are equivalent
+
+The equivalence is a construction, not a verbal resemblance.
+
+**Suppose the Clausius statement were false.** Then a hypothetical device $C^*$ could transfer $Q_c$ from cold to hot with no work. Couple it to an ordinary engine that absorbs $Q_h$ from the hot reservoir, rejects exactly $Q_c$ to the cold reservoir, and produces
 
 $$
-\frac{V_2}{V_1}=\frac{V_3}{V_4}.
+W=Q_h-Q_c.
+$$
+
+The cold-reservoir transfers cancel: the engine deposits $Q_c$ and $C^*$ removes $Q_c$. The combined device's only net effects are to remove $Q_h-Q_c=W$ from the hot reservoir and produce work $W$. This violates Kelvin–Planck.
+
+**Suppose Kelvin–Planck were false.** Then a hypothetical engine $K^*$ could absorb $W$ from a hot reservoir and convert it entirely into work $W$. Use that work to drive an ordinary refrigerator that removes $Q_c$ from the cold reservoir and rejects
+
+$$
+Q_h=Q_c+W
+$$
+
+to the hot reservoir. The work transfers cancel. The hot reservoir loses $W$ to $K^*$ but receives $Q_c+W$ from the refrigerator, so its net gain is $Q_c$. The cold reservoir loses $Q_c$. The sole net effect is a no-work transfer $Q_c$ from cold to hot, violating Clausius.
+
+Therefore either classical statement implies the other, given the first law and the ability to couple cyclic devices.
+
+### 3. Carnot's idealizing move
+
+Carnot replaced a complicated steam engine with a conceptual system operating between only two reservoirs, $T_h>T_c$. He asked for the best performance compatible with cyclic operation, independently of piston material, steam chemistry, valve timing or friction. The thought experiment removes contingent engineering details while retaining the thermodynamic boundary conditions.
+
+Carnot's historical 1824 argument used caloric conservation. The following proof is the mature reconstruction using the first law and a second-law impossibility statement. The distinction matters: the reasoning structure was retained, while its heat ontology was corrected.
+
+### 4. Carnot theorem with the full contradiction ledger
+
+Let $R$ be a reversible engine and $E$ any engine operating between the same $T_h$ and $T_c$. Assume for contradiction that
+
+$$
+\eta_E>\eta_R.
+$$
+
+Scale the number or size of cycles so that both devices, when run forward, deliver the same work magnitude $W$. Their required hot-reservoir heat inputs are
+
+$$
+Q_{h,E}=\frac{W}{\eta_E},
+\qquad
+Q_{h,R}=\frac{W}{\eta_R}.
+$$
+
+Because $\eta_E>\eta_R$,
+
+$$
+Q_{h,E}<Q_{h,R}.
+$$
+
+The corresponding rejected heats are fixed by the first law:
+
+$$
+Q_{c,E}=Q_{h,E}-W,
+\qquad
+Q_{c,R}=Q_{h,R}-W.
 $$
 
 Hence
 
 $$
-\frac{Q_c}{Q_h}=\frac{T_c}{T_h}
+Q_{c,R}-Q_{c,E}
+=Q_{h,R}-Q_{h,E}
+\equiv\Delta Q>0.
 $$
 
-and the Carnot efficiency follows. The ideal-gas cycle illustrates the theorem; it is not the basis of the theorem's working-substance independence.
+Now run $E$ forward and use all of its work $W$ to drive reversible engine $R$ backward as a refrigerator. The complete ledger is:
 
-### 5. Clausius theorem and entropy
+| Component | Hot reservoir | Cold reservoir | External work |
+|---|---:|---:|---:|
+| $E$ forward | $-Q_{h,E}$ | $+Q_{c,E}$ | $+W$ |
+| $R$ backward | $+Q_{h,R}$ | $-Q_{c,R}$ | $-W$ |
+| **Combined** | $+\Delta Q$ | $-\Delta Q$ | $0$ |
 
-For any reversible cycle decomposed into small exchanges with reservoirs,
-
-$$
-\oint\frac{\delta Q_{\rm rev}}{T}=0.
-$$
-
-A closed integral that vanishes for every reversible cycle indicates an exact differential. Define entropy $S$ by
+The working substances are cyclic and the work cancels. The sole net effect is transfer of $\Delta Q$ from the cold reservoir to the hot reservoir without work. That contradicts the Clausius statement. Therefore the assumption was false:
 
 $$
-dS=\frac{\delta Q_{\rm rev}}{T}.
+\boxed{\eta_E\le\eta_R}.
 $$
 
-Entropy is a state function even though $Q$ is path dependent. For an irreversible cycle, comparison with reversible auxiliary engines yields the Clausius inequality
+This proves the first part of Carnot's theorem: no engine can be more efficient than a reversible engine between the same reservoirs.
+
+Now let $R_1$ and $R_2$ both be reversible. If $\eta_{R_1}>\eta_{R_2}$, the same construction with $R_1$ forward and $R_2$ backward creates a contradiction. If the inequality is reversed, exchange their roles. Thus
 
 $$
-\oint\frac{\delta Q}{T}\le0.
+\boxed{\eta_{R_1}=\eta_{R_2}}.
 $$
 
-Join an actual process $A\to B$ to a reversible return path $B\to A$. Then
+All reversible engines between the same two reservoir temperatures have the same efficiency, whatever their working substance. This universality is the central logical gain.
+
+### 5. From reversible-engine composition to thermodynamic temperature
+
+For a reversible engine define the positive heat ratio
 
 $$
-\int_A^B\frac{\delta Q}{T}
-+\int_B^A\frac{\delta Q_{\rm rev}}{T}\le0.
+r(T_h,T_c)\equiv\frac{Q_c}{Q_h},
+\qquad T_h>T_c.
 $$
 
-Because the reversible return integral equals $S_A-S_B$,
+Carnot universality makes $r$ a function of reservoir temperatures only. Consider three reservoirs with $T_1>T_2>T_3$. Couple a reversible engine between $T_1,T_2$ to another between $T_2,T_3$, scaling them so that the heat rejected by the first at $T_2$ equals the heat absorbed by the second. If the first absorbs $Q_1$ and passes $Q_2$ to the intermediate reservoir, while the second passes $Q_3$ to the cold reservoir, then
 
 $$
-\Delta S_{A\to B}\ge\int_A^B\frac{\delta Q}{T}.
+\frac{Q_3}{Q_1}
+=\frac{Q_3}{Q_2}\frac{Q_2}{Q_1}.
 $$
 
-Writing the difference as entropy generation,
+The intermediate transfers cancel, so the composite is itself a reversible engine between $T_1$ and $T_3$. Therefore
 
 $$
-dS=\frac{\delta Q}{T_b}+dS_{\rm gen},
+r(T_1,T_3)=r(T_1,T_2)r(T_2,T_3).
+$$
+
+Choose an arbitrary fixed reference temperature $T_0$ and define a positive monotonic function $\Phi$ by comparing each reservoir with the reference. The composition law then has the ratio solution
+
+$$
+r(T_h,T_c)=\frac{\Phi(T_c)}{\Phi(T_h)}.
+$$
+
+To see why, insert $T_0$ as the intermediate reference; composition expresses every two-temperature ratio as one reference ratio divided by another. Rescaling $\Phi$ by a constant changes no observable ratio. Define the thermodynamic absolute-temperature scale by choosing
+
+$$
+T\propto\Phi(T).
+$$
+
+Then every reversible engine satisfies
+
+$$
+\frac{Q_c}{Q_h}=\frac{T_c}{T_h},
+$$
+
+and therefore
+
+$$
+\boxed{\eta_{\rm Carnot}=1-\frac{T_c}{T_h}}.
+$$
+
+This is a definition-and-theorem chain: reversible-engine universality gives the composition law; the composition law permits an absolute temperature scale; that scale gives the familiar efficiency formula. The formula is not assumed at the start.
+
+### 6. Complete ideal-gas Carnot-cycle calculation
+
+The theorem above is independent of working substance. An ideal gas provides an explicit realization. Let $n$ moles obey
+
+$$
+pV=nRT,
 \qquad
-dS_{\rm gen}\ge0.
+dU=nC_V\,dT,
 $$
 
-For an isolated system $\delta Q=0$, therefore
+with constant heat capacities for simplicity and
 
 $$
-\Delta S_{\rm isolated}\ge0.
+\gamma\equiv\frac{C_P}{C_V},
+\qquad
+C_P-C_V=R.
 $$
 
-This is the entropy-increase form of the second law. It is a consequence of the reversible reference construction plus a physical impossibility principle, not of energy conservation alone.
+Label the four states $1\to2\to3\to4\to1$.
 
-### 6. Equivalence of the classical statements
+**Step 1: reversible isothermal expansion at $T_h$.** Because $dT=0$, $\Delta U_{12}=0$. The first law gives $Q_h=W_{12}$, and
 
-The Kelvin–Planck statement forbids a cyclic device whose sole effect is to absorb heat from one equilibrium reservoir and deliver equal work. The Clausius statement forbids a cyclic device whose sole effect is to move heat from colder to hotter without work. If either violation existed, coupling it to an ordinary engine or refrigerator would construct a violation of the other. Their equivalence is therefore operational, not merely verbal.
+$$
+Q_h
+=\int_{V_1}^{V_2}p\,dV
+=nRT_h\int_{V_1}^{V_2}\frac{dV}{V}
+=nRT_h\ln\frac{V_2}{V_1}.
+$$
+
+**Step 2: reversible adiabatic expansion from $T_h$ to $T_c$.** Here $\delta Q=0$, so
+
+$$
+nC_V\,dT=-p\,dV=-\frac{nRT}{V}\,dV.
+$$
+
+Divide by $nT$ and integrate:
+
+$$
+C_V\frac{dT}{T}=-R\frac{dV}{V},
+$$
+
+$$
+\ln T+(\gamma-1)\ln V=\text{constant},
+$$
+
+or
+
+$$
+TV^{\gamma-1}=\text{constant}.
+$$
+
+Thus
+
+$$
+T_hV_2^{\gamma-1}=T_cV_3^{\gamma-1}.
+$$
+
+**Step 3: reversible isothermal compression at $T_c$.** Again $\Delta U_{34}=0$. The positive magnitude rejected to the cold reservoir is
+
+$$
+Q_c
+=nRT_c\ln\frac{V_3}{V_4}.
+$$
+
+**Step 4: reversible adiabatic compression from $T_c$ to $T_h$.** The same integrated relation gives
+
+$$
+T_cV_4^{\gamma-1}=T_hV_1^{\gamma-1}.
+$$
+
+Divide the Step 2 relation by the Step 4 relation:
+
+$$
+\left(\frac{V_2}{V_1}\right)^{\gamma-1}
+=\left(\frac{V_3}{V_4}\right)^{\gamma-1},
+$$
+
+so
+
+$$
+\frac{V_2}{V_1}=\frac{V_3}{V_4}.
+$$
+
+The logarithms in $Q_h$ and $Q_c$ are therefore equal. Consequently,
+
+$$
+\frac{Q_c}{Q_h}
+=\frac{nRT_c\ln(V_3/V_4)}{nRT_h\ln(V_2/V_1)}
+=\frac{T_c}{T_h},
+$$
+
+and
+
+$$
+\eta
+=\frac{Q_h-Q_c}{Q_h}
+=1-\frac{T_c}{T_h}.
+$$
+
+Every equality depends on reversible isothermal heat transfer and reversible adiabatic steps. Finite temperature gaps, friction, turbulence or uncontrolled expansion make the actual efficiency strictly lower.
+
+### 7. Clausius theorem from reversible auxiliary engines
+
+Adopt a new sign convention for this subsection: each $Q_i$ is signed **into** a cyclic device from a reservoir at $T_i$. Thus heat rejection has $Q_i<0$. Suppose a reversible cycle exchanges heats $Q_1,\ldots,Q_N$ with reservoirs $T_1,\ldots,T_N$.
+
+Choose a reference reservoir at $T_0$. For each exchange $Q_i$, couple an appropriately scaled reversible Carnot device between $T_i$ and $T_0$, oriented so that its exchange with reservoir $T_i$ is exactly $-Q_i$. All nonreference heat exchanges cancel. For each auxiliary reversible cycle,
+
+$$
+\frac{-Q_i}{T_i}+\frac{Q_{0,i}}{T_0}=0,
+$$
+
+so its signed heat intake from the reference reservoir is
+
+$$
+Q_{0,i}=T_0\frac{Q_i}{T_i}.
+$$
+
+After summing all auxiliary devices, every working substance is cyclic and every nonreference reservoir is restored. If
+
+$$
+\sum_i\frac{Q_i}{T_i}\ne0,
+$$
+
+then the composite reversible arrangement has a nonzero exchange only with the reference reservoir. By the first law its net work has the same signed magnitude. Run in whichever direction makes the reference supply heat: the sole net effect would be one-reservoir heat-to-work conversion, contradicting Kelvin–Planck. Therefore a reversible cycle must satisfy
+
+$$
+\boxed{\sum_i\frac{Q_i}{T_i}=0}.
+$$
+
+For continuously varying reversible exchanges, the limit is
+
+$$
+\boxed{\oint\frac{\delta Q_{\rm rev}}{T}=0}.
+$$
+
+### 8. Why entropy is a state function
+
+Take two equilibrium states $A$ and $B$ and any two reversible paths $P_1$ and $P_2$ between them. Travel from $A$ to $B$ along $P_1$ and return from $B$ to $A$ along the reverse of $P_2$. This is a reversible closed cycle, so
+
+$$
+\int_{P_1,A}^{B}\frac{\delta Q_{\rm rev}}{T}
+-\int_{P_2,A}^{B}\frac{\delta Q_{\rm rev}}{T}=0.
+$$
+
+Therefore both path integrals are equal. The integral depends only on endpoints, so it defines a state-function difference:
+
+$$
+S(B)-S(A)
+\equiv
+\int_A^B\frac{\delta Q_{\rm rev}}{T}.
+$$
+
+In differential form,
+
+$$
+\boxed{dS=\frac{\delta Q_{\rm rev}}{T}}.
+$$
+
+Heat $Q$ remains path dependent; the integrating factor $1/T$ converts reversible heat into the exact differential $dS$.
+
+### 9. Clausius inequality and entropy increase
+
+Apply the same auxiliary-engine construction to an **irreversible** cyclic device. If
+
+$$
+\sum_i\frac{Q_i}{T_i}>0,
+$$
+
+the auxiliaries would reduce the composite to a cyclic device that extracts heat from one reference reservoir and converts it wholly into work, violating Kelvin–Planck. Equality would require the original device to be reversible; otherwise reversing the composite would not restore system and environment without residue. Hence
+
+$$
+\boxed{\sum_i\frac{Q_i}{T_i}\le0},
+$$
+
+or in continuous notation,
+
+$$
+\boxed{\oint\frac{\delta Q}{T}\le0}.
+$$
+
+Now take any actual process $A\to B$ and close it with an arbitrary reversible return path $B\to A$. The inequality gives
+
+$$
+\int_A^B\frac{\delta Q}{T_b}
++\int_B^A\frac{\delta Q_{\rm rev}}{T}\le0,
+$$
+
+where $T_b$ is the boundary temperature at which each actual heat element crosses. Since
+
+$$
+\int_B^A\frac{\delta Q_{\rm rev}}{T}=S_A-S_B,
+$$
+
+we obtain
+
+$$
+\boxed{S_B-S_A\ge\int_A^B\frac{\delta Q}{T_b}}.
+$$
+
+Define entropy generation by the nonnegative remainder:
+
+$$
+\Delta S
+=\int_A^B\frac{\delta Q}{T_b}+S_{\rm gen},
+\qquad
+S_{\rm gen}\ge0.
+$$
+
+For an isolated system, no heat crosses the boundary, so
+
+$$
+\boxed{\Delta S_{\rm isolated}=S_{\rm gen}\ge0}.
+$$
+
+The chain is now explicit: an impossibility postulate constrains coupled cyclic devices; reversible comparison yields Carnot universality; universality yields heat ratios; heat ratios yield an integrating factor; and the irreversible inequality yields entropy increase.
+
+### 10. Two worked irreversibility checks
+
+**Finite-temperature heat transfer.** Let heat magnitude $Q>0$ flow spontaneously from a hot reservoir $T_h$ to a cold reservoir $T_c<T_h$. The reservoirs' entropy changes are
+
+$$
+\Delta S_h=-\frac{Q}{T_h},
+\qquad
+\Delta S_c=+\frac{Q}{T_c}.
+$$
+
+Thus
+
+$$
+\Delta S_{\rm total}
+=Q\left(\frac{1}{T_c}-\frac{1}{T_h}\right)>0.
+$$
+
+The reverse uncompensated transfer would make $\Delta S_{\rm total}<0$ and is forbidden. A refrigerator can reverse the heat flow only by consuming work and producing enough additional entropy elsewhere.
+
+**Free expansion of an ideal gas.** An insulated gas expands into vacuum from $V_1$ to $V_2>V_1$. Along the actual path,
+
+$$
+Q=0,
+\qquad
+W=0,
+\qquad
+\Delta U=0.
+$$
+
+For an ideal gas this gives $\Delta T=0$. Entropy is evaluated along a hypothetical reversible isothermal path between the same endpoints:
+
+$$
+\Delta S
+=\int_{V_1}^{V_2}\frac{\delta Q_{\rm rev}}{T}
+=\int_{V_1}^{V_2}\frac{nRT\,dV/V}{T}
+=nR\ln\frac{V_2}{V_1}>0.
+$$
+
+The actual process exchanges no heat, yet entropy increases. This demonstrates why $dS=\delta Q/T$ is valid only for reversible heat transfer, while the general statement requires entropy generation.
+
+### 11. Assumption-versus-conclusion ledger
+
+| Logical role | Statement |
+|---|---|
+| Assumed | First-law energy balance for every device |
+| Assumed | Equilibrium reservoirs and composability of cyclic devices |
+| Assumed | Kelvin–Planck or, equivalently, Clausius impossibility statement |
+| Ideal comparison | Existence of reversible limiting cycles |
+| Derived | No engine exceeds a reversible engine between the same temperatures |
+| Derived | All reversible engines between the same temperatures have equal efficiency |
+| Derived | Reversible heat ratios compose multiplicatively |
+| Defined from derived structure | Absolute thermodynamic temperature scale |
+| Derived | $\eta_{\rm Carnot}=1-T_c/T_h$ |
+| Derived | $\oint\delta Q_{\rm rev}/T=0$ and entropy as a state function |
+| Derived | $\oint\delta Q/T\le0$ and $\Delta S_{\rm isolated}\ge0$ |
 
 ## Validation and explanatory gains
 
@@ -272,6 +568,25 @@ $$
 \mathrm{COP}_{\rm heat\ pump}
 \le\frac{T_h}{T_h-T_c}.
 $$
+
+For a reversed Carnot cycle, $Q_h/Q_c=T_h/T_c$ and $W=Q_h-Q_c$. Therefore
+
+$$
+\mathrm{COP}_{\rm refrigerator}
+=\frac{Q_c}{W}
+=\frac{Q_c}{Q_h-Q_c}
+=\frac{T_c}{T_h-T_c},
+$$
+
+and
+
+$$
+\mathrm{COP}_{\rm heat\ pump}
+=\frac{Q_h}{W}
+=\frac{T_h}{T_h-T_c}.
+$$
+
+The inequalities apply to real devices because any device exceeding a reversible value could be coupled to the reversed reversible device to reproduce the Carnot contradiction.
 
 Its strongest validation is not one measurement but systematic nonviolation across engines, phase changes, chemical systems, radiation and transport. It also generates quantitative entropy balances that locate losses in real devices.
 
@@ -300,10 +615,17 @@ R-ENGINE-SPECIFIC-OPTIMIZATION --reframed-by--> D-CARNOT-1824
 D-CARNOT-1824 --introduces--> A-CARNOT-REVERSIBILITY
 A-CARNOT-REVERSIBILITY --enables--> A-CARNOT-THEOREM
 D-FIRST-LAW-1847-1850 --revises-energy-accounting-of--> D-CARNOT-1824
-A-CARNOT-THEOREM --supports--> THERMODYNAMIC-TEMPERATURE
-A-CLAUSIUS-KELVIN-STATEMENTS --constrain--> D-SECOND-LAW-1850-1865
-REVERSIBLE-HEAT-RATIO --defines--> ENTROPY
+KELVIN-PLANCK-STATEMENT --equivalent-via-device-coupling--> CLAUSIUS-STATEMENT
+CLAUSIUS-STATEMENT --enables-contradiction-proof-of--> A-CARNOT-THEOREM
+A-CARNOT-THEOREM --implies--> REVERSIBLE-ENGINE-UNIVERSALITY
+REVERSIBLE-ENGINE-UNIVERSALITY --implies--> HEAT-RATIO-COMPOSITION-LAW
+HEAT-RATIO-COMPOSITION-LAW --defines--> THERMODYNAMIC-TEMPERATURE
+THERMODYNAMIC-TEMPERATURE --yields--> CARNOT-EFFICIENCY
+REVERSIBLE-AUXILIARY-ENGINES --derive--> CLAUSIUS-THEOREM
+CLAUSIUS-THEOREM --defines--> ENTROPY-STATE-FUNCTION
+REVERSIBLE-AUXILIARY-ENGINES --derive--> CLAUSIUS-INEQUALITY
 CLAUSIUS-INEQUALITY --implies--> ENTROPY-GENERATION-NONNEGATIVE
+ENTROPY-GENERATION-NONNEGATIVE --implies-for-isolated-system--> ENTROPY-INCREASE
 D-SECOND-LAW-1850-1865 --forbids--> PERPETUAL-MOTION-SECOND-KIND
 D-SECOND-LAW-1850-1865 --precedes--> D-STATISTICAL-MECHANICS-1859-1902
 D-SECOND-LAW-1850-1865 --instantiates--> P-03
@@ -333,6 +655,7 @@ An evidence-versus-law ledger prevents conflation:
 - Treat the reversible engine as a counterfactual comparison standard, not a claim that real engines operate infinitely slowly without losses.
 - Preserve the distinction between Carnot's historical caloric reasoning and the mature first-law reconstruction.
 - Never infer the second law from the first law alone; record the impossibility postulate used.
+- Store the proof as a dependency graph from postulate to device coupling to theorem to integrating factor to inequality; do not flatten derived statements into coequal axioms.
 - Distinguish entropy transfer $\delta Q/T_b$ from entropy production $dS_{\rm gen}$.
 - Apply entropy increase to a correctly closed composite system, not automatically to an open subsystem.
 - Store Einstein's remark as praise of classical thermodynamics in-domain, not as a direct Carnot quotation.
