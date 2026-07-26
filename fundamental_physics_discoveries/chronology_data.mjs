@@ -449,4 +449,29 @@ export const chronology = {
       "R-RADIATION-DUALITY-WITHOUT-MATTER-RECIPROCITY": ["1905–1923", 1905],
     },
   },
+  "55_fermat_principle.md": {
+    discovery: ["1662 mature least-time derivation of refraction", 1662],
+    pathways: {
+      "R-SHORTEST-DISTANCE-ALL-RAYS": ["antiquity through the early seventeenth century", 60],
+      "R-DESCARTES-MECHANICAL-REFRACTION": ["1637 (*La Dioptrique*)", 1637],
+      "R-LOCAL-SNELL-LAW-WITHOUT-GENERATOR": ["1621–1662", 1621],
+    },
+  },
+  "56_lagrangian_mechanics.md": {
+    discovery: ["1788 publication of *Méchanique analitique*", 1788],
+    pathways: {
+      "R-CARTESIAN-COMPONENT-MECHANICS": ["late seventeenth–eighteenth centuries", 1687],
+      "R-EXPLICIT-CONSTRAINT-REACTIONS": ["seventeenth–eighteenth centuries", 1650],
+      "R-MAUPERTUIS-METAPHYSICAL-ACTION": ["1744 onward", 1744],
+      "R-DALEMBERT-WITHOUT-SYSTEMATIC-COORDINATES": ["1743–1750s", 1743],
+    },
+  },
+  "57_hamiltonian_mechanics.md": {
+    discovery: ["1834–1835 Hamiltonian dynamics synthesis", 1834.5],
+    pathways: {
+      "R-DIRECT-TRAJECTORY-INTEGRATION": ["seventeenth century–1833", 1650],
+      "R-CONFIGURATION-VELOCITY-ONLY": ["1788–1833", 1788],
+      "R-OPTICS-DYNAMICS-SEPARATION": ["seventeenth century–1833", 1650.1],
+    },
+  },
 };

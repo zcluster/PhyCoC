@@ -9,7 +9,10 @@ const historyDir = path.dirname(fileURLToPath(import.meta.url));
 const corpusDir = path.join(historyDir, "fundamental_physics_discoveries");
 const outputPath = path.join(historyDir, "index.html");
 const mainlineFiles = new Set([
+  "55_fermat_principle.md",
   "08_newtonian_mechanics.md",
+  "56_lagrangian_mechanics.md",
+  "57_hamiltonian_mechanics.md",
   "11_thermodynamics_and_energy_conservation.md",
   "12_statistical_mechanics.md",
   "13_maxwell_electromagnetic_field_theory.md",
@@ -23,6 +26,11 @@ const mainlineFiles = new Set([
   "47_quantum_field_theory.md",
   "50_yang_mills_gauge_theory.md",
 ]);
+const categoryOverrides = new Map([
+  ["55_fermat_principle.md", "Quantum & radiation"],
+  ["56_lagrangian_mechanics.md", "Mechanics & astronomy"],
+  ["57_hamiltonian_mechanics.md", "Mechanics & astronomy"],
+]);
 const files = fs
   .readdirSync(corpusDir)
   .filter((name) => /^\d{2}_.+\.md$/.test(name))
@@ -34,6 +42,7 @@ function stripMarkdown(value = "") {
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     .replace(/\*\*([^*]+)\*\*/g, "$1")
     .replace(/\*([^*]+)\*/g, "$1")
+    .replace(/\$([^$]+)\$/g, "$1")
     .replace(/\\\((.*?)\\\)/g, "$1")
     .replace(/\s+/g, " ")
     .trim();
@@ -212,7 +221,8 @@ const cases = files.map((file, index) => {
   const centralClaim = firstParagraph(
     section(text, ["Central claim", "Central thesis and interpretation rule"]),
   );
-  const category = categoryFor(title, meta.Domain || meta["Primary domain"] || "");
+  const category =
+    categoryOverrides.get(file) || categoryFor(title, meta.Domain || meta["Primary domain"] || "");
   return {
     file: `fundamental_physics_discoveries/${file}`,
     id: centralNode,

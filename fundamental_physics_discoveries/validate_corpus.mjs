@@ -278,8 +278,8 @@ if (readmeCaseLinks.join("\u0000") !== chronologicalFiles.join("\u0000")) {
   fail("README.md", "ordered discovery list does not follow sortable focal chronology");
 }
 
-if (files.length !== 54) {
-  fail("corpus", `expected 54 case files, found ${files.length}`);
+if (files.length !== 57) {
+  fail("corpus", `expected 57 case files, found ${files.length}`);
 }
 
 const newtonPath = path.join(corpusDir, newtonFile);
