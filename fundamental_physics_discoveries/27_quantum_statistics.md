@@ -1,4 +1,4 @@
-# Quantum Statistics and the Exclusion Principle: Historical Knowledge Graph
+# Quantum Statistics: Historical Knowledge Graph
 
 ## Graph metadata
 
@@ -8,12 +8,12 @@
 | Central node | `D-QUANTUM-STATISTICS-1924-1926` |
 | Focal discovery date | 1924–1926 |
 | Main contributors | Satyendra Nath Bose, Albert Einstein, Wolfgang Pauli, Enrico Fermi, Paul Dirac |
-| Domain | Indistinguishable quantum particles and many-body structure |
+| Domain | Bose–Einstein and Fermi–Dirac statistics, indistinguishability, exclusion and quantum many-body structure |
 | Epistemic status | Bosonic and fermionic statistics are fundamental consequences of quantum state symmetry and spin–statistics in relativistic QFT |
 
 ## Central claim
 
-Quantum particles of the same species are indistinguishable in a stronger sense than classical identical objects. Symmetric bosonic states allow common occupation; antisymmetric fermionic states enforce Pauli exclusion. This distinction explains matter's structure and collective quantum phases.
+Quantum statistics replaces classical label-based counting with occupation counting for indistinguishable particles. Symmetric bosonic states generate Bose enhancement and permit macroscopic occupation; antisymmetric fermionic states generate Fermi blocking and Pauli exclusion. Bose–Einstein and Fermi–Dirac distributions therefore explain radiation, atomic organization, degenerate matter and collective quantum phases, while both reduce to Maxwell–Boltzmann statistics in the controlled dilute limit.
 
 ## Time slices
 
@@ -65,7 +65,7 @@ Quantum particles of the same species are indistinguishable in a stronger sense 
 | Bose statistics for all particles | Symmetrize every many-body state | Atomic shell structure and matter stability require exclusion | Applies to integer-spin species |
 | Ad hoc Pauli exclusion | Forbid duplicate electron quantum numbers | Organized spectra but lacked relativistic basis | Retained, explained by fermionic antisymmetry |
 | Classical spin picture | Treat spin as literal rotating charged sphere | Required surface speeds/ moments inconsistent with such a body | Spin retained as intrinsic quantum degree |
-| **Discovery/current: quantum statistics and exclusion** | Identical bosons occupy symmetric states; identical fermions occupy antisymmetric states | Spectra, degeneracy, heat capacities, condensation, and matter stability | Retained |
+| **Discovery/current: quantum statistics** | Identical bosons occupy symmetric states; identical fermions occupy antisymmetric states | Spectra, bunching/antibunching, degeneracy, heat capacities, condensation, and matter stability | Retained; classical statistics recovered at low phase-space density |
 
 The spin–statistics theorem later tied integer/half-integer spin to commutation/anticommutation under assumptions including Lorentz invariance, locality, and positive energy. It did not retroactively make Pauli's empirical rule trivial. Quantum statistics modifies state counting even without a conventional force, explaining why “identical particles that do not interact” can still show correlations.
 
@@ -135,6 +135,11 @@ D-BOSE-STATISTICS --generalized-by--> D-EINSTEIN-MATERIAL-BOSONS
 A-PERIODIC-TABLE --constrains--> D-PAULI-EXCLUSION
 ANTISYMMETRY --implies--> EXCLUSION
 SYMMETRY --permits--> MULTIPLE-BOSON-OCCUPATION
+SYMMETRIC-STATE-COUNTING --generates--> BOSE-EINSTEIN-DISTRIBUTION
+ANTISYMMETRIC-STATE-COUNTING --generates--> FERMI-DIRAC-DISTRIBUTION
+D-QUANTUM-STATISTICS-1924-1926 --reduces-to-in-dilute-limit--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
+D-QUANTUM-STATISTICS-1924-1926 --explains--> FERMI-DEGENERACY-PRESSURE
+D-QUANTUM-STATISTICS-1924-1926 --explains--> BOSE-EINSTEIN-CONDENSATION
 D-QUANTUM-STATISTICS-1924-1926 --retains-limit--> R-MAXWELL-BOLTZMANN-ALL-PARTICLES
 D-QUANTUM-STATISTICS-1924-1926 --instantiates--> P-01
 ```
@@ -154,7 +159,62 @@ The plus sign defines bosonic symmetry; the minus sign defines fermionic antisym
 
 ### Occupation distributions from constrained entropy
 
-For single-particle level \(i\) with energy \(\epsilon_i\), maximizing entropy with fixed mean energy and particle number gives:
+Let level \(i\) have energy \(\epsilon_i\), degeneracy \(g_i\), and occupation \(n_i\). The counting rule is the essential new input. For bosons and fermions respectively,
+
+$$
+W_i^{\mathrm B}
+=\binom{n_i+g_i-1}{n_i},
+\qquad
+W_i^{\mathrm F}
+=\binom{g_i}{n_i},
+\quad 0\le n_i\le g_i.
+$$
+
+The total multiplicity is \(W=\prod_iW_i\). In the large-number limit, Stirling's approximation gives
+
+$$
+\ln W_{\mathrm B}
+\simeq\sum_i\left[
+(g_i+n_i)\ln(g_i+n_i)-g_i\ln g_i-n_i\ln n_i
+\right],
+$$
+
+$$
+\ln W_{\mathrm F}
+\simeq\sum_i\left[
+g_i\ln g_i-n_i\ln n_i-(g_i-n_i)\ln(g_i-n_i)
+\right].
+$$
+
+Maximize \(\ln W\) subject to fixed total particle number and energy,
+
+$$
+\sum_i n_i=N,
+\qquad
+\sum_i n_i\epsilon_i=E,
+$$
+
+by setting
+
+$$
+\delta\left[
+\ln W-\alpha\sum_i n_i-\beta\sum_i n_i\epsilon_i
+\right]=0.
+$$
+
+For bosons, differentiation with respect to \(n_i\) gives
+
+$$
+\ln\frac{g_i+n_i}{n_i}=\alpha+\beta\epsilon_i;
+$$
+
+for fermions it gives
+
+$$
+\ln\frac{g_i-n_i}{n_i}=\alpha+\beta\epsilon_i.
+$$
+
+Solving and identifying \(\beta=1/(k_BT)\) and \(\mu=-\alpha/\beta\) yields the mean occupation per one-particle state:
 
 $$
 \bar n_i
@@ -181,6 +241,53 @@ $$
 $$
 
 per complete one-particle state. For bosons occupation is unbounded.
+
+The same result can be checked mode by mode in the grand canonical ensemble. With \(x_i=e^{-\beta(\epsilon_i-\mu)}\), a single bosonic state has
+
+$$
+\mathcal Z_i^{\mathrm B}
+=\sum_{n=0}^{\infty}x_i^n
+=\frac{1}{1-x_i},
+\qquad
+\bar n_i=x_i\frac{\partial\ln\mathcal Z_i}{\partial x_i}
+=\frac{x_i}{1-x_i},
+$$
+
+whereas a fermionic state permits only \(n=0,1\):
+
+$$
+\mathcal Z_i^{\mathrm F}=1+x_i,
+\qquad
+\bar n_i=\frac{x_i}{1+x_i}.
+$$
+
+These are exactly the Bose–Einstein and Fermi–Dirac denominators above. The derivation assumes equilibrium, additive conserved energy, and a meaningful chemical potential; interactions can change the single-particle spectrum and may prevent this ideal-gas factorization.
+
+### Controlled recovery of classical statistics
+
+When every relevant state has low occupation, \(x_i=e^{-\beta(\epsilon_i-\mu)}\ll1\). Expanding either denominator gives
+
+$$
+\bar n_i^{\mathrm B}=x_i+x_i^2+\cdots,
+\qquad
+\bar n_i^{\mathrm F}=x_i-x_i^2+\cdots.
+$$
+
+Both therefore reduce at leading order to
+
+$$
+\bar n_i^{\mathrm{MB}}=e^{-\beta(\epsilon_i-\mu)}.
+$$
+
+For a nonrelativistic gas this condition is summarized by
+
+$$
+n\lambda_{\mathrm{th}}^3\ll1,
+\qquad
+\lambda_{\mathrm{th}}=\frac{h}{\sqrt{2\pi mk_BT}}.
+$$
+
+This is why classical statistical mechanics is retained rather than declared false: high temperature, low density, or large particle mass makes wave packets overlap weakly and suppresses exchange corrections.
 
 ### Pauli exclusion and atomic organization
 
@@ -210,6 +317,28 @@ p_F
 =\hbar(3\pi^2n)^{1/3}.
 $$
 
+For completeness, count the occupied momentum states in volume \(V\). With spin degeneracy two,
+
+$$
+N
+=2\frac{V}{(2\pi\hbar)^3}\frac{4\pi p_F^3}{3},
+$$
+
+which rearranges to the expression for \(p_F\). The zero-temperature nonrelativistic energy density is
+
+$$
+\frac{E}{V}
+=2\int_0^{p_F}\frac{4\pi p^2dp}{(2\pi\hbar)^3}\frac{p^2}{2m}
+=\frac35nE_F.
+$$
+
+Using \(P=-(\partial E/\partial V)_N\), or the kinetic momentum-flux relation, gives
+
+$$
+P=\frac25nE_F
+=\frac{\hbar^2}{5m}(3\pi^2)^{2/3}n^{5/3}.
+$$
+
 Nonrelativistic Fermi energy:
 
 $$
@@ -220,7 +349,24 @@ Even at zero temperature, fermions have kinetic pressure. This supports white dw
 
 ### Bose–Einstein condensation
 
-For an ideal three-dimensional Bose gas, excited states can contain only a finite number at fixed \(T\). Below:
+For an ideal three-dimensional Bose gas, integrate the excited-state occupation over momentum:
+
+$$
+N_{\mathrm{ex}}
+=\frac{V}{2\pi^2\hbar^3}
+\int_0^\infty
+\frac{p^2\,dp}{e^{\beta(p^2/2m-\mu)}-1}
+=\frac{V}{\lambda_{\mathrm{th}}^3}g_{3/2}(z),
+$$
+
+where \(z=e^{\beta\mu}\le1\). The excited-state capacity is maximal as \(z\to1\):
+
+$$
+N_{\mathrm{ex}}^{\max}
+=\frac{V}{\lambda_{\mathrm{th}}^3}\zeta(3/2).
+$$
+
+If the fixed total \(N\) exceeds this value, the excess cannot be accommodated by adjusting \(\mu\) and must occupy the ground state macroscopically. Setting \(N=N_{\mathrm{ex}}^{\max}\) defines
 
 $$
 T_c
@@ -238,6 +384,15 @@ $$
 $$
 
 Real trapped gases require finite-size and interaction corrections. Condensation is not merely ordinary particles “getting cold and stopping”; it is macroscopic quantum occupation.
+
+| Logical role | Content |
+|---|---|
+| New state-counting input | Identical-particle states are symmetric or antisymmetric; permutations do not create separately labeled microstates. |
+| Equilibrium constraints | Fixed mean energy and particle number, or their grand-canonical conjugates \(T\) and \(\mu\). |
+| Derived distributions | Bose–Einstein and Fermi–Dirac occupation factors. |
+| Controlled predecessor limit | Maxwell–Boltzmann statistics when \(n\lambda_{\mathrm{th}}^3\ll1\). |
+| Derived many-body consequences | Fermi surface and degeneracy pressure; finite excited-state capacity and Bose condensation. |
+| Additional theorem-level input | Spin–statistics pairing requires relativistic locality, positive energy and related QFT assumptions. |
 
 ### Photons and chemical potential
 

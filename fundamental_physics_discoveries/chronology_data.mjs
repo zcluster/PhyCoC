@@ -85,7 +85,7 @@ export const chronology = {
       "R-PERPETUAL-MOTION-FIRST-KIND": ["medieval proposals through the early nineteenth century", 1200],
     },
   },
-  "12_statistical_mechanics.md": {
+  "12_classical_statistical_mechanics.md": {
     discovery: ["1859–1902 (Maxwell/Boltzmann through Gibbs)", 1902],
     pathways: {
       "R-PURE-MECHANICAL-DEDUCTION": ["nineteenth-century mechanical program", 1800],
@@ -206,7 +206,7 @@ export const chronology = {
       "R-LITERAL-THREE-DIMENSIONAL-MATTER-WAVE": ["1923–1926", 1923],
     },
   },
-  "27_quantum_statistics_and_exclusion.md": {
+  "27_quantum_statistics.md": {
     discovery: ["1924–1926", 1926.9],
     pathways: {
       "R-MAXWELL-BOLTZMANN-ALL-PARTICLES": ["1860s–1870s", 1860],

@@ -1,19 +1,19 @@
-# Statistical Mechanics: Historical Knowledge Graph
+# Classical Statistical Mechanics: Historical Knowledge Graph
 
 ## Graph metadata
 
 | Field | Value |
 |---|---|
-| Graph ID | `KG-STATMECH-11` |
-| Central node | `D-STATISTICAL-MECHANICS-1859-1902` |
+| Graph ID | `KG-CLASSICAL-STATMECH-11` |
+| Central node | `D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902` |
 | Focal discovery date | 1859–1902 (Maxwell/Boltzmann through Gibbs) |
 | Main contributors | James Clerk Maxwell, Ludwig Boltzmann, J. Willard Gibbs |
-| Domain | Microscopic foundations of thermodynamics |
-| Epistemic status | Fundamental probabilistic framework for equilibrium and nonequilibrium many-body physics |
+| Domain | Classical microscopic foundations of thermodynamics |
+| Epistemic status | Fundamental classical probabilistic framework; retained as the dilute, high-temperature limit of quantum statistical mechanics where exchange effects are negligible |
 
 ## Central claim
 
-Statistical mechanics explains thermodynamic regularities through probability distributions over vast numbers of microscopic states. It reconciles reversible microdynamics with overwhelmingly likely macroscopic irreversibility by adding boundary conditions, coarse descriptions, and typicality or probabilistic reasoning.
+Classical statistical mechanics explains thermodynamic regularities through probability distributions over classical phase-space microstates. It connects reversible microscopic mechanics to macroscopic equilibrium, fluctuations and conditional irreversibility through ensembles, coarse descriptions, boundary conditions and typicality. It is not the complete statistics of identical quantum particles: quantum statistics changes the underlying state counting, while reproducing the classical Maxwell–Boltzmann regime when exchange effects are negligible.
 
 ## Time slices
 
@@ -69,7 +69,7 @@ Statistical mechanics explains thermodynamic regularities through probability di
 | Recurrence objection | Finite isolated dynamics can return near its initial state | Recurrence times are generally enormous; thermodynamic claims are probabilistic and scale-bound | Not a strict monotonic theorem for every microtrajectory |
 | Energetics without atoms | Macroscopic thermodynamics works without molecules | Brownian fluctuations and convergent \(N_A\) estimates add microscopic evidence | Thermodynamics remains autonomous |
 | Naïve ergodicity | Time average assumed equal to ensemble average without proof | Mixing, typicality, and ensemble methods used where justified | Equivalence can fail for finite or long-range systems |
-| **Discovery/current: statistical mechanics** | Macrostates arise from probability distributions over microscopic states plus specified boundary/coarse-graining assumptions | Thermodynamics, fluctuations, Brownian motion, transport, and phase behavior | Retained with regime and assumption metadata |
+| **Discovery/current: classical statistical mechanics** | Macrostates arise from probability distributions over classical phase-space states plus specified boundary/coarse-graining assumptions | Thermodynamics, fluctuations, Brownian motion, transport, and classical phase behavior | Retained with regime and assumption metadata; recovered from quantum statistics in the dilute limit |
 
 Boltzmann's molecular-chaos assumption factorizes incoming-particle correlations and is time-asymmetric in its application. This is the hidden hinge in a simple \(H\)-theorem narrative. The theory did not derive the thermodynamic arrow solely from reversible mechanics; it connected overwhelmingly likely macroscopic behavior to statistical assumptions and special boundary conditions. The retained older structure is exact microscopic mechanics plus phenomenological thermodynamics, linked rather than one erased by the other.
 
@@ -153,14 +153,14 @@ Classical state counting fails for quantum indistinguishable particles and low t
 ## Edge list
 
 ```text
-A-THERMODYNAMICS --constrains--> D-STATISTICAL-MECHANICS-1859-1902
+A-THERMODYNAMICS --constrains--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
 A-PROBABILITY --enables--> D-MAXWELL-DISTRIBUTION
 A-COMBINATORICS --enables--> EQ-BOLTZMANN-ENTROPY
 R-PURE-MECHANICAL-DEDUCTION --repaired-by--> PROBABILISTIC-BOUNDARY-CONDITIONS
 EQ-CANONICAL-DISTRIBUTION --generates--> THERMODYNAMIC-STATE-FUNCTIONS
-D-STATISTICAL-MECHANICS-1859-1902 --explains--> LAW-THERMODYNAMICS
-D-QUANTUM-STATISTICS --limits--> CLASSICAL-COUNTING
-D-STATISTICAL-MECHANICS-1859-1902 --instantiates--> P-02
+D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902 --explains--> LAW-THERMODYNAMICS
+D-QUANTUM-STATISTICS-1924-1926 --reduces-to-in-dilute-limit--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
+D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902 --instantiates--> P-02
 ```
 
 ## Extended historical investigation

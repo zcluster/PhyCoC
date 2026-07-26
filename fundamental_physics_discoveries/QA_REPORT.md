@@ -44,12 +44,13 @@ The validator checks all 58 numbered cases, including the specialized Newtonian 
 
 ## Core-backbone derivation audit (2026-07-26)
 
-The 17 nodes classified in the interactive graph as the **Core theoretical backbone** received an additional line-by-line derivation audit. The review found that Newtonian mechanics and the expanded Second Law case were already sufficiently reconstructible, but 15 other cases compressed at least one signature inference into a stated result. Those gaps were expanded as follows:
+The 18 nodes classified in the interactive graph as the **Core theoretical backbone** received an additional line-by-line derivation audit. Newtonian mechanics and the expanded Second Law case were already sufficiently reconstructible; 15 other original backbone cases compressed at least one signature inference into a stated result, and the later-promoted Quantum Statistics case received a full counting-to-distribution audit. Those gaps were expanded as follows:
 
 | Case family | Inference made self-contained |
 |---|---|
 | Fermat, Lagrange, Hamilton | Optical variation to ray equation and Snell invariant; d'Alembert/action variation to Euler–Lagrange equations; Legendre transform to Hamilton, Poisson, and Hamilton–Jacobi equations |
-| First Law, statistical mechanics | Cross-route operational inference of internal energy; maximum-entropy derivation of canonical weights; explicit conditional sign proof for the Boltzmann \(H\)-theorem |
+| First Law, classical statistical mechanics | Cross-route operational inference of internal energy; maximum-entropy derivation of canonical weights; explicit conditional sign proof for the Boltzmann \(H\)-theorem |
+| Quantum statistics | Symmetric/antisymmetric multiplicities to BE/FD occupations; grand-canonical cross-check; Maxwell–Boltzmann limit; Fermi degeneracy pressure; finite excited-state capacity and BEC threshold |
 | Maxwell and relativity | Plane-wave and Poynting derivations; Lorentz coefficients from both light rays and reciprocity; weak-field recovery of Newton/Poisson gravity and perturbative perihelion advance |
 | Quantum mechanics and QFT | Robertson inequality from Cauchy–Schwarz; exact rectangular-barrier matching result; normal-mode decomposition to oscillators, Fock operators, and particle-number sectors |
 | QED and Yang–Mills | Local gauge covariance to the interaction and current identities; regulator/counterterm logic; non-Abelian connection transformation, curvature covariance, action variation, and self-interaction vertices |
@@ -57,7 +58,7 @@ The 17 nodes classified in the interactive graph as the **Core theoretical backb
 
 Each expanded chain distinguishes empirical or structural inputs, algebraic consequences, derived observables, and scope conditions. Modern pedagogical reconstructions are labeled as such by context and are not represented as verbatim historical reasoning.
 
-The executable validator now maintains a minimum derivation floor for these 17 files: at least 1,800 words, at least eight display-equation blocks, and an explicit assumption/inference-role audit (with schema-aware markers for the Newton and Second Law cases). These thresholds cannot certify correctness, but they prevent accidental regression to formula-only summaries.
+The executable validator now maintains a minimum derivation floor for these 18 files: at least 1,800 words, at least eight display-equation blocks, and an explicit assumption/inference-role audit (with schema-aware markers for the Newton and Second Law cases). These thresholds cannot certify correctness, but they prevent accidental regression to formula-only summaries.
 
 ## Known limitations and responsible use
 

@@ -19,11 +19,12 @@ const canonicalFiles = files.filter((name) => name !== newtonFile);
 const coreBackboneFiles = [
   "08_newtonian_mechanics.md",
   "11_thermodynamics_and_energy_conservation.md",
-  "12_statistical_mechanics.md",
+  "12_classical_statistical_mechanics.md",
   "13_maxwell_electromagnetic_field_theory.md",
   "19_special_relativity.md",
   "24_general_relativity.md",
   "26_quantum_mechanics.md",
+  "27_quantum_statistics.md",
   "32_quantum_electrodynamics.md",
   "38_electroweak_theory.md",
   "39_quantum_chromodynamics.md",
