@@ -173,14 +173,16 @@ Classical fields allow continuous energy and do not explain atomic stability, ph
 
 ## Discovery patterns
 
-| ID | Instantiation |
-|---|---|
-| `P-01` | Electricity, magnetism, and light unified |
-| `P-02` | Static and induction laws generate wave propagation |
-| `P-03` | Forces between bodies reframed as local field evolution |
-| `P-04` | Displacement current and autonomous fields accepted |
-| `P-05` | Gauss, Ampère, and Faraday structures retained |
-| `P-06` | Predicted wave speed and new spectral regime tested |
+This non-canonical trial uses the same process-ordered vocabulary as the canonical corpus. Canonical definitions remain fixed; case-specific content and evidence locations are recorded separately.
+
+| Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
+|---|---|---|---|---|
+| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | Forces between bodies reframed as local field evolution | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Displacement current and autonomous fields accepted | [Transformative move](#transformative-move) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Static and induction laws generate wave propagation | [Transformative move](#transformative-move); [extrapolative step](#extrapolative-step) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Electricity, magnetism, and light unified | [Extrapolative step](#extrapolative-step) |
+| `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Gauss, Ampère, and Faraday structures retained | [Retained results](#retained-results-and-new-consequences); [limitations](#limitations-and-retained-status) |
+| `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Predicted wave speed and new spectral regime tested | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 
 ## Interpolation, transformation, and extrapolation
 
@@ -296,7 +298,7 @@ EM-WAVE-EQUATION --predicts--> SPEED-ONE-OVER-SQRT-MUEPS
 SPEED-ONE-OVER-SQRT-MUEPS --matches--> A-OPTICAL-SPEED
 V-HERTZ-WAVES --validates--> D-MAXWELL-FIELD-1861-1865
 D-QED --quantizes--> D-MAXWELL-FIELD-1861-1865
-D-MAXWELL-FIELD-1861-1865 --instantiates--> P-01
+D-MAXWELL-FIELD-1861-1865 --instantiates--> P-04
 ```
 
 ## Extended historical investigation

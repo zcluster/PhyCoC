@@ -98,7 +98,7 @@ The admissible pre-discovery input nodes are `A-GAUSS-LAWS`, `A-AMPERE`, `A-FARA
 | `R-INSTANTANEOUS-ELECTROMAGNETIC-ACTION` | Direct force laws in which charges or currents influence one another across distance without a propagating local field. | See the full pathway record above. |
 | `R-AMPERE-WITHOUT-DISPLACEMENT-CURRENT` | The conduction-current-only form of Ampère's circuital law, applied even when electric flux changes between capacitor plates. | It gives surface-dependent current and conflicts with charge continuity. |
 
-**Pattern demonstrated — `P-03` (reframe the inherited question):** Forces between bodies reframed as local field evolution. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+**Pattern demonstrated — `P-01` (reframe the inherited question):** Forces between bodies reframed as local field evolution. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
 
@@ -150,11 +150,11 @@ The numerical agreement with optical measurements motivated the inference that l
 
 **Patterns demonstrated:**
 
-- `P-02` — **Make the new structure generative:** Static and induction laws generate wave propagation
+- `P-01` — **Reframe the inherited problem:** Forces between bodies reframed as local field evolution
 
-- `P-03` — **Reframe the inherited problem:** Forces between bodies reframed as local field evolution
+- `P-02` — **Permit a new representation, ontology, or mechanism:** Displacement current and autonomous fields accepted
 
-- `P-04` — **Permit a new representation, ontology, or mechanism:** Displacement current and autonomous fields accepted
+- `P-03` — **Make the new structure generative:** Static and induction laws generate wave propagation
 
 ### Extrapolative generalization
 
@@ -162,9 +162,9 @@ The transformative move became a broader physical discovery when it was asserted
 
 **Patterns demonstrated:**
 
-- `P-01` — **Unify previously separated domains or phenomena:** Electricity, magnetism, and light unified
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** Static and induction laws generate wave propagation
 
-- `P-02` — **Generate consequences rather than merely redescribe inputs:** Static and induction laws generate wave propagation
+- `P-04` — **Unify previously separated domains or phenomena:** Electricity, magnetism, and light unified
 
 ### Retention, predictions, and discriminating tests
 
@@ -178,17 +178,16 @@ The reconstruction preserves rather than erases successful predecessor content: 
 
 ### Discovery-pattern synthesis
 
-This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+Pattern IDs are ordered by their typical first role in the reconstructed discovery process, not by an arbitrary vocabulary-list order. The canonical definition is identical across the corpus; the final three columns record how that fixed operation appears and where its supporting evidence is located in this case.
 
-| Pattern | Process stage | Case-specific instantiation |
-|---|---|---|
-| `P-01` | Extrapolative generalization | Electricity, magnetism, and light unified |
-| `P-02` | Transformative move and generative deduction | Static and induction laws generate wave propagation |
-| `P-03` | Diagnosis of interpolation failure and reframing | Forces between bodies reframed as local field evolution |
-| `P-04` | Transformative representation, ontology, or mechanism | Displacement current and autonomous fields accepted |
-| `P-05` | Retention and limiting recovery | Gauss, Ampère, and Faraday structures retained |
-| `P-06` | Prediction, discrimination, and validation network | Predicted wave speed and new spectral regime tested |
-
+| Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
+|---|---|---|---|---|
+| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | Forces between bodies reframed as local field evolution | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Displacement current and autonomous fields accepted | [Transformative move](#transformative-move) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Static and induction laws generate wave propagation | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Electricity, magnetism, and light unified | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Gauss, Ampère, and Faraday structures retained | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
+| `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Predicted wave speed and new spectral regime tested | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
 
 This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
@@ -556,7 +555,7 @@ EM-WAVE-EQUATION --predicts--> SPEED-ONE-OVER-SQRT-MUEPS
 SPEED-ONE-OVER-SQRT-MUEPS --matches--> A-OPTICAL-SPEED
 V-HERTZ-WAVES --validates--> D-MAXWELL-FIELD-1861-1865
 D-QED --quantizes--> D-MAXWELL-FIELD-1861-1865
-D-MAXWELL-FIELD-1861-1865 --instantiates--> P-01
+D-MAXWELL-FIELD-1861-1865 --instantiates--> P-04
 ```
 
 ## Sources

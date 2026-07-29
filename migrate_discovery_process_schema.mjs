@@ -10,7 +10,6 @@ const files = fs
   .readdirSync(corpusDir)
   .filter((name) => /^\d{2}_.+\.md$/.test(name))
   .filter((name) => !name.endsWith("_trial.md"))
-  .filter((name) => name !== "19_special_relativity.md")
   .sort();
 
 function parseSections(source) {
@@ -219,34 +218,34 @@ function migrateFile(file) {
     `The admissible pre-discovery input nodes are ${inputText}. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.`,
     "### What interpolation could and could not achieve",
     pathTable,
-    `**Pattern demonstrated — \`P-03\` (reframe the inherited question):** ${sentence(p("P-03"))} The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.`,
+    `**Pattern demonstrated — \`P-01\` (reframe the inherited question):** ${sentence(p("P-01"))} The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.`,
     "### Transformative move",
     demote(discovery.body),
     "**Patterns demonstrated:**",
-    `- \`P-02\` — **Make the new structure generative:** ${p("P-02")}`,
-    `- \`P-03\` — **Reframe the inherited problem:** ${p("P-03")}`,
-    `- \`P-04\` — **Permit a new representation, ontology, or mechanism:** ${p("P-04")}`,
+    `- \`P-01\` — **Reframe the inherited problem:** ${p("P-01")}`,
+    `- \`P-02\` — **Permit a new representation, ontology, or mechanism:** ${p("P-02")}`,
+    `- \`P-03\` — **Make the new structure generative:** ${p("P-03")}`,
     "### Extrapolative generalization",
-    `The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (${domain}). The case-specific unification was: ${sentence(p("P-01"))} This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.`,
+    `The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (${domain}). The case-specific unification was: ${sentence(p("P-04"))} This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.`,
     "**Patterns demonstrated:**",
-    `- \`P-01\` — **Unify previously separated domains or phenomena:** ${p("P-01")}`,
-    `- \`P-02\` — **Generate consequences rather than merely redescribe inputs:** ${p("P-02")}`,
+    `- \`P-03\` — **Generate consequences rather than merely redescribe inputs:** ${p("P-03")}`,
+    `- \`P-04\` — **Unify previously separated domains or phenomena:** ${p("P-04")}`,
     "### Retention, predictions, and discriminating tests",
     `The reconstruction preserves rather than erases successful predecessor content: ${sentence(p("P-05"))} Its quantitative or otherwise discriminating test strategy is: ${sentence(p("P-06"))} The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.`,
     "**Patterns demonstrated:**",
     `- \`P-05\` — **Recover valid predecessor structure or limiting behavior:** ${p("P-05")}`,
     `- \`P-06\` — **Prioritize discriminating tests:** ${p("P-06")}`,
     "### Discovery-pattern synthesis",
-    "This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.",
+    "Pattern IDs are ordered by their typical first role in the reconstructed discovery process, not by an arbitrary vocabulary-list order. The canonical definition is identical across the corpus; the final three columns record how that fixed operation appears and where its supporting evidence is located in this case.",
     [
-      "| Pattern | Process stage | Case-specific instantiation |",
-      "|---|---|---|",
-      `| \`P-01\` | Extrapolative generalization | ${escapeCell(p("P-01"))} |`,
-      `| \`P-02\` | Transformative move and generative deduction | ${escapeCell(p("P-02"))} |`,
-      `| \`P-03\` | Diagnosis of interpolation failure and reframing | ${escapeCell(p("P-03"))} |`,
-      `| \`P-04\` | Transformative representation, ontology, or mechanism | ${escapeCell(p("P-04"))} |`,
-      `| \`P-05\` | Retention and limiting recovery | ${escapeCell(p("P-05"))} |`,
-      `| \`P-06\` | Prediction, discrimination, and validation network | ${escapeCell(p("P-06"))} |`,
+      "| Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |",
+      "|---|---|---|---|---|",
+      `| \`P-01\` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | ${escapeCell(p("P-01"))} | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |`,
+      `| \`P-02\` | Admit a new representation, ontology, or mechanism form | Transformative move | ${escapeCell(p("P-02"))} | [Transformative move](#transformative-move) |`,
+      `| \`P-03\` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | ${escapeCell(p("P-03"))} | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |`,
+      `| \`P-04\` | Unify previously separated domains | Extrapolative unification | ${escapeCell(p("P-04"))} | [Extrapolative generalization](#extrapolative-generalization) |`,
+      `| \`P-05\` | Retain valid structures of predecessor theories | Retention and limiting recovery | ${escapeCell(p("P-05"))} | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |`,
+      `| \`P-06\` | Prioritize quantitative testability | Prediction → discrimination → validation | ${escapeCell(p("P-06"))} | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |`,
     ].join("\n"),
   ].join("\n\n");
 
@@ -260,7 +259,7 @@ function migrateFile(file) {
       `| Central claim | ${escapeCell(claim)} |`,
       `| Domain | ${escapeCell(domain)} |`,
       `| Epistemic status | ${escapeCell(status)} |`,
-      `| Generative role | ${escapeCell(p("P-02"))} |`,
+      `| Generative role | ${escapeCell(p("P-03"))} |`,
       `| Retained structure | ${escapeCell(p("P-05"))} |`,
     ].join("\n"),
     equationDigest(discovery.body),

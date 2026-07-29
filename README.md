@@ -7,8 +7,8 @@ PhyHist is an interactive, document-grounded knowledge graph of fundamental phys
 - [`index.html`](index.html): standalone interactive knowledge graph and Vercel entry page
 - [`build_interactive_graph.mjs`](build_interactive_graph.mjs): generates `index.html` from the Markdown corpus
 - [`build_case_pages.mjs`](build_case_pages.mjs): converts every case into a responsive reader page with a table of contents and MathJax-rendered equations
-- [`case_pages/`](case_pages/): generated reader-friendly HTML versions of all 58 case studies
-- [`fundamental_physics_discoveries/`](fundamental_physics_discoveries/): historical case studies, chronology data, validation tools, and corpus documentation
+- [`case_pages/`](case_pages/): generated reader-friendly HTML versions of all 41 theory-centered case studies
+- [`fundamental_physics_discoveries/`](fundamental_physics_discoveries/): theory-building historical case studies, chronology data, validation tools, and corpus documentation
 
 ## Rebuild and validate
 

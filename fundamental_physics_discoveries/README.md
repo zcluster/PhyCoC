@@ -5,13 +5,14 @@
 | Field | Value |
 |---|---|
 | Corpus ID | `KG-HIST-FUNDAMENTAL-PHYSICS-001` |
-| Purpose | Human-readable and machine-oriented historical knowledge graphs for major discoveries in fundamental physics |
-| Ordering | Historical order by focal discovery date. Newtonian mechanics retains filename `08`; later-added cases retain extension identifiers `46`–`58` and are interleaved by date in this reading list. |
-| Newtonian case | Newtonian mechanics and universal gravitation are included as [`08_newtonian_mechanics.md`](08_newtonian_mechanics.md) |
+| Purpose | Human-readable and machine-oriented historical knowledge graphs for major theory-building discoveries in fundamental physics |
+| Inclusion rule | The focal contribution must be a generative law, model, formalism, mechanism, or conceptual transformation; cases centered chiefly on detection, measurement, entity identification, or experimental confirmation are excluded |
+| Ordering | The 41 retained canonical cases are numbered continuously from `01` to `41` in sortable focal-discovery chronology |
+| Newtonian case | Newtonian mechanics and universal gravitation are included as [`07_newtonian_mechanics.md`](07_newtonian_mechanics.md) |
 | Epistemic rule | Each theory is evaluated within its evidential and domain limits; “superseded” does not mean “historically useless,” and “successful” does not mean “ultimate” |
-| Shared pattern vocabulary | `P-01` unification; `P-02` empirical-to-generative upgrade; `P-03` question reframing; `P-04` new ontology/mechanism; `P-05` structural retention; `P-06` quantitative testability |
+| Shared pattern vocabulary | Process-ordered IDs: `P-01` question reframing; `P-02` new ontology/mechanism; `P-03` empirical-to-generative upgrade; `P-04` cross-domain unification/extrapolation; `P-05` structural retention; `P-06` quantitative testability |
 | Mathematical convention | LaTeX equations use modern notation unless explicitly identified as a historical formula. Particle-field and scalar-field equations may use natural units \(\hbar=c=1\) when constants are not shown explicitly. |
-| Validation | Run `node validate_corpus.mjs` from this directory or the project root to check the corpus invariants, including the specialized Newtonian schema |
+| Validation | Run `node validate_corpus.mjs` from this directory or the project root to check the 41-case corpus invariants, including the specialized Newtonian schema |
 
 ## Ordered discovery files
 
@@ -20,63 +21,46 @@
 3. [Heliocentric planetary system](03_heliocentric_planetary_system.md)
 4. [Kepler's laws of planetary motion](04_keplers_laws_of_planetary_motion.md)
 5. [Galilean kinematics](05_galilean_kinematics.md)
-6. [Atmospheric pressure and the physical vacuum](06_atmospheric_pressure_and_vacuum.md)
-7. [Fermat's principle of stationary optical time](55_fermat_principle.md)
-8. [Finite speed of light](07_finite_speed_of_light.md)
-9. [Newtonian mechanics and universal gravitation](08_newtonian_mechanics.md)
-10. [Lagrangian analytical mechanics](56_lagrangian_mechanics.md)
-11. [Wave theory and interference of light](09_wave_theory_and_interference.md)
-12. [Electromagnetism and induction](10_electromagnetism_and_induction.md)
-13. [Hamiltonian mechanics, phase space, and canonical structure](57_hamiltonian_mechanics.md)
-14. [First Law of Thermodynamics](11_thermodynamics_and_energy_conservation.md)
-15. [Second Law of Thermodynamics](58_second_law_of_thermodynamics.md)
-16. [Maxwell's electromagnetic field theory](13_maxwell_electromagnetic_field_theory.md)
-17. [X-rays](15_x_rays.md)
-18. [Electron](17_electron.md)
-19. [Energy quantization](18_energy_quantization.md)
-20. [Classical statistical mechanics](12_classical_statistical_mechanics.md)
-21. [Radioactivity and nuclear transmutation](16_radioactivity_and_nuclear_transmutation.md)
-22. [Electromagnetic waves and the relativity crisis](14_electromagnetic_waves_and_relativity_crisis.md)
-23. [Light quanta and the photoelectric effect](20_light_quanta_and_photoelectric_effect.md)
-24. [Special relativity](19_special_relativity.md)
-25. [Physical reality of atoms and molecules](21_physical_reality_of_atoms.md)
-26. [Atomic nucleus](22_atomic_nucleus.md)
-27. [Quantized atomic structure](23_quantized_atomic_structure.md)
-28. [General relativity](24_general_relativity.md)
-29. [Noether's theorems and symmetry principles](46_noethers_theorem_and_symmetry.md)
-30. [De Broglie matter waves and wave–particle duality](54_de_broglie_matter_waves.md)
-31. [Quantum statistics](27_quantum_statistics.md)
-32. [Quantum field theory and field quantization](47_quantum_field_theory.md)
-33. [Quantum mechanics](26_quantum_mechanics.md)
-34. [Expanding universe](25_expanding_universe.md)
-35. [Neutron](29_neutron.md)
-36. [Relativistic quantum theory and antimatter](28_relativistic_quantum_theory_and_antimatter.md)
-37. [Quantum entanglement and nonseparability](48_quantum_entanglement.md)
-38. [Landau theory of phase transitions and spontaneous symmetry breaking](49_landau_phase_transitions_and_symmetry_breaking.md)
-39. [Nuclear interactions and beta decay](30_nuclear_interactions_and_beta_decay.md)
-40. [Nuclear fission and chain reactions](31_nuclear_fission_and_chain_reactions.md)
-41. [Quantum electrodynamics](32_quantum_electrodynamics.md)
-42. [Yang–Mills non-Abelian gauge theory](50_yang_mills_gauge_theory.md)
-43. [Parity violation](33_parity_violation.md)
-44. [BCS theory of superconductivity](51_bcs_theory_of_superconductivity.md)
-45. [Quarks and the strong interaction](34_quarks_and_strong_interaction.md)
-46. [Higgs mechanism](35_higgs_mechanism.md)
-47. [Bell's theorem](37_bells_theorem.md)
-48. [Cosmic microwave background](36_cosmic_microwave_background.md)
-49. [Wilsonian renormalization group and universality](52_wilsonian_renormalization_group.md)
-50. [Quantum chromodynamics](39_quantum_chromodynamics.md)
-51. [Electroweak theory](38_electroweak_theory.md)
-52. [Effective field theory and scale separation](53_effective_field_theory.md)
-53. [Standard Model](40_standard_model.md)
-54. [Cosmic inflation](41_cosmic_inflation.md)
-55. [Accelerating cosmic expansion](42_accelerating_cosmic_expansion.md)
-56. [Neutrino oscillations](43_neutrino_oscillations.md)
-57. [Higgs boson](44_higgs_boson.md)
-58. [Gravitational waves](45_gravitational_waves.md)
+6. [Fermat's principle of stationary optical time](06_fermat_principle.md)
+7. [Newtonian mechanics and universal gravitation](07_newtonian_mechanics.md)
+8. [Lagrangian analytical mechanics](08_lagrangian_mechanics.md)
+9. [Wave theory and interference of light](09_wave_theory_and_interference.md)
+10. [Hamiltonian mechanics, phase space, and canonical structure](10_hamiltonian_mechanics.md)
+11. [First Law of Thermodynamics](11_thermodynamics_and_energy_conservation.md)
+12. [Second Law of Thermodynamics](12_second_law_of_thermodynamics.md)
+13. [Maxwell's electromagnetic field theory](13_maxwell_electromagnetic_field_theory.md)
+14. [Energy quantization](14_energy_quantization.md)
+15. [Classical statistical mechanics](15_classical_statistical_mechanics.md)
+16. [Light quanta and the photoelectric effect](16_light_quanta_and_photoelectric_effect.md)
+17. [Special relativity](17_special_relativity.md)
+18. [Quantized atomic structure](18_quantized_atomic_structure.md)
+19. [General relativity](19_general_relativity.md)
+20. [Noether's theorems and symmetry principles](20_noethers_theorem_and_symmetry.md)
+21. [De Broglie matter waves and wave–particle duality](21_de_broglie_matter_waves.md)
+22. [Quantum statistics](22_quantum_statistics.md)
+23. [Quantum field theory and field quantization](23_quantum_field_theory.md)
+24. [Quantum mechanics](24_quantum_mechanics.md)
+25. [Expanding universe](25_expanding_universe.md)
+26. [Relativistic quantum theory and antimatter](26_relativistic_quantum_theory_and_antimatter.md)
+27. [Quantum entanglement and nonseparability](27_quantum_entanglement.md)
+28. [Landau theory of phase transitions and spontaneous symmetry breaking](28_landau_phase_transitions_and_symmetry_breaking.md)
+29. [Nuclear interactions and beta decay](29_nuclear_interactions_and_beta_decay.md)
+30. [Quantum electrodynamics](30_quantum_electrodynamics.md)
+31. [Yang–Mills non-Abelian gauge theory](31_yang_mills_gauge_theory.md)
+32. [BCS theory of superconductivity](32_bcs_theory_of_superconductivity.md)
+33. [Quarks and the strong interaction](33_quarks_and_strong_interaction.md)
+34. [Higgs mechanism](34_higgs_mechanism.md)
+35. [Bell's theorem](35_bells_theorem.md)
+36. [Wilsonian renormalization group and universality](36_wilsonian_renormalization_group.md)
+37. [Quantum chromodynamics](37_quantum_chromodynamics.md)
+38. [Electroweak theory](38_electroweak_theory.md)
+39. [Effective field theory and scale separation](39_effective_field_theory.md)
+40. [Standard Model](40_standard_model.md)
+41. [Cosmic inflation](41_cosmic_inflation.md)
 
 ## Shared document schema
 
-All 58 canonical discovery files now use the same evidence-to-abstraction order:
+All 41 canonical discovery files now use the same evidence-to-abstraction order:
 
 1. graph metadata;
 2. a scope-bounded central claim;
@@ -84,7 +68,7 @@ All 58 canonical discovery files now use the same evidence-to-abstraction order:
 4. a historical time-slice table;
 5. inherited knowledge assets;
 6. failed, incomplete, or superseded pathways, including the comparison ledger;
-7. **Discovery-process reconstruction: interpolation, transformation, and extrapolation**, containing starting inputs, limits of inherited interpolation, the transformative move, extrapolative generalization, retention and testing, and an evidence-grounded `P-01`–`P-06` synthesis;
+7. **Discovery-process reconstruction: interpolation, transformation, and extrapolation**, containing starting inputs, limits of inherited interpolation, the transformative move, extrapolative generalization, retention and testing, and an evidence-grounded, five-column `P-01`–`P-06` synthesis whose identifiers follow their typical first role in the discovery process;
 8. a compact **Discovery node and consolidated formalism** that serializes the result without repeating the full derivation;
 9. historically novel predictions and deductions, or an explicit machine-readable indication that no separately provenance-labeled prediction record is yet encoded;
 10. validation and explanatory gains;

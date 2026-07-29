@@ -80,7 +80,7 @@ The admissible pre-discovery input nodes are `A-GR`, `A-GALAXY-REDSHIFTS`, `A-DI
 | `R-STATIC-UNIVERSE` | A cosmological model in which the universe's large-scale geometry, matter distribution, and characteristic distances are constant in time rather than governed by an evolving scale factor. | Relativistic static solutions are non-generic and redshift–distance patterns indicate dynamics. |
 | `R-DE-SITTER-STATIC-REDSHIFT` | The interpretation that cosmological redshifts arise from static-coordinate properties of de Sitter spacetime rather than an evolving matter-filled scale factor. | See the full pathway record above. |
 
-**Pattern demonstrated — `P-03` (reframe the inherited question):** Galaxy recession reframed as metric expansion. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+**Pattern demonstrated — `P-01` (reframe the inherited question):** Galaxy recession reframed as metric expansion. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
 
@@ -127,11 +127,11 @@ Thus the observed expansion rate constrains density, curvature, and \(\Lambda\).
 
 **Patterns demonstrated:**
 
-- `P-02` — **Make the new structure generative:** Scale-factor dynamics generates redshift histories
+- `P-01` — **Reframe the inherited problem:** Galaxy recession reframed as metric expansion
 
-- `P-03` — **Reframe the inherited problem:** Galaxy recession reframed as metric expansion
+- `P-02` — **Permit a new representation, ontology, or mechanism:** A dynamical universe accepted
 
-- `P-04` — **Permit a new representation, ontology, or mechanism:** A dynamical universe accepted
+- `P-03` — **Make the new structure generative:** Scale-factor dynamics generates redshift histories
 
 ### Extrapolative generalization
 
@@ -139,9 +139,9 @@ The transformative move became a broader physical discovery when it was asserted
 
 **Patterns demonstrated:**
 
-- `P-01` — **Unify previously separated domains or phenomena:** Relativity, spectroscopy, and distance measurement unified
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** Scale-factor dynamics generates redshift histories
 
-- `P-02` — **Generate consequences rather than merely redescribe inputs:** Scale-factor dynamics generates redshift histories
+- `P-04` — **Unify previously separated domains or phenomena:** Relativity, spectroscopy, and distance measurement unified
 
 ### Retention, predictions, and discriminating tests
 
@@ -155,17 +155,16 @@ The reconstruction preserves rather than erases successful predecessor content: 
 
 ### Discovery-pattern synthesis
 
-This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+Pattern IDs are ordered by their typical first role in the reconstructed discovery process, not by an arbitrary vocabulary-list order. The canonical definition is identical across the corpus; the final three columns record how that fixed operation appears and where its supporting evidence is located in this case.
 
-| Pattern | Process stage | Case-specific instantiation |
-|---|---|---|
-| `P-01` | Extrapolative generalization | Relativity, spectroscopy, and distance measurement unified |
-| `P-02` | Transformative move and generative deduction | Scale-factor dynamics generates redshift histories |
-| `P-03` | Diagnosis of interpolation failure and reframing | Galaxy recession reframed as metric expansion |
-| `P-04` | Transformative representation, ontology, or mechanism | A dynamical universe accepted |
-| `P-05` | Retention and limiting recovery | Local Doppler intuition retained only at low redshift |
-| `P-06` | Prediction, discrimination, and validation network | Redshift–distance relation makes cosmology testable |
-
+| Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
+|---|---|---|---|---|
+| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | Galaxy recession reframed as metric expansion | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | A dynamical universe accepted | [Transformative move](#transformative-move) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Scale-factor dynamics generates redshift histories | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Relativity, spectroscopy, and distance measurement unified | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Local Doppler intuition retained only at low redshift | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
+| `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Redshift–distance relation makes cosmology testable | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
 
 This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
@@ -410,7 +409,7 @@ D-LEMAITRE-1927 --connects--> D-FRIEDMANN-SOLUTIONS
 D-LEMAITRE-1927 --connects--> REDSHIFT-DISTANCE-RELATION
 REDSHIFT-DISTANCE-RELATION --supersedes--> R-STATIC-UNIVERSE
 V-CMB --supports--> HOT-EXPANDING-UNIVERSE
-D-COSMIC-EXPANSION-1922-1929 --instantiates--> P-01
+D-COSMIC-EXPANSION-1922-1929 --instantiates--> P-04
 ```
 
 ## Sources

@@ -96,7 +96,7 @@ The admissible pre-discovery input nodes are `A-IMPETUS`, `A-INCLINED-PLANE`, `A
 | `R-PROJECTILE-TWO-STAGES` | A projectile model that divides motion into an initially forced or “violent” forward phase and a later “natural” downward fall, rather than treating both components as simultaneous. | It predicts a sharp transition rather than continuous curvature. |
 | `R-ARISTOTELIAN-NATURAL-VIOLENT-MOTION` | Aristotle's classification in which natural motion carries elements toward their natural places, while violent motion is imposed externally and normally ceases when the mover no longer acts. | See the full pathway record above. |
 
-**Pattern demonstrated — `P-03` (reframe the inherited question):** “What nature seeks” replaced by “How position changes with time”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+**Pattern demonstrated — `P-01` (reframe the inherited question):** “What nature seeks” replaced by “How position changes with time”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
 
@@ -142,11 +142,11 @@ The trajectory is parabolic under uniform gravity with air resistance neglected.
 
 **Patterns demonstrated:**
 
-- `P-02` — **Make the new structure generative:** Distance–time regularities became generative equations
+- `P-01` — **Reframe the inherited problem:** “What nature seeks” replaced by “How position changes with time”
 
-- `P-03` — **Reframe the inherited problem:** “What nature seeks” replaced by “How position changes with time”
+- `P-02` — **Permit a new representation, ontology, or mechanism:** Ideal frictionless motion accepted as explanatory
 
-- `P-04` — **Permit a new representation, ontology, or mechanism:** Ideal frictionless motion accepted as explanatory
+- `P-03` — **Make the new structure generative:** Distance–time regularities became generative equations
 
 ### Extrapolative generalization
 
@@ -154,9 +154,9 @@ The transformative move became a broader physical discovery when it was asserted
 
 **Patterns demonstrated:**
 
-- `P-01` — **Unify previously separated domains or phenomena:** Fall, incline, and projectile motion linked by common kinematics
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** Distance–time regularities became generative equations
 
-- `P-02` — **Generate consequences rather than merely redescribe inputs:** Distance–time regularities became generative equations
+- `P-04` — **Unify previously separated domains or phenomena:** Fall, incline, and projectile motion linked by common kinematics
 
 ### Retention, predictions, and discriminating tests
 
@@ -170,17 +170,16 @@ The reconstruction preserves rather than erases successful predecessor content: 
 
 ### Discovery-pattern synthesis
 
-This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+Pattern IDs are ordered by their typical first role in the reconstructed discovery process, not by an arbitrary vocabulary-list order. The canonical definition is identical across the corpus; the final three columns record how that fixed operation appears and where its supporting evidence is located in this case.
 
-| Pattern | Process stage | Case-specific instantiation |
-|---|---|---|
-| `P-01` | Extrapolative generalization | Fall, incline, and projectile motion linked by common kinematics |
-| `P-02` | Transformative move and generative deduction | Distance–time regularities became generative equations |
-| `P-03` | Diagnosis of interpolation failure and reframing | “What nature seeks” replaced by “How position changes with time” |
-| `P-04` | Transformative representation, ontology, or mechanism | Ideal frictionless motion accepted as explanatory |
-| `P-05` | Retention and limiting recovery | Impetus-like persistence retained without its ontology |
-| `P-06` | Prediction, discrimination, and validation network | Ratios and trajectories made motion quantitatively testable |
-
+| Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
+|---|---|---|---|---|
+| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | “What nature seeks” replaced by “How position changes with time” | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Ideal frictionless motion accepted as explanatory | [Transformative move](#transformative-move) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Distance–time regularities became generative equations | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Fall, incline, and projectile motion linked by common kinematics | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Impetus-like persistence retained without its ontology | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
+| `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Ratios and trajectories made motion quantitatively testable | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
 
 This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
@@ -414,7 +413,7 @@ R-SPEED-PROPORTIONAL-WEIGHT --superseded-by--> LAW-FREE-FALL
 R-PROJECTILE-TWO-STAGES --superseded-by--> LAW-COMPOSITION
 LAW-COMPOSITION --generates--> EQ-PARABOLA
 D-GALILEAN-KINEMATICS-1604-1638 --contributes-to--> D-NEWTONIAN-MECHANICS
-D-GALILEAN-KINEMATICS-1604-1638 --instantiates--> P-03
+D-GALILEAN-KINEMATICS-1604-1638 --instantiates--> P-01
 D-GALILEAN-KINEMATICS-1604-1638 --instantiates--> P-06
 ```
 

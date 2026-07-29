@@ -113,7 +113,7 @@ The admissible pre-discovery input nodes are `A-CALORIMETRY`, `A-MECHANICAL-WORK
 | `R-HEAT-AS-SIMPLE-MOTION` | A qualitative kinetic hypothesis identifying heat with microscopic agitation but lacking a conserved energy quantity, a reliable conversion coefficient or a complete account of internal molecular modes. | See the full pathway record above. |
 | `R-PERPETUAL-MOTION-FIRST-KIND` | A proposed cyclic device that returns to its initial condition while delivering net work without an equivalent decrease of stored energy or an energy input from its surroundings. | See the full pathway record above. |
 
-**Pattern demonstrated — `P-03` (reframe the inherited question):** “Where did the caloric go?” becomes “What crossed the boundary and how did internal energy change?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+**Pattern demonstrated — `P-01` (reframe the inherited question):** “Where did the caloric go?” becomes “What crossed the boundary and how did internal energy change?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
 
@@ -207,11 +207,11 @@ Heat is thereby the residual energy transfer not classified as work, not a store
 
 **Patterns demonstrated:**
 
-- `P-02` — **Make the new structure generative:** Separate conversion measurements become instances of one balance law
+- `P-01` — **Reframe the inherited problem:** “Where did the caloric go?” becomes “What crossed the boundary and how did internal energy change?”
 
-- `P-03` — **Reframe the inherited problem:** “Where did the caloric go?” becomes “What crossed the boundary and how did internal energy change?”
+- `P-02` — **Permit a new representation, ontology, or mechanism:** Internal energy becomes an abstract state property not reducible to a visible substance
 
-- `P-04` — **Permit a new representation, ontology, or mechanism:** Internal energy becomes an abstract state property not reducible to a visible substance
+- `P-03` — **Make the new structure generative:** Separate conversion measurements become instances of one balance law
 
 ### Extrapolative generalization
 
@@ -219,9 +219,9 @@ The transformative move became a broader physical discovery when it was asserted
 
 **Patterns demonstrated:**
 
-- `P-01` — **Unify previously separated domains or phenomena:** Mechanical, thermal, electrical and chemical changes are unified by energy conservation
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** Separate conversion measurements become instances of one balance law
 
-- `P-02` — **Generate consequences rather than merely redescribe inputs:** Separate conversion measurements become instances of one balance law
+- `P-04` — **Unify previously separated domains or phenomena:** Mechanical, thermal, electrical and chemical changes are unified by energy conservation
 
 ### Retention, predictions, and discriminating tests
 
@@ -235,17 +235,16 @@ The reconstruction preserves rather than erases successful predecessor content: 
 
 ### Discovery-pattern synthesis
 
-This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+Pattern IDs are ordered by their typical first role in the reconstructed discovery process, not by an arbitrary vocabulary-list order. The canonical definition is identical across the corpus; the final three columns record how that fixed operation appears and where its supporting evidence is located in this case.
 
-| Pattern | Process stage | Case-specific instantiation |
-|---|---|---|
-| `P-01` | Extrapolative generalization | Mechanical, thermal, electrical and chemical changes are unified by energy conservation |
-| `P-02` | Transformative move and generative deduction | Separate conversion measurements become instances of one balance law |
-| `P-03` | Diagnosis of interpolation failure and reframing | “Where did the caloric go?” becomes “What crossed the boundary and how did internal energy change?” |
-| `P-04` | Transformative representation, ontology, or mechanism | Internal energy becomes an abstract state property not reducible to a visible substance |
-| `P-05` | Retention and limiting recovery | Calorimetry and conservation-style bookkeeping survive the rejection of caloric |
-| `P-06` | Prediction, discrimination, and validation network | Competing accounts are tested by closed quantitative balances across multiple conversion routes |
-
+| Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
+|---|---|---|---|---|
+| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | “Where did the caloric go?” becomes “What crossed the boundary and how did internal energy change?” | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Internal energy becomes an abstract state property not reducible to a visible substance | [Transformative move](#transformative-move) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Separate conversion measurements become instances of one balance law | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Mechanical, thermal, electrical and chemical changes are unified by energy conservation | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Calorimetry and conservation-style bookkeeping survive the rejection of caloric | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
+| `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Competing accounts are tested by closed quantitative balances across multiple conversion routes | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
 
 This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
@@ -358,7 +357,7 @@ D-FIRST-LAW-1847-1850 --forbids--> R-PERPETUAL-MOTION-FIRST-KIND
 INTERNAL-ENERGY --is-state-function-with--> EXACT-DIFFERENTIAL
 HEAT-AND-WORK --are--> PATH-DEPENDENT-TRANSFERS
 D-FIRST-LAW-1847-1850 --constrains-energy-accounting-in--> D-SECOND-LAW-1850-1865
-D-FIRST-LAW-1847-1850 --instantiates--> P-01
+D-FIRST-LAW-1847-1850 --instantiates--> P-04
 ```
 
 ## Sources

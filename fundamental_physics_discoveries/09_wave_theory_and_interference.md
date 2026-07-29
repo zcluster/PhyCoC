@@ -103,7 +103,7 @@ The admissible pre-discovery input nodes are `A-WATER-SOUND-WAVES`, `A-THIN-FILM
 | `R-LONGITUDINAL-LIGHT-WAVES` | An early optical-wave analogy in which light oscillations are longitudinal compressions and rarefactions of an ether, like sound waves in air. | Polarization requires a directional transverse degree of freedom that a simple longitudinal wave cannot supply. |
 | `R-TRANSVERSE-ELASTIC-ETHER` | A refined ether model in which light is a transverse shear vibration of an extremely rigid yet matter-penetrating elastic medium. | Its required mechanical properties were mutually difficult to reconcile and no preferred ether motion was established. |
 
-**Pattern demonstrated — `P-03` (reframe the inherited question):** “Which ray path?” reframed as “How do amplitudes combine?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+**Pattern demonstrated — `P-01` (reframe the inherited question):** “Which ray path?” reframed as “How do amplitudes combine?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
 
@@ -141,11 +141,11 @@ Destructive interference is not two positive intensities canceling; signed or co
 
 **Patterns demonstrated:**
 
-- `P-02` — **Make the new structure generative:** Fringe positions generated from phase relations
+- `P-01` — **Reframe the inherited problem:** “Which ray path?” reframed as “How do amplitudes combine?”
 
-- `P-03` — **Reframe the inherited problem:** “Which ray path?” reframed as “How do amplitudes combine?”
+- `P-02` — **Permit a new representation, ontology, or mechanism:** Extended waves and later probability amplitudes accepted
 
-- `P-04` — **Permit a new representation, ontology, or mechanism:** Extended waves and later probability amplitudes accepted
+- `P-03` — **Make the new structure generative:** Fringe positions generated from phase relations
 
 ### Extrapolative generalization
 
@@ -153,9 +153,9 @@ The transformative move became a broader physical discovery when it was asserted
 
 **Patterns demonstrated:**
 
-- `P-01` — **Unify previously separated domains or phenomena:** Refraction, diffraction, interference, and polarization joined
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** Fringe positions generated from phase relations
 
-- `P-02` — **Generate consequences rather than merely redescribe inputs:** Fringe positions generated from phase relations
+- `P-04` — **Unify previously separated domains or phenomena:** Refraction, diffraction, interference, and polarization joined
 
 ### Retention, predictions, and discriminating tests
 
@@ -169,17 +169,16 @@ The reconstruction preserves rather than erases successful predecessor content: 
 
 ### Discovery-pattern synthesis
 
-This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+Pattern IDs are ordered by their typical first role in the reconstructed discovery process, not by an arbitrary vocabulary-list order. The canonical definition is identical across the corpus; the final three columns record how that fixed operation appears and where its supporting evidence is located in this case.
 
-| Pattern | Process stage | Case-specific instantiation |
-|---|---|---|
-| `P-01` | Extrapolative generalization | Refraction, diffraction, interference, and polarization joined |
-| `P-02` | Transformative move and generative deduction | Fringe positions generated from phase relations |
-| `P-03` | Diagnosis of interpolation failure and reframing | “Which ray path?” reframed as “How do amplitudes combine?” |
-| `P-04` | Transformative representation, ontology, or mechanism | Extended waves and later probability amplitudes accepted |
-| `P-05` | Retention and limiting recovery | Ray optics retained as a short-wavelength limit |
-| `P-06` | Prediction, discrimination, and validation network | Bright/dark fringe locations offered precise tests |
-
+| Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
+|---|---|---|---|---|
+| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | “Which ray path?” reframed as “How do amplitudes combine?” | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Extended waves and later probability amplitudes accepted | [Transformative move](#transformative-move) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Fringe positions generated from phase relations | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Refraction, diffraction, interference, and polarization joined | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Ray optics retained as a short-wavelength limit | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
+| `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Bright/dark fringe locations offered precise tests | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
 
 This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
@@ -404,7 +403,7 @@ EQ-SUPERPOSITION --generates--> V-BRIGHT-DARK-FRINGES
 V-ARAGO-SPOT --validates--> D-FRESNEL-DIFFRACTION
 D-MAXWELL-FIELD --reframes--> D-WAVE-INTERFERENCE-1690-1818
 D-QUANTUM-OPTICS --retains--> EQ-SUPERPOSITION
-D-WAVE-INTERFERENCE-1690-1818 --instantiates--> P-02
+D-WAVE-INTERFERENCE-1690-1818 --instantiates--> P-03
 D-WAVE-INTERFERENCE-1690-1818 --instantiates--> P-05
 ```
 

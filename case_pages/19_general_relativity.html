@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>General Relativity: Historical Knowledge Graph · PhyHist</title>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"],["$","$"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},svg:{fontCache:"global"},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+<style>
+:root{color-scheme:light;--bg:#f5f7fb;--paper:#fff;--text:#202938;--muted:#657286;--line:#dce2ea;--accent:#4f46a5;--soft:#f0efff;--code:#f4f6f8;--shadow:0 18px 55px rgba(31,41,55,.09)}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#10141b;--paper:#191f29;--text:#e9edf5;--muted:#aab4c3;--line:#354050;--accent:#b4a4ff;--soft:#2a2744;--code:#111720;--shadow:0 18px 55px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.72}.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper),transparent 7%);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.top-inner{max-width:1280px;margin:auto;padding:11px 22px;display:flex;align-items:center;gap:12px}.top a,.top button{border:1px solid var(--line);border-radius:9px;background:var(--paper);color:var(--text);text-decoration:none;padding:7px 10px;font:inherit;font-size:13px;cursor:pointer}.top .source{margin-left:auto;color:var(--accent)}.layout{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:250px minmax(0,820px);gap:42px;padding:34px 22px 80px;justify-content:center}.toc{position:sticky;top:72px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;border-right:1px solid var(--line);padding-right:22px}.toc-title{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0 0 10px}.toc a{display:block;color:var(--muted);text-decoration:none;font-size:13px;line-height:1.35;padding:5px 8px;border-radius:7px}.toc a:hover{color:var(--accent);background:var(--soft)}.toc-l3{padding-left:20px!important}.toc-l4{padding-left:32px!important}.toc-l5{padding-left:44px!important}.toc-l6{padding-left:56px!important}.paper{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:clamp(24px,5vw,62px);min-width:0}.paper h1{font-size:clamp(29px,5vw,46px);line-height:1.12;letter-spacing:-.035em;margin:0 0 34px}.paper h2{font-size:27px;line-height:1.25;margin:54px 0 19px;padding-top:8px;border-top:1px solid var(--line)}.paper h3{font-size:20px;line-height:1.35;margin:35px 0 12px}.paper h4{font-size:16px;margin:27px 0 9px}.paper h5{font-size:15px;margin:24px 0 8px}.paper h6{font-size:14px;margin:21px 0 7px}.anchor{opacity:0;margin-left:8px;color:var(--muted);font-weight:400;text-decoration:none}.paper h2:hover .anchor,.paper h3:hover .anchor,.paper h4:hover .anchor,.paper h5:hover .anchor,.paper h6:hover .anchor{opacity:1}.paper p{margin:13px 0}.paper a{color:var(--accent);text-underline-offset:2px}.paper ul,.paper ol{padding-left:25px}.paper li{margin:6px 0}.paper code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.9em;background:var(--code);border:1px solid var(--line);border-radius:5px;padding:1px 5px}.paper pre{background:var(--code);border:1px solid var(--line);border-radius:11px;padding:16px;overflow:auto;line-height:1.5}.paper pre code{border:0;padding:0}.table-wrap{overflow:auto;margin:22px 0;border:1px solid var(--line);border-radius:11px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}th{background:var(--soft);font-weight:650}tr:last-child td{border-bottom:0}th:last-child,td:last-child{border-right:0}.math-display{overflow-x:auto;overflow-y:hidden;margin:24px 0;padding:13px 8px;text-align:center}.MathJax{outline:0}blockquote{margin:20px 0;padding:4px 18px;border-left:4px solid var(--accent);background:var(--soft);color:var(--muted)}hr{border:0;border-top:1px solid var(--line);margin:34px 0}.footer{color:var(--muted);font-size:12px;margin-top:48px;padding-top:18px;border-top:1px solid var(--line)}.skip{position:absolute;left:-9999px}.skip:focus{left:10px;top:10px;z-index:20;background:var(--paper);padding:8px}
+@media(max-width:900px){.layout{display:block;padding-top:20px}.toc{position:static;max-height:none;border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:18px;columns:2}.toc-title{column-span:all}.paper{padding:26px 20px}.paper h2{font-size:23px}.top-inner{padding:9px 12px}}@media(max-width:560px){.toc{columns:1}.top .source{font-size:0}.top .source:after{content:"Markdown";font-size:13px}.paper{border-radius:12px}.layout{padding-left:10px;padding-right:10px}}
+@media print{.top,.toc{display:none}.layout{display:block;padding:0}.paper{border:0;box-shadow:none;padding:0}.anchor{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#article">Skip to article</a>
+<header class="top"><div class="top-inner"><a href="../index.html">← Knowledge graph</a><button type="button" onclick="window.print()">Print / PDF</button><a class="source" href="../fundamental_physics_discoveries/19_general_relativity.md">Open source Markdown ↗</a></div></header>
+<main class="layout"><nav class="toc" aria-label="Table of contents"><div class="toc-title">On this page</div><a class="toc-l2" href="#graph-metadata">Graph metadata</a>
+<a class="toc-l2" href="#central-claim">Central claim</a>
+<a class="toc-l2" href="#historical-problem">Historical problem</a>
+<a class="toc-l2" href="#time-slices">Time slices</a>
+<a class="toc-l2" href="#knowledge-assets">Knowledge assets</a>
+<a class="toc-l2" href="#alternative-incomplete-or-superseded-pathways">Alternative, incomplete, or superseded pathways</a>
+<a class="toc-l3" href="#r-scalar-gravity">R-SCALAR-GRAVITY</a>
+<a class="toc-l3" href="#r-newtonian-absolute-gravity">R-NEWTONIAN-ABSOLUTE-GRAVITY</a>
+<a class="toc-l3" href="#r-flat-spacetime-relativistic-force-gravity">R-FLAT-SPACETIME-RELATIVISTIC-FORCE-GRAVITY</a>
+<a class="toc-l3" href="#pathway-comparison-ledger">Pathway comparison ledger</a>
+<a class="toc-l2" href="#discovery-process-reconstruction-interpolation-transformation-and-extrapolation">Discovery-process reconstruction: interpolation, transformation, and extrapolation</a>
+<a class="toc-l3" href="#starting-ingredients">Starting ingredients</a>
+<a class="toc-l3" href="#what-interpolation-could-and-could-not-achieve">What interpolation could and could not achieve</a>
+<a class="toc-l3" href="#transformative-move">Transformative move</a>
+<a class="toc-l3" href="#extrapolative-generalization">Extrapolative generalization</a>
+<a class="toc-l3" href="#retention-predictions-and-discriminating-tests">Retention, predictions, and discriminating tests</a>
+<a class="toc-l3" href="#discovery-pattern-synthesis">Discovery-pattern synthesis</a>
+<a class="toc-l2" href="#discovery-node-and-consolidated-formalism">Discovery node and consolidated formalism</a>
+<a class="toc-l2" href="#historically-novel-predictions-and-deductions">Historically novel predictions and deductions</a>
+<a class="toc-l3" href="#np-gr-01-the-full-relativistic-deflection-of-light">NP-GR-01 — The full relativistic deflection of light</a>
+<a class="toc-l3" href="#np-gr-02-gravitational-waves">NP-GR-02 — Gravitational waves</a>
+<a class="toc-l2" href="#validation-and-explanatory-gains">Validation and explanatory gains</a>
+<a class="toc-l2" href="#limitations-and-retained-status">Limitations and retained status</a>
+<a class="toc-l2" href="#extended-historical-investigation">Extended historical investigation</a>
+<a class="toc-l3" href="#equivalence-as-a-discovery-heuristic">Equivalence as a discovery heuristic</a>
+<a class="toc-l3" href="#interpreting-the-field-equations">Interpreting the field equations</a>
+<a class="toc-l3" href="#self-contained-recovery-of-newtonian-gravity">Self-contained recovery of Newtonian gravity</a>
+<a class="toc-l3" href="#schwarzschild-geometry-and-weak-field-tests">Schwarzschild geometry and weak-field tests</a>
+<a class="toc-l3" href="#black-holes-and-coordinate-cautions">Black holes and coordinate cautions</a>
+<a class="toc-l3" href="#gravitational-waves">Gravitational waves</a>
+<a class="toc-l3" href="#evidence-ledger">Evidence ledger</a>
+<a class="toc-l3" href="#gps-as-combined-relativity">GPS as combined relativity</a>
+<a class="toc-l3" href="#limits-and-open-problems">Limits and open problems</a>
+<a class="toc-l2" href="#ai-oriented-inference-notes">AI-oriented inference notes</a>
+<a class="toc-l2" href="#additional-quantitative-and-epistemic-notes">Additional quantitative and epistemic notes</a>
+<a class="toc-l3" href="#additional-quantitative-and-epistemic-notes-2">Additional quantitative and epistemic notes</a>
+<a class="toc-l2" href="#edge-list">Edge list</a>
+<a class="toc-l2" href="#sources">Sources</a></nav><article class="paper" id="article"><h1 id="general-relativity-historical-knowledge-graph">General Relativity: Historical Knowledge Graph<a class="anchor" href="#general-relativity-historical-knowledge-graph" aria-label="Link to this section">#</a></h1>
+<h2 id="graph-metadata">Graph metadata<a class="anchor" href="#graph-metadata" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Graph ID</td><td><code>KG-GR-23</code></td></tr><tr><td>Central node</td><td><code>D-GENERAL-RELATIVITY-1915</code></td></tr><tr><td>Focal discovery date</td><td>25 November 1915 field equations</td></tr><tr><td>Main contributors</td><td>Albert Einstein, with major mathematical and scientific contributions from Grossmann, Hilbert, Levi-Civita, Ricci and others</td></tr><tr><td>Domain</td><td>Gravitation and dynamical spacetime</td></tr><tr><td>Epistemic status</td><td>Best-tested classical theory of gravitation; quantum completion unresolved</td></tr></tbody></table></div>
+<h2 id="central-claim">Central claim<a class="anchor" href="#central-claim" aria-label="Link to this section">#</a></h2>
+<p>General relativity replaces gravitational force in fixed Euclidean space with dynamical spacetime geometry sourced by stress–energy. Freely falling bodies follow spacetime geodesics, while curvature governs relative acceleration.</p>
+<h2 id="historical-problem">Historical problem<a class="anchor" href="#historical-problem" aria-label="Link to this section">#</a></h2>
+<p>Before the focal discovery (25 November 1915 field equations), the case confronted a linked set of pressures: Highly successful inverse-square force; No faster-than-light causal influence. The pathways <code>R-SCALAR-GRAVITY</code>, <code>R-NEWTONIAN-ABSOLUTE-GRAVITY</code>, <code>R-FLAT-SPACETIME-RELATIVISTIC-FORCE-GRAVITY</code> were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Gravitation and dynamical spacetime was to construct a more generative account without importing later validation evidence into the original inference.</p>
+<h2 id="time-slices">Time slices<a class="anchor" href="#time-slices" aria-label="Link to this section">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>Node</th><th>Period</th><th>Problem</th><th>Transition</th></tr></thead><tbody><tr><td><code>TS-NEWTONIAN-GRAVITY</code></td><td>1687 onward</td><td>Highly successful inverse-square force</td><td>Instantaneous action and absolute space remain</td></tr><tr><td><code>TS-SPECIAL-RELATIVITY</code></td><td>1905</td><td>No faster-than-light causal influence</td><td>Newtonian gravity incompatible</td></tr><tr><td><code>TS-EQUIVALENCE</code></td><td>1907–1911</td><td>Free fall locally removes gravity</td><td>Gravity linked to frames and geometry</td></tr><tr><td><code>TS-TENSOR-DEVELOPMENT</code></td><td>1912–1915</td><td>Seek generally covariant field equations</td><td>Curved differential geometry adopted</td></tr><tr><td><code>TS-FIELD-EQUATIONS</code></td><td>1915</td><td>Final equations and Mercury result</td><td>New gravitational dynamics</td></tr><tr><td><code>TS-OBSERVATIONAL</code></td><td>1919 onward</td><td>Lensing, redshift, timing, waves tested</td><td>Relativistic astrophysics and cosmology</td></tr></tbody></table></div>
+<h2 id="knowledge-assets">Knowledge assets<a class="anchor" href="#knowledge-assets" aria-label="Link to this section">#</a></h2>
+<ul><li><code>A-EQUIVALENCE-PRINCIPLE</code>: inertial and gravitational mass equality.</li><li><code>A-SPECIAL-RELATIVITY</code>: local Lorentz symmetry.</li><li><code>A-RIEMANN-GEOMETRY</code>: curvature tensors.</li><li><code>A-MERCURY-RESIDUAL</code>: unexplained perihelion advance.</li><li><code>A-CONSERVATION</code>: stress–energy consistency.</li></ul>
+<h2 id="alternative-incomplete-or-superseded-pathways">Alternative, incomplete, or superseded pathways<a class="anchor" href="#alternative-incomplete-or-superseded-pathways" aria-label="Link to this section">#</a></h2>
+<h3 id="r-scalar-gravity"><code>R-SCALAR-GRAVITY</code><a class="anchor" href="#r-scalar-gravity" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> A relativistic gravity theory in which gravitation is represented by a single scalar field or potential on a fixed spacetime background, rather than by a dynamical tensor metric.</li><li><strong>Proposed/active period:</strong> 1912–1914.</li><li><strong>Why reasonable:</strong> A relativistic scalar potential seems the simplest extension.</li><li><strong>Limitation:</strong> Fails to capture observed light bending and full equivalence structure.</li><li><strong>Outcome:</strong> Superseded as fundamental gravity.</li></ul>
+<h3 id="r-newtonian-absolute-gravity"><code>R-NEWTONIAN-ABSOLUTE-GRAVITY</code><a class="anchor" href="#r-newtonian-absolute-gravity" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> Newton&#039;s gravitational model of instantaneous attraction \(F=Gm_1m_2/r^2\) acting within absolute Euclidean space and universal time.</li><li><strong>Proposed/active period:</strong> 1687.</li><li><strong>Scope:</strong> Excellent when \(v/c\ll1\) and \(GM/(rc^2)\ll1\).</li><li><strong>Limitation:</strong> Cannot explain relativistic precession, gravitational time dilation, horizons, or gravitational waves.</li><li><strong>Outcome:</strong> Retained as weak-field, slow-motion limit.</li></ul>
+<h3 id="r-flat-spacetime-relativistic-force-gravity"><code>R-FLAT-SPACETIME-RELATIVISTIC-FORCE-GRAVITY</code><a class="anchor" href="#r-flat-spacetime-relativistic-force-gravity" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>What it is:</strong> Relativistic force models that retain a fixed spacetime background while modifying propagation speed or force laws to mimic redshift and orbital corrections.</li><li><strong>Proposed/active period:</strong> 1905–1914.</li><li><strong>Outcome:</strong> Superseded by the unified dynamical-metric account; weak approximations can be reformulated effectively.</li></ul>
+<h3 id="pathway-comparison-ledger">Pathway comparison ledger<a class="anchor" href="#pathway-comparison-ledger" aria-label="Link to this section">#</a></h3>
+<p><strong>Chronology rule:</strong> Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (25 November 1915 field equations). The proposed/active period is stored in each pathway record.</p>
+<div class="table-wrap"><table><thead><tr><th>Pathway</th><th>Motivation</th><th>Repair attempt</th><th>Discriminator/outcome</th></tr></thead><tbody><tr><td>Newtonian instantaneous potential</td><td>Accurate celestial mechanics and simple scalar \(\Phi\)</td><td>Add special-relativistic retardation</td><td>Did not naturally preserve equivalence or observed relativistic effects; retained weak-field limit</td></tr><tr><td>Nordström-type scalar gravity</td><td>Lorentz-covariant simplest field</td><td>Couple scalar to matter&#039;s trace and conformal metric</td><td>Predicted inadequate/zero light bending in key formulations</td></tr><tr><td>Variable-speed/light or flat-spacetime force models</td><td>Preserve more conventional background</td><td>Tune couplings to redshift and perihelion</td><td>Lacked the unified metric account and later broad test network</td></tr><tr><td><strong>Discovery/current: general-relativistic metric tensor</strong></td><td>Equivalence, covariance, conservation</td><td>Mercury, light, clocks, pulsars, and waves</td><td>Retained classical gravity theory</td></tr></tbody></table></div>
+<p>Einstein explored several candidate equations between 1907 and 1915 and temporarily adopted the non-generally-covariant “Entwurf” theory. The final field equations were constrained by the Newtonian limit, energy–momentum conservation, and mathematical identities, not guessed in one step. Newtonian gravity was not empirically poor in its ordinary domain; its failure appeared in small residuals and new regimes. A graph should therefore encode <code>NEWTONIAN-GRAVITY --limit-of--&gt; GENERAL-RELATIVITY</code>, while scalar and Entwurf pathways are genuinely superseded attempts at the relativistic completion.</p>
+<h2 id="discovery-process-reconstruction-interpolation-transformation-and-extrapolation">Discovery-process reconstruction: interpolation, transformation, and extrapolation<a class="anchor" href="#discovery-process-reconstruction-interpolation-transformation-and-extrapolation" aria-label="Link to this section">#</a></h2>
+<p>This section reconstructs the case as a sequence of discovery operations. <strong>Interpolation</strong> extends or repairs inherited models while leaving their main assumptions intact. <strong>Transformation</strong> changes the representation, ontology, mechanism, or question. <strong>Extrapolation</strong> applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.</p>
+<h3 id="starting-ingredients">Starting ingredients<a class="anchor" href="#starting-ingredients" aria-label="Link to this section">#</a></h3>
+<p>The admissible pre-discovery input nodes are <code>A-EQUIVALENCE-PRINCIPLE</code>, <code>A-SPECIAL-RELATIVITY</code>, <code>A-RIEMANN-GEOMETRY</code>, <code>A-MERCURY-RESIDUAL</code>, <code>A-CONSERVATION</code>. Their definitions and historical provenance are recorded in <strong>Knowledge assets</strong> above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.</p>
+<h3 id="what-interpolation-could-and-could-not-achieve">What interpolation could and could not achieve<a class="anchor" href="#what-interpolation-could-and-could-not-achieve" aria-label="Link to this section">#</a></h3>
+<div class="table-wrap"><table><thead><tr><th>Pathway</th><th>What the inherited search retained</th><th>Why it remained insufficient</th></tr></thead><tbody><tr><td><code>R-SCALAR-GRAVITY</code></td><td>A relativistic gravity theory in which gravitation is represented by a single scalar field or potential on a fixed spacetime background, rather than by a dynamical tensor metric.</td><td>Fails to capture observed light bending and full equivalence structure.</td></tr><tr><td><code>R-NEWTONIAN-ABSOLUTE-GRAVITY</code></td><td>Newton&#039;s gravitational model of instantaneous attraction \(F=Gm_1m_2/r^2\) acting within absolute Euclidean space and universal time.</td><td>Cannot explain relativistic precession, gravitational time dilation, horizons, or gravitational waves.</td></tr><tr><td><code>R-FLAT-SPACETIME-RELATIVISTIC-FORCE-GRAVITY</code></td><td>Relativistic force models that retain a fixed spacetime background while modifying propagation speed or force laws to mimic redshift and orbital corrections.</td><td>See the full pathway record above.</td></tr></tbody></table></div>
+<p><strong>Pattern demonstrated — <code>P-01</code> (reframe the inherited question):</strong> Force in space reframed as curved spacetime. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.</p>
+<h3 id="transformative-move">Transformative move<a class="anchor" href="#transformative-move" aria-label="Link to this section">#</a></h3>
+<p>Einstein&#039;s field equations are:</p>
+<div class="math-display">\[G_{\mu\nu}+\Lambda g_{\mu\nu}
+=\frac{8\pi G}{c^4}T_{\mu\nu}.\]</div>
+<p>\(G_{\mu\nu}\) encodes curvature, \(T_{\mu\nu}\) stress–energy, \(g_{\mu\nu}\) the metric, and \(\Lambda\) the cosmological constant. Free-fall paths satisfy:</p>
+<div class="math-display">\[\frac{d^2x^\mu}{d\tau^2}
++\Gamma^\mu_{\alpha\beta}
+\frac{dx^\alpha}{d\tau}
+\frac{dx^\beta}{d\tau}=0.\]</div>
+<p>Curvature produces relative acceleration:</p>
+<div class="math-display">\[\frac{D^2\xi^\mu}{D\tau^2}
+=-R^\mu{}_{\nu\alpha\beta}
+u^\nu\xi^\alpha u^\beta.\]</div>
+<p>In the weak, static limit:</p>
+<div class="math-display">\[g_{00}\approx-\left(1+\frac{2\Phi}{c^2}\right),
+\qquad
+\nabla^2\Phi=4\pi G\rho,\]</div>
+<p>recovering Newtonian gravity.</p>
+<p><strong>Patterns demonstrated:</strong></p>
+<ul><li><code>P-01</code> — <strong>Reframe the inherited problem:</strong> Force in space reframed as curved spacetime</li></ul>
+<ul><li><code>P-02</code> — <strong>Permit a new representation, ontology, or mechanism:</strong> Dynamical geometry accepted</li></ul>
+<ul><li><code>P-03</code> — <strong>Make the new structure generative:</strong> Geometry generates trajectories, lensing, and waves</li></ul>
+<h3 id="extrapolative-generalization">Extrapolative generalization<a class="anchor" href="#extrapolative-generalization" aria-label="Link to this section">#</a></h3>
+<p>The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Gravitation and dynamical spacetime). The case-specific unification was: Gravitation, inertia, geometry, and time unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.</p>
+<p><strong>Patterns demonstrated:</strong></p>
+<ul><li><code>P-03</code> — <strong>Generate consequences rather than merely redescribe inputs:</strong> Geometry generates trajectories, lensing, and waves</li></ul>
+<ul><li><code>P-04</code> — <strong>Unify previously separated domains or phenomena:</strong> Gravitation, inertia, geometry, and time unified</li></ul>
+<h3 id="retention-predictions-and-discriminating-tests">Retention, predictions, and discriminating tests<a class="anchor" href="#retention-predictions-and-discriminating-tests" aria-label="Link to this section">#</a></h3>
+<p>The reconstruction preserves rather than erases successful predecessor content: Newtonian gravity retained as weak-field limit. Its quantitative or otherwise discriminating test strategy is: Mercury, clocks, light, pulsars, and waves test one theory. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.</p>
+<p><strong>Patterns demonstrated:</strong></p>
+<ul><li><code>P-05</code> — <strong>Recover valid predecessor structure or limiting behavior:</strong> Newtonian gravity retained as weak-field limit</li></ul>
+<ul><li><code>P-06</code> — <strong>Prioritize discriminating tests:</strong> Mercury, clocks, light, pulsars, and waves test one theory</li></ul>
+<h3 id="discovery-pattern-synthesis">Discovery-pattern synthesis<a class="anchor" href="#discovery-pattern-synthesis" aria-label="Link to this section">#</a></h3>
+<p>Pattern IDs are ordered by their typical first role in the reconstructed discovery process, not by an arbitrary vocabulary-list order. The canonical definition is identical across the corpus; the final three columns record how that fixed operation appears and where its supporting evidence is located in this case.</p>
+<div class="table-wrap"><table><thead><tr><th>Pattern ID</th><th>Canonical definition</th><th>Process role in this case</th><th>Case-specific instantiation</th><th>Evidence location(s)</th></tr></thead><tbody><tr><td><code>P-01</code></td><td>Reframe the inherited question after diagnosing interpolation failure</td><td>Interpolation diagnosis → transformative reframing</td><td>Force in space reframed as curved spacetime</td><td><a href="#what-interpolation-could-and-could-not-achieve">Interpolation limits</a>; <a href="#transformative-move">transformative move</a></td></tr><tr><td><code>P-02</code></td><td>Admit a new representation, ontology, or mechanism form</td><td>Transformative move</td><td>Dynamical geometry accepted</td><td><a href="#transformative-move">Transformative move</a></td></tr><tr><td><code>P-03</code></td><td>Upgrade empirical regularities into a generative mechanism</td><td>Transformative construction → generative deduction</td><td>Geometry generates trajectories, lensing, and waves</td><td><a href="#transformative-move">Transformative move</a>; <a href="#extrapolative-generalization">extrapolative generalization</a></td></tr><tr><td><code>P-04</code></td><td>Unify previously separated domains</td><td>Extrapolative unification</td><td>Gravitation, inertia, geometry, and time unified</td><td><a href="#extrapolative-generalization">Extrapolative generalization</a></td></tr><tr><td><code>P-05</code></td><td>Retain valid structures of predecessor theories</td><td>Retention and limiting recovery</td><td>Newtonian gravity retained as weak-field limit</td><td><a href="#retention-predictions-and-discriminating-tests">Retention and limiting recovery</a>; <a href="#limitations-and-retained-status">limitations</a></td></tr><tr><td><code>P-06</code></td><td>Prioritize quantitative testability</td><td>Prediction → discrimination → validation</td><td>Mercury, clocks, light, pulsars, and waves test one theory</td><td><a href="#historically-novel-predictions-and-deductions">Predictions</a>; <a href="#validation-and-explanatory-gains">validation</a></td></tr></tbody></table></div>
+<h2 id="discovery-node-and-consolidated-formalism">Discovery node and consolidated formalism<a class="anchor" href="#discovery-node-and-consolidated-formalism" aria-label="Link to this section">#</a></h2>
+<p>This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.</p>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Canonical content</th></tr></thead><tbody><tr><td>Node</td><td><code>D-GENERAL-RELATIVITY-1915</code></td></tr><tr><td>Focal date</td><td>25 November 1915 field equations</td></tr><tr><td>Central claim</td><td>General relativity replaces gravitational force in fixed Euclidean space with dynamical spacetime geometry sourced by stress–energy. Freely falling bodies follow spacetime geodesics, while curvature governs relative acceleration.</td></tr><tr><td>Domain</td><td>Gravitation and dynamical spacetime</td></tr><tr><td>Epistemic status</td><td>Best-tested classical theory of gravitation; quantum completion unresolved</td></tr><tr><td>Generative role</td><td>Geometry generates trajectories, lensing, and waves</td></tr><tr><td>Retained structure</td><td>Newtonian gravity retained as weak-field limit</td></tr></tbody></table></div>
+<p>Key formal relations, consolidated from the derivation above:</p>
+<div class="math-display">\[G_{\mu\nu}+\Lambda g_{\mu\nu}
+=\frac{8\pi G}{c^4}T_{\mu\nu}.\]</div>
+<div class="math-display">\[\frac{d^2x^\mu}{d\tau^2}
++\Gamma^\mu_{\alpha\beta}
+\frac{dx^\alpha}{d\tau}
+\frac{dx^\beta}{d\tau}=0.\]</div>
+<div class="math-display">\[\frac{D^2\xi^\mu}{D\tau^2}
+=-R^\mu{}_{\nu\alpha\beta}
+u^\nu\xi^\alpha u^\beta.\]</div>
+<p>The complete derivation, inferential provenance, and interpretation of these relations remain in <strong>Transformative move</strong> above.</p>
+<h2 id="historically-novel-predictions-and-deductions">Historically novel predictions and deductions<a class="anchor" href="#historically-novel-predictions-and-deductions" aria-label="Link to this section">#</a></h2>
+<h3 id="np-gr-01-the-full-relativistic-deflection-of-light"><code>NP-GR-01</code> — The full relativistic deflection of light<a class="anchor" href="#np-gr-01-the-full-relativistic-deflection-of-light" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>Classification:</strong> <code>NOVEL-CONTEMPORANEOUS-PREDICTION</code> for the 1915 value; light bending itself had earlier Newtonian-corpuscular precedents.</li><li><strong>Prediction date and authorship:</strong> Einstein&#039;s completed field theory doubled the approximate value he had obtained in 1911 from equivalence arguments alone. The discriminating prediction for a ray grazing the Sun was about \(1.75\) arcseconds.</li><li><strong>Construction-data independence:</strong> Mercury&#039;s anomalous perihelion was known before the final equations and is a retrodiction; the doubled deflection had not been measured when derived.</li><li><strong>Derivation provenance:</strong> <code>MODERN-PEDAGOGICAL-DERIVATION</code> from the Schwarzschild null geodesic, not Einstein&#039;s line-by-line 1915 calculation.</li></ul>
+<p>For \(u(\phi)=1/r\) and impact parameter \(b\), the leading null-orbit equation is</p>
+<div class="math-display">\[u&#039;&#039;+u=\frac{3GM}{c^2}u^2.\]</div>
+<p>Use the undeflected trajectory \(u_0=\cos\phi/b\) on the right-hand side and write \(u=u_0+\delta u\). Solving to first order produces an asymptotic angular shift on each side of approximately \(2GM/(bc^2)\), so</p>
+<div class="math-display">\[\boxed{\alpha=\frac{4GM}{bc^2}}.\]</div>
+<p>For \(b\simeq R_\odot\), this is approximately \(1.75&#039;&#039;\).</p>
+<ul><li><strong>Observable discriminator and outcome:</strong> eclipse photographs could compare stellar positions near and far from the Sun. The 1919 result was historically influential, although its precision was limited; later radio and optical measurements test the coefficient far more accurately.</li></ul>
+<h3 id="np-gr-02-gravitational-waves"><code>NP-GR-02</code> — Gravitational waves<a class="anchor" href="#np-gr-02-gravitational-waves" aria-label="Link to this section">#</a></h3>
+<ul><li><strong>Classification:</strong> <code>EARLY-DERIVED-PREDICTION</code>.</li><li><strong>Prediction date:</strong> Einstein derived weak gravitational waves in 1916, after the 1915 field equations but decades before indirect and then direct detection.</li><li><strong>Derivation provenance:</strong> <code>MODERN-PEDAGOGICAL-DERIVATION</code>.</li></ul>
+<p>Set \(g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}\) with \(|h_{\mu\nu}|\ll1\). In Lorenz gauge, the vacuum equations reduce to</p>
+<div class="math-display">\[\Box\bar h_{\mu\nu}=0,\]</div>
+<p>so metric perturbations propagate at \(c\). Gauge constraints leave two transverse tensor polarizations. Their leading radiative source is a changing mass quadrupole, not a mass dipole.</p>
+<ul><li><strong>Outcome:</strong> binary-pulsar orbital decay supplied indirect evidence, and interferometers directly detected waves a century after the prediction.</li></ul>
+<h2 id="validation-and-explanatory-gains">Validation and explanatory gains<a class="anchor" href="#validation-and-explanatory-gains" aria-label="Link to this section">#</a></h2>
+<ul><li>Accounts for Mercury&#039;s anomalous perihelion advance.</li><li>Predicts gravitational redshift and time dilation.</li><li>Predicts approximately twice the Newtonian corpuscular deflection of light near the Sun.</li><li>Explains Shapiro delay, binary-pulsar orbital decay, black-hole structure, and gravitational waves.</li><li>Supplies the framework for expanding-universe cosmology.</li></ul>
+<h2 id="limitations-and-retained-status">Limitations and retained status<a class="anchor" href="#limitations-and-retained-status" aria-label="Link to this section">#</a></h2>
+<p>Classical singularities indicate breakdown or incomplete description. A quantum theory of gravity is needed near Planck scales and perhaps singularities. Dark matter and dark energy are empirical components within standard cosmological use, not fully understood substances. General relativity remains extraordinarily successful in its tested classical domain.</p>
+<h2 id="extended-historical-investigation">Extended historical investigation<a class="anchor" href="#extended-historical-investigation" aria-label="Link to this section">#</a></h2>
+<h3 id="equivalence-as-a-discovery-heuristic">Equivalence as a discovery heuristic<a class="anchor" href="#equivalence-as-a-discovery-heuristic" aria-label="Link to this section">#</a></h3>
+<p>Equality of inertial and gravitational mass implies:</p>
+<div class="math-display">\[m_i\mathbf a=m_g\mathbf g,
+\qquad
+\frac{m_g}{m_i}\approx1,\]</div>
+<p>so freely falling bodies share acceleration independent of composition. Einstein reframed this as local equivalence between uniform acceleration and a homogeneous gravitational field. In a freely falling laboratory, local nongravitational experiments approximate special relativity.</p>
+<p>“Local” is essential. Tidal effects compare neighboring free-fall paths and cannot be transformed away over an extended region:</p>
+<div class="math-display">\[\frac{D^2\xi^\mu}{D\tau^2}
+=-R^\mu{}_{\nu\alpha\beta}
+u^\nu\xi^\alpha u^\beta.\]</div>
+<p>Gravity is therefore eliminated at a point by coordinate choice, while curvature remains invariant.</p>
+<h3 id="interpreting-the-field-equations">Interpreting the field equations<a class="anchor" href="#interpreting-the-field-equations" aria-label="Link to this section">#</a></h3>
+<p>Einstein&#039;s tensor:</p>
+<div class="math-display">\[G_{\mu\nu}
+=R_{\mu\nu}
+-\frac12Rg_{\mu\nu}\]</div>
+<p>has vanishing covariant divergence:</p>
+<div class="math-display">\[\nabla_\mu G^{\mu\nu}=0.\]</div>
+<p>This matches local stress–energy conservation:</p>
+<div class="math-display">\[\nabla_\mu T^{\mu\nu}=0.\]</div>
+<p>The equation:</p>
+<div class="math-display">\[G_{\mu\nu}+\Lambda g_{\mu\nu}
+=\frac{8\pi G}{c^4}T_{\mu\nu}\]</div>
+<p>is nonlinear because the metric determines curvature and gravitational fields themselves influence geometry. The slogan “matter tells spacetime how to curve” is useful but incomplete: gravitational radiation can propagate through vacuum where \(T_{\mu\nu}=0\) while curvature is nonzero.</p>
+<h3 id="self-contained-recovery-of-newtonian-gravity">Self-contained recovery of Newtonian gravity<a class="anchor" href="#self-contained-recovery-of-newtonian-gravity" aria-label="Link to this section">#</a></h3>
+<p>A viable relativistic gravity theory must reproduce Newtonian mechanics when fields are weak, sources move slowly, and test bodies have \(|\mathbf v|\ll c\). Write the static weak-field metric as</p>
+<div class="math-display">\[g_{00}=-\left(1+\frac{2\Phi}{c^2}\right),
+\qquad
+\left|\frac{\Phi}{c^2}\right|\ll1.\]</div>
+<p>For slow motion, \(dx^0/d\tau\simeq c\,dt/d\tau\) dominates the spatial four-velocity. The spatial geodesic equation therefore reduces to</p>
+<div class="math-display">\[\frac{d^2x^i}{dt^2}\simeq-c^2\Gamma^i{}_{00}.\]</div>
+<p>Staticity removes time derivatives, and to first order</p>
+<div class="math-display">\[\Gamma^i{}_{00}\simeq-\frac12\partial_i g_{00}
+=\frac{1}{c^2}\partial_i\Phi.\]</div>
+<p>Consequently,</p>
+<div class="math-display">\[\frac{d^2\mathbf x}{dt^2}=-\boldsymbol\nabla\Phi,\]</div>
+<p>which is Newton&#039;s test-body equation. On the source side, the \(00\) component of the Einstein equation has the weak-field limits</p>
+<div class="math-display">\[G_{00}\simeq\frac{2}{c^2}\nabla^2\Phi,
+\qquad
+T_{00}\simeq\rho c^2.\]</div>
+<p>Thus</p>
+<div class="math-display">\[\frac{2}{c^2}\nabla^2\Phi
+=\frac{8\pi G}{c^4}\rho c^2
+\quad\Longrightarrow\quad
+\nabla^2\Phi=4\pi G\rho.\]</div>
+<p>This two-sided reduction is stronger than resemblance: it recovers both Newtonian motion and the Poisson source equation, while identifying \(g_{00}\) as the carrier of the Newtonian potential at leading order.</p>
+<div class="table-wrap"><table><thead><tr><th>Logical role</th><th>Content</th></tr></thead><tbody><tr><td>Limiting assumptions</td><td>Weak, static field; nonrelativistic matter and test bodies; first order in \(\Phi/c^2\).</td></tr><tr><td>Geometric input</td><td>Geodesic motion and the metric-compatible connection.</td></tr><tr><td>Dynamical input</td><td>Einstein field equation with \(T_{00}\simeq\rho c^2\).</td></tr><tr><td>Derived predecessor limit</td><td>Newton&#039;s force law and Poisson equation.</td></tr><tr><td>Not established by this limit</td><td>Strong-field dynamics, radiation, horizons, or quantum gravity.</td></tr></tbody></table></div>
+<h3 id="schwarzschild-geometry-and-weak-field-tests">Schwarzschild geometry and weak-field tests<a class="anchor" href="#schwarzschild-geometry-and-weak-field-tests" aria-label="Link to this section">#</a></h3>
+<p>Outside a static spherical mass:</p>
+<div class="math-display">\[ds^2
+=-\left(1-\frac{2GM}{rc^2}\right)c^2dt^2
++\left(1-\frac{2GM}{rc^2}\right)^{-1}dr^2
++r^2d\Omega^2.\]</div>
+<p>For a stationary clock:</p>
+<div class="math-display">\[d\tau
+=dt\sqrt{1-\frac{2GM}{rc^2}}.\]</div>
+<p>A lower clock runs more slowly relative to a distant one. In weak field:</p>
+<div class="math-display">\[\frac{\Delta f}{f}
+\approx\frac{\Delta\Phi}{c^2}.\]</div>
+<p>Mercury&#039;s relativistic perihelion advance per orbit is:</p>
+<div class="math-display">\[\Delta\varpi
+=\frac{6\pi GM}
+{a(1-e^2)c^2}.\]</div>
+<p>The dynamical origin of that result can be displayed without solving the full orbit. For equatorial Schwarzschild geodesics, define \(u=1/r\) and the specific angular momentum \(h=r^2d\phi/d\tau\). The radial first integral differentiates to</p>
+<div class="math-display">\[\frac{d^2u}{d\phi^2}+u
+=\frac{GM}{h^2}+\frac{3GM}{c^2}u^2.\]</div>
+<p>The first two terms are the Newtonian Binet equation; the last term is the relativistic correction. Insert the zeroth-order ellipse</p>
+<div class="math-display">\[u_0=\frac{GM}{h^2}(1+e\cos\phi)\]</div>
+<p>into the small correction. Its resonant \(\cos\phi\) component shifts the radial oscillation frequency from \(1\) to approximately \(1-3G^2M^2/(h^2c^2)\). Hence the periapsis advances by</p>
+<div class="math-display">\[\Delta\varpi\simeq\frac{6\pi G^2M^2}{h^2c^2}
+=\frac{6\pi GM}{a(1-e^2)c^2},\]</div>
+<p>where the last equality uses the Newtonian relation \(h^2=GMa(1-e^2)\), sufficient at this perturbative order.</p>
+<p>For light passing with impact parameter \(b\), leading deflection is:</p>
+<div class="math-display">\[\alpha\approx\frac{4GM}{bc^2}.\]</div>
+<p>These are different consequences of one metric theory, not separate fitted laws.</p>
+<h3 id="black-holes-and-coordinate-cautions">Black holes and coordinate cautions<a class="anchor" href="#black-holes-and-coordinate-cautions" aria-label="Link to this section">#</a></h3>
+<p>The Schwarzschild radius:</p>
+<div class="math-display">\[r_s=\frac{2GM}{c^2}\]</div>
+<p>marks an event horizon in the ideal nonrotating solution. The apparent singularity of Schwarzschild coordinates at \(r_s\) is removable; the curvature singularity at \(r=0\) is not. Rotating astrophysical black holes are described by Kerr geometry. “Escape velocity exceeds light speed” is a Newtonian analogy, not the fundamental horizon definition.</p>
+<h3 id="gravitational-waves">Gravitational waves<a class="anchor" href="#gravitational-waves" aria-label="Link to this section">#</a></h3>
+<p>Linearizing:</p>
+<div class="math-display">\[g_{\mu\nu}
+=\eta_{\mu\nu}+h_{\mu\nu}\]</div>
+<p>produces wave equations for suitable components of \(h_{\mu\nu}\). Binary systems lose orbital energy. The leading quadrupole power is:</p>
+<div class="math-display">\[P
+=\frac{G}{5c^5}
+\left\langle
+\dddot Q_{ij}\dddot Q_{ij}
+\right\rangle.\]</div>
+<p>Binary-pulsar decay indirectly confirmed this loss; LIGO later measured strain directly.</p>
+<h3 id="evidence-ledger">Evidence ledger<a class="anchor" href="#evidence-ledger" aria-label="Link to this section">#</a></h3>
+<div class="table-wrap"><table><thead><tr><th>Test</th><th>Regime</th></tr></thead><tbody><tr><td>Eötvös-type universality</td><td>Equivalence principle</td></tr><tr><td>Pound–Rebka and clocks</td><td>Gravitational redshift</td></tr><tr><td>Mercury</td><td>Weak-field orbital correction</td></tr><tr><td>Solar deflection/lensing</td><td>Null geodesics</td></tr><tr><td>Shapiro delay</td><td>Curved-spacetime signal travel</td></tr><tr><td>Binary pulsars</td><td>Strong-field dynamics and radiation reaction</td></tr><tr><td>Event Horizon Telescope</td><td>Compact-object spacetime consistency</td></tr><tr><td>LIGO/Virgo/KAGRA</td><td>Dynamical strong-field waves</td></tr></tbody></table></div>
+<h3 id="gps-as-combined-relativity">GPS as combined relativity<a class="anchor" href="#gps-as-combined-relativity" aria-label="Link to this section">#</a></h3>
+<p>Satellite clocks experience special-relativistic slowing due to orbital speed and general-relativistic speeding because they are higher in Earth&#039;s potential. The net correction is engineered into the system. GPS is not a pure test of one isolated equation, but it demonstrates operational necessity of relativistic time.</p>
+<h3 id="limits-and-open-problems">Limits and open problems<a class="anchor" href="#limits-and-open-problems" aria-label="Link to this section">#</a></h3>
+<p>General relativity is nonrenormalizable as a straightforward perturbative quantum field theory, though it works as a low-energy effective field theory. Singularities, black-hole information, early-universe conditions, and quantum spacetime require deeper theory. Dark matter and dark energy may represent new matter, modified gravity, or combinations; current data strongly constrain but do not settle every interpretation.</p>
+<h2 id="ai-oriented-inference-notes">AI-oriented inference notes<a class="anchor" href="#ai-oriented-inference-notes" aria-label="Link to this section">#</a></h2>
+<ul><li>Distinguish coordinate effects from curvature invariants.</li><li>Never say gravity can be transformed away globally.</li><li>Attach symmetry assumptions to named metrics.</li><li>Link Newtonian gravity by weak-field limit, not historical invalidation.</li></ul>
+<h2 id="additional-quantitative-and-epistemic-notes">Additional quantitative and epistemic notes<a class="anchor" href="#additional-quantitative-and-epistemic-notes" aria-label="Link to this section">#</a></h2>
+<h3 id="additional-quantitative-and-epistemic-notes-2">Additional quantitative and epistemic notes<a class="anchor" href="#additional-quantitative-and-epistemic-notes-2" aria-label="Link to this section">#</a></h3>
+<p>The equivalence principle connected uniform acceleration with a homogeneous gravitational field locally, motivating a geometry in which freely falling bodies follow geodesics:</p>
+<div class="math-display">\[\frac{d^2x^\mu}{d\tau^2}
++\Gamma^\mu_{\alpha\beta}
+\frac{dx^\alpha}{d\tau}\frac{dx^\beta}{d\tau}=0.\]</div>
+<p>Einstein&#039;s field equation relates curvature to stress-energy while satisfying local conservation through the Bianchi identity. Its Newtonian weak-field limit recovers \(\nabla^2\Phi=4\pi G\rho\), an essential correspondence constraint.</p>
+<p>The anomalous perihelion advance of Mercury, approximately \(43\) arcseconds per century after known perturbations, was explained without an added planet. The 1919 eclipse observations supported light deflection but had limited precision and should not be treated as the sole proof. Later gravitational redshift, Shapiro delay, binary pulsars, lensing, frame dragging, black-hole imaging, and gravitational waves test distinct regimes. General relativity is the successful classical theory of gravitation; singularities and incompatibility with quantum theory mark scope limits, not routine failures in its tested domain.</p>
+<h2 id="edge-list">Edge list<a class="anchor" href="#edge-list" aria-label="Link to this section">#</a></h2>
+<pre><code class="language-text">A-EQUIVALENCE-PRINCIPLE --motivates--&gt; D-GENERAL-RELATIVITY-1915
+A-SPECIAL-RELATIVITY --constrains--&gt; D-GENERAL-RELATIVITY-1915
+A-RIEMANN-GEOMETRY --enables--&gt; D-GENERAL-RELATIVITY-1915
+R-SCALAR-GRAVITY --superseded-by--&gt; D-GENERAL-RELATIVITY-1915
+D-GENERAL-RELATIVITY-1915 --retains-limit--&gt; R-NEWTONIAN-ABSOLUTE-GRAVITY
+FIELD-EQUATIONS --generate--&gt; SPACETIME-CURVATURE
+SPACETIME-CURVATURE --governs--&gt; GEODESIC-MOTION
+D-GENERAL-RELATIVITY-1915 --enables--&gt; D-EXPANDING-UNIVERSE
+D-GENERAL-RELATIVITY-1915 --instantiates--&gt; P-01</code></pre>
+<h2 id="sources">Sources<a class="anchor" href="#sources" aria-label="Link to this section">#</a></h2>
+<ul><li>Einstein Papers Project, <a href="https://einsteinpapers.press.princeton.edu/vol6-trans/158" target="_blank" rel="noopener noreferrer">Einstein&#039;s 1916 review of general relativity</a>.</li><li>Einstein Online, <a href="https://www.einstein-online.info/en/spotlight/light_deflection/" target="_blank" rel="noopener noreferrer">“Gravitational deflection of light”</a>.</li><li>Einstein Online, <a href="https://www.einstein-online.info/en/category/elementary/general-relativity/" target="_blank" rel="noopener noreferrer">“General Relativity”</a>.</li><li>Stanford Encyclopedia of Philosophy, <a href="https://plato.stanford.edu/entries/genrel-early/" target="_blank" rel="noopener noreferrer">“Early Philosophical Interpretations of General Relativity”</a>.</li></ul><footer class="footer">Reader-friendly rendering of <code>19_general_relativity.md</code>. The Markdown source remains the canonical corpus record.</footer></article></main>
+</body>
+</html>
