@@ -15,6 +15,10 @@
 
 Dirac constructed a quantum equation linear in time and space derivatives that was compatible with special relativity and described electron spin. Its negative-energy solutions led, through developing interpretation, to the prediction of an electron antiparticle, observed by Anderson as the positron.
 
+## Historical problem
+
+Before the focal discovery (1928 theory; 1932 positron discovery), the case confronted a linked set of pressures: Nonrelativistic quantum dynamics successful; Relativistic scalar equation. The pathways `R-NONRELATIVISTIC-ELECTRON-ONLY`, `R-LITERAL-DIRAC-SEA`, `R-KLEIN-GORDON-SINGLE-PARTICLE-PROBABILITY`, `R-SQUARE-ROOT-RELATIVISTIC-SCHRODINGER` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Relativistic spin-\(\tfrac12\) particles and antiparticles was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -25,6 +29,14 @@ Dirac constructed a quantum equation linear in time and space derivatives that w
 | `TS-HOLE-THEORY` | 1930–1931 | Negative energies interpreted | Antiparticle predicted |
 | `TS-ANDERSON` | 1932 | Positive electron track observed | Positron established |
 | `TS-QFT` | 1930s onward | Fields quantized; creation/annihilation natural | Hole ontology no longer fundamental |
+
+## Knowledge assets
+
+- `A-SPECIAL-RELATIVITY`: \(E^2=p^2c^2+m^2c^4\).
+- `A-QUANTUM-MECHANICS`: operator dynamics.
+- `A-PAULI-MATRICES`: spin algebra.
+- `A-CLOUD-CHAMBER`: charged-particle tracks.
+- `A-MAGNETIC-CURVATURE`: sign and momentum inference.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -71,15 +83,26 @@ Dirac constructed a quantum equation linear in time and space derivatives that w
 
 The positron's discovery selected the antiparticle prediction but not the literal sea ontology. Pair creation and annihilation change particle number, demonstrating why fixed-particle relativistic quantum mechanics is incomplete. The Dirac equation remains central as a field equation and as an effective one-electron equation when pair processes are negligible. Thus `DIRAC-SEA --superseded-by--> FOCK-SPACE` coexists with `DIRAC-EQUATION --retained-in--> QFT`.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-SPECIAL-RELATIVITY`: \(E^2=p^2c^2+m^2c^4\).
-- `A-QUANTUM-MECHANICS`: operator dynamics.
-- `A-PAULI-MATRICES`: spin algebra.
-- `A-CLOUD-CHAMBER`: charged-particle tracks.
-- `A-MAGNETIC-CURVATURE`: sign and momentum inference.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-SPECIAL-RELATIVITY`, `A-QUANTUM-MECHANICS`, `A-PAULI-MATRICES`, `A-CLOUD-CHAMBER`, `A-MAGNETIC-CURVATURE`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-NONRELATIVISTIC-ELECTRON-ONLY` | A fixed-particle quantum model that describes a single electron with the nonrelativistic Schrödinger equation and contains neither relativistic spinor structure nor particle creation and antiparticles. | Omits Lorentz covariance, antiparticles, and intrinsic spin structure. |
+| `R-LITERAL-DIRAC-SEA` | The hole-theory ontology in which every negative-energy electron state in the vacuum is physically occupied and a missing electron in that infinite sea appears as a positron. | Infinite sea bookkeeping and generalization difficulties. |
+| `R-KLEIN-GORDON-SINGLE-PARTICLE-PROBABILITY` | The interpretation of a Klein–Gordon wavefunction as a one-particle probability amplitude with its conserved time component treated as a positive density. | See the full pathway record above. |
+| `R-SQUARE-ROOT-RELATIVISTIC-SCHRODINGER` | A fixed-particle equation using \(H=\sqrt{p^2c^2+m^2c^4}\) directly as the quantum Hamiltonian. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Negative energies reframed as new particle sector. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Dirac's equation:
 
@@ -121,6 +144,84 @@ $$
 
 Opposite curvature at electron-like mass indicates opposite charge, supporting positron identification.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Equation structure generates antiparticle solutions
+
+- `P-03` — **Reframe the inherited problem:** Negative energies reframed as new particle sector
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Antimatter accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Relativistic spin-\(\tfrac12\) particles and antiparticles). The case-specific unification was: Quantum mechanics, relativity, and spin unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Quantum mechanics, relativity, and spin unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Equation structure generates antiparticle solutions
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Schrödinger/Pauli theory retained as low-energy limit. Its quantitative or otherwise discriminating test strategy is: Cloud-chamber curvature and annihilation test charge and mass. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Schrödinger/Pauli theory retained as low-energy limit
+
+- `P-06` — **Prioritize discriminating tests:** Cloud-chamber curvature and annihilation test charge and mass
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Quantum mechanics, relativity, and spin unified |
+| `P-02` | Transformative move and generative deduction | Equation structure generates antiparticle solutions |
+| `P-03` | Diagnosis of interpolation failure and reframing | Negative energies reframed as new particle sector |
+| `P-04` | Transformative representation, ontology, or mechanism | Antimatter accepted |
+| `P-05` | Retention and limiting recovery | Schrödinger/Pauli theory retained as low-energy limit |
+| `P-06` | Prediction, discrimination, and validation network | Cloud-chamber curvature and annihilation test charge and mass |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-DIRAC-ANTIMATTER-1928-1932` |
+| Focal date | 1928 theory; 1932 positron discovery |
+| Central claim | Dirac constructed a quantum equation linear in time and space derivatives that was compatible with special relativity and described electron spin. Its negative-energy solutions led, through developing interpretation, to the prediction of an electron antiparticle, observed by Anderson as the positron. |
+| Domain | Relativistic spin-\(\tfrac12\) particles and antiparticles |
+| Epistemic status | Dirac field theory is a core component of quantum electrodynamics and the Standard Model |
+| Generative role | Equation structure generates antiparticle solutions |
+| Retained structure | Schrödinger/Pauli theory retained as low-energy limit |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+(i\hbar c\,\gamma^\mu\partial_\mu-mc^2)\psi=0,
+$$
+
+$$
+\{\gamma^\mu,\gamma^\nu\}=2\eta^{\mu\nu}I.
+$$
+
+$$
+E^2=p^2c^2+m^2c^4.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Relativistic Quantum Theory and Antimatter: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Correct electron spin-\(\tfrac12\) structure and leading magnetic moment.
@@ -131,30 +232,6 @@ Opposite curvature at electron-like mass indicates opposite charge, supporting p
 ## Limitations and retained status
 
 Single-particle relativistic quantum mechanics fails when particle creation is possible. QFT is required. Dirac's predicted magnetic moment receives QED radiative corrections. Antimatter does not generally mean negative mass or backward macroscopic time.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Quantum mechanics, relativity, and spin unified |
-| `P-02` | Equation structure generates antiparticle solutions |
-| `P-03` | Negative energies reframed as new particle sector |
-| `P-04` | Antimatter accepted |
-| `P-05` | Schrödinger/Pauli theory retained as low-energy limit |
-| `P-06` | Cloud-chamber curvature and annihilation test charge and mass |
-
-## Edge list
-
-```text
-A-SPECIAL-RELATIVITY --constrains--> D-DIRAC-EQUATION
-A-QUANTUM-MECHANICS --contributes-to--> D-DIRAC-EQUATION
-D-DIRAC-EQUATION --generates--> NEGATIVE-ENERGY-SOLUTIONS
-NEGATIVE-ENERGY-SOLUTIONS --reframed-as--> POSITRON
-A-CLOUD-CHAMBER --detects--> D-ANDERSON-POSITRON
-D-ANDERSON-POSITRON --validates--> ANTIMATTER-PREDICTION
-D-QFT --supersedes--> R-LITERAL-DIRAC-SEA
-D-DIRAC-ANTIMATTER-1928-1932 --instantiates--> P-02
-```
 
 ## Extended historical investigation
 
@@ -302,6 +379,8 @@ The Dirac equation in an external classical field is useful when pair creation i
 
 ## Additional quantitative and epistemic notes
 
+### Additional quantitative and epistemic notes
+
 Dirac sought an equation first order in time and space whose square reproduced the relativistic energy relation. The required matrices obey
 
 $$
@@ -311,6 +390,19 @@ $$
 The resulting four-component field naturally incorporated electron spin and predicted a leading magnetic moment close to \(g=2\). Its negative-energy solutions initially produced the “hole theory,” but the 1932 positron observation established a particle with electron mass and opposite charge. Modern QFT reinterprets both as excitations of one field.
 
 Antimatter was therefore not inferred from \(E=mc^2\) alone; it emerged from combining relativistic covariance, quantum amplitudes, and the spectrum of a linear equation. Pair creation must conserve energy, momentum, charge, and other quantum numbers, usually requiring a nucleus or another photon to balance momentum. The Dirac equation remains the correct single-particle/field equation for spin-\(\tfrac12\) matter in appropriate settings, while interactions and vacuum processes require quantum field theory.
+
+## Edge list
+
+```text
+A-SPECIAL-RELATIVITY --constrains--> D-DIRAC-EQUATION
+A-QUANTUM-MECHANICS --contributes-to--> D-DIRAC-EQUATION
+D-DIRAC-EQUATION --generates--> NEGATIVE-ENERGY-SOLUTIONS
+NEGATIVE-ENERGY-SOLUTIONS --reframed-as--> POSITRON
+A-CLOUD-CHAMBER --detects--> D-ANDERSON-POSITRON
+D-ANDERSON-POSITRON --validates--> ANTIMATTER-PREDICTION
+D-QFT --supersedes--> R-LITERAL-DIRAC-SEA
+D-DIRAC-ANTIMATTER-1928-1932 --instantiates--> P-02
+```
 
 ## Sources
 

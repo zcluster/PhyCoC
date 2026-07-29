@@ -27,6 +27,10 @@ $$
 
 The principle explains Snell's sine law without treating refraction as an unexplained rule at each interface. Its historical importance is methodological: a global path functional generates local ray equations. "Least" must be read cautiously, because physical rays make optical time stationary and may realize a minimum, maximum, or saddle-type extremum.
 
+## Historical problem
+
+Before the focal discovery (1662 mature least-time derivation of refraction), the case confronted a linked set of pressures: Reflection organized by shortest broken path; Ibn al-Haytham and successors develop geometrical and experimental optics. The pathways `R-SHORTEST-DISTANCE-ALL-RAYS`, `R-DESCARTES-MECHANICAL-REFRACTION`, `R-LOCAL-SNELL-LAW-WITHOUT-GENERATOR` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Geometrical optics, refraction, variational reasoning, and ray geometry was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -37,6 +41,15 @@ The principle explains Snell's sine law without treating refraction as an unexpl
 | `TS-FERMAT` | 1657–1662 | Fermat contests Cartesian refraction and formulates least time | One variational rule yields reflection and refraction |
 | `TS-BRACHISTOCHRONE` | 1696–1697 | Fastest-descent curve solved by optical analogy | Fermat's reasoning migrates from optics into mechanics |
 | `TS-WAVE-EIKONAL` | nineteenth–twentieth centuries | Wave theory and Maxwell theory underlie rays | Stationary optical length retained as a short-wavelength approximation |
+
+## Knowledge assets
+
+- `A-HERO-REFLECTION`: equality of reflection angles from a shortest broken path.
+- `A-SNELL-LAW`: empirical sine relation for refraction.
+- `A-FERMAT-EXTREMA`: Fermat's techniques for maxima, minima and tangents.
+- `A-MEDIA-SPEED`: the proposal that propagation time differs between media.
+- `A-CARTESIAN-DIOPTRICS`: a rival derivation precise enough to be challenged quantitatively.
+- `A-GEOMETRICAL-RAYS`: idealized paths representing propagation direction.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -90,16 +103,25 @@ The principle explains Snell's sine law without treating refraction as an unexpl
 | Local Snell law without generator | Apply an empirical rule at every interface | Gives no rule for graded media | Reliable local construction |
 | **Discovery/current: stationary optical time** | Vary the weighted travel-time functional | Generates reflection, refraction and graded-index ray equations | Geometrical-optics variational principle |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-HERO-REFLECTION`: equality of reflection angles from a shortest broken path.
-- `A-SNELL-LAW`: empirical sine relation for refraction.
-- `A-FERMAT-EXTREMA`: Fermat's techniques for maxima, minima and tangents.
-- `A-MEDIA-SPEED`: the proposal that propagation time differs between media.
-- `A-CARTESIAN-DIOPTRICS`: a rival derivation precise enough to be challenged quantitatively.
-- `A-GEOMETRICAL-RAYS`: idealized paths representing propagation direction.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivation
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-HERO-REFLECTION`, `A-SNELL-LAW`, `A-FERMAT-EXTREMA`, `A-MEDIA-SPEED`, `A-CARTESIAN-DIOPTRICS`, `A-GEOMETRICAL-RAYS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-SHORTEST-DISTANCE-ALL-RAYS` | A geometrical rule extending Hero's reflected-path construction to all optical propagation by assuming that a physical ray always follows the shortest spatial distance between endpoints, regardless of changes in propagation speed between media. | See the full pathway record above. |
+| `R-DESCARTES-MECHANICAL-REFRACTION` | Descartes's corpuscular-mechanical account in which light behaves analogously to a rapidly transmitted tendency or projectile whose motion is resolved into components at an interface, producing the correct sine law while assuming a mechanical change of motion in the denser medium. | See the full pathway record above. |
+| `R-LOCAL-SNELL-LAW-WITHOUT-GENERATOR` | A phenomenological optics in which $n_1\sin\theta_1=n_2\sin\theta_2$ is accepted as an independent interface rule, with straight-line motion imposed separately inside each uniform medium. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “What force bends light here?” becomes “Which neighboring path has stationary travel time?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Let a ray travel from $A=(x_A,y_A)$ in medium 1 to $B=(x_B,-y_B)$ in medium 2, crossing the planar interface at $X=(x,0)$. With speeds $v_1$ and $v_2$,
 
@@ -152,7 +174,7 @@ $$
 
 and rays follow normals to nearly constant-phase surfaces. The variational ray is therefore an emergent high-frequency structure, not evidence that a photon evaluates possible routes as a conscious optimizer.
 
-### Self-contained derivation spine
+#### Self-contained derivation spine
 
 For a smooth ray $\mathbf r(\lambda)$, write
 
@@ -232,6 +254,81 @@ Surfaces $S=\text{constant}$ are wavefronts and their normals are rays. Thus the
 | Derived | Euler–Lagrange ray equation, straight rays and Snell tangential invariant |
 | Independently connected | Eikonal equation from the leading short-wavelength wave equation |
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Snell's empirical sine law becomes a generated stationarity condition
+
+- `P-03` — **Reframe the inherited problem:** “What force bends light here?” becomes “Which neighboring path has stationary travel time?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** A global functional over possible paths becomes an admissible explanatory object
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Geometrical optics, refraction, variational reasoning, and ray geometry). The case-specific unification was: Straight propagation, reflection, refraction and graded-index bending share one path functional. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Straight propagation, reflection, refraction and graded-index bending share one path functional
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Snell's empirical sine law becomes a generated stationarity condition
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Hero's geometry and Snell's quantitative law survive inside the new framework. Its quantitative or otherwise discriminating test strategy is: The principle yields calculable crossing points, angles, delays and ray trajectories. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Hero's geometry and Snell's quantitative law survive inside the new framework
+
+- `P-06` — **Prioritize discriminating tests:** The principle yields calculable crossing points, angles, delays and ray trajectories
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Straight propagation, reflection, refraction and graded-index bending share one path functional |
+| `P-02` | Transformative move and generative deduction | Snell's empirical sine law becomes a generated stationarity condition |
+| `P-03` | Diagnosis of interpolation failure and reframing | “What force bends light here?” becomes “Which neighboring path has stationary travel time?” |
+| `P-04` | Transformative representation, ontology, or mechanism | A global functional over possible paths becomes an admissible explanatory object |
+| `P-05` | Retention and limiting recovery | Hero's geometry and Snell's quantitative law survive inside the new framework |
+| `P-06` | Prediction, discrimination, and validation network | The principle yields calculable crossing points, angles, delays and ray trajectories |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-FERMAT-PRINCIPLE-1662` |
+| Focal date | 1662 mature least-time derivation of refraction |
+| Central claim | Fermat showed that reflection and refraction can be generated by comparing neighboring possible ray paths and selecting a path whose travel time is stationary. In an isotropic medium with refractive index $n(\mathbf r)$, the modern reconstruction is $$ \delta\int_A^B n(\mathbf r)\,ds=0, $$ or equivalently, when $n=c_0/v$, $$ \delta\int_A^B \frac{ds}{v}=0. $$ The principle explains Snell's sine law without treating refraction as an unexplained rule at each interface. Its historical importance is methodological: a global path functional generates local ray equations. "Least" must be read cautiously, because physical rays make optical time stationary and may realize a minimum, maximum, or saddle-type extremum. |
+| Domain | Geometrical optics, refraction, variational reasoning, and ray geometry |
+| Epistemic status | A correct stationary-optical-time principle in geometrical optics; not a universal microscopic mechanism of light propagation |
+| Generative role | Snell's empirical sine law becomes a generated stationarity condition |
+| Retained structure | Hero's geometry and Snell's quantitative law survive inside the new framework |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+T(x)=\frac{\sqrt{(x-x_A)^2+y_A^2}}{v_1}
++\frac{\sqrt{(x_B-x)^2+y_B^2}}{v_2}.
+$$
+
+$$
+\frac{dT}{dx}
+=\frac{x-x_A}{v_1\ell_1}
+-\frac{x_B-x}{v_2\ell_2}=0.
+$$
+
+$$
+\frac{\sin\theta_1}{v_1}
+=\frac{\sin\theta_2}{v_2}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
 ## Historically novel predictions and deductions
 
 ### `NP-FERMAT-NONE` — No clean independent contemporary prediction
@@ -265,32 +362,6 @@ The extremum is stationary, not always a strict minimum. Multiple rays can join 
 
 In anisotropic media, optical cost depends on direction and can require a Finsler-like rather than simple scalar-index geometry. In absorbing or dispersive media, phase, group delay and complex refractive index must be distinguished. Fermat's principle remains correct within ray optics and survives as a stationary-phase limit of wave propagation; it is not an ultimate ontology of light.
 
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Straight propagation, reflection, refraction and graded-index bending share one path functional |
-| `P-02` | Snell's empirical sine law becomes a generated stationarity condition |
-| `P-03` | “What force bends light here?” becomes “Which neighboring path has stationary travel time?” |
-| `P-04` | A global functional over possible paths becomes an admissible explanatory object |
-| `P-05` | Hero's geometry and Snell's quantitative law survive inside the new framework |
-| `P-06` | The principle yields calculable crossing points, angles, delays and ray trajectories |
-
-## Edge list
-
-```text
-A-HERO-REFLECTION --prefigures--> D-FERMAT-PRINCIPLE-1662
-A-SNELL-LAW --constrains--> D-FERMAT-PRINCIPLE-1662
-A-FERMAT-EXTREMA --enables--> D-FERMAT-PRINCIPLE-1662
-D-FERMAT-PRINCIPLE-1662 --generates--> SNELL-REFRACTION
-D-FERMAT-PRINCIPLE-1662 --generates--> SPECULAR-REFLECTION
-STATIONARY-OPTICAL-LENGTH --yields--> GRADED-INDEX-RAY-EQUATION
-WAVE-STATIONARY-PHASE --recovers--> D-FERMAT-PRINCIPLE-1662
-D-FERMAT-PRINCIPLE-1662 --anticipates-stationary-action-form--> D-LAGRANGIAN-MECHANICS-1788
-D-FERMAT-PRINCIPLE-1662 --instantiates--> P-02
-D-FERMAT-PRINCIPLE-1662 --instantiates--> P-03
-```
-
 ## Extended historical investigation
 
 Fermat's achievement should not be collapsed into the modern slogan that “nature minimizes everything.” His dispute with Cartesian optics concerned a precise quantitative result and competing speed assumptions. Nor should the seventeenth-century statement be equated without qualification to the later calculus of variations. The modern δ-notation and Euler–Lagrange ray equation are reconstructions that expose the structure made systematic only later.
@@ -316,6 +387,25 @@ An evidence-versus-alternative ledger is useful for training:
 - Treat Snell's law as both predecessor evidence and retained local structure.
 - Link this case forward to Lagrangian and Hamiltonian mechanics as methodological inheritance, not identity.
 - Record the geometrical-optics regime $\lambda/L\ll1$ whenever exporting the ray principle as a law.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-HERO-REFLECTION --prefigures--> D-FERMAT-PRINCIPLE-1662
+A-SNELL-LAW --constrains--> D-FERMAT-PRINCIPLE-1662
+A-FERMAT-EXTREMA --enables--> D-FERMAT-PRINCIPLE-1662
+D-FERMAT-PRINCIPLE-1662 --generates--> SNELL-REFRACTION
+D-FERMAT-PRINCIPLE-1662 --generates--> SPECULAR-REFLECTION
+STATIONARY-OPTICAL-LENGTH --yields--> GRADED-INDEX-RAY-EQUATION
+WAVE-STATIONARY-PHASE --recovers--> D-FERMAT-PRINCIPLE-1662
+D-FERMAT-PRINCIPLE-1662 --anticipates-stationary-action-form--> D-LAGRANGIAN-MECHANICS-1788
+D-FERMAT-PRINCIPLE-1662 --instantiates--> P-02
+D-FERMAT-PRINCIPLE-1662 --instantiates--> P-03
+```
 
 ## Sources
 

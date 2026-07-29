@@ -15,6 +15,10 @@
 
 Quantum statistics replaces classical label-based counting with occupation counting for indistinguishable particles. Symmetric bosonic states generate Bose enhancement and permit macroscopic occupation; antisymmetric fermionic states generate Fermi blocking and Pauli exclusion. Bose–Einstein and Fermi–Dirac distributions therefore explain radiation, atomic organization, degenerate matter and collective quantum phases, while both reduce to Maxwell–Boltzmann statistics in the controlled dilute limit.
 
+## Historical problem
+
+Before the focal discovery (1924–1926), the case confronted a linked set of pressures: Radiation modes counted unusually; Photon statistics derived without labeling quanta. The pathways `R-MAXWELL-BOLTZMANN-ALL-PARTICLES`, `R-BOSE-STATISTICS-FOR-ALL-MATTER`, `R-PAULI-RULE-WITHOUT-STATE-ANTISYMMETRY`, `R-CLASSICAL-ROTATING-SPIN` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Bose–Einstein and Fermi–Dirac statistics, indistinguishability, exclusion and quantum many-body structure was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Development | Transition |
@@ -25,6 +29,13 @@ Quantum statistics replaces classical label-based counting with occupation count
 | `TS-PAULI` | 1925 | Exclusion principle for electrons | Periodic table explained structurally |
 | `TS-FERMI-DIRAC` | 1926 | Fermion distribution derived | Degenerate matter theory |
 | `TS-SPIN-STATISTICS` | 1930s–1940s | Relativistic field theory connects spin and symmetry | Fundamental classification |
+
+## Knowledge assets
+
+- `A-PLANCK-SPECTRUM`: photon counting problem.
+- `A-PERIODIC-TABLE`: electron-shell regularities.
+- `A-SPIN`: intrinsic angular momentum.
+- `A-INDISTINGUISHABILITY`: label exchange has no new observable state.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -69,14 +80,26 @@ Quantum statistics replaces classical label-based counting with occupation count
 
 The spin–statistics theorem later tied integer/half-integer spin to commutation/anticommutation under assumptions including Lorentz invariance, locality, and positive energy. It did not retroactively make Pauli's empirical rule trivial. Quantum statistics modifies state counting even without a conventional force, explaining why “identical particles that do not interact” can still show correlations.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-PLANCK-SPECTRUM`: photon counting problem.
-- `A-PERIODIC-TABLE`: electron-shell regularities.
-- `A-SPIN`: intrinsic angular momentum.
-- `A-INDISTINGUISHABILITY`: label exchange has no new observable state.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-PLANCK-SPECTRUM`, `A-PERIODIC-TABLE`, `A-SPIN`, `A-INDISTINGUISHABILITY`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-MAXWELL-BOLTZMANN-ALL-PARTICLES` | A universal classical counting model that treats identical particles as individually labelable, statistically independent occupants of states governed by the Maxwell–Boltzmann distribution. | Fails black-body radiation, electron structure, and low-temperature gases. |
+| `R-BOSE-STATISTICS-FOR-ALL-MATTER` | A universal symmetric-state rule allowing every particle species unrestricted multiple occupation of a one-particle state. | See the full pathway record above. |
+| `R-PAULI-RULE-WITHOUT-STATE-ANTISYMMETRY` | Exclusion imposed as an independent occupancy prohibition without a general many-fermion antisymmetric state structure. | See the full pathway record above. |
+| `R-CLASSICAL-ROTATING-SPIN` | A literal model of electron spin as the surface rotation of an extended charged sphere. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Particle counting reframed without individual labels. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Mean occupation at energy \(\epsilon\):
 
@@ -104,6 +127,80 @@ In the classical limit \(e^{(\epsilon-\mu)/(k_BT)}\gg1\), both reduce to:
 $$
 \bar n\approx e^{-(\epsilon-\mu)/(k_BT)}.
 $$
+
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Exchange symmetry generates occupation rules
+
+- `P-03` — **Reframe the inherited problem:** Particle counting reframed without individual labels
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Indistinguishability and antisymmetric states accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Bose–Einstein and Fermi–Dirac statistics, indistinguishability, exclusion and quantum many-body structure). The case-specific unification was: Spectra, chemistry, radiation, and matter stability unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Spectra, chemistry, radiation, and matter stability unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Exchange symmetry generates occupation rules
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Maxwell–Boltzmann statistics retained as dilute limit. Its quantitative or otherwise discriminating test strategy is: Heat capacities, spectra, and degeneracy provide tests. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Maxwell–Boltzmann statistics retained as dilute limit
+
+- `P-06` — **Prioritize discriminating tests:** Heat capacities, spectra, and degeneracy provide tests
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Spectra, chemistry, radiation, and matter stability unified |
+| `P-02` | Transformative move and generative deduction | Exchange symmetry generates occupation rules |
+| `P-03` | Diagnosis of interpolation failure and reframing | Particle counting reframed without individual labels |
+| `P-04` | Transformative representation, ontology, or mechanism | Indistinguishability and antisymmetric states accepted |
+| `P-05` | Retention and limiting recovery | Maxwell–Boltzmann statistics retained as dilute limit |
+| `P-06` | Prediction, discrimination, and validation network | Heat capacities, spectra, and degeneracy provide tests |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-QUANTUM-STATISTICS-1924-1926` |
+| Focal date | 1924–1926 |
+| Central claim | Quantum statistics replaces classical label-based counting with occupation counting for indistinguishable particles. Symmetric bosonic states generate Bose enhancement and permit macroscopic occupation; antisymmetric fermionic states generate Fermi blocking and Pauli exclusion. Bose–Einstein and Fermi–Dirac distributions therefore explain radiation, atomic organization, degenerate matter and collective quantum phases, while both reduce to Maxwell–Boltzmann statistics in the controlled dilute limit. |
+| Domain | Bose–Einstein and Fermi–Dirac statistics, indistinguishability, exclusion and quantum many-body structure |
+| Epistemic status | Bosonic and fermionic statistics are fundamental consequences of quantum state symmetry and spin–statistics in relativistic QFT |
+| Generative role | Exchange symmetry generates occupation rules |
+| Retained structure | Maxwell–Boltzmann statistics retained as dilute limit |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\bar n_{\mathrm{BE}}(\epsilon)
+=\frac{1}{e^{(\epsilon-\mu)/(k_BT)}-1},
+$$
+
+$$
+\bar n_{\mathrm{FD}}(\epsilon)
+=\frac{1}{e^{(\epsilon-\mu)/(k_BT)}+1}.
+$$
+
+$$
+\Psi(\ldots,x_i,\ldots,x_j,\ldots)
+=-\Psi(\ldots,x_j,\ldots,x_i,\ldots)
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
 
 ## Historically novel predictions and deductions
 
@@ -150,36 +247,6 @@ $$
 ## Limitations and retained status
 
 In two spatial dimensions, anyonic statistics are possible. Interactions can dominate behavior even after particle statistics are fixed. Composite particles act bosonic or fermionic only in suitable low-energy regimes. Spin–statistics requires relativistic locality and positivity assumptions.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Spectra, chemistry, radiation, and matter stability unified |
-| `P-02` | Exchange symmetry generates occupation rules |
-| `P-03` | Particle counting reframed without individual labels |
-| `P-04` | Indistinguishability and antisymmetric states accepted |
-| `P-05` | Maxwell–Boltzmann statistics retained as dilute limit |
-| `P-06` | Heat capacities, spectra, and degeneracy provide tests |
-
-## Edge list
-
-```text
-A-PLANCK-SPECTRUM --motivates--> D-BOSE-STATISTICS
-D-BOSE-STATISTICS --generalized-by--> D-EINSTEIN-MATERIAL-BOSONS
-A-PERIODIC-TABLE --constrains--> D-PAULI-EXCLUSION
-ANTISYMMETRY --implies--> EXCLUSION
-SYMMETRY --permits--> MULTIPLE-BOSON-OCCUPATION
-SYMMETRIC-STATE-COUNTING --generates--> BOSE-EINSTEIN-DISTRIBUTION
-ANTISYMMETRIC-STATE-COUNTING --generates--> FERMI-DIRAC-DISTRIBUTION
-D-QUANTUM-STATISTICS-1924-1926 --reduces-to-in-dilute-limit--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
-D-QUANTUM-STATISTICS-1924-1926 --constrains-identical-particle-sectors-of--> D-QUANTUM-MECHANICS-1925-1927
-D-QUANTUM-STATISTICS-1924-1926 --supplies-occupation-number-rules-for--> D-QFT-FIELD-QUANTIZATION-1927
-D-QUANTUM-STATISTICS-1924-1926 --explains--> FERMI-DEGENERACY-PRESSURE
-D-QUANTUM-STATISTICS-1924-1926 --explains--> BOSE-EINSTEIN-CONDENSATION
-D-QUANTUM-STATISTICS-1924-1926 --retains-limit--> R-MAXWELL-BOLTZMANN-ALL-PARTICLES
-D-QUANTUM-STATISTICS-1924-1926 --instantiates--> P-01
-```
 
 ## Extended historical investigation
 
@@ -478,6 +545,8 @@ Composite particles inherit effective statistics from constituent count only whe
 
 ## Additional quantitative and epistemic notes
 
+### Additional quantitative and epistemic notes
+
 For identical particles, exchanging labels cannot create a new physical state. Bosonic many-body states are symmetric and allow arbitrary occupation; fermionic states are antisymmetric and vanish when two fermions occupy the same one-particle state. The occupation factors are
 
 $$
@@ -489,6 +558,25 @@ $$
 Pauli's exclusion rule initially organized atomic spectra before spin and the spin–statistics theorem supplied deeper structure. Fermi–Dirac statistics explains electron degeneracy pressure and Fermi surfaces; Bose–Einstein statistics explains stimulated occupation and enables condensation under suitable density and temperature.
 
 These are not forces between particles. They are constraints on state space and counting, producing effective correlations even for noninteracting particles. Classical Maxwell–Boltzmann statistics survives in the dilute limit where occupancies are small. Later relativistic QFT linked integer spin to bosons and half-integer spin to fermions under locality, Lorentz invariance, and positive-energy assumptions.
+
+## Edge list
+
+```text
+A-PLANCK-SPECTRUM --motivates--> D-BOSE-STATISTICS
+D-BOSE-STATISTICS --generalized-by--> D-EINSTEIN-MATERIAL-BOSONS
+A-PERIODIC-TABLE --constrains--> D-PAULI-EXCLUSION
+ANTISYMMETRY --implies--> EXCLUSION
+SYMMETRY --permits--> MULTIPLE-BOSON-OCCUPATION
+SYMMETRIC-STATE-COUNTING --generates--> BOSE-EINSTEIN-DISTRIBUTION
+ANTISYMMETRIC-STATE-COUNTING --generates--> FERMI-DIRAC-DISTRIBUTION
+D-QUANTUM-STATISTICS-1924-1926 --reduces-to-in-dilute-limit--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
+D-QUANTUM-STATISTICS-1924-1926 --constrains-identical-particle-sectors-of--> D-QUANTUM-MECHANICS-1925-1927
+D-QUANTUM-STATISTICS-1924-1926 --supplies-occupation-number-rules-for--> D-QFT-FIELD-QUANTIZATION-1927
+D-QUANTUM-STATISTICS-1924-1926 --explains--> FERMI-DEGENERACY-PRESSURE
+D-QUANTUM-STATISTICS-1924-1926 --explains--> BOSE-EINSTEIN-CONDENSATION
+D-QUANTUM-STATISTICS-1924-1926 --retains-limit--> R-MAXWELL-BOLTZMANN-ALL-PARTICLES
+D-QUANTUM-STATISTICS-1924-1926 --instantiates--> P-01
+```
 
 ## Sources
 

@@ -15,6 +15,10 @@
 
 Inflation proposes a period of accelerated early expansion that dynamically enlarges a small causally connected region and converts quantum fluctuations into primordial density perturbations. It addresses horizon, flatness, and relic problems while making statistical predictions tested with the CMB.
 
+## Historical problem
+
+Before the focal discovery (1981–1982 broad slow-roll/new-inflation formulation), the case confronted a linked set of pressures: Expansion and CMB established; Curvature-driven accelerated solution. The pathways `R-OLD-INFLATION`, `R-UNEXPLAINED-SPECIAL-INITIAL-CONDITIONS`, `R-MIXMASTER-CHAOTIC-COSMOLOGY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Very early universe and primordial perturbations was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem/development | Transition |
@@ -25,6 +29,14 @@ Inflation proposes a period of accelerated early expansion that dynamically enla
 | `TS-NEW-CHAOTIC` | 1982–1983 | Slow-roll variants proposed | Exit and perturbations improved |
 | `TS-QUANTUM-PERTURBATIONS` | 1980s | Vacuum fluctuations stretched | Structure seeds predicted |
 | `TS-CMB-PRECISION` | 1990s onward | Spectrum measured | Many models constrained |
+
+## Knowledge assets
+
+- `A-GR-COSMOLOGY`: scale-factor dynamics.
+- `A-QFT-VACUUM`: field energy and fluctuations.
+- `A-CMB`: initial-condition probe.
+- `A-HORIZON-FLATNESS`: explanatory targets.
+- `A-PHASE-TRANSITIONS`: early-universe field dynamics.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -65,15 +77,25 @@ Inflation proposes a period of accelerated early expansion that dynamically enla
 
 The observed near-flatness and perturbation spectrum support inflationary-style dynamics indirectly; they do not identify one inflaton. A successful alternative must meet the same multi-observable ledger. Inflation also does not eliminate every initial-condition issue: some models require a sufficiently smooth starting region, and eternal-inflation measures introduce further questions. The proper outcome label is `PARADIGM-STRONGLY-SUPPORTED-BUT-MICROPHYSICS-OPEN`, not “confirmed theory” in the same sense as QED.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-GR-COSMOLOGY`: scale-factor dynamics.
-- `A-QFT-VACUUM`: field energy and fluctuations.
-- `A-CMB`: initial-condition probe.
-- `A-HORIZON-FLATNESS`: explanatory targets.
-- `A-PHASE-TRANSITIONS`: early-universe field dynamics.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-GR-COSMOLOGY`, `A-QFT-VACUUM`, `A-CMB`, `A-HORIZON-FLATNESS`, `A-PHASE-TRANSITIONS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-OLD-INFLATION` | Guth's false-vacuum model in which the early universe remains temporarily trapped in a metastable high-energy state, expands exponentially, and exits through nucleated bubbles of a lower-energy phase. | Bubble nucleation does not end smoothly enough. |
+| `R-UNEXPLAINED-SPECIAL-INITIAL-CONDITIONS` | A non-dynamical cosmological account that takes the early universe's extreme homogeneity, near-flatness, and absence of unwanted relics as specially chosen initial boundary conditions. | See the full pathway record above. |
+| `R-MIXMASTER-CHAOTIC-COSMOLOGY` | Misner's late-1960s Mixmaster/chaotic-cosmology program, which sought to erase primordial anisotropy and homogenize the universe through complex pre-expansion gravitational dynamics without an inflationary phase. | Dissipation and causal mixing were insufficient to generate the observed large-scale homogeneity under generic conditions. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Initial coincidences reframed as dynamical outcomes. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Accelerated expansion requires:
 
@@ -120,6 +142,86 @@ $$
 \qquad n_s\approx1.
 $$
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Accelerated dynamics generates flatness and perturbations
+
+- `P-03` — **Reframe the inherited problem:** Initial coincidences reframed as dynamical outcomes
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Vacuum-like negative pressure accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Very early universe and primordial perturbations). The case-specific unification was: Particle fields, gravity, and cosmic initial conditions unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Particle fields, gravity, and cosmic initial conditions unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Accelerated dynamics generates flatness and perturbations
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Hot Big Bang retained after reheating. Its quantitative or otherwise discriminating test strategy is: Spectral tilt, Gaussianity, curvature, and tensors test models. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Hot Big Bang retained after reheating
+
+- `P-06` — **Prioritize discriminating tests:** Spectral tilt, Gaussianity, curvature, and tensors test models
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Particle fields, gravity, and cosmic initial conditions unified |
+| `P-02` | Transformative move and generative deduction | Accelerated dynamics generates flatness and perturbations |
+| `P-03` | Diagnosis of interpolation failure and reframing | Initial coincidences reframed as dynamical outcomes |
+| `P-04` | Transformative representation, ontology, or mechanism | Vacuum-like negative pressure accepted |
+| `P-05` | Retention and limiting recovery | Hot Big Bang retained after reheating |
+| `P-06` | Prediction, discrimination, and validation network | Spectral tilt, Gaussianity, curvature, and tensors test models |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-COSMIC-INFLATION-1980S` |
+| Focal date | 1981–1982 broad slow-roll/new-inflation formulation |
+| Central claim | Inflation proposes a period of accelerated early expansion that dynamically enlarges a small causally connected region and converts quantum fluctuations into primordial density perturbations. It addresses horizon, flatness, and relic problems while making statistical predictions tested with the CMB. |
+| Domain | Very early universe and primordial perturbations |
+| Epistemic status | Broad inflationary paradigm is strongly supported indirectly; its field content and detailed mechanism are not established |
+| Generative role | Accelerated dynamics generates flatness and perturbations |
+| Retained structure | Hot Big Bang retained after reheating |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\ddot a>0.
+$$
+
+$$
+\frac{\ddot a}{a}
+=-\frac{4\pi G}{3}
+\left(\rho+\frac{3p}{c^2}\right),
+$$
+
+$$
+p<-\frac{\rho c^2}{3}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Cosmic Inflation: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Explains why observable curvature is small.
@@ -130,30 +232,6 @@ $$
 ## Limitations and retained status
 
 No unique inflaton has been identified. Many models fit current data, some are excluded, and primordial tensor modes remain unconfirmed. Eternal inflation and measure questions are model-dependent. Inflation is not identical to the Big Bang; it is a proposed early phase preceding the conventional hot plasma era.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Particle fields, gravity, and cosmic initial conditions unified |
-| `P-02` | Accelerated dynamics generates flatness and perturbations |
-| `P-03` | Initial coincidences reframed as dynamical outcomes |
-| `P-04` | Vacuum-like negative pressure accepted |
-| `P-05` | Hot Big Bang retained after reheating |
-| `P-06` | Spectral tilt, Gaussianity, curvature, and tensors test models |
-
-## Edge list
-
-```text
-A-HORIZON-FLATNESS --motivates--> D-COSMIC-INFLATION-1980S
-A-QFT-VACUUM --contributes-to--> INFLATON-DYNAMICS
-NEGATIVE-PRESSURE --generates--> ACCELERATED-EXPANSION
-ACCELERATED-EXPANSION --suppresses--> SPATIAL-CURVATURE
-QUANTUM-FLUCTUATIONS --stretched-by--> ACCELERATED-EXPANSION
-STRETCHED-FLUCTUATIONS --seed--> CMB-ANISOTROPY
-R-OLD-INFLATION --superseded-by--> SLOW-ROLL-VARIANTS
-D-COSMIC-INFLATION-1980S --instantiates--> P-02
-```
 
 ## Extended historical investigation
 
@@ -232,7 +310,9 @@ Alternatives can seek to generate primordial structure through bouncing, emergen
 - Do not identify the inflaton with the Standard Model Higgs or another field without model-specific evidence.
 - Mark tensor, non-Gaussianity, and reheating edges as active discriminators.
 
-## Further model-discrimination notes
+## Additional quantitative and epistemic notes
+
+### Further model-discrimination notes
 
 Single-field slow roll predicts a consistency relation \(n_t\simeq-r/8\), but testing it would require a tensor detection over sufficient scales. Multifield models can generate isocurvature perturbations or conversion after horizon exit; current isocurvature limits constrain but do not eliminate all such scenarios. Noncanonical kinetic terms can alter sound speed and enhance particular non-Gaussian shapes.
 
@@ -241,6 +321,19 @@ Reheating connects inflation to the hot Big Bang. The inflaton or other driving 
 The trans-Planckian and initial-condition questions concern extrapolation beyond directly tested field theory. They should be recorded as open theoretical dependencies, not presented either as observational refutations or as solved details.
 
 Inflation also dilutes unwanted relics such as magnetic monopoles left by some grand-unified phase transitions, but successful reheating must not regenerate them excessively. The explanatory targets are therefore coupled: duration, exit, relic production, perturbation amplitude, and thermal recovery constrain one another. A model that fits \(n_s\) but lacks a consistent exit or reheating mechanism is incomplete. Conversely, absence of a directly detected inflaton is not equivalent to evidence that accelerated expansion did not occur; it marks the gap between phenomenological history and microscopic identification.
+
+## Edge list
+
+```text
+A-HORIZON-FLATNESS --motivates--> D-COSMIC-INFLATION-1980S
+A-QFT-VACUUM --contributes-to--> INFLATON-DYNAMICS
+NEGATIVE-PRESSURE --generates--> ACCELERATED-EXPANSION
+ACCELERATED-EXPANSION --suppresses--> SPATIAL-CURVATURE
+QUANTUM-FLUCTUATIONS --stretched-by--> ACCELERATED-EXPANSION
+STRETCHED-FLUCTUATIONS --seed--> CMB-ANISOTROPY
+R-OLD-INFLATION --superseded-by--> SLOW-ROLL-VARIANTS
+D-COSMIC-INFLATION-1980S --instantiates--> P-02
+```
 
 ## Sources
 

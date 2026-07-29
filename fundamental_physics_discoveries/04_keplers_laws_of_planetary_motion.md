@@ -16,6 +16,10 @@
 
 Kepler replaced uniform circular planetary motion with three quantitative laws: elliptical orbits, equal areas in equal times, and a period–size relation. These laws described how planets move but did not supply the later gravitational mechanism. In real many-body systems they are controlled approximations rather than exact isolated rules.
 
+## Historical problem
+
+Before the focal discovery (1609 (first two laws); 1619 (third law)), the case confronted a linked set of pressures: Compound uniform circles dominated mathematical astronomy; High-precision naked-eye observations accumulated. The pathways `R-PERFECT-CIRCLES`, `R-KEPLER-POLYHEDRAL`, `R-KEPLER-OVAL-INTERMEDIATE` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Mathematical astronomy and orbital kinematics was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem state | Transition |
@@ -26,6 +30,14 @@ Kepler replaced uniform circular planetary motion with three quantitative laws: 
 | `TS-FIRST-SECOND-LAWS` | 1609 | Ellipse and area law published | Nonuniform orbital speed quantified |
 | `TS-THIRD-LAW` | 1619 | Planetary periods linked across the system | One scaling relation spans different planets |
 | `TS-NEWTON` | 1687 onward | Force laws generate orbital regularities | Keplerian laws embedded in dynamics |
+
+## Knowledge assets
+
+- `A-COPERNICAN-ORDER`: Sun-centered planetary ordering.
+- `A-TYCHO-MARS`: precise observations of Mars.
+- `A-CONIC-GEOMETRY`: ellipse properties and geometrical methods.
+- `A-PHYSICAL-ASTRONOMY`: willingness to seek a causal solar role.
+- `A-ERROR-TRUST`: treating small residuals as evidence against a model.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -73,15 +85,25 @@ Kepler did not move directly from “circle fails” to the modern ellipse. He t
 
 Kepler's own magnetic or animistic causal proposals were later superseded. The laws survived because their quantitative structure was separable from the proposed mechanism.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-COPERNICAN-ORDER`: Sun-centered planetary ordering.
-- `A-TYCHO-MARS`: precise observations of Mars.
-- `A-CONIC-GEOMETRY`: ellipse properties and geometrical methods.
-- `A-PHYSICAL-ASTRONOMY`: willingness to seek a causal solar role.
-- `A-ERROR-TRUST`: treating small residuals as evidence against a model.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-COPERNICAN-ORDER`, `A-TYCHO-MARS`, `A-CONIC-GEOMETRY`, `A-PHYSICAL-ASTRONOMY`, `A-ERROR-TRUST`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-PERFECT-CIRCLES` | The classical astronomical program that represents every celestial trajectory as uniform motion on a circle or as a combination of such circular motions. | See the full pathway record above. |
+| `R-KEPLER-POLYHEDRAL` | Kepler's early spacing model in which the six known planetary spheres are separated by the five nested Platonic solids, making geometry determine the number and relative sizes of planetary orbits. | Improved observations did not support the proposed spacing scheme. |
+| `R-KEPLER-OVAL-INTERMEDIATE` | Kepler's provisional noncircular “oval” construction for Mars, introduced while he searched for a path that matched Tycho's observations better than compound circles. | It improved the conceptual search but did not reproduce the complete longitude–distance relation as accurately as an ellipse. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Which circles fit?” reframed as “Which path does the data require?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 `L-KEPLER-1` — The orbit is an ellipse with the Sun at one focus:
 
@@ -127,6 +149,84 @@ $$
 
 when \(M\gg m\). This derivation is Newtonian, not Kepler's original reasoning.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Observational patterns became constraints later generated by dynamics
+
+- `P-03` — **Reframe the inherited problem:** “Which circles fit?” reframed as “Which path does the data require?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Elliptical, nonuniform celestial motion accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Mathematical astronomy and orbital kinematics). The case-specific unification was: All known planets linked by a common period–size relation. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** All known planets linked by a common period–size relation
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Observational patterns became constraints later generated by dynamics
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Copernican ordering and precision observations retained. Its quantitative or otherwise discriminating test strategy is: Eight-arcminute residual treated as decisive evidence. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Copernican ordering and precision observations retained
+
+- `P-06` — **Prioritize discriminating tests:** Eight-arcminute residual treated as decisive evidence
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | All known planets linked by a common period–size relation |
+| `P-02` | Transformative move and generative deduction | Observational patterns became constraints later generated by dynamics |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Which circles fit?” reframed as “Which path does the data require?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Elliptical, nonuniform celestial motion accepted |
+| `P-05` | Retention and limiting recovery | Copernican ordering and precision observations retained |
+| `P-06` | Prediction, discrimination, and validation network | Eight-arcminute residual treated as decisive evidence |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-KEPLER-LAWS-1609-1619` |
+| Focal date | 1609 (first two laws); 1619 (third law) |
+| Central claim | Kepler replaced uniform circular planetary motion with three quantitative laws: elliptical orbits, equal areas in equal times, and a period–size relation. These laws described how planets move but did not supply the later gravitational mechanism. In real many-body systems they are controlled approximations rather than exact isolated rules. |
+| Domain | Mathematical astronomy and orbital kinematics |
+| Epistemic status | Highly accurate two-body regularities and limiting consequences of Newtonian/relativistic orbital dynamics |
+| Generative role | Observational patterns became constraints later generated by dynamics |
+| Retained structure | Copernican ordering and precision observations retained |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+r(\phi)=\frac{a(1-e^2)}{1+e\cos\phi}.
+$$
+
+$$
+\frac{dA}{dt}=\text{constant}.
+$$
+
+$$
+\frac{dA}{dt}=\frac{L}{2m}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Kepler's Laws of Planetary Motion: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Elliptical motion fit the Mars observations that strained circular models.
@@ -138,35 +238,6 @@ when \(M\gg m\). This derivation is Newtonian, not Kepler's original reasoning.
 ## Limitations and retained status
 
 Planetary perturbations, nonspherical mass distributions, drag, radiation, and relativistic corrections break exact Keplerian motion. Mercury's perihelion precession includes a general-relativistic contribution. Nevertheless, osculating Keplerian elements remain a powerful local representation of real orbits.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | All known planets linked by a common period–size relation |
-| `P-02` | Observational patterns became constraints later generated by dynamics |
-| `P-03` | “Which circles fit?” reframed as “Which path does the data require?” |
-| `P-04` | Elliptical, nonuniform celestial motion accepted |
-| `P-05` | Copernican ordering and precision observations retained |
-| `P-06` | Eight-arcminute residual treated as decisive evidence |
-
-## Edge list
-
-```text
-A-COPERNICAN-ORDER --contributes-to--> D-KEPLER-LAWS-1609-1619
-A-TYCHO-MARS --tests--> R-PERFECT-CIRCLES
-R-PERFECT-CIRCLES --superseded-by--> L-KEPLER-1
-R-KEPLER-POLYHEDRAL --superseded-by--> L-KEPLER-3
-L-KEPLER-1 --part-of--> D-KEPLER-LAWS-1609-1619
-L-KEPLER-2 --part-of--> D-KEPLER-LAWS-1609-1619
-L-KEPLER-3 --part-of--> D-KEPLER-LAWS-1609-1619
-D-NEWTONIAN-GRAVITY --generates--> L-KEPLER-1
-D-NEWTONIAN-GRAVITY --generates--> L-KEPLER-2
-D-NEWTONIAN-GRAVITY --generates--> L-KEPLER-3
-LIMIT-MANY-BODY --limits--> D-KEPLER-LAWS-1609-1619
-D-KEPLER-LAWS-1609-1619 --instantiates--> P-02
-D-KEPLER-LAWS-1609-1619 --instantiates--> P-06
-```
 
 ## Extended historical investigation
 
@@ -314,6 +385,28 @@ Kepler mixed what modern readers separate into physics, astronomy, metaphysics, 
 - Record `MARS-EIGHT-MINUTES` as model-discriminating residual, not raw proof of an ellipse.
 - Distinguish exact two-body solutions from osculating approximations.
 - Link the third law to system-mass inference only through the Newtonian generalization.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-COPERNICAN-ORDER --contributes-to--> D-KEPLER-LAWS-1609-1619
+A-TYCHO-MARS --tests--> R-PERFECT-CIRCLES
+R-PERFECT-CIRCLES --superseded-by--> L-KEPLER-1
+R-KEPLER-POLYHEDRAL --superseded-by--> L-KEPLER-3
+L-KEPLER-1 --part-of--> D-KEPLER-LAWS-1609-1619
+L-KEPLER-2 --part-of--> D-KEPLER-LAWS-1609-1619
+L-KEPLER-3 --part-of--> D-KEPLER-LAWS-1609-1619
+D-NEWTONIAN-GRAVITY --generates--> L-KEPLER-1
+D-NEWTONIAN-GRAVITY --generates--> L-KEPLER-2
+D-NEWTONIAN-GRAVITY --generates--> L-KEPLER-3
+LIMIT-MANY-BODY --limits--> D-KEPLER-LAWS-1609-1619
+D-KEPLER-LAWS-1609-1619 --instantiates--> P-02
+D-KEPLER-LAWS-1609-1619 --instantiates--> P-06
+```
 
 ## Sources
 

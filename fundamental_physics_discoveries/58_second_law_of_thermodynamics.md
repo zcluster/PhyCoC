@@ -25,6 +25,10 @@ $$
 
 The law does not say that entropy must increase in every subsystem at every instant. It constrains a correctly specified closed composite system; equality holds in the ideal reversible limit, while positive entropy production marks irreversibility.
 
+## Historical problem
+
+Before the focal discovery (1850–1865 Clausius/Kelvin formulations through entropy), the case confronted a linked set of pressures: Engine improvement pursued by design-specific trial and error; Ideal reversible engine compares hot and cold reservoirs. The pathways `R-ENGINE-SPECIFIC-OPTIMIZATION`, `R-CALORIC-HEAT-DROP`, `R-FIRST-LAW-SUFFICIENT`, `R-IRREVERSIBILITY-AS-FRICTION-ONLY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Heat engines, reversibility, thermodynamic temperature, entropy and irreversibility was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -36,6 +40,16 @@ The law does not say that entropy must increase in every subsystem at every inst
 | `TS-CLAUSIUS-KELVIN` | 1850–1854 | Directionality and impossible cyclic devices formulated | Second-law statements become explicit and mutually connected |
 | `TS-ENTROPY-1865` | 1865 | Reversible heat ratios integrated into a state function | Entropy and uncompensated transformations quantify irreversibility |
 | `TS-STATISTICAL-INTERPRETATION` | late nineteenth century onward | Time-reversible microdynamics confront macroscopic direction | Entropy increase becomes overwhelmingly typical under stated conditions |
+
+## Knowledge assets
+
+- `A-STEAM-ENGINE-CYCLES`: repeatable cyclic devices converting heat transfer into work.
+- `A-TWO-RESERVOIRS`: ideal hot and cold bodies held at fixed temperatures.
+- `A-CARNOT-REVERSIBILITY`: a cycle that can be reversed while restoring system and surroundings without net residue.
+- `A-CARNOT-THEOREM`: no engine between two reservoirs exceeds a reversible engine, and all reversible engines share one efficiency.
+- `A-FIRST-LAW`: $W=Q_h-Q_c$ for a cyclic heat engine using positive heat magnitudes.
+- `A-CLAPEYRON-DIAGRAM`: geometrical cycle representation and mathematical transmission of Carnot's work.
+- `A-CLAUSIUS-KELVIN-STATEMENTS`: independently phrased impossibility constraints.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -103,19 +117,28 @@ The law does not say that entropy must increase in every subsystem at every inst
 | Irreversibility is only friction | Perfect construction removes all limits | One-reservoir cyclic conversion remains impossible | Avoidable-loss analysis |
 | **Discovery/current: second law** | Reversible comparison plus impossibility principles defines entropy and direction | Tested by engine bounds, heat-flow direction and entropy balances | Macroscopic process constraint |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-STEAM-ENGINE-CYCLES`: repeatable cyclic devices converting heat transfer into work.
-- `A-TWO-RESERVOIRS`: ideal hot and cold bodies held at fixed temperatures.
-- `A-CARNOT-REVERSIBILITY`: a cycle that can be reversed while restoring system and surroundings without net residue.
-- `A-CARNOT-THEOREM`: no engine between two reservoirs exceeds a reversible engine, and all reversible engines share one efficiency.
-- `A-FIRST-LAW`: $W=Q_h-Q_c$ for a cyclic heat engine using positive heat magnitudes.
-- `A-CLAPEYRON-DIAGRAM`: geometrical cycle representation and mathematical transmission of Carnot's work.
-- `A-CLAUSIUS-KELVIN-STATEMENTS`: independently phrased impossibility constraints.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivation
+### Starting ingredients
 
-### 1. Logical starting point: definitions, signs and assumptions
+The admissible pre-discovery input nodes are `A-STEAM-ENGINE-CYCLES`, `A-TWO-RESERVOIRS`, `A-CARNOT-REVERSIBILITY`, `A-CARNOT-THEOREM`, `A-FIRST-LAW`, `A-CLAPEYRON-DIAGRAM`, `A-CLAUSIUS-KELVIN-STATEMENTS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-ENGINE-SPECIFIC-OPTIMIZATION` | An engineering pathway that treats each steam-engine design as a separate problem of valves, pressures, fuels and materials, with no proof that all engines share a universal efficiency limit. | See the full pathway record above. |
+| `R-CALORIC-HEAT-DROP` | A conserved-fluid account in which caloric falls from a hotter to a colder body analogously to water descending through a waterwheel, producing motive power without being consumed. | See the full pathway record above. |
+| `R-FIRST-LAW-SUFFICIENT` | The inference that once energy is conserved, any process satisfying $\Delta U=Q-W$ is physically possible, including complete cyclic conversion of heat drawn from one reservoir into work. | See the full pathway record above. |
+| `R-IRREVERSIBILITY-AS-FRICTION-ONLY` | The view that every departure from perfect performance is caused only by removable mechanical defects such as friction, turbulence or leakage, rather than by a universal restriction on finite-temperature heat transfer and cyclic conversion. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “How can this engine be improved?” becomes “What transformation is possible between two temperatures at all?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
+
+#### 1. Logical starting point: definitions, signs and assumptions
 
 A self-contained derivation must separate what is **assumed** from what is **derived**. Use these definitions:
 
@@ -143,7 +166,7 @@ Equivalently, one may start with:
 
 The first law, reservoir idealization, cyclicity, composability of devices and one of these second-law postulates are assumptions. Carnot's theorem, reversible-engine universality, the thermodynamic temperature scale, the Clausius equality and inequality, and entropy increase are derived below.
 
-### 2. Why the Kelvin–Planck and Clausius statements are equivalent
+#### 2. Why the Kelvin–Planck and Clausius statements are equivalent
 
 The equivalence is a construction, not a verbal resemblance.
 
@@ -165,13 +188,13 @@ to the hot reservoir. The work transfers cancel. The hot reservoir loses $W$ to 
 
 Therefore either classical statement implies the other, given the first law and the ability to couple cyclic devices.
 
-### 3. Carnot's idealizing move
+#### 3. Carnot's idealizing move
 
 Carnot replaced a complicated steam engine with a conceptual system operating between only two reservoirs, $T_h>T_c$. He asked for the best performance compatible with cyclic operation, independently of piston material, steam chemistry, valve timing or friction. The thought experiment removes contingent engineering details while retaining the thermodynamic boundary conditions.
 
 Carnot's historical 1824 argument used caloric conservation. The following proof is the mature reconstruction using the first law and a second-law impossibility statement. The distinction matters: the reasoning structure was retained, while its heat ontology was corrected.
 
-### 4. Carnot theorem with the full contradiction ledger
+#### 4. Carnot theorem with the full contradiction ledger
 
 Let $R$ be a reversible engine and $E$ any engine operating between the same $T_h$ and $T_c$. Assume for contradiction that
 
@@ -233,7 +256,7 @@ $$
 
 All reversible engines between the same two reservoir temperatures have the same efficiency, whatever their working substance. This universality is the central logical gain.
 
-### 5. From reversible-engine composition to thermodynamic temperature
+#### 5. From reversible-engine composition to thermodynamic temperature
 
 For a reversible engine define the positive heat ratio
 
@@ -281,7 +304,7 @@ $$
 
 This is a definition-and-theorem chain: reversible-engine universality gives the composition law; the composition law permits an absolute temperature scale; that scale gives the familiar efficiency formula. The formula is not assumed at the start.
 
-### 6. Complete ideal-gas Carnot-cycle calculation
+#### 6. Complete ideal-gas Carnot-cycle calculation
 
 The theorem above is independent of working substance. An ideal gas provides an explicit realization. Let $n$ moles obey
 
@@ -382,7 +405,7 @@ $$
 
 Every equality depends on reversible isothermal heat transfer and reversible adiabatic steps. Finite temperature gaps, friction, turbulence or uncontrolled expansion make the actual efficiency strictly lower.
 
-### 7. Clausius theorem from reversible auxiliary engines
+#### 7. Clausius theorem from reversible auxiliary engines
 
 Adopt a new sign convention for this subsection: each $Q_i$ is signed **into** a cyclic device from a reservoir at $T_i$. Thus heat rejection has $Q_i<0$. Suppose a reversible cycle exchanges heats $Q_1,\ldots,Q_N$ with reservoirs $T_1,\ldots,T_N$.
 
@@ -416,7 +439,7 @@ $$
 \boxed{\oint\frac{\delta Q_{\rm rev}}{T}=0}.
 $$
 
-### 8. Why entropy is a state function
+#### 8. Why entropy is a state function
 
 Take two equilibrium states $A$ and $B$ and any two reversible paths $P_1$ and $P_2$ between them. Travel from $A$ to $B$ along $P_1$ and return from $B$ to $A$ along the reverse of $P_2$. This is a reversible closed cycle, so
 
@@ -441,7 +464,7 @@ $$
 
 Heat $Q$ remains path dependent; the integrating factor $1/T$ converts reversible heat into the exact differential $dS$.
 
-### 9. Clausius inequality and entropy increase
+#### 9. Clausius inequality and entropy increase
 
 Apply the same auxiliary-engine construction to an **irreversible** cyclic device. If
 
@@ -497,7 +520,7 @@ $$
 
 The chain is now explicit: an impossibility postulate constrains coupled cyclic devices; reversible comparison yields Carnot universality; universality yields heat ratios; heat ratios yield an integrating factor; and the irreversible inequality yields entropy increase.
 
-### 10. Two worked irreversibility checks
+#### 10. Two worked irreversibility checks
 
 **Finite-temperature heat transfer.** Let heat magnitude $Q>0$ flow spontaneously from a hot reservoir $T_h$ to a cold reservoir $T_c<T_h$. The reservoirs' entropy changes are
 
@@ -537,7 +560,7 @@ $$
 
 The actual process exchanges no heat, yet entropy increases. This demonstrates why $dS=\delta Q/T$ is valid only for reversible heat transfer, while the general statement requires entropy generation.
 
-### 11. Assumption-versus-conclusion ledger
+#### 11. Assumption-versus-conclusion ledger
 
 | Logical role | Statement |
 |---|---|
@@ -552,6 +575,79 @@ The actual process exchanges no heat, yet entropy increases. This demonstrates w
 | Derived | $\eta_{\rm Carnot}=1-T_c/T_h$ |
 | Derived | $\oint\delta Q_{\rm rev}/T=0$ and entropy as a state function |
 | Derived | $\oint\delta Q/T\le0$ and $\Delta S_{\rm isolated}\ge0$ |
+
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Empirical engine performance becomes a generator of universal efficiency and process-direction inequalities
+
+- `P-03` — **Reframe the inherited problem:** “How can this engine be improved?” becomes “What transformation is possible between two temperatures at all?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Reversible counterfactual cycles and entropy become legitimate theoretical objects independent of microscopic ontology
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Heat engines, reversibility, thermodynamic temperature, entropy and irreversibility). The case-specific unification was: All heat engines, refrigerators and spontaneous heat flows are unified by reversible comparison and entropy accounting. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** All heat engines, refrigerators and spontaneous heat flows are unified by reversible comparison and entropy accounting
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Empirical engine performance becomes a generator of universal efficiency and process-direction inequalities
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Carnot's reservoir and cycle structure survives rejection of caloric conservation. Its quantitative or otherwise discriminating test strategy is: Efficiency, coefficients of performance and entropy production provide quantitative discriminators. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Carnot's reservoir and cycle structure survives rejection of caloric conservation
+
+- `P-06` — **Prioritize discriminating tests:** Efficiency, coefficients of performance and entropy production provide quantitative discriminators
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | All heat engines, refrigerators and spontaneous heat flows are unified by reversible comparison and entropy accounting |
+| `P-02` | Transformative move and generative deduction | Empirical engine performance becomes a generator of universal efficiency and process-direction inequalities |
+| `P-03` | Diagnosis of interpolation failure and reframing | “How can this engine be improved?” becomes “What transformation is possible between two temperatures at all?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Reversible counterfactual cycles and entropy become legitimate theoretical objects independent of microscopic ontology |
+| `P-05` | Retention and limiting recovery | Carnot's reservoir and cycle structure survives rejection of caloric conservation |
+| `P-06` | Prediction, discrimination, and validation network | Efficiency, coefficients of performance and entropy production provide quantitative discriminators |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-SECOND-LAW-1850-1865` |
+| Focal date | 1850–1865 Clausius/Kelvin formulations through entropy |
+| Central claim | The second law adds a direction and a conversion limit that energy conservation alone cannot provide. Carnot's 1824 ideal-engine argument isolated reversible operation and a universal efficiency bound without requiring detailed steam-engine mechanics. Clausius and Kelvin then reconciled that structure with heat–work equivalence, formulated impossibility principles, and developed entropy. In modern notation, $$ \oint\frac{\delta Q}{T}\le 0, \qquad dS=\frac{\delta Q_{\rm rev}}{T}, \qquad \Delta S_{\rm isolated}\ge 0. $$ The law does not say that entropy must increase in every subsystem at every instant. It constrains a correctly specified closed composite system; equality holds in the ideal reversible limit, while positive entropy production marks irreversibility. |
+| Domain | Heat engines, reversibility, thermodynamic temperature, entropy and irreversibility |
+| Epistemic status | A fundamental macroscopic constraint on allowed processes; statistical mechanics explains its typicality and fluctuations without erasing its thermodynamic domain |
+| Generative role | Empirical engine performance becomes a generator of universal efficiency and process-direction inequalities |
+| Retained structure | Carnot's reservoir and cycle structure survives rejection of caloric conservation |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+W=Q_h-Q_c,
+\qquad
+\eta\equiv\frac{W}{Q_h}=1-\frac{Q_c}{Q_h}.
+$$
+
+$$
+W=Q_h-Q_c.
+$$
+
+$$
+Q_h=Q_c+W
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
 
 ## Historically novel predictions and deductions
 
@@ -625,41 +721,6 @@ Classical thermodynamics does not derive the arrow of time from microscopic mech
 
 Entropy must be defined within a framework: thermodynamic, Boltzmann, Gibbs, von Neumann and gravitational entropies are related but not interchangeable without assumptions. Nonequilibrium systems may lack a single global temperature, and long-range gravity complicates extensivity. These scope limits do not weaken the ordinary macroscopic law.
 
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | All heat engines, refrigerators and spontaneous heat flows are unified by reversible comparison and entropy accounting |
-| `P-02` | Empirical engine performance becomes a generator of universal efficiency and process-direction inequalities |
-| `P-03` | “How can this engine be improved?” becomes “What transformation is possible between two temperatures at all?” |
-| `P-04` | Reversible counterfactual cycles and entropy become legitimate theoretical objects independent of microscopic ontology |
-| `P-05` | Carnot's reservoir and cycle structure survives rejection of caloric conservation |
-| `P-06` | Efficiency, coefficients of performance and entropy production provide quantitative discriminators |
-
-## Edge list
-
-```text
-A-STEAM-ENGINE-CYCLES --motivates--> D-CARNOT-1824
-R-ENGINE-SPECIFIC-OPTIMIZATION --reframed-by--> D-CARNOT-1824
-D-CARNOT-1824 --introduces--> A-CARNOT-REVERSIBILITY
-A-CARNOT-REVERSIBILITY --enables--> A-CARNOT-THEOREM
-D-FIRST-LAW-1847-1850 --revises-energy-accounting-of--> D-CARNOT-1824
-KELVIN-PLANCK-STATEMENT --equivalent-via-device-coupling--> CLAUSIUS-STATEMENT
-CLAUSIUS-STATEMENT --enables-contradiction-proof-of--> A-CARNOT-THEOREM
-A-CARNOT-THEOREM --implies--> REVERSIBLE-ENGINE-UNIVERSALITY
-REVERSIBLE-ENGINE-UNIVERSALITY --implies--> HEAT-RATIO-COMPOSITION-LAW
-HEAT-RATIO-COMPOSITION-LAW --defines--> THERMODYNAMIC-TEMPERATURE
-THERMODYNAMIC-TEMPERATURE --yields--> CARNOT-EFFICIENCY
-REVERSIBLE-AUXILIARY-ENGINES --derive--> CLAUSIUS-THEOREM
-CLAUSIUS-THEOREM --defines--> ENTROPY-STATE-FUNCTION
-REVERSIBLE-AUXILIARY-ENGINES --derive--> CLAUSIUS-INEQUALITY
-CLAUSIUS-INEQUALITY --implies--> ENTROPY-GENERATION-NONNEGATIVE
-ENTROPY-GENERATION-NONNEGATIVE --implies-for-isolated-system--> ENTROPY-INCREASE
-D-SECOND-LAW-1850-1865 --forbids--> PERPETUAL-MOTION-SECOND-KIND
-D-SECOND-LAW-1850-1865 --is-microscopically-grounded-by--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
-D-SECOND-LAW-1850-1865 --instantiates--> P-03
-```
-
 ## Extended historical investigation
 
 Carnot's reasoning is unusually instructive for discovery AI because it extracted a robust theorem from an incorrect heat ontology. He idealized the engine, introduced a reversible comparator, and used a contradiction construction: if a better engine existed, coupling devices would generate an impossible net effect. The discovery depended less on detailed data fitting than on choosing the right abstraction, boundary and counterfactual operation.
@@ -688,6 +749,34 @@ An evidence-versus-law ledger prevents conflation:
 - Distinguish entropy transfer $\delta Q/T_b$ from entropy production $dS_{\rm gen}$.
 - Apply entropy increase to a correctly closed composite system, not automatically to an open subsystem.
 - Store Einstein's remark as praise of classical thermodynamics in-domain, not as a direct Carnot quotation.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-STEAM-ENGINE-CYCLES --motivates--> D-CARNOT-1824
+R-ENGINE-SPECIFIC-OPTIMIZATION --reframed-by--> D-CARNOT-1824
+D-CARNOT-1824 --introduces--> A-CARNOT-REVERSIBILITY
+A-CARNOT-REVERSIBILITY --enables--> A-CARNOT-THEOREM
+D-FIRST-LAW-1847-1850 --revises-energy-accounting-of--> D-CARNOT-1824
+KELVIN-PLANCK-STATEMENT --equivalent-via-device-coupling--> CLAUSIUS-STATEMENT
+CLAUSIUS-STATEMENT --enables-contradiction-proof-of--> A-CARNOT-THEOREM
+A-CARNOT-THEOREM --implies--> REVERSIBLE-ENGINE-UNIVERSALITY
+REVERSIBLE-ENGINE-UNIVERSALITY --implies--> HEAT-RATIO-COMPOSITION-LAW
+HEAT-RATIO-COMPOSITION-LAW --defines--> THERMODYNAMIC-TEMPERATURE
+THERMODYNAMIC-TEMPERATURE --yields--> CARNOT-EFFICIENCY
+REVERSIBLE-AUXILIARY-ENGINES --derive--> CLAUSIUS-THEOREM
+CLAUSIUS-THEOREM --defines--> ENTROPY-STATE-FUNCTION
+REVERSIBLE-AUXILIARY-ENGINES --derive--> CLAUSIUS-INEQUALITY
+CLAUSIUS-INEQUALITY --implies--> ENTROPY-GENERATION-NONNEGATIVE
+ENTROPY-GENERATION-NONNEGATIVE --implies-for-isolated-system--> ENTROPY-INCREASE
+D-SECOND-LAW-1850-1865 --forbids--> PERPETUAL-MOTION-SECOND-KIND
+D-SECOND-LAW-1850-1865 --is-microscopically-grounded-by--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
+D-SECOND-LAW-1850-1865 --instantiates--> P-03
+```
 
 ## Sources
 

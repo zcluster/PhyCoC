@@ -2,7 +2,7 @@
 
 ## Review scope
 
-This review covers the 58 numbered case studies, their series README, and the executable validator. Newtonian mechanics is included at its chronological filename position as `08_newtonian_mechanics.md` and is checked through its specialized document schema. The review target is a discovery-AI corpus: historically nuanced, mathematically usable, explicit about rival pathways, and resistant to common label and scope errors.
+This review covers the 58 numbered case studies, their series README, and the executable validator. Newtonian mechanics is included at its chronological filename position as `08_newtonian_mechanics.md`; all canonical cases now share the same top-level discovery-process schema. The review target is a discovery-AI corpus: historically nuanced, mathematically usable, explicit about rival pathways, and resistant to common label and scope errors.
 
 ## Checks completed
 
@@ -40,7 +40,7 @@ Run:
 node history/fundamental_physics_discoveries/validate_corpus.mjs
 ```
 
-The validator checks all 58 numbered cases, including the specialized Newtonian case. It imports `chronology_data.mjs`, checks exact rendered timestamps, verifies that the README lists every case once in sortable focal chronology, and fails if a predecessor pathway's sortable key is not earlier than its focal discovery. A passing result certifies structural, syntactic, and encoded chronology invariants, not the truth of every historical interpretation.
+The validator checks all 58 numbered cases under the shared schema. It imports `chronology_data.mjs`, checks exact rendered timestamps, verifies that the README lists every case once in sortable focal chronology, and fails if a predecessor pathway's sortable key is not earlier than its focal discovery. A passing result certifies structural, syntactic, and encoded chronology invariants, not the truth of every historical interpretation.
 
 ## Core-backbone derivation audit (2026-07-26)
 
@@ -59,6 +59,16 @@ The 18 nodes classified in the interactive graph as the **Core theoretical backb
 Each expanded chain distinguishes empirical or structural inputs, algebraic consequences, derived observables, and scope conditions. Modern pedagogical reconstructions are labeled as such by context and are not represented as verbatim historical reasoning.
 
 The executable validator now maintains a minimum derivation floor for these 18 files: at least 1,800 words, at least eight display-equation blocks, and an explicit assumption/inference-role audit (with schema-aware markers for the Newton and Second Law cases). These thresholds cannot certify correctness, but they prevent accidental regression to formula-only summaries.
+
+## Discovery-process schema migration (2026-07-28)
+
+All 58 canonical cases were reorganized into the same causal training sequence: central claim and historical problem; time slices and admissible knowledge assets; predecessor pathways; interpolation failure; transformative move; extrapolative generalization; retention, predictions, and tests; compact discovery-pattern synthesis; canonical discovery node; prediction, validation, limitation, investigation, inference-note, edge, and source records.
+
+The former standalone `Discovery patterns` sections were removed. Their `P-01`–`P-06` instantiations now appear immediately after the case evidence that supports them and are consolidated in a three-column `Discovery-pattern synthesis` table. The interactive-graph parser was updated to read this nested table, preserving exactly six pattern nodes per case and 348 pattern nodes corpus-wide.
+
+The original discovery-equation sections were moved into each reconstruction's `Transformative move`, preserving equations and explanatory prose. The following `Discovery node and consolidated formalism` is intentionally compact: it serializes identity, date, claim, domain, epistemic status, generative role, retained structure, and up to three signature formal relations without repeating the full derivation.
+
+Seventeen migrated cases already contained a separately provenance-labeled historically novel prediction section; Special Relativity supplies another. Cases without such a record now carry `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED` rather than having later validation observations silently relabeled as prior predictions. This marker identifies a research gap, not evidence that the discovery had no novel consequences.
 
 ## Known limitations and responsible use
 

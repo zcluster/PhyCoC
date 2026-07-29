@@ -15,6 +15,10 @@
 
 An entangled state of a composite quantum system cannot be represented as a product of states belonging separately to its parts. The whole has a well-defined quantum state while the subsystems may possess only mixed reduced states, and measurements can display correlations unavailable to separable preparations. The 1935 EPR argument exposed this nonseparability while attempting to show incompleteness; Schrödinger identified it as the characteristic feature of quantum mechanics. Entanglement alone neither permits controllable faster-than-light signaling nor settles the ontology of the quantum state.
 
+## Historical problem
+
+Before the focal discovery (1935 EPR paper and Schrödinger's entanglement analysis), the case confronted a linked set of pressures: Tensor-product wavefunctions describe interacting systems; Perfect correlations confront locality and completeness. The pathways `R-SEPARABLE-COMPOSITE-STATE`, `R-WAVEFUNCTION-AS-COMPLETE-LOCAL-PROPERTIES`, `R-EPR-LOCAL-COMPLETE-QM` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Composite quantum systems, correlations, quantum foundations, and quantum information was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -24,6 +28,15 @@ An entangled state of a composite quantum system cannot be represented as a prod
 | `TS-SCHRODINGER` | 1935–1936 | Analyze what interaction does to subsystem states | “Entanglement” and steering are articulated |
 | `TS-BELL` | 1964–1982 | Separate philosophical claims from testable correlation bounds | Bell inequalities and experiments constrain local-causal models |
 | `TS-QUANTUM-INFORMATION` | 1980s onward | Treat correlations as operational resources | Teleportation, cryptography, computation, and entanglement measures develop |
+
+## Knowledge assets
+
+- `A-TENSOR-PRODUCT`: mathematical composition of quantum state spaces.
+- `A-SUPERPOSITION`: coherent addition of alternative joint amplitudes.
+- `A-INCOMPATIBLE-OBSERVABLES`: noncommuting measurements and uncertainty.
+- `A-EPR-CORRELATIONS`: perfect cross-system prediction used to test completeness.
+- `A-DENSITY-OPERATOR`: state representation for mixtures and subsystems.
+- `A-RELATIVISTIC-CAUSALITY`: constraint against controllable superluminal communication.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -77,16 +90,25 @@ An entangled state of a composite quantum system cannot be represented as a prod
 | EPR local complete quantum mechanics | Combine completeness with a strong no-disturbance reality criterion | Produces the EPR dilemma for incompatible observables | Foundational diagnostic and steering scenario |
 | **Discovery/current: quantum entanglement** | Treat the joint state as primary and subsystems through reduced states and conditional statistics | Does not by itself choose an interpretation or enable signaling | Experimentally established nonseparable resource |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-TENSOR-PRODUCT`: mathematical composition of quantum state spaces.
-- `A-SUPERPOSITION`: coherent addition of alternative joint amplitudes.
-- `A-INCOMPATIBLE-OBSERVABLES`: noncommuting measurements and uncertainty.
-- `A-EPR-CORRELATIONS`: perfect cross-system prediction used to test completeness.
-- `A-DENSITY-OPERATOR`: state representation for mixtures and subsystems.
-- `A-RELATIVISTIC-CAUSALITY`: constraint against controllable superluminal communication.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-TENSOR-PRODUCT`, `A-SUPERPOSITION`, `A-INCOMPATIBLE-OBSERVABLES`, `A-EPR-CORRELATIONS`, `A-DENSITY-OPERATOR`, `A-RELATIVISTIC-CAUSALITY`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-SEPARABLE-COMPOSITE-STATE` | The assumption that after two systems separate, their complete joint physical state can always be written as a product \(\|\psi_A\rangle\otimes\|\psi_B\rangle\), or as an ordinary probabilistic mixture of such products, so all correlations arise from locally possessed states and shared classical randomness. | See the full pathway record above. |
+| `R-WAVEFUNCTION-AS-COMPLETE-LOCAL-PROPERTIES` | A reading in which the joint wavefunction is complete while each separated subsystem simultaneously possesses its own complete pure-state wavefunction and all correlations can be understood through those local pure properties. | See the full pathway record above. |
+| `R-EPR-LOCAL-COMPLETE-QM` | The conjunction used to sharpen the EPR dilemma: the quantum wavefunction is a complete description, and a measurement performed on one spatially separated system cannot affect the physical reality of the other. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “What properties does each particle carry?” becomes “What joint and reduced states are defined?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For two qubits, the Bell singlet is
 
@@ -152,6 +174,89 @@ $$
 
 otherwise it is entangled.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Perfect correlations become consequences of a nonfactorizable joint state
+
+- `P-03` — **Reframe the inherited problem:** “What properties does each particle carry?” becomes “What joint and reduced states are defined?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Holistic quantum information without autonomous pure subsystem states is tolerated
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Composite quantum systems, correlations, quantum foundations, and quantum information). The case-specific unification was: Composite-system probability, quantum state structure, and causal questions are unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Composite-system probability, quantum state structure, and causal questions are unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Perfect correlations become consequences of a nonfactorizable joint state
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Product states and classical correlations remain the separable subset. Its quantitative or otherwise discriminating test strategy is: Entanglement witnesses, tomography, Bell inequalities, and operational tasks quantify the structure. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Product states and classical correlations remain the separable subset
+
+- `P-06` — **Prioritize discriminating tests:** Entanglement witnesses, tomography, Bell inequalities, and operational tasks quantify the structure
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Composite-system probability, quantum state structure, and causal questions are unified |
+| `P-02` | Transformative move and generative deduction | Perfect correlations become consequences of a nonfactorizable joint state |
+| `P-03` | Diagnosis of interpolation failure and reframing | “What properties does each particle carry?” becomes “What joint and reduced states are defined?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Holistic quantum information without autonomous pure subsystem states is tolerated |
+| `P-05` | Retention and limiting recovery | Product states and classical correlations remain the separable subset |
+| `P-06` | Prediction, discrimination, and validation network | Entanglement witnesses, tomography, Bell inequalities, and operational tasks quantify the structure |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-ENTANGLEMENT-1935` |
+| Focal date | 1935 EPR paper and Schrödinger's entanglement analysis |
+| Central claim | An entangled state of a composite quantum system cannot be represented as a product of states belonging separately to its parts. The whole has a well-defined quantum state while the subsystems may possess only mixed reduced states, and measurements can display correlations unavailable to separable preparations. The 1935 EPR argument exposed this nonseparability while attempting to show incompleteness; Schrödinger identified it as the characteristic feature of quantum mechanics. Entanglement alone neither permits controllable faster-than-light signaling nor settles the ontology of the quantum state. |
+| Domain | Composite quantum systems, correlations, quantum foundations, and quantum information |
+| Epistemic status | Entangled states and their operational consequences are experimentally established; interpretations of quantum states and nonlocality remain contested |
+| Generative role | Perfect correlations become consequences of a nonfactorizable joint state |
+| Retained structure | Product states and classical correlations remain the separable subset |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+|\Psi^-\rangle
+=\frac{1}{\sqrt2}
+\left(
+|0\rangle_A|1\rangle_B
+-|1\rangle_A|0\rangle_B
+\right).
+$$
+
+$$
+\rho_{AB}=|\Psi^-\rangle\langle\Psi^-|.
+$$
+
+$$
+\rho_A=\operatorname{Tr}_B\rho_{AB}=\frac12I_A,
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Quantum Entanglement and Nonseparability: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 Entanglement explains correlation patterns in atomic cascades, photons, ions, superconducting circuits, spins, and many-body systems. Bell tests establish that appropriate entangled correlations cannot be reproduced by the tested local-causal model class under stated assumptions. Quantum teleportation transfers an unknown state using a shared entangled state plus classical communication; it does not transport matter or usable information instantaneously. Entanglement also organizes phase structure, thermalization, quantum error correction, and computational advantage.
@@ -171,30 +276,6 @@ $$
 $$
 
 Conditional correlations become visible only when outcomes or settings are compared through ordinary communication. Interpretations differ over collapse, branching, hidden variables, or epistemic states; the operational predictions do not uniquely decide among all of them.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Composite-system probability, quantum state structure, and causal questions are unified |
-| `P-02` | Perfect correlations become consequences of a nonfactorizable joint state |
-| `P-03` | “What properties does each particle carry?” becomes “What joint and reduced states are defined?” |
-| `P-04` | Holistic quantum information without autonomous pure subsystem states is tolerated |
-| `P-05` | Product states and classical correlations remain the separable subset |
-| `P-06` | Entanglement witnesses, tomography, Bell inequalities, and operational tasks quantify the structure |
-
-## Edge list
-
-```text
-A-TENSOR-PRODUCT --enables--> D-ENTANGLEMENT-1935
-A-EPR-CORRELATIONS --exposes--> NONSEPARABILITY
-D-ENTANGLEMENT-1935 --implies--> MIXED-REDUCED-STATE
-SCHMIDT-RANK-GREATER-THAN-ONE --classifies--> PURE-STATE-ENTANGLEMENT
-LOCAL-TRACE-PRESERVING-OPERATION --preserves--> REMOTE-MARGINAL
-D-ENTANGLEMENT-1935 --precedes--> BELL-THEOREM-1964
-D-ENTANGLEMENT-1935 --enables--> QUANTUM-TELEPORTATION
-D-ENTANGLEMENT-1935 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -257,6 +338,23 @@ In many-body physics, entanglement entropy can diagnose gapped phases, critical 
 - Do not translate correlation into causal influence or communication.
 - Store mixed-state separability as a convex-decomposition question, not merely failure of a displayed product.
 - Distinguish historical purpose from later significance: EPR used the state to criticize completeness; later work established it as an operational resource.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-TENSOR-PRODUCT --enables--> D-ENTANGLEMENT-1935
+A-EPR-CORRELATIONS --exposes--> NONSEPARABILITY
+D-ENTANGLEMENT-1935 --implies--> MIXED-REDUCED-STATE
+SCHMIDT-RANK-GREATER-THAN-ONE --classifies--> PURE-STATE-ENTANGLEMENT
+LOCAL-TRACE-PRESERVING-OPERATION --preserves--> REMOTE-MARGINAL
+D-ENTANGLEMENT-1935 --precedes--> BELL-THEOREM-1964
+D-ENTANGLEMENT-1935 --enables--> QUANTUM-TELEPORTATION
+D-ENTANGLEMENT-1935 --instantiates--> P-03
+```
 
 ## Sources
 

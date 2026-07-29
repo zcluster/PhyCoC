@@ -15,6 +15,10 @@
 
 Huygens supplied a wavefront construction, Young demonstrated interference, and Fresnel developed quantitative diffraction. Their work showed that intensities cannot always be added as independent rays: amplitudes superpose, creating bright and dark regions. Quantum theory later retained amplitude superposition while replacing a purely classical medium picture.
 
+## Historical problem
+
+Before the focal discovery (1801–1818 (Young interference through Fresnel diffraction)), the case confronted a linked set of pressures: Rays or particles explain rectilinear propagation and reflection; Secondary wavelets advance wavefronts. The pathways `R-NEWTONIAN-CORPUSCLES`, `R-LONGITUDINAL-LIGHT-WAVES`, `R-TRANSVERSE-ELASTIC-ETHER` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Interference, diffraction, refraction, and polarization was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Framework | Transition |
@@ -25,6 +29,14 @@ Huygens supplied a wavefront construction, Young demonstrated interference, and 
 | `TS-FRESNEL` | 1815–1818 | Diffraction integrals and transverse waves developed | Wave theory makes risky quantitative predictions |
 | `TS-MAXWELL` | 1860s | Light identified as electromagnetic wave | Mechanical ether becomes less central |
 | `TS-QUANTUM` | 1900 onward | Photons detected individually yet build interference | Probability amplitudes replace classical either/or ontology |
+
+## Knowledge assets
+
+- `A-WATER-SOUND-WAVES`: analogy of superposition and fronts.
+- `A-THIN-FILMS`: colored interference phenomena.
+- `A-DIFFRACTION`: bending and fringes near edges.
+- `A-PHASE`: periodic wave state.
+- `A-POLARIZATION`: evidence favoring transverse rather than longitudinal light waves.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -75,15 +87,25 @@ Newtonian corpuscular optics could explain reflection and refraction by hypothes
 
 The later photon did not restore Newton's corpuscle model unchanged. Single-photon interference preserves probability amplitudes and phase, while localized detection retains a particle-like outcome. The correct retained-element edge is therefore `CORPUSCULAR-DISCRETENESS --transformed-into--> QUANTUM-DETECTION`, not simple historical vindication.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-WATER-SOUND-WAVES`: analogy of superposition and fronts.
-- `A-THIN-FILMS`: colored interference phenomena.
-- `A-DIFFRACTION`: bending and fringes near edges.
-- `A-PHASE`: periodic wave state.
-- `A-POLARIZATION`: evidence favoring transverse rather than longitudinal light waves.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-WATER-SOUND-WAVES`, `A-THIN-FILMS`, `A-DIFFRACTION`, `A-PHASE`, `A-POLARIZATION`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-NEWTONIAN-CORPUSCLES` | A classical particle theory of light in which luminous bodies emit tiny corpuscles that travel along rays and are reflected, refracted, or color-separated by forces near material surfaces. | No consistent mechanical ether gained empirical support; relativity removed the need for a preferred rest medium. |
+| `R-LONGITUDINAL-LIGHT-WAVES` | An early optical-wave analogy in which light oscillations are longitudinal compressions and rarefactions of an ether, like sound waves in air. | Polarization requires a directional transverse degree of freedom that a simple longitudinal wave cannot supply. |
+| `R-TRANSVERSE-ELASTIC-ETHER` | A refined ether model in which light is a transverse shear vibration of an extremely rigid yet matter-penetrating elastic medium. | Its required mechanical properties were mutually difficult to reconcile and no preferred ether motion was established. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Which ray path?” reframed as “How do amplitudes combine?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For two coherent fields:
 
@@ -117,6 +139,84 @@ $$
 
 Destructive interference is not two positive intensities canceling; signed or complex amplitudes cancel before intensity is formed.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Fringe positions generated from phase relations
+
+- `P-03` — **Reframe the inherited problem:** “Which ray path?” reframed as “How do amplitudes combine?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Extended waves and later probability amplitudes accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Interference, diffraction, refraction, and polarization). The case-specific unification was: Refraction, diffraction, interference, and polarization joined. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Refraction, diffraction, interference, and polarization joined
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Fringe positions generated from phase relations
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Ray optics retained as a short-wavelength limit. Its quantitative or otherwise discriminating test strategy is: Bright/dark fringe locations offered precise tests. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Ray optics retained as a short-wavelength limit
+
+- `P-06` — **Prioritize discriminating tests:** Bright/dark fringe locations offered precise tests
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Refraction, diffraction, interference, and polarization joined |
+| `P-02` | Transformative move and generative deduction | Fringe positions generated from phase relations |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Which ray path?” reframed as “How do amplitudes combine?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Extended waves and later probability amplitudes accepted |
+| `P-05` | Retention and limiting recovery | Ray optics retained as a short-wavelength limit |
+| `P-06` | Prediction, discrimination, and validation network | Bright/dark fringe locations offered precise tests |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-WAVE-INTERFERENCE-1690-1818` |
+| Focal date | 1801–1818 (Young interference through Fresnel diffraction) |
+| Central claim | Huygens supplied a wavefront construction, Young demonstrated interference, and Fresnel developed quantitative diffraction. Their work showed that intensities cannot always be added as independent rays: amplitudes superpose, creating bright and dark regions. Quantum theory later retained amplitude superposition while replacing a purely classical medium picture. |
+| Domain | Interference, diffraction, refraction, and polarization |
+| Epistemic status | Wave superposition is fundamental; classical waves are the high-occupation limit of quantum electrodynamics |
+| Generative role | Fringe positions generated from phase relations |
+| Retained structure | Ray optics retained as a short-wavelength limit |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+E=E_1+E_2.
+$$
+
+$$
+I=I_1+I_2+2\sqrt{I_1I_2}\cos\delta,
+$$
+
+$$
+I=4I_0\cos^2\left(\frac{\delta}{2}\right).
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Wave Theory and Interference of Light: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Young fringes link spacing to wavelength and geometry.
@@ -128,32 +228,6 @@ Destructive interference is not two positive intensities canceling; signed or co
 ## Limitations and retained status
 
 Classical wave optics does not explain photon counting, photoelectric thresholds, antibunching, or spontaneous emission. Geometrical optics emerges when wavelength is small relative to apparatus scales. Quantum optics retains complex-amplitude superposition and recovers classical fields for suitable coherent states and large occupation numbers.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Refraction, diffraction, interference, and polarization joined |
-| `P-02` | Fringe positions generated from phase relations |
-| `P-03` | “Which ray path?” reframed as “How do amplitudes combine?” |
-| `P-04` | Extended waves and later probability amplitudes accepted |
-| `P-05` | Ray optics retained as a short-wavelength limit |
-| `P-06` | Bright/dark fringe locations offered precise tests |
-
-## Edge list
-
-```text
-A-DIFFRACTION --challenges--> R-NEWTONIAN-CORPUSCLES
-A-THIN-FILMS --contributes-to--> D-WAVE-INTERFERENCE-1690-1818
-D-HUYGENS-WAVEFRONT --precedes--> D-YOUNG-INTERFERENCE
-D-YOUNG-INTERFERENCE --precedes--> D-FRESNEL-DIFFRACTION
-EQ-SUPERPOSITION --generates--> V-BRIGHT-DARK-FRINGES
-V-ARAGO-SPOT --validates--> D-FRESNEL-DIFFRACTION
-D-MAXWELL-FIELD --reframes--> D-WAVE-INTERFERENCE-1690-1818
-D-QUANTUM-OPTICS --retains--> EQ-SUPERPOSITION
-D-WAVE-INTERFERENCE-1690-1818 --instantiates--> P-02
-D-WAVE-INTERFERENCE-1690-1818 --instantiates--> P-05
-```
 
 ## Extended historical investigation
 
@@ -314,6 +388,25 @@ Individual photons arrive as localized detector events, while repeated events fo
 - Add coherence assumptions to interference equations.
 - Do not treat wave–particle duality as alternating classical identities; use quantum-state and measurement nodes.
 - Separate Huygens's construction, Young's interference, and Fresnel's diffraction theory.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-DIFFRACTION --challenges--> R-NEWTONIAN-CORPUSCLES
+A-THIN-FILMS --contributes-to--> D-WAVE-INTERFERENCE-1690-1818
+D-HUYGENS-WAVEFRONT --precedes--> D-YOUNG-INTERFERENCE
+D-YOUNG-INTERFERENCE --precedes--> D-FRESNEL-DIFFRACTION
+EQ-SUPERPOSITION --generates--> V-BRIGHT-DARK-FRINGES
+V-ARAGO-SPOT --validates--> D-FRESNEL-DIFFRACTION
+D-MAXWELL-FIELD --reframes--> D-WAVE-INTERFERENCE-1690-1818
+D-QUANTUM-OPTICS --retains--> EQ-SUPERPOSITION
+D-WAVE-INTERFERENCE-1690-1818 --instantiates--> P-02
+D-WAVE-INTERFERENCE-1690-1818 --instantiates--> P-05
+```
 
 ## Sources
 

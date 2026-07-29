@@ -37,6 +37,7 @@ const categoryOverrides = new Map([
 const files = fs
   .readdirSync(corpusDir)
   .filter((name) => /^\d{2}_.+\.md$/.test(name))
+  .filter((name) => !name.endsWith("_trial.md"))
   .sort((left, right) => chronology[left].discovery[1] - chronology[right].discovery[1]);
 
 buildCasePages({ historyDir, corpusDir, files });
@@ -138,11 +139,23 @@ function parseAssets(text) {
 }
 
 function parsePatterns(text) {
-  const body = section(text, ["Discovery patterns", "Transferable discovery patterns"]);
+  let body = section(text, ["Discovery patterns", "Transferable discovery patterns"]);
+  if (!body) {
+    const processBody = section(text, [
+      "Discovery-process reconstruction: interpolation, transformation, and extrapolation",
+    ]);
+    const marker = "### Discovery-pattern synthesis";
+    const start = processBody.indexOf(marker);
+    if (start >= 0) {
+      const contentStart = start + marker.length;
+      const next = processBody.indexOf("\n### ", contentStart);
+      body = processBody.slice(contentStart, next < 0 ? processBody.length : next).trim();
+    }
+  }
   const output = [];
   for (const row of parseTable(body)) {
     const id = row[0]?.match(/P-\d{2}/)?.[0];
-    if (id) output.push({ id, detail: row.slice(1).join(" — ") });
+    if (id) output.push({ id, detail: row[2] || row.slice(1).join(" — ") });
   }
   return output;
 }

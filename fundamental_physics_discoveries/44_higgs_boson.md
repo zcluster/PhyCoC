@@ -15,6 +15,10 @@
 
 ATLAS and CMS independently observed a new boson in multiple decay channels with local significances near or above the conventional five-sigma discovery threshold. Subsequent spin, parity, and coupling measurements identify it as consistent with the Standard Model Higgs boson.
 
+## Historical problem
+
+Before the focal discovery (4 July 2012 announcement), the case confronted a linked set of pressures: Gauge-boson mass mechanism proposed; Precision data constrain radiative effects. The pathways `R-NO-PHYSICAL-SCALAR-MINIMAL-MECHANISM`, `R-BACKGROUND-FLUCTUATION`, `R-DETECTOR-CALIBRATION-HIGGS-ARTIFACT`, `R-SPIN-ONE-125-GEV-RESONANCE`, `R-PURE-CP-ODD-OR-HIGHER-SPIN-HIGGS-CANDIDATE` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Electroweak symmetry breaking and scalar fields was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Development | Transition |
@@ -25,6 +29,14 @@ ATLAS and CMS independently observed a new boson in multiple decay channels with
 | `TS-LHC-SEARCH` | 2010–2012 | High-energy collisions and detectors | Excesses accumulate |
 | `TS-DISCOVERY` | July 2012 | ATLAS and CMS announce new boson | Higgs sector becomes empirical |
 | `TS-COUPLINGS` | 2012 onward | Properties measured | Minimal model tested increasingly precisely |
+
+## Knowledge assets
+
+- `A-BEH-MECHANISM`: predicts scalar excitation in minimal realization.
+- `A-LHC`: produces high-energy parton collisions.
+- `A-ATLAS-CMS`: independent general-purpose detectors.
+- `A-DECAY-CHANNELS`: \(\gamma\gamma\), \(ZZ^*\), \(WW^*\), fermions.
+- `A-STATISTICAL-TESTING`: local/global significance and signal strength.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -76,15 +88,27 @@ ATLAS and CMS independently observed a new boson in multiple decay channels with
 
 The July 2012 claim was deliberately “a new boson” before accumulated property measurements established a Standard-Model-compatible Higgs. Five sigma addresses a background-only statistical pathway, not every systematic or alternate particle identity. Independent experiments, high-resolution channels, fermionic decays, production modes, and spin-parity tests progressively closed those pathways. Minimal-sector completeness remains an open claim.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-BEH-MECHANISM`: predicts scalar excitation in minimal realization.
-- `A-LHC`: produces high-energy parton collisions.
-- `A-ATLAS-CMS`: independent general-purpose detectors.
-- `A-DECAY-CHANNELS`: \(\gamma\gamma\), \(ZZ^*\), \(WW^*\), fermions.
-- `A-STATISTICAL-TESTING`: local/global significance and signal strength.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node, data, and inference
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-BEH-MECHANISM`, `A-LHC`, `A-ATLAS-CMS`, `A-DECAY-CHANNELS`, `A-STATISTICAL-TESTING`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-NO-PHYSICAL-SCALAR-MINIMAL-MECHANISM` | Electroweak-symmetry-breaking models in which strong dynamics, compositeness, or a nonminimal sector gives \(W\) and \(Z\) their masses without leaving one Standard-Model-like elementary scalar excitation. | See the full pathway record above. |
+| `R-BACKGROUND-FLUCTUATION` | The null hypothesis that the observed excess events near \(125\ \mathrm{GeV}\) are a random upward fluctuation of known backgrounds rather than production and decay of a new particle. | See the full pathway record above. |
+| `R-DETECTOR-CALIBRATION-HIGGS-ARTIFACT` | The hypothesis that energy-scale, reconstruction, or detector effects create a false common resonance. | See the full pathway record above. |
+| `R-SPIN-ONE-125-GEV-RESONANCE` | A new spin-1 particle rather than a scalar as the source of the \(125\)-GeV signal. | See the full pathway record above. |
+| `R-PURE-CP-ODD-OR-HIGHER-SPIN-HIGGS-CANDIDATE` | A resonance with purely pseudoscalar or higher-spin quantum numbers rather than the Standard Model \(0^+\) assignment. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Broad search reframed as cross-channel parameter inference. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Resonance invariant mass is reconstructed from decay products:
 
@@ -116,6 +140,88 @@ $$
 
 The five-sigma convention corresponds to a very small background-only local tail probability, but inference also depends on trials, modeling, calibration, and independent replication.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Couplings generate production and decay-rate predictions
+
+- `P-03` — **Reframe the inherited problem:** Broad search reframed as cross-channel parameter inference
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Fundamental scalar field accepted empirically
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Electroweak symmetry breaking and scalar fields). The case-specific unification was: Collider channels and symmetry-breaking theory unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Collider channels and symmetry-breaking theory unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Couplings generate production and decay-rate predictions
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Electroweak theory retained and completed minimally. Its quantitative or otherwise discriminating test strategy is: Independent detectors, significance, spin, and couplings test identity. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Electroweak theory retained and completed minimally
+
+- `P-06` — **Prioritize discriminating tests:** Independent detectors, significance, spin, and couplings test identity
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Collider channels and symmetry-breaking theory unified |
+| `P-02` | Transformative move and generative deduction | Couplings generate production and decay-rate predictions |
+| `P-03` | Diagnosis of interpolation failure and reframing | Broad search reframed as cross-channel parameter inference |
+| `P-04` | Transformative representation, ontology, or mechanism | Fundamental scalar field accepted empirically |
+| `P-05` | Retention and limiting recovery | Electroweak theory retained and completed minimally |
+| `P-06` | Prediction, discrimination, and validation network | Independent detectors, significance, spin, and couplings test identity |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-HIGGS-BOSON-2012` |
+| Focal date | 4 July 2012 announcement |
+| Central claim | ATLAS and CMS independently observed a new boson in multiple decay channels with local significances near or above the conventional five-sigma discovery threshold. Subsequent spin, parity, and coupling measurements identify it as consistent with the Standard Model Higgs boson. |
+| Domain | Electroweak symmetry breaking and scalar fields |
+| Epistemic status | A scalar boson near \(125\ \mathrm{GeV}\) with Standard-Model-Higgs-compatible properties is established |
+| Generative role | Couplings generate production and decay-rate predictions |
+| Retained structure | Electroweak theory retained and completed minimally |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+m_{\mathrm{inv}}^2c^4
+=\left(\sum_iE_i\right)^2
+-c^2\left|\sum_i\mathbf{p}_i\right|^2.
+$$
+
+$$
+m_H\approx125\ \mathrm{GeV}/c^2.
+$$
+
+$$
+\mu
+=\frac{\sigma(pp\rightarrow H)\,\mathrm{BR}(H\rightarrow X)}
+{\left[\sigma\,\mathrm{BR}\right]_{\mathrm{SM}}}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Higgs Boson Discovery: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - ATLAS and CMS saw compatible mass peaks independently.
@@ -127,31 +233,6 @@ The five-sigma convention corresponds to a very small background-only local tail
 ## Limitations and retained status
 
 Current measurements allow some non-Standard-Model coupling deviations. Discovery does not prove the minimal Higgs sector is complete, explain the hierarchy problem, identify dark matter, or explain Yukawa values. The boson is evidence for the field's excitation, not the source of most nucleon mass.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Collider channels and symmetry-breaking theory unified |
-| `P-02` | Couplings generate production and decay-rate predictions |
-| `P-03` | Broad search reframed as cross-channel parameter inference |
-| `P-04` | Fundamental scalar field accepted empirically |
-| `P-05` | Electroweak theory retained and completed minimally |
-| `P-06` | Independent detectors, significance, spin, and couplings test identity |
-
-## Edge list
-
-```text
-A-BEH-MECHANISM --predicts--> HIGGS-SCALAR
-A-LHC --produces--> HIGGS-CANDIDATES
-A-ATLAS-CMS --detect--> HIGGS-DECAY-PRODUCTS
-INVARIANT-MASS-RECONSTRUCTION --reveals--> RESONANCE-125-GEV
-RESONANCE-125-GEV --rejects--> R-BACKGROUND-FLUCTUATION
-V-DIPHOTON --excludes--> SPIN-ONE
-V-ANGULAR-DISTRIBUTIONS --support--> JP-ZERO-PLUS
-D-HIGGS-BOSON-2012 --supports--> D-BEH-MECHANISM-1964
-D-HIGGS-BOSON-2012 --instantiates--> P-06
-```
 
 ## Extended historical investigation
 
@@ -212,13 +293,29 @@ The boson discovery strongly supports the minimal electroweak-breaking picture, 
 - Represent coupling fits with their width and new-decay assumptions.
 - Keep the 1964 mechanism node distinct from the 2012 empirical particle node.
 
-## Further coupling and vacuum implications
+## Additional quantitative and epistemic notes
+
+### Further coupling and vacuum implications
 
 Higgs production by gluon fusion and decay to two photons occur mainly through loops, so their rates probe both known heavy particles and possible new charged or colored states. Direct tree-level channels are needed to disentangle loop modifications.
 
 The measured Higgs and top masses place the renormalization-group evolution of the quartic coupling near a boundary between absolute stability and metastability in the minimal extrapolation. This statement depends sensitively on masses, \(\alpha_s\), perturbative order, and the assumption that no new physics intervenes. It is not evidence that a catastrophic transition is imminent.
 
 At hadron colliders the trilinear coupling is accessed mainly through rare double-Higgs production, where diagrams containing the self-coupling interfere with diagrams that do not. A rate near the Standard Model prediction would still leave degeneracies; differential distributions and future collider data are required to reconstruct the potential.
+
+## Edge list
+
+```text
+A-BEH-MECHANISM --predicts--> HIGGS-SCALAR
+A-LHC --produces--> HIGGS-CANDIDATES
+A-ATLAS-CMS --detect--> HIGGS-DECAY-PRODUCTS
+INVARIANT-MASS-RECONSTRUCTION --reveals--> RESONANCE-125-GEV
+RESONANCE-125-GEV --rejects--> R-BACKGROUND-FLUCTUATION
+V-DIPHOTON --excludes--> SPIN-ONE
+V-ANGULAR-DISTRIBUTIONS --support--> JP-ZERO-PLUS
+D-HIGGS-BOSON-2012 --supports--> D-BEH-MECHANISM-1964
+D-HIGGS-BOSON-2012 --instantiates--> P-06
+```
 
 ## Sources
 

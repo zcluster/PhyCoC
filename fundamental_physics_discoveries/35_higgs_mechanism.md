@@ -15,6 +15,10 @@
 
 A gauge theory can preserve its underlying local symmetry while its vacuum state selects a nonzero field value. Gauge bosons then acquire longitudinal modes and mass; matter fields can acquire masses through Yukawa couplings. A physical scalar excitation remains.
 
+## Historical problem
+
+Before the focal discovery (1964 BEH-mechanism papers), the case confronted a linked set of pressures: Explicit gauge-boson mass breaks gauge structure; Spontaneous breaking yields massless Goldstone bosons. The pathways `R-EXPLICIT-VECTOR-MASS`, `R-GLOBAL-BREAKING-FOR-WEAK-MASS`, `R-STUECKELBERG-MASS` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Spontaneous symmetry breaking in gauge theory was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -24,6 +28,13 @@ A gauge theory can preserve its underlying local symmetry while its vacuum state
 | `TS-1964-PAPERS` | 1964 | Gauge field absorbs Goldstone mode | Massive vector theory possible |
 | `TS-ELECTROWEAK` | 1967 onward | Mechanism embedded in \(SU(2)_L\times U(1)_Y\) | Renormalizable theory built |
 | `TS-HIGGS-DISCOVERY` | 2012 | Scalar resonance observed | Mechanism's particle signature confirmed |
+
+## Knowledge assets
+
+- `A-GAUGE-SYMMETRY`: organizes interactions.
+- `A-SPONTANEOUS-BREAKING`: symmetric law, asymmetric ground state.
+- `A-GOLDSTONE`: broken global continuous symmetry produces massless modes.
+- `A-WEAK-RANGE`: implies heavy mediators.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -63,14 +74,25 @@ A gauge theory can preserve its underlying local symmetry while its vacuum state
 
 The 1964 solution did not merely hide a forbidden mass term. It changed the spectrum while maintaining the gauge framework needed for controlled high-energy behavior. The subsequent renormalizability proof and electroweak implementation were independent validation steps. Discovery of a Standard-Model-like scalar strongly constrains no-scalar models but does not prove that the minimal Higgs doublet is the only field participating in symmetry breaking.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-GAUGE-SYMMETRY`: organizes interactions.
-- `A-SPONTANEOUS-BREAKING`: symmetric law, asymmetric ground state.
-- `A-GOLDSTONE`: broken global continuous symmetry produces massless modes.
-- `A-WEAK-RANGE`: implies heavy mediators.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivation
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-GAUGE-SYMMETRY`, `A-SPONTANEOUS-BREAKING`, `A-GOLDSTONE`, `A-WEAK-RANGE`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-EXPLICIT-VECTOR-MASS` | A massive-gauge-boson model that inserts a Proca term \(m^2A_\mu A^\mu/2\) directly into the Lagrangian rather than generating the mass through a gauge-compatible vacuum and scalar field. | Destroys the gauge structure needed for high-energy consistency in non-Abelian theories. |
+| `R-GLOBAL-BREAKING-FOR-WEAK-MASS` | Applying spontaneous breaking of a global continuous symmetry directly to weak-boson mass generation. | See the full pathway record above. |
+| `R-STUECKELBERG-MASS` | The 1938 Stueckelberg construction that introduces an additional compensating scalar degree of freedom so an Abelian vector field can be massive while retaining a gauge-like redundancy. | Straightforward non-Abelian extensions did not provide the economical electroweak symmetry-breaking structure later supplied by the BEH mechanism. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Explicit mass reframed as vacuum-state effect. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For a complex scalar:
 
@@ -116,6 +138,88 @@ $$
 m_f=\frac{y_fv}{\sqrt2}.
 $$
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Vacuum expectation value generates masses and couplings
+
+- `P-03` — **Reframe the inherited problem:** Explicit mass reframed as vacuum-state effect
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Nonempty symmetry-breaking vacuum accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Spontaneous symmetry breaking in gauge theory). The case-specific unification was: Symmetry, vacuum structure, and particle mass unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Symmetry, vacuum structure, and particle mass unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Vacuum expectation value generates masses and couplings
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Gauge symmetry retained rather than discarded. Its quantitative or otherwise discriminating test strategy is: Boson masses and scalar couplings provide tests. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Gauge symmetry retained rather than discarded
+
+- `P-06` — **Prioritize discriminating tests:** Boson masses and scalar couplings provide tests
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Symmetry, vacuum structure, and particle mass unified |
+| `P-02` | Transformative move and generative deduction | Vacuum expectation value generates masses and couplings |
+| `P-03` | Diagnosis of interpolation failure and reframing | Explicit mass reframed as vacuum-state effect |
+| `P-04` | Transformative representation, ontology, or mechanism | Nonempty symmetry-breaking vacuum accepted |
+| `P-05` | Retention and limiting recovery | Gauge symmetry retained rather than discarded |
+| `P-06` | Prediction, discrimination, and validation network | Boson masses and scalar couplings provide tests |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-BEH-MECHANISM-1964` |
+| Focal date | 1964 BEH-mechanism papers |
+| Central claim | A gauge theory can preserve its underlying local symmetry while its vacuum state selects a nonzero field value. Gauge bosons then acquire longitudinal modes and mass; matter fields can acquire masses through Yukawa couplings. A physical scalar excitation remains. |
+| Domain | Spontaneous symmetry breaking in gauge theory |
+| Epistemic status | Core mechanism of electroweak symmetry breaking; does not explain all mass |
+| Generative role | Vacuum expectation value generates masses and couplings |
+| Retained structure | Gauge symmetry retained rather than discarded |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+V(\phi)=-\mu^2|\phi|^2+\lambda|\phi|^4,
+\qquad
+\mu^2,\lambda>0.
+$$
+
+$$
+|\langle\phi\rangle|=\frac{v}{\sqrt2},
+\qquad
+v=\frac{\mu}{\sqrt\lambda}.
+$$
+
+$$
+|D_\mu\phi|^2
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Higgs Mechanism: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Makes massive weak bosons compatible with gauge theory.
@@ -126,31 +230,6 @@ $$
 ## Limitations and retained status
 
 Most proton and neutron mass arises from QCD energy, not directly from Higgs couplings. The mechanism does not explain the numerical Yukawa hierarchy, dark matter, neutrino masses in the minimal model, or why the Higgs potential has its values. “Particles move through molasses” is an inadequate literal picture.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Symmetry, vacuum structure, and particle mass unified |
-| `P-02` | Vacuum expectation value generates masses and couplings |
-| `P-03` | Explicit mass reframed as vacuum-state effect |
-| `P-04` | Nonempty symmetry-breaking vacuum accepted |
-| `P-05` | Gauge symmetry retained rather than discarded |
-| `P-06` | Boson masses and scalar couplings provide tests |
-
-## Edge list
-
-```text
-A-WEAK-RANGE --requires--> MASSIVE-WEAK-BOSONS
-R-EXPLICIT-VECTOR-MASS --conflicts-with--> A-GAUGE-SYMMETRY
-A-SPONTANEOUS-BREAKING --contributes-to--> D-BEH-MECHANISM-1964
-A-GOLDSTONE --reframed-by--> GAUGE-FIELD-ABSORPTION
-VACUUM-EXPECTATION-VALUE --generates--> W-Z-MASSES
-VACUUM-EXPECTATION-VALUE --with-Yukawa-generates--> FERMION-MASSES
-D-BEH-MECHANISM-1964 --contributes-to--> D-ELECTROWEAK
-V-HIGGS-BOSON --supports--> D-BEH-MECHANISM-1964
-D-BEH-MECHANISM-1964 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -222,7 +301,9 @@ Most visible mass is not a direct Higgs mass sum: proton and neutron mass is dom
 - Treat the longitudinal mode count as a conservation of degrees of freedom, not disappearance of a particle.
 - Attach “explains mass” to a scoped relation: elementary electroweak masses, not all composite mass or the origin of parameters.
 
-## Further conceptual checks
+## Additional quantitative and epistemic notes
+
+### Further conceptual checks
 
 The familiar potential diagram is gauge-dependent when applied to a gauge-charged field, while particle masses and scattering amplitudes are physical. A robust graph should therefore privilege gauge-invariant consequences over the visual metaphor of a ball choosing one point in a Mexican-hat valley.
 
@@ -235,6 +316,20 @@ v=(\sqrt2G_F)^{-1/2}\simeq246\ \mathrm{GeV}.
 $$
 
 This connects low-energy muon decay to collider-scale masses. Nonminimal sectors can reproduce part of this relation, so agreement validates electroweak symmetry breaking more directly than it proves a unique scalar potential.
+
+## Edge list
+
+```text
+A-WEAK-RANGE --requires--> MASSIVE-WEAK-BOSONS
+R-EXPLICIT-VECTOR-MASS --conflicts-with--> A-GAUGE-SYMMETRY
+A-SPONTANEOUS-BREAKING --contributes-to--> D-BEH-MECHANISM-1964
+A-GOLDSTONE --reframed-by--> GAUGE-FIELD-ABSORPTION
+VACUUM-EXPECTATION-VALUE --generates--> W-Z-MASSES
+VACUUM-EXPECTATION-VALUE --with-Yukawa-generates--> FERMION-MASSES
+D-BEH-MECHANISM-1964 --contributes-to--> D-ELECTROWEAK
+V-HIGGS-BOSON --supports--> D-BEH-MECHANISM-1964
+D-BEH-MECHANISM-1964 --instantiates--> P-03
+```
 
 ## Sources
 

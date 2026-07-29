@@ -76,21 +76,26 @@
 
 ## Shared document schema
 
-The 57 standard-schema discovery files contain:
+All 58 canonical discovery files now use the same evidence-to-abstraction order:
 
-1. graph metadata and a scope-bounded central claim;
-2. a historical time-slice table;
-3. failed, incomplete, or superseded pathways;
-4. inherited knowledge assets;
-5. the discovery node and conceptual transformations;
-6. necessary data, equations, derivations, or inferences;
-7. validation and explanatory gains;
-8. limitations and retained status;
-9. mappings to `P-01` through `P-06`;
-10. an explicit `source --relation--> target` edge list;
-11. primary or authoritative sources.
+1. graph metadata;
+2. a scope-bounded central claim;
+3. the pre-discovery historical problem;
+4. a historical time-slice table;
+5. inherited knowledge assets;
+6. failed, incomplete, or superseded pathways, including the comparison ledger;
+7. **Discovery-process reconstruction: interpolation, transformation, and extrapolation**, containing starting inputs, limits of inherited interpolation, the transformative move, extrapolative generalization, retention and testing, and an evidence-grounded `P-01`–`P-06` synthesis;
+8. a compact **Discovery node and consolidated formalism** that serializes the result without repeating the full derivation;
+9. historically novel predictions and deductions, or an explicit machine-readable indication that no separately provenance-labeled prediction record is yet encoded;
+10. validation and explanatory gains;
+11. limitations and retained status;
+12. extended historical investigation;
+13. AI-oriented inference notes;
+14. additional quantitative and epistemic notes;
+15. an explicit `source --relation--> target` edge list;
+16. primary or authoritative sources.
 
-The Newtonian case contains the same substantive graph elements under historically tailored headings—such as `Historical time slices`, `Superseded and failed pathways`, and `Transferable discovery patterns`. The validator applies a specialized but equivalent schema check to that file.
+The discovery-pattern labels are deliberately embedded inside the discovery-process reconstruction. Each label follows the evidence that supports it, and the final synthesis table maps `case evidence -> discovery operation -> transferable pattern`. This arrangement prevents the pattern vocabulary from replacing the historical inference chain with an unsupported checklist.
 
 Each case also records a `Focal discovery date`. Every pathway in `Alternative, incomplete, or superseded pathways` has a `Proposed/active period` and must originate before that focal discovery. Later reactions, successor variants, experimental loophole programs, and modern alternatives belong in later-development, validation, or limitation sections instead. A same-year pathway is permitted only when the record identifies a pre-announcement or pre-acceptance hypothesis and its sortable chronology key is earlier than the focal event.
 

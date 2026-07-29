@@ -15,6 +15,10 @@
 
 Classical statistical mechanics explains thermodynamic regularities through probability distributions over classical phase-space microstates. It connects reversible microscopic mechanics to macroscopic equilibrium, fluctuations and conditional irreversibility through ensembles, coarse descriptions, boundary conditions and typicality. It is not the complete statistics of identical quantum particles: quantum statistics changes the underlying state counting, while reproducing the classical Maxwell–Boltzmann regime when exchange effects are negligible.
 
+## Historical problem
+
+Before the focal discovery (1859–1902 (Maxwell/Boltzmann through Gibbs)), the case confronted a linked set of pressures: Gas pressure associated with molecular motion; Velocity distribution and transport theory. The pathways `R-PURE-MECHANICAL-DEDUCTION`, `R-ENERGETICS-WITHOUT-ATOMS`, `R-RECURRENCE-REFUTES-STATISTICS`, `R-NAIVE-ERGODICITY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Classical microscopic foundations of thermodynamics was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Development | Transition |
@@ -24,6 +28,14 @@ Classical statistical mechanics explains thermodynamic regularities through prob
 | `TS-BOLTZMANN` | 1870s–1890s | Entropy and kinetic evolution tied to microstates | Irreversibility becomes statistical |
 | `TS-GIBBS` | 1902 | Ensembles systematize equilibrium distributions | Framework generalizes beyond dilute gases |
 | `TS-QUANTUM-STATISTICS` | 1920s onward | Indistinguishability changes state counting | Bose–Einstein and Fermi–Dirac distributions |
+
+## Knowledge assets
+
+- `A-THERMODYNAMICS`: \(U,T,S,p,V\) and equilibrium laws.
+- `A-KINETIC-GAS`: pressure from molecular collision.
+- `A-PROBABILITY`: distributions rather than exact trajectories.
+- `A-COMBINATORICS`: counting microscopic arrangements.
+- `A-ENSEMBLES`: probability measures over phase space.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -73,15 +85,26 @@ Classical statistical mechanics explains thermodynamic regularities through prob
 
 Boltzmann's molecular-chaos assumption factorizes incoming-particle correlations and is time-asymmetric in its application. This is the hidden hinge in a simple \(H\)-theorem narrative. The theory did not derive the thermodynamic arrow solely from reversible mechanics; it connected overwhelmingly likely macroscopic behavior to statistical assumptions and special boundary conditions. The retained older structure is exact microscopic mechanics plus phenomenological thermodynamics, linked rather than one erased by the other.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-THERMODYNAMICS`: \(U,T,S,p,V\) and equilibrium laws.
-- `A-KINETIC-GAS`: pressure from molecular collision.
-- `A-PROBABILITY`: distributions rather than exact trajectories.
-- `A-COMBINATORICS`: counting microscopic arrangements.
-- `A-ENSEMBLES`: probability measures over phase space.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-THERMODYNAMICS`, `A-KINETIC-GAS`, `A-PROBABILITY`, `A-COMBINATORICS`, `A-ENSEMBLES`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-PURE-MECHANICAL-DEDUCTION` | The program of deriving irreversible thermodynamic evolution as an unconditional theorem of reversible microscopic mechanics, without probabilistic assumptions, coarse graining, or special boundary conditions. | Time reversal and recurrence objections expose missing assumptions. |
+| `R-ENERGETICS-WITHOUT-ATOMS` | A macroscopic research program that treats energy and thermodynamic relations as fundamental while declining to posit real atoms or molecules behind heat and matter. | Could not naturally explain fluctuation scales or Brownian motion. |
+| `R-RECURRENCE-REFUTES-STATISTICS` | The objection elevated into a rival conclusion that microscopic recurrence makes statistical entropy increase invalid rather than probabilistic and timescale-dependent. | Recurrence does not predict ordinary macroscopic evolution and typically occurs on astronomically large timescales. |
+| `R-NAIVE-ERGODICITY` | The unqualified assumption that every isolated system explores its entire energy surface uniformly, so one long time average automatically equals an ensemble average. | Many systems are nonergodic, finite, integrable, glassy, or otherwise fail the assumption. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Exact trajectory prediction reframed as typical macrobehavior. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Boltzmann's entropy relation is:
 
@@ -122,6 +145,81 @@ pV=Nk_BT,
 \qquad
 \langle K\rangle=\frac{3}{2}Nk_BT.
 $$
+
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Macroscopic laws generated from distributions of microstates
+
+- `P-03` — **Reframe the inherited problem:** Exact trajectory prediction reframed as typical macrobehavior
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Probability treated as physically explanatory
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Classical microscopic foundations of thermodynamics). The case-specific unification was: Mechanics, probability, and thermodynamics unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Mechanics, probability, and thermodynamics unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Macroscopic laws generated from distributions of microstates
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Thermodynamic state functions retained. Its quantitative or otherwise discriminating test strategy is: Fluctuations and transport provide quantitative tests. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Thermodynamic state functions retained
+
+- `P-06` — **Prioritize discriminating tests:** Fluctuations and transport provide quantitative tests
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Mechanics, probability, and thermodynamics unified |
+| `P-02` | Transformative move and generative deduction | Macroscopic laws generated from distributions of microstates |
+| `P-03` | Diagnosis of interpolation failure and reframing | Exact trajectory prediction reframed as typical macrobehavior |
+| `P-04` | Transformative representation, ontology, or mechanism | Probability treated as physically explanatory |
+| `P-05` | Retention and limiting recovery | Thermodynamic state functions retained |
+| `P-06` | Prediction, discrimination, and validation network | Fluctuations and transport provide quantitative tests |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902` |
+| Focal date | 1859–1902 (Maxwell/Boltzmann through Gibbs) |
+| Central claim | Classical statistical mechanics explains thermodynamic regularities through probability distributions over classical phase-space microstates. It connects reversible microscopic mechanics to macroscopic equilibrium, fluctuations and conditional irreversibility through ensembles, coarse descriptions, boundary conditions and typicality. It is not the complete statistics of identical quantum particles: quantum statistics changes the underlying state counting, while reproducing the classical Maxwell–Boltzmann regime when exchange effects are negligible. |
+| Domain | Classical microscopic foundations of thermodynamics |
+| Epistemic status | Fundamental classical probabilistic framework; retained as the dilute, high-temperature limit of quantum statistical mechanics where exchange effects are negligible |
+| Generative role | Macroscopic laws generated from distributions of microstates |
+| Retained structure | Thermodynamic state functions retained |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+S=k_B\ln\Omega,
+$$
+
+$$
+S=-k_B\sum_i p_i\ln p_i.
+$$
+
+$$
+p_i=\frac{e^{-\beta E_i}}{Z},
+\qquad
+Z=\sum_i e^{-\beta E_i},
+\qquad
+\beta=\frac{1}{k_BT}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
 
 ## Historically novel predictions and deductions
 
@@ -170,32 +268,6 @@ $$
 ## Limitations and retained status
 
 Classical state counting fails for quantum indistinguishable particles and low temperatures. Equilibrium ensembles do not automatically explain every approach-to-equilibrium problem. Gravitational systems and nonequilibrium steady states can violate simple extensivity assumptions. Statistical mechanics remains the bridge between microphysics and thermodynamics, with quantum and stochastic extensions.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Mechanics, probability, and thermodynamics unified |
-| `P-02` | Macroscopic laws generated from distributions of microstates |
-| `P-03` | Exact trajectory prediction reframed as typical macrobehavior |
-| `P-04` | Probability treated as physically explanatory |
-| `P-05` | Thermodynamic state functions retained |
-| `P-06` | Fluctuations and transport provide quantitative tests |
-
-## Edge list
-
-```text
-A-THERMODYNAMICS --constrains--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
-D-FIRST-LAW-1847-1850 --supplies-energy-constraint-for--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
-A-PROBABILITY --enables--> D-MAXWELL-DISTRIBUTION
-A-COMBINATORICS --enables--> EQ-BOLTZMANN-ENTROPY
-R-PURE-MECHANICAL-DEDUCTION --repaired-by--> PROBABILISTIC-BOUNDARY-CONDITIONS
-EQ-CANONICAL-DISTRIBUTION --generates--> THERMODYNAMIC-STATE-FUNCTIONS
-D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902 --explains--> LAW-THERMODYNAMICS
-D-QUANTUM-STATISTICS-1924-1926 --reduces-to-in-dilute-limit--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
-D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902 --is-generalized-by--> D-QUANTUM-STATISTICS-1924-1926
-D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902 --instantiates--> P-02
-```
 
 ## Extended historical investigation
 
@@ -423,7 +495,9 @@ $$
 - Treat fluctuations as predictions, not experimental imperfections.
 - Attach ensemble and thermodynamic-limit conditions to phase-transition claims.
 
-## Further inference and regime notes
+## Additional quantitative and epistemic notes
+
+### Further inference and regime notes
 
 The canonical distribution follows by considering a small system exchanging energy with a much larger reservoir:
 
@@ -442,6 +516,21 @@ $$
 $$
 
 Boltzmann's \(H\)-theorem required assumptions about molecular correlations; recurrence and reversibility objections clarified that macroscopic irreversibility is overwhelmingly probable rather than a violation of reversible microscopic equations. Coarse graining, typicality, boundary conditions, and environmental interaction each play roles in modern accounts. Ensemble equivalence can fail for finite systems, long-range interactions, or phase coexistence, so thermodynamic-limit metadata belongs in any machine-readable claim.
+
+## Edge list
+
+```text
+A-THERMODYNAMICS --constrains--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
+D-FIRST-LAW-1847-1850 --supplies-energy-constraint-for--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
+A-PROBABILITY --enables--> D-MAXWELL-DISTRIBUTION
+A-COMBINATORICS --enables--> EQ-BOLTZMANN-ENTROPY
+R-PURE-MECHANICAL-DEDUCTION --repaired-by--> PROBABILISTIC-BOUNDARY-CONDITIONS
+EQ-CANONICAL-DISTRIBUTION --generates--> THERMODYNAMIC-STATE-FUNCTIONS
+D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902 --explains--> LAW-THERMODYNAMICS
+D-QUANTUM-STATISTICS-1924-1926 --reduces-to-in-dilute-limit--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
+D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902 --is-generalized-by--> D-QUANTUM-STATISTICS-1924-1926
+D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902 --instantiates--> P-02
+```
 
 ## Sources
 

@@ -15,6 +15,10 @@
 
 Effective field theory states that low-energy predictions need not await an ultimate microscopic theory. One writes the most general local interactions of the degrees of freedom accessible at scale \(E\), constrained by symmetries, and orders them by powers of \(E/\Lambda\), where \(\Lambda\) is the scale of omitted physics. Wilsonian coarse-graining explains why high-energy details enter through coefficients and suppressed operators; Weinberg's 1979 phenomenological-Lagrangian argument made this a systematic calculational doctrine for low-energy particle physics. EFT turns a theory's limited domain from a defect into quantified predictive structure.
 
+## Historical problem
+
+Before the focal discovery (1979 Weinberg phenomenological-Lagrangian synthesis), the case confronted a linked set of pressures: Describe low-energy weak, electromagnetic, and nuclear phenomena without microscopic completion; Control QFT divergences with finitely many parameters. The pathways `R-NONRENORMALIZABLE-MEANS-NONPREDICTIVE`, `R-ONE-PHENOMENOLOGICAL-VERTEX`, `R-UV-COMPLETION-FIRST`, `R-HARD-CUTOFF-AS-LITERAL-MICROPHYSICS` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Low-energy quantum field theory, scale separation, power counting, matching, and controlled approximation was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -24,6 +28,15 @@ Effective field theory states that low-energy predictions need not await an ulti
 | `TS-WILSON-SCALES` | 1965–1971 | Understand how short-distance modes affect long-distance theory | Integrating out and operator relevance reorganize renormalization |
 | `TS-WEINBERG-EFT` | 1979 | Systematize low-energy strong-interaction amplitudes from symmetry | General Lagrangians plus power expansion justify corrections |
 | `TS-MODERN-EFT` | 1980s onward | Apply matching and running across particle, nuclear, gravitational, and condensed-matter scales | EFT becomes a standard discovery and uncertainty framework |
+
+## Knowledge assets
+
+- `A-FERMI-THEORY`: successful low-energy four-fermion weak interaction.
+- `A-CHIRAL-SYMMETRY`: low-energy constraints on pion interactions.
+- `A-WILSONIAN-RG`: integrating out modes and classifying operators.
+- `A-DECOUPLING`: heavy particles affect low energies through suppressed local terms under suitable conditions.
+- `A-S-MATRIX`: observable amplitudes need not depend on field-coordinate choices.
+- `A-DIMENSIONAL-ANALYSIS`: operator dimension organizes powers of a high scale.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -91,16 +104,26 @@ Effective field theory states that low-energy predictions need not await an ulti
 | Literal hard cutoff microphysics | Stop integrals at an assumed physical boundary | Regulator artifacts remain without counterterms | Separation scale and lattice cutoff cases |
 | **Discovery/current: systematic effective field theory** | Use correct degrees of freedom, all symmetry-allowed operators, power counting, matching, and running | Fails without hierarchy or complete low-energy content | Quantified predictions within a stated domain |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-FERMI-THEORY`: successful low-energy four-fermion weak interaction.
-- `A-CHIRAL-SYMMETRY`: low-energy constraints on pion interactions.
-- `A-WILSONIAN-RG`: integrating out modes and classifying operators.
-- `A-DECOUPLING`: heavy particles affect low energies through suppressed local terms under suitable conditions.
-- `A-S-MATRIX`: observable amplitudes need not depend on field-coordinate choices.
-- `A-DIMENSIONAL-ANALYSIS`: operator dimension organizes powers of a high scale.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-FERMI-THEORY`, `A-CHIRAL-SYMMETRY`, `A-WILSONIAN-RG`, `A-DECOUPLING`, `A-S-MATRIX`, `A-DIMENSIONAL-ANALYSIS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-NONRENORMALIZABLE-MEANS-NONPREDICTIVE` | The doctrine that a quantum field theory containing couplings of negative mass dimension is unacceptable because loop calculations require infinitely many counterterms, so only power-counting-renormalizable interactions can define any predictive theory. | See the full pathway record above. |
+| `R-ONE-PHENOMENOLOGICAL-VERTEX` | The use of one contact interaction or fitted vertex chosen to reproduce leading data, without including every operator of the same order allowed by the symmetries or estimating omitted terms. | See the full pathway record above. |
+| `R-UV-COMPLETION-FIRST` | A research policy that no trustworthy low-energy prediction should be made until the exact fundamental high-energy constituents and dynamics are known. | See the full pathway record above. |
+| `R-HARD-CUTOFF-AS-LITERAL-MICROPHYSICS` | The insertion of a momentum cutoff into loop integrals and identification of that regulator itself with a physical particle size or exact new-physics boundary, without ensuring regulator-independent low-energy observables. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “What is the ultimate theory?” becomes “What degrees of freedom and accuracy are required at this scale?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 In four spacetime dimensions, an EFT Lagrangian has the form
 
@@ -151,6 +174,92 @@ $$
 
 so matching at a high scale and RG evolution to a low scale separate short- and long-distance logarithms.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Phenomenological vertices become terms in a generative ordered operator expansion
+
+- `P-03` — **Reframe the inherited problem:** “What is the ultimate theory?” becomes “What degrees of freedom and accuracy are required at this scale?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Nonrenormalizable interactions and explicitly domain-bounded theories are accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Low-energy quantum field theory, scale separation, power counting, matching, and controlled approximation). The case-specific unification was: Low-energy phenomena, QFT, symmetry, and RG scale flow are unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Low-energy phenomena, QFT, symmetry, and RG scale flow are unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Phenomenological vertices become terms in a generative ordered operator expansion
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Fermi theory, chiral relations, and renormalizable QFT survive as leading EFT layers. Its quantitative or otherwise discriminating test strategy is: Power counting, matching, running, and truncation errors enable quantitative testing. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Fermi theory, chiral relations, and renormalizable QFT survive as leading EFT layers
+
+- `P-06` — **Prioritize discriminating tests:** Power counting, matching, running, and truncation errors enable quantitative testing
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Low-energy phenomena, QFT, symmetry, and RG scale flow are unified |
+| `P-02` | Transformative move and generative deduction | Phenomenological vertices become terms in a generative ordered operator expansion |
+| `P-03` | Diagnosis of interpolation failure and reframing | “What is the ultimate theory?” becomes “What degrees of freedom and accuracy are required at this scale?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Nonrenormalizable interactions and explicitly domain-bounded theories are accepted |
+| `P-05` | Retention and limiting recovery | Fermi theory, chiral relations, and renormalizable QFT survive as leading EFT layers |
+| `P-06` | Prediction, discrimination, and validation network | Power counting, matching, running, and truncation errors enable quantitative testing |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-MODERN-EFT-1979` |
+| Focal date | 1979 Weinberg phenomenological-Lagrangian synthesis |
+| Central claim | Effective field theory states that low-energy predictions need not await an ultimate microscopic theory. One writes the most general local interactions of the degrees of freedom accessible at scale \(E\), constrained by symmetries, and orders them by powers of \(E/\Lambda\), where \(\Lambda\) is the scale of omitted physics. Wilsonian coarse-graining explains why high-energy details enter through coefficients and suppressed operators; Weinberg's 1979 phenomenological-Lagrangian argument made this a systematic calculational doctrine for low-energy particle physics. EFT turns a theory's limited domain from a defect into quantified predictive structure. |
+| Domain | Low-energy quantum field theory, scale separation, power counting, matching, and controlled approximation |
+| Epistemic status | General framework for predictive domain-bounded theories; success depends on a scale hierarchy, correct low-energy degrees of freedom, symmetries, and systematic power counting |
+| Generative role | Phenomenological vertices become terms in a generative ordered operator expansion |
+| Retained structure | Fermi theory, chiral relations, and renormalizable QFT survive as leading EFT layers |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\mathcal L_{\mathrm{EFT}}
+=\mathcal L_{d\le4}
++\sum_{d>4}\sum_i
+\frac{C_i^{(d)}(\mu)}{\Lambda^{d-4}}
+\mathcal O_i^{(d)}.
+$$
+
+$$
+\mathcal A_i^{(d)}
+\sim C_i^{(d)}
+\left(\frac{E}{\Lambda}\right)^{d-4},
+$$
+
+$$
+e^{iS_{\mathrm{eff}}[\ell]}
+=\int\mathcal D H\,
+e^{iS[\ell,H]},
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Effective Field Theory and Scale Separation: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 Fermi theory accurately describes weak processes at energies far below the \(W\)-boson mass; chiral perturbation theory organizes low-energy pion interactions; heavy-quark effective theory exploits \(m_Q\gg\Lambda_{\mathrm{QCD}}\); nonrelativistic EFTs describe atoms and bound states; general relativity functions as a quantum EFT at energies below the Planck scale. The Standard Model EFT parametrizes heavy new physics through higher-dimensional operators without choosing one ultraviolet model.
@@ -162,30 +271,6 @@ EFT's explanatory gain is calibrated ignorance. Symmetry and scale determine whi
 An EFT requires separation between the probed scale and omitted scale. Near a heavy-particle threshold, narrow resonance, phase transition, or nondecoupling regime, the expansion may fail and new degrees of freedom must be included explicitly. Strong coupling can alter naive dimensional estimates, and multiple small parameters may require specialized power counting.
 
 “Write every allowed operator” is not sufficient: redundant operators related by equations of motion or field redefinitions should be reduced to a basis; symmetries and anomalies must be correct; matching and renormalization must be consistent. Wilson coefficients are scheme- and scale-dependent, while observables are not. EFT is therefore systematic but not automatic.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Low-energy phenomena, QFT, symmetry, and RG scale flow are unified |
-| `P-02` | Phenomenological vertices become terms in a generative ordered operator expansion |
-| `P-03` | “What is the ultimate theory?” becomes “What degrees of freedom and accuracy are required at this scale?” |
-| `P-04` | Nonrenormalizable interactions and explicitly domain-bounded theories are accepted |
-| `P-05` | Fermi theory, chiral relations, and renormalizable QFT survive as leading EFT layers |
-| `P-06` | Power counting, matching, running, and truncation errors enable quantitative testing |
-
-## Edge list
-
-```text
-A-WILSONIAN-RG --enables--> D-MODERN-EFT-1979
-A-CHIRAL-SYMMETRY --constrains--> LOW-ENERGY-OPERATOR-BASIS
-HEAVY-FIELD --is-integrated-out-into--> WILSON-COEFFICIENTS
-POWER-COUNTING --orders--> EFT-PREDICTIONS
-D-MODERN-EFT-1979 --retains--> A-FERMI-THEORY
-D-MODERN-EFT-1979 --quantifies--> TRUNCATION-UNCERTAINTY
-THRESHOLD --can-require--> NEW-EXPLICIT-DEGREE-OF-FREEDOM
-D-MODERN-EFT-1979 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -269,6 +354,23 @@ EFT provides a disciplined intermediate layer between model-independent data and
 - Check thresholds and resonances before expanding a propagator.
 - Separate bottom-up coefficient inference from top-down ultraviolet matching.
 - Treat domain-bounded validity as positive knowledge; Newtonian mechanics, Fermi theory, and general relativity can be successful effective descriptions without being ultimate.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-WILSONIAN-RG --enables--> D-MODERN-EFT-1979
+A-CHIRAL-SYMMETRY --constrains--> LOW-ENERGY-OPERATOR-BASIS
+HEAVY-FIELD --is-integrated-out-into--> WILSON-COEFFICIENTS
+POWER-COUNTING --orders--> EFT-PREDICTIONS
+D-MODERN-EFT-1979 --retains--> A-FERMI-THEORY
+D-MODERN-EFT-1979 --quantifies--> TRUNCATION-UNCERTAINTY
+THRESHOLD --can-require--> NEW-EXPLICIT-DEGREE-OF-FREEDOM
+D-MODERN-EFT-1979 --instantiates--> P-03
+```
 
 ## Sources
 

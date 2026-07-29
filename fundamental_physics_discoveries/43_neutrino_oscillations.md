@@ -15,6 +15,10 @@
 
 Neutrinos produced in flavor states propagate as coherent superpositions of different mass states. Relative phases change with distance and energy, producing flavor conversion. Atmospheric and solar experiments established this through direction-, energy-, and flavor-sensitive deficits and appearance patterns.
 
+## Historical problem
+
+Before the focal discovery (1998 atmospheric result; 2001–2002 solar flavor resolution), the case confronted a linked set of pressures: Beta-decay energy conserved; Electron and muon neutrinos distinguished. The pathways `R-SOLAR-MODEL-ERROR-ONLY`, `R-MASSLESS-UNMIXED-NEUTRINOS`, `R-DETECTOR-CALIBRATION-ONLY-NEUTRINO-DEFICIT`, `R-ATMOSPHERIC-FLUX-NORMALIZATION-ONLY`, `R-NEUTRINO-DECAY-OR-DECOHERENCE-ONLY`, `R-STERILE-NEUTRINO-EXTENSION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Neutrino mass, flavor mixing, and propagation was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem/development | Transition |
@@ -25,6 +29,14 @@ Neutrinos produced in flavor states propagate as coherent superpositions of diff
 | `TS-MIXING-THEORY` | 1957 onward | Oscillation and matter effects developed | Quantitative conversion models |
 | `TS-SUPER-K` | 1998 | Atmospheric zenith-angle pattern | Flavor oscillation established |
 | `TS-SNO` | 2001–2002 | Flavor-sensitive solar flux measured | Total flux agrees; flavor changes |
+
+## Knowledge assets
+
+- `A-FLAVOR-DETECTORS`: charged- and neutral-current sensitivity.
+- `A-BASELINE-ENERGY`: phase depends on \(L/E\).
+- `A-ATMOSPHERIC-GEOMETRY`: neutrinos cross different Earth distances.
+- `A-MATTER-EFFECT`: solar density modifies mixing.
+- `A-PMNS`: unitary flavor–mass mixing.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -83,15 +95,28 @@ Neutrinos produced in flavor states propagate as coherent superpositions of diff
 
 The solar pathway was not a choice between “bad astrophysics” and “new particles” after one deficit. SNO separated electron flavor from total active flux, while reactor and accelerator experiments reproduced oscillation behavior under controlled baselines. The retained Standard Model structure is weak production/detection; the required modification is neutrino mass and mixing. Oscillation evidence alone does not select Dirac, Majorana, or seesaw mass mechanisms.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-FLAVOR-DETECTORS`: charged- and neutral-current sensitivity.
-- `A-BASELINE-ENERGY`: phase depends on \(L/E\).
-- `A-ATMOSPHERIC-GEOMETRY`: neutrinos cross different Earth distances.
-- `A-MATTER-EFFECT`: solar density modifies mixing.
-- `A-PMNS`: unitary flavor–mass mixing.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivation
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-FLAVOR-DETECTORS`, `A-BASELINE-ENERGY`, `A-ATMOSPHERIC-GEOMETRY`, `A-MATTER-EFFECT`, `A-PMNS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-SOLAR-MODEL-ERROR-ONLY` | The hypothesis that the solar-neutrino deficit is entirely caused by incorrect solar temperatures, nuclear reaction rates, composition, transport modeling, or detector flux predictions, while neutrinos retain fixed flavor. | Neutral-current total flux agrees with solar prediction while electron flavor is depleted. |
+| `R-MASSLESS-UNMIXED-NEUTRINOS` | The minimal electroweak model in which all neutrinos have zero mass, flavor states coincide with propagation states, and a produced electron, muon, or tau neutrino cannot change flavor in flight. | See the full pathway record above. |
+| `R-DETECTOR-CALIBRATION-ONLY-NEUTRINO-DEFICIT` | The claim that cross-section, efficiency, background, or calibration errors common to neutrino detectors create the deficits. | See the full pathway record above. |
+| `R-ATMOSPHERIC-FLUX-NORMALIZATION-ONLY` | The claim that cosmic-ray neutrino production is misnormalized but neutrino flavor is unchanged. | See the full pathway record above. |
+| `R-NEUTRINO-DECAY-OR-DECOHERENCE-ONLY` | Disappearance caused by unstable neutrinos or loss of quantum coherence rather than mass-phase oscillation. | See the full pathway record above. |
+| `R-STERILE-NEUTRINO-EXTENSION` | An extension adding weak-singlet neutrino states that mix with active flavors and can cause additional short-baseline oscillations. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Missing neutrinos reframed as changed flavor. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Flavor and mass states relate by:
 
@@ -130,6 +155,95 @@ $$
 
 Thus oscillation proves at least two masses differ, but does not determine the absolute mass scale.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Phase evolution generates flavor probabilities
+
+- `P-03` — **Reframe the inherited problem:** Missing neutrinos reframed as changed flavor
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Mixed flavor/mass ontology accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Neutrino mass, flavor mixing, and propagation). The case-specific unification was: Solar, atmospheric, reactor, and accelerator anomalies unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Solar, atmospheric, reactor, and accelerator anomalies unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Phase evolution generates flavor probabilities
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Standard weak production and detection retained. Its quantitative or otherwise discriminating test strategy is: \(L/E\), appearance, and neutral-current totals cross-test. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Standard weak production and detection retained
+
+- `P-06` — **Prioritize discriminating tests:** \(L/E\), appearance, and neutral-current totals cross-test
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Solar, atmospheric, reactor, and accelerator anomalies unified |
+| `P-02` | Transformative move and generative deduction | Phase evolution generates flavor probabilities |
+| `P-03` | Diagnosis of interpolation failure and reframing | Missing neutrinos reframed as changed flavor |
+| `P-04` | Transformative representation, ontology, or mechanism | Mixed flavor/mass ontology accepted |
+| `P-05` | Retention and limiting recovery | Standard weak production and detection retained |
+| `P-06` | Prediction, discrimination, and validation network | \(L/E\), appearance, and neutral-current totals cross-test |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-NEUTRINO-OSCILLATIONS-1998-2002` |
+| Focal date | 1998 atmospheric result; 2001–2002 solar flavor resolution |
+| Central claim | Neutrinos produced in flavor states propagate as coherent superpositions of different mass states. Relative phases change with distance and energy, producing flavor conversion. Atmospheric and solar experiments established this through direction-, energy-, and flavor-sensitive deficits and appearance patterns. |
+| Domain | Neutrino mass, flavor mixing, and propagation |
+| Epistemic status | Oscillations establish nonzero neutrino mass differences and physics beyond the minimal massless-neutrino Standard Model |
+| Generative role | Phase evolution generates flavor probabilities |
+| Retained structure | Standard weak production and detection retained |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+|\nu_\alpha\rangle
+=\sum_iU_{\alpha i}^*|\nu_i\rangle.
+$$
+
+$$
+P(\nu_\alpha\rightarrow\nu_\beta)
+=\sin^2(2\theta)
+\sin^2\left(
+\frac{\Delta m^2c^3L}{4\hbar E}
+\right).
+$$
+
+$$
+P
+=\sin^2(2\theta)
+\sin^2\left[
+1.27\,
+\frac{\Delta m^2(\mathrm{eV}^2)L(\mathrm{km})}
+{E(\mathrm{GeV})}
+\right].
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Neutrino Oscillations: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Atmospheric muon-neutrino disappearance depends on zenith angle and \(L/E\).
@@ -140,32 +254,6 @@ Thus oscillation proves at least two masses differ, but does not determine the a
 ## Limitations and retained status
 
 Oscillations do not determine whether neutrinos are Dirac or Majorana particles, the absolute mass scale, or the full mass ordering by themselves. Unitary three-flavor treatment replaces the two-flavor approximation for precision. Sterile-neutrino claims remain unsettled and experiment-specific.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Solar, atmospheric, reactor, and accelerator anomalies unified |
-| `P-02` | Phase evolution generates flavor probabilities |
-| `P-03` | Missing neutrinos reframed as changed flavor |
-| `P-04` | Mixed flavor/mass ontology accepted |
-| `P-05` | Standard weak production and detection retained |
-| `P-06` | \(L/E\), appearance, and neutral-current totals cross-test |
-
-## Edge list
-
-```text
-A-PMNS --maps--> FLAVOR-STATES
-A-PMNS --maps-from--> MASS-STATES
-MASS-PHASE-DIFFERENCE --generates--> FLAVOR-OSCILLATION
-V-SUPER-K --supports--> D-NEUTRINO-OSCILLATIONS-1998-2002
-V-SNO-CHARGED-CURRENT --measures--> ELECTRON-NEUTRINO-FLUX
-V-SNO-NEUTRAL-CURRENT --measures--> TOTAL-ACTIVE-FLUX
-V-SNO-NEUTRAL-CURRENT --refutes--> R-SOLAR-MODEL-ERROR-ONLY
-D-NEUTRINO-OSCILLATIONS-1998-2002 --refutes--> R-MASSLESS-UNMIXED-NEUTRINOS
-D-NEUTRINO-OSCILLATIONS-1998-2002 --limits--> MINIMAL-STANDARD-MODEL
-D-NEUTRINO-OSCILLATIONS-1998-2002 --instantiates--> P-06
-```
 
 ## Extended historical investigation
 
@@ -250,7 +338,9 @@ Oscillations are beyond the historically minimal Standard Model because its neut
 - Distinguish vacuum interference from matter-enhanced propagation.
 - Preserve two-flavor formulas as controlled approximations inside the full three-flavor system.
 
-## Further parameter and control notes
+## Additional quantitative and epistemic notes
+
+### Further parameter and control notes
 
 Reactor experiments use a controlled antineutrino source and near/far detector comparisons to cancel much of the flux uncertainty. Long-baseline accelerator experiments select beams and compare appearance and disappearance at known \(L\). These designs convert an astrophysical anomaly into reproducible laboratory interference.
 
@@ -273,6 +363,21 @@ $$
 which makes experimental complementarity transparent: solar, reactor, atmospheric, and accelerator sources occupy different \(L/E\) ranges and matter profiles. Disappearance establishes loss from an initial flavor; appearance observes another flavor and is a stronger guard against normalization-only errors. Tau appearance in atmospheric and accelerator data further supports the dominant \(\nu_\mu\rightarrow\nu_\tau\) interpretation.
 
 The small neutrino mass scale may arise from Dirac Yukawa couplings, Majorana masses, or a seesaw mechanism, but oscillations alone do not select among them. This prevents an AI graph from upgrading “mass difference observed” into a specific mass-generation theory.
+
+## Edge list
+
+```text
+A-PMNS --maps--> FLAVOR-STATES
+A-PMNS --maps-from--> MASS-STATES
+MASS-PHASE-DIFFERENCE --generates--> FLAVOR-OSCILLATION
+V-SUPER-K --supports--> D-NEUTRINO-OSCILLATIONS-1998-2002
+V-SNO-CHARGED-CURRENT --measures--> ELECTRON-NEUTRINO-FLUX
+V-SNO-NEUTRAL-CURRENT --measures--> TOTAL-ACTIVE-FLUX
+V-SNO-NEUTRAL-CURRENT --refutes--> R-SOLAR-MODEL-ERROR-ONLY
+D-NEUTRINO-OSCILLATIONS-1998-2002 --refutes--> R-MASSLESS-UNMIXED-NEUTRINOS
+D-NEUTRINO-OSCILLATIONS-1998-2002 --limits--> MINIMAL-STANDARD-MODEL
+D-NEUTRINO-OSCILLATIONS-1998-2002 --instantiates--> P-06
+```
 
 ## Sources
 

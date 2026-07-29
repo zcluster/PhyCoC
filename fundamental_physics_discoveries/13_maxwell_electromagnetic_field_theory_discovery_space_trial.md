@@ -1,23 +1,20 @@
-# Maxwell's Electromagnetic Field Theory: Historical Knowledge Graph
+# Maxwell's Electromagnetic Field Theory: Discovery-Space Reconstruction Trial
 
 ## Graph metadata
 
 | Field | Value |
 |---|---|
-| Graph ID | `KG-MAXWELL-12` |
+| Graph ID | `KG-MAXWELL-12-DSR-TRIAL` |
 | Central node | `D-MAXWELL-FIELD-1861-1865` |
 | Focal discovery date | 1861–1865 |
 | Main contributors | James Clerk Maxwell, building on Faraday, Ampère, Gauss, and others |
 | Domain | Classical electromagnetic fields and light |
 | Epistemic status | Correct classical field theory; quantum electrodynamics supplies the deeper microscopic framework |
+| Document status | Experimental derivative testing a compact interpolation/extrapolation section; the original case remains unchanged |
 
 ## Central claim
 
 Maxwell's field equations unified electric charge, current, magnetic induction, and light. The displacement-current term made charge conservation compatible with time-dependent fields and implied self-propagating waves with the measured speed of light.
-
-## Historical problem
-
-Before the focal discovery (1861–1865), the case confronted a linked set of pressures: Coulomb, Gauss, Ampère describe separate sectors; Induction and lines of force. The pathways `R-SEPARATE-ELECTRIC-MAGNETIC-FLUIDS`, `R-MECHANICAL-ETHER-MODELS`, `R-INSTANTANEOUS-ELECTROMAGNETIC-ACTION`, `R-AMPERE-WITHOUT-DISPLACEMENT-CURRENT` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Classical electromagnetic fields and light was to construct a more generative account without importing later validation evidence into the original inference.
 
 ## Time slices
 
@@ -28,14 +25,6 @@ Before the focal discovery (1861–1865), the case confronted a linked set of pr
 | `TS-MAXWELL` | 1861–1865 | Coupled field equations developed | Light identified as electromagnetic disturbance |
 | `TS-HERTZ` | 1887–1888 | Radio waves generated and detected | Wave prediction experimentally confirmed |
 | `TS-RELATIVITY-QED` | 20th century | Lorentz symmetry and quantized field | Classical theory retained as limit |
-
-## Knowledge assets
-
-- `A-GAUSS-LAWS`: flux relations.
-- `A-AMPERE`: current-generated magnetism.
-- `A-FARADAY`: changing magnetic flux induces electric circulation.
-- `A-CHARGE-CONSERVATION`: local continuity constraint.
-- `A-OPTICAL-SPEED`: measured \(c\).
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -81,26 +70,15 @@ Before the focal discovery (1861–1865), the case confronted a linked set of pr
 
 The capacitor inconsistency is especially revealing. Different surfaces spanning the same circuit loop would count conduction current differently unless \(\epsilon_0\partial\mathbf E/\partial t\) contributed. The repair was constrained by charge conservation and then generated electromagnetic waves. Maxwell's material analogies were historically productive scaffolds; later physics retained the abstract field relations rather than declaring every gear-and-vortex picture literally real.
 
-## Discovery-process reconstruction: interpolation, transformation, and extrapolation
+## Knowledge assets
 
-This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
+- `A-GAUSS-LAWS`: flux relations.
+- `A-AMPERE`: current-generated magnetism.
+- `A-FARADAY`: changing magnetic flux induces electric circulation.
+- `A-CHARGE-CONSERVATION`: local continuity constraint.
+- `A-OPTICAL-SPEED`: measured \(c\).
 
-### Starting ingredients
-
-The admissible pre-discovery input nodes are `A-GAUSS-LAWS`, `A-AMPERE`, `A-FARADAY`, `A-CHARGE-CONSERVATION`, `A-OPTICAL-SPEED`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
-
-### What interpolation could and could not achieve
-
-| Pathway | What the inherited search retained | Why it remained insufficient |
-|---|---|---|
-| `R-SEPARATE-ELECTRIC-MAGNETIC-FLUIDS` | A family of theories that assigns electricity and magnetism to distinct imponderable fluids or agencies, with separate laws rather than one dynamically coupled field. | Cannot explain induction and current magnetism as one dynamics. |
-| `R-MECHANICAL-ETHER-MODELS` | Models that interpret electric and magnetic fields as stresses, rotations, or motions of a material ether whose microscopic mechanics is supposed to produce Maxwell-like equations. | No unique mechanical model was required by the equations; preferred-rest-frame evidence failed. |
-| `R-INSTANTANEOUS-ELECTROMAGNETIC-ACTION` | Direct force laws in which charges or currents influence one another across distance without a propagating local field. | See the full pathway record above. |
-| `R-AMPERE-WITHOUT-DISPLACEMENT-CURRENT` | The conduction-current-only form of Ampère's circuital law, applied even when electric flux changes between capacitor plates. | It gives surface-dependent current and conflicts with charge continuity. |
-
-**Pattern demonstrated — `P-03` (reframe the inherited question):** Forces between bodies reframed as local field evolution. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
-
-### Transformative move
+## Discovery node and equations
 
 In SI vacuum form:
 
@@ -148,84 +126,6 @@ $$
 
 The numerical agreement with optical measurements motivated the inference that light is electromagnetic.
 
-**Patterns demonstrated:**
-
-- `P-02` — **Make the new structure generative:** Static and induction laws generate wave propagation
-
-- `P-03` — **Reframe the inherited problem:** Forces between bodies reframed as local field evolution
-
-- `P-04` — **Permit a new representation, ontology, or mechanism:** Displacement current and autonomous fields accepted
-
-### Extrapolative generalization
-
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Classical electromagnetic fields and light). The case-specific unification was: Electricity, magnetism, and light unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
-
-**Patterns demonstrated:**
-
-- `P-01` — **Unify previously separated domains or phenomena:** Electricity, magnetism, and light unified
-
-- `P-02` — **Generate consequences rather than merely redescribe inputs:** Static and induction laws generate wave propagation
-
-### Retention, predictions, and discriminating tests
-
-The reconstruction preserves rather than erases successful predecessor content: Gauss, Ampère, and Faraday structures retained. Its quantitative or otherwise discriminating test strategy is: Predicted wave speed and new spectral regime tested. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
-
-**Patterns demonstrated:**
-
-- `P-05` — **Recover valid predecessor structure or limiting behavior:** Gauss, Ampère, and Faraday structures retained
-
-- `P-06` — **Prioritize discriminating tests:** Predicted wave speed and new spectral regime tested
-
-### Discovery-pattern synthesis
-
-This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
-
-| Pattern | Process stage | Case-specific instantiation |
-|---|---|---|
-| `P-01` | Extrapolative generalization | Electricity, magnetism, and light unified |
-| `P-02` | Transformative move and generative deduction | Static and induction laws generate wave propagation |
-| `P-03` | Diagnosis of interpolation failure and reframing | Forces between bodies reframed as local field evolution |
-| `P-04` | Transformative representation, ontology, or mechanism | Displacement current and autonomous fields accepted |
-| `P-05` | Retention and limiting recovery | Gauss, Ampère, and Faraday structures retained |
-| `P-06` | Prediction, discrimination, and validation network | Predicted wave speed and new spectral regime tested |
-
-## Discovery node and consolidated formalism
-
-This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
-
-| Field | Canonical content |
-|---|---|
-| Node | `D-MAXWELL-FIELD-1861-1865` |
-| Focal date | 1861–1865 |
-| Central claim | Maxwell's field equations unified electric charge, current, magnetic induction, and light. The displacement-current term made charge conservation compatible with time-dependent fields and implied self-propagating waves with the measured speed of light. |
-| Domain | Classical electromagnetic fields and light |
-| Epistemic status | Correct classical field theory; quantum electrodynamics supplies the deeper microscopic framework |
-| Generative role | Static and induction laws generate wave propagation |
-| Retained structure | Gauss, Ampère, and Faraday structures retained |
-
-Key formal relations, consolidated from the derivation above:
-
-$$
-\nabla\cdot\mathbf{E}=\frac{\rho}{\epsilon_0},
-\qquad
-\nabla\cdot\mathbf{B}=0,
-$$
-
-$$
-\nabla\times\mathbf{E}=-\frac{\partial\mathbf{B}}{\partial t},
-\qquad
-\nabla\times\mathbf{B}
-=\mu_0\mathbf{J}
-+\mu_0\epsilon_0\frac{\partial\mathbf{E}}{\partial t}.
-$$
-
-$$
-0=\mu_0\nabla\cdot\mathbf{J}
-+\mu_0\frac{\partial\rho}{\partial t},
-$$
-
-The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
-
 ## Historically novel predictions and deductions
 
 ### `NP-MAXWELL-01` — Self-propagating electromagnetic waves with the speed of light
@@ -271,6 +171,134 @@ $$
 
 Classical fields allow continuous energy and do not explain atomic stability, photon statistics, or radiative quantum transitions. Point-charge self-energy creates difficulties. QED quantizes the electromagnetic field while recovering Maxwell's equations in classical regimes. Nonlinear quantum-vacuum effects are extremely small at ordinary field strengths.
 
+## Discovery patterns
+
+| ID | Instantiation |
+|---|---|
+| `P-01` | Electricity, magnetism, and light unified |
+| `P-02` | Static and induction laws generate wave propagation |
+| `P-03` | Forces between bodies reframed as local field evolution |
+| `P-04` | Displacement current and autonomous fields accepted |
+| `P-05` | Gauss, Ampère, and Faraday structures retained |
+| `P-06` | Predicted wave speed and new spectral regime tested |
+
+## Interpolation, transformation, and extrapolation
+
+This section separates three different operations in Maxwell's discovery. **Interpolation** combines or extends available structures without fundamentally changing the framework. **Transformation** changes the representation or the question being asked. **Extrapolation** applies the resulting structure beyond the observations used to construct it. These operations can occur in the same discovery and should not be treated as mutually exclusive.
+
+### Starting ingredients
+
+Maxwell did not begin from an empty theory space. Important inherited resources included:
+
+| Asset | Available content | Role in the synthesis |
+|---|---|---|
+| `A-GAUSS-LAWS` | Quantitative electric and magnetic flux relations | Constrained how charge and magnetic fields could be represented |
+| `A-AMPERE` | Magnetic effects of conduction currents | Supplied the current–magnetic-field relation requiring dynamical completion |
+| `A-FARADAY` | Induction and lines of force | Showed that changing magnetic conditions generate electric effects and encouraged local field reasoning |
+| `A-CHARGE-CONSERVATION` | Charge cannot disappear locally | Imposed a consistency requirement on time-dependent electromagnetic equations |
+| `A-OPTICAL-SPEED` | Independent measurements of the speed of light | Allowed comparison with a speed derived from electromagnetic constants |
+| `A-MECHANICAL-ANALOGIES` | Ether stresses, vortices, elasticity, and wave mathematics | Provided historically useful constructive scaffolding, although the specific mechanisms were later discarded |
+
+These ingredients were not already Maxwell's theory. They belonged to partially separate accounts of electrostatics, magnetism, induction, circuits, mechanical media, and optics.
+
+### What interpolation could and could not achieve
+
+Researchers could combine existing force laws, introduce additional electric or magnetic fluids, or adjust the mechanics of an ether. Such moves remained within familiar pictures: sources acted directly at a distance or transmitted effects through a material medium. They could reproduce selected phenomena, but they did not produce one closed local dynamics for electricity, magnetism, and light.
+
+The charging capacitor exposes a specific obstruction. The conduction-current-only Ampère law,
+
+$$
+\nabla\times\mathbf B=\mu_0\mathbf J,
+$$
+
+implies
+
+$$
+\nabla\cdot\mathbf J=0,
+$$
+
+because the divergence of a curl vanishes. But a changing charge density must satisfy
+
+$$
+\nabla\cdot\mathbf J=-\frac{\partial\rho}{\partial t}.
+$$
+
+Merely tuning a coefficient in the magnetostatic law cannot reconcile these equations for a charging capacitor. A new contribution with the required divergence is needed. Using Gauss's law, $\rho=\epsilon_0\nabla\cdot\mathbf E$, gives the completed relation
+
+$$
+\nabla\times\mathbf B
+=\mu_0\mathbf J
++\mu_0\epsilon_0\frac{\partial\mathbf E}{\partial t}.
+$$
+
+This compact continuity argument is a modern reconstruction, not the literal sequence of Maxwell's original reasoning. Maxwell worked through electric displacement, dielectric polarization, mechanical analogies, and several changing formulations. Nevertheless, it makes the formal obstruction and the role of the displacement-current term explicit.
+
+### Transformative move
+
+The durable change was larger than adding one term. A changing electric field could now contribute to magnetic circulation even where no conduction current crossed the region. Together with Faraday induction, electric and magnetic fields became mutually coupled local dynamical variables.
+
+The explanatory question consequently shifted:
+
+> **Earlier framing:** What force or material mechanism allows distant bodies to affect one another?
+>
+> **New framing:** How do local electric and magnetic field states evolve, generate one another, and propagate?
+
+This is the step beyond ordinary interpolation. The field is no longer only a convenient summary of forces between sources; its changing state participates in the dynamics. Maxwell still used mechanical-medium models, so it would be anachronistic to attribute the fully modern, ether-free field ontology to him without qualification. Later physics retained the abstract field relations while abandoning the literal gears, vortices, and preferred mechanical medium.
+
+### Extrapolative step
+
+Once the coupled equations were treated as a dynamical system, Maxwell applied them beyond the near-source electrical and magnetic observations from which they had been constructed. In a source-free region, $\rho=0$ and $\mathbf J=0$, the equations imply
+
+$$
+\nabla^2\mathbf E
+-\mu_0\epsilon_0\frac{\partial^2\mathbf E}{\partial t^2}=0,
+$$
+
+with the corresponding equation for $\mathbf B$. The predicted propagation speed is
+
+$$
+c_{\mathrm{EM}}=\frac{1}{\sqrt{\mu_0\epsilon_0}}.
+$$
+
+Three extrapolative commitments followed:
+
+1. electromagnetic disturbances can propagate away from their sources;
+2. light is an electromagnetic wave because $c_{\mathrm{EM}}$ agrees with independently measured optical speed and the theory supports transverse wave behavior;
+3. electromagnetic radiation should exist outside the visible spectrum.
+
+The equality of speeds supported an abductive identification, not a logical proof from equations alone. The prediction of nonvisible electromagnetic waves was especially risky because those waves were not among the observations used to build the theory. Hertz's 1887–1888 radio-wave experiments subsequently provided independent validation.
+
+### Retained results and new consequences
+
+Maxwell's theory did not erase its predecessors. It preserved their successful structures in appropriate limits while generating consequences that the separate laws did not provide.
+
+| Retained or generated result | Logical status |
+|---|---|
+| Gauss's electrostatic relation | Retained constituent law |
+| Magnetostatic Ampère law when $\partial\mathbf E/\partial t=0$ | Recovered limiting case |
+| Faraday induction | Retained and coupled to the completed magnetic relation |
+| Local charge continuity | Enforced consistency constraint |
+| Source-free electromagnetic waves | New deduction from the coupled equations |
+| Speed $1/\sqrt{\mu_0\epsilon_0}$ | Quantitative prediction compared with independent optical data |
+| Transverse electric and magnetic fields | New wave-structure consequence |
+| Nonvisible electromagnetic radiation | Extrapolation followed by independently testable prediction |
+
+**Overall discovery pattern:** inherited laws and analogies were first combined; their time-dependent inconsistency exposed the limit of interpolation; displacement current completed the equations; coupled local fields transformed the representation; the theory was extrapolated to source-free propagation; and the resulting wave and spectral predictions were tested independently.
+
+## Edge list
+
+```text
+A-FARADAY --contributes-to--> D-MAXWELL-FIELD-1861-1865
+A-CHARGE-CONSERVATION --requires--> DISPLACEMENT-CURRENT
+DISPLACEMENT-CURRENT --completes--> MAXWELL-AMPERE-LAW
+MAXWELL-EQUATIONS --generate--> EM-WAVE-EQUATION
+EM-WAVE-EQUATION --predicts--> SPEED-ONE-OVER-SQRT-MUEPS
+SPEED-ONE-OVER-SQRT-MUEPS --matches--> A-OPTICAL-SPEED
+V-HERTZ-WAVES --validates--> D-MAXWELL-FIELD-1861-1865
+D-QED --quantizes--> D-MAXWELL-FIELD-1861-1865
+D-MAXWELL-FIELD-1861-1865 --instantiates--> P-01
+```
+
 ## Extended historical investigation
 
 ### Maxwell's synthesis was a sequence, not four equations appearing at once
@@ -283,124 +311,11 @@ Maxwell's work developed through papers and a later treatise, using mechanical a
 
 They express closely related physics but are not textually identical.
 
-### Why displacement current was necessary
+### Relationship to the discovery-reasoning section
 
-Ampère's magnetostatic law:
+The constraint failure of the conduction-current-only Ampère law, the displacement-current completion, and the source-free electromagnetic-wave deduction are treated in [Interpolation, transformation, and extrapolation](#interpolation-transformation-and-extrapolation). That section is the canonical record of the discovery operation because it keeps the inherited law, obstruction, representational change, extrapolation, prediction, and validation in one inference chain.
 
-$$
-\nabla\times\mathbf B=\mu_0\mathbf J
-$$
-
-implies, after taking divergence:
-
-$$
-0=\mu_0\nabla\cdot\mathbf J.
-$$
-
-But local charge conservation requires:
-
-$$
-\nabla\cdot\mathbf J
-=-\frac{\partial\rho}{\partial t}.
-$$
-
-These are compatible only for static charge. Gauss's law gives:
-
-$$
-\rho=\epsilon_0\nabla\cdot\mathbf E.
-$$
-
-Adding:
-
-$$
-\mu_0\epsilon_0\frac{\partial\mathbf E}{\partial t}
-$$
-
-to Ampère's law restores the continuity equation. A charging capacitor makes the need concrete: conduction current flows in wires, while changing electric flux spans the gap. The magnetic circulation cannot depend on which surface is imagined across the same loop.
-
-### Wave derivation with assumptions explicit
-
-In source-free vacuum:
-
-$$
-\nabla\cdot\mathbf E=0,
-\qquad
-\nabla\times\mathbf E
-=-\frac{\partial\mathbf B}{\partial t},
-$$
-
-$$
-\nabla\cdot\mathbf B=0,
-\qquad
-\nabla\times\mathbf B
-=\mu_0\epsilon_0
-\frac{\partial\mathbf E}{\partial t}.
-$$
-
-Take the curl of Faraday's law:
-
-$$
-\nabla\times(\nabla\times\mathbf E)
-=-\frac{\partial}{\partial t}
-(\nabla\times\mathbf B).
-$$
-
-Using:
-
-$$
-\nabla\times(\nabla\times\mathbf E)
-=\nabla(\nabla\cdot\mathbf E)-\nabla^2\mathbf E,
-$$
-
-one obtains:
-
-$$
-\nabla^2\mathbf E
--\mu_0\epsilon_0
-\frac{\partial^2\mathbf E}{\partial t^2}=0.
-$$
-
-The same holds for \(\mathbf B\). A plane-wave solution has:
-
-$$
-\mathbf E=\mathbf E_0\cos(\mathbf k\cdot\mathbf r-\omega t),
-\qquad
-\omega=ck,
-$$
-
-$$
-\mathbf B=\frac{1}{c}\hat{\mathbf k}\times\mathbf E.
-$$
-
-Thus \(\mathbf E\), \(\mathbf B\), and propagation direction are mutually perpendicular in vacuum. Agreement of:
-
-$$
-\frac{1}{\sqrt{\mu_0\epsilon_0}}
-$$
-
-with measured light speed supported the identification of light as electromagnetic.
-
-For the plane-wave ansatz $\mathbf E=\mathbf E_0e^{i(\mathbf k\cdot\mathbf r-\omega t)}$, Gauss's law gives
-
-$$
-\mathbf k\cdot\mathbf E_0=0,
-$$
-
-while Faraday's law gives
-
-$$
-\mathbf k\times\mathbf E_0=\omega\mathbf B_0.
-$$
-
-Ampère–Maxwell gives $\mathbf k\times\mathbf B_0=-\omega\mu_0\epsilon_0\mathbf E_0$. Combining them yields
-
-$$
-k^2=\mu_0\epsilon_0\omega^2,
-\qquad
-c=\frac{\omega}{k}=\frac{1}{\sqrt{\mu_0\epsilon_0}},
-$$
-
-and $B_0=E_0/c$. Transversality and wave speed therefore follow from the field equations rather than being appended as optical facts.
+The remaining investigation below supplies nonduplicative supporting material: historically layered formulations, field energy and momentum, material-media assumptions, subsequent validation, and later theoretical transitions.
 
 ### Energy, momentum, and local conservation
 
@@ -531,8 +446,6 @@ This compact covariance helped make ether mechanics unnecessary.
 
 ## Additional quantitative and epistemic notes
 
-### Additional quantitative and epistemic notes
-
 Maxwell's synthesis was not obtained by simply “writing four equations.” His mechanical models of a medium helped him reason, but the durable content was the field relation. Combining the source-free curl equations gives
 
 $$
@@ -544,20 +457,6 @@ $$
 The numerical agreement of this speed with optical measurements supported the identification of light as an electromagnetic wave. The displacement-current term also repairs charge continuity: taking the divergence of Ampère–Maxwell law yields \(\nabla\cdot\mathbf J+\partial\rho/\partial t=0\). These are two distinct inferential gains—an unexpected unification with optics and internal consistency with conservation.
 
 Modern vector notation was largely supplied after Maxwell, especially through Heaviside and Gibbs. Historical graphs should not project the compact modern four-equation presentation unchanged onto Maxwell's 1860s texts. Experimental confirmation likewise belongs to later nodes, especially Hertz's production and detection of radio waves.
-
-## Edge list
-
-```text
-A-FARADAY --contributes-to--> D-MAXWELL-FIELD-1861-1865
-A-CHARGE-CONSERVATION --requires--> DISPLACEMENT-CURRENT
-DISPLACEMENT-CURRENT --completes--> MAXWELL-AMPERE-LAW
-MAXWELL-EQUATIONS --generate--> EM-WAVE-EQUATION
-EM-WAVE-EQUATION --predicts--> SPEED-ONE-OVER-SQRT-MUEPS
-SPEED-ONE-OVER-SQRT-MUEPS --matches--> A-OPTICAL-SPEED
-V-HERTZ-WAVES --validates--> D-MAXWELL-FIELD-1861-1865
-D-QED --quantizes--> D-MAXWELL-FIELD-1861-1865
-D-MAXWELL-FIELD-1861-1865 --instantiates--> P-01
-```
 
 ## Sources
 

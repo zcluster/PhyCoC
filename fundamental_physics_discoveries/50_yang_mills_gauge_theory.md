@@ -15,6 +15,10 @@
 
 Yang and Mills generalized local gauge invariance from commuting \(U(1)\) phase transformations to a non-Abelian internal symmetry. Making the orientation of isospin independently selectable at each spacetime point requires a multiplet of connection fields. Because the group generators do not commute, the gauge fields interact with themselves. The 1954 model did not correctly identify the observed nuclear force and initially faced a mass problem, but its mathematical mechanism became the core architecture of electroweak theory and quantum chromodynamics.
 
+## Historical problem
+
+Before the focal discovery (October 1954 publication), the case confronted a linked set of pressures: Connect phase invariance with electromagnetism; Proton and neutron behave as two states under strong interactions. The pathways `R-GLOBAL-ISOSPIN-ONLY`, `R-ABELIAN-GAUGE-COPY`, `R-YUKAWA-MESON-FUNDAMENTAL-FORCE`, `R-MASSIVE-NONABELIAN-VECTOR-BY-HAND` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Non-Abelian gauge fields, particle interactions, geometry, and the foundations of the Standard Model was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -24,6 +28,15 @@ Yang and Mills generalized local gauge invariance from commuting \(U(1)\) phase 
 | `TS-YANG-MILLS` | 1953–1954 | Make internal orientation locally variable | Non-Abelian connection and curvature are constructed |
 | `TS-MASS-OBJECTION` | 1954–1960s | Gauge invariance implies massless vector fields, apparently absent for nuclear forces | Theory remains formal architecture awaiting new mechanisms |
 | `TS-STANDARD-MODEL` | 1960s–1970s | Combine gauge symmetry, mass generation, and renormalizability | Electroweak and color gauge theories validate the framework |
+
+## Knowledge assets
+
+- `A-U1-GAUGE`: electromagnetic phase gauge invariance and the vector potential.
+- `A-ISOSPIN`: proton–neutron internal doublet and approximate strong symmetry.
+- `A-LIE-ALGEBRA`: noncommuting generators and structure constants.
+- `A-NOETHER`: symmetry currents and local-symmetry identities.
+- `A-CONNECTION-GEOMETRY`: parallel comparison of internal states at neighboring points.
+- `A-QUANTUM-FIELD-THEORY`: operator fields and interaction amplitudes.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -91,16 +104,26 @@ Yang and Mills generalized local gauge invariance from commuting \(U(1)\) phase 
 | Massive non-Abelian vector by hand | Insert a Proca mass | Breaks local gauge invariance and high-energy consistency | Massive-vector effective descriptions |
 | **Discovery/current: Yang–Mills gauge architecture** | Introduce a Lie-algebra-valued connection and nonlinear curvature | Requires specified matter, group, quantization, and mass dynamics | Basis of electroweak theory and QCD |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-U1-GAUGE`: electromagnetic phase gauge invariance and the vector potential.
-- `A-ISOSPIN`: proton–neutron internal doublet and approximate strong symmetry.
-- `A-LIE-ALGEBRA`: noncommuting generators and structure constants.
-- `A-NOETHER`: symmetry currents and local-symmetry identities.
-- `A-CONNECTION-GEOMETRY`: parallel comparison of internal states at neighboring points.
-- `A-QUANTUM-FIELD-THEORY`: operator fields and interaction amplitudes.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-U1-GAUGE`, `A-ISOSPIN`, `A-LIE-ALGEBRA`, `A-NOETHER`, `A-CONNECTION-GEOMETRY`, `A-QUANTUM-FIELD-THEORY`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-GLOBAL-ISOSPIN-ONLY` | A model in which proton and neutron form an internal doublet that can be rotated by the same \(SU(2)\) transformation everywhere, but the rotation cannot vary independently from point to point and no compensating gauge connection is introduced. | See the full pathway record above. |
+| `R-ABELIAN-GAUGE-COPY` | The attempt to generalize electromagnetism by assigning several independent commuting \(U(1)\)-like vector fields to internal charges, without matrix-valued connections or gauge-boson self-coupling. | See the full pathway record above. |
+| `R-YUKAWA-MESON-FUNDAMENTAL-FORCE` | A theory in which the fundamental nuclear force is produced by exchange of a massive scalar or pseudoscalar meson with potential \(V(r)\propto-e^{-mr}/r\), rather than by a locally gauged internal symmetry. | See the full pathway record above. |
+| `R-MASSIVE-NONABELIAN-VECTOR-BY-HAND` | A prospective non-Abelian vector theory in which a Proca mass term \(\tfrac12m^2A_\mu^aA^{a\mu}\) is inserted directly so the force has finite range, without a compensating scalar mechanism or hidden gauge-invariant formulation. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Which force law fits?” becomes “Which local symmetry and representation require the connection?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Let matter transform in a representation of a compact group:
 
@@ -160,7 +183,7 @@ $$
 (D_\mu F^{\mu\nu})^a=gJ^{a\nu}.
 $$
 
-#### Complete localization-to-dynamics inference
+##### Complete localization-to-dynamics inference
 
 The transformation law for \(A_\mu\) is not an independent guess. Demand \(D'_\mu\psi'=UD_\mu\psi\) and insert \(\psi'=U\psi\) and \(D'_\mu=\partial_\mu-igA'_\mu\):
 
@@ -209,6 +232,81 @@ Adding matter changes the stationary-action condition to \((D_\mu F^{\mu\nu})^a=
 | Minimal dynamics | The local Lorentz scalar \(-\tfrac14F^a_{\mu\nu}F^{a\mu\nu}\). |
 | Empirical choices still required | Gauge group, representations, couplings, vacuum/mass mechanism, and quantum consistency. |
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Isospin regularities become a local mechanism generating interaction terms
+
+- `P-03` — **Reframe the inherited problem:** “Which force law fits?” becomes “Which local symmetry and representation require the connection?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Matrix-valued self-interacting gauge fields are accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Non-Abelian gauge fields, particle interactions, geometry, and the foundations of the Standard Model). The case-specific unification was: Internal symmetry, geometry, and force fields are unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Internal symmetry, geometry, and force fields are unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Isospin regularities become a local mechanism generating interaction terms
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Maxwell gauge theory and global isospin survive as limits or substructures. Its quantitative or otherwise discriminating test strategy is: A compact Lagrangian fixes vertices, identities, running, and scattering predictions. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Maxwell gauge theory and global isospin survive as limits or substructures
+
+- `P-06` — **Prioritize discriminating tests:** A compact Lagrangian fixes vertices, identities, running, and scattering predictions
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Internal symmetry, geometry, and force fields are unified |
+| `P-02` | Transformative move and generative deduction | Isospin regularities become a local mechanism generating interaction terms |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Which force law fits?” becomes “Which local symmetry and representation require the connection?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Matrix-valued self-interacting gauge fields are accepted |
+| `P-05` | Retention and limiting recovery | Maxwell gauge theory and global isospin survive as limits or substructures |
+| `P-06` | Prediction, discrimination, and validation network | A compact Lagrangian fixes vertices, identities, running, and scattering predictions |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-YANG-MILLS-1954` |
+| Focal date | October 1954 publication |
+| Central claim | Yang and Mills generalized local gauge invariance from commuting \(U(1)\) phase transformations to a non-Abelian internal symmetry. Making the orientation of isospin independently selectable at each spacetime point requires a multiplet of connection fields. Because the group generators do not commute, the gauge fields interact with themselves. The 1954 model did not correctly identify the observed nuclear force and initially faced a mass problem, but its mathematical mechanism became the core architecture of electroweak theory and quantum chromodynamics. |
+| Domain | Non-Abelian gauge fields, particle interactions, geometry, and the foundations of the Standard Model |
+| Epistemic status | Foundational gauge-theory architecture; experimentally successful through electroweak theory and QCD, while pure Yang–Mills mass-gap existence remains mathematically unresolved |
+| Generative role | Isospin regularities become a local mechanism generating interaction terms |
+| Retained structure | Maxwell gauge theory and global isospin survive as limits or substructures |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\psi(x)\rightarrow U(x)\psi(x),
+\qquad
+U(x)=e^{i\alpha^a(x)T^a},
+$$
+
+$$
+[T^a,T^b]=if^{abc}T^c.
+$$
+
+$$
+D_\mu=\partial_\mu-igA_\mu,
+\qquad
+A_\mu=A_\mu^aT^a,
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
 ## Historically novel predictions and deductions
 
 ### `NP-YM-NONE` — The 1954 isospin model had no successful clean new prediction
@@ -243,32 +341,6 @@ The explanatory gain is generative constraint. Choosing a group and matter repre
 Gauge symmetry alone does not specify nature: the group, representations, couplings, scalar sector, vacuum, and quantum consistency must be supplied. Gauge transformations are generally redundancies of description; gauge-invariant observables carry direct physical meaning. Quantization requires gauge fixing or equivalent methods and introduces ghosts in common perturbative formulations.
 
 The original massless isospin bosons were phenomenologically wrong. Electroweak boson masses require the Higgs mechanism, while QCD develops a mass scale through quantum dynamics. A rigorous proof that four-dimensional pure Yang–Mills theory exists with a positive mass gap remains an open Clay Millennium problem. None of these limitations reduces Yang–Mills to “just mathematics”; they identify which additional nodes convert an architecture into an empirical theory.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Internal symmetry, geometry, and force fields are unified |
-| `P-02` | Isospin regularities become a local mechanism generating interaction terms |
-| `P-03` | “Which force law fits?” becomes “Which local symmetry and representation require the connection?” |
-| `P-04` | Matrix-valued self-interacting gauge fields are accepted |
-| `P-05` | Maxwell gauge theory and global isospin survive as limits or substructures |
-| `P-06` | A compact Lagrangian fixes vertices, identities, running, and scattering predictions |
-
-## Edge list
-
-```text
-A-U1-GAUGE --inspires--> D-YANG-MILLS-1954
-A-ISOSPIN --is-localized-by--> D-YANG-MILLS-1954
-NONCOMMUTING-GENERATORS --require--> NONLINEAR-FIELD-STRENGTH
-D-YANG-MILLS-1954 --generates--> GAUGE-BOSON-SELF-INTERACTION
-D-YANG-MILLS-1954 --underlies--> ELECTROWEAK-THEORY
-D-YANG-MILLS-1954 --underlies--> QCD
-D-YANG-MILLS-1954 --provides-nonabelian-gauge-structure-for--> D-ELECTROWEAK-1961-1973
-D-YANG-MILLS-1954 --provides-nonabelian-gauge-structure-for--> D-QCD-1973
-HIGGS-MECHANISM --repairs-mass-problem-of--> MASSLESS-ELECTROWEAK-YANG-MILLS
-D-YANG-MILLS-1954 --instantiates--> P-01
-```
 
 ## Extended historical investigation
 
@@ -337,6 +409,25 @@ Antecedents by Weyl, Pauli, Klein and others should be represented as contributi
 - Separate the success of the 1954 mathematical architecture from failure of its original nuclear-force interpretation.
 - Check group, representations, anomalies, scalar/mass mechanism, and scale domain for every candidate theory.
 - Preserve low-energy pion exchange as retained effective structure rather than labeling all Yukawa reasoning false.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-U1-GAUGE --inspires--> D-YANG-MILLS-1954
+A-ISOSPIN --is-localized-by--> D-YANG-MILLS-1954
+NONCOMMUTING-GENERATORS --require--> NONLINEAR-FIELD-STRENGTH
+D-YANG-MILLS-1954 --generates--> GAUGE-BOSON-SELF-INTERACTION
+D-YANG-MILLS-1954 --underlies--> ELECTROWEAK-THEORY
+D-YANG-MILLS-1954 --underlies--> QCD
+D-YANG-MILLS-1954 --provides-nonabelian-gauge-structure-for--> D-ELECTROWEAK-1961-1973
+D-YANG-MILLS-1954 --provides-nonabelian-gauge-structure-for--> D-QCD-1973
+HIGGS-MECHANISM --repairs-mass-problem-of--> MASSLESS-ELECTROWEAK-YANG-MILLS
+D-YANG-MILLS-1954 --instantiates--> P-01
+```
 
 ## Sources
 

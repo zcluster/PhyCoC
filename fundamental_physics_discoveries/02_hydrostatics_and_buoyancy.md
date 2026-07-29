@@ -16,6 +16,10 @@
 
 Archimedean hydrostatics converted qualitative observations about floating into a geometrical theory of pressure, displaced fluid, equilibrium, and stability. Its central buoyancy relation remains correct in the ordinary continuum domain, with corrections required for compressibility, surface tension, nonuniform fields, and microscopic scales.
 
+## Historical problem
+
+Before the focal discovery (c. 250 BCE (Archimedes' mature hydrostatics)), the case confronted a linked set of pressures: Shipbuilding and weighing supplied empirical knowledge; *On Floating Bodies* treated fluids mathematically. The pathways `R-SHAPE-ONLY-FLOATING`, `R-ELEMENTAL-PLACE` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Equilibrium of fluids and immersed bodies was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Development | Transition |
@@ -25,6 +29,13 @@ Archimedean hydrostatics converted qualitative observations about floating into 
 | `TS-EARLY-MODERN` | 16th–17th centuries | Hydrostatic pressure and instruments developed | Pascal's law and barometry extended fluid statics |
 | `TS-CONTINUUM-MECHANICS` | 18th–19th centuries | Local pressure fields and differential equations formalized | Hydrostatics embedded in general fluid mechanics |
 | `TS-MODERN` | 20th century onward | Molecular and relativistic limits identified | Classical relations retained as effective laws |
+
+## Knowledge assets
+
+- `A-LEVERS`: torque and center-of-gravity reasoning.
+- `A-GEOMETRY`: volumes and areas of solids.
+- `A-DENSITY-COMPARISON`: weighing materials and observing immersion.
+- `A-EQUILIBRIUM`: balance as equality of opposed effects.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -61,14 +72,24 @@ Archimedean hydrostatics converted qualitative observations about floating into 
 
 The ancient elemental-place account was broader than a naïve mistake: it integrated terrestrial change into a purposive cosmology. Its weakness for this problem was lack of a measurable force magnitude. A shape-only repair can fit individual examples after the fact, but fails when the same object is loaded, the fluid density changes, or a sealed hull floods. Archimedean reasoning generates all of these contrasts from weight and displacement. Modern fluid statics then supplies the deeper local mechanism—pressure increases with depth—while retaining Archimedes' integrated result.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-LEVERS`: torque and center-of-gravity reasoning.
-- `A-GEOMETRY`: volumes and areas of solids.
-- `A-DENSITY-COMPARISON`: weighing materials and observing immersion.
-- `A-EQUILIBRIUM`: balance as equality of opposed effects.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and mathematical core
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-LEVERS`, `A-GEOMETRY`, `A-DENSITY-COMPARISON`, `A-EQUILIBRIUM`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-SHAPE-ONLY-FLOATING` | A qualitative model that treats an object's external geometry or intrinsic “lightness” as the direct cause of floating, without balancing its weight against the weight of displaced fluid. | It misses density ratios and the role of displaced fluid. |
+| `R-ELEMENTAL-PLACE` | The Aristotelian theory that each terrestrial element has a natural region in the cosmos and that unforced bodies rise or fall because their dominant element tends toward that natural place. | It did not give a precise magnitude for buoyant support. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Why is the object light in water?” reframed as a fluid-force balance. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 `D-ARCHIMEDES-BUOYANCY` states that the upward buoyant force equals the weight of displaced fluid:
 
@@ -109,6 +130,86 @@ $$
 
 Here \(\mathbf n\) is the outward normal and \(\mathbf g\) is the downward gravitational-acceleration vector, so \(-\rho_f\mathbf g\) points upward. For uniform density and gravity this reduces to the weight of displaced fluid. The differential derivation is modern, not Archimedes' original notation.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Practical regularities upgraded to a force-generating pressure account
+
+- `P-03` — **Reframe the inherited problem:** “Why is the object light in water?” reframed as a fluid-force balance
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Distributed pressure accepted as the effective mechanism
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Equilibrium of fluids and immersed bodies). The case-specific unification was: Floating and sinking unified by density and displacement. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Floating and sinking unified by density and displacement
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Practical regularities upgraded to a force-generating pressure account
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Geometric volume and balance reasoning retained. Its quantitative or otherwise discriminating test strategy is: Predictions are directly testable by weighing and volume measurement. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Geometric volume and balance reasoning retained
+
+- `P-06` — **Prioritize discriminating tests:** Predictions are directly testable by weighing and volume measurement
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Floating and sinking unified by density and displacement |
+| `P-02` | Transformative move and generative deduction | Practical regularities upgraded to a force-generating pressure account |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Why is the object light in water?” reframed as a fluid-force balance |
+| `P-04` | Transformative representation, ontology, or mechanism | Distributed pressure accepted as the effective mechanism |
+| `P-05` | Retention and limiting recovery | Geometric volume and balance reasoning retained |
+| `P-06` | Prediction, discrimination, and validation network | Predictions are directly testable by weighing and volume measurement |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-ARCHIMEDES-BUOYANCY` |
+| Focal date | c. 250 BCE (Archimedes' mature hydrostatics) |
+| Central claim | Archimedean hydrostatics converted qualitative observations about floating into a geometrical theory of pressure, displaced fluid, equilibrium, and stability. Its central buoyancy relation remains correct in the ordinary continuum domain, with corrections required for compressibility, surface tension, nonuniform fields, and microscopic scales. |
+| Domain | Equilibrium of fluids and immersed bodies |
+| Epistemic status | A valid classical theory for continuum fluids in static equilibrium |
+| Generative role | Practical regularities upgraded to a force-generating pressure account |
+| Retained structure | Geometric volume and balance reasoning retained |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+F_B=\rho_f g V_{\mathrm{disp}},
+$$
+
+$$
+F_B-mg=0.
+$$
+
+$$
+\rho_f gV_{\mathrm{disp}}=\rho_b gV_b
+\quad\Longrightarrow\quad
+\frac{V_{\mathrm{disp}}}{V_b}=\frac{\rho_b}{\rho_f}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Hydrostatics and Buoyancy: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Predicts immersion fraction from density without needing object-specific rules.
@@ -124,31 +225,6 @@ $$
 ## Limitations and retained status
 
 The simple equation assumes a continuum fluid, static conditions, and a nearly uniform gravitational field. Compressible atmospheres require \(\rho=\rho(z)\); capillary-scale objects require surface-tension forces; rapidly accelerating fluids require nonhydrostatic dynamics. At molecular scales, density and pressure are statistical fields. Within ordinary hydrostatics, Archimedean buoyancy remains fundamental and exact to the model.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Floating and sinking unified by density and displacement |
-| `P-02` | Practical regularities upgraded to a force-generating pressure account |
-| `P-03` | “Why is the object light in water?” reframed as a fluid-force balance |
-| `P-04` | Distributed pressure accepted as the effective mechanism |
-| `P-05` | Geometric volume and balance reasoning retained |
-| `P-06` | Predictions are directly testable by weighing and volume measurement |
-
-## Edge list
-
-```text
-A-LEVERS --contributes-to--> D-ARCHIMEDES-BUOYANCY
-A-GEOMETRY --enables--> D-ARCHIMEDES-BUOYANCY
-R-SHAPE-ONLY-FLOATING --superseded-by--> D-ARCHIMEDES-BUOYANCY
-R-ELEMENTAL-PLACE --superseded-by--> D-ARCHIMEDES-BUOYANCY
-EQ-HYDROSTATIC-PRESSURE --derives--> EQ-BUOYANT-FORCE
-EQ-BUOYANT-FORCE --explains--> V-FLOATING
-D-ARCHIMEDES-BUOYANCY --retained-within--> S-CONTINUUM-HYDROSTATICS
-D-ARCHIMEDES-BUOYANCY --instantiates--> P-02
-D-ARCHIMEDES-BUOYANCY --instantiates--> P-06
-```
 
 ## Extended historical investigation
 
@@ -267,6 +343,24 @@ Hydrostatics is an effective continuum theory. Molecular dynamics explains press
 - Attach `uniform-density` and `uniform-gravity` as assumptions to the compact formula.
 - When surface tension is important, add rather than replace forces.
 - Label the crown anecdote `later-tradition`, not `secure-primary-evidence`.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-LEVERS --contributes-to--> D-ARCHIMEDES-BUOYANCY
+A-GEOMETRY --enables--> D-ARCHIMEDES-BUOYANCY
+R-SHAPE-ONLY-FLOATING --superseded-by--> D-ARCHIMEDES-BUOYANCY
+R-ELEMENTAL-PLACE --superseded-by--> D-ARCHIMEDES-BUOYANCY
+EQ-HYDROSTATIC-PRESSURE --derives--> EQ-BUOYANT-FORCE
+EQ-BUOYANT-FORCE --explains--> V-FLOATING
+D-ARCHIMEDES-BUOYANCY --retained-within--> S-CONTINUUM-HYDROSTATICS
+D-ARCHIMEDES-BUOYANCY --instantiates--> P-02
+D-ARCHIMEDES-BUOYANCY --instantiates--> P-06
+```
 
 ## Sources
 

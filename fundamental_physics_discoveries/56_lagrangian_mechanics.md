@@ -22,6 +22,10 @@ $$
 
 encode dynamics through a scalar Lagrangian and generalized forces. For conservative natural systems, $L=T-V$ and $Q_i^{\rm nc}=0$. In modern fixed-endpoint form the equations follow from stationary action, but it is historically misleading to claim that Lagrange's 1788 treatise simply presented the later Hamilton principle $\delta\int L\,dt=0$ in modern form. His synthesis centered on virtual work, d'Alembert's principle, generalized coordinates and analytical reduction.
 
+## Historical problem
+
+Before the focal discovery (1788 publication of *Méchanique analitique*), the case confronted a linked set of pressures: Equilibrium of constrained systems; Extremal paths solve optics and fastest-descent problems. The pathways `R-CARTESIAN-COMPONENT-MECHANICS`, `R-EXPLICIT-CONSTRAINT-REACTIONS`, `R-MAUPERTUIS-METAPHYSICAL-ACTION`, `R-DALEMBERT-WITHOUT-SYSTEMATIC-COORDINATES` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Analytical mechanics, generalized coordinates, constraints, virtual work, and variational dynamics was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -32,6 +36,15 @@ encode dynamics through a scalar Lagrangian and generalized forces. For conserva
 | `TS-DALEMBERT` | 1743 onward | Dynamics recast as instantaneous virtual equilibrium | Applied forces and inertial terms combine |
 | `TS-LAGRANGE` | 1750s–1788 | Generalized-coordinate mechanics consolidated | Geometry-specific force balances become one analytical scheme |
 | `TS-HAMILTON-NOETHER` | 1830s–1918 | Action and transformation structure generalized | Canonical mechanics and symmetry–conservation theory emerge |
+
+## Knowledge assets
+
+- `A-NEWTON-DYNAMICS`: empirically successful force–acceleration laws to be reproduced.
+- `A-VIRTUAL-WORK`: ideal constraint reactions vanish against allowed virtual displacements.
+- `A-DALEMBERT`: applied and inertial forces form a virtual-work balance.
+- `A-CALCULUS-VARIATIONS`: Euler and Lagrange methods for varying functions and functionals.
+- `A-GENERALIZED-COORDINATES`: independent variables adapted to constraints and symmetry.
+- `A-FERMAT-MAUPERTUIS`: earlier examples of global extremal reasoning.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -99,16 +112,26 @@ encode dynamics through a scalar Lagrangian and generalized forces. For conserva
 | d'Alembert without systematic coordinates | Use virtual equilibrium | Remains case-specific | Virtual-work projection |
 | **Discovery/current: Lagrangian analytical mechanics** | Use independent generalized coordinates and scalar generating functions | Requires regular coordinates and careful treatment of nonideal constraints | General constrained classical mechanics |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-NEWTON-DYNAMICS`: empirically successful force–acceleration laws to be reproduced.
-- `A-VIRTUAL-WORK`: ideal constraint reactions vanish against allowed virtual displacements.
-- `A-DALEMBERT`: applied and inertial forces form a virtual-work balance.
-- `A-CALCULUS-VARIATIONS`: Euler and Lagrange methods for varying functions and functionals.
-- `A-GENERALIZED-COORDINATES`: independent variables adapted to constraints and symmetry.
-- `A-FERMAT-MAUPERTUIS`: earlier examples of global extremal reasoning.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivation
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-NEWTON-DYNAMICS`, `A-VIRTUAL-WORK`, `A-DALEMBERT`, `A-CALCULUS-VARIATIONS`, `A-GENERALIZED-COORDINATES`, `A-FERMAT-MAUPERTUIS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-CARTESIAN-COMPONENT-MECHANICS` | A Newtonian calculation strategy that writes a separate vector force equation for every body in fixed spatial coordinates and then resolves all unknown reaction forces and accelerations component by component. | See the full pathway record above. |
+| `R-EXPLICIT-CONSTRAINT-REACTIONS` | A constrained-mechanics method in which every tension, normal force, hinge reaction or contact force is introduced as an additional unknown and solved together with Cartesian equations and constraint relations. | See the full pathway record above. |
+| `R-MAUPERTUIS-METAPHYSICAL-ACTION` | Maupertuis's 1744 program proposing that nature minimizes an “action” related to mass, speed and distance, often defended through economy or perfection and formulated most securely for restricted fixed-energy problems rather than arbitrary time-dependent dynamics. | See the full pathway record above. |
+| `R-DALEMBERT-WITHOUT-SYSTEMATIC-COORDINATES` | The d'Alembert virtual-work equation treating dynamics as equilibrium between applied and inertial forces, but applied case by case before a fully systematic generalized-coordinate calculus organizes all degrees of freedom. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “What are all constraint forces?” becomes “What are the independent degrees of freedom?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Let particle positions depend on independent generalized coordinates,
 
@@ -183,7 +206,7 @@ $$
 
 This result prefigures, but does not replace, Noether's general symmetry theorem.
 
-### Self-contained derivation spine
+#### Self-contained derivation spine
 
 The kinetic-energy identity used above should not be treated as a black box. For
 
@@ -264,6 +287,77 @@ Fixed endpoints make the bracket zero. The fundamental lemma of the calculus of 
 | Derived | Elimination of ideal constraint reactions and Euler–Lagrange equations |
 | Additional condition | Fixed endpoint variations for the action formulation |
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Virtual-work regularities become equations generated from $L$ and generalized forces
+
+- `P-03` — **Reframe the inherited problem:** “What are all constraint forces?” becomes “What are the independent degrees of freedom?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Configuration space, generalized coordinates and scalar generating functions become primary objects
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Analytical mechanics, generalized coordinates, constraints, virtual work, and variational dynamics). The case-specific unification was: Particles, rigid bodies, linkages and constrained systems share one coordinate-independent equation form. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Particles, rigid bodies, linkages and constrained systems share one coordinate-independent equation form
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Virtual-work regularities become equations generated from $L$ and generalized forces
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Newtonian trajectories and d'Alembert virtual work survive as equivalent or foundational structures. Its quantitative or otherwise discriminating test strategy is: Candidate Lagrangians generate explicit equations, conservation checks and measurable trajectories. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Newtonian trajectories and d'Alembert virtual work survive as equivalent or foundational structures
+
+- `P-06` — **Prioritize discriminating tests:** Candidate Lagrangians generate explicit equations, conservation checks and measurable trajectories
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Particles, rigid bodies, linkages and constrained systems share one coordinate-independent equation form |
+| `P-02` | Transformative move and generative deduction | Virtual-work regularities become equations generated from $L$ and generalized forces |
+| `P-03` | Diagnosis of interpolation failure and reframing | “What are all constraint forces?” becomes “What are the independent degrees of freedom?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Configuration space, generalized coordinates and scalar generating functions become primary objects |
+| `P-05` | Retention and limiting recovery | Newtonian trajectories and d'Alembert virtual work survive as equivalent or foundational structures |
+| `P-06` | Prediction, discrimination, and validation network | Candidate Lagrangians generate explicit equations, conservation checks and measurable trajectories |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-LAGRANGIAN-MECHANICS-1788` |
+| Focal date | 1788 publication of *Méchanique analitique* |
+| Central claim | Lagrange reorganized mechanics so that constrained many-body motion could be derived in generalized coordinates without solving explicitly for every internal constraint force. The central equations, $$ \frac{d}{dt}\frac{\partial L}{\partial\dot q_i} -\frac{\partial L}{\partial q_i}=Q_i^{\rm nc}, $$ encode dynamics through a scalar Lagrangian and generalized forces. For conservative natural systems, $L=T-V$ and $Q_i^{\rm nc}=0$. In modern fixed-endpoint form the equations follow from stationary action, but it is historically misleading to claim that Lagrange's 1788 treatise simply presented the later Hamilton principle $\delta\int L\,dt=0$ in modern form. His synthesis centered on virtual work, d'Alembert's principle, generalized coordinates and analytical reduction. |
+| Domain | Analytical mechanics, generalized coordinates, constraints, virtual work, and variational dynamics |
+| Epistemic status | An equivalent and highly general classical formulation within its domain; modern action notation is a later reconstruction and extension |
+| Generative role | Virtual-work regularities become equations generated from $L$ and generalized forces |
+| Retained structure | Newtonian trajectories and d'Alembert virtual work survive as equivalent or foundational structures |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\mathbf r_a=\mathbf r_a(q_1,\ldots,q_n,t).
+$$
+
+$$
+\delta\mathbf r_a=\sum_i\frac{\partial\mathbf r_a}{\partial q_i}\delta q_i.
+$$
+
+$$
+\sum_a(\mathbf F_a-m_a\mathbf a_a)\cdot\delta\mathbf r_a=0.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
 ## Historically novel predictions and deductions
 
 ### `NP-LAGRANGE-NONE` — No model-independent empirical prediction from the reformulation alone
@@ -298,33 +392,6 @@ The method's explanatory gain lies in representation. A valid change of generali
 For nonconservative forces one generally needs generalized forces, a Rayleigh dissipation function in special cases, or an enlarged system; not every dissipative process follows from an ordinary $L(q,\dot q,t)$. Nonholonomic constraints require care and are not always handled by naively substituting constraint equations into an action. Singular Lagrangians occur in gauge theories, where the velocity–momentum map is not invertible and constraint analysis is needed.
 
 The Lagrangian is not unique: adding a total time derivative $dF(q,t)/dt$ leaves fixed-endpoint Euler–Lagrange equations unchanged. $L=T-V$ is common, not universal. Stationary action is not necessarily minimum action. These are structural qualifications, not failures of analytical mechanics.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Particles, rigid bodies, linkages and constrained systems share one coordinate-independent equation form |
-| `P-02` | Virtual-work regularities become equations generated from $L$ and generalized forces |
-| `P-03` | “What are all constraint forces?” becomes “What are the independent degrees of freedom?” |
-| `P-04` | Configuration space, generalized coordinates and scalar generating functions become primary objects |
-| `P-05` | Newtonian trajectories and d'Alembert virtual work survive as equivalent or foundational structures |
-| `P-06` | Candidate Lagrangians generate explicit equations, conservation checks and measurable trajectories |
-
-## Edge list
-
-```text
-A-NEWTON-DYNAMICS --constrained-target-for--> D-LAGRANGIAN-MECHANICS-1788
-T-NEWTON-1687 --is-reformulated-by--> D-LAGRANGIAN-MECHANICS-1788
-A-VIRTUAL-WORK --contributes-to--> D-LAGRANGIAN-MECHANICS-1788
-A-DALEMBERT --enables--> GENERALIZED-DYNAMICS
-A-GENERALIZED-COORDINATES --eliminate--> IDEAL-CONSTRAINT-REACTIONS
-D-LAGRANGIAN-MECHANICS-1788 --generates--> EULER-LAGRANGE-EQUATIONS
-CYCLIC-COORDINATE --implies--> CONSERVED-CANONICAL-MOMENTUM
-D-FERMAT-PRINCIPLE-1662 --prefigures--> STATIONARY-ACTION
-D-LAGRANGIAN-MECHANICS-1788 --is-transformed-into--> D-HAMILTONIAN-MECHANICS-1834
-D-LAGRANGIAN-MECHANICS-1788 --enables--> D-NOETHER-THEOREMS-1918
-D-LAGRANGIAN-MECHANICS-1788 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -362,6 +429,26 @@ without first solving for string tension. The tension can be recovered later if 
 - Distinguish canonical momentum $\partial L/\partial\dot q_i$ from mechanical momentum $m\dot q_i$ when velocity-dependent potentials occur.
 - Do not equate “stationary” with “minimum.”
 - Link the case backward to Fermat/d'Alembert and forward to Hamilton/Noether/QFT.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-NEWTON-DYNAMICS --constrained-target-for--> D-LAGRANGIAN-MECHANICS-1788
+T-NEWTON-1687 --is-reformulated-by--> D-LAGRANGIAN-MECHANICS-1788
+A-VIRTUAL-WORK --contributes-to--> D-LAGRANGIAN-MECHANICS-1788
+A-DALEMBERT --enables--> GENERALIZED-DYNAMICS
+A-GENERALIZED-COORDINATES --eliminate--> IDEAL-CONSTRAINT-REACTIONS
+D-LAGRANGIAN-MECHANICS-1788 --generates--> EULER-LAGRANGE-EQUATIONS
+CYCLIC-COORDINATE --implies--> CONSERVED-CANONICAL-MOMENTUM
+D-FERMAT-PRINCIPLE-1662 --prefigures--> STATIONARY-ACTION
+D-LAGRANGIAN-MECHANICS-1788 --is-transformed-into--> D-HAMILTONIAN-MECHANICS-1834
+D-LAGRANGIAN-MECHANICS-1788 --enables--> D-NOETHER-THEOREMS-1918
+D-LAGRANGIAN-MECHANICS-1788 --instantiates--> P-03
+```
 
 ## Sources
 

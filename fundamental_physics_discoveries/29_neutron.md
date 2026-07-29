@@ -15,6 +15,10 @@
 
 Chadwick interpreted penetrating radiation from beryllium bombarded by alpha particles as massive neutral particles. Collision kinematics showed that a photon interpretation required implausibly high energies, while a neutral particle with mass near the proton fit recoil data.
 
+## Historical problem
+
+Before the focal discovery (February 1932), the case confronted a linked set of pressures: Nuclei modeled from protons and nuclear electrons; Penetrating neutral radiation observed. The pathways `R-HIGH-ENERGY-GAMMA`, `R-PROTON-ELECTRON-NUCLEUS`, `R-NEUTRAL-PROTON-ELECTRON-BOUND-NEUTRON` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Nuclear constitution was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem/evidence | Transition |
@@ -25,6 +29,13 @@ Chadwick interpreted penetrating radiation from beryllium bombarded by alpha par
 | `TS-CHADWICK` | 1932 | Elastic-collision analysis | Neutron inferred |
 | `TS-NUCLEAR-MODELS` | 1932 onward | Proton–neutron nucleus adopted | Isotopes and beta decay clarified |
 | `TS-QUARK` | 1960s onward | Nucleon substructure revealed | Neutron becomes composite |
+
+## Knowledge assets
+
+- `A-ALPHA-SOURCE`: initiates beryllium reaction.
+- `A-PARAFFIN`: hydrogen-rich recoil target.
+- `A-COLLISION-KINEMATICS`: infers projectile mass.
+- `A-IONIZATION-CHAMBER`: measures recoil energy.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -62,14 +73,25 @@ Chadwick interpreted penetrating radiation from beryllium bombarded by alpha par
 
 Chadwick's argument compared recoil kinematics across materials rather than relying only on paraffin. The gamma hypothesis was reasonable because neutral penetrating nuclear radiation was known. Its rejection came when one photon-energy choice could not coherently explain the ensemble of recoil and reaction data. The neutron itself later proved composite, but that revision does not restore either discarded hypothesis.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-ALPHA-SOURCE`: initiates beryllium reaction.
-- `A-PARAFFIN`: hydrogen-rich recoil target.
-- `A-COLLISION-KINEMATICS`: infers projectile mass.
-- `A-IONIZATION-CHAMBER`: measures recoil energy.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and inference
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-ALPHA-SOURCE`, `A-PARAFFIN`, `A-COLLISION-KINEMATICS`, `A-IONIZATION-CHAMBER`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-HIGH-ENERGY-GAMMA` | The hypothesis that the neutral penetrating radiation emitted from alpha-bombarded beryllium consists of exceptionally energetic gamma-ray photons rather than massive neutral particles. | Compton recoil of protons and nitrogen required inconsistent photon energies. |
+| `R-PROTON-ELECTRON-NUCLEUS` | A pre-neutron nuclear model in which a nucleus contains enough protons to account for its mass number plus confined electrons that reduce the net charge to the observed atomic number. | Nuclear electron confinement conflicts with quantum scales; spin and statistics fail. |
+| `R-NEUTRAL-PROTON-ELECTRON-BOUND-NEUTRON` | A model of the neutron itself as a very tightly bound proton–electron composite rather than a new nucleon. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Penetrating gamma ray” reframed as neutral matter. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Production reaction:
 
@@ -93,6 +115,86 @@ $$
 
 with mean lifetime of roughly fifteen minutes.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Collision equations infer invisible projectile mass
+
+- `P-03` — **Reframe the inherited problem:** “Penetrating gamma ray” reframed as neutral matter
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Massive uncharged particle accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Nuclear constitution). The case-specific unification was: Recoil kinematics and nuclear composition unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Recoil kinematics and nuclear composition unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Collision equations infer invisible projectile mass
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Proton nucleus retained with new partner. Its quantitative or otherwise discriminating test strategy is: Multiple target recoil energies discriminate hypotheses. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Proton nucleus retained with new partner
+
+- `P-06` — **Prioritize discriminating tests:** Multiple target recoil energies discriminate hypotheses
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Recoil kinematics and nuclear composition unified |
+| `P-02` | Transformative move and generative deduction | Collision equations infer invisible projectile mass |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Penetrating gamma ray” reframed as neutral matter |
+| `P-04` | Transformative representation, ontology, or mechanism | Massive uncharged particle accepted |
+| `P-05` | Retention and limiting recovery | Proton nucleus retained with new partner |
+| `P-06` | Prediction, discrimination, and validation network | Multiple target recoil energies discriminate hypotheses |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-CHADWICK-NEUTRON-1932` |
+| Focal date | February 1932 |
+| Central claim | Chadwick interpreted penetrating radiation from beryllium bombarded by alpha particles as massive neutral particles. Collision kinematics showed that a photon interpretation required implausibly high energies, while a neutral particle with mass near the proton fit recoil data. |
+| Domain | Nuclear constitution |
+| Epistemic status | The neutron is a composite neutral baryon made primarily of \(udd\) valence quarks plus sea quarks and gluons |
+| Generative role | Collision equations infer invisible projectile mass |
+| Retained structure | Proton nucleus retained with new partner |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+{}^9\mathrm{Be}+\alpha
+\rightarrow{}^{12}\mathrm{C}+n.
+$$
+
+$$
+\frac{E_{R,\max}}{E}
+=\frac{4mM}{(m+M)^2}.
+$$
+
+$$
+n\rightarrow p+e^-+\bar\nu_e,
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** The Neutron: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Recoil energies across different target nuclei fit a neutral massive particle.
@@ -103,30 +205,6 @@ with mean lifetime of roughly fifteen minutes.
 ## Limitations and retained status
 
 The neutron is not elementary; deep-inelastic scattering and QCD reveal quark–gluon structure. Bound neutrons can be stable, while free neutrons beta decay. A neutron has zero net charge but nonzero magnetic moment and internal charge distribution.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Recoil kinematics and nuclear composition unified |
-| `P-02` | Collision equations infer invisible projectile mass |
-| `P-03` | “Penetrating gamma ray” reframed as neutral matter |
-| `P-04` | Massive uncharged particle accepted |
-| `P-05` | Proton nucleus retained with new partner |
-| `P-06` | Multiple target recoil energies discriminate hypotheses |
-
-## Edge list
-
-```text
-A-ALPHA-SOURCE --produces--> BERYLLIUM-RADIATION
-R-HIGH-ENERGY-GAMMA --attempts-to-explain--> BERYLLIUM-RADIATION
-A-PARAFFIN --reveals--> PROTON-RECOIL
-A-COLLISION-KINEMATICS --infers--> NEUTRON-MASS
-D-CHADWICK-NEUTRON-1932 --supersedes--> R-HIGH-ENERGY-GAMMA
-D-CHADWICK-NEUTRON-1932 --supersedes--> R-PROTON-ELECTRON-NUCLEUS
-D-QCD --reframes--> NEUTRON-AS-COMPOSITE
-D-CHADWICK-NEUTRON-1932 --instantiates--> P-02
-```
 
 ## Extended historical investigation
 
@@ -268,6 +346,8 @@ Modern free-neutron lifetime measurements using trapped “bottle” neutrons an
 
 ## Additional quantitative and epistemic notes
 
+### Additional quantitative and epistemic notes
+
 Bothe and Becker observed unusually penetrating neutral radiation from beryllium bombarded by alpha particles. Joliot-Curie experiments showed that it ejected energetic protons from hydrogen-rich materials, initially interpreted through very energetic gamma rays. Chadwick compared recoil energies for different nuclei and showed that Compton kinematics would demand implausible photon energies; elastic collision with a neutral particle of mass near the proton fit naturally.
 
 For a head-on elastic collision, the maximum transferred fraction is
@@ -278,6 +358,19 @@ $$
 $$
 
 which is largest for hydrogen \(M\approx m_n\). This explains why paraffin was an effective recoil-proton converter. The neutron resolved the mismatch between nuclear charge and mass number without packing nuclei with nuclear electrons. It opened isotope, moderation, activation, fission, and nuclear-force research. Free neutrons beta-decay; neutrons bound in stable nuclei need not, showing that environment and energy balance matter.
+
+## Edge list
+
+```text
+A-ALPHA-SOURCE --produces--> BERYLLIUM-RADIATION
+R-HIGH-ENERGY-GAMMA --attempts-to-explain--> BERYLLIUM-RADIATION
+A-PARAFFIN --reveals--> PROTON-RECOIL
+A-COLLISION-KINEMATICS --infers--> NEUTRON-MASS
+D-CHADWICK-NEUTRON-1932 --supersedes--> R-HIGH-ENERGY-GAMMA
+D-CHADWICK-NEUTRON-1932 --supersedes--> R-PROTON-ELECTRON-NUCLEUS
+D-QCD --reframes--> NEUTRON-AS-COMPOSITE
+D-CHADWICK-NEUTRON-1932 --instantiates--> P-02
+```
 
 ## Sources
 

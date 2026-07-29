@@ -15,6 +15,10 @@
 
 BCS theory explains conventional superconductivity as a collective quantum state of overlapping Cooper pairs formed by an effective attraction near the Fermi surface. An arbitrarily weak attraction destabilizes the normal Fermi sea under ideal conditions, producing a coherent paired ground state, an excitation gap, flux-related phase rigidity, and characteristic thermodynamic behavior. Its fundamental contribution is not merely a material application: it established a reusable mechanism of emergence in which interactions reorganize a macroscopic number of fermions into new quasiparticles and an ordered phase.
 
+## Historical problem
+
+Before the focal discovery (December 1957 full BCS theory), the case confronted a linked set of pressures: Mercury loses measurable resistance at low temperature; Perfect conductivity alone cannot explain magnetic-field expulsion. The pathways `R-PERFECT-CONDUCTOR-ONLY`, `R-CLASSICAL-ELECTRON-ORDERING`, `R-LONDON-PHENOMENOLOGY-AS-MICROSCOPIC-THEORY`, `R-BOSONIC-ELECTRON-MOLECULES` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Quantum many-body physics, superconductivity, emergent quasiparticles, and broken-symmetry phases was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -24,6 +28,15 @@ BCS theory explains conventional superconductivity as a collective quantum state
 | `TS-ISOTOPE-GL` | 1950 | Ionic mass affects \(T_c\); complex order parameter describes macroscopic behavior | Lattice coupling and collective phase become key clues |
 | `TS-COOPER` | 1956 | Test whether a filled Fermi sea is stable to attraction | Bound pair instability is derived |
 | `TS-BCS` | 1957 | Construct a microscopic many-electron wavefunction and spectrum | Gap, thermodynamics, coherence, and electrodynamics are unified |
+
+## Knowledge assets
+
+- `A-FERMI-SEA`: exclusion and a sharp low-temperature Fermi surface.
+- `A-PHONONS`: quantized lattice vibrations that can mediate effective attraction.
+- `A-ISOTOPE-EFFECT`: ionic mass dependence implicating lattice dynamics.
+- `A-MEISSNER`: equilibrium magnetic-field expulsion.
+- `A-LONDON-GL`: penetration depth, coherence, and complex order parameter.
+- `A-COOPER-INSTABILITY`: a weak attraction creates a bound correlated pair above the Fermi sea.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -91,16 +104,26 @@ BCS theory explains conventional superconductivity as a collective quantum state
 | Compact electron molecules | Condense tightly bound pairs | Wrong weak-coupling pair size and Fermi-surface structure | Strong-coupling BEC limit |
 | **Discovery/current: BCS paired condensate** | Apply effective attraction to the Fermi sea and solve self-consistently | Original phonon weak-coupling mechanism is not universal across all superconductors | Conventional superconductivity and general fermion-pairing paradigm |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-FERMI-SEA`: exclusion and a sharp low-temperature Fermi surface.
-- `A-PHONONS`: quantized lattice vibrations that can mediate effective attraction.
-- `A-ISOTOPE-EFFECT`: ionic mass dependence implicating lattice dynamics.
-- `A-MEISSNER`: equilibrium magnetic-field expulsion.
-- `A-LONDON-GL`: penetration depth, coherence, and complex order parameter.
-- `A-COOPER-INSTABILITY`: a weak attraction creates a bound correlated pair above the Fermi sea.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-FERMI-SEA`, `A-PHONONS`, `A-ISOTOPE-EFFECT`, `A-MEISSNER`, `A-LONDON-GL`, `A-COOPER-INSTABILITY`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-PERFECT-CONDUCTOR-ONLY` | The view that a superconductor is simply an ordinary conductor with resistivity exactly equal to zero, so magnetic flux present before cooling should remain frozen according to ideal classical conductivity. | See the full pathway record above. |
+| `R-CLASSICAL-ELECTRON-ORDERING` | A family of proposals in which electrons form a classical ordered arrangement, current filament, rigid lattice, or other essentially single-particle configuration that suppresses collisions without a coherent fermionic pair state. | See the full pathway record above. |
+| `R-LONDON-PHENOMENOLOGY-AS-MICROSCOPIC-THEORY` | The London equations relate supercurrent and electromagnetic fields through a penetration depth, successfully encoding perfect diamagnetism but without specifying the microscopic many-electron state that produces the stiffness. | See the full pathway record above. |
+| `R-BOSONIC-ELECTRON-MOLECULES` | A pre-BCS idea that electrons form tightly bound, spatially compact bosonic molecules which then undergo a Bose-like condensation, analogous to independent composite particles. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “How are collisions eliminated?” becomes “Why is the Fermi sea unstable, and what quasiparticles result?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 The reduced pairing Hamiltonian is
 
@@ -162,6 +185,103 @@ $$
 
 The exponential nonanalyticity shows why arbitrarily weak attraction can cause a qualitatively new ground state.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Zero resistance and Meissner response become consequences of a paired coherent state
+
+- `P-03` — **Reframe the inherited problem:** “How are collisions eliminated?” becomes “Why is the Fermi sea unstable, and what quasiparticles result?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Overlapping Cooper pairs, anomalous averages, and electron–hole quasiparticles are accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Quantum many-body physics, superconductivity, emergent quasiparticles, and broken-symmetry phases). The case-specific unification was: Fermi statistics, lattice dynamics, thermodynamics, and electrodynamics are unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Fermi statistics, lattice dynamics, thermodynamics, and electrodynamics are unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Zero resistance and Meissner response become consequences of a paired coherent state
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: London and Ginzburg–Landau equations survive as long-distance limits. Its quantitative or otherwise discriminating test strategy is: Gap ratios, tunneling spectra, heat capacity, isotope dependence, and flux quanta test the model. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** London and Ginzburg–Landau equations survive as long-distance limits
+
+- `P-06` — **Prioritize discriminating tests:** Gap ratios, tunneling spectra, heat capacity, isotope dependence, and flux quanta test the model
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Fermi statistics, lattice dynamics, thermodynamics, and electrodynamics are unified |
+| `P-02` | Transformative move and generative deduction | Zero resistance and Meissner response become consequences of a paired coherent state |
+| `P-03` | Diagnosis of interpolation failure and reframing | “How are collisions eliminated?” becomes “Why is the Fermi sea unstable, and what quasiparticles result?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Overlapping Cooper pairs, anomalous averages, and electron–hole quasiparticles are accepted |
+| `P-05` | Retention and limiting recovery | London and Ginzburg–Landau equations survive as long-distance limits |
+| `P-06` | Prediction, discrimination, and validation network | Gap ratios, tunneling spectra, heat capacity, isotope dependence, and flux quanta test the model |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-BCS-1957` |
+| Focal date | December 1957 full BCS theory |
+| Central claim | BCS theory explains conventional superconductivity as a collective quantum state of overlapping Cooper pairs formed by an effective attraction near the Fermi surface. An arbitrarily weak attraction destabilizes the normal Fermi sea under ideal conditions, producing a coherent paired ground state, an excitation gap, flux-related phase rigidity, and characteristic thermodynamic behavior. Its fundamental contribution is not merely a material application: it established a reusable mechanism of emergence in which interactions reorganize a macroscopic number of fermions into new quasiparticles and an ordered phase. |
+| Domain | Quantum many-body physics, superconductivity, emergent quasiparticles, and broken-symmetry phases |
+| Epistemic status | Microscopic foundation for conventional superconductors and a broad pairing framework; the pairing glue and state symmetry in unconventional superconductors can differ from the original phonon-mediated model |
+| Generative role | Zero resistance and Meissner response become consequences of a paired coherent state |
+| Retained structure | London and Ginzburg–Landau equations survive as long-distance limits |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+H
+=\sum_{\mathbf k,\sigma}\xi_{\mathbf k}
+c_{\mathbf k\sigma}^\dagger c_{\mathbf k\sigma}
+-\sum_{\mathbf k,\mathbf k'}
+V_{\mathbf k\mathbf k'}
+c_{\mathbf k\uparrow}^\dagger
+c_{-\mathbf k\downarrow}^\dagger
+c_{-\mathbf k'\downarrow}
+c_{\mathbf k'\uparrow},
+$$
+
+$$
+|\mathrm{BCS}\rangle
+=\prod_{\mathbf k}
+\left(
+u_{\mathbf k}
++v_{\mathbf k}
+c_{\mathbf k\uparrow}^\dagger
+c_{-\mathbf k\downarrow}^\dagger
+\right)|0\rangle,
+$$
+
+$$
+\Delta_{\mathbf k}
+=-\sum_{\mathbf k'}V_{\mathbf k\mathbf k'}
+\langle
+c_{-\mathbf k'\downarrow}c_{\mathbf k'\uparrow}
+\rangle.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** BCS Theory of Superconductivity: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 BCS accounts for the excitation gap, transition temperature scale, electronic heat-capacity jump, isotope effect in conventional materials, electromagnetic coherence, tunneling spectra, and characteristic ultrasonic and nuclear-relaxation behavior. Flux quantization in units \(h/2e\) and Josephson phenomena confirm the phase coherence and effective pair charge associated with superconducting order.
@@ -175,30 +295,6 @@ The original simple BCS model assumes a weak, effectively attractive pairing cha
 BCS does not mean that isolated electrons form permanent molecules or that resistance vanishes merely because pairs cannot scatter. Phase coherence, the gapped excitation structure, and electromagnetic response are jointly essential. In low dimensions, phase fluctuations can destroy long-range order or produce a Berezinskii–Kosterlitz–Thouless transition beyond simple mean field.
 
 The standard BCS variational state is a coherent superposition of different particle numbers. This is a calculational representation of broken \(U(1)\) phase symmetry in the thermodynamic limit, not a claim that electric charge ceases to be conserved. Number-projected formulations recover fixed particle number while retaining the bulk predictions.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Fermi statistics, lattice dynamics, thermodynamics, and electrodynamics are unified |
-| `P-02` | Zero resistance and Meissner response become consequences of a paired coherent state |
-| `P-03` | “How are collisions eliminated?” becomes “Why is the Fermi sea unstable, and what quasiparticles result?” |
-| `P-04` | Overlapping Cooper pairs, anomalous averages, and electron–hole quasiparticles are accepted |
-| `P-05` | London and Ginzburg–Landau equations survive as long-distance limits |
-| `P-06` | Gap ratios, tunneling spectra, heat capacity, isotope dependence, and flux quanta test the model |
-
-## Edge list
-
-```text
-A-ISOTOPE-EFFECT --supports--> PHONON-PAIRING-CLUE
-A-COOPER-INSTABILITY --enables--> D-BCS-1957
-A-FERMI-SEA --is-reorganized-by--> BCS-PAIRING
-D-BCS-1957 --generates--> BOGOLIUBOV-QUASIPARTICLES
-D-BCS-1957 --derives-limit--> A-LONDON-GL
-PAIR-CHARGE-2E --explains--> FLUX-QUANTUM-H-OVER-2E
-D-BCS-1957 --generalizes-to--> FERMIONIC-SUPERFLUIDITY
-D-BCS-1957 --instantiates--> P-02
-```
 
 ## Extended historical investigation
 
@@ -276,6 +372,23 @@ The relation between BCS and Ginzburg–Landau theory is a strong predecessor-re
 - Treat London and Ginzburg–Landau theory as retained effective layers with their own domains.
 - Attach weak/strong coupling, dimensionality, disorder, and temperature regime to gap formulas.
 - Recognize the Cooper instability as a mechanism in a many-body environment, not ordinary vacuum molecular binding.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-ISOTOPE-EFFECT --supports--> PHONON-PAIRING-CLUE
+A-COOPER-INSTABILITY --enables--> D-BCS-1957
+A-FERMI-SEA --is-reorganized-by--> BCS-PAIRING
+D-BCS-1957 --generates--> BOGOLIUBOV-QUASIPARTICLES
+D-BCS-1957 --derives-limit--> A-LONDON-GL
+PAIR-CHARGE-2E --explains--> FLUX-QUANTUM-H-OVER-2E
+D-BCS-1957 --generalizes-to--> FERMIONIC-SUPERFLUIDITY
+D-BCS-1957 --instantiates--> P-02
+```
 
 ## Sources
 

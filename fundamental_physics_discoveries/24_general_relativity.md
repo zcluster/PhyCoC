@@ -15,6 +15,10 @@
 
 General relativity replaces gravitational force in fixed Euclidean space with dynamical spacetime geometry sourced by stress–energy. Freely falling bodies follow spacetime geodesics, while curvature governs relative acceleration.
 
+## Historical problem
+
+Before the focal discovery (25 November 1915 field equations), the case confronted a linked set of pressures: Highly successful inverse-square force; No faster-than-light causal influence. The pathways `R-SCALAR-GRAVITY`, `R-NEWTONIAN-ABSOLUTE-GRAVITY`, `R-FLAT-SPACETIME-RELATIVISTIC-FORCE-GRAVITY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Gravitation and dynamical spacetime was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -25,6 +29,14 @@ General relativity replaces gravitational force in fixed Euclidean space with dy
 | `TS-TENSOR-DEVELOPMENT` | 1912–1915 | Seek generally covariant field equations | Curved differential geometry adopted |
 | `TS-FIELD-EQUATIONS` | 1915 | Final equations and Mercury result | New gravitational dynamics |
 | `TS-OBSERVATIONAL` | 1919 onward | Lensing, redshift, timing, waves tested | Relativistic astrophysics and cosmology |
+
+## Knowledge assets
+
+- `A-EQUIVALENCE-PRINCIPLE`: inertial and gravitational mass equality.
+- `A-SPECIAL-RELATIVITY`: local Lorentz symmetry.
+- `A-RIEMANN-GEOMETRY`: curvature tensors.
+- `A-MERCURY-RESIDUAL`: unexplained perihelion advance.
+- `A-CONSERVATION`: stress–energy consistency.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -63,15 +75,25 @@ General relativity replaces gravitational force in fixed Euclidean space with dy
 
 Einstein explored several candidate equations between 1907 and 1915 and temporarily adopted the non-generally-covariant “Entwurf” theory. The final field equations were constrained by the Newtonian limit, energy–momentum conservation, and mathematical identities, not guessed in one step. Newtonian gravity was not empirically poor in its ordinary domain; its failure appeared in small residuals and new regimes. A graph should therefore encode `NEWTONIAN-GRAVITY --limit-of--> GENERAL-RELATIVITY`, while scalar and Entwurf pathways are genuinely superseded attempts at the relativistic completion.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-EQUIVALENCE-PRINCIPLE`: inertial and gravitational mass equality.
-- `A-SPECIAL-RELATIVITY`: local Lorentz symmetry.
-- `A-RIEMANN-GEOMETRY`: curvature tensors.
-- `A-MERCURY-RESIDUAL`: unexplained perihelion advance.
-- `A-CONSERVATION`: stress–energy consistency.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-EQUIVALENCE-PRINCIPLE`, `A-SPECIAL-RELATIVITY`, `A-RIEMANN-GEOMETRY`, `A-MERCURY-RESIDUAL`, `A-CONSERVATION`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-SCALAR-GRAVITY` | A relativistic gravity theory in which gravitation is represented by a single scalar field or potential on a fixed spacetime background, rather than by a dynamical tensor metric. | Fails to capture observed light bending and full equivalence structure. |
+| `R-NEWTONIAN-ABSOLUTE-GRAVITY` | Newton's gravitational model of instantaneous attraction \(F=Gm_1m_2/r^2\) acting within absolute Euclidean space and universal time. | Cannot explain relativistic precession, gravitational time dilation, horizons, or gravitational waves. |
+| `R-FLAT-SPACETIME-RELATIVISTIC-FORCE-GRAVITY` | Relativistic force models that retain a fixed spacetime background while modifying propagation speed or force laws to mimic redshift and orbital corrections. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Force in space reframed as curved spacetime. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Einstein's field equations are:
 
@@ -106,6 +128,83 @@ g_{00}\approx-\left(1+\frac{2\Phi}{c^2}\right),
 $$
 
 recovering Newtonian gravity.
+
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Geometry generates trajectories, lensing, and waves
+
+- `P-03` — **Reframe the inherited problem:** Force in space reframed as curved spacetime
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Dynamical geometry accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Gravitation and dynamical spacetime). The case-specific unification was: Gravitation, inertia, geometry, and time unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Gravitation, inertia, geometry, and time unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Geometry generates trajectories, lensing, and waves
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Newtonian gravity retained as weak-field limit. Its quantitative or otherwise discriminating test strategy is: Mercury, clocks, light, pulsars, and waves test one theory. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Newtonian gravity retained as weak-field limit
+
+- `P-06` — **Prioritize discriminating tests:** Mercury, clocks, light, pulsars, and waves test one theory
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Gravitation, inertia, geometry, and time unified |
+| `P-02` | Transformative move and generative deduction | Geometry generates trajectories, lensing, and waves |
+| `P-03` | Diagnosis of interpolation failure and reframing | Force in space reframed as curved spacetime |
+| `P-04` | Transformative representation, ontology, or mechanism | Dynamical geometry accepted |
+| `P-05` | Retention and limiting recovery | Newtonian gravity retained as weak-field limit |
+| `P-06` | Prediction, discrimination, and validation network | Mercury, clocks, light, pulsars, and waves test one theory |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-GENERAL-RELATIVITY-1915` |
+| Focal date | 25 November 1915 field equations |
+| Central claim | General relativity replaces gravitational force in fixed Euclidean space with dynamical spacetime geometry sourced by stress–energy. Freely falling bodies follow spacetime geodesics, while curvature governs relative acceleration. |
+| Domain | Gravitation and dynamical spacetime |
+| Epistemic status | Best-tested classical theory of gravitation; quantum completion unresolved |
+| Generative role | Geometry generates trajectories, lensing, and waves |
+| Retained structure | Newtonian gravity retained as weak-field limit |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+G_{\mu\nu}+\Lambda g_{\mu\nu}
+=\frac{8\pi G}{c^4}T_{\mu\nu}.
+$$
+
+$$
+\frac{d^2x^\mu}{d\tau^2}
++\Gamma^\mu_{\alpha\beta}
+\frac{dx^\alpha}{d\tau}
+\frac{dx^\beta}{d\tau}=0.
+$$
+
+$$
+\frac{D^2\xi^\mu}{D\tau^2}
+=-R^\mu{}_{\nu\alpha\beta}
+u^\nu\xi^\alpha u^\beta.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
 
 ## Historically novel predictions and deductions
 
@@ -157,31 +256,6 @@ so metric perturbations propagate at $c$. Gauge constraints leave two transverse
 ## Limitations and retained status
 
 Classical singularities indicate breakdown or incomplete description. A quantum theory of gravity is needed near Planck scales and perhaps singularities. Dark matter and dark energy are empirical components within standard cosmological use, not fully understood substances. General relativity remains extraordinarily successful in its tested classical domain.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Gravitation, inertia, geometry, and time unified |
-| `P-02` | Geometry generates trajectories, lensing, and waves |
-| `P-03` | Force in space reframed as curved spacetime |
-| `P-04` | Dynamical geometry accepted |
-| `P-05` | Newtonian gravity retained as weak-field limit |
-| `P-06` | Mercury, clocks, light, pulsars, and waves test one theory |
-
-## Edge list
-
-```text
-A-EQUIVALENCE-PRINCIPLE --motivates--> D-GENERAL-RELATIVITY-1915
-A-SPECIAL-RELATIVITY --constrains--> D-GENERAL-RELATIVITY-1915
-A-RIEMANN-GEOMETRY --enables--> D-GENERAL-RELATIVITY-1915
-R-SCALAR-GRAVITY --superseded-by--> D-GENERAL-RELATIVITY-1915
-D-GENERAL-RELATIVITY-1915 --retains-limit--> R-NEWTONIAN-ABSOLUTE-GRAVITY
-FIELD-EQUATIONS --generate--> SPACETIME-CURVATURE
-SPACETIME-CURVATURE --governs--> GEODESIC-MOTION
-D-GENERAL-RELATIVITY-1915 --enables--> D-EXPANDING-UNIVERSE
-D-GENERAL-RELATIVITY-1915 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -418,6 +492,8 @@ General relativity is nonrenormalizable as a straightforward perturbative quantu
 
 ## Additional quantitative and epistemic notes
 
+### Additional quantitative and epistemic notes
+
 The equivalence principle connected uniform acceleration with a homogeneous gravitational field locally, motivating a geometry in which freely falling bodies follow geodesics:
 
 $$
@@ -429,6 +505,20 @@ $$
 Einstein's field equation relates curvature to stress-energy while satisfying local conservation through the Bianchi identity. Its Newtonian weak-field limit recovers \(\nabla^2\Phi=4\pi G\rho\), an essential correspondence constraint.
 
 The anomalous perihelion advance of Mercury, approximately \(43\) arcseconds per century after known perturbations, was explained without an added planet. The 1919 eclipse observations supported light deflection but had limited precision and should not be treated as the sole proof. Later gravitational redshift, Shapiro delay, binary pulsars, lensing, frame dragging, black-hole imaging, and gravitational waves test distinct regimes. General relativity is the successful classical theory of gravitation; singularities and incompatibility with quantum theory mark scope limits, not routine failures in its tested domain.
+
+## Edge list
+
+```text
+A-EQUIVALENCE-PRINCIPLE --motivates--> D-GENERAL-RELATIVITY-1915
+A-SPECIAL-RELATIVITY --constrains--> D-GENERAL-RELATIVITY-1915
+A-RIEMANN-GEOMETRY --enables--> D-GENERAL-RELATIVITY-1915
+R-SCALAR-GRAVITY --superseded-by--> D-GENERAL-RELATIVITY-1915
+D-GENERAL-RELATIVITY-1915 --retains-limit--> R-NEWTONIAN-ABSOLUTE-GRAVITY
+FIELD-EQUATIONS --generate--> SPACETIME-CURVATURE
+SPACETIME-CURVATURE --governs--> GEODESIC-MOTION
+D-GENERAL-RELATIVITY-1915 --enables--> D-EXPANDING-UNIVERSE
+D-GENERAL-RELATIVITY-1915 --instantiates--> P-03
+```
 
 ## Sources
 

@@ -15,6 +15,10 @@
 
 High-redshift Type Ia supernovae appeared dimmer than expected in a matter-only decelerating universe, implying a larger luminosity distance and late-time accelerated expansion. Independent CMB, baryon-acoustic, clustering, and lensing data support a dark-energy-like component.
 
+## Historical problem
+
+Before the focal discovery (1998 supernova-team announcements), the case confronted a linked set of pressures: Cosmic expansion established; Type Ia light curves calibrated. The pathways `R-MATTER-ONLY-DECELERATION`, `R-SUPERNOVA-LUMINOSITY-EVOLUTION`, `R-LENSING-SELECTION-DIMMING`, `R-DYNAMICAL-DARK-ENERGY-OR-MODIFIED-GRAVITY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Late-time cosmological expansion was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Development | Transition |
@@ -24,6 +28,14 @@ High-redshift Type Ia supernovae appeared dimmer than expected in a matter-only 
 | `TS-1998-TEAMS` | 1998–1999 | Distant supernovae found unexpectedly dim | Acceleration inferred |
 | `TS-CONCORDANCE` | 2000s | CMB and large-scale structure combined | Flat \(\Lambda\)CDM favored |
 | `TS-PRECISION-DE` | Present | Equation of state and gravity tested | Mechanism remains unknown |
+
+## Knowledge assets
+
+- `A-TYPE-IA`: standardizable candles.
+- `A-REDSHIFT`: expansion marker.
+- `A-FLRW`: distance–history relation.
+- `A-CMB-BAO`: independent geometry and ruler constraints.
+- `A-LIGHT-CURVE`: luminosity standardization.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -67,15 +79,26 @@ High-redshift Type Ia supernovae appeared dimmer than expected in a matter-only 
 
 The 1998 evidence did not directly photograph negative pressure. It rejected particular distance–redshift histories after a standardization and systematic-error chain. Two teams and later independent probes reduced the likelihood of one shared supernova error. “Dark energy” is therefore an umbrella causal node. Current agreement with \(\Lambda\) does not prove vacuum energy is the microscopic explanation, and simple dust/evolution models being constrained does not mean calibration systematics have ceased to matter.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-TYPE-IA`: standardizable candles.
-- `A-REDSHIFT`: expansion marker.
-- `A-FLRW`: distance–history relation.
-- `A-CMB-BAO`: independent geometry and ruler constraints.
-- `A-LIGHT-CURVE`: luminosity standardization.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and inference
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-TYPE-IA`, `A-REDSHIFT`, `A-FLRW`, `A-CMB-BAO`, `A-LIGHT-CURVE`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-MATTER-ONLY-DECELERATION` | An FLRW cosmology whose late-time energy budget contains ordinary and dark matter but no dominant negative-pressure component or gravity modification, causing expansion to decelerate. | See the full pathway record above. |
+| `R-SUPERNOVA-LUMINOSITY-EVOLUTION` | The hypothesis that high-redshift Type Ia supernovae have intrinsically different standardized luminosities because progenitor populations evolve. | See the full pathway record above. |
+| `R-LENSING-SELECTION-DIMMING` | The hypothesis that lensing magnification distributions and magnitude-limited sample selection produce the apparent distance residual. | See the full pathway record above. |
+| `R-DYNAMICAL-DARK-ENERGY-OR-MODIFIED-GRAVITY` | Alternatives to a cosmological constant using a time-varying negative-pressure field or modified gravitational field equations. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Unexpected dimness reframed as acceleration. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Luminosity distance is defined by:
 
@@ -121,6 +144,87 @@ $$
 
 for a spatially flat model.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Expansion models generate distance–redshift curves
+
+- `P-03` — **Reframe the inherited problem:** Unexpected dimness reframed as acceleration
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Negative-pressure cosmic component tolerated
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Late-time cosmological expansion). The case-specific unification was: Stellar explosions and global spacetime dynamics linked. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Stellar explosions and global spacetime dynamics linked
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Expansion models generate distance–redshift curves
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: General relativity and expansion retained with \(\Lambda\) restored. Its quantitative or otherwise discriminating test strategy is: Multiple geometric and growth probes cross-test the inference. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** General relativity and expansion retained with \(\Lambda\) restored
+
+- `P-06` — **Prioritize discriminating tests:** Multiple geometric and growth probes cross-test the inference
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Stellar explosions and global spacetime dynamics linked |
+| `P-02` | Transformative move and generative deduction | Expansion models generate distance–redshift curves |
+| `P-03` | Diagnosis of interpolation failure and reframing | Unexpected dimness reframed as acceleration |
+| `P-04` | Transformative representation, ontology, or mechanism | Negative-pressure cosmic component tolerated |
+| `P-05` | Retention and limiting recovery | General relativity and expansion retained with \(\Lambda\) restored |
+| `P-06` | Prediction, discrimination, and validation network | Multiple geometric and growth probes cross-test the inference |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-COSMIC-ACCELERATION-1998` |
+| Focal date | 1998 supernova-team announcements |
+| Central claim | High-redshift Type Ia supernovae appeared dimmer than expected in a matter-only decelerating universe, implying a larger luminosity distance and late-time accelerated expansion. Independent CMB, baryon-acoustic, clustering, and lensing data support a dark-energy-like component. |
+| Domain | Late-time cosmological expansion |
+| Epistemic status | Acceleration is strongly established; physical nature of dark energy or required gravity modification remains unresolved |
+| Generative role | Expansion models generate distance–redshift curves |
+| Retained structure | General relativity and expansion retained with \(\Lambda\) restored |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+F=\frac{L}{4\pi d_L^2}.
+$$
+
+$$
+\mu=m-M
+=5\log_{10}\left(\frac{d_L}{10\ \mathrm{pc}}\right).
+$$
+
+$$
+\frac{\ddot a}{a}
+=-\frac{4\pi G}{3}
+\left(\rho+\frac{3p}{c^2}\right).
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Accelerating Cosmic Expansion: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Two independent teams found compatible acceleration evidence.
@@ -131,30 +235,6 @@ for a spatially flat model.
 ## Limitations and retained status
 
 “Dark energy” names the inferred cause, not an identified substance. The cosmological-constant value poses a severe theory problem; dynamical fields and modified gravity remain alternatives. Supernova calibration, dust, selection, and population evolution require continuing control.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Stellar explosions and global spacetime dynamics linked |
-| `P-02` | Expansion models generate distance–redshift curves |
-| `P-03` | Unexpected dimness reframed as acceleration |
-| `P-04` | Negative-pressure cosmic component tolerated |
-| `P-05` | General relativity and expansion retained with \(\Lambda\) restored |
-| `P-06` | Multiple geometric and growth probes cross-test the inference |
-
-## Edge list
-
-```text
-A-TYPE-IA --measures--> LUMINOSITY-DISTANCE
-A-REDSHIFT --indexes--> COSMIC-TIME
-R-MATTER-ONLY-DECELERATION --predicts--> DISTANCE-REDSHIFT-CURVE
-V-DIM-HIGH-Z-SUPERNOVAE --deviate-from--> DISTANCE-REDSHIFT-CURVE
-V-DIM-HIGH-Z-SUPERNOVAE --supports--> D-COSMIC-ACCELERATION-1998
-A-CMB-BAO --cross-validates--> D-COSMIC-ACCELERATION-1998
-NEGATIVE-PRESSURE --can-generate--> COSMIC-ACCELERATION
-D-COSMIC-ACCELERATION-1998 --instantiates--> P-06
-```
 
 ## Extended historical investigation
 
@@ -208,7 +288,9 @@ The historical rehabilitation of \(\Lambda\) also needs nuance. Einstein introdu
 - Preserve model dependence when combining CMB, BAO, supernova, and growth data.
 - Mark \(\Lambda\), dynamical fields, and modified gravity as competing mechanism nodes with shared observational obligations.
 
-## Further quantitative and observational notes
+## Additional quantitative and epistemic notes
+
+### Further quantitative and observational notes
 
 The deceleration parameter
 
@@ -230,6 +312,19 @@ The supernova Hubble diagram later showed evidence for the expected transition f
 Absolute distance calibration is another distinct layer. Supernovae determine relative distances well, but connecting the intercept to \(H_0\) uses Cepheids, the tip of the red-giant branch, masers, or other anchors. Cosmic acceleration can be inferred without resolving the present “Hubble tension,” which concerns disagreement among precision routes to the current expansion rate. The graph should not merge those questions.
 
 Selection effects also evolve with redshift: magnitude-limited surveys preferentially retain brighter events, a Malmquist-like bias addressed through simulated survey selection. Modern analyses propagate correlated zero points, filter transmission, population models, peculiar velocities, and intrinsic scatter. These details make the discovery more—not less—impressive by showing how a small magnitude residual survived successive controls.
+
+## Edge list
+
+```text
+A-TYPE-IA --measures--> LUMINOSITY-DISTANCE
+A-REDSHIFT --indexes--> COSMIC-TIME
+R-MATTER-ONLY-DECELERATION --predicts--> DISTANCE-REDSHIFT-CURVE
+V-DIM-HIGH-Z-SUPERNOVAE --deviate-from--> DISTANCE-REDSHIFT-CURVE
+V-DIM-HIGH-Z-SUPERNOVAE --supports--> D-COSMIC-ACCELERATION-1998
+A-CMB-BAO --cross-validates--> D-COSMIC-ACCELERATION-1998
+NEGATIVE-PRESSURE --can-generate--> COSMIC-ACCELERATION
+D-COSMIC-ACCELERATION-1998 --instantiates--> P-06
+```
 
 ## Sources
 

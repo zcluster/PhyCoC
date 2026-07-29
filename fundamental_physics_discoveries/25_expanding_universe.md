@@ -15,6 +15,10 @@
 
 Relativistic solutions and galaxy redshift–distance data established that cosmic scale changes with time. Slipher measured many redshifts; Friedmann and Lemaître developed expanding solutions; Lemaître connected theory and data; Hubble and Humason strengthened the empirical relation.
 
+## Historical problem
+
+Before the focal discovery (1922–1929 (Friedmann/Lemaître through Hubble)), the case confronted a linked set of pressures: Large-scale universe assumed static; \(\Lambda\) used for static model. The pathways `R-STATIC-UNIVERSE`, `R-DE-SITTER-STATIC-REDSHIFT` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Relativistic cosmology was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Framework/evidence | Transition |
@@ -25,6 +29,13 @@ Relativistic solutions and galaxy redshift–distance data established that cosm
 | `TS-FRIEDMANN` | 1922–1924 | Dynamical scale-factor solutions | Expansion theoretically allowed |
 | `TS-LEMAITRE` | 1927 | Theory connected to redshift-distance data | Expansion rate estimated |
 | `TS-HUBBLE-HUMASON` | 1929 onward | Distances and redshifts correlated | Expansion becomes empirical program |
+
+## Knowledge assets
+
+- `A-GR`: dynamical spacetime equations.
+- `A-GALAXY-REDSHIFTS`: Slipher's spectroscopy.
+- `A-DISTANCE-LADDER`: Cepheids and luminosity calibration.
+- `A-HOMOGENEITY`: large-scale symmetry assumption.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -54,14 +65,24 @@ Relativistic solutions and galaxy redshift–distance data established that cosm
 
 Early galaxy distances were badly calibrated and peculiar velocities produced scatter, so the 1920s relation alone did not establish the later hot Big Bang. Expansion, hot origin, nucleosynthesis, and CMB are distinct evidential nodes. Steady-state cosmology also permitted expansion but required continuous matter creation and time-invariant large-scale properties; radio-source evolution and the CMB strongly disfavored it. It should not be merged with the static-universe pathway.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-GR`: dynamical spacetime equations.
-- `A-GALAXY-REDSHIFTS`: Slipher's spectroscopy.
-- `A-DISTANCE-LADDER`: Cepheids and luminosity calibration.
-- `A-HOMOGENEITY`: large-scale symmetry assumption.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-GR`, `A-GALAXY-REDSHIFTS`, `A-DISTANCE-LADDER`, `A-HOMOGENEITY`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-STATIC-UNIVERSE` | A cosmological model in which the universe's large-scale geometry, matter distribution, and characteristic distances are constant in time rather than governed by an evolving scale factor. | Relativistic static solutions are non-generic and redshift–distance patterns indicate dynamics. |
+| `R-DE-SITTER-STATIC-REDSHIFT` | The interpretation that cosmological redshifts arise from static-coordinate properties of de Sitter spacetime rather than an evolving matter-filled scale factor. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Galaxy recession reframed as metric expansion. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 The Friedmann–Lemaître–Robertson–Walker metric is:
 
@@ -104,6 +125,90 @@ $$
 
 Thus the observed expansion rate constrains density, curvature, and \(\Lambda\).
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Scale-factor dynamics generates redshift histories
+
+- `P-03` — **Reframe the inherited problem:** Galaxy recession reframed as metric expansion
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** A dynamical universe accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Relativistic cosmology). The case-specific unification was: Relativity, spectroscopy, and distance measurement unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Relativity, spectroscopy, and distance measurement unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Scale-factor dynamics generates redshift histories
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Local Doppler intuition retained only at low redshift. Its quantitative or otherwise discriminating test strategy is: Redshift–distance relation makes cosmology testable. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Local Doppler intuition retained only at low redshift
+
+- `P-06` — **Prioritize discriminating tests:** Redshift–distance relation makes cosmology testable
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Relativity, spectroscopy, and distance measurement unified |
+| `P-02` | Transformative move and generative deduction | Scale-factor dynamics generates redshift histories |
+| `P-03` | Diagnosis of interpolation failure and reframing | Galaxy recession reframed as metric expansion |
+| `P-04` | Transformative representation, ontology, or mechanism | A dynamical universe accepted |
+| `P-05` | Retention and limiting recovery | Local Doppler intuition retained only at low redshift |
+| `P-06` | Prediction, discrimination, and validation network | Redshift–distance relation makes cosmology testable |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-COSMIC-EXPANSION-1922-1929` |
+| Focal date | 1922–1929 (Friedmann/Lemaître through Hubble) |
+| Central claim | Relativistic solutions and galaxy redshift–distance data established that cosmic scale changes with time. Slipher measured many redshifts; Friedmann and Lemaître developed expanding solutions; Lemaître connected theory and data; Hubble and Humason strengthened the empirical relation. |
+| Domain | Relativistic cosmology |
+| Epistemic status | Cosmic expansion is established; credit cannot be reduced to a single law or observer |
+| Generative role | Scale-factor dynamics generates redshift histories |
+| Retained structure | Local Doppler intuition retained only at low redshift |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+ds^2=-c^2dt^2
++a^2(t)\left[
+\frac{dr^2}{1-kr^2}
++r^2d\Omega^2
+\right].
+$$
+
+$$
+H(t)=\frac{\dot a}{a}.
+$$
+
+$$
+v\approx H_0d,
+\qquad
+z\approx\frac{v}{c}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Expanding Universe: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Successive distance–redshift samples established expansion.
@@ -114,30 +219,6 @@ Thus the observed expansion rate constrains density, curvature, and \(\Lambda\).
 ## Limitations and retained status
 
 The linear law is local; at large redshift one must use a cosmological model and luminosity/angular-diameter distances. Galaxies do not generally fly through pre-existing space from one center; the homogeneous metric scale changes. Bound atoms, planets, and galaxies do not simply expand with \(a(t)\).
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Relativity, spectroscopy, and distance measurement unified |
-| `P-02` | Scale-factor dynamics generates redshift histories |
-| `P-03` | Galaxy recession reframed as metric expansion |
-| `P-04` | A dynamical universe accepted |
-| `P-05` | Local Doppler intuition retained only at low redshift |
-| `P-06` | Redshift–distance relation makes cosmology testable |
-
-## Edge list
-
-```text
-A-GR --permits--> D-FRIEDMANN-SOLUTIONS
-A-GALAXY-REDSHIFTS --contributes-to--> D-COSMIC-EXPANSION-1922-1929
-A-DISTANCE-LADDER --enables--> REDSHIFT-DISTANCE-RELATION
-D-LEMAITRE-1927 --connects--> D-FRIEDMANN-SOLUTIONS
-D-LEMAITRE-1927 --connects--> REDSHIFT-DISTANCE-RELATION
-REDSHIFT-DISTANCE-RELATION --supersedes--> R-STATIC-UNIVERSE
-V-CMB --supports--> HOT-EXPANDING-UNIVERSE
-D-COSMIC-EXPANSION-1922-1929 --instantiates--> P-01
-```
 
 ## Extended historical investigation
 
@@ -307,6 +388,8 @@ can exceed \(c\) without local material motion through spacetime exceeding \(c\)
 
 ## Additional quantitative and epistemic notes
 
+### Additional quantitative and epistemic notes
+
 Friedmann and Lemaître found evolving solutions before a linear distance–redshift relation was observationally stabilized. For small redshift,
 
 $$
@@ -316,6 +399,19 @@ $$
 but at cosmological distances “recession velocity” becomes convention-dependent and luminosity/angular distances must be computed in an FLRW model. Slipher supplied many early galaxy redshifts; Hubble's 1929 synthesis used distance estimates whose calibration was later substantially revised. Naming the relation should not erase these distributed contributions or Lemaître's 1927 theoretical-observational analysis.
 
 Expansion is not normally galaxies flying through static space from one central explosion. It is growth of the scale factor in a statistically homogeneous geometry, with bound systems exempt when local forces dominate. Subsequent CMB, nucleosynthesis, time dilation in transient light curves, and BAO observations validate the hot expanding framework. The numerical value and inference route for \(H_0\) remain active precision questions, distinct from whether expansion occurs.
+
+## Edge list
+
+```text
+A-GR --permits--> D-FRIEDMANN-SOLUTIONS
+A-GALAXY-REDSHIFTS --contributes-to--> D-COSMIC-EXPANSION-1922-1929
+A-DISTANCE-LADDER --enables--> REDSHIFT-DISTANCE-RELATION
+D-LEMAITRE-1927 --connects--> D-FRIEDMANN-SOLUTIONS
+D-LEMAITRE-1927 --connects--> REDSHIFT-DISTANCE-RELATION
+REDSHIFT-DISTANCE-RELATION --supersedes--> R-STATIC-UNIVERSE
+V-CMB --supports--> HOT-EXPANDING-UNIVERSE
+D-COSMIC-EXPANSION-1922-1929 --instantiates--> P-01
+```
 
 ## Sources
 
