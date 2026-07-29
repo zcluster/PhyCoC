@@ -15,6 +15,10 @@
 
 Wilson recast renormalization as the transformation of an entire theory when short-distance degrees of freedom are successively averaged out. Couplings flow through a space of possible theories; fixed points describe scale-invariant behavior; relevant, irrelevant, and marginal directions determine which microscopic details survive at long distances. This explains why microscopically different systems share critical exponents and why coarse-scale laws can be insensitive to most short-scale details.
 
+## Historical problem
+
+Before the focal discovery (November 1971 Wilson renormalization-group papers), the case confronted a linked set of pressures: Renormalized parameters depend on scale; Critical data follow power laws and scaling relations. The pathways `R-LANDAU-MEAN-FIELD-EXACT-CRITICALITY`, `R-MICROSCOPIC-DETAIL-DETERMINES-CRITICAL-EXPONENT`, `R-SCALING-HYPOTHESIS-WITHOUT-FLOW`, `R-PERTURBATIVE-RENORMALIZATION-AS-SUBTRACTION-ONLY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Critical phenomena, quantum field theory, scale dependence, universality, and many-body physics was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -24,6 +28,15 @@ Wilson recast renormalization as the transformation of an entire theory when sho
 | `TS-KADANOFF` | 1966 | Explain scaling using blocks of spins | Coarse-graining is linked qualitatively to criticality |
 | `TS-WILSON` | 1971 | Make coarse-graining quantitative across coupling space | Fixed points and eigenoperators calculate exponents |
 | `TS-EPSILON-NRG` | 1972 onward | Compute non-mean-field behavior and strong-coupling problems | \(\epsilon\)-expansion and numerical RG validate the architecture |
+
+## Knowledge assets
+
+- `A-LANDAU-GINZBURG`: symmetry-constrained order-parameter functional.
+- `A-CRITICAL-EXPONENTS`: measured power laws and scaling relations.
+- `A-KADANOFF-BLOCKS`: real-space coarse-graining intuition.
+- `A-QFT-RENORMALIZATION`: running parameters and ultraviolet regularization.
+- `A-FOURIER-SCALES`: momentum shells separate short and long distances.
+- `A-UNIVERSALITY-DATA`: shared exponent sets across different materials.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -91,16 +104,26 @@ Wilson recast renormalization as the transformation of an entire theory when sho
 | Renormalization as subtraction only | Redefine divergent parameters | Misses coarse-graining, operator relevance, and infrared universality | Beta functions and counterterms |
 | **Discovery/current: Wilsonian RG flow** | Integrate momentum shells, rescale, and follow all symmetry-allowed couplings | Exact functional flow usually requires approximation | General architecture of universality and scale-dependent theory |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-LANDAU-GINZBURG`: symmetry-constrained order-parameter functional.
-- `A-CRITICAL-EXPONENTS`: measured power laws and scaling relations.
-- `A-KADANOFF-BLOCKS`: real-space coarse-graining intuition.
-- `A-QFT-RENORMALIZATION`: running parameters and ultraviolet regularization.
-- `A-FOURIER-SCALES`: momentum shells separate short and long distances.
-- `A-UNIVERSALITY-DATA`: shared exponent sets across different materials.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivation
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-LANDAU-GINZBURG`, `A-CRITICAL-EXPONENTS`, `A-KADANOFF-BLOCKS`, `A-QFT-RENORMALIZATION`, `A-FOURIER-SCALES`, `A-UNIVERSALITY-DATA`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-LANDAU-MEAN-FIELD-EXACT-CRITICALITY` | The treatment of a Landau order parameter as a spatially uniform average whose saddle-point solution gives the exact asymptotic critical exponents, effectively neglecting correlated fluctuations on all length scales. | See the full pathway record above. |
+| `R-MICROSCOPIC-DETAIL-DETERMINES-CRITICAL-EXPONENT` | The expectation that each material's lattice spacing, molecular forces, chemical composition, and short-range potential determine its own independent set of critical exponents. | See the full pathway record above. |
+| `R-SCALING-HYPOTHESIS-WITHOUT-FLOW` | A phenomenological assumption that the singular free energy is a generalized homogeneous function, yielding power laws and exponent relations without a dynamical transformation explaining the scaling function or calculating exponent values. | See the full pathway record above. |
+| `R-PERTURBATIVE-RENORMALIZATION-AS-SUBTRACTION-ONLY` | A view of renormalization primarily as a technical procedure that removes ultraviolet divergences by redefining masses, fields, and couplings, without treating the cutoff and scale transformation as physical information about which operators matter. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Which microscopic model is exact?” becomes “Which basin of attraction and relevant variables control the regime?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Start with a cutoff field theory,
 
@@ -160,6 +183,97 @@ $$
 \nu=\frac{1}{y_t}.
 $$
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Empirical power laws become consequences of fixed points and eigenvalues
+
+- `P-03` — **Reframe the inherited problem:** “Which microscopic model is exact?” becomes “Which basin of attraction and relevant variables control the regime?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** A flowing theory in an infinite-dimensional coupling space is accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Critical phenomena, quantum field theory, scale dependence, universality, and many-body physics). The case-specific unification was: Critical phenomena, QFT renormalization, and coarse-graining share one scale-flow language. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Critical phenomena, QFT renormalization, and coarse-graining share one scale-flow language
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Empirical power laws become consequences of fixed points and eigenvalues
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Landau functionals, scaling hypotheses, and beta functions survive as components. Its quantitative or otherwise discriminating test strategy is: Critical exponents, crossover functions, and running couplings quantitatively test flows. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Landau functionals, scaling hypotheses, and beta functions survive as components
+
+- `P-06` — **Prioritize discriminating tests:** Critical exponents, crossover functions, and running couplings quantitatively test flows
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Critical phenomena, QFT renormalization, and coarse-graining share one scale-flow language |
+| `P-02` | Transformative move and generative deduction | Empirical power laws become consequences of fixed points and eigenvalues |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Which microscopic model is exact?” becomes “Which basin of attraction and relevant variables control the regime?” |
+| `P-04` | Transformative representation, ontology, or mechanism | A flowing theory in an infinite-dimensional coupling space is accepted |
+| `P-05` | Retention and limiting recovery | Landau functionals, scaling hypotheses, and beta functions survive as components |
+| `P-06` | Prediction, discrimination, and validation network | Critical exponents, crossover functions, and running couplings quantitatively test flows |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-WILSON-RG-1971` |
+| Focal date | November 1971 Wilson renormalization-group papers |
+| Central claim | Wilson recast renormalization as the transformation of an entire theory when short-distance degrees of freedom are successively averaged out. Couplings flow through a space of possible theories; fixed points describe scale-invariant behavior; relevant, irrelevant, and marginal directions determine which microscopic details survive at long distances. This explains why microscopically different systems share critical exponents and why coarse-scale laws can be insensitive to most short-scale details. |
+| Domain | Critical phenomena, quantum field theory, scale dependence, universality, and many-body physics |
+| Epistemic status | Foundational and broadly validated framework; exact flows are rarely solvable and practical calculations require controlled truncations or numerical methods |
+| Generative role | Empirical power laws become consequences of fixed points and eigenvalues |
+| Retained structure | Landau functionals, scaling hypotheses, and beta functions survive as components |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+S_\Lambda[\phi]
+=\int d^dx
+\left[
+\frac12(\nabla\phi)^2
++\frac12r\phi^2
++\frac{u}{4!}\phi^4
++\sum_i g_i\mathcal O_i
+\right].
+$$
+
+$$
+\phi=\phi_<+\phi_>,
+\qquad
+|\mathbf k|<\Lambda/b
+\quad\text{or}\quad
+\Lambda/b<|\mathbf k|<\Lambda.
+$$
+
+$$
+e^{-S_{\Lambda/b}'[\phi_<]}
+=\int\mathcal D\phi_>\,
+e^{-S_\Lambda[\phi_<+\phi_>]}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Wilsonian Renormalization Group and Universality: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 RG explains universality classes, critical scaling, crossover, corrections to scaling, and hyperscaling under stated conditions. Wilson and Fisher's expansion about \(d=4\) produced non-mean-field exponents for \(O(N)\)-type models; successive calculations, experiments, Monte Carlo simulations, conformal methods, and high-temperature series strongly validate the framework.
@@ -171,30 +285,6 @@ The same logic organizes running couplings in particle physics, the Kondo effect
 An RG transformation is rarely a literal group with an inverse because integrating out degrees of freedom loses information; “renormalization group” is established terminology but often mathematically a semigroup. Exact flows inhabit an infinite-dimensional theory space, so practical truncations can miss operators, fixed points, or nonperturbative effects.
 
 Universality is conditional. Dimension, symmetry, interaction range, conservation laws, topology, disorder, and boundary conditions can change the class. “Irrelevant” means asymptotically suppressed near a specified fixed point; dangerously irrelevant variables can still influence ordered phases or scaling. RG does not eliminate microscopic physics: it moves that information into initial conditions, nonuniversal amplitudes, and matching relations.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Critical phenomena, QFT renormalization, and coarse-graining share one scale-flow language |
-| `P-02` | Empirical power laws become consequences of fixed points and eigenvalues |
-| `P-03` | “Which microscopic model is exact?” becomes “Which basin of attraction and relevant variables control the regime?” |
-| `P-04` | A flowing theory in an infinite-dimensional coupling space is accepted |
-| `P-05` | Landau functionals, scaling hypotheses, and beta functions survive as components |
-| `P-06` | Critical exponents, crossover functions, and running couplings quantitatively test flows |
-
-## Edge list
-
-```text
-A-KADANOFF-BLOCKS --inspires--> D-WILSON-RG-1971
-A-QFT-RENORMALIZATION --contributes-to--> D-WILSON-RG-1971
-D-WILSON-RG-1971 --integrates-out--> SHORT-DISTANCE-MODES
-RG-FIXED-POINT --generates--> SCALE-INVARIANCE
-IRRELEVANT-OPERATOR --loses-influence-at--> FIXED-POINT
-RELEVANT-OPERATOR --controls--> DEPARTURE-FROM-CRITICALITY
-D-WILSON-RG-1971 --explains--> UNIVERSALITY-CLASSES
-D-WILSON-RG-1971 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -265,6 +355,23 @@ describes how a renormalized coupling varies with energy scale \(\mu\). Its zero
 - Treat apparent data collapse as evidence, not proof, of asymptotic fixed-point control.
 - Preserve Landau theory as a retained effective action whose fluctuations are processed by RG.
 - Record whether a result is perturbative, numerical, exact, or resummed and state its error regime.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-KADANOFF-BLOCKS --inspires--> D-WILSON-RG-1971
+A-QFT-RENORMALIZATION --contributes-to--> D-WILSON-RG-1971
+D-WILSON-RG-1971 --integrates-out--> SHORT-DISTANCE-MODES
+RG-FIXED-POINT --generates--> SCALE-INVARIANCE
+IRRELEVANT-OPERATOR --loses-influence-at--> FIXED-POINT
+RELEVANT-OPERATOR --controls--> DEPARTURE-FROM-CRITICALITY
+D-WILSON-RG-1971 --explains--> UNIVERSALITY-CLASSES
+D-WILSON-RG-1971 --instantiates--> P-03
+```
 
 ## Sources
 

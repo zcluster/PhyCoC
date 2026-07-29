@@ -15,6 +15,10 @@
 
 Quantum field theory promotes fields—or their modes—to quantum operators and treats particles as quantized excitations. Dirac's 1927 radiation theory supplied a decisive first working synthesis: emission and absorption became changes of occupation number rather than unexplained jumps between fixed-particle wavefunctions. Subsequent relativistic matter fields, antiparticles, renormalization, gauge theory, and effective-field-theory ideas transformed this beginning into the modern framework. QFT is not one unique model and Yang–Mills theory is not synonymous with it; Yang–Mills is a 1954 class of non-Abelian gauge field theories within QFT.
 
+## Historical problem
+
+Before the focal discovery (1927 Dirac radiation-field quantization), the case confronted a linked set of pressures: Electromagnetic and continuum fields carry energy and momentum; Light shows quantum exchange while wave equations remain indispensable. The pathways `R-FIXED-PARTICLE-RELATIVISTIC-QUANTUM-MECHANICS`, `R-QUANTIZED-MATTER-CLASSICAL-RADIATION`, `R-OSCILLATOR-QUANTA-WITHOUT-FIELD-OPERATORS` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Relativistic quantum fields, particle creation and annihilation, and many-body quantum theory was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -24,6 +28,15 @@ Quantum field theory promotes fields—or their modes—to quantum operators and
 | `TS-DIRAC-QFT` | 1927 | Explain emission, absorption, and spontaneous radiation in quantum mechanics | Creation and annihilation operators quantize radiation modes |
 | `TS-RELATIVISTIC-MATTER` | 1928–1930s | Relativity permits negative-frequency solutions and variable particle number | Electron/positron and meson fields replace fixed-particle interpretation |
 | `TS-RENORMALIZED-QFT` | 1940s onward | Interactions generate ultraviolet divergences | Renormalization and later Wilsonian scale analysis define predictive theories |
+
+## Knowledge assets
+
+- `A-CLASSICAL-FIELDS`: Maxwell and other wave fields with infinitely many modes.
+- `A-HARMONIC-OSCILLATORS`: each free-field Fourier mode behaves like an oscillator.
+- `A-MATRIX-MECHANICS`: noncommuting operators and transition amplitudes.
+- `A-LIGHT-QUANTA`: discrete radiation energy and momentum.
+- `A-BOSE-STATISTICS`: arbitrary occupation of identical bosonic modes.
+- `A-SPECIAL-RELATIVITY`: energy–mass conversion and Lorentz covariance.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -77,16 +90,25 @@ Quantum field theory promotes fields—or their modes—to quantum operators and
 | Oscillator quanta without field operators | Quantize energies or statistics alone | Lacks a unified operator dynamics of waves and variable quanta | Mode energies and occupation numbers |
 | **Discovery/current: quantized fields and Fock-space sectors** | Quantize field modes and couple them to matter with creation/annihilation operators | Individual QFTs require symmetry, regularization, renormalization, and a stated domain | General framework for relativistic quantum interactions and many-body systems |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-CLASSICAL-FIELDS`: Maxwell and other wave fields with infinitely many modes.
-- `A-HARMONIC-OSCILLATORS`: each free-field Fourier mode behaves like an oscillator.
-- `A-MATRIX-MECHANICS`: noncommuting operators and transition amplitudes.
-- `A-LIGHT-QUANTA`: discrete radiation energy and momentum.
-- `A-BOSE-STATISTICS`: arbitrary occupation of identical bosonic modes.
-- `A-SPECIAL-RELATIVITY`: energy–mass conversion and Lorentz covariance.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-CLASSICAL-FIELDS`, `A-HARMONIC-OSCILLATORS`, `A-MATRIX-MECHANICS`, `A-LIGHT-QUANTA`, `A-BOSE-STATISTICS`, `A-SPECIAL-RELATIVITY`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-FIXED-PARTICLE-RELATIVISTIC-QUANTUM-MECHANICS` | A program that assigns a relativistic wave equation to a fixed number of particles and interprets its wavefunction as an ordinary probability amplitude, without field operators that create or annihilate quanta. | See the full pathway record above. |
+| `R-QUANTIZED-MATTER-CLASSICAL-RADIATION` | A semiclassical hybrid in which atoms obey quantum mechanics but the electromagnetic field remains a prescribed classical wave, so matter changes state without photon creation or quantum vacuum fluctuations. | See the full pathway record above. |
+| `R-OSCILLATOR-QUANTA-WITHOUT-FIELD-OPERATORS` | A model that assigns discrete energies \(E_n=nh\nu\) to radiation oscillators or counts light quanta statistically but does not construct operator-valued fields with explicit creation, annihilation, and matter-coupling dynamics. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Is radiation a wave or particle?” becomes “Which field state and observable are being probed?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For a free real scalar field in modern notation and natural units \(\hbar=c=1\),
 
@@ -124,7 +146,7 @@ $$
 =(2\pi)^3\delta^{(3)}(\mathbf p-\mathbf q).
 $$
 
-#### Why the mode expansion is a system of quantum oscillators
+##### Why the mode expansion is a system of quantum oscillators
 
 The Euler–Lagrange equation of the free scalar Lagrangian is
 
@@ -175,6 +197,88 @@ implementing exclusion. Interactions such as QED's \(-e\bar\psi\gamma^\mu A_\mu\
 | Interaction step | Nonquadratic terms connect sectors and permit scattering, decay, creation, and annihilation. |
 | Scope caution | The particle basis is sharp for free/asymptotic modes and can be background- or observer-dependent. |
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Spectral and transition regularities become amplitudes generated by field operators
+
+- `P-03` — **Reframe the inherited problem:** “Is radiation a wave or particle?” becomes “Which field state and observable are being probed?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Operator-valued fields, vacuum states, and variable particle number are admitted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Relativistic quantum fields, particle creation and annihilation, and many-body quantum theory). The case-specific unification was: Wave fields, particles, quantum transitions, and relativity enter one framework. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Wave fields, particles, quantum transitions, and relativity enter one framework
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Spectral and transition regularities become amplitudes generated by field operators
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Classical waves and fixed-particle quantum mechanics survive as controlled limits. Its quantitative or otherwise discriminating test strategy is: Lagrangians generate quantitative decay rates, scattering cross sections, and radiative shifts. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Classical waves and fixed-particle quantum mechanics survive as controlled limits
+
+- `P-06` — **Prioritize discriminating tests:** Lagrangians generate quantitative decay rates, scattering cross sections, and radiative shifts
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Wave fields, particles, quantum transitions, and relativity enter one framework |
+| `P-02` | Transformative move and generative deduction | Spectral and transition regularities become amplitudes generated by field operators |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Is radiation a wave or particle?” becomes “Which field state and observable are being probed?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Operator-valued fields, vacuum states, and variable particle number are admitted |
+| `P-05` | Retention and limiting recovery | Classical waves and fixed-particle quantum mechanics survive as controlled limits |
+| `P-06` | Prediction, discrimination, and validation network | Lagrangians generate quantitative decay rates, scattering cross sections, and radiative shifts |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-QFT-FIELD-QUANTIZATION-1927` |
+| Focal date | 1927 Dirac radiation-field quantization |
+| Central claim | Quantum field theory promotes fields—or their modes—to quantum operators and treats particles as quantized excitations. Dirac's 1927 radiation theory supplied a decisive first working synthesis: emission and absorption became changes of occupation number rather than unexplained jumps between fixed-particle wavefunctions. Subsequent relativistic matter fields, antiparticles, renormalization, gauge theory, and effective-field-theory ideas transformed this beginning into the modern framework. QFT is not one unique model and Yang–Mills theory is not synonymous with it; Yang–Mills is a 1954 class of non-Abelian gauge field theories within QFT. |
+| Domain | Relativistic quantum fields, particle creation and annihilation, and many-body quantum theory |
+| Epistemic status | Foundational framework of the Standard Model and condensed-matter many-body theory; specific QFTs are domain-bounded and quantum gravity remains incomplete |
+| Generative role | Spectral and transition regularities become amplitudes generated by field operators |
+| Retained structure | Classical waves and fixed-particle quantum mechanics survive as controlled limits |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\mathcal L
+=\frac12\partial_\mu\phi\,\partial^\mu\phi
+-\frac12m^2\phi^2.
+$$
+
+$$
+[\phi(t,\mathbf x),\pi(t,\mathbf y)]
+=i\delta^{(3)}(\mathbf x-\mathbf y).
+$$
+
+$$
+\phi(x)
+=\int\frac{d^3p}{(2\pi)^3}
+\frac{1}{\sqrt{2E_{\mathbf p}}}
+\left(
+a_{\mathbf p}e^{-ip\cdot x}
++a_{\mathbf p}^{\dagger}e^{ip\cdot x}
+\right),
+\qquad
+E_{\mathbf p}=\sqrt{\mathbf p^2+m^2},
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
 ## Historically novel predictions and deductions
 
 ### `NP-QFT-NONE` — No model-independent empirical prediction from the framework alone
@@ -208,34 +312,6 @@ QFT's explanatory gain is architectural: the same local field and symmetry speci
 “Quantum field theory” denotes a framework and a family of models, not a single empirically complete theory. Perturbation expansions can be asymptotic; interacting theories may require nonperturbative definitions; regulators and renormalization conditions must be specified. Particle language can become observer- or background-dependent, as in curved spacetime, while fields themselves can be redefined without changing observables.
 
 The Standard Model is a QFT but omits a complete quantum theory of gravity and does not explain all observed cosmological phenomena. Modern effective-field-theory reasoning treats a QFT as predictive within a scale range, not necessarily valid to arbitrarily short distances. The fixed-particle Schrödinger description survives where pair creation is negligible, and classical fields survive at large occupation or when quantum fluctuations are unimportant.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Wave fields, particles, quantum transitions, and relativity enter one framework |
-| `P-02` | Spectral and transition regularities become amplitudes generated by field operators |
-| `P-03` | “Is radiation a wave or particle?” becomes “Which field state and observable are being probed?” |
-| `P-04` | Operator-valued fields, vacuum states, and variable particle number are admitted |
-| `P-05` | Classical waves and fixed-particle quantum mechanics survive as controlled limits |
-| `P-06` | Lagrangians generate quantitative decay rates, scattering cross sections, and radiative shifts |
-
-## Edge list
-
-```text
-A-CLASSICAL-FIELDS --provides-modes-for--> D-QFT-FIELD-QUANTIZATION-1927
-A-HARMONIC-OSCILLATORS --is-quantized-by--> CREATION-ANNIHILATION-ALGEBRA
-A-LIGHT-QUANTA --motivates--> D-QFT-FIELD-QUANTIZATION-1927
-D-SPECIAL-RELATIVITY-1905 --provides-spacetime-symmetry-for--> D-QFT-FIELD-QUANTIZATION-1927
-D-QUANTUM-STATISTICS-1924-1926 --supplies-occupation-number-rules-for--> D-QFT-FIELD-QUANTIZATION-1927
-D-QUANTUM-MECHANICS-1925-1927 --is-extended-to-quantized-fields-by--> D-QFT-FIELD-QUANTIZATION-1927
-D-QFT-FIELD-QUANTIZATION-1927 --explains--> SPONTANEOUS-EMISSION
-FIELD-OPERATOR --creates-excitations-called--> PARTICLES
-FIXED-PARTICLE-QM --approximates--> LOW-ENERGY-QFT-SECTOR
-D-QFT-FIELD-QUANTIZATION-1927 --enables--> YANG-MILLS-QFT
-D-QFT-FIELD-QUANTIZATION-1927 --hosts-nonabelian-gauge-fields-in--> D-YANG-MILLS-1954
-D-QFT-FIELD-QUANTIZATION-1927 --instantiates--> P-04
-```
 
 ## Extended historical investigation
 
@@ -317,6 +393,27 @@ Merging these nodes would erase the discovery sequence. QFT made variable quanta
 - Attach regulator, renormalization scheme, approximation order, and energy domain to quantitative predictions.
 - Preserve the hierarchy QFT \(\supset\) gauge QFT \(\supset\) Yang–Mills/QED instances \(\supset\) Standard Model specification.
 - Recognize classical fields, semiclassical theory, and fixed-particle quantum mechanics as limits, not simply discarded errors.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-CLASSICAL-FIELDS --provides-modes-for--> D-QFT-FIELD-QUANTIZATION-1927
+A-HARMONIC-OSCILLATORS --is-quantized-by--> CREATION-ANNIHILATION-ALGEBRA
+A-LIGHT-QUANTA --motivates--> D-QFT-FIELD-QUANTIZATION-1927
+D-SPECIAL-RELATIVITY-1905 --provides-spacetime-symmetry-for--> D-QFT-FIELD-QUANTIZATION-1927
+D-QUANTUM-STATISTICS-1924-1926 --supplies-occupation-number-rules-for--> D-QFT-FIELD-QUANTIZATION-1927
+D-QUANTUM-MECHANICS-1925-1927 --is-extended-to-quantized-fields-by--> D-QFT-FIELD-QUANTIZATION-1927
+D-QFT-FIELD-QUANTIZATION-1927 --explains--> SPONTANEOUS-EMISSION
+FIELD-OPERATOR --creates-excitations-called--> PARTICLES
+FIXED-PARTICLE-QM --approximates--> LOW-ENERGY-QFT-SECTOR
+D-QFT-FIELD-QUANTIZATION-1927 --enables--> YANG-MILLS-QFT
+D-QFT-FIELD-QUANTIZATION-1927 --hosts-nonabelian-gauge-fields-in--> D-YANG-MILLS-1954
+D-QFT-FIELD-QUANTIZATION-1927 --instantiates--> P-04
+```
 
 ## Sources
 

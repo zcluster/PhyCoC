@@ -15,6 +15,10 @@
 
 Lee and Yang recognized that parity conservation had not been adequately tested in weak interactions. Wu's polarized cobalt-60 experiment found electrons emitted preferentially opposite the nuclear spin, demonstrating that mirror-reflected weak processes are not equivalent.
 
+## Historical problem
+
+Before the focal discovery (1956 proposal; January 1957 experimental report), the case confronted a linked set of pressures: Left–right symmetry treated as universal; Same-mass particles appear to decay to states of opposite parity. The pathways `R-UNIVERSAL-PARITY`, `R-THETA-TAU-DISTINCT-PARTICLES`, `R-WU-DETECTOR-ASYMMETRY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Weak interaction and discrete symmetries was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Assumption/problem | Transition |
@@ -24,6 +28,14 @@ Lee and Yang recognized that parity conservation had not been adequately tested 
 | `TS-LEE-YANG` | 1956 | Review finds weak parity untested | Experiments proposed |
 | `TS-WU` | 1956–1957 | Polarized cobalt beta decay measured | Asymmetry observed |
 | `TS-V-A` | 1957 onward | Chiral weak interaction formulated | Left-handed structure established |
+
+## Knowledge assets
+
+- `A-POLARIZED-CO60`: oriented nuclear spin.
+- `A-LOW-TEMPERATURE`: maintains polarization.
+- `A-BETA-DETECTOR`: measures angular emission.
+- `A-PARITY-OPERATOR`: maps \(\mathbf{x}\to-\mathbf{x}\).
+- `A-SYMMETRY-AUDIT`: distinguishes tested from assumed invariance.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -61,15 +73,25 @@ Lee and Yang recognized that parity conservation had not been adequately tested 
 
 Lee and Yang's review exposed absence of evidence rather than a contradiction within every parity-conserving weak model. Wu's result and independent pion/muon experiments then closed different experimental loopholes. The retained-scope edge is essential: strong and electromagnetic processes still conserve parity to extremely high accuracy. Later \(V-A\) theory explained maximal charged-current chirality, but that theoretical form was not contained in the cobalt data alone.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-POLARIZED-CO60`: oriented nuclear spin.
-- `A-LOW-TEMPERATURE`: maintains polarization.
-- `A-BETA-DETECTOR`: measures angular emission.
-- `A-PARITY-OPERATOR`: maps \(\mathbf{x}\to-\mathbf{x}\).
-- `A-SYMMETRY-AUDIT`: distinguishes tested from assumed invariance.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and inference
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-POLARIZED-CO60`, `A-LOW-TEMPERATURE`, `A-BETA-DETECTOR`, `A-PARITY-OPERATOR`, `A-SYMMETRY-AUDIT`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-UNIVERSAL-PARITY` | The symmetry hypothesis that every fundamental interaction assigns identical probabilities to a process and its spatially mirror-reflected process. | It was assumed rather than tested in weak decay. |
+| `R-THETA-TAU-DISTINCT-PARTICLES` | The hypothesis that the two- and three-pion decay modes came from different parent particles with opposite parity despite matching mass and lifetime. | See the full pathway record above. |
+| `R-WU-DETECTOR-ASYMMETRY` | The null explanation that the cobalt electron imbalance was caused by detector geometry or apparatus bias. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Puzzle of two particles” reframed as an untested symmetry. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Nuclear spin \(\mathbf{J}\) is an axial vector and does not reverse under parity; electron momentum \(\mathbf{p}\) is a polar vector and does. Therefore:
 
@@ -96,6 +118,87 @@ $$
 
 projecting left-chiral fermions.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Symmetry transformation generates a null prediction
+
+- `P-03` — **Reframe the inherited problem:** “Puzzle of two particles” reframed as an untested symmetry
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Fundamental left–right asymmetry accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Weak interaction and discrete symmetries). The case-specific unification was: Nuclear decay and spatial symmetry linked. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Nuclear decay and spatial symmetry linked
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Symmetry transformation generates a null prediction
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Parity retained in strong and electromagnetic sectors. Its quantitative or otherwise discriminating test strategy is: Reversal-controlled angular asymmetry provided decisive test. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Parity retained in strong and electromagnetic sectors
+
+- `P-06` — **Prioritize discriminating tests:** Reversal-controlled angular asymmetry provided decisive test
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Nuclear decay and spatial symmetry linked |
+| `P-02` | Transformative move and generative deduction | Symmetry transformation generates a null prediction |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Puzzle of two particles” reframed as an untested symmetry |
+| `P-04` | Transformative representation, ontology, or mechanism | Fundamental left–right asymmetry accepted |
+| `P-05` | Retention and limiting recovery | Parity retained in strong and electromagnetic sectors |
+| `P-06` | Prediction, discrimination, and validation network | Reversal-controlled angular asymmetry provided decisive test |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-PARITY-VIOLATION-1956-1957` |
+| Focal date | 1956 proposal; January 1957 experimental report |
+| Central claim | Lee and Yang recognized that parity conservation had not been adequately tested in weak interactions. Wu's polarized cobalt-60 experiment found electrons emitted preferentially opposite the nuclear spin, demonstrating that mirror-reflected weak processes are not equivalent. |
+| Domain | Weak interaction and discrete symmetries |
+| Epistemic status | Weak interactions maximally violate parity in charged currents; CP is also violated, while CPT remains foundational in local relativistic QFT |
+| Generative role | Symmetry transformation generates a null prediction |
+| Retained structure | Parity retained in strong and electromagnetic sectors |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\mathbf{J}\cdot\mathbf{p}
+\xrightarrow{P}
+-\mathbf{J}\cdot\mathbf{p}.
+$$
+
+$$
+W(\theta)\propto1+A\frac{v}{c}\cos\theta
+$$
+
+$$
+J^\mu_{\mathrm{weak}}
+=\bar\psi\gamma^\mu(1-\gamma^5)\psi,
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Parity Violation: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Electron asymmetry reversed when nuclear polarization reversed.
@@ -106,30 +209,6 @@ projecting left-chiral fermions.
 ## Limitations and retained status
 
 Parity violation does not imply every weak observable is asymmetric. Chirality equals helicity only in the massless limit. The experiment established weak parity violation, not by itself the full modern \(V-A\) theory. Later CP violation showed that combining charge conjugation with parity is also not exact.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Nuclear decay and spatial symmetry linked |
-| `P-02` | Symmetry transformation generates a null prediction |
-| `P-03` | “Puzzle of two particles” reframed as an untested symmetry |
-| `P-04` | Fundamental left–right asymmetry accepted |
-| `P-05` | Parity retained in strong and electromagnetic sectors |
-| `P-06` | Reversal-controlled angular asymmetry provided decisive test |
-
-## Edge list
-
-```text
-THETA-TAU-PUZZLE --motivates--> A-SYMMETRY-AUDIT
-A-SYMMETRY-AUDIT --reveals-untested--> R-UNIVERSAL-PARITY
-D-LEE-YANG --proposes-test--> A-POLARIZED-CO60
-A-POLARIZED-CO60 --enables--> D-WU-EXPERIMENT
-D-WU-EXPERIMENT --refutes--> R-UNIVERSAL-PARITY
-D-PARITY-VIOLATION-1956-1957 --contributes-to--> V-A-THEORY
-V-A-THEORY --contributes-to--> D-ELECTROWEAK
-D-PARITY-VIOLATION-1956-1957 --instantiates--> P-06
-```
 
 ## Extended historical investigation
 
@@ -226,6 +305,23 @@ The compressed phrase “Wu proved Lee and Yang right” loses two kinds of agen
 - **Record reversal controls.** Field reversal, temperature dependence, and independent decay channels are part of the evidence, not peripheral procedure.
 - **Distinguish discovery layers.** The 1957 result established parity violation; maximal chiral \(V-A\) structure and electroweak embedding required further inference.
 - **Preserve surviving scope.** The rejected node is universal parity, not parity conservation in all physics.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+THETA-TAU-PUZZLE --motivates--> A-SYMMETRY-AUDIT
+A-SYMMETRY-AUDIT --reveals-untested--> R-UNIVERSAL-PARITY
+D-LEE-YANG --proposes-test--> A-POLARIZED-CO60
+A-POLARIZED-CO60 --enables--> D-WU-EXPERIMENT
+D-WU-EXPERIMENT --refutes--> R-UNIVERSAL-PARITY
+D-PARITY-VIOLATION-1956-1957 --contributes-to--> V-A-THEORY
+V-A-THEORY --contributes-to--> D-ELECTROWEAK
+D-PARITY-VIOLATION-1956-1957 --instantiates--> P-06
+```
 
 ## Sources
 

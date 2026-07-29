@@ -17,6 +17,10 @@
 
 Ancient atomism proposed that observable change arises from persistent microscopic constituents—atoms—moving and rearranging in void. Its historical importance lies in decompositional and mechanistic explanation. Modern atoms are divisible quantum systems, so ancient “atoms” must not be identified directly with chemical atoms or elementary particles.
 
+## Historical problem
+
+Before the focal discovery (c. 440 BCE (mature Leucippan–Democritean atomism)), the case confronted a linked set of pressures: Change and permanence appeared philosophically incompatible; Atoms and void used to explain plurality and change. The pathways `R-CONTINUOUS-MATTER`, `R-FOUR-ELEMENTS` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Ontology of matter and microscopic explanation was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | State of the problem | Transition |
@@ -27,6 +31,13 @@ Ancient atomism proposed that observable change arises from persistent microscop
 | `TS-CORPUSCULAR` | 17th century | Mechanical philosophers revived corpuscular explanations | Atomism became connected to experimental natural philosophy |
 | `TS-CHEMICAL-ATOMS` | 19th century | Definite proportions supported chemical atomic theory | Atomic weights and molecular hypotheses became quantitative |
 | `TS-MODERN` | 20th century onward | Atoms shown to contain electrons and nuclei | Structural atomism retained; literal indivisibility rejected |
+
+## Knowledge assets
+
+- `A-PARMENIDEAN-PROBLEM`: the tension between permanence and change.
+- `A-ELEATIC-ARGUMENTS`: challenges involving plurality, motion, and void.
+- `A-MATERIAL-TRANSFORMATION`: observations that matter changes form while some quantity appears conserved.
+- `A-GEOMETRIC-REASONING`: shapes, arrangements, and collisions as explanatory resources.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -62,14 +73,24 @@ Ancient atomism proposed that observable change arises from persistent microscop
 
 The crucial failure was not that continuum reasoning was foolish. Aristotle offered arguments about divisibility and the impossibility of composing an extended continuum from extensionless points. Ancient atomists, meanwhile, could not calculate elemental mass ratios or particle sizes. Modern evidence changed the epistemic balance by linking one microscopic population to multiple independent observables. Even then, the “atom” was revised from indivisible corpuscle to composite quantum system. The retained node is therefore discrete constituent structure, not every Democritean property.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-PARMENIDEAN-PROBLEM`: the tension between permanence and change.
-- `A-ELEATIC-ARGUMENTS`: challenges involving plurality, motion, and void.
-- `A-MATERIAL-TRANSFORMATION`: observations that matter changes form while some quantity appears conserved.
-- `A-GEOMETRIC-REASONING`: shapes, arrangements, and collisions as explanatory resources.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and inference
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-PARMENIDEAN-PROBLEM`, `A-ELEATIC-ARGUMENTS`, `A-MATERIAL-TRANSFORMATION`, `A-GEOMETRIC-REASONING`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-CONTINUOUS-MATTER` | A continuum theory in which a material body fills space continuously and can be divided without reaching discrete, physically indivisible constituents. | It did not by itself explain discrete chemical combination or Brownian fluctuations. |
+| `R-FOUR-ELEMENTS` | An Aristotelian material theory in which terrestrial substances are mixtures or transformations of earth, water, air, and fire, characterized by combinations of hot/cold and wet/dry qualities. | It lacked quantitative composition laws and stable microscopic entities. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “How can being change?” reframed as “How can persistent units rearrange?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 `D-ATOMISM-ANCIENT` introduced three linked claims:
 
@@ -88,6 +109,80 @@ $$
 $$
 
 The inference pattern is explanatory compression: many changes can be represented as rearrangements of a smaller inventory. Ancient atomists lacked measurements of atomic sizes, masses, spectra, or number densities, so the proposal remained underdetermined.
+
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Qualitative regularities recast as consequences of configurations
+
+- `P-03` — **Reframe the inherited problem:** “How can being change?” reframed as “How can persistent units rearrange?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Void and invisible constituents accepted as new ontology
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Ontology of matter and microscopic explanation). The case-specific unification was: Diverse material changes unified as constituent rearrangements. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Diverse material changes unified as constituent rearrangements
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Qualitative regularities recast as consequences of configurations
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Permanence retained while observable change was reinterpreted. Its quantitative or otherwise discriminating test strategy is: Weak in antiquity; later atomism became scientific only through quantitative tests. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Permanence retained while observable change was reinterpreted
+
+- `P-06` — **Prioritize discriminating tests:** Weak in antiquity; later atomism became scientific only through quantitative tests
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Diverse material changes unified as constituent rearrangements |
+| `P-02` | Transformative move and generative deduction | Qualitative regularities recast as consequences of configurations |
+| `P-03` | Diagnosis of interpolation failure and reframing | “How can being change?” reframed as “How can persistent units rearrange?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Void and invisible constituents accepted as new ontology |
+| `P-05` | Retention and limiting recovery | Permanence retained while observable change was reinterpreted |
+| `P-06` | Prediction, discrimination, and validation network | Weak in antiquity; later atomism became scientific only through quantitative tests |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-ATOMISM-ANCIENT` |
+| Focal date | c. 440 BCE (mature Leucippan–Democritean atomism) |
+| Central claim | Ancient atomism proposed that observable change arises from persistent microscopic constituents—atoms—moving and rearranging in void. Its historical importance lies in decompositional and mechanistic explanation. Modern atoms are divisible quantum systems, so ancient “atoms” must not be identified directly with chemical atoms or elementary particles. |
+| Domain | Ontology of matter and microscopic explanation |
+| Epistemic status | A foundational metaphysical conjecture, not an experimentally established ancient physical theory |
+| Generative role | Qualitative regularities recast as consequences of configurations |
+| Retained structure | Permanence retained while observable change was reinterpreted |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\text{macroscopic state}
+=\mathcal{C}\!\left(\{\text{constituents}\},
+\{\text{positions}\},
+\{\text{motions}\},
+\{\text{interactions}\}\right).
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Atomistic Hypothesis: Historical Knowledge Graph.
 
 ## Validation and explanatory gains
 
@@ -110,35 +205,6 @@ These arrows express compositional modeling, not literal addition of independent
 ## Limitations and retained status
 
 Ancient atomism did not specify measurable atomic masses, sizes, interaction laws, or discriminating experiments. It was therefore a fertile ontological program rather than a quantitatively validated ancient discovery of modern atoms. Modern physics retains discrete compositional structure and rearrangement explanations, while rejecting literal indivisibility, classical hard-particle ontology as universal, and a vacuum understood as featureless nothingness. Continuum descriptions remain valid effective theories when coarse-graining over many constituents.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Diverse material changes unified as constituent rearrangements |
-| `P-02` | Qualitative regularities recast as consequences of configurations |
-| `P-03` | “How can being change?” reframed as “How can persistent units rearrange?” |
-| `P-04` | Void and invisible constituents accepted as new ontology |
-| `P-05` | Permanence retained while observable change was reinterpreted |
-| `P-06` | Weak in antiquity; later atomism became scientific only through quantitative tests |
-
-## Edge list
-
-```text
-A-PARMENIDEAN-PROBLEM --motivates--> D-ATOMISM-ANCIENT
-A-ELEATIC-ARGUMENTS --constrains--> D-ATOMISM-ANCIENT
-D-ATOMISM-ANCIENT --competes-with--> R-CONTINUOUS-MATTER
-D-ATOMISM-ANCIENT --competes-with--> R-FOUR-ELEMENTS
-D-ATOMISM-ANCIENT --introduces--> O-ATOMS
-D-ATOMISM-ANCIENT --introduces--> O-VOID
-D-ATOMISM-ANCIENT --precedes--> D-CHEMICAL-ATOMISM
-D-CHEMICAL-ATOMISM --quantitatively-reframes--> D-ATOMISM-ANCIENT
-D-MODERN-ATOMIC-PHYSICS --retains-structure-of--> D-ATOMISM-ANCIENT
-D-MODERN-ATOMIC-PHYSICS --rejects-literal-indivisibility-of--> O-ATOMS
-D-ATOMISM-ANCIENT --instantiates--> P-01
-D-ATOMISM-ANCIENT --instantiates--> P-03
-D-ATOMISM-ANCIENT --instantiates--> P-04
-```
 
 ## Extended historical investigation
 
@@ -216,6 +282,28 @@ The transferable lesson is not “the Greeks already discovered modern atomic ph
 - Assign ancient atomism `epistemic_status: metaphysical-hypothesis`, not `experimentally-validated`.
 - Represent evidential convergence as multiple independent paths into `SCIENTIFIC-ATOMISM`.
 - Preserve continuum theory as a valid emergent node rather than labeling it simply false.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-PARMENIDEAN-PROBLEM --motivates--> D-ATOMISM-ANCIENT
+A-ELEATIC-ARGUMENTS --constrains--> D-ATOMISM-ANCIENT
+D-ATOMISM-ANCIENT --competes-with--> R-CONTINUOUS-MATTER
+D-ATOMISM-ANCIENT --competes-with--> R-FOUR-ELEMENTS
+D-ATOMISM-ANCIENT --introduces--> O-ATOMS
+D-ATOMISM-ANCIENT --introduces--> O-VOID
+D-ATOMISM-ANCIENT --precedes--> D-CHEMICAL-ATOMISM
+D-CHEMICAL-ATOMISM --quantitatively-reframes--> D-ATOMISM-ANCIENT
+D-MODERN-ATOMIC-PHYSICS --retains-structure-of--> D-ATOMISM-ANCIENT
+D-MODERN-ATOMIC-PHYSICS --rejects-literal-indivisibility-of--> O-ATOMS
+D-ATOMISM-ANCIENT --instantiates--> P-01
+D-ATOMISM-ANCIENT --instantiates--> P-03
+D-ATOMISM-ANCIENT --instantiates--> P-04
+```
 
 ## Sources
 

@@ -15,6 +15,10 @@
 
 Hertz confirmed Maxwellian waves, while precision experiments and electrodynamics exposed a conflict: Maxwell's equations single out speed \(c\), whereas Galilean transformations change velocities by addition. Ether-drift searches did not reveal the expected preferred-frame motion. Lorentzian mathematical repairs prepared, but did not by themselves complete, Einstein's kinematic reframing.
 
+## Historical problem
+
+Before the focal discovery (1887–1904 (Hertz through Lorentz's mature electron theory)), the case confronted a linked set of pressures: Electromagnetic waves implied; Sparks generate and detect radio-frequency waves. The pathways `R-GALILEAN-ELECTRODYNAMICS`, `R-RIGID-STATIONARY-ETHER`, `R-FULLY-DRAGGED-ETHER`, `R-LORENTZ-ETHER-THEORY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Wave propagation, ether tests, and electrodynamics of moving bodies was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Development | Transition |
@@ -25,6 +29,14 @@ Hertz confirmed Maxwellian waves, while precision experiments and electrodynamic
 | `TS-LORENTZ-FITZGERALD` | 1890s | Length contraction and local time introduced | Empirical invariance accommodated |
 | `TS-POINCARE` | 1900–1905 | Relativity principle and transformations clarified | Group structure approaches new kinematics |
 | `TS-EINSTEIN` | 1905 | Ether-independent postulates adopted | Space and time transformed |
+
+## Knowledge assets
+
+- `A-MAXWELL-EQUATIONS`: invariant wave speed.
+- `A-HERTZ-WAVES`: experimental electromagnetic radiation.
+- `A-INTERFEROMETRY`: sensitive phase comparison.
+- `A-CHARGE-DYNAMICS`: moving-charge phenomena.
+- `A-LORENTZ-TRANSFORM`: mathematical covariance.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -74,15 +86,26 @@ The ether program did not collapse at the first null experiment. Fresnel partial
 
 Michelson–Morley constrained a particular second-order ether-wind signal; it did not by itself exclude every ether construction. Relativity won through a coherent account of the full electrodynamics of moving bodies and later diverse tests, with fewer unobservable mechanisms.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-MAXWELL-EQUATIONS`: invariant wave speed.
-- `A-HERTZ-WAVES`: experimental electromagnetic radiation.
-- `A-INTERFEROMETRY`: sensitive phase comparison.
-- `A-CHARGE-DYNAMICS`: moving-charge phenomena.
-- `A-LORENTZ-TRANSFORM`: mathematical covariance.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Core data and inference
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-MAXWELL-EQUATIONS`, `A-HERTZ-WAVES`, `A-INTERFEROMETRY`, `A-CHARGE-DYNAMICS`, `A-LORENTZ-TRANSFORM`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-GALILEAN-ELECTRODYNAMICS` | The attempt to combine Maxwellian electromagnetism with Galilean space and absolute time, transforming velocities by simple subtraction between inertial frames. | A light wave with speed \(c\) would have frame-dependent speed, conflicting with Maxwellian form and experiment. |
+| `R-RIGID-STATIONARY-ETHER` | A theory in which electromagnetic waves propagate through a rigid or effectively stationary luminiferous ether that defines an absolute rest frame relative to which Earth moves. | See the full pathway record above. |
+| `R-FULLY-DRAGGED-ETHER` | An ether model in which matter carries the nearby optical medium with it, suppressing a local ether wind. | See the full pathway record above. |
+| `R-LORENTZ-ETHER-THEORY` | A stationary-ether theory in which motion physically contracts bodies and alters clock readings so experiments obey Lorentz transformations while an unobservable preferred frame remains. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Ether motion problem reframed as spacetime symmetry. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For an interferometer with arm length \(L\) moving at hypothesized ether speed \(v\), naive ether kinematics predicts a round-trip time difference of order:
 
@@ -111,6 +134,89 @@ $$
 
 and the interval \(c^2t^2-x^2\). The crisis was resolved by treating these as spacetime relations, not merely dynamical distortions through ether.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Maxwell theory generated new waves before detection
+
+- `P-03` — **Reframe the inherited problem:** Ether motion problem reframed as spacetime symmetry
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Frame-dependent time accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Wave propagation, ether tests, and electrodynamics of moving bodies). The case-specific unification was: Optics, radio, and moving-body electrodynamics connected. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Optics, radio, and moving-body electrodynamics connected
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Maxwell theory generated new waves before detection
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Maxwell equations and relativity principle retained. Its quantitative or otherwise discriminating test strategy is: Null fringe shifts imposed quantitative bounds. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Maxwell equations and relativity principle retained
+
+- `P-06` — **Prioritize discriminating tests:** Null fringe shifts imposed quantitative bounds
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Optics, radio, and moving-body electrodynamics connected |
+| `P-02` | Transformative move and generative deduction | Maxwell theory generated new waves before detection |
+| `P-03` | Diagnosis of interpolation failure and reframing | Ether motion problem reframed as spacetime symmetry |
+| `P-04` | Transformative representation, ontology, or mechanism | Frame-dependent time accepted |
+| `P-05` | Retention and limiting recovery | Maxwell equations and relativity principle retained |
+| `P-06` | Prediction, discrimination, and validation network | Null fringe shifts imposed quantitative bounds |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-EM-WAVES-LORENTZ-CRISIS-1887-1904` |
+| Focal date | 1887–1904 (Hertz through Lorentz's mature electron theory) |
+| Central claim | Hertz confirmed Maxwellian waves, while precision experiments and electrodynamics exposed a conflict: Maxwell's equations single out speed \(c\), whereas Galilean transformations change velocities by addition. Ether-drift searches did not reveal the expected preferred-frame motion. Lorentzian mathematical repairs prepared, but did not by themselves complete, Einstein's kinematic reframing. |
+| Domain | Wave propagation, ether tests, and electrodynamics of moving bodies |
+| Epistemic status | Electromagnetic waves validated; preferred luminiferous-ether kinematics superseded by special relativity |
+| Generative role | Maxwell theory generated new waves before detection |
+| Retained structure | Maxwell equations and relativity principle retained |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\Delta t\approx \frac{Lv^2}{c^3}
+$$
+
+$$
+\Delta N\sim\frac{c\Delta t}{\lambda}
+\sim\frac{Lv^2}{\lambda c^2}.
+$$
+
+$$
+x'=\gamma(x-vt),
+\qquad
+t'=\gamma\left(t-\frac{vx}{c^2}\right),
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2/c^2}},
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Electromagnetic Waves and the Relativity Crisis: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Hertz demonstrated reflection, refraction, interference, and polarization of radio waves.
@@ -121,31 +227,6 @@ and the interval \(c^2t^2-x^2\). The crisis was resolved by treating these as sp
 ## Limitations and retained status
 
 Michelson–Morley was not a single decisive overthrow, and Lorentz and Poincaré made essential contributions. Modern Lorentz-invariance tests far exceed 1887 precision. Electromagnetic waves remain classical solutions, while photons provide the quantum description of radiation.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Optics, radio, and moving-body electrodynamics connected |
-| `P-02` | Maxwell theory generated new waves before detection |
-| `P-03` | Ether motion problem reframed as spacetime symmetry |
-| `P-04` | Frame-dependent time accepted |
-| `P-05` | Maxwell equations and relativity principle retained |
-| `P-06` | Null fringe shifts imposed quantitative bounds |
-
-## Edge list
-
-```text
-A-MAXWELL-EQUATIONS --predicts--> D-HERTZ-WAVES
-D-HERTZ-WAVES --validates--> A-MAXWELL-EQUATIONS
-R-GALILEAN-ELECTRODYNAMICS --conflicts-with--> CONSTANT-C
-R-RIGID-STATIONARY-ETHER --predicts--> ETHER-DRIFT
-V-MICHELSON-MORLEY --fails-to-detect--> ETHER-DRIFT
-A-LORENTZ-TRANSFORM --repairs--> ELECTRODYNAMIC-COVARIANCE
-D-SPECIAL-RELATIVITY --reframes--> A-LORENTZ-TRANSFORM
-D-EM-WAVES-LORENTZ-CRISIS-1887-1904 --precedes--> D-SPECIAL-RELATIVITY
-D-EM-WAVES-LORENTZ-CRISIS-1887-1904 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -296,6 +377,8 @@ Ether language survives in some effective media—condensed-matter quasiparticle
 
 ## Additional quantitative and epistemic notes
 
+### Additional quantitative and epistemic notes
+
 Hertz's sparks in a receiving loop provided laboratory evidence that oscillating electrical systems radiate and that the radiation reflects, refracts, interferes, and propagates at a speed consistent with light. This validated Maxwellian waves without yet settling how motion through a supposed ether should transform fields.
 
 The Michelson–Morley interferometer targeted an orientation-dependent travel-time difference. For arm length \(L\) and hypothesized ether speed \(v\), the expected leading fringe shift scaled as
@@ -305,6 +388,20 @@ $$
 $$
 
 The null result constrained simple stationary-ether models, but did not alone derive special relativity. Lorentz–FitzGerald contraction and Lorentz's electron theory were serious repairs that reproduced key null effects. Einstein's 1905 contribution reframed the transformation as spacetime kinematics based on relativity and invariant light speed. Thus `HERTZ-CONFIRMATION`, `ETHER-ANOMALIES`, `LORENTZ-REPAIR`, and `EINSTEIN-REFRAMING` should remain separate nodes.
+
+## Edge list
+
+```text
+A-MAXWELL-EQUATIONS --predicts--> D-HERTZ-WAVES
+D-HERTZ-WAVES --validates--> A-MAXWELL-EQUATIONS
+R-GALILEAN-ELECTRODYNAMICS --conflicts-with--> CONSTANT-C
+R-RIGID-STATIONARY-ETHER --predicts--> ETHER-DRIFT
+V-MICHELSON-MORLEY --fails-to-detect--> ETHER-DRIFT
+A-LORENTZ-TRANSFORM --repairs--> ELECTRODYNAMIC-COVARIANCE
+D-SPECIAL-RELATIVITY --reframes--> A-LORENTZ-TRANSFORM
+D-EM-WAVES-LORENTZ-CRISIS-1887-1904 --precedes--> D-SPECIAL-RELATIVITY
+D-EM-WAVES-LORENTZ-CRISIS-1887-1904 --instantiates--> P-03
+```
 
 ## Sources
 

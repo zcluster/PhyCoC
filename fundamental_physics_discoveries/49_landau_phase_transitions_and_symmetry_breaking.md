@@ -15,6 +15,10 @@
 
 Landau represented a phase by an order parameter and constructed a free-energy expansion constrained by symmetry. A symmetric law can have asymmetric equilibrium minima, making spontaneous symmetry breaking a general mechanism for collective order. The framework predicts qualitative phase structure and mean-field scaling without deriving every microscopic detail. Wilsonian renormalization later corrected its treatment of fluctuations near many critical points, while topological order and other non-Landau phases show that symmetry-breaking order parameters are not universal.
 
+## Historical problem
+
+Before the focal discovery (1937 Landau phase-transition theory), the case confronted a linked set of pressures: Classify melting, boiling, magnetism, and critical points macroscopically; Ising, Weiss, and lattice models explain selected collective phenomena. The pathways `R-EHRENFEST-DERIVATIVE-ORDER-CLASSIFICATION`, `R-WEISS-MOLECULAR-FIELD-AS-LITERAL-FIELD`, `R-MICROSCOPIC-MODEL-FOR-EACH-TRANSITION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Equilibrium phase transitions, collective order, symmetry breaking, and critical phenomena was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -24,6 +28,15 @@ Landau represented a phase by an order parameter and constructed a free-energy e
 | `TS-LANDAU` | 1937 | Find a theory applicable across different continuous transitions | Symmetry and an order parameter organize free energy |
 | `TS-GINZBURG-LANDAU` | 1950 | Permit spatially varying superconducting order and electromagnetic coupling | Correlation length, interfaces, and vortices enter |
 | `TS-RG-CRITICALITY` | 1960s–1970s | Mean-field exponents fail near low-dimensional critical points | Fluctuations and scale flow determine universality |
+
+## Knowledge assets
+
+- `A-FREE-ENERGY`: equilibrium minimizes an appropriate thermodynamic potential.
+- `A-SYMMETRY-GROUP`: high-temperature phases possess transformation invariances.
+- `A-MAGNETIZATION`: a collective variable distinguishing magnetic order.
+- `A-WEISS-MEAN-FIELD`: self-consistent spontaneous order.
+- `A-ISING-MODEL`: microscopic example of cooperative ordering.
+- `A-ANALYTIC-EXPANSION`: local series approximation near a transition.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -77,16 +90,25 @@ Landau represented a phase by an order parameter and constructed a free-energy e
 | Separate microscopic model for each transition | Solve constituent dynamics first | Misses shared emergent structure and is often intractable | Mechanisms and coefficient calculation |
 | **Discovery/current: Landau order-parameter theory** | Expand free energy in symmetry-allowed powers of collective variables | Mean-field fluctuations and non-Landau order limit universality | Foundational effective theory of symmetry-breaking phases |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-FREE-ENERGY`: equilibrium minimizes an appropriate thermodynamic potential.
-- `A-SYMMETRY-GROUP`: high-temperature phases possess transformation invariances.
-- `A-MAGNETIZATION`: a collective variable distinguishing magnetic order.
-- `A-WEISS-MEAN-FIELD`: self-consistent spontaneous order.
-- `A-ISING-MODEL`: microscopic example of cooperative ordering.
-- `A-ANALYTIC-EXPANSION`: local series approximation near a transition.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivation
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-FREE-ENERGY`, `A-SYMMETRY-GROUP`, `A-MAGNETIZATION`, `A-WEISS-MEAN-FIELD`, `A-ISING-MODEL`, `A-ANALYTIC-EXPANSION`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-EHRENFEST-DERIVATIVE-ORDER-CLASSIFICATION` | A thermodynamic classification that labels a transition by the lowest derivative of free energy that is discontinuous, such as latent heat for a first-order transition or a discontinuity in heat capacity for a second-order transition. | See the full pathway record above. |
+| `R-WEISS-MOLECULAR-FIELD-AS-LITERAL-FIELD` | A ferromagnetic model in which each magnetic moment experiences an internal “molecular field” proportional to the bulk magnetization, \(H_{\mathrm{eff}}=H+\lambda M\), sometimes read as a literal additional local field rather than a mean-field representation of interactions. | See the full pathway record above. |
+| `R-MICROSCOPIC-MODEL-FOR-EACH-TRANSITION` | A research strategy requiring a detailed atomistic model and separate solution for every material before any phase-transition law or classification can be asserted. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Which microscopic detail causes this transition?” becomes “Which order parameter and symmetry distinguish phases?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For an Ising-like scalar order parameter \(\phi\) with symmetry \(\phi\rightarrow-\phi\), the uniform Landau free-energy density is
 
@@ -149,6 +171,91 @@ $$
 
 These exponents are mean-field predictions, not exact universal values below the upper critical dimension.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Thermodynamic anomalies become generated by minima of an order-parameter free energy
+
+- `P-03` — **Reframe the inherited problem:** “Which microscopic detail causes this transition?” becomes “Which order parameter and symmetry distinguish phases?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Emergent collective variables and asymmetric states of symmetric laws are admitted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Equilibrium phase transitions, collective order, symmetry breaking, and critical phenomena). The case-specific unification was: Magnetism, fluids, structural order, and later superconductivity share one symmetry framework. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Magnetism, fluids, structural order, and later superconductivity share one symmetry framework
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Thermodynamic anomalies become generated by minima of an order-parameter free energy
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Weiss self-consistency and thermodynamic derivatives survive inside a broader effective theory. Its quantitative or otherwise discriminating test strategy is: Coefficients, response functions, phase boundaries, and critical exponents make the theory testable. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Weiss self-consistency and thermodynamic derivatives survive inside a broader effective theory
+
+- `P-06` — **Prioritize discriminating tests:** Coefficients, response functions, phase boundaries, and critical exponents make the theory testable
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Magnetism, fluids, structural order, and later superconductivity share one symmetry framework |
+| `P-02` | Transformative move and generative deduction | Thermodynamic anomalies become generated by minima of an order-parameter free energy |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Which microscopic detail causes this transition?” becomes “Which order parameter and symmetry distinguish phases?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Emergent collective variables and asymmetric states of symmetric laws are admitted |
+| `P-05` | Retention and limiting recovery | Weiss self-consistency and thermodynamic derivatives survive inside a broader effective theory |
+| `P-06` | Prediction, discrimination, and validation network | Coefficients, response functions, phase boundaries, and critical exponents make the theory testable |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-LANDAU-ORDER-PARAMETER-1937` |
+| Focal date | 1937 Landau phase-transition theory |
+| Central claim | Landau represented a phase by an order parameter and constructed a free-energy expansion constrained by symmetry. A symmetric law can have asymmetric equilibrium minima, making spontaneous symmetry breaking a general mechanism for collective order. The framework predicts qualitative phase structure and mean-field scaling without deriving every microscopic detail. Wilsonian renormalization later corrected its treatment of fluctuations near many critical points, while topological order and other non-Landau phases show that symmetry-breaking order parameters are not universal. |
+| Domain | Equilibrium phase transitions, collective order, symmetry breaking, and critical phenomena |
+| Epistemic status | Foundational phenomenological framework; reliable away from strong fluctuation regimes and as the mean-field limit, but not a universal classification of all phases |
+| Generative role | Thermodynamic anomalies become generated by minima of an order-parameter free energy |
+| Retained structure | Weiss self-consistency and thermodynamic derivatives survive inside a broader effective theory |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+f(\phi,T)
+=f_0(T)
++\frac12a(T-T_c)\phi^2
++\frac14b\phi^4
+-h\phi,
+\qquad a>0,\quad b>0.
+$$
+
+$$
+\frac{\partial f}{\partial\phi}
+=a(T-T_c)\phi+b\phi^3=0.
+$$
+
+$$
+\phi=0
+\quad (T>T_c),
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Landau Theory of Phase Transitions and Spontaneous Symmetry Breaking: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 Landau theory explains how a symmetric free energy can support asymmetric phases, predicts order-parameter onset, susceptibility growth, metastability, and symmetry-allowed coupling among collective variables. Its logic applies to magnets, binary mixtures, structural changes, superfluids, and superconductors. Ginzburg–Landau theory predicted characteristic lengths and supported analysis of magnetic flux penetration and vortices.
@@ -160,30 +267,6 @@ The most important gain is transfer: one need not know every microscopic detail 
 Landau mean-field theory suppresses long-wavelength fluctuations. Close enough to many continuous transitions, measured exponents differ from \(1/2\), and the renormalization group explains why dimensionality, symmetry, and interaction range control universal behavior. A cubic invariant or negative quartic coefficient with stabilizing higher powers can produce first-order behavior, so not every Landau expansion describes a continuous transition.
 
 The paradigm also does not classify every phase. Topological order can distinguish phases without a local symmetry-breaking order parameter, and one-dimensional or gauge systems require care. Finite systems have rounded behavior rather than true thermodynamic singularities. Landau theory remains a highly successful effective and mean-field framework, not an ultimate theory of all collective matter.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Magnetism, fluids, structural order, and later superconductivity share one symmetry framework |
-| `P-02` | Thermodynamic anomalies become generated by minima of an order-parameter free energy |
-| `P-03` | “Which microscopic detail causes this transition?” becomes “Which order parameter and symmetry distinguish phases?” |
-| `P-04` | Emergent collective variables and asymmetric states of symmetric laws are admitted |
-| `P-05` | Weiss self-consistency and thermodynamic derivatives survive inside a broader effective theory |
-| `P-06` | Coefficients, response functions, phase boundaries, and critical exponents make the theory testable |
-
-## Edge list
-
-```text
-A-FREE-ENERGY --is-expanded-by--> D-LANDAU-ORDER-PARAMETER-1937
-A-SYMMETRY-GROUP --constrains--> ALLOWED-LANDAU-TERMS
-ORDER-PARAMETER --distinguishes--> PHASES
-SYMMETRIC-FREE-ENERGY --can-have--> ASYMMETRIC-MINIMUM
-D-LANDAU-ORDER-PARAMETER-1937 --subsumes--> R-WEISS-MOLECULAR-FIELD-AS-LITERAL-FIELD
-FLUCTUATIONS --limit--> MEAN-FIELD-EXPONENTS
-D-LANDAU-ORDER-PARAMETER-1937 --precedes--> WILSONIAN-RG
-D-LANDAU-ORDER-PARAMETER-1937 --instantiates--> P-01
-```
 
 ## Extended historical investigation
 
@@ -249,6 +332,23 @@ At \(h=0\), the equations respect \(\phi\to-\phi\), but a macroscopic equilibriu
 - Do not treat mean-field exponents as exact outside their regime.
 - Store Landau theory as predecessor and retained effective structure within Wilsonian RG, not as simply false.
 - Permit non-Landau phases when no local order parameter distinguishes the data.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-FREE-ENERGY --is-expanded-by--> D-LANDAU-ORDER-PARAMETER-1937
+A-SYMMETRY-GROUP --constrains--> ALLOWED-LANDAU-TERMS
+ORDER-PARAMETER --distinguishes--> PHASES
+SYMMETRIC-FREE-ENERGY --can-have--> ASYMMETRIC-MINIMUM
+D-LANDAU-ORDER-PARAMETER-1937 --subsumes--> R-WEISS-MOLECULAR-FIELD-AS-LITERAL-FIELD
+FLUCTUATIONS --limit--> MEAN-FIELD-EXPONENTS
+D-LANDAU-ORDER-PARAMETER-1937 --precedes--> WILSONIAN-RG
+D-LANDAU-ORDER-PARAMETER-1937 --instantiates--> P-01
+```
 
 ## Sources
 

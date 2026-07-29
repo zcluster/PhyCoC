@@ -15,6 +15,10 @@
 
 The proton–neutron nucleus required a short-range strong binding interaction, while beta decay required a distinct weak process that changes particle identity and emits a neutrino. Early exchange-force and Fermi theories separated two mechanisms previously grouped as “nuclear.”
 
+## Historical problem
+
+Before the focal discovery (1932–1938 synthesis), the case confronted a linked set of pressures: Proton–neutron nucleus established; Quantum exchange models proposed. The pathways `R-NUCLEAR-ELECTRONS`, `R-ELECTROMAGNETIC-BINDING-ONLY`, `R-MICROSCOPIC-ENERGY-NONCONSERVATION`, `R-ELEMENTARY-YUKAWA-MESON-AS-FUNDAMENTAL-FORCE` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Nuclear binding and weak radioactive decay was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Development | Transition |
@@ -25,6 +29,13 @@ The proton–neutron nucleus required a short-range strong binding interaction, 
 | `TS-YUKAWA` | 1935 | Massive mediator predicts finite range | Meson search begins |
 | `TS-PION` | 1947 onward | Pion identified; nuclear force modeled | Strong interaction deepens |
 | `TS-QCD-ELECTROWEAK` | 1960s onward | Separate gauge theories established | Early models become effective limits |
+
+## Knowledge assets
+
+- `A-NEUTRON`: proton–neutron composition.
+- `A-CONTINUOUS-BETA-SPECTRUM`: apparent missing energy.
+- `A-PAULI-NEUTRINO`: neutral light particle hypothesis.
+- `A-RANGE-FORCE`: binding over femtometer distances.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -68,14 +79,26 @@ The proton–neutron nucleus required a short-range strong binding interaction, 
 
 Bohr's willingness to question energy conservation illustrates that conservation laws themselves can be treated as revisable, but the neutrino hypothesis won by preserving a broadly successful structure and generating a new particle. Fermi's theory then converted it into spectral and rate calculations. Modern weak boson exchange supersedes the contact interaction at high energy while recovering it at low energy.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-NEUTRON`: proton–neutron composition.
-- `A-CONTINUOUS-BETA-SPECTRUM`: apparent missing energy.
-- `A-PAULI-NEUTRINO`: neutral light particle hypothesis.
-- `A-RANGE-FORCE`: binding over femtometer distances.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-NEUTRON`, `A-CONTINUOUS-BETA-SPECTRUM`, `A-PAULI-NEUTRINO`, `A-RANGE-FORCE`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-NUCLEAR-ELECTRONS` | The model that beta electrons already exist as bound constituents inside the nucleus and are merely expelled during radioactive decay. | Cannot account consistently for spin, statistics, and confinement. |
+| `R-ELECTROMAGNETIC-BINDING-ONLY` | The hypothesis that known electric and magnetic forces alone bind protons and other charged constituents into stable nuclei, with no distinct short-range nuclear interaction. | Positively charged protons repel; nuclear range and strength differ. |
+| `R-MICROSCOPIC-ENERGY-NONCONSERVATION` | The proposal that individual beta decays need not conserve energy, with conservation holding only statistically. | See the full pathway record above. |
+| `R-ELEMENTARY-YUKAWA-MESON-AS-FUNDAMENTAL-FORCE` | A theory in which one elementary massive meson is the fundamental carrier of the complete nuclear force. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Missing energy reframed as undetected-particle energy. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Beta-minus decay:
 
@@ -107,6 +130,86 @@ $$
 
 This inference predicted a mediator mass from the measured short range, though the modern residual nuclear force is more complex than single-pion exchange.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Mediator mass generates force range
+
+- `P-03` — **Reframe the inherited problem:** Missing energy reframed as undetected-particle energy
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Particle creation and exchange mechanisms accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Nuclear binding and weak radioactive decay). The case-specific unification was: Decay spectra, conservation, and new particles unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Decay spectra, conservation, and new particles unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Mediator mass generates force range
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Conservation laws retained by expanding ontology. Its quantitative or otherwise discriminating test strategy is: Spectra, lifetimes, and ranges test models. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Conservation laws retained by expanding ontology
+
+- `P-06` — **Prioritize discriminating tests:** Spectra, lifetimes, and ranges test models
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Decay spectra, conservation, and new particles unified |
+| `P-02` | Transformative move and generative deduction | Mediator mass generates force range |
+| `P-03` | Diagnosis of interpolation failure and reframing | Missing energy reframed as undetected-particle energy |
+| `P-04` | Transformative representation, ontology, or mechanism | Particle creation and exchange mechanisms accepted |
+| `P-05` | Retention and limiting recovery | Conservation laws retained by expanding ontology |
+| `P-06` | Prediction, discrimination, and validation network | Spectra, lifetimes, and ranges test models |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-NUCLEAR-WEAK-1932-1938` |
+| Focal date | 1932–1938 synthesis |
+| Central claim | The proton–neutron nucleus required a short-range strong binding interaction, while beta decay required a distinct weak process that changes particle identity and emits a neutrino. Early exchange-force and Fermi theories separated two mechanisms previously grouped as “nuclear.” |
+| Domain | Nuclear binding and weak radioactive decay |
+| Epistemic status | Nuclear force is an emergent low-energy QCD interaction; beta decay is governed by the electroweak interaction |
+| Generative role | Mediator mass generates force range |
+| Retained structure | Conservation laws retained by expanding ontology |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+n\rightarrow p+e^-+\bar\nu_e.
+$$
+
+$$
+Q=T_p+T_e+E_{\bar\nu},
+$$
+
+$$
+\mathcal{L}_F
+\sim-\frac{G_F}{\sqrt2}
+(\bar p\Gamma n)(\bar e\Gamma\nu)+\text{h.c.}
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Nuclear Interactions and Beta Decay: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Neutrino detection later confirmed Fermi/Pauli missing-energy account.
@@ -117,30 +220,6 @@ This inference predicted a mediator mass from the measured short range, though t
 ## Limitations and retained status
 
 Fermi's point interaction fails at high energy and is replaced by \(W^\pm\) exchange. Yukawa's single-meson potential is not full QCD. Nuclear many-body forces, chiral effective field theory, and lattice QCD are required for precision.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Decay spectra, conservation, and new particles unified |
-| `P-02` | Mediator mass generates force range |
-| `P-03` | Missing energy reframed as undetected-particle energy |
-| `P-04` | Particle creation and exchange mechanisms accepted |
-| `P-05` | Conservation laws retained by expanding ontology |
-| `P-06` | Spectra, lifetimes, and ranges test models |
-
-## Edge list
-
-```text
-A-NEUTRON --enables--> PROTON-NEUTRON-NUCLEUS
-R-ELECTROMAGNETIC-BINDING-ONLY --fails-to-bind--> PROTON-NEUTRON-NUCLEUS
-A-CONTINUOUS-BETA-SPECTRUM --motivates--> A-PAULI-NEUTRINO
-A-PAULI-NEUTRINO --contributes-to--> D-FERMI-BETA
-D-FERMI-BETA --explains--> CONTINUOUS-BETA-SPECTRUM
-FORCE-RANGE --constrains--> YUKAWA-MEDIATOR-MASS
-D-ELECTROWEAK --supersedes-at-high-energy--> D-FERMI-BETA
-D-NUCLEAR-WEAK-1932-1938 --instantiates--> P-05
-```
 
 ## Extended historical investigation
 
@@ -292,6 +371,8 @@ Exact nuclear structure from QCD remains computationally hard at many-body scale
 
 ## Additional quantitative and epistemic notes
 
+### Additional quantitative and epistemic notes
+
 Continuous beta spectra seemed incompatible with a two-body decay into a daughter nucleus and electron, encouraging even doubts about energy conservation. Pauli's neutral-particle proposal restored event-by-event conservation; Fermi made it a calculable interaction:
 
 $$
@@ -307,6 +388,19 @@ $$
 connects the interaction matrix element with final-state phase space and explains spectral shapes. Reines and Cowan later detected antineutrinos through inverse beta processes, converting a conservation-motivated hypothesis into an observed particle.
 
 Yukawa's proposed massive exchange related nuclear-force range to mediator mass, \(R\sim\hbar/(mc)\), and pion discovery supported that scale. Modern QCD makes pions effective residual-force carriers between nucleons, analogous in limited fashion to molecular forces between neutral atoms; it does not treat the pion as the fundamental color-force gauge boson.
+
+## Edge list
+
+```text
+A-NEUTRON --enables--> PROTON-NEUTRON-NUCLEUS
+R-ELECTROMAGNETIC-BINDING-ONLY --fails-to-bind--> PROTON-NEUTRON-NUCLEUS
+A-CONTINUOUS-BETA-SPECTRUM --motivates--> A-PAULI-NEUTRINO
+A-PAULI-NEUTRINO --contributes-to--> D-FERMI-BETA
+D-FERMI-BETA --explains--> CONTINUOUS-BETA-SPECTRUM
+FORCE-RANGE --constrains--> YUKAWA-MEDIATOR-MASS
+D-ELECTROWEAK --supersedes-at-high-energy--> D-FERMI-BETA
+D-NUCLEAR-WEAK-1932-1938 --instantiates--> P-05
+```
 
 ## Sources
 

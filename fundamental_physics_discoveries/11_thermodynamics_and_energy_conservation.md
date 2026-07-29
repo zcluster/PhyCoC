@@ -21,6 +21,10 @@ $$
 
 Internal energy $U$ is a state function, whereas heat and work depend on the process path. The discovery unified mechanical, thermal, electrical and chemical transformations through quantitative conservation. It did **not** explain why heat flows spontaneously from hot to cold, why real processes are irreversible, or why a cyclic engine cannot convert heat from one reservoir completely into work; those require the second law.
 
+## Historical problem
+
+Before the focal discovery (1843–1850 mechanical equivalent of heat and first-law synthesis), the case confronted a linked set of pressures: Heat represented as a conserved weightless fluid; Friction and mechanical action generate heat. The pathways `R-CALORIC-CONSERVATION`, `R-HEAT-AS-SIMPLE-MOTION`, `R-PERPETUAL-MOTION-FIRST-KIND` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Heat, work, internal energy and energy conservation was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -31,6 +35,15 @@ Internal energy $U$ is a state function, whereas heat and work depend on the pro
 | `TS-HELMHOLTZ` | 1847 | Conservation generalized across natural forces | Energy conservation becomes a broad physical principle |
 | `TS-JOULE-PRECISION` | 1849–1850 | Paddle-wheel and related experiments refined | Work–heat equivalence becomes quantitatively defensible |
 | `TS-CLAUSIUS-FIRST-LAW` | 1850 onward | Heat-engine theory reconciled with conversion of heat into work | Internal-energy accounting separates the first law from Carnot's directionality principle |
+
+## Knowledge assets
+
+- `A-CALORIMETRY`: measurement of temperature change, heat capacity and latent heat.
+- `A-MECHANICAL-WORK`: quantitative work from force through distance, including falling weights.
+- `A-ELECTRICAL-HEATING`: reproducible conversion of electrical work into thermal change.
+- `A-RUMFORD-FRICTION`: sustained heat production by cannon boring.
+- `A-JOULE-EXPERIMENTS`: paddle-wheel, electrical and gas routes to a common equivalent.
+- `A-CONSERVATION-TRADITION`: conservation ideas in mechanics and natural philosophy.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -84,16 +97,25 @@ Internal energy $U$ is a state function, whereas heat and work depend on the pro
 | Perpetual motion of the first kind | Geometry can create cyclic work | Complete system-and-reservoir accounting | Boundary auditing |
 | **Discovery/current: first law** | Heat and work transfer one conserved energy | Closure of quantitative energy balances | Universal thermodynamic accounting |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-CALORIMETRY`: measurement of temperature change, heat capacity and latent heat.
-- `A-MECHANICAL-WORK`: quantitative work from force through distance, including falling weights.
-- `A-ELECTRICAL-HEATING`: reproducible conversion of electrical work into thermal change.
-- `A-RUMFORD-FRICTION`: sustained heat production by cannon boring.
-- `A-JOULE-EXPERIMENTS`: paddle-wheel, electrical and gas routes to a common equivalent.
-- `A-CONSERVATION-TRADITION`: conservation ideas in mechanics and natural philosophy.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivation
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-CALORIMETRY`, `A-MECHANICAL-WORK`, `A-ELECTRICAL-HEATING`, `A-RUMFORD-FRICTION`, `A-JOULE-EXPERIMENTS`, `A-CONSERVATION-TRADITION`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-CALORIC-CONSERVATION` | A substance theory in which a weightless material called caloric is stored in bodies and flows between them while its total quantity remains conserved in ordinary thermal processes. | See the full pathway record above. |
+| `R-HEAT-AS-SIMPLE-MOTION` | A qualitative kinetic hypothesis identifying heat with microscopic agitation but lacking a conserved energy quantity, a reliable conversion coefficient or a complete account of internal molecular modes. | See the full pathway record above. |
+| `R-PERPETUAL-MOTION-FIRST-KIND` | A proposed cyclic device that returns to its initial condition while delivering net work without an equivalent decrease of stored energy or an energy input from its surroundings. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Where did the caloric go?” becomes “What crossed the boundary and how did internal energy change?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For Joule's paddle-wheel arrangement, a descending mass transfers approximately
 
@@ -139,7 +161,7 @@ $$
 
 Energy conservation therefore permits a cyclic heat engine. It does not determine how much of its heat input can become work. That logical gap is the reason the second law must be represented separately.
 
-### Self-contained inference ledger
+#### Self-contained inference ledger
 
 Unlike a mathematical theorem, the first law is an empirically generalized conservation principle. Its discovery inference can nevertheless be made explicit. Suppose an insulated apparatus begins and ends with the same macroscopic mechanical configuration except that a falling mass has descended through height $h$. The loss of gravitational energy is $mgh$. If the corrected calorimeter rises by $\Delta T$, repeatable proportionality
 
@@ -183,6 +205,77 @@ Heat is thereby the residual energy transfer not classified as work, not a store
 | Defined | State function $U$ and boundary transfers $Q,W$ |
 | Not derived | Directionality, reversibility and efficiency bounds |
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Separate conversion measurements become instances of one balance law
+
+- `P-03` — **Reframe the inherited problem:** “Where did the caloric go?” becomes “What crossed the boundary and how did internal energy change?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Internal energy becomes an abstract state property not reducible to a visible substance
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Heat, work, internal energy and energy conservation). The case-specific unification was: Mechanical, thermal, electrical and chemical changes are unified by energy conservation. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Mechanical, thermal, electrical and chemical changes are unified by energy conservation
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Separate conversion measurements become instances of one balance law
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Calorimetry and conservation-style bookkeeping survive the rejection of caloric. Its quantitative or otherwise discriminating test strategy is: Competing accounts are tested by closed quantitative balances across multiple conversion routes. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Calorimetry and conservation-style bookkeeping survive the rejection of caloric
+
+- `P-06` — **Prioritize discriminating tests:** Competing accounts are tested by closed quantitative balances across multiple conversion routes
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Mechanical, thermal, electrical and chemical changes are unified by energy conservation |
+| `P-02` | Transformative move and generative deduction | Separate conversion measurements become instances of one balance law |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Where did the caloric go?” becomes “What crossed the boundary and how did internal energy change?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Internal energy becomes an abstract state property not reducible to a visible substance |
+| `P-05` | Retention and limiting recovery | Calorimetry and conservation-style bookkeeping survive the rejection of caloric |
+| `P-06` | Prediction, discrimination, and validation network | Competing accounts are tested by closed quantitative balances across multiple conversion routes |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-FIRST-LAW-1847-1850` |
+| Focal date | 1843–1850 mechanical equivalent of heat and first-law synthesis |
+| Central claim | The first law established that heat and work are not separately conserved substances but modes of energy transfer. For a closed system, using the convention that $Q$ is heat supplied to the system and $W$ is work done by the system, $$ dU=\delta Q-\delta W. $$ Internal energy $U$ is a state function, whereas heat and work depend on the process path. The discovery unified mechanical, thermal, electrical and chemical transformations through quantitative conservation. It did **not** explain why heat flows spontaneously from hot to cold, why real processes are irreversible, or why a cyclic engine cannot convert heat from one reservoir completely into work; those require the second law. |
+| Domain | Heat, work, internal energy and energy conservation |
+| Epistemic status | A fundamental conservation and accounting law within thermodynamic system boundaries; it does not determine process direction or efficiency bounds |
+| Generative role | Separate conversion measurements become instances of one balance law |
+| Retained structure | Calorimetry and conservation-style bookkeeping survive the rejection of caloric |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+W_{\mathrm{in}}=mgh
+$$
+
+$$
+Q_{\mathrm{cal}}=C_{\mathrm{tot}}\Delta T.
+$$
+
+$$
+W_{\mathrm{in}}=JQ_{\mathrm{cal}},
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
 ## Historically novel predictions and deductions
 
 ### `NP-FIRST-LAW-01` — Perpetual motion of the first kind is impossible
@@ -214,32 +307,6 @@ Its decisive evidential pattern was cross-route invariance. If mechanical stirri
 The first law is an accounting constraint, not a complete dynamics. Both a hot-to-cold heat transfer and its time reverse can satisfy energy conservation. It does not exclude complete cyclic conversion of heat from one equilibrium reservoir into work; the second law supplies that exclusion. Nor does it specify reaction rates, transport coefficients, equations of state or microscopic mechanisms.
 
 Open systems require mass-flow energy terms, while relativistic and gravitational settings require careful definitions of energy and boundary flux. In quantum systems, work may depend on the measurement and driving protocol. These qualifications modify bookkeeping architecture, not the central conservation principle.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Mechanical, thermal, electrical and chemical changes are unified by energy conservation |
-| `P-02` | Separate conversion measurements become instances of one balance law |
-| `P-03` | “Where did the caloric go?” becomes “What crossed the boundary and how did internal energy change?” |
-| `P-04` | Internal energy becomes an abstract state property not reducible to a visible substance |
-| `P-05` | Calorimetry and conservation-style bookkeeping survive the rejection of caloric |
-| `P-06` | Competing accounts are tested by closed quantitative balances across multiple conversion routes |
-
-## Edge list
-
-```text
-A-RUMFORD-FRICTION --challenges--> R-CALORIC-CONSERVATION
-A-CALORIMETRY --measures--> THERMAL-CHANGE
-A-MECHANICAL-WORK --compares-with--> THERMAL-CHANGE
-A-JOULE-EXPERIMENTS --supports--> D-FIRST-LAW-1847-1850
-D-FIRST-LAW-1847-1850 --introduces--> INTERNAL-ENERGY
-D-FIRST-LAW-1847-1850 --forbids--> R-PERPETUAL-MOTION-FIRST-KIND
-INTERNAL-ENERGY --is-state-function-with--> EXACT-DIFFERENTIAL
-HEAT-AND-WORK --are--> PATH-DEPENDENT-TRANSFERS
-D-FIRST-LAW-1847-1850 --constrains-energy-accounting-in--> D-SECOND-LAW-1850-1865
-D-FIRST-LAW-1847-1850 --instantiates--> P-01
-```
 
 ## Extended historical investigation
 
@@ -274,6 +341,25 @@ The first law therefore permits the process and predicts no ideal-gas temperatur
 - Do not infer reversibility or feasibility from a balanced energy equation.
 - Attribute the first law as a distributed synthesis supported by multiple experimental routes.
 - Link this node to, but do not merge it with, the second law.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-RUMFORD-FRICTION --challenges--> R-CALORIC-CONSERVATION
+A-CALORIMETRY --measures--> THERMAL-CHANGE
+A-MECHANICAL-WORK --compares-with--> THERMAL-CHANGE
+A-JOULE-EXPERIMENTS --supports--> D-FIRST-LAW-1847-1850
+D-FIRST-LAW-1847-1850 --introduces--> INTERNAL-ENERGY
+D-FIRST-LAW-1847-1850 --forbids--> R-PERPETUAL-MOTION-FIRST-KIND
+INTERNAL-ENERGY --is-state-function-with--> EXACT-DIFFERENTIAL
+HEAT-AND-WORK --are--> PATH-DEPENDENT-TRANSFERS
+D-FIRST-LAW-1847-1850 --constrains-energy-accounting-in--> D-SECOND-LAW-1850-1865
+D-FIRST-LAW-1847-1850 --instantiates--> P-01
+```
 
 ## Sources
 

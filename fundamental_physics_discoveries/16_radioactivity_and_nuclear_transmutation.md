@@ -15,6 +15,10 @@
 
 Radioactivity showed that atoms are not immutable units: unstable nuclei transform spontaneously while emitting characteristic radiation. Classification into alpha, beta, and gamma radiation and decay-chain analysis converted an accidental observation into a theory of nuclear transmutation.
 
+## Historical problem
+
+Before the focal discovery (1896–1903), the case confronted a linked set of pressures: Uranium salts expose covered plates without sunlight; Polonium and radium isolated through activity. The pathways `R-PHOSPHORESCENT-STORAGE`, `R-IMMUTABLE-CHEMICAL-ELEMENTS`, `R-ENVIRONMENTAL-RADIOACTIVITY`, `R-UNDIFFERENTIATED-RADIATION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Spontaneous nuclear transformation was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Development | Transition |
@@ -24,6 +28,13 @@ Radioactivity showed that atoms are not immutable units: unstable nuclei transfo
 | `TS-RADIATION-TYPES` | 1899–1903 | Deflection and penetration classify emissions | Alpha, beta, gamma distinguished |
 | `TS-TRANSMUTATION` | 1902–1903 | Rutherford and Soddy analyze decay chains | Elements transform into other elements |
 | `TS-NUCLEAR` | 1911 onward | Nucleus identified; decay located there | Quantum nuclear models develop |
+
+## Knowledge assets
+
+- `A-PHOTOGRAPHIC-PLATE`: integrates invisible radiation exposure.
+- `A-ELECTROMETER`: measures ionization and activity.
+- `A-CHEMICAL-SEPARATION`: traces activity through fractions.
+- `A-MAGNETIC-DEFLECTION`: distinguishes charge and mass behavior.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -69,14 +80,26 @@ Radioactivity showed that atoms are not immutable units: unstable nuclei transfo
 
 Rutherford and Soddy's transformation theory initially faced resistance because it contradicted the chemical definition of elements. Its strength was generative: linked parent and daughter quantities obeyed rate equations and successive products formed decay series. The repair did not discard chemistry; it located chemical identity in nuclear charge and distinguished ordinary electron rearrangements from nuclear transformation.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-PHOTOGRAPHIC-PLATE`: integrates invisible radiation exposure.
-- `A-ELECTROMETER`: measures ionization and activity.
-- `A-CHEMICAL-SEPARATION`: traces activity through fractions.
-- `A-MAGNETIC-DEFLECTION`: distinguishes charge and mass behavior.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-PHOTOGRAPHIC-PLATE`, `A-ELECTROMETER`, `A-CHEMICAL-SEPARATION`, `A-MAGNETIC-DEFLECTION`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-PHOSPHORESCENT-STORAGE` | The hypothesis that uranium radiation is delayed phosphorescence: energy first absorbed from sunlight is stored in the material and later re-emitted. | Covered samples remained active without prior illumination. |
+| `R-IMMUTABLE-CHEMICAL-ELEMENTS` | The doctrine that an element's atomic identity cannot change in any natural physical process, so apparent radioactive daughters must be impurities, mixtures, or temporary states of the same element. | Decay products exhibit new chemical and radiation signatures. |
+| `R-ENVIRONMENTAL-RADIOACTIVITY` | The hypothesis that radioactivity is activated or substantially controlled by ordinary temperature, pressure, illumination, or chemical state. | See the full pathway record above. |
+| `R-UNDIFFERENTIATED-RADIATION` | A one-ray model treating all radioactive emissions as the same radiation with variable penetration. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Stored light?” reframed as spontaneous atomic transformation. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For independent nuclei with constant decay probability per unit time:
 
@@ -116,6 +139,86 @@ $$
 Q=(m_{\mathrm{initial}}-m_{\mathrm{final}})c^2.
 $$
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Activity curves generated by probabilistic decay law
+
+- `P-03` — **Reframe the inherited problem:** “Stored light?” reframed as spontaneous atomic transformation
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Mutable elements and stochastic lifetimes accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Spontaneous nuclear transformation). The case-specific unification was: Chemistry, radiation, and atomic transformation joined. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Chemistry, radiation, and atomic transformation joined
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Activity curves generated by probabilistic decay law
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Elemental bookkeeping retained with nuclear identity. Its quantitative or otherwise discriminating test strategy is: Half-lives and deflection distinguish hypotheses. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Elemental bookkeeping retained with nuclear identity
+
+- `P-06` — **Prioritize discriminating tests:** Half-lives and deflection distinguish hypotheses
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Chemistry, radiation, and atomic transformation joined |
+| `P-02` | Transformative move and generative deduction | Activity curves generated by probabilistic decay law |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Stored light?” reframed as spontaneous atomic transformation |
+| `P-04` | Transformative representation, ontology, or mechanism | Mutable elements and stochastic lifetimes accepted |
+| `P-05` | Retention and limiting recovery | Elemental bookkeeping retained with nuclear identity |
+| `P-06` | Prediction, discrimination, and validation network | Half-lives and deflection distinguish hypotheses |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-RADIOACTIVITY-1896-1903` |
+| Focal date | 1896–1903 |
+| Central claim | Radioactivity showed that atoms are not immutable units: unstable nuclei transform spontaneously while emitting characteristic radiation. Classification into alpha, beta, and gamma radiation and decay-chain analysis converted an accidental observation into a theory of nuclear transmutation. |
+| Domain | Spontaneous nuclear transformation |
+| Epistemic status | Radioactive decay is a quantum nuclear process with probabilistic lifetimes |
+| Generative role | Activity curves generated by probabilistic decay law |
+| Retained structure | Elemental bookkeeping retained with nuclear identity |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\frac{dN}{dt}=-\lambda N,
+\qquad
+N(t)=N_0e^{-\lambda t}.
+$$
+
+$$
+A(t)=-\frac{dN}{dt}=\lambda N(t),
+$$
+
+$$
+t_{1/2}=\frac{\ln 2}{\lambda}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Radioactivity and Nuclear Transmutation: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Activity follows exponential statistics independent of ordinary chemical state for many nuclides.
@@ -127,30 +230,6 @@ $$
 ## Limitations and retained status
 
 Exponential decay describes ensembles and ideal isolated unstable states; very short and very long time deviations are possible in quantum theory. Decay constants can be modified in special electron-capture environments but are generally insensitive to temperature and pressure. Early workers suffered severe radiation exposure before biological risks were understood.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Chemistry, radiation, and atomic transformation joined |
-| `P-02` | Activity curves generated by probabilistic decay law |
-| `P-03` | “Stored light?” reframed as spontaneous atomic transformation |
-| `P-04` | Mutable elements and stochastic lifetimes accepted |
-| `P-05` | Elemental bookkeeping retained with nuclear identity |
-| `P-06` | Half-lives and deflection distinguish hypotheses |
-
-## Edge list
-
-```text
-A-PHOTOGRAPHIC-PLATE --detects--> D-BECQUEREL-1896
-D-BECQUEREL-1896 --refutes--> R-PHOSPHORESCENT-STORAGE
-A-ELECTROMETER --enables--> D-CURIE-ACTIVITY
-A-CHEMICAL-SEPARATION --enables--> D-RADIUM-POLONIUM
-V-DAUGHTER-GROWTH --supports--> D-TRANSMUTATION
-D-TRANSMUTATION --refutes--> R-IMMUTABLE-CHEMICAL-ELEMENTS
-EQ-EXPONENTIAL-DECAY --explains--> V-HALF-LIFE
-D-RADIOACTIVITY-1896-1903 --instantiates--> P-04
-```
 
 ## Extended historical investigation
 
@@ -333,6 +412,8 @@ Environmental conditions usually change nuclear decay rates negligibly, but elec
 
 ## Additional quantitative and epistemic notes
 
+### Additional quantitative and epistemic notes
+
 Becquerel's uranium salts fogged wrapped photographic plates without prior sunlight, undercutting fluorescence as the necessary cause. Curie's comparative electrometer measurements made radioactivity a quantitative material property and led to the isolation program for polonium and radium. Rutherford's classification of penetrating components, later identified as alpha, beta, and gamma radiation, separated phenomena with different charge, mass, and penetration.
 
 Exponential decay follows when each nucleus has a constant decay probability per unit time:
@@ -346,6 +427,19 @@ t_{1/2}=\frac{\ln2}{\lambda}.
 $$
 
 Rutherford and Soddy inferred that radioactive atoms transform into chemically different products, contradicting the immutable-element picture. Single decays are stochastic while large ensembles follow a precise law. Later nuclear equations conserve charge, nucleon number where applicable, energy, momentum, and angular momentum; “transmutation” became a constrained physical process rather than alchemical conversion.
+
+## Edge list
+
+```text
+A-PHOTOGRAPHIC-PLATE --detects--> D-BECQUEREL-1896
+D-BECQUEREL-1896 --refutes--> R-PHOSPHORESCENT-STORAGE
+A-ELECTROMETER --enables--> D-CURIE-ACTIVITY
+A-CHEMICAL-SEPARATION --enables--> D-RADIUM-POLONIUM
+V-DAUGHTER-GROWTH --supports--> D-TRANSMUTATION
+D-TRANSMUTATION --refutes--> R-IMMUTABLE-CHEMICAL-ELEMENTS
+EQ-EXPONENTIAL-DECAY --explains--> V-HALF-LIFE
+D-RADIOACTIVITY-1896-1903 --instantiates--> P-04
+```
 
 ## Sources
 

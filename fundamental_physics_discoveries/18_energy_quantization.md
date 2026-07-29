@@ -15,6 +15,10 @@
 
 Planck obtained the observed black-body spectrum by counting oscillator energies in discrete units proportional to frequency. The step resolved the classical high-frequency failure and introduced \(h\), but its later photon and quantum-state meanings went beyond Planck's initial interpretation.
 
+## Historical problem
+
+Before the focal discovery (14 December 1900 (Planck's energy-element derivation)), the case confronted a linked set of pressures: Universal cavity spectrum measured; High-frequency law successful. The pathways `R-CLASSICAL-EQUIPARTITION-RADIATION`, `R-WIEN-ONLY`, `R-AD-HOC-BLACKBODY-INTERPOLATION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Black-body radiation and the origin of quantum theory was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -25,6 +29,13 @@ Planck obtained the observed black-body spectrum by counting oscillator energies
 | `TS-PLANCK` | 1900 | Discrete energy elements used | Full spectrum matched |
 | `TS-EINSTEIN-BOHR` | 1905–1913 | Radiation and atomic states quantized | Quantum becomes physical principle |
 | `TS-QM` | 1920s | Operators and states formalize quantization | Planck law derived from photon statistics |
+
+## Knowledge assets
+
+- `A-CAVITY-DATA`: precision spectral curves.
+- `A-THERMODYNAMICS`: entropy and equilibrium constraints.
+- `A-BOLTZMANN-COUNTING`: probability from state multiplicity.
+- `A-OSCILLATORS`: matter–radiation exchange model.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -63,14 +74,25 @@ Planck obtained the observed black-body spectrum by counting oscillator energies
 
 The “ultraviolet catastrophe” became a retrospective name; Planck was responding to precision spectrum data and thermodynamic constraints, not merely a plotted infinity familiar in later textbooks. He also did not instantly embrace Einstein's later light-quanta interpretation. The pathway record should distinguish mathematical energy elements, material-resonator quantization, and photon ontology. Planck's law did not invalidate classical limits; it explains exactly why they work in their asymptotic regimes.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-CAVITY-DATA`: precision spectral curves.
-- `A-THERMODYNAMICS`: entropy and equilibrium constraints.
-- `A-BOLTZMANN-COUNTING`: probability from state multiplicity.
-- `A-OSCILLATORS`: matter–radiation exchange model.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivation
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-CAVITY-DATA`, `A-THERMODYNAMICS`, `A-BOLTZMANN-COUNTING`, `A-OSCILLATORS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-CLASSICAL-EQUIPARTITION-RADIATION` | The classical statistical model that gives each independent electromagnetic cavity mode an average thermal energy \(k_BT\), producing the Rayleigh–Jeans spectrum. | See the full pathway record above. |
+| `R-WIEN-ONLY` | A black-body model that uses Wien's exponential spectral form as the complete radiation law at every frequency rather than as the high-frequency asymptote. | Fails at low frequency. |
+| `R-AD-HOC-BLACKBODY-INTERPOLATION` | A curve-fitting route that joins low- and high-frequency formulas without a microscopic discrete-energy rule. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Continuously shared energy reframed as discrete exchange. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Planck introduced energy elements:
 
@@ -104,6 +126,90 @@ $$
 
 the Rayleigh–Jeans limit. For \(h\nu\gg k_BT\), exponential suppression yields Wien behavior and prevents ultraviolet divergence.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Spectral curves generated from discrete state counting
+
+- `P-03` — **Reframe the inherited problem:** Continuously shared energy reframed as discrete exchange
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Frequency-dependent energy elements accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Black-body radiation and the origin of quantum theory). The case-specific unification was: Thermodynamics, statistics, and radiation unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Thermodynamics, statistics, and radiation unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Spectral curves generated from discrete state counting
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Wien and Rayleigh–Jeans laws retained as limits. Its quantitative or otherwise discriminating test strategy is: Full-spectrum fit and universal \(h\) supplied tests. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Wien and Rayleigh–Jeans laws retained as limits
+
+- `P-06` — **Prioritize discriminating tests:** Full-spectrum fit and universal \(h\) supplied tests
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Thermodynamics, statistics, and radiation unified |
+| `P-02` | Transformative move and generative deduction | Spectral curves generated from discrete state counting |
+| `P-03` | Diagnosis of interpolation failure and reframing | Continuously shared energy reframed as discrete exchange |
+| `P-04` | Transformative representation, ontology, or mechanism | Frequency-dependent energy elements accepted |
+| `P-05` | Retention and limiting recovery | Wien and Rayleigh–Jeans laws retained as limits |
+| `P-06` | Prediction, discrimination, and validation network | Full-spectrum fit and universal \(h\) supplied tests |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-PLANCK-QUANTIZATION-1900` |
+| Focal date | 14 December 1900 (Planck's energy-element derivation) |
+| Central claim | Planck obtained the observed black-body spectrum by counting oscillator energies in discrete units proportional to frequency. The step resolved the classical high-frequency failure and introduced \(h\), but its later photon and quantum-state meanings went beyond Planck's initial interpretation. |
+| Domain | Black-body radiation and the origin of quantum theory |
+| Epistemic status | Quantized energy exchange is fundamental; Planck's original oscillator interpretation was transitional |
+| Generative role | Spectral curves generated from discrete state counting |
+| Retained structure | Wien and Rayleigh–Jeans laws retained as limits |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+E_n=nh\nu,
+\qquad n=0,1,2,\ldots
+$$
+
+$$
+\langle E\rangle
+=\frac{\sum_{n=0}^{\infty}nh\nu e^{-n\beta h\nu}}
+{\sum_{n=0}^{\infty}e^{-n\beta h\nu}}
+=\frac{h\nu}{e^{h\nu/(k_BT)}-1}.
+$$
+
+$$
+u(\nu,T)
+=\frac{8\pi\nu^2}{c^3}
+\frac{h\nu}{e^{h\nu/(k_BT)}-1}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Energy Quantization: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - One formula fits the spectrum across frequencies and temperatures.
@@ -114,31 +220,6 @@ the Rayleigh–Jeans limit. For \(h\nu\gg k_BT\), exponential suppression yields
 ## Limitations and retained status
 
 Planck's 1900 step did not by itself assert freely propagating photons. The historical “ultraviolet catastrophe” terminology and derivation matured after the initial paper. Classical radiation remains the correct limit when occupation numbers are large and quantum discreteness is negligible.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Thermodynamics, statistics, and radiation unified |
-| `P-02` | Spectral curves generated from discrete state counting |
-| `P-03` | Continuously shared energy reframed as discrete exchange |
-| `P-04` | Frequency-dependent energy elements accepted |
-| `P-05` | Wien and Rayleigh–Jeans laws retained as limits |
-| `P-06` | Full-spectrum fit and universal \(h\) supplied tests |
-
-## Edge list
-
-```text
-A-CAVITY-DATA --constrains--> D-PLANCK-QUANTIZATION-1900
-R-WIEN-ONLY --fails-at--> LOW-FREQUENCY
-R-CLASSICAL-EQUIPARTITION-RADIATION --fails-at--> HIGH-FREQUENCY
-A-BOLTZMANN-COUNTING --enables--> EQ-PLANCK-MEAN-ENERGY
-EQ-PLANCK-MEAN-ENERGY --generates--> EQ-PLANCK-SPECTRUM
-EQ-PLANCK-SPECTRUM --retains-limit--> R-WIEN-ONLY
-EQ-PLANCK-SPECTRUM --retains-limit--> R-RAYLEIGH-JEANS
-D-PLANCK-QUANTIZATION-1900 --precedes--> D-QUANTUM-MECHANICS
-D-PLANCK-QUANTIZATION-1900 --instantiates--> P-05
-```
 
 ## Extended historical investigation
 
@@ -330,6 +411,8 @@ Lasers, squeezed light, and other nonequilibrium fields do not follow a thermal 
 
 ## Additional quantitative and epistemic notes
 
+### Additional quantitative and epistemic notes
+
 Planck's interpolation matched the observed black-body spectrum by assigning resonator energies \(E_n=nh\nu\). In the high-frequency limit it reproduces Wien behavior; for \(h\nu\ll k_BT\),
 
 $$
@@ -339,6 +422,20 @@ $$
 so Planck's law approaches the Rayleigh–Jeans result. The latter diverges when integrated over arbitrarily high frequencies, while the exponential quantum factor makes the total finite and yields the Stefan–Boltzmann law.
 
 Historically, Planck's interpretation of the energy elements evolved; it is too simple to say he immediately asserted that all electromagnetic energy travels as particles. The stronger light-quantum ontology came through Einstein and later scattering evidence. A useful knowledge graph therefore separates `DISCRETE-OSCILLATOR-COUNTING`, `PLANCK-SPECTRUM`, and `LIGHT-QUANTUM-ONTOLOGY`. The constant \(h\) became the bridge connecting thermal radiation, photoelectric thresholds, atomic spectra, and quantum phase.
+
+## Edge list
+
+```text
+A-CAVITY-DATA --constrains--> D-PLANCK-QUANTIZATION-1900
+R-WIEN-ONLY --fails-at--> LOW-FREQUENCY
+R-CLASSICAL-EQUIPARTITION-RADIATION --fails-at--> HIGH-FREQUENCY
+A-BOLTZMANN-COUNTING --enables--> EQ-PLANCK-MEAN-ENERGY
+EQ-PLANCK-MEAN-ENERGY --generates--> EQ-PLANCK-SPECTRUM
+EQ-PLANCK-SPECTRUM --retains-limit--> R-WIEN-ONLY
+EQ-PLANCK-SPECTRUM --retains-limit--> R-RAYLEIGH-JEANS
+D-PLANCK-QUANTIZATION-1900 --precedes--> D-QUANTUM-MECHANICS
+D-PLANCK-QUANTIZATION-1900 --instantiates--> P-05
+```
 
 ## Sources
 

@@ -15,6 +15,10 @@
 
 Noether showed that continuous symmetries of a variational problem imply identities and conservation laws. Her first theorem associates finite-dimensional continuous global symmetries with conserved currents on solutions; her second theorem associates local symmetries depending on arbitrary functions with differential identities among the field equations. This replaced a collection of separately noticed conservation rules with a generative method, but it does not imply that every conservation law is globally well-defined in every spacetime or that every symmetry is a physical transformation rather than a descriptive redundancy.
 
+## Historical problem
+
+Before the focal discovery (July 1918 presentation and 1918 publication), the case confronted a linked set of pressures: Euler–Lagrange and Hamiltonian mechanics organize motion through stationary action; Transformation groups and invariants become systematic mathematical objects. The pathways `R-CASE-BY-CASE-CONSERVATION`, `R-COORDINATE-CYCLICITY-AS-ULTIMATE-CAUSE`, `R-ORDINARY-DIVERGENCE-GR-ENERGY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Variational mechanics, classical and quantum field theory, conservation laws, and gauge symmetry was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -24,6 +28,15 @@ Noether showed that continuous symmetries of a variational problem imply identit
 | `TS-GR-ENERGY-PROBLEM` | 1915–1917 | General covariance complicates familiar gravitational-energy conservation statements | Hilbert and Klein seek a general relation between invariance and conservation |
 | `TS-NOETHER` | 1918 | Two general theorems classify finite and infinite continuous transformation groups | Currents and differential identities follow from action symmetry |
 | `TS-MODERN-SYMMETRY` | 1920s onward | Quantum fields and gauge theories require organizing principles | Charges, selection rules, Ward identities, and gauge constraints inherit Noether structure |
+
+## Knowledge assets
+
+- `A-STATIONARY-ACTION`: dynamics encoded by extremizing an action.
+- `A-EULER-LAGRANGE`: equations obtained by varying generalized coordinates or fields.
+- `A-LIE-GROUPS`: continuous transformations described infinitesimally by generators.
+- `A-INVARIANT-THEORY`: mathematical techniques for quantities unchanged by transformations.
+- `A-GENERAL-COVARIANCE`: a motivating local symmetry with identities among gravitational field equations.
+- `A-BOUNDARY-TERMS`: recognition that an action may be invariant up to a total divergence.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -77,16 +90,25 @@ Noether showed that continuous symmetries of a variational problem imply identit
 | Ordinary-divergence gravitational energy | Seek a unique local gravitational stress tensor | General covariance instead implies identities and boundary-sensitive charges | Covariant matter laws and asymptotic charges |
 | **Discovery/current: Noether's first and second theorems** | Derive currents or differential identities from continuous action symmetries | Requires an action and careful global, boundary, gauge, and on-shell qualifications | Foundational symmetry–conservation architecture |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-STATIONARY-ACTION`: dynamics encoded by extremizing an action.
-- `A-EULER-LAGRANGE`: equations obtained by varying generalized coordinates or fields.
-- `A-LIE-GROUPS`: continuous transformations described infinitesimally by generators.
-- `A-INVARIANT-THEORY`: mathematical techniques for quantities unchanged by transformations.
-- `A-GENERAL-COVARIANCE`: a motivating local symmetry with identities among gravitational field equations.
-- `A-BOUNDARY-TERMS`: recognition that an action may be invariant up to a total divergence.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivation
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-STATIONARY-ACTION`, `A-EULER-LAGRANGE`, `A-LIE-GROUPS`, `A-INVARIANT-THEORY`, `A-GENERAL-COVARIANCE`, `A-BOUNDARY-TERMS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-CASE-BY-CASE-CONSERVATION` | A practice in which energy, linear momentum, angular momentum, electric charge, and other conserved quantities are derived separately from the particular forces or equations of each model, without one theorem relating them to transformations of the action. | See the full pathway record above. |
+| `R-COORDINATE-CYCLICITY-AS-ULTIMATE-CAUSE` | The identification of a conserved canonical momentum \(p_i\) with the absence of a coordinate \(q_i\) from a chosen Lagrangian, treated as a coordinate-specific trick rather than an expression of an underlying continuous transformation group. | See the full pathway record above. |
+| `R-ORDINARY-DIVERGENCE-GR-ENERGY` | The attempt to represent gravitational energy in general relativity by an ordinary, unique local tensor density whose coordinate divergence vanishes in the same straightforward manner as the energy current of matter in a fixed background. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Why is this quantity conserved?” becomes “Which action symmetry generates its current?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For generalized coordinates \(q_i(t)\), let
 
@@ -151,6 +173,88 @@ $$
 
 on the equations of motion, where \(\delta\mathcal L=\partial_\mu K^\mu\). Noether's second theorem addresses transformations containing arbitrary functions \(\epsilon^\alpha(x)\); it produces identities among the Euler–Lagrange expressions. In electromagnetism, gauge invariance is related to the identity \(\partial_\mu\partial_\nu F^{\mu\nu}\equiv0\), which is consistent with charge conservation.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Recurrent empirical conservation laws become generated consequences of transformations
+
+- `P-03` — **Reframe the inherited problem:** “Why is this quantity conserved?” becomes “Which action symmetry generates its current?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Transformation groups, currents, and gauge identities become primary explanatory objects
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Variational mechanics, classical and quantum field theory, conservation laws, and gauge symmetry). The case-specific unification was: Mechanics, field theory, geometry, and conservation are linked by one variational structure. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Mechanics, field theory, geometry, and conservation are linked by one variational structure
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Recurrent empirical conservation laws become generated consequences of transformations
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Cyclic-coordinate and case-specific conservation results survive as special cases. Its quantitative or otherwise discriminating test strategy is: Candidate actions can be tested by explicit variation, current divergence, and selection rules. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Cyclic-coordinate and case-specific conservation results survive as special cases
+
+- `P-06` — **Prioritize discriminating tests:** Candidate actions can be tested by explicit variation, current divergence, and selection rules
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Mechanics, field theory, geometry, and conservation are linked by one variational structure |
+| `P-02` | Transformative move and generative deduction | Recurrent empirical conservation laws become generated consequences of transformations |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Why is this quantity conserved?” becomes “Which action symmetry generates its current?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Transformation groups, currents, and gauge identities become primary explanatory objects |
+| `P-05` | Retention and limiting recovery | Cyclic-coordinate and case-specific conservation results survive as special cases |
+| `P-06` | Prediction, discrimination, and validation network | Candidate actions can be tested by explicit variation, current divergence, and selection rules |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-NOETHER-THEOREMS-1918` |
+| Focal date | July 1918 presentation and 1918 publication |
+| Central claim | Noether showed that continuous symmetries of a variational problem imply identities and conservation laws. Her first theorem associates finite-dimensional continuous global symmetries with conserved currents on solutions; her second theorem associates local symmetries depending on arbitrary functions with differential identities among the field equations. This replaced a collection of separately noticed conservation rules with a generative method, but it does not imply that every conservation law is globally well-defined in every spacetime or that every symmetry is a physical transformation rather than a descriptive redundancy. |
+| Domain | Variational mechanics, classical and quantum field theory, conservation laws, and gauge symmetry |
+| Epistemic status | Mathematically established structural theorems; their physical use depends on an action, its symmetries, boundary conditions, and whether the equations of motion hold |
+| Generative role | Recurrent empirical conservation laws become generated consequences of transformations |
+| Retained structure | Cyclic-coordinate and case-specific conservation results survive as special cases |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+S[q]=\int_{t_1}^{t_2}L(q_i,\dot q_i,t)\,dt.
+$$
+
+$$
+\delta L=\epsilon\frac{dF}{dt}.
+$$
+
+$$
+\delta L
+=\sum_i\left(
+\frac{\partial L}{\partial q_i}\delta q_i
++\frac{\partial L}{\partial\dot q_i}\delta\dot q_i
+\right),
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Noether's Theorems and Symmetry Principles: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 The theorem reproduces the conservation laws of mechanics, organizes currents and charges in field theory, and constrains permissible interactions. In quantum field theory it underlies symmetry generators, selection rules, Ward–Takahashi identities, and the relation between internal symmetries and conserved charges. Its second-theorem structure clarifies why gauge descriptions contain constraints and redundant variables.
@@ -162,31 +266,6 @@ The gain is not only retrospective. If an AI proposes a Lagrangian with a claime
 Noether's first theorem is commonly summarized too broadly. A continuous symmetry must be a symmetry of the action, possibly up to a boundary term; the standard local conservation equation is normally on-shell; boundary conditions determine whether a conserved global charge exists. Explicit symmetry breaking adds a source term, spontaneous breaking leaves the equations symmetric while the state is not, and quantum anomalies can obstruct a classical conservation law.
 
 Gauge transformations often relate redundant descriptions rather than distinct measurable states. Local gauge symmetry therefore invokes the second theorem and constraint structure; it should not be treated as just a larger global symmetry. In curved spacetime, global energy conservation may require a timelike Killing field or appropriate asymptotic structure. These qualifications restrict application, not the theorem's correctness.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Mechanics, field theory, geometry, and conservation are linked by one variational structure |
-| `P-02` | Recurrent empirical conservation laws become generated consequences of transformations |
-| `P-03` | “Why is this quantity conserved?” becomes “Which action symmetry generates its current?” |
-| `P-04` | Transformation groups, currents, and gauge identities become primary explanatory objects |
-| `P-05` | Cyclic-coordinate and case-specific conservation results survive as special cases |
-| `P-06` | Candidate actions can be tested by explicit variation, current divergence, and selection rules |
-
-## Edge list
-
-```text
-A-STATIONARY-ACTION --enables--> D-NOETHER-THEOREMS-1918
-A-LIE-GROUPS --formalizes--> CONTINUOUS-SYMMETRY
-CONTINUOUS-GLOBAL-SYMMETRY --generates--> NOETHER-CURRENT
-LOCAL-GAUGE-SYMMETRY --implies--> DIFFERENTIAL-IDENTITY
-D-NOETHER-THEOREMS-1918 --subsumes--> R-COORDINATE-CYCLICITY-AS-ULTIMATE-CAUSE
-TIME-TRANSLATION --generates-when-defined--> ENERGY-CONSERVATION
-ROTATION-SYMMETRY --generates--> ANGULAR-MOMENTUM-CONSERVATION
-QUANTUM-ANOMALY --can-obstruct--> CLASSICAL-NOETHER-CURRENT
-D-NOETHER-THEOREMS-1918 --instantiates--> P-02
-```
 
 ## Extended historical investigation
 
@@ -254,6 +333,24 @@ This taxonomy became essential to Yang–Mills theory, BCS superconductivity, th
 - Treat broken and anomalous symmetries as typed relations, not as absence of all symmetry structure.
 - Use Noether analysis prospectively: symmetry plus field content can constrain interaction terms before data fitting.
 - Preserve historical attribution nuance: Noether solved and generalized a problem developed within a wider Göttingen and relativity context.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-STATIONARY-ACTION --enables--> D-NOETHER-THEOREMS-1918
+A-LIE-GROUPS --formalizes--> CONTINUOUS-SYMMETRY
+CONTINUOUS-GLOBAL-SYMMETRY --generates--> NOETHER-CURRENT
+LOCAL-GAUGE-SYMMETRY --implies--> DIFFERENTIAL-IDENTITY
+D-NOETHER-THEOREMS-1918 --subsumes--> R-COORDINATE-CYCLICITY-AS-ULTIMATE-CAUSE
+TIME-TRANSLATION --generates-when-defined--> ENERGY-CONSERVATION
+ROTATION-SYMMETRY --generates--> ANGULAR-MOMENTUM-CONSERVATION
+QUANTUM-ANOMALY --can-obstruct--> CLASSICAL-NOETHER-CURRENT
+D-NOETHER-THEOREMS-1918 --instantiates--> P-02
+```
 
 ## Sources
 

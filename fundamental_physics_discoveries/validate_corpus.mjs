@@ -10,6 +10,7 @@ const newtonFile = "08_newtonian_mechanics.md";
 const files = fs
   .readdirSync(corpusDir)
   .filter((name) => /^\d{2}_.+\.md$/.test(name))
+  .filter((name) => !name.endsWith("_trial.md"))
   .sort();
 const canonicalFiles = files.filter((name) => name !== newtonFile);
 
@@ -40,15 +41,19 @@ const coreBackboneFiles = [
 const requiredHeadings = [
   "Graph metadata",
   "Central claim",
+  "Historical problem",
   "Time slices",
-  "Alternative, incomplete, or superseded pathways",
   "Knowledge assets",
+  "Alternative, incomplete, or superseded pathways",
+  "Discovery-process reconstruction: interpolation, transformation, and extrapolation",
+  "Discovery node and consolidated formalism",
+  "Historically novel predictions and deductions",
   "Validation and explanatory gains",
   "Limitations and retained status",
-  "Discovery patterns",
-  "Edge list",
   "Extended historical investigation",
   "AI-oriented inference notes",
+  "Additional quantitative and epistemic notes",
+  "Edge list",
   "Sources",
 ];
 
@@ -309,7 +314,11 @@ if (files.length !== 58) {
 const historyDir = path.dirname(corpusDir);
 const casePagesDir = path.join(historyDir, "case_pages");
 const casePageFiles = fs.existsSync(casePagesDir)
-  ? fs.readdirSync(casePagesDir).filter((name) => /^\d{2}_.+\.html$/.test(name)).sort()
+  ? fs
+      .readdirSync(casePagesDir)
+      .filter((name) => /^\d{2}_.+\.html$/.test(name))
+      .filter((name) => !name.endsWith("_trial.html"))
+      .sort()
   : [];
 if (casePageFiles.length !== files.length) {
   fail("case_pages", `expected ${files.length} reader HTML pages, found ${casePageFiles.length}`);
@@ -447,14 +456,21 @@ if (newtonFocalDate !== newtonChronology?.discovery?.[0]) {
 }
 for (const heading of [
   "Graph metadata",
-  "Historical time slices",
-  "Superseded and failed pathways",
-  "Knowledge assets available to Newton",
+  "Central claim",
+  "Historical problem",
+  "Time slices",
+  "Knowledge assets",
+  "Alternative, incomplete, or superseded pathways",
+  "Discovery-process reconstruction: interpolation, transformation, and extrapolation",
+  "Discovery node and consolidated formalism",
+  "Historically novel predictions and deductions",
   "Validation and explanatory gains",
-  "Later scope limitations and retained approximation status",
-  "Transferable discovery patterns",
-  "Explicit edge list",
-  "Primary and authoritative web sources",
+  "Limitations and retained status",
+  "Extended historical investigation",
+  "AI-oriented inference notes",
+  "Additional quantitative and epistemic notes",
+  "Edge list",
+  "Sources",
 ]) {
   const count = newtonLines.filter((line) => line === `## ${heading}`).length;
   if (count !== 1) {
@@ -516,7 +532,7 @@ if (newtonLines.filter((line) => line.startsWith("```")).length % 2 !== 0) {
   fail(newtonFile, "unbalanced fenced-code delimiters");
 }
 checkMathBlocks(newtonFile, newton);
-const newtonSourceStart = newtonLines.indexOf("## Primary and authoritative web sources");
+const newtonSourceStart = newtonLines.indexOf("## Sources");
 const newtonSourceUrls = newtonLines
   .slice(newtonSourceStart + 1)
   .filter((line) => line.startsWith("- "))

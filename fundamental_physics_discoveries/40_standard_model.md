@@ -15,6 +15,10 @@
 
 The Standard Model combines \(SU(3)_c\) QCD with \(SU(2)_L\times U(1)_Y\) electroweak theory, matter fermions in three generations, and a Higgs field. It predicts a vast range of processes but excludes gravity and leaves major empirical and conceptual questions unresolved.
 
+## Historical problem
+
+Before the focal discovery (1973–1979 consolidation), the case confronted a linked set of pressures: Renormalized gauge theory succeeds; Particle families classified. The pathways `R-INDEPENDENT-PARTICLE-FORCES`, `R-ELEMENTARY-HADRON-ZOO-STANDARD-MODEL`, `R-FUNDAMENTAL-MESON-EXCHANGE-STRONG-FORCE` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Known elementary particles and nongravitational interactions was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Assembly step | Transition |
@@ -25,6 +29,15 @@ The Standard Model combines \(SU(3)_c\) QCD with \(SU(2)_L\times U(1)_Y\) electr
 | `TS-QCD` | 1973 | Strong force gauge theory validated | Color sector joins |
 | `TS-FLAVOR` | 1970s–1990s | Charm, bottom, top, tau discovered | Three generations completed |
 | `TS-HIGGS` | 2012 | Scalar boson observed | Minimal predicted content completed |
+
+## Knowledge assets
+
+- `A-QFT`: fields, particles, amplitudes.
+- `A-GAUGE`: local symmetry.
+- `A-ELECTROWEAK`: \(SU(2)_L\times U(1)_Y\).
+- `A-QCD`: \(SU(3)_c\).
+- `A-HIGGS`: symmetry breaking and Yukawa masses.
+- `A-FLAVOR-DATA`: generations and mixing.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -60,16 +73,25 @@ The Standard Model combines \(SU(3)_c\) QCD with \(SU(2)_L\times U(1)_Y\) electr
 
 “Standard Model” stabilized only after formerly competing sectors became mutually consistent. Some extensions are empirically required (neutrino mass); others are motivated but unconfirmed. A pathway ledger must not label supersymmetry, grand unification, compositeness, or extra dimensions “failed” merely because current searches have not found them—specific parameter regions are constrained, while the broad programs remain open. Conversely, unexplained parameters are not direct contradictions.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-QFT`: fields, particles, amplitudes.
-- `A-GAUGE`: local symmetry.
-- `A-ELECTROWEAK`: \(SU(2)_L\times U(1)_Y\).
-- `A-QCD`: \(SU(3)_c\).
-- `A-HIGGS`: symmetry breaking and Yukawa masses.
-- `A-FLAVOR-DATA`: generations and mixing.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-QFT`, `A-GAUGE`, `A-ELECTROWEAK`, `A-QCD`, `A-HIGGS`, `A-FLAVOR-DATA`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-INDEPENDENT-PARTICLE-FORCES` | A patchwork description in which particle species and electromagnetic, weak, and strong processes are assigned separate phenomenological forces and conservation rules without a common gauge-field and representation structure. | Lacks symmetry relations, conservation structures, and predictive cross-process coupling. |
+| `R-ELEMENTARY-HADRON-ZOO-STANDARD-MODEL` | Treating the many hadrons in the pre-quark catalogue as independent elementary matter fields inside a fundamental particle theory. | See the full pathway record above. |
+| `R-FUNDAMENTAL-MESON-EXCHANGE-STRONG-FORCE` | Treating exchanged mesons as elementary fundamental carriers of all strong interactions rather than residual hadronic manifestations of QCD. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Particle catalog reframed as field representations. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Gauge structure:
 
@@ -107,7 +129,7 @@ $$
 
 The model's power comes from constrained parameters and shared symmetries, not from a single compact equation.
 
-### Self-contained representation and consistency ledger
+#### Self-contained representation and consistency ledger
 
 Using \(Q=T_3+Y/2\), one fermion generation and the Higgs have
 
@@ -160,6 +182,85 @@ Thus masses and flavor mixing are generated by the permitted operators, but the 
 | Fitted rather than derived | Coupling values, Yukawa eigenvalues, mixing angles/phases, and Higgs parameters. |
 | Known scope boundary | Gravity, dark sector, baryogenesis, and minimal-model neutrino masses. |
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Symmetries generate allowed interactions
+
+- `P-03` — **Reframe the inherited problem:** Particle catalog reframed as field representations
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Gauge fields, broken vacuum, and generations accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Known elementary particles and nongravitational interactions). The case-specific unification was: Known nongravitational particles and forces unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Known nongravitational particles and forces unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Symmetries generate allowed interactions
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: QED, weak theory, and QCD retained as sectors. Its quantitative or otherwise discriminating test strategy is: Cross-section and precision fits enable overconstrained tests. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** QED, weak theory, and QCD retained as sectors
+
+- `P-06` — **Prioritize discriminating tests:** Cross-section and precision fits enable overconstrained tests
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Known nongravitational particles and forces unified |
+| `P-02` | Transformative move and generative deduction | Symmetries generate allowed interactions |
+| `P-03` | Diagnosis of interpolation failure and reframing | Particle catalog reframed as field representations |
+| `P-04` | Transformative representation, ontology, or mechanism | Gauge fields, broken vacuum, and generations accepted |
+| `P-05` | Retention and limiting recovery | QED, weak theory, and QCD retained as sectors |
+| `P-06` | Prediction, discrimination, and validation network | Cross-section and precision fits enable overconstrained tests |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-STANDARD-MODEL-1970S` |
+| Focal date | 1973–1979 consolidation |
+| Central claim | The Standard Model combines \(SU(3)_c\) QCD with \(SU(2)_L\times U(1)_Y\) electroweak theory, matter fermions in three generations, and a Higgs field. It predicts a vast range of processes but excludes gravity and leaves major empirical and conceptual questions unresolved. |
+| Domain | Known elementary particles and nongravitational interactions |
+| Epistemic status | Exceptionally successful effective fundamental theory; incomplete description of nature |
+| Generative role | Symmetries generate allowed interactions |
+| Retained structure | QED, weak theory, and QCD retained as sectors |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+SU(3)_c\times SU(2)_L\times U(1)_Y.
+$$
+
+$$
+\mathcal{L}_{\mathrm{SM}}
+=\mathcal{L}_{\mathrm{gauge}}
++\mathcal{L}_{\mathrm{fermion}}
++\mathcal{L}_{\mathrm{Higgs}}
++\mathcal{L}_{\mathrm{Yukawa}}.
+$$
+
+$$
+m_W=\frac{gv}{2},
+\qquad
+m_Z=\frac{v}{2}\sqrt{g^2+g'^2},
+\qquad
+m_f=\frac{y_fv}{\sqrt2}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
 ## Historically novel predictions and deductions
 
 ### `NP-SM-01` — The charm quark from weak-interaction consistency
@@ -207,33 +308,6 @@ $$
 ## Limitations and retained status
 
 The Standard Model omits quantum gravity, does not identify dark matter or dark energy, does not explain the baryon asymmetry, parameter hierarchy, or three generations, and needs extension for neutrino mass. Its name does not imply finality; it is the standard because of scope and evidence.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Known nongravitational particles and forces unified |
-| `P-02` | Symmetries generate allowed interactions |
-| `P-03` | Particle catalog reframed as field representations |
-| `P-04` | Gauge fields, broken vacuum, and generations accepted |
-| `P-05` | QED, weak theory, and QCD retained as sectors |
-| `P-06` | Cross-section and precision fits enable overconstrained tests |
-
-## Edge list
-
-```text
-A-QFT --framework-for--> D-STANDARD-MODEL-1970S
-A-ELECTROWEAK --part-of--> D-STANDARD-MODEL-1970S
-A-QCD --part-of--> D-STANDARD-MODEL-1970S
-D-ELECTROWEAK-1961-1973 --constitutes-electroweak-sector-of--> D-STANDARD-MODEL-1970S
-D-QCD-1973 --constitutes-strong-sector-of--> D-STANDARD-MODEL-1970S
-A-HIGGS --part-of--> D-STANDARD-MODEL-1970S
-A-FLAVOR-DATA --constrains--> D-STANDARD-MODEL-1970S
-D-STANDARD-MODEL-1970S --predicts--> W-Z-GLUON-HIGGS
-V-NEUTRINO-OSCILLATION --limits--> R-MINIMAL-SM-WITH-MASSLESS-NEUTRINOS
-QUANTUM-GRAVITY --outside-scope-of--> D-STANDARD-MODEL-1970S
-D-STANDARD-MODEL-1970S --instantiates--> P-01
-```
 
 ## Extended historical investigation
 
@@ -322,13 +396,31 @@ The label “theory of almost everything” should therefore be avoided. The Sta
 - Distinguish a measured anomaly from a confirmed failure after multiplicity and systematic controls.
 - Encode extensions through operators and scales rather than marking the successful low-energy theory simply “false.”
 
-## Further graph constraints
+## Additional quantitative and epistemic notes
+
+### Further graph constraints
 
 Gauge symmetries also imply conservation and selection structures, but accidental global symmetries require care. At the renormalizable perturbative level the Standard Model conserves baryon and lepton numbers, while nonperturbative electroweak effects violate \(B+L\); neutrino mass operators violate or modify lepton-number assumptions. “Allowed by the Standard Model” therefore depends on operator order and nonperturbative scope.
 
 Parameter counting is convention-dependent, especially after neutrino masses are included. The machine-readable lesson is to avoid a fixed unsourced slogan such as “the model has 19 parameters.” A parameter ledger should state whether neutrinos are massless, Dirac, or Majorana and whether the QCD \(\theta\) angle is counted.
 
 The model's internal consistency across anomaly cancellation, unitarity, renormalization-group evolution, and symmetry breaking is itself evidence, but empirical success remains decisive. Mathematical elegance cannot substitute for measured cross sections and decay correlations.
+
+## Edge list
+
+```text
+A-QFT --framework-for--> D-STANDARD-MODEL-1970S
+A-ELECTROWEAK --part-of--> D-STANDARD-MODEL-1970S
+A-QCD --part-of--> D-STANDARD-MODEL-1970S
+D-ELECTROWEAK-1961-1973 --constitutes-electroweak-sector-of--> D-STANDARD-MODEL-1970S
+D-QCD-1973 --constitutes-strong-sector-of--> D-STANDARD-MODEL-1970S
+A-HIGGS --part-of--> D-STANDARD-MODEL-1970S
+A-FLAVOR-DATA --constrains--> D-STANDARD-MODEL-1970S
+D-STANDARD-MODEL-1970S --predicts--> W-Z-GLUON-HIGGS
+V-NEUTRINO-OSCILLATION --limits--> R-MINIMAL-SM-WITH-MASSLESS-NEUTRINOS
+QUANTUM-GRAVITY --outside-scope-of--> D-STANDARD-MODEL-1970S
+D-STANDARD-MODEL-1970S --instantiates--> P-01
+```
 
 ## Sources
 

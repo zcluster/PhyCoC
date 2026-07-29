@@ -15,6 +15,10 @@
 
 The proliferating hadron spectrum became intelligible when baryons and mesons were modeled as combinations of fractionally charged quarks. Initially a classification and constituent hypothesis, the model gained physical force from missing-state predictions and deep-inelastic scattering.
 
+## Historical problem
+
+Before the focal discovery (February 1964 quark-model papers), the case confronted a linked set of pressures: Many strongly interacting particles discovered; \(SU(3)\) multiplets organize hadrons. The pathways `R-ELEMENTARY-HADRON-ZOO`, `R-SAKATA-HADRON-CONSTITUENTS`, `R-EIGHTFOLD-WAY-AS-CLASSIFICATION-ONLY`, `R-HADRONIC-BOOTSTRAP-PRE-QUARK` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Hadron classification and substructure was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem/evidence | Transition |
@@ -25,6 +29,13 @@ The proliferating hadron spectrum became intelligible when baryons and mesons we
 | `TS-OMEGA` | 1964 | Predicted baryon observed | Symmetry classification validated |
 | `TS-PARTONS` | Late 1960s | Deep-inelastic scattering sees pointlike components | Quarks gain dynamical evidence |
 | `TS-QCD` | 1970s | Color gauge theory developed | Strong force explained |
+
+## Knowledge assets
+
+- `A-SU3-SYMMETRY`: organizes flavor multiplets.
+- `A-CHARGE-STRANGENESS`: additive quantum numbers.
+- `A-SCATTERING`: probes short-distance structure.
+- `A-PAULI-PROBLEM`: \(\Delta^{++}\) motivates color.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -72,14 +83,26 @@ The proliferating hadron spectrum became intelligible when baryons and mesons we
 
 The \(\Omega^-\) confirmed the flavor-classification program before deep-inelastic scattering established pointlike substructure. Color was then required by fermion statistics and later dynamical evidence. This staged history blocks the compressed claim “the quark model was proven in 1964.” Classification, constituent reality, color, and QCD dynamics each had separate discriminators.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-SU3-SYMMETRY`: organizes flavor multiplets.
-- `A-CHARGE-STRANGENESS`: additive quantum numbers.
-- `A-SCATTERING`: probes short-distance structure.
-- `A-PAULI-PROBLEM`: \(\Delta^{++}\) motivates color.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-SU3-SYMMETRY`, `A-CHARGE-STRANGENESS`, `A-SCATTERING`, `A-PAULI-PROBLEM`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-ELEMENTARY-HADRON-ZOO` | A particle ontology that treats each observed meson, baryon, and resonance as an independent elementary species rather than as a composite state built from fewer constituents. | No explanation for multiplets, repeated quantum numbers, or missing-state patterns. |
+| `R-SAKATA-HADRON-CONSTITUENTS` | A composite model building other hadrons from the already-known proton, neutron, lambda and their antiparticles. | See the full pathway record above. |
+| `R-EIGHTFOLD-WAY-AS-CLASSIFICATION-ONLY` | The 1961 \(SU(3)\) flavor scheme treated only as a symmetry classification of hadrons, without a smaller set of fractionally charged constituent degrees of freedom. | Classification alone did not explain deep-inelastic constituent structure, charge weights, or jets. |
+| `R-HADRONIC-BOOTSTRAP-PRE-QUARK` | The early-1960s bootstrap or nuclear-democracy program in which no hadron is elementary; hadrons dynamically generate one another through self-consistent strong-interaction \(S\)-matrix relations. | It lacked the later pointlike constituent, color, jet, and scaling-violation structure. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Particle zoo reframed as composite spectroscopy. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Original flavors:
 
@@ -115,6 +138,92 @@ $$
 
 Color supplies three internal states, allowing the total baryon wavefunction to satisfy fermionic antisymmetry.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Symmetry generates missing states and charges
+
+- `P-03` — **Reframe the inherited problem:** Particle zoo reframed as composite spectroscopy
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Fractional charge and confinement accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Hadron classification and substructure). The case-specific unification was: Hundreds of hadrons unified through few constituents. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Hundreds of hadrons unified through few constituents
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Symmetry generates missing states and charges
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Hadron quantum numbers retained as constituent sums. Its quantitative or otherwise discriminating test strategy is: Missing-state and scattering predictions tested. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Hadron quantum numbers retained as constituent sums
+
+- `P-06` — **Prioritize discriminating tests:** Missing-state and scattering predictions tested
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Hundreds of hadrons unified through few constituents |
+| `P-02` | Transformative move and generative deduction | Symmetry generates missing states and charges |
+| `P-03` | Diagnosis of interpolation failure and reframing | Particle zoo reframed as composite spectroscopy |
+| `P-04` | Transformative representation, ontology, or mechanism | Fractional charge and confinement accepted |
+| `P-05` | Retention and limiting recovery | Hadron quantum numbers retained as constituent sums |
+| `P-06` | Prediction, discrimination, and validation network | Missing-state and scattering predictions tested |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-QUARK-MODEL-1964` |
+| Focal date | February 1964 quark-model papers |
+| Central claim | The proliferating hadron spectrum became intelligible when baryons and mesons were modeled as combinations of fractionally charged quarks. Initially a classification and constituent hypothesis, the model gained physical force from missing-state predictions and deep-inelastic scattering. |
+| Domain | Hadron classification and substructure |
+| Epistemic status | Quarks are fundamental Standard Model fermions; isolated quarks are not observed because of confinement |
+| Generative role | Symmetry generates missing states and charges |
+| Retained structure | Hadron quantum numbers retained as constituent sums |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+Q_u=+\frac23e,
+\qquad
+Q_d=Q_s=-\frac13e.
+$$
+
+$$
+p=uud,
+\qquad
+n=udd,
+\qquad
+\pi^+=u\bar d.
+$$
+
+$$
+B\sim qqq,
+\qquad
+M\sim q\bar q.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Quarks and the Strong Interaction: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - \(\Omega^-\) mass and quantum numbers matched the missing multiplet member.
@@ -125,31 +234,6 @@ Color supplies three internal states, allowing the total baryon wavefunction to 
 ## Limitations and retained status
 
 Constituent-quark masses used in hadron models differ from current quark masses in the QCD Lagrangian. Sea quarks and gluons carry substantial momentum and spin. Simple \(qqq\)/\(q\bar q\) pictures do not exhaust exotic hadrons, glueballs, or hybrids.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Hundreds of hadrons unified through few constituents |
-| `P-02` | Symmetry generates missing states and charges |
-| `P-03` | Particle zoo reframed as composite spectroscopy |
-| `P-04` | Fractional charge and confinement accepted |
-| `P-05` | Hadron quantum numbers retained as constituent sums |
-| `P-06` | Missing-state and scattering predictions tested |
-
-## Edge list
-
-```text
-HADRON-ZOO --motivates--> A-SU3-SYMMETRY
-A-SU3-SYMMETRY --organizes--> HADRON-MULTIPLETS
-HADRON-MULTIPLETS --predict--> OMEGA-MINUS
-V-OMEGA-MINUS --validates--> QUARK-CLASSIFICATION
-D-QUARK-MODEL-1964 --supersedes--> R-ELEMENTARY-HADRON-ZOO
-V-DEEP-INELASTIC --supports--> QUARK-SUBSTRUCTURE
-A-PAULI-PROBLEM --motivates--> COLOR
-COLOR --contributes-to--> D-QCD
-D-QUARK-MODEL-1964 --instantiates--> P-01
-```
 
 ## Extended historical investigation
 
@@ -265,6 +349,24 @@ The Eightfold Way was not discarded after QCD. Its approximate flavor symmetry s
 - **Distinguish valence identity from full state composition.** `proton --has-valence-content--> uud` does not mean “contains only three objects.”
 - **Encode indirect observability.** Confined quarks are supported through mutually constraining scattering, jets, charge weights, and spectroscopy.
 - **Retain scale and scheme metadata.** Constituent masses, current masses, and parton distributions answer different questions.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+HADRON-ZOO --motivates--> A-SU3-SYMMETRY
+A-SU3-SYMMETRY --organizes--> HADRON-MULTIPLETS
+HADRON-MULTIPLETS --predict--> OMEGA-MINUS
+V-OMEGA-MINUS --validates--> QUARK-CLASSIFICATION
+D-QUARK-MODEL-1964 --supersedes--> R-ELEMENTARY-HADRON-ZOO
+V-DEEP-INELASTIC --supports--> QUARK-SUBSTRUCTURE
+A-PAULI-PROBLEM --motivates--> COLOR
+COLOR --contributes-to--> D-QCD
+D-QUARK-MODEL-1964 --instantiates--> P-01
+```
 
 ## Sources
 

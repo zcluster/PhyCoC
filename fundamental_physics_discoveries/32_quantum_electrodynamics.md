@@ -15,6 +15,10 @@
 
 QED combines quantum mechanics, special relativity, and electromagnetic gauge symmetry. Renormalization turns divergent intermediate expressions into finite relations among measured quantities, enabling predictions of unprecedented precision.
 
+## Historical problem
+
+Before the focal discovery (1947–1949 renormalized QED), the case confronted a linked set of pressures: Quantized radiation and Dirac electrons; Lamb shift and electron magnetic moment measured. The pathways `R-UNRENORMALIZED-POINT-PARTICLE-PERTURBATION`, `R-CLASSICAL-RADIATION-ONLY`, `R-HOLE-THEORY-QED`, `R-LITERAL-UV-CUTOFF-ELECTRON-SIZE`, `R-AD-HOC-INFINITY-SUBTRACTION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Quantum theory of charged particles and electromagnetic fields was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -24,6 +28,14 @@ QED combines quantum mechanics, special relativity, and electromagnetic gauge sy
 | `TS-RENORMALIZED-QED` | 1940s | Covariant and canonical methods developed | Finite observable predictions |
 | `TS-DYSON` | 1949 | Formulations shown equivalent | Diagrammatic perturbation organized |
 | `TS-GAUGE-THEORY` | 1950s onward | QED becomes prototype | Standard Model gauge theories follow |
+
+## Knowledge assets
+
+- `A-DIRAC-FIELD`: relativistic electron/positron.
+- `A-MAXWELL-GAUGE`: electromagnetic field symmetry.
+- `A-PERTURBATION`: expansion in small coupling.
+- `A-LAMB-SHIFT`: precision spectral anomaly.
+- `A-G-2`: magnetic-moment correction.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -74,15 +86,27 @@ QED combines quantum mechanics, special relativity, and electromagnetic gauge sy
 
 Renormalization did not show that “infinities cancel by magic.” Ward identities restrict counterterms, and the same measured mass, charge, and field normalization must predict many other observables. Competing formulations by Tomonaga, Schwinger, and Feynman were shown equivalent by Dyson. Their convergence transformed a repair program into a reusable theory architecture.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-DIRAC-FIELD`: relativistic electron/positron.
-- `A-MAXWELL-GAUGE`: electromagnetic field symmetry.
-- `A-PERTURBATION`: expansion in small coupling.
-- `A-LAMB-SHIFT`: precision spectral anomaly.
-- `A-G-2`: magnetic-moment correction.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-DIRAC-FIELD`, `A-MAXWELL-GAUGE`, `A-PERTURBATION`, `A-LAMB-SHIFT`, `A-G-2`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-UNRENORMALIZED-POINT-PARTICLE-PERTURBATION` | A direct perturbative quantum-field calculation using point electrons and photons in which bare masses and charges are inserted without a systematic regulator, counterterm, and renormalization-condition framework. | Loop integrals diverge without a consistent parameter relation. |
+| `R-CLASSICAL-RADIATION-ONLY` | A hybrid model in which charged matter may be quantized but the electromagnetic field remains a continuous classical wave with no photon creation, annihilation, or vacuum fluctuations. | Cannot explain spontaneous emission, vacuum corrections, or discrete scattering. |
+| `R-HOLE-THEORY-QED` | Early QED built around a physically filled Dirac sea whose holes represent positrons. | See the full pathway record above. |
+| `R-LITERAL-UV-CUTOFF-ELECTRON-SIZE` | The attempt to cure divergences by imposing an arbitrary maximum momentum interpreted as a literal unresolved electron size. | See the full pathway record above. |
+| `R-AD-HOC-INFINITY-SUBTRACTION` | Removing each divergent expression independently without a finite parameter set, symmetry constraints, and common renormalization conditions. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Divergences reframed through scale-dependent parameters. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 In Heaviside–Lorentz natural units \(\hbar=c=1\), the QED Lagrangian is:
 
@@ -129,7 +153,7 @@ $$
 a_e=\frac{\alpha}{2\pi}+\mathcal{O}(\alpha^2).
 $$
 
-#### From local phase covariance to the interaction
+##### From local phase covariance to the interaction
 
 For the free Dirac term, a position-dependent phase gives
 
@@ -167,7 +191,7 @@ $$
 
 using the external Dirac equations. This is the tree-level seed of the Ward–Takahashi constraints that make charge renormalization systematic.
 
-#### What renormalization actually proves at fixed order
+##### What renormalization actually proves at fixed order
 
 Introduce a regulator and rewrite bare fields and parameters as \(\psi_0=Z_2^{1/2}\psi\), \(A_0=Z_3^{1/2}A\), \(m_0=m+\delta m\), and \(e_0=Z_e e\). A loop amplitude and the allowed counterterms depend on the regulator separately. Renormalization conditions fix \(m\) and \(e\) through chosen observables; after combining all diagrams and counterterms at a stated order, regulator dependence cancels up to higher-order errors. Gauge symmetry further gives \(Z_1=Z_2\) in QED, relating the vertex and electron-field factors.
 
@@ -181,6 +205,81 @@ This is a constrained prediction pipeline, not “subtract infinity”: a finite
 | Calibration | A finite set of renormalized masses, charge, and field normalizations. |
 | Predictions | Remaining scattering, spectroscopy, magnetic-moment, and running-coupling observables. |
 | Scope condition | Stated perturbative order, scale, scheme, and included particle sectors. |
+
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Gauge Lagrangian generates interaction amplitudes
+
+- `P-03` — **Reframe the inherited problem:** Divergences reframed through scale-dependent parameters
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Quantum fields and vacuum corrections accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Quantum theory of charged particles and electromagnetic fields). The case-specific unification was: Relativity, quantum particles, and fields unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Relativity, quantum particles, and fields unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Gauge Lagrangian generates interaction amplitudes
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Dirac and Maxwell theories retained as limits. Its quantitative or otherwise discriminating test strategy is: Precision spectroscopy and \(g-2\) dominate validation. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Dirac and Maxwell theories retained as limits
+
+- `P-06` — **Prioritize discriminating tests:** Precision spectroscopy and \(g-2\) dominate validation
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Relativity, quantum particles, and fields unified |
+| `P-02` | Transformative move and generative deduction | Gauge Lagrangian generates interaction amplitudes |
+| `P-03` | Diagnosis of interpolation failure and reframing | Divergences reframed through scale-dependent parameters |
+| `P-04` | Transformative representation, ontology, or mechanism | Quantum fields and vacuum corrections accepted |
+| `P-05` | Retention and limiting recovery | Dirac and Maxwell theories retained as limits |
+| `P-06` | Prediction, discrimination, and validation network | Precision spectroscopy and \(g-2\) dominate validation |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-QED-1940S` |
+| Focal date | 1947–1949 renormalized QED |
+| Central claim | QED combines quantum mechanics, special relativity, and electromagnetic gauge symmetry. Renormalization turns divergent intermediate expressions into finite relations among measured quantities, enabling predictions of unprecedented precision. |
+| Domain | Quantum theory of charged particles and electromagnetic fields |
+| Epistemic status | Exceptionally precise quantum field theory; electromagnetic sector of the Standard Model |
+| Generative role | Gauge Lagrangian generates interaction amplitudes |
+| Retained structure | Dirac and Maxwell theories retained as limits |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\mathcal{L}_{\mathrm{QED}}
+=-\frac14F_{\mu\nu}F^{\mu\nu}
++\bar\psi(i\gamma^\mu D_\mu-m)\psi,
+$$
+
+$$
+D_\mu=\partial_\mu+ieA_\mu.
+$$
+
+$$
+\psi\rightarrow e^{-ie\chi}\psi,
+\qquad
+A_\mu\rightarrow A_\mu+\partial_\mu\chi
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
 
 ## Historically novel predictions and deductions
 
@@ -219,33 +318,6 @@ QED explains the Lamb shift, anomalous magnetic moments, scattering cross sectio
 ## Limitations and retained status
 
 Perturbative series are asymptotic, not ordinary convergent sums. QED does not include weak, strong, or gravitational interactions by itself. At very high energies it is embedded in electroweak theory. “Virtual particles popping in and out” is a heuristic, not a literal unique ontology.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Relativity, quantum particles, and fields unified |
-| `P-02` | Gauge Lagrangian generates interaction amplitudes |
-| `P-03` | Divergences reframed through scale-dependent parameters |
-| `P-04` | Quantum fields and vacuum corrections accepted |
-| `P-05` | Dirac and Maxwell theories retained as limits |
-| `P-06` | Precision spectroscopy and \(g-2\) dominate validation |
-
-## Edge list
-
-```text
-A-DIRAC-FIELD --contributes-to--> D-QED-1940S
-A-MAXWELL-GAUGE --contributes-to--> D-QED-1940S
-D-MAXWELL-FIELD-1861-1865 --is-quantized-in--> D-QED-1940S
-D-QFT-FIELD-QUANTIZATION-1927 --is-specialized-as-electromagnetism-in--> D-QED-1940S
-A-LAMB-SHIFT --challenges--> EARLY-QED
-RENORMALIZATION --repairs--> EARLY-QED
-QED-LAGRANGIAN --generates--> SCATTERING-AMPLITUDES
-QED-LOOPS --explain--> A-G-2
-D-QED-1940S --prototype-for--> STANDARD-MODEL-GAUGE-THEORY
-D-QED-1940S --is-embedded-in--> D-ELECTROWEAK-1961-1973
-D-QED-1940S --instantiates--> P-06
-```
 
 ## Extended historical investigation
 
@@ -331,6 +403,26 @@ Priority should not be compressed into a single “inventor of QED.” Tomonaga,
 - **Represent approximation order.** “QED predicts \(x\)” should link to perturbative order, included sectors, input constants, and uncertainty.
 - **Do not literalize calculational pictures.** Diagrammatic convenience is not sufficient evidence for a unique ontology of virtual particles.
 - **Attach domains to precision claims.** QED's success is within electromagnetic quantum phenomena and specified energy regimes; it is embedded in the electroweak Standard Model and omits quantum gravity.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-DIRAC-FIELD --contributes-to--> D-QED-1940S
+A-MAXWELL-GAUGE --contributes-to--> D-QED-1940S
+D-MAXWELL-FIELD-1861-1865 --is-quantized-in--> D-QED-1940S
+D-QFT-FIELD-QUANTIZATION-1927 --is-specialized-as-electromagnetism-in--> D-QED-1940S
+A-LAMB-SHIFT --challenges--> EARLY-QED
+RENORMALIZATION --repairs--> EARLY-QED
+QED-LAGRANGIAN --generates--> SCATTERING-AMPLITUDES
+QED-LOOPS --explain--> A-G-2
+D-QED-1940S --prototype-for--> STANDARD-MODEL-GAUGE-THEORY
+D-QED-1940S --is-embedded-in--> D-ELECTROWEAK-1961-1973
+D-QED-1940S --instantiates--> P-06
+```
 
 ## Sources
 

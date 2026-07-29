@@ -15,6 +15,10 @@
 
 Ørsted showed that electric current produces magnetic effects; Ampère quantified current interactions; Faraday showed that changing magnetic flux induces electric circulation. Previously separate electric and magnetic phenomena became dynamically linked.
 
+## Historical problem
+
+Before the focal discovery (1820–1831 (Ørsted/Ampère through Faraday induction)), the case confronted a linked set of pressures: Electricity and magnetism treated largely separately; Current deflects compass needle. The pathways `R-ELECTRIC-MAGNETIC-SEPARATION`, `R-ACTION-AT-DISTANCE-ONLY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Electric currents, magnetic fields, and induction was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | State | Transition |
@@ -24,6 +28,14 @@
 | `TS-AMPERE` | 1820s | Current–current forces quantified | Electrodynamics becomes mathematical |
 | `TS-FARADAY` | 1831 | Changing magnetic conditions produce current | Magnetism produces electric effects |
 | `TS-FIELD` | 1840s–1860s | Lines of force acquire mathematical representation | Maxwell unifies fields and light |
+
+## Knowledge assets
+
+- `A-VOLTAIC-PILE`: sustained current.
+- `A-COMPASS`: sensitive magnetic detector.
+- `A-GALVANOMETER`: detects transient induced current.
+- `A-CIRCUITS`: reproducible conducting paths.
+- `A-LINES-OF-FORCE`: spatial representation of interaction.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -56,15 +68,24 @@
 
 Faraday's field picture did not immediately defeat every action-at-distance theory; Weber and others built mathematically serious alternatives. Maxwell himself used mechanical analogies heuristically. The transition became compelling when the field framework unified induction, displacement current, energy transport, and electromagnetic waves. The discriminating achievement was a growing network of quantitative relations, not a single compass deflection.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-VOLTAIC-PILE`: sustained current.
-- `A-COMPASS`: sensitive magnetic detector.
-- `A-GALVANOMETER`: detects transient induced current.
-- `A-CIRCUITS`: reproducible conducting paths.
-- `A-LINES-OF-FORCE`: spatial representation of interaction.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-VOLTAIC-PILE`, `A-COMPASS`, `A-GALVANOMETER`, `A-CIRCUITS`, `A-LINES-OF-FORCE`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-ELECTRIC-MAGNETIC-SEPARATION` | A two-domain theory that treats electrical attraction/current and magnetism as fundamentally independent agencies rather than different states or effects of a coupled electromagnetic field. | Current-induced deflection and induction cross the boundary. |
+| `R-ACTION-AT-DISTANCE-ONLY` | A force ontology in which separated charges or currents act directly on one another—possibly through instantaneous or retarded pair laws—without an independently physical local field storing and transporting energy. | Induction and propagation favor local field change as an explanatory intermediary. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Static substances reframed as dynamical fields and currents. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For a long straight wire, the magnetic circulation is:
 
@@ -90,6 +111,88 @@ $$
 
 This generates a testable inference: a steady magnetic field need not induce an emf, while changing field strength, orientation, or loop area can.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Flux change generates induced emf
+
+- `P-03` — **Reframe the inherited problem:** Static substances reframed as dynamical fields and currents
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Lines of force accepted as physically meaningful
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Electric currents, magnetic fields, and induction). The case-specific unification was: Electricity and magnetism linked. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Electricity and magnetism linked
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Flux change generates induced emf
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Electrostatic and magnetic laws retained as limits. Its quantitative or otherwise discriminating test strategy is: Direction and magnitude of induced currents quantitatively tested. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Electrostatic and magnetic laws retained as limits
+
+- `P-06` — **Prioritize discriminating tests:** Direction and magnitude of induced currents quantitatively tested
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Electricity and magnetism linked |
+| `P-02` | Transformative move and generative deduction | Flux change generates induced emf |
+| `P-03` | Diagnosis of interpolation failure and reframing | Static substances reframed as dynamical fields and currents |
+| `P-04` | Transformative representation, ontology, or mechanism | Lines of force accepted as physically meaningful |
+| `P-05` | Retention and limiting recovery | Electrostatic and magnetic laws retained as limits |
+| `P-06` | Prediction, discrimination, and validation network | Direction and magnitude of induced currents quantitatively tested |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-EM-CONNECTION-1820-1831` |
+| Focal date | 1820–1831 (Ørsted/Ampère through Faraday induction) |
+| Central claim | Ørsted showed that electric current produces magnetic effects; Ampère quantified current interactions; Faraday showed that changing magnetic flux induces electric circulation. Previously separate electric and magnetic phenomena became dynamically linked. |
+| Domain | Electric currents, magnetic fields, and induction |
+| Epistemic status | Retained within classical electromagnetism and quantum electrodynamics |
+| Generative role | Flux change generates induced emf |
+| Retained structure | Electrostatic and magnetic laws retained as limits |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\oint \mathbf{B}\cdot d\boldsymbol{\ell}=\mu_0 I_{\mathrm{enc}}
+$$
+
+$$
+\mathcal{E}
+=\oint \mathbf{E}\cdot d\boldsymbol{\ell}
+=-\frac{d\Phi_B}{dt},
+\qquad
+\Phi_B=\int_S\mathbf{B}\cdot d\mathbf{A}.
+$$
+
+$$
+\mathcal{E}=-N\frac{d\Phi_B}{dt}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Electromagnetism and Induction: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Compass deflection maps the field around current.
@@ -101,30 +204,6 @@ This generates a testable inference: a steady magnetic field need not induce an 
 ## Limitations and retained status
 
 The displayed Ampère law omits Maxwell's displacement-current term for time-dependent electric fields. Material response requires polarization and magnetization. At microscopic scales, QED supplies the quantum description, while classical equations emerge for expectation values and large coherent fields.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Electricity and magnetism linked |
-| `P-02` | Flux change generates induced emf |
-| `P-03` | Static substances reframed as dynamical fields and currents |
-| `P-04` | Lines of force accepted as physically meaningful |
-| `P-05` | Electrostatic and magnetic laws retained as limits |
-| `P-06` | Direction and magnitude of induced currents quantitatively tested |
-
-## Edge list
-
-```text
-A-VOLTAIC-PILE --enables--> D-OERSTED-1820
-D-OERSTED-1820 --refutes--> R-ELECTRIC-MAGNETIC-SEPARATION
-D-AMPERE --quantifies--> D-OERSTED-1820
-A-GALVANOMETER --enables--> D-FARADAY-1831
-CHANGE-MAGNETIC-FLUX --generates--> INDUCED-EMF
-D-FARADAY-1831 --contributes-to--> D-MAXWELL-FIELD
-D-EM-CONNECTION-1820-1831 --instantiates--> P-01
-D-EM-CONNECTION-1820-1831 --instantiates--> P-06
-```
 
 ## Extended historical investigation
 
@@ -234,7 +313,9 @@ At the circuit scale, lumped inductance is effective only when propagation delay
 - Link Lenz's law to energy conservation but do not claim it was historically derived only that way.
 - Separate field ontology from later Maxwellian and quantum formalizations.
 
-## Further experiment-to-law reconstruction
+## Additional quantitative and epistemic notes
+
+### Further experiment-to-law reconstruction
 
 Oersted's compass deflection showed that a steady current produces a magnetic effect encircling the wire. Ampère quantified forces between currents, and Faraday replaced action-at-a-distance imagery with lines of force developed from systematic experiments. His induction experiments distinguished magnetic flux from mere proximity: a steady current in one coil produced only transient effects in another when switched, while relative motion or changing current sustained an induced electromotive force.
 
@@ -246,6 +327,19 @@ $$
 $$
 
 Lenz's sign makes the induced response oppose the flux change; without it, induction would enable runaway energy creation. Generators, motors, and transformers are reciprocal consequences of the same field coupling, but technological success does not by itself choose between Faraday's field ontology and every contemporary mathematical interpretation. Maxwell's later synthesis turned the experimental regularities into a propagating field theory.
+
+## Edge list
+
+```text
+A-VOLTAIC-PILE --enables--> D-OERSTED-1820
+D-OERSTED-1820 --refutes--> R-ELECTRIC-MAGNETIC-SEPARATION
+D-AMPERE --quantifies--> D-OERSTED-1820
+A-GALVANOMETER --enables--> D-FARADAY-1831
+CHANGE-MAGNETIC-FLUX --generates--> INDUCED-EMF
+D-FARADAY-1831 --contributes-to--> D-MAXWELL-FIELD
+D-EM-CONNECTION-1820-1831 --instantiates--> P-01
+D-EM-CONNECTION-1820-1831 --instantiates--> P-06
+```
 
 ## Sources
 

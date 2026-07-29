@@ -15,6 +15,10 @@
 
 Einstein proposed that radiation energy can behave as localized quanta \(h\nu\). This explained why photoelectron energy depends on light frequency, why emission has a threshold, and why intensity mainly changes electron number rather than maximum energy.
 
+## Historical problem
+
+Before the focal discovery (17 March 1905 submission), the case confronted a linked set of pressures: Light ejects charge from materials; Matter oscillators exchange \(h\nu\) elements. The pathways `R-CLASSICAL-ENERGY-ACCUMULATION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Quantized radiation–matter interaction was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Observation/theory | Transition |
@@ -25,6 +29,13 @@ Einstein proposed that radiation energy can behave as localized quanta \(h\nu\).
 | `TS-MILLIKAN` | 1910s | Stopping potentials measured | Linear frequency law confirmed |
 | `TS-COMPTON` | 1923 | Photon momentum observed | Quantum radiation broadly accepted |
 | `TS-QED` | 1940s onward | Photon as gauge-field quantum | Wave and particle phenomena unified |
+
+## Knowledge assets
+
+- `A-PLANCK-H`: quantized energy scale.
+- `A-STOPPING-POTENTIAL`: measures maximum electron kinetic energy.
+- `A-FREQUENCY-CONTROL`: separates color from intensity.
+- `A-WORK-FUNCTION`: material-dependent binding energy.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -51,14 +62,23 @@ Classical wave theory could accommodate a threshold by adding material binding p
 
 Millikan confirmed the stopping-potential relation while remaining skeptical of light quanta, demonstrating that empirical law and ontology can separate. Photoelectric evidence alone did not establish every property of photons; Compton scattering, black-body statistics, and later quantum electrodynamics supplied converging support. Classical electromagnetic waves remain the correct coherent/high-occupation description.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-PLANCK-H`: quantized energy scale.
-- `A-STOPPING-POTENTIAL`: measures maximum electron kinetic energy.
-- `A-FREQUENCY-CONTROL`: separates color from intensity.
-- `A-WORK-FUNCTION`: material-dependent binding energy.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and inference
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-PLANCK-H`, `A-STOPPING-POTENTIAL`, `A-FREQUENCY-CONTROL`, `A-WORK-FUNCTION`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-CLASSICAL-ENERGY-ACCUMULATION` | A classical photoemission model in which a continuous electromagnetic wave distributes energy over a material and an electron accumulates that energy over time until it escapes. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Intensity accumulation reframed as discrete absorption. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Energy conservation for one absorbed photon gives:
 
@@ -90,6 +110,84 @@ $$
 p_\gamma=\frac{E}{c}=\frac{h}{\lambda}.
 $$
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Frequency generates electron energy via \(h\nu\)
+
+- `P-03` — **Reframe the inherited problem:** Intensity accumulation reframed as discrete absorption
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Localized light quanta accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Quantized radiation–matter interaction). The case-specific unification was: Radiation thermodynamics and electron emission linked. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Radiation thermodynamics and electron emission linked
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Frequency generates electron energy via \(h\nu\)
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Wave interference retained in quantum amplitudes. Its quantitative or otherwise discriminating test strategy is: Linear stopping-potential law gives a precise test. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Wave interference retained in quantum amplitudes
+
+- `P-06` — **Prioritize discriminating tests:** Linear stopping-potential law gives a precise test
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Radiation thermodynamics and electron emission linked |
+| `P-02` | Transformative move and generative deduction | Frequency generates electron energy via \(h\nu\) |
+| `P-03` | Diagnosis of interpolation failure and reframing | Intensity accumulation reframed as discrete absorption |
+| `P-04` | Transformative representation, ontology, or mechanism | Localized light quanta accepted |
+| `P-05` | Retention and limiting recovery | Wave interference retained in quantum amplitudes |
+| `P-06` | Prediction, discrimination, and validation network | Linear stopping-potential law gives a precise test |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-LIGHT-QUANTUM-1905` |
+| Focal date | 17 March 1905 submission |
+| Central claim | Einstein proposed that radiation energy can behave as localized quanta \(h\nu\). This explained why photoelectron energy depends on light frequency, why emission has a threshold, and why intensity mainly changes electron number rather than maximum energy. |
+| Domain | Quantized radiation–matter interaction |
+| Epistemic status | Photons are excitations of the quantized electromagnetic field |
+| Generative role | Frequency generates electron energy via \(h\nu\) |
+| Retained structure | Wave interference retained in quantum amplitudes |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+h\nu=\phi+K_{\max},
+$$
+
+$$
+K_{\max}=h\nu-\phi=eV_s.
+$$
+
+$$
+\nu_0=\frac{\phi}{h}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Light Quanta and the Photoelectric Effect: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Stopping voltage is linear in frequency.
@@ -101,31 +199,6 @@ $$
 ## Limitations and retained status
 
 Real solids have band structure, surface states, scattering, and multiphoton processes. “Photon as a tiny classical pellet” is misleading; photons are quantum-field excitations without definite trajectories in general. Classical Maxwell fields remain excellent for coherent, high-occupation radiation.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Radiation thermodynamics and electron emission linked |
-| `P-02` | Frequency generates electron energy via \(h\nu\) |
-| `P-03` | Intensity accumulation reframed as discrete absorption |
-| `P-04` | Localized light quanta accepted |
-| `P-05` | Wave interference retained in quantum amplitudes |
-| `P-06` | Linear stopping-potential law gives a precise test |
-
-## Edge list
-
-```text
-A-PLANCK-H --contributes-to--> D-LIGHT-QUANTUM-1905
-R-CLASSICAL-ENERGY-ACCUMULATION --fails-to-explain--> FREQUENCY-THRESHOLD
-D-LIGHT-QUANTUM-1905 --explains--> FREQUENCY-THRESHOLD
-PHOTON-ENERGY --minus--> WORK-FUNCTION
-WORK-FUNCTION --yields--> PHOTOELECTRON-KINETIC-ENERGY
-A-STOPPING-POTENTIAL --tests--> EQ-EINSTEIN-PHOTOELECTRIC
-D-COMPTON --supports--> PHOTON-MOMENTUM
-D-QED --reframes--> D-LIGHT-QUANTUM-1905
-D-LIGHT-QUANTUM-1905 --instantiates--> P-06
-```
 
 ## Extended historical investigation
 
@@ -265,6 +338,8 @@ to infer electronic structure. Momentum-resolved photoemission extends the funda
 
 ## Additional quantitative and epistemic notes
 
+### Additional quantitative and epistemic notes
+
 Einstein used the high-frequency entropy behavior of black-body radiation to argue that dilute radiation behaves thermodynamically as independent energy packets \(h\nu\). Applied to photoemission, one packet transfers energy to one electron:
 
 $$
@@ -282,6 +357,20 @@ $$
 $$
 
 The mature conclusion is wave–quantum duality within quantum electrodynamics, not replacement of all wave phenomena by classical pellets.
+
+## Edge list
+
+```text
+A-PLANCK-H --contributes-to--> D-LIGHT-QUANTUM-1905
+R-CLASSICAL-ENERGY-ACCUMULATION --fails-to-explain--> FREQUENCY-THRESHOLD
+D-LIGHT-QUANTUM-1905 --explains--> FREQUENCY-THRESHOLD
+PHOTON-ENERGY --minus--> WORK-FUNCTION
+WORK-FUNCTION --yields--> PHOTOELECTRON-KINETIC-ENERGY
+A-STOPPING-POTENTIAL --tests--> EQ-EINSTEIN-PHOTOELECTRIC
+D-COMPTON --supports--> PHOTON-MOMENTUM
+D-QED --reframes--> D-LIGHT-QUANTUM-1905
+D-LIGHT-QUANTUM-1905 --instantiates--> P-06
+```
 
 ## Sources
 

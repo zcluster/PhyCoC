@@ -15,6 +15,10 @@
 
 General relativity predicts propagating metric perturbations produced by accelerating asymmetric mass distributions. Binary-pulsar orbital decay gave indirect evidence; LIGO directly detected a waveform from merging black holes on 14 September 2015, matching relativistic inspiral, merger, and ringdown.
 
+## Historical problem
+
+Before the focal discovery (11 February 2016 announcement (signal recorded 14 September 2015)), the case confronted a linked set of pressures: Einstein derives weak gravitational waves; Coordinate artifacts separated from observables. The pathways `R-COORDINATE-WAVE-ONLY`, `R-EARLY-BAR-DETECTIONS`, `R-GRAVITATIONAL-WAVES-CARRY-NO-ENERGY`, `R-SINGLE-INTERFEROMETER-TRANSIENT` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Propagating spacetime curvature and strong-field gravity was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Development | Transition |
@@ -25,6 +29,15 @@ General relativity predicts propagating metric perturbations produced by acceler
 | `TS-BINARY-PULSAR` | 1974 onward | Orbital decay measured | Indirect radiation evidence |
 | `TS-INTERFEROMETERS` | 1970s–2010s | Laser detectors developed | Required strain sensitivity reached |
 | `TS-GW150914` | 2015–2016 | Binary black-hole waveform observed | Direct astronomy begins |
+
+## Knowledge assets
+
+- `A-GR`: wave solutions and compact objects.
+- `A-BINARY-PULSAR`: indirect radiation-reaction test.
+- `A-LASER-INTERFEROMETRY`: differential length measurement.
+- `A-TEMPLATE-BANK`: relativity waveforms.
+- `A-TWO-SITES`: coincidence rejects local noise.
+- `A-NOISE-MODELING`: seismic, thermal, optical, and quantum backgrounds.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -70,16 +83,26 @@ General relativity predicts propagating metric perturbations produced by acceler
 
 The historical theoretical controversy concerned how to separate coordinate-dependent metric components from observable curvature and energy at infinity. Experimentally, Weber's rejected claims still catalyzed detector research. LIGO's discovery relied not on visual resemblance to a chirp alone but on calibrated strain, matched filtering, two-site coincidence, environmental vetoes, and background estimation. Later events and multimessenger observations greatly reduce the chance of a one-off instrumental pathway.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-GR`: wave solutions and compact objects.
-- `A-BINARY-PULSAR`: indirect radiation-reaction test.
-- `A-LASER-INTERFEROMETRY`: differential length measurement.
-- `A-TEMPLATE-BANK`: relativity waveforms.
-- `A-TWO-SITES`: coincidence rejects local noise.
-- `A-NOISE-MODELING`: seismic, thermal, optical, and quantum backgrounds.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-GR`, `A-BINARY-PULSAR`, `A-LASER-INTERFEROMETRY`, `A-TEMPLATE-BANK`, `A-TWO-SITES`, `A-NOISE-MODELING`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-COORDINATE-WAVE-ONLY` | The interpretation that oscillatory components of the metric called gravitational waves are entirely artifacts of coordinate choice and produce no invariant curvature, energy flux, or measurable relative motion. | Geodesic deviation and curvature produce invariant relative effects; energy flux affects binaries. |
+| `R-EARLY-BAR-DETECTIONS` | Joseph Weber's claim that coincident excitations of separated resonant aluminum bars were detections of frequent astrophysical gravitational-wave bursts. | Independent experiments did not reproduce the rates. |
+| `R-GRAVITATIONAL-WAVES-CARRY-NO-ENERGY` | The claim that wave-like metric solutions may exist mathematically but cannot transport invariant physical energy or cause secular source back-reaction. | See the full pathway record above. |
+| `R-SINGLE-INTERFEROMETER-TRANSIENT` | The hypothesis that a candidate chirp in one detector is an instrumental glitch or local disturbance rather than an astrophysical wave. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Noise-like transient reframed through coherent templates and two-site timing. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 In weak field:
 
@@ -127,6 +150,85 @@ $$
 
 The correlated “chirp” determines \(\mathcal M\) directly from waveform phase evolution.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Field equations generate detailed waveforms
+
+- `P-03` — **Reframe the inherited problem:** Noise-like transient reframed through coherent templates and two-site timing
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Spacetime itself accepted as radiative degree of freedom
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Propagating spacetime curvature and strong-field gravity). The case-specific unification was: Relativity, compact binaries, precision optics, and astronomy unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Relativity, compact binaries, precision optics, and astronomy unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Field equations generate detailed waveforms
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Binary-pulsar dynamics retained and extended to strong field. Its quantitative or otherwise discriminating test strategy is: Phase-coherent waveform supplies an overconstrained test. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Binary-pulsar dynamics retained and extended to strong field
+
+- `P-06` — **Prioritize discriminating tests:** Phase-coherent waveform supplies an overconstrained test
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Relativity, compact binaries, precision optics, and astronomy unified |
+| `P-02` | Transformative move and generative deduction | Field equations generate detailed waveforms |
+| `P-03` | Diagnosis of interpolation failure and reframing | Noise-like transient reframed through coherent templates and two-site timing |
+| `P-04` | Transformative representation, ontology, or mechanism | Spacetime itself accepted as radiative degree of freedom |
+| `P-05` | Retention and limiting recovery | Binary-pulsar dynamics retained and extended to strong field |
+| `P-06` | Prediction, discrimination, and validation network | Phase-coherent waveform supplies an overconstrained test |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-GW150914-2015` |
+| Focal date | 11 February 2016 announcement (signal recorded 14 September 2015) |
+| Central claim | General relativity predicts propagating metric perturbations produced by accelerating asymmetric mass distributions. Binary-pulsar orbital decay gave indirect evidence; LIGO directly detected a waveform from merging black holes on 14 September 2015, matching relativistic inspiral, merger, and ringdown. |
+| Domain | Propagating spacetime curvature and strong-field gravity |
+| Epistemic status | Gravitational waves are directly observed; they form a mature, expanding astronomical messenger |
+| Generative role | Field equations generate detailed waveforms |
+| Retained structure | Binary-pulsar dynamics retained and extended to strong field |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},
+\qquad |h_{\mu\nu}|\ll1.
+$$
+
+$$
+\Box h^{\mathrm{TT}}_{ij}=0
+$$
+
+$$
+h=\frac{\Delta L}{L}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Gravitational Waves: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - GW150914 appeared in both LIGO sites with propagation-consistent delay.
@@ -139,32 +241,6 @@ The correlated “chirp” determines \(\mathcal M\) directly from waveform phas
 ## Limitations and retained status
 
 Detector selection favors compact, massive, nearby-enough systems. Parameter estimates depend on waveform models and calibration. General-relativity tests currently find no compelling deviation, but alternative polarizations and dispersion remain test targets. “Hearing spacetime” is metaphorical: detectors measure differential optical phase.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Relativity, compact binaries, precision optics, and astronomy unified |
-| `P-02` | Field equations generate detailed waveforms |
-| `P-03` | Noise-like transient reframed through coherent templates and two-site timing |
-| `P-04` | Spacetime itself accepted as radiative degree of freedom |
-| `P-05` | Binary-pulsar dynamics retained and extended to strong field |
-| `P-06` | Phase-coherent waveform supplies an overconstrained test |
-
-## Edge list
-
-```text
-A-GR --predicts--> GRAVITATIONAL-WAVES
-GRAVITATIONAL-WAVES --cause--> GEODESIC-DEVIATION
-A-BINARY-PULSAR --indirectly-validates--> GRAVITATIONAL-RADIATION
-A-LASER-INTERFEROMETRY --measures--> STRAIN
-A-TEMPLATE-BANK --matches--> GW150914-DATA
-A-TWO-SITES --cross-validates--> GW150914-DATA
-GW150914-DATA --supports--> D-GW150914-2015
-D-GW150914-2015 --supersedes--> NO-DIRECT-DETECTION
-D-GW150914-2015 --instantiates--> P-02
-D-GW150914-2015 --instantiates--> P-06
-```
 
 ## Extended historical investigation
 
@@ -245,6 +321,25 @@ Current observations agree with GR, but precision varies by event and test. Sear
 - Attach source parameters to posterior distributions and waveform assumptions, not single exact values.
 - Represent selection effects when learning population distributions.
 - Preserve detector-band specificity: “gravitational-wave astronomy” spans ground, space, and pulsar-timing regimes.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-GR --predicts--> GRAVITATIONAL-WAVES
+GRAVITATIONAL-WAVES --cause--> GEODESIC-DEVIATION
+A-BINARY-PULSAR --indirectly-validates--> GRAVITATIONAL-RADIATION
+A-LASER-INTERFEROMETRY --measures--> STRAIN
+A-TEMPLATE-BANK --matches--> GW150914-DATA
+A-TWO-SITES --cross-validates--> GW150914-DATA
+GW150914-DATA --supports--> D-GW150914-2015
+D-GW150914-2015 --supersedes--> NO-DIRECT-DETECTION
+D-GW150914-2015 --instantiates--> P-02
+D-GW150914-2015 --instantiates--> P-06
+```
 
 ## Sources
 

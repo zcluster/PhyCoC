@@ -15,13 +15,17 @@
 | Relation vocabulary | `precedes`, `contributes-to`, `competes-with`, `supersedes`, `retains`, `explains`, `tests`, `limits`, `instantiates` |
 | Historiographic caution | The graph represents a long, branching development rather than an inevitable march toward Newton. Influence, priority, and conceptual continuity are stated cautiously where historians disagree. |
 
-## Central thesis and interpretation rule
+## Central claim
 
 `T-NEWTON-1687` unified terrestrial and celestial motion through general laws of motion and universal gravitation. Its achievement lay not merely in fitting known facts, but in deriving, connecting, and extending them within a quantitatively testable framework.
 
 For this graph, “correct” means reliable within a stated domain, not universally or metaphysically final. Newtonian mechanics remains an excellent approximation for macroscopic systems moving slowly relative to light in weak gravitational fields. Relativity is required for high speeds, strong gravity, and high-precision relativistic effects; quantum theory is required at atomic and subatomic scales.
 
-## Historical time slices
+## Historical problem
+
+Before the focal discovery (1684–1687 synthesis; *Principia* published 5 July 1687), the case confronted a linked set of pressures: Motion classified as natural or violent; terrestrial and celestial regions treated differently; A mover imparts an internal “impetus” that sustains a projectile after release. The pathways `T-ARISTOTELIAN-MOTION`, `T-IMPETUS`, `T-CARTESIAN-VORTICES` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Mechanics, astronomy, and the history of scientific explanation was to construct a more generative account without importing later validation evidence into the original inference.
+
+## Time slices
 
 | Time-slice node | Approximate period | Dominant question or framework | Knowledge gained | Unresolved tension or transition |
 |---|---:|---|---|---|
@@ -32,58 +36,7 @@ For this graph, “correct” means reliable within a stated domain, not univers
 | `TS-05-NEWTON-1684-1687` | 1684–1687 | Which force law and laws of motion can generate observed orbital regularities? | Newton developed the synthesis published as *Philosophiæ naturalis principia mathematica* in 1687; Halley's 1684 prompt and later editorial and financial support were important to publication | The theory introduced attraction across space without a fully specified physical medium or mechanism, inviting philosophical dispute |
 | `TS-06-POST-1687` | Late 17th–19th centuries | Can the same mathematical system predict and explain diverse terrestrial and celestial phenomena? | Increasingly precise applications to planetary perturbations, the Moon, tides, cometary paths, Earth shape, projectiles, and engineering | Difficult calculations, imperfect data, and some residual discrepancies demanded refinement; later relativity and quantum theory delimited the theory's scope |
 
-## Superseded and failed pathways
-
-“Failed” here means unsuccessful as a general foundation for mature mechanics, not intellectually worthless. Each pathway addressed real problems and transmitted concepts, questions, or methods to its successors.
-
-### `T-ARISTOTELIAN-MOTION` — Aristotelian dynamics
-
-- **What it is:** A qualitative dynamics that classifies terrestrial motion as natural or violent, relates natural motion to a body's elemental constitution and natural place, and normally requires an external mover or a mediating account for forced motion.
-- **Proposed/active period:** Fourth century BCE onward; the core Aristotelian texts long predate 1687.
-- **Core assumptions:** Terrestrial bodies have natural places and natural motions; forced or “violent” motion requires a mover; heavier bodies tend downward; celestial motion belongs to a distinct, more regular domain. Aristotle's works and later Aristotelian traditions were not wholly uniform, so these propositions should not be treated as a single unchanging doctrine.
-- **Why reasonable at the time:** Everyday experience is dominated by friction and drag: pushed objects normally stop, falling objects accelerate, and the heavens appear ordered and unlike the changeable terrestrial world. A qualitative causal scheme fit ordinary observation without precision instruments.
-- **Explanatory scope:** Falling, rising, locomotion through media, and a hierarchical cosmos with distinct terrestrial and celestial physics.
-- **Anomalies and limitations:** Projectile motion after loss of contact with the mover was difficult to account for; the role assigned to the medium could become circular or implausible; the framework did not yield a general, precise mathematics of accelerated and orbital motion.
-- **Repair attempts:** Commentators refined distinctions among movers, media, resistance, and natural tendencies. Some proposed that air displaced by a projectile helped carry it; others developed impressed-force or impetus-like accounts.
-- **Ultimate outcome:** Superseded as the general dynamics of nature by inertial and force-based mechanics.
-- **Retained elements:** Systematic causal questioning; attention to media and resistance; classification of kinds of change; the demand that a theory explain why motion occurs, not merely describe its path.
-
-### `T-IMPETUS` — Medieval impetus theories
-
-- **What it is:** A family of theories in which a projector impresses an internal motive quality—impetus—into a body, allowing it to continue moving after direct contact with the projector ends.
-- **Proposed/active period:** Sixth–fourteenth centuries CE, with major medieval formulations well before 1687.
-- **Core assumptions:** A mover impresses a power, force, or impetus into a body; that impressed quality can sustain motion after contact ends and may be weakened by resistance or contrary inclination. Jean Buridan is a prominent representative, but related views appeared earlier and varied substantially.
-- **Why reasonable at the time:** Impetus directly addressed the projectile problem and matched the intuition that a launched body carries something acquired from the launcher.
-- **Explanatory scope:** Projectiles, continued motion after release, and in some versions celestial rotation or accelerated fall.
-- **Anomalies and limitations:** Impetus was usually qualitative, its persistence was debated, and it was not equivalent to Newtonian momentum or a fully articulated law of inertia. It did not generate Kepler's laws or a universal quantitative dynamics.
-- **Repair attempts:** Authors adjusted how impetus depended on quantity of matter and speed, whether it decayed intrinsically, and how it interacted with resistance and natural heaviness.
-- **Ultimate outcome:** Superseded as a fundamental ontology of motion, while contributing to a gradual reorientation toward properties carried by moving bodies.
-- **Retained elements:** The explanatory move away from continuous external contact; precursor ideas concerning persistence and a quantity associated with matter and motion. Calling impetus “Newtonian momentum” would be anachronistic.
-
-### `T-CARTESIAN-VORTICES` — Cartesian vortex cosmology
-
-- **What it is:** A plenum cosmology in which circulating subtle matter transports planets and satellites around local centers, replacing gravitational attraction through empty space with contact interactions in nested fluid-like vortices.
-- **Proposed/active period:** Principally 1644–1680s; Descartes's published vortex cosmology predates Newton's 1687 synthesis.
-- **Core assumptions:** Space is filled with matter; celestial bodies are carried in circulating subtle matter; physical explanation should rely on matter in motion and contact action rather than attraction across empty space.
-- **Why reasonable at the time:** Vortices offered an intelligible mechanical picture, avoided unexplained action at a distance, aligned with a plenum cosmology, and appeared capable of connecting planetary circulation to a universal matter-based mechanism.
-- **Explanatory scope:** Planetary circulation, satellite systems, cosmic structure, and a general contact-mechanical account of nature.
-- **Anomalies and limitations:** A single vortex pattern could not readily satisfy Kepler's area and period relations while also preserving nested satellite systems; fluid resistance threatened orbital stability; highly eccentric and differently oriented comet paths were especially troublesome.
-- **Repair attempts:** Cartesians varied vortex speeds, densities, shapes, and interactions and proposed nested vortices around planets.
-- **Ultimate outcome:** Displaced in celestial mechanics by Newtonian gravitation because the latter produced superior mathematical derivations and predictions. Continental acceptance was gradual, not instantaneous.
-- **Retained elements:** The ambition for a unified mechanical cosmos; insistence on specifying a mechanism; attention to fluid effects and resistance, which remained legitimate subjects in mechanics even though vortices failed as the general cause of planetary motion.
-
-### Pathway comparison ledger
-
-**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above that originated before Newton's 1684–1687 synthesis. The proposed/active period is stored in each pathway record.
-
-| Pathway | Repair strategy | Discriminating evidence or inference | Final status |
-|---|---|---|---|
-| Aristotelian dynamics | Refine roles of natural tendency, mover, and resisting medium | Quantitative inertial, projectile, free-fall, and orbital relations do not require force to sustain uniform motion | Superseded as general dynamics; causal classification and medium effects retained |
-| Medieval impetus theories | Vary how impressed impetus depends on matter and speed, decays, and combines with heaviness | No common formulation generated a universal quantitative dynamics or Keplerian orbital relations | Superseded as ontology; persistence and body-carried motion quantities remain historical precursors |
-| Cartesian vortex cosmology | Adjust vortex speed, density, shape, and nested circulation | Keplerian constraints, orbital stability, and highly eccentric, differently oriented comet paths favor inverse-square dynamics | Superseded as celestial foundation; demand for mechanism and fluid modeling retained |
-| **Discovery/current: Newtonian mechanics and gravitation** | Combine laws of motion, inverse-square mutual gravity, idealized systems, and perturbative corrections | Cross-domain derivations and predictions for terrestrial motion, planets, Moon, tides, and comets | Retained as a highly accurate effective theory in the macroscopic, low-speed, weak-gravity domain |
-
-## Knowledge assets available to Newton
+## Knowledge assets
 
 ### `A-GALILEO` — Galilean terrestrial mechanics
 
@@ -168,16 +121,85 @@ Kepler discovered these as observationally grounded mathematical regularities. T
 - Work by Huygens, Hooke, Halley, and others formed part of the active context for centrifugal tendencies, pendulums, orbital problems, and inverse-square ideas.
 - Priority and influence are historically contested in some details. Newton's distinctive achievement was the systematic mathematical synthesis and demonstrations of the *Principia*, not the isolated invention of every component idea.
 
-## `T-NEWTON-1687` — Discovery and synthesis node
+## Alternative, incomplete, or superseded pathways
 
-### Constituent laws
+“Failed” here means unsuccessful as a general foundation for mature mechanics, not intellectually worthless. Each pathway addressed real problems and transmitted concepts, questions, or methods to its successors.
+
+### `T-ARISTOTELIAN-MOTION` — Aristotelian dynamics
+
+- **What it is:** A qualitative dynamics that classifies terrestrial motion as natural or violent, relates natural motion to a body's elemental constitution and natural place, and normally requires an external mover or a mediating account for forced motion.
+- **Proposed/active period:** Fourth century BCE onward; the core Aristotelian texts long predate 1687.
+- **Core assumptions:** Terrestrial bodies have natural places and natural motions; forced or “violent” motion requires a mover; heavier bodies tend downward; celestial motion belongs to a distinct, more regular domain. Aristotle's works and later Aristotelian traditions were not wholly uniform, so these propositions should not be treated as a single unchanging doctrine.
+- **Why reasonable at the time:** Everyday experience is dominated by friction and drag: pushed objects normally stop, falling objects accelerate, and the heavens appear ordered and unlike the changeable terrestrial world. A qualitative causal scheme fit ordinary observation without precision instruments.
+- **Explanatory scope:** Falling, rising, locomotion through media, and a hierarchical cosmos with distinct terrestrial and celestial physics.
+- **Anomalies and limitations:** Projectile motion after loss of contact with the mover was difficult to account for; the role assigned to the medium could become circular or implausible; the framework did not yield a general, precise mathematics of accelerated and orbital motion.
+- **Repair attempts:** Commentators refined distinctions among movers, media, resistance, and natural tendencies. Some proposed that air displaced by a projectile helped carry it; others developed impressed-force or impetus-like accounts.
+- **Ultimate outcome:** Superseded as the general dynamics of nature by inertial and force-based mechanics.
+- **Retained elements:** Systematic causal questioning; attention to media and resistance; classification of kinds of change; the demand that a theory explain why motion occurs, not merely describe its path.
+
+### `T-IMPETUS` — Medieval impetus theories
+
+- **What it is:** A family of theories in which a projector impresses an internal motive quality—impetus—into a body, allowing it to continue moving after direct contact with the projector ends.
+- **Proposed/active period:** Sixth–fourteenth centuries CE, with major medieval formulations well before 1687.
+- **Core assumptions:** A mover impresses a power, force, or impetus into a body; that impressed quality can sustain motion after contact ends and may be weakened by resistance or contrary inclination. Jean Buridan is a prominent representative, but related views appeared earlier and varied substantially.
+- **Why reasonable at the time:** Impetus directly addressed the projectile problem and matched the intuition that a launched body carries something acquired from the launcher.
+- **Explanatory scope:** Projectiles, continued motion after release, and in some versions celestial rotation or accelerated fall.
+- **Anomalies and limitations:** Impetus was usually qualitative, its persistence was debated, and it was not equivalent to Newtonian momentum or a fully articulated law of inertia. It did not generate Kepler's laws or a universal quantitative dynamics.
+- **Repair attempts:** Authors adjusted how impetus depended on quantity of matter and speed, whether it decayed intrinsically, and how it interacted with resistance and natural heaviness.
+- **Ultimate outcome:** Superseded as a fundamental ontology of motion, while contributing to a gradual reorientation toward properties carried by moving bodies.
+- **Retained elements:** The explanatory move away from continuous external contact; precursor ideas concerning persistence and a quantity associated with matter and motion. Calling impetus “Newtonian momentum” would be anachronistic.
+
+### `T-CARTESIAN-VORTICES` — Cartesian vortex cosmology
+
+- **What it is:** A plenum cosmology in which circulating subtle matter transports planets and satellites around local centers, replacing gravitational attraction through empty space with contact interactions in nested fluid-like vortices.
+- **Proposed/active period:** Principally 1644–1680s; Descartes's published vortex cosmology predates Newton's 1687 synthesis.
+- **Core assumptions:** Space is filled with matter; celestial bodies are carried in circulating subtle matter; physical explanation should rely on matter in motion and contact action rather than attraction across empty space.
+- **Why reasonable at the time:** Vortices offered an intelligible mechanical picture, avoided unexplained action at a distance, aligned with a plenum cosmology, and appeared capable of connecting planetary circulation to a universal matter-based mechanism.
+- **Explanatory scope:** Planetary circulation, satellite systems, cosmic structure, and a general contact-mechanical account of nature.
+- **Anomalies and limitations:** A single vortex pattern could not readily satisfy Kepler's area and period relations while also preserving nested satellite systems; fluid resistance threatened orbital stability; highly eccentric and differently oriented comet paths were especially troublesome.
+- **Repair attempts:** Cartesians varied vortex speeds, densities, shapes, and interactions and proposed nested vortices around planets.
+- **Ultimate outcome:** Displaced in celestial mechanics by Newtonian gravitation because the latter produced superior mathematical derivations and predictions. Continental acceptance was gradual, not instantaneous.
+- **Retained elements:** The ambition for a unified mechanical cosmos; insistence on specifying a mechanism; attention to fluid effects and resistance, which remained legitimate subjects in mechanics even though vortices failed as the general cause of planetary motion.
+
+### Pathway comparison ledger
+
+**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above that originated before Newton's 1684–1687 synthesis. The proposed/active period is stored in each pathway record.
+
+| Pathway | Repair strategy | Discriminating evidence or inference | Final status |
+|---|---|---|---|
+| Aristotelian dynamics | Refine roles of natural tendency, mover, and resisting medium | Quantitative inertial, projectile, free-fall, and orbital relations do not require force to sustain uniform motion | Superseded as general dynamics; causal classification and medium effects retained |
+| Medieval impetus theories | Vary how impressed impetus depends on matter and speed, decays, and combines with heaviness | No common formulation generated a universal quantitative dynamics or Keplerian orbital relations | Superseded as ontology; persistence and body-carried motion quantities remain historical precursors |
+| Cartesian vortex cosmology | Adjust vortex speed, density, shape, and nested circulation | Keplerian constraints, orbital stability, and highly eccentric, differently oriented comet paths favor inverse-square dynamics | Superseded as celestial foundation; demand for mechanism and fluid modeling retained |
+| **Discovery/current: Newtonian mechanics and gravitation** | Combine laws of motion, inverse-square mutual gravity, idealized systems, and perturbative corrections | Cross-domain derivations and predictions for terrestrial motion, planets, Moon, tides, and comets | Retained as a highly accurate effective theory in the macroscopic, low-speed, weak-gravity domain |
+
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
+
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
+
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-GALILEO`, `A-GALILEO-FALL`, `A-GALILEO-PROJECTILE`, `A-GALILEO-INERTIA`, `A-KEPLER`, `A-OBSERVATION`, `A-MATHEMATICS`, `A-COMPETITORS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `T-ARISTOTELIAN-MOTION` | A qualitative dynamics that classifies terrestrial motion as natural or violent, relates natural motion to a body's elemental constitution and natural place, and normally requires an external mover or a mediating account for forced motion. | Projectile motion after loss of contact with the mover was difficult to account for; the role assigned to the medium could become circular or implausible; the framework did not yield a general, precise mathematics of accelerated and orbital motion. |
+| `T-IMPETUS` | A family of theories in which a projector impresses an internal motive quality—impetus—into a body, allowing it to continue moving after direct contact with the projector ends. | Impetus was usually qualitative, its persistence was debated, and it was not equivalent to Newtonian momentum or a fully articulated law of inertia. It did not generate Kepler's laws or a universal quantitative dynamics. |
+| `T-CARTESIAN-VORTICES` | A plenum cosmology in which circulating subtle matter transports planets and satellites around local centers, replacing gravitational attraction through empty space with contact interactions in nested fluid-like vortices. | A single vortex pattern could not readily satisfy Kepler's area and period relations while also preserving nested satellite systems; fluid resistance threatened orbital stability; highly eccentric and differently oriented comet paths were especially troublesome. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “What keeps a planet moving?” became “What continually changes its inertial motion?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
+
+#### Constituent laws
 
 - `L-NEWTON-1` — **Law of inertia:** A body remains at rest or in uniform rectilinear motion unless compelled to change that state by impressed forces.
 - `L-NEWTON-2` — **Dynamical law:** Change of motion is proportional to the impressed motive force and occurs along the line in which the force is impressed. In modern restricted notation this is often rendered as `F = ma`, but Newton's text is formulated in terms of change of “quantity of motion” (momentum), so the modern equation is an interpretation, not a verbatim statement.
 - `L-NEWTON-3` — **Action and reaction:** Interactions involve equal and opposite actions, allowing forces between bodies to be treated reciprocally.
 - `L-UNIVERSAL-GRAVITATION` — **Universal gravitation:** Bodies attract one another with force proportional to their masses and inversely proportional to the square of their separation, within the classical model.
 
-### Mathematical core
+#### Mathematical core
 
 `EQ-NEWTON-1` — In an inertial frame, the first law is represented by constant velocity when the net external force vanishes:
 
@@ -237,7 +259,7 @@ $$
 
 This energy formulation is historically later than the exact presentation of the 1687 *Principia*, but it is a standard equivalent representation of Newtonian orbital mechanics.
 
-### From inverse-square gravity to Keplerian motion
+#### From inverse-square gravity to Keplerian motion
 
 For a circular orbit, gravitational attraction supplies the centripetal acceleration:
 
@@ -280,7 +302,7 @@ $$
 
 The connection is generative: an inverse-square central force does not merely restate Kepler's laws; together with the laws of motion it explains why conic-section orbits and the relevant area and period relations arise under idealized conditions.
 
-### Core conceptual transformations
+#### Core conceptual transformations
 
 1. `CT-01-UNIVERSAL-DOMAIN`: Replaced the strong terrestrial/celestial divide with laws intended to apply to falling bodies, the Moon, planets, and comets alike.
 2. `CT-02-FORCE-CHANGES-MOTION`: Reframed force as a cause of acceleration or change in momentum, not as something required to maintain uniform motion.
@@ -290,6 +312,82 @@ The connection is generative: an inverse-square central force does not merely re
 6. `CT-06-IDEALIZATION-CORRECTION`: Separated idealized two-body results from perturbations, resistance, non-sphericity, and measurement limits, creating a framework for successive approximation.
 
 Newton did not provide a settled underlying material mechanism for gravity in the *Principia*. The mathematically specified force law was extraordinarily productive, but contemporaries could reasonably regard the absence of a contact mechanism as a conceptual cost. Claims that Newton simply endorsed unexplained “action at a distance” should therefore be made with care.
+
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Kepler's descriptive laws became consequences of motion under central gravitation
+
+- `P-03` — **Reframe the inherited problem:** “What keeps a planet moving?” became “What continually changes its inertial motion?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Mathematically characterized universal attraction was used despite controversy over its physical mediation
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Mechanics, astronomy, and the history of scientific explanation). The case-specific unification was: Terrestrial fall and celestial orbit became cases governed by common laws. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Terrestrial fall and celestial orbit became cases governed by common laws
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Kepler's descriptive laws became consequences of motion under central gravitation
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Galilean kinematics and Keplerian regularities were preserved, generalized, and reinterpreted; concerns about resistance remained relevant. Its quantitative or otherwise discriminating test strategy is: The theory linked force laws to calculable trajectories, accelerations, perturbations, and comparisons with observation. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Galilean kinematics and Keplerian regularities were preserved, generalized, and reinterpreted; concerns about resistance remained relevant
+
+- `P-06` — **Prioritize discriminating tests:** The theory linked force laws to calculable trajectories, accelerations, perturbations, and comparisons with observation
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Terrestrial fall and celestial orbit became cases governed by common laws |
+| `P-02` | Transformative move and generative deduction | Kepler's descriptive laws became consequences of motion under central gravitation |
+| `P-03` | Diagnosis of interpolation failure and reframing | “What keeps a planet moving?” became “What continually changes its inertial motion?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Mathematically characterized universal attraction was used despite controversy over its physical mediation |
+| `P-05` | Retention and limiting recovery | Galilean kinematics and Keplerian regularities were preserved, generalized, and reinterpreted; concerns about resistance remained relevant |
+| `P-06` | Prediction, discrimination, and validation network | The theory linked force laws to calculable trajectories, accelerations, perturbations, and comparisons with observation |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `T-NEWTON-1687` — Newton's synthesis in the *Principia* |
+| Focal date | 1684–1687 synthesis; *Principia* published 5 July 1687 |
+| Central claim | `T-NEWTON-1687` unified terrestrial and celestial motion through general laws of motion and universal gravitation. Its achievement lay not merely in fitting known facts, but in deriving, connecting, and extending them within a quantitatively testable framework. For this graph, “correct” means reliable within a stated domain, not universally or metaphysically final. Newtonian mechanics remains an excellent approximation for macroscopic systems moving slowly relative to light in weak gravitational fields. Relativity is required for high speeds, strong gravity, and high-precision relativistic effects; quantum theory is required at atomic and subatomic scales. |
+| Domain | Mechanics, astronomy, and the history of scientific explanation |
+| Epistemic status | Newtonian mechanics is a correct and highly successful theory **within its ordinary domain: macroscopic bodies, speeds much lower than the speed of light, and weak gravitational fields**. It is not an ultimate theory of nature. |
+| Generative role | Kepler's descriptive laws became consequences of motion under central gravitation |
+| Retained structure | Galilean kinematics and Keplerian regularities were preserved, generalized, and reinterpreted; concerns about resistance remained relevant |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\sum \mathbf{F}_{\mathrm{ext}}=0
+\quad\Longrightarrow\quad
+\frac{d\mathbf{v}}{dt}=0.
+$$
+
+$$
+\sum \mathbf{F}_{\mathrm{ext}}
+=\frac{d\mathbf{p}}{dt},
+\qquad
+\mathbf{p}=m\mathbf{v}.
+$$
+
+$$
+\sum \mathbf{F}_{\mathrm{ext}}=m\mathbf{a}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
 
 ## Historically novel predictions and deductions
 
@@ -366,7 +464,7 @@ $$
 
 The \(r^{-3}\) dependence explains why the Moon can have a stronger tide-generating effect on Earth than the more massive but much more distant Sun. This is a leading-order relation; actual ocean tides require fluid dynamics, basin geometry, friction, and resonance.
 
-## Later scope limitations and retained approximation status
+## Limitations and retained status
 
 ### `SCOPE-ORDINARY` — Domain of high reliability
 
@@ -408,18 +506,23 @@ Within this domain it is not merely a discarded historical theory. It remains a 
 
 The later theories do not make ordinary Newtonian results “false” in their proper domain. They explain why those results work and identify where corrections become measurable. The historical lesson is therefore about **scope-bounded success**, not a simple sequence in which every successor renders its predecessor useless.
 
-## Transferable discovery patterns
+## Extended historical investigation
 
-| Pattern ID | Label | Instantiation in the Newtonian case | General AI discovery heuristic |
-|---|---|---|---|
-| `P-01` | Unification of previously separated domains | Terrestrial fall and celestial orbit became cases governed by common laws | Search for one representation that compresses rules currently assigned to separate domains |
-| `P-02` | Upgrading empirical regularities into generative mechanisms | Kepler's descriptive laws became consequences of motion under central gravitation | Prefer models that generate observed regularities and counterfactual predictions, not only curve fits |
-| `P-03` | Reframing questions | “What keeps a planet moving?” became “What continually changes its inertial motion?” | Alter the problem's variables and default assumptions when the inherited question blocks progress |
-| `P-04` | Tolerating new ontology or mechanism forms | Mathematically characterized universal attraction was used despite controversy over its physical mediation | Do not reject a quantitatively fertile representation solely because its ontology is unfamiliar; track the unresolved explanatory debt explicitly |
-| `P-05` | Retaining valid structures of predecessor theories | Galilean kinematics and Keplerian regularities were preserved, generalized, and reinterpreted; concerns about resistance remained relevant | Decompose predecessors into reusable laws, constraints, data, and failed ontological commitments |
-| `P-06` | Prioritizing quantitative testability | The theory linked force laws to calculable trajectories, accelerations, perturbations, and comparisons with observation | Rank hypotheses by precision, cross-domain testing, and capacity for risky prediction while recording approximation conditions |
+The detailed historical content for this case is carried by the time slices, pathway records, discovery-process reconstruction, validation record, and limitations above. No separate extended-investigation block existed before this schema migration.
 
-## Explicit edge list
+## AI-oriented inference notes
+
+- Keep pre-discovery inputs separate from later validation evidence.
+- Distinguish historical-original reasoning from modern pedagogical reconstruction.
+- Preserve domain restrictions and predecessor limits when transferring the discovery pattern.
+
+## Additional quantitative and epistemic notes
+
+### Compact graph summary
+
+The case is not “one genius replaces error with truth.” It is a graph of inherited questions, partial successes, rival mechanisms, improved observations, mathematical tools, and scope-bounded theory change. Aristotelian dynamics organized causal questions; impetus theories moved explanatory responsibility toward the body; Galileo and Kepler established powerful quantitative structures; Cartesian vortices posed a serious mechanistic competitor; and Newton transformed these assets into a common, generative mathematical dynamics. Later physics bounded rather than erased that achievement: Newtonian mechanics remains correct as an approximation in its ordinary macroscopic, low-speed, weak-gravity domain, while not being an ultimate theory.
+
+## Edge list
 
 ```text
 T-ARISTOTELIAN-MOTION --precedes--> T-IMPETUS
@@ -478,13 +581,9 @@ T-NEWTON-1687 --instantiates--> P-05
 T-NEWTON-1687 --instantiates--> P-06
 ```
 
-## Primary and authoritative web sources
+## Sources
 
 - Isaac Newton, [*The Mathematical Principles of Natural Philosophy*: “General Scholium” (1729 English translation), Newton Project, University of Oxford](https://www.newtonproject.ox.ac.uk/view/texts/diplomatic/NATP00056). A primary text, including Newton's critique of vortex hypotheses.
 - Library of Congress, [*Principia. Philosophiæ naturalis principia mathematica*](https://www.loc.gov/item/2021667054/). Authoritative catalog description and digitized 1687 Latin edition.
 - Stanford Encyclopedia of Philosophy, [“Galileo Galilei”](https://plato.stanford.edu/entries/galileo/). Scholarly overview of Galileo's mechanics, free fall, projectile studies, and the interpretive issue of Galilean inertia.
 - NASA Science, [“Orbits and Kepler's Laws”](https://science.nasa.gov/solar-system/orbits-and-keplers-laws/). Authoritative overview of Kepler's three laws, their observational background, and their relation to Newtonian gravitation.
-
-## Compact graph summary
-
-The case is not “one genius replaces error with truth.” It is a graph of inherited questions, partial successes, rival mechanisms, improved observations, mathematical tools, and scope-bounded theory change. Aristotelian dynamics organized causal questions; impetus theories moved explanatory responsibility toward the body; Galileo and Kepler established powerful quantitative structures; Cartesian vortices posed a serious mechanistic competitor; and Newton transformed these assets into a common, generative mathematical dynamics. Later physics bounded rather than erased that achievement: Newtonian mechanics remains correct as an approximation in its ordinary macroscopic, low-speed, weak-gravity domain, while not being an ultimate theory.

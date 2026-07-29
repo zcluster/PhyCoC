@@ -15,6 +15,10 @@
 
 Barometers, altitude experiments, pumps, and gas compression established that air has weight and exerts pressure, and that spaces can be produced with far less matter than ambient air. This displaced explanations in which suction or “horror of the vacuum” acted as independent causes.
 
+## Historical problem
+
+Before the focal discovery (1643–1648 (Torricelli through Pascal)), the case confronted a linked set of pressures: “Nature abhors a vacuum”; pump limits explained qualitatively; Mercury column leaves space above it. The pathways `R-HORROR-VACUI`, `R-SUCTION-AS-PULL`, `R-VAPOR-SUPPORTS-BAROMETER` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Pneumatics, pressure, gases, and vacuum was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -25,6 +29,14 @@ Barometers, altitude experiments, pumps, and gas compression established that ai
 | `TS-GUERICKE` | 1650s | Mechanical pumps evacuate vessels | External atmosphere produces large forces |
 | `TS-BOYLE` | 1660s | Gas compression measured | Pressure–volume regularity quantified |
 | `TS-KINETIC` | 19th century onward | Pressure linked to molecular impacts | Macroscopic law gains microscopic explanation |
+
+## Knowledge assets
+
+- `A-PUMP-LIMIT`: water pumps fail above a finite lift.
+- `A-MERCURY`: dense liquid permits a compact column.
+- `A-ALTITUDE`: mountain elevation changes the overlying air column.
+- `A-AIR-PUMP`: controlled removal and compression of gas.
+- `A-MECHANICAL-BALANCE`: pressure compared with liquid weight.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -68,15 +80,25 @@ The finite pump limit was the key anomaly. If nature's horror of a void were an 
 
 The “vacuum” was never perfectly empty; residual gas and vapor remained. The superseded claim is impossibility of empty extension, not the practical difficulty of producing low pressure.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-PUMP-LIMIT`: water pumps fail above a finite lift.
-- `A-MERCURY`: dense liquid permits a compact column.
-- `A-ALTITUDE`: mountain elevation changes the overlying air column.
-- `A-AIR-PUMP`: controlled removal and compression of gas.
-- `A-MECHANICAL-BALANCE`: pressure compared with liquid weight.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-PUMP-LIMIT`, `A-MERCURY`, `A-ALTITUDE`, `A-AIR-PUMP`, `A-MECHANICAL-BALANCE`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-HORROR-VACUI` | A qualitative causal principle asserting that nature prevents empty space, so surrounding matter moves into any region that would otherwise become a vacuum. | It does not predict the finite height of water or mercury columns or altitude dependence. |
+| `R-SUCTION-AS-PULL` | A pump model in which “suction” is treated as a positive pulling force exerted by a low-pressure region on a liquid, rather than as motion caused by greater pressure elsewhere. | It obscures that ambient pressure pushes fluid into a lower-pressure region. |
+| `R-VAPOR-SUPPORTS-BAROMETER` | The hypothesis that vapor or another material effluvium in the Torricellian space exerts the agency that holds the mercury column up, rather than external atmospheric pressure. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “What pulls the liquid?” reframed as “What pushes it?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For a static liquid of density \(\rho\):
 
@@ -108,6 +130,84 @@ $$
 
 where \(N\) is molecule number, \(k_B\) Boltzmann's constant, and \(\rho_m\) gas mass density. These later equations explain pressure statistically rather than as an occult fluid property.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Column height generated by pressure balance
+
+- `P-03` — **Reframe the inherited problem:** “What pulls the liquid?” reframed as “What pushes it?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Extended low-matter space accepted as physically realizable
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Pneumatics, pressure, gases, and vacuum). The case-specific unification was: Pumps, barometers, weather, and altitude unified by pressure. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Pumps, barometers, weather, and altitude unified by pressure
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Column height generated by pressure balance
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Hydrostatic balance retained. Its quantitative or otherwise discriminating test strategy is: Height, volume, and force supplied quantitative tests. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Hydrostatic balance retained
+
+- `P-06` — **Prioritize discriminating tests:** Height, volume, and force supplied quantitative tests
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Pumps, barometers, weather, and altitude unified by pressure |
+| `P-02` | Transformative move and generative deduction | Column height generated by pressure balance |
+| `P-03` | Diagnosis of interpolation failure and reframing | “What pulls the liquid?” reframed as “What pushes it?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Extended low-matter space accepted as physically realizable |
+| `P-05` | Retention and limiting recovery | Hydrostatic balance retained |
+| `P-06` | Prediction, discrimination, and validation network | Height, volume, and force supplied quantitative tests |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-PRESSURE-VACUUM-1640-1660` |
+| Focal date | 1643–1648 (Torricelli through Pascal) |
+| Central claim | Barometers, altitude experiments, pumps, and gas compression established that air has weight and exerts pressure, and that spaces can be produced with far less matter than ambient air. This displaced explanations in which suction or “horror of the vacuum” acted as independent causes. |
+| Domain | Pneumatics, pressure, gases, and vacuum |
+| Epistemic status | Atmospheric pressure and producible low-pressure regions are established; perfect vacuum is an ideal limit |
+| Generative role | Column height generated by pressure balance |
+| Retained structure | Hydrostatic balance retained |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\frac{dp}{dz}=-\rho g.
+$$
+
+$$
+p_{\mathrm{atm}}\approx \rho_{\mathrm{Hg}}gh.
+$$
+
+$$
+pV=\text{constant}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Atmospheric Pressure and the Physical Vacuum: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Barometer height varies with weather and altitude.
@@ -123,32 +223,6 @@ $$
 ## Limitations and retained status
 
 Real pumps leave residual gas, vapor, radiation, and quantum fields; “perfect nothingness” is not experimentally produced. Boyle's law fails without temperature control and at high density. Atmospheric pressure remains a continuum/statistical variable, while vacuum in quantum field theory is not a featureless absence of all physical structure.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Pumps, barometers, weather, and altitude unified by pressure |
-| `P-02` | Column height generated by pressure balance |
-| `P-03` | “What pulls the liquid?” reframed as “What pushes it?” |
-| `P-04` | Extended low-matter space accepted as physically realizable |
-| `P-05` | Hydrostatic balance retained |
-| `P-06` | Height, volume, and force supplied quantitative tests |
-
-## Edge list
-
-```text
-A-PUMP-LIMIT --motivates--> D-PRESSURE-VACUUM-1640-1660
-A-MERCURY --enables--> V-BAROMETER
-V-BAROMETER --tests--> R-HORROR-VACUI
-A-ALTITUDE --tests--> H-ATMOSPHERIC-WEIGHT
-R-HORROR-VACUI --superseded-by--> H-ATMOSPHERIC-WEIGHT
-R-SUCTION-AS-PULL --reframed-by--> PRESSURE-DIFFERENCE
-EQ-HYDROSTATIC --generates--> EQ-BAROMETER
-D-PRESSURE-VACUUM-1640-1660 --precedes--> D-KINETIC-THEORY
-D-PRESSURE-VACUUM-1640-1660 --instantiates--> P-03
-D-PRESSURE-VACUUM-1640-1660 --instantiates--> P-06
-```
 
 ## Extended historical investigation
 
@@ -282,6 +356,25 @@ For two approximately planar opposing faces of area \(A\), this surface integral
 - Attach temperature protocol to Boyle's law.
 - Distinguish absence of air from absence of electromagnetic or quantum fields.
 - Encode Pascal's altitude experiment as a discriminating intervention, not merely another observation.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-PUMP-LIMIT --motivates--> D-PRESSURE-VACUUM-1640-1660
+A-MERCURY --enables--> V-BAROMETER
+V-BAROMETER --tests--> R-HORROR-VACUI
+A-ALTITUDE --tests--> H-ATMOSPHERIC-WEIGHT
+R-HORROR-VACUI --superseded-by--> H-ATMOSPHERIC-WEIGHT
+R-SUCTION-AS-PULL --reframed-by--> PRESSURE-DIFFERENCE
+EQ-HYDROSTATIC --generates--> EQ-BAROMETER
+D-PRESSURE-VACUUM-1640-1660 --precedes--> D-KINETIC-THEORY
+D-PRESSURE-VACUUM-1640-1660 --instantiates--> P-03
+D-PRESSURE-VACUUM-1640-1660 --instantiates--> P-06
+```
 
 ## Sources
 

@@ -16,6 +16,10 @@
 
 Galileo made terrestrial motion mathematically analyzable by treating acceleration, instantaneous speed, and idealized composition of motions as measurable structures. He did not simply perform a single “tower experiment,” and his inertia concept should not be equated without qualification to Newton's rectilinear first law.
 
+## Historical problem
+
+Before the focal discovery (1638 synthesis in *Two New Sciences* (work developed from c. 1604)), the case confronted a linked set of pressures: Speed linked qualitatively to weight, motive power, and resistance; Impressed impetus carries motion after release. The pathways `R-SPEED-PROPORTIONAL-WEIGHT`, `R-PROJECTILE-TWO-STAGES`, `R-ARISTOTELIAN-NATURAL-VIOLENT-MOTION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Free fall, inclined planes, projectiles, and inertia-related motion was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Framework | Transition |
@@ -25,6 +29,14 @@ Galileo made terrestrial motion mathematically analyzable by treating accelerati
 | `TS-GALILEO-EARLY` | c. 1590–1609 | Inclined planes, pendulums, fall, and projectiles studied | Time and acceleration quantified |
 | `TS-PUBLICATION` | 1638 | Mathematical demonstrations published | Terrestrial motion becomes a “new science” |
 | `TS-NEWTONIAN` | 1687 onward | Force laws generalize kinematics into dynamics | Ideal Galileo results derived under constant force |
+
+## Knowledge assets
+
+- `A-IMPETUS`: persistence after loss of contact.
+- `A-INCLINED-PLANE`: slower, measurable analogue of free fall.
+- `A-PENDULUM`: recurring motion and time comparison.
+- `A-GEOMETRY`: ratios, parabolas, and proof.
+- `A-IDEALIZATION`: frictionless planes and resistance-free motion as controlled abstractions.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -68,15 +80,25 @@ Galileo made terrestrial motion mathematically analyzable by treating accelerati
 
 Medieval impetus theory was a genuine bridge: it placed a motive quantity in the projectile rather than requiring continuous pushing by surrounding air. It failed as a final theory because impetus decayed without a general force law and did not yield the quantitative parabolic trajectory. Galileo retained the insight that motion can persist, but his “inertia” was not yet Newton's full rectilinear law and often had a circular terrestrial context. The pathway should therefore be represented as a graded transformation rather than Aristotle → Galileo in one jump.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-IMPETUS`: persistence after loss of contact.
-- `A-INCLINED-PLANE`: slower, measurable analogue of free fall.
-- `A-PENDULUM`: recurring motion and time comparison.
-- `A-GEOMETRY`: ratios, parabolas, and proof.
-- `A-IDEALIZATION`: frictionless planes and resistance-free motion as controlled abstractions.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-IMPETUS`, `A-INCLINED-PLANE`, `A-PENDULUM`, `A-GEOMETRY`, `A-IDEALIZATION`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-SPEED-PROPORTIONAL-WEIGHT` | An Aristotelian fall law according to which a body's downward speed in a given medium increases in direct proportion to its weight and decreases with the medium's resistance. | It confounds gravitational acceleration with resistance. |
+| `R-PROJECTILE-TWO-STAGES` | A projectile model that divides motion into an initially forced or “violent” forward phase and a later “natural” downward fall, rather than treating both components as simultaneous. | It predicts a sharp transition rather than continuous curvature. |
+| `R-ARISTOTELIAN-NATURAL-VIOLENT-MOTION` | Aristotle's classification in which natural motion carries elements toward their natural places, while violent motion is imposed externally and normally ceases when the mover no longer acts. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “What nature seeks” replaced by “How position changes with time”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For constant acceleration \(a\):
 
@@ -118,6 +140,90 @@ $$
 
 The trajectory is parabolic under uniform gravity with air resistance neglected. These are modern notational forms of Galilean results.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Distance–time regularities became generative equations
+
+- `P-03` — **Reframe the inherited problem:** “What nature seeks” replaced by “How position changes with time”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Ideal frictionless motion accepted as explanatory
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Free fall, inclined planes, projectiles, and inertia-related motion). The case-specific unification was: Fall, incline, and projectile motion linked by common kinematics. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Fall, incline, and projectile motion linked by common kinematics
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Distance–time regularities became generative equations
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Impetus-like persistence retained without its ontology. Its quantitative or otherwise discriminating test strategy is: Ratios and trajectories made motion quantitatively testable. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Impetus-like persistence retained without its ontology
+
+- `P-06` — **Prioritize discriminating tests:** Ratios and trajectories made motion quantitatively testable
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Fall, incline, and projectile motion linked by common kinematics |
+| `P-02` | Transformative move and generative deduction | Distance–time regularities became generative equations |
+| `P-03` | Diagnosis of interpolation failure and reframing | “What nature seeks” replaced by “How position changes with time” |
+| `P-04` | Transformative representation, ontology, or mechanism | Ideal frictionless motion accepted as explanatory |
+| `P-05` | Retention and limiting recovery | Impetus-like persistence retained without its ontology |
+| `P-06` | Prediction, discrimination, and validation network | Ratios and trajectories made motion quantitatively testable |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-GALILEAN-KINEMATICS-1604-1638` |
+| Focal date | 1638 synthesis in *Two New Sciences* (work developed from c. 1604) |
+| Central claim | Galileo made terrestrial motion mathematically analyzable by treating acceleration, instantaneous speed, and idealized composition of motions as measurable structures. He did not simply perform a single “tower experiment,” and his inertia concept should not be equated without qualification to Newton's rectilinear first law. |
+| Domain | Free fall, inclined planes, projectiles, and inertia-related motion |
+| Epistemic status | Correct classical kinematics under stated idealizations; incorporated and generalized by Newtonian mechanics |
+| Generative role | Distance–time regularities became generative equations |
+| Retained structure | Impetus-like persistence retained without its ontology |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+v(t)=v_0+at,
+\qquad
+x(t)=x_0+v_0t+\frac{1}{2}at^2.
+$$
+
+$$
+v=gt,
+\qquad
+y=\frac{1}{2}gt^2,
+\qquad
+v^2=2gy.
+$$
+
+$$
+\Delta y_1:\Delta y_2:\Delta y_3:\cdots=1:3:5:\cdots.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Galilean Kinematics: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - `CT-INSTANTANEOUS-STATE`: motion characterized by speed at an instant.
@@ -138,30 +244,6 @@ $$
 ## Limitations and retained status
 
 Constant \(g\), flat geometry, and absent drag are local approximations. Galileo's inertial reasoning is often interpreted as circular or horizontal rather than the full Newtonian law. Relativity changes transformations at high speed; quantum mechanics changes microscopic trajectory concepts. Galilean kinematics remains the ordinary low-speed limit.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Fall, incline, and projectile motion linked by common kinematics |
-| `P-02` | Distance–time regularities became generative equations |
-| `P-03` | “What nature seeks” replaced by “How position changes with time” |
-| `P-04` | Ideal frictionless motion accepted as explanatory |
-| `P-05` | Impetus-like persistence retained without its ontology |
-| `P-06` | Ratios and trajectories made motion quantitatively testable |
-
-## Edge list
-
-```text
-A-INCLINED-PLANE --enables-measurement-of--> D-GALILEAN-KINEMATICS-1604-1638
-A-IDEALIZATION --enables--> LAW-FREE-FALL
-R-SPEED-PROPORTIONAL-WEIGHT --superseded-by--> LAW-FREE-FALL
-R-PROJECTILE-TWO-STAGES --superseded-by--> LAW-COMPOSITION
-LAW-COMPOSITION --generates--> EQ-PARABOLA
-D-GALILEAN-KINEMATICS-1604-1638 --contributes-to--> D-NEWTONIAN-MECHANICS
-D-GALILEAN-KINEMATICS-1604-1638 --instantiates--> P-03
-D-GALILEAN-KINEMATICS-1604-1638 --instantiates--> P-06
-```
 
 ## Extended historical investigation
 
@@ -318,6 +400,23 @@ shows why feathers and dense balls fall differently in ordinary conditions witho
 - Store idealization and correction models as separate linked nodes.
 - Do not use `GALILEO --single-handedly-created--> MODERN-SCIENCE`.
 - Preserve experimental reconstruction uncertainty when apparatus details are historically disputed.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-INCLINED-PLANE --enables-measurement-of--> D-GALILEAN-KINEMATICS-1604-1638
+A-IDEALIZATION --enables--> LAW-FREE-FALL
+R-SPEED-PROPORTIONAL-WEIGHT --superseded-by--> LAW-FREE-FALL
+R-PROJECTILE-TWO-STAGES --superseded-by--> LAW-COMPOSITION
+LAW-COMPOSITION --generates--> EQ-PARABOLA
+D-GALILEAN-KINEMATICS-1604-1638 --contributes-to--> D-NEWTONIAN-MECHANICS
+D-GALILEAN-KINEMATICS-1604-1638 --instantiates--> P-03
+D-GALILEAN-KINEMATICS-1604-1638 --instantiates--> P-06
+```
 
 ## Sources
 

@@ -31,6 +31,10 @@ $$
 
 The transformation is more than renaming energy: it places $q_i$ and $p_i$ on equal canonical footing, represents evolution as a phase-space flow, and makes generators, Poisson brackets and canonical transformations central. Modern symplectic language is a later mathematical reconstruction, not Hamilton's own terminology.
 
+## Historical problem
+
+Before the focal discovery (1834–1835 Hamiltonian dynamics synthesis), the case confronted a linked set of pressures: Generalized-coordinate equations organize constrained motion; Optical systems described by characteristic functions. The pathways `R-DIRECT-TRAJECTORY-INTEGRATION`, `R-CONFIGURATION-VELOCITY-ONLY`, `R-OPTICS-DYNAMICS-SEPARATION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Hamiltonian mechanics, phase space, canonical transformations, Hamilton–Jacobi theory, and dynamical generators was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -41,6 +45,15 @@ The transformation is more than renaming energy: it places $q_i$ and $p_i$ on eq
 | `TS-JACOBI` | 1836–1837 | Hamilton's partial-differential method systematized | Hamilton–Jacobi theory connects dynamics and canonical transformations |
 | `TS-STATISTICAL-MECHANICS` | late nineteenth century | Ensembles occupy spaces of canonical states | Phase-space volume and Hamiltonian flow organize probability |
 | `TS-QUANTIZATION` | 1920s onward | Classical canonical variables become noncommuting observables | Poisson-bracket structure guides canonical quantization |
+
+## Knowledge assets
+
+- `A-LAGRANGIAN-MECHANICS`: generalized-coordinate dynamics and canonical momenta.
+- `A-LEGENDRE-TRANSFORM`: exchange of velocity variables for conjugate momenta.
+- `A-HAMILTON-OPTICS`: characteristic functions generating ray systems.
+- `A-VARIATIONAL-ACTION`: path functionals and endpoint derivatives.
+- `A-PARTIAL-DIFFERENTIAL-EQUATIONS`: functions whose complete integrals encode solution families.
+- `A-CONSERVATION-ENERGY`: a distinguished scalar that often, but not always, coincides with $H$.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -94,16 +107,25 @@ The transformation is more than renaming energy: it places $q_i$ and $p_i$ on eq
 | Optics–dynamics separation | Develop two independent calculi | Misses common characteristic-function form | Domain-specific laws |
 | **Discovery/current: Hamiltonian canonical mechanics** | Legendre transform to phase space and generator flow | Regularity and constraint qualifications required | Canonical foundation of modern dynamics |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-LAGRANGIAN-MECHANICS`: generalized-coordinate dynamics and canonical momenta.
-- `A-LEGENDRE-TRANSFORM`: exchange of velocity variables for conjugate momenta.
-- `A-HAMILTON-OPTICS`: characteristic functions generating ray systems.
-- `A-VARIATIONAL-ACTION`: path functionals and endpoint derivatives.
-- `A-PARTIAL-DIFFERENTIAL-EQUATIONS`: functions whose complete integrals encode solution families.
-- `A-CONSERVATION-ENERGY`: a distinguished scalar that often, but not always, coincides with $H$.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivation
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-LAGRANGIAN-MECHANICS`, `A-LEGENDRE-TRANSFORM`, `A-HAMILTON-OPTICS`, `A-VARIATIONAL-ACTION`, `A-PARTIAL-DIFFERENTIAL-EQUATIONS`, `A-CONSERVATION-ENERGY`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-DIRECT-TRAJECTORY-INTEGRATION` | A strategy that treats solving mechanics as direct integration of Newtonian or Lagrangian ordinary differential equations for each trajectory, without seeking a generating function whose derivatives encode whole families of solutions. | See the full pathway record above. |
+| `R-CONFIGURATION-VELOCITY-ONLY` | The complete Lagrangian description $L(q,\dot q,t)$ treated as the final natural state representation, with momenta used only as derived bookkeeping rather than independent canonical coordinates. | See the full pathway record above. |
+| `R-OPTICS-DYNAMICS-SEPARATION` | The view that geometrical optics and particle mechanics are mathematically analogous only in isolated examples, with optical characteristic functions and mechanical trajectories belonging to separate calculational theories. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Which trajectory solves these equations?” becomes “Which generator or principal function encodes all trajectories?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 For a regular Lagrangian, define
 
@@ -169,7 +191,7 @@ $$
 
 The equation turns trajectory finding into a partial differential problem. In semiclassical quantum mechanics, the phase $e^{iS/\hbar}$ exposes a later structural bridge, but Hamilton did not possess the quantum interpretation.
 
-### Self-contained derivation spine
+#### Self-contained derivation spine
 
 Begin with the differential of the Lagrangian,
 
@@ -250,6 +272,77 @@ A complete integral containing $n$ constants $P_i$ generates a family of traject
 | Derived | Hamilton equations and generator form of time evolution |
 | Additional construction | Hamilton–Jacobi equation from a canonical transformation with $K=0$ |
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Energy-like regularities become a function that generates the full phase-space flow
+
+- `P-03` — **Reframe the inherited problem:** “Which trajectory solves these equations?” becomes “Which generator or principal function encodes all trajectories?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Phase space, conjugate momentum, Poisson brackets and canonical transformations become primary ontology-like structures
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Hamiltonian mechanics, phase space, canonical transformations, Hamilton–Jacobi theory, and dynamical generators). The case-specific unification was: Optics, particle motion, statistical ensembles and later quantization share canonical generator structure. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Optics, particle motion, statistical ensembles and later quantization share canonical generator structure
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Energy-like regularities become a function that generates the full phase-space flow
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: All regular Lagrangian and Newtonian trajectories are retained under the Legendre transformation. Its quantitative or otherwise discriminating test strategy is: A proposed Hamiltonian generates explicit flows, invariants, perturbations and measurable trajectories. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** All regular Lagrangian and Newtonian trajectories are retained under the Legendre transformation
+
+- `P-06` — **Prioritize discriminating tests:** A proposed Hamiltonian generates explicit flows, invariants, perturbations and measurable trajectories
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Optics, particle motion, statistical ensembles and later quantization share canonical generator structure |
+| `P-02` | Transformative move and generative deduction | Energy-like regularities become a function that generates the full phase-space flow |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Which trajectory solves these equations?” becomes “Which generator or principal function encodes all trajectories?” |
+| `P-04` | Transformative representation, ontology, or mechanism | Phase space, conjugate momentum, Poisson brackets and canonical transformations become primary ontology-like structures |
+| `P-05` | Retention and limiting recovery | All regular Lagrangian and Newtonian trajectories are retained under the Legendre transformation |
+| `P-06` | Prediction, discrimination, and validation network | A proposed Hamiltonian generates explicit flows, invariants, perturbations and measurable trajectories |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-HAMILTONIAN-MECHANICS-1834` |
+| Focal date | 1834–1835 Hamiltonian dynamics synthesis |
+| Central claim | Hamilton reorganized regular Lagrangian dynamics as first-order flow in coordinates and conjugate momenta and linked dynamics to his earlier characteristic-function methods in optics. With $$ p_i=\frac{\partial L}{\partial\dot q_i}, \qquad H(q,p,t)=\sum_i p_i\dot q_i-L, $$ the equations of motion become $$ \dot q_i=\frac{\partial H}{\partial p_i}, \qquad \dot p_i=-\frac{\partial H}{\partial q_i}. $$ The transformation is more than renaming energy: it places $q_i$ and $p_i$ on equal canonical footing, represents evolution as a phase-space flow, and makes generators, Poisson brackets and canonical transformations central. Modern symplectic language is a later mathematical reconstruction, not Hamilton's own terminology. |
+| Domain | Hamiltonian mechanics, phase space, canonical transformations, Hamilton–Jacobi theory, and dynamical generators |
+| Epistemic status | An equivalent regular classical formulation with foundational extensions to statistical mechanics and quantization; constrained and dissipative systems require additional structure |
+| Generative role | Energy-like regularities become a function that generates the full phase-space flow |
+| Retained structure | All regular Lagrangian and Newtonian trajectories are retained under the Legendre transformation |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+p_i=\frac{\partial L}{\partial\dot q_i}.
+$$
+
+$$
+W_{ij}=\frac{\partial^2L}{\partial\dot q_i\partial\dot q_j}
+$$
+
+$$
+H(q,p,t)=\sum_i p_i\dot q_i-L(q,\dot q,t).
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
 ## Historically novel predictions and deductions
 
 ### `NP-HAMILTON-01` — Conical refraction in biaxial crystals
@@ -285,34 +378,6 @@ helped construct canonical quantization. This is a structural correspondence, no
 The elementary Legendre transform fails for singular Lagrangians, including gauge theories, because not all velocities determine independent momenta. Dirac–Bergmann constraint methods or reduced phase spaces are then required. The Hamiltonian need not equal physical energy when coordinates or Lagrangians depend explicitly on time, when velocity-dependent interactions occur, or in generally covariant systems where the canonical Hamiltonian can be constraint-dominated.
 
 Ordinary Hamiltonian flow is conservative and volume-preserving; friction and open-system dynamics require extensions. Canonical coordinates are not unique, and phase-space points can include gauge redundancy. Quantization is not obtained simply by replacing every Poisson bracket with a commutator without ordering, domain and anomaly issues. Hamiltonian mechanics remains foundational, not ultimate or universally simplest.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Optics, particle motion, statistical ensembles and later quantization share canonical generator structure |
-| `P-02` | Energy-like regularities become a function that generates the full phase-space flow |
-| `P-03` | “Which trajectory solves these equations?” becomes “Which generator or principal function encodes all trajectories?” |
-| `P-04` | Phase space, conjugate momentum, Poisson brackets and canonical transformations become primary ontology-like structures |
-| `P-05` | All regular Lagrangian and Newtonian trajectories are retained under the Legendre transformation |
-| `P-06` | A proposed Hamiltonian generates explicit flows, invariants, perturbations and measurable trajectories |
-
-## Edge list
-
-```text
-A-LAGRANGIAN-MECHANICS --enables--> D-HAMILTONIAN-MECHANICS-1834
-A-LEGENDRE-TRANSFORM --maps--> CONFIGURATION-VELOCITY-SPACE
-A-LEGENDRE-TRANSFORM --produces--> PHASE-SPACE
-A-HAMILTON-OPTICS --transfers-method-to--> D-HAMILTONIAN-MECHANICS-1834
-HAMILTONIAN --generates--> PHASE-SPACE-FLOW
-POISSON-BRACKET --expresses--> CANONICAL-EVOLUTION
-HAMILTON-PRINCIPAL-FUNCTION --satisfies--> HAMILTON-JACOBI-EQUATION
-D-HAMILTONIAN-MECHANICS-1834 --retains--> D-LAGRANGIAN-MECHANICS-1788
-D-HAMILTONIAN-MECHANICS-1834 --provides-phase-space-for--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
-D-HAMILTONIAN-MECHANICS-1834 --provides-formal-structure-for--> D-QUANTUM-MECHANICS-1925-1927
-D-HAMILTONIAN-MECHANICS-1834 --prefigures--> CANONICAL-QUANTIZATION
-D-HAMILTONIAN-MECHANICS-1834 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -352,6 +417,27 @@ and phase-space trajectories are ellipses of constant $H$. The same motion appea
 - Treat canonical transformations as structure-preserving maps, not arbitrary coordinate changes.
 - Label symplectic and modern phase-space language as later reconstruction when discussing Hamilton's original papers.
 - Link Hamilton's optics to Fermat and his dynamics to Lagrange, statistical mechanics, quantum mechanics and QFT.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-LAGRANGIAN-MECHANICS --enables--> D-HAMILTONIAN-MECHANICS-1834
+A-LEGENDRE-TRANSFORM --maps--> CONFIGURATION-VELOCITY-SPACE
+A-LEGENDRE-TRANSFORM --produces--> PHASE-SPACE
+A-HAMILTON-OPTICS --transfers-method-to--> D-HAMILTONIAN-MECHANICS-1834
+HAMILTONIAN --generates--> PHASE-SPACE-FLOW
+POISSON-BRACKET --expresses--> CANONICAL-EVOLUTION
+HAMILTON-PRINCIPAL-FUNCTION --satisfies--> HAMILTON-JACOBI-EQUATION
+D-HAMILTONIAN-MECHANICS-1834 --retains--> D-LAGRANGIAN-MECHANICS-1788
+D-HAMILTONIAN-MECHANICS-1834 --provides-phase-space-for--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
+D-HAMILTONIAN-MECHANICS-1834 --provides-formal-structure-for--> D-QUANTUM-MECHANICS-1925-1927
+D-HAMILTONIAN-MECHANICS-1834 --prefigures--> CANONICAL-QUANTIZATION
+D-HAMILTONIAN-MECHANICS-1834 --instantiates--> P-03
+```
 
 ## Sources
 

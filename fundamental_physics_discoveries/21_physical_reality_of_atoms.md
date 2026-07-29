@@ -15,6 +15,10 @@
 
 Einstein showed that visible Brownian motion should arise from molecular fluctuations and derived quantitative relations connecting diffusion to temperature, viscosity, particle size, and Avogadro's number. Perrin's experiments verified these relations and helped settle disputes over atoms' physical reality.
 
+## Historical problem
+
+Before the focal discovery (1905 theory; 1908–1909 Perrin validation), the case confronted a linked set of pressures: Combining ratios modeled with atoms; Gas laws derived from molecules. The pathways `R-ATOMS-AS-CALCULATIONAL-FICTIONS`, `R-BROWNIAN-LIVING-MOTILITY`, `R-BROWNIAN-CONVECTION-EVAPORATION`, `R-BROWNIAN-MECHANICAL-VIBRATION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Molecular reality and fluctuation physics was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | State | Transition |
@@ -25,6 +29,14 @@ Einstein showed that visible Brownian motion should arise from molecular fluctua
 | `TS-EINSTEIN` | 1905 | Molecular fluctuations yield diffusion law | Atomic scale becomes measurable |
 | `TS-PERRIN` | 1908 onward | Multiple measurements converge on \(N_A\) | Atomism gains decisive support |
 | `TS-MODERN` | 20th century onward | Scattering and imaging resolve structure | Quantum constituents replace classical hard atoms |
+
+## Knowledge assets
+
+- `A-DIFFUSION`: measurable spreading.
+- `A-OSMOTIC-PRESSURE`: dilute suspension analogy.
+- `A-VISCOSITY`: Stokes drag.
+- `A-MICROSCOPY`: particle trajectories.
+- `A-STATISTICAL-MECHANICS`: fluctuations as expected behavior.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -75,15 +87,26 @@ Einstein showed that visible Brownian motion should arise from molecular fluctua
 
 Einstein's theory did not require resolving individual molecular impacts. It predicted ensemble displacement statistics from molecular number, hydrodynamic drag, and temperature. Perrin's multiple measurement routes weakened customized alternatives because the same Avogadro constant emerged from unrelated observables. Later X-ray diffraction and single-particle techniques expanded the evidence. The continuum fluid law was retained inside the Brownian calculation, illustrating that a superseded ontology can contain a valid effective equation.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-DIFFUSION`: measurable spreading.
-- `A-OSMOTIC-PRESSURE`: dilute suspension analogy.
-- `A-VISCOSITY`: Stokes drag.
-- `A-MICROSCOPY`: particle trajectories.
-- `A-STATISTICAL-MECHANICS`: fluctuations as expected behavior.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and derivation
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-DIFFUSION`, `A-OSMOTIC-PRESSURE`, `A-VISCOSITY`, `A-MICROSCOPY`, `A-STATISTICAL-MECHANICS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-ATOMS-AS-CALCULATIONAL-FICTIONS` | An instrumentalist position in which atoms and molecules are useful symbols for organizing chemical and thermodynamic calculations but are not asserted to be real physical entities. | Independent atomic-number estimates converged quantitatively. |
+| `R-BROWNIAN-LIVING-MOTILITY` | The claim that Brownian grains move because they are alive or contain a vital agency. | See the full pathway record above. |
+| `R-BROWNIAN-CONVECTION-EVAPORATION` | The claim that bulk currents from temperature gradients or evaporation drive the irregular motion. | See the full pathway record above. |
+| `R-BROWNIAN-MECHANICAL-VIBRATION` | The claim that apparatus or environmental shaking produces the observed random displacement. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Noise reframed as signal about unseen constituents. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 In one dimension:
 
@@ -111,6 +134,84 @@ $$
 
 where \(\Delta m\) is buoyancy-corrected particle mass.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Random trajectories generated a molecular-scale law
+
+- `P-03` — **Reframe the inherited problem:** Noise reframed as signal about unseen constituents
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Statistical fluctuations accepted as explanatory
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Molecular reality and fluctuation physics). The case-specific unification was: Thermodynamics, hydrodynamics, and microscopic matter unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Thermodynamics, hydrodynamics, and microscopic matter unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Random trajectories generated a molecular-scale law
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Chemical atoms retained and given physical measurement. Its quantitative or otherwise discriminating test strategy is: Independent estimates of \(N_A\) converged. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Chemical atoms retained and given physical measurement
+
+- `P-06` — **Prioritize discriminating tests:** Independent estimates of \(N_A\) converged
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Thermodynamics, hydrodynamics, and microscopic matter unified |
+| `P-02` | Transformative move and generative deduction | Random trajectories generated a molecular-scale law |
+| `P-03` | Diagnosis of interpolation failure and reframing | Noise reframed as signal about unseen constituents |
+| `P-04` | Transformative representation, ontology, or mechanism | Statistical fluctuations accepted as explanatory |
+| `P-05` | Retention and limiting recovery | Chemical atoms retained and given physical measurement |
+| `P-06` | Prediction, discrimination, and validation network | Independent estimates of \(N_A\) converged |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-BROWNIAN-ATOMS-1905-1908` |
+| Focal date | 1905 theory; 1908–1909 Perrin validation |
+| Central claim | Einstein showed that visible Brownian motion should arise from molecular fluctuations and derived quantitative relations connecting diffusion to temperature, viscosity, particle size, and Avogadro's number. Perrin's experiments verified these relations and helped settle disputes over atoms' physical reality. |
+| Domain | Molecular reality and fluctuation physics |
+| Epistemic status | Matter's atomic and molecular constitution is experimentally established; classical particles are not the final quantum description |
+| Generative role | Random trajectories generated a molecular-scale law |
+| Retained structure | Chemical atoms retained and given physical measurement |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\langle x^2(t)\rangle=2Dt.
+$$
+
+$$
+D=\frac{k_BT}{6\pi\eta a}.
+$$
+
+$$
+N_A=\frac{RT}{6\pi\eta aD}.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Physical Reality of Atoms and Molecules: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - Mean-square displacement grows linearly in time.
@@ -121,30 +222,6 @@ where \(\Delta m\) is buoyancy-corrected particle mass.
 ## Limitations and retained status
 
 Simple Brownian formulas assume dilute spherical particles, low Reynolds number, equilibrium, and time scales beyond inertial memory. At small scales quantum and hydrodynamic corrections enter. Atoms are real but not classical indivisible spheres.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Thermodynamics, hydrodynamics, and microscopic matter unified |
-| `P-02` | Random trajectories generated a molecular-scale law |
-| `P-03` | Noise reframed as signal about unseen constituents |
-| `P-04` | Statistical fluctuations accepted as explanatory |
-| `P-05` | Chemical atoms retained and given physical measurement |
-| `P-06` | Independent estimates of \(N_A\) converged |
-
-## Edge list
-
-```text
-A-STATISTICAL-MECHANICS --enables--> D-BROWNIAN-ATOMS-1905-1908
-A-VISCOSITY --constrains--> EQ-DIFFUSION
-A-MICROSCOPY --measures--> MEAN-SQUARE-DISPLACEMENT
-EQ-DIFFUSION --infers--> BOLTZMANN-CONSTANT
-BOLTZMANN-CONSTANT --infers--> AVOGADRO-CONSTANT
-V-PERRIN --validates--> D-BROWNIAN-ATOMS-1905-1908
-D-BROWNIAN-ATOMS-1905-1908 --supersedes--> R-ATOMS-AS-CALCULATIONAL-FICTIONS
-D-BROWNIAN-ATOMS-1905-1908 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -331,6 +408,8 @@ The Stokes–Einstein relation fails or needs correction near boundaries, in vis
 
 ## Additional quantitative and epistemic notes
 
+### Additional quantitative and epistemic notes
+
 Einstein modeled a suspended particle's displacement distribution rather than attempting to follow molecular impacts. In one dimension,
 
 $$
@@ -342,6 +421,19 @@ $$
 for a spherical particle of radius \(a\) in the Stokes regime. Perrin varied particle size, time interval, and gravitational height distributions, obtaining mutually consistent estimates of Avogadro's number. Agreement across Brownian motion, electrochemistry, kinetic gas theory, and later diffraction made atoms an overdetermined entity rather than a convenient hypothesis tied to one experiment.
 
 The case also illustrates model-conditioned observation. Microscope images tracked colloidal grains, not molecules; atomic reality was inferred through a quantitative stochastic bridge. Continuum hydrodynamics was retained in the Stokes drag term even while molecular fluctuations explained its microscopic limits. This is a particularly useful example of a new ontology validated by combining an older macroscopic law with statistical inference.
+
+## Edge list
+
+```text
+A-STATISTICAL-MECHANICS --enables--> D-BROWNIAN-ATOMS-1905-1908
+A-VISCOSITY --constrains--> EQ-DIFFUSION
+A-MICROSCOPY --measures--> MEAN-SQUARE-DISPLACEMENT
+EQ-DIFFUSION --infers--> BOLTZMANN-CONSTANT
+BOLTZMANN-CONSTANT --infers--> AVOGADRO-CONSTANT
+V-PERRIN --validates--> D-BROWNIAN-ATOMS-1905-1908
+D-BROWNIAN-ATOMS-1905-1908 --supersedes--> R-ATOMS-AS-CALCULATIONAL-FICTIONS
+D-BROWNIAN-ATOMS-1905-1908 --instantiates--> P-03
+```
 
 ## Sources
 

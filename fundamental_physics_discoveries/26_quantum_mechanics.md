@@ -15,6 +15,10 @@
 
 Quantum mechanics replaced classical phase-space trajectories with states in Hilbert space, noncommuting observables, unitary evolution, and probabilistic measurement outcomes. Matrix and wave formulations were shown to be equivalent representations.
 
+## Historical problem
+
+Before the focal discovery (1925–1927), the case confronted a linked set of pressures: Quanta explain selected spectra; de Broglie assigns wavelength to matter. The pathways `R-BOHR-SOMMERFELD`, `R-CLASSICAL-DEFINITE-TRAJECTORIES`, `R-MATRIX-MECHANICS-AS-UNIQUE-ONTOLOGY`, `R-LITERAL-THREE-DIMENSIONAL-MATTER-WAVE` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Microscopic states, observables, and probabilities was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Crisis/asset | Transition |
@@ -25,6 +29,14 @@ Quantum mechanics replaced classical phase-space trajectories with states in Hil
 | `TS-WAVE` | 1926 | Schrödinger equation developed | Bound-state spectra derived |
 | `TS-BORN` | 1926 | \(|\psi|^2\) interpreted probabilistically | Deterministic amplitude, stochastic outcomes |
 | `TS-FORMALIZATION` | 1927 onward | Uncertainty, transformations, Hilbert space | General framework consolidates |
+
+## Knowledge assets
+
+- `A-PLANCK-EINSTEIN`: energy quanta.
+- `A-ATOMIC-SPECTRA`: discrete frequencies.
+- `A-DE-BROGLIE`: \(\lambda=h/p\).
+- `A-HAMILTONIAN-MECHANICS`: energy as generator of time evolution.
+- `A-LINEAR-ALGEBRA`: eigenvalues and transformations.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -69,15 +81,26 @@ Quantum mechanics replaced classical phase-space trajectories with states in Hil
 
 Classical trajectories are not universally “proven nonexistent.” Bohmian formulations use trajectories with nonlocal dynamics, and semiclassical paths approximate many experiments. What fails is the unrestricted classical phase-space model that assigns simultaneous context-independent values while reproducing all quantum statistics. Likewise, Copenhagen was not the only theory left standing; interpretations share operational predictions while differing about ontology and measurement. The superseded node must be specific enough to avoid turning empirical success into an unsupported metaphysical conclusion.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-PLANCK-EINSTEIN`: energy quanta.
-- `A-ATOMIC-SPECTRA`: discrete frequencies.
-- `A-DE-BROGLIE`: \(\lambda=h/p\).
-- `A-HAMILTONIAN-MECHANICS`: energy as generator of time evolution.
-- `A-LINEAR-ALGEBRA`: eigenvalues and transformations.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-PLANCK-EINSTEIN`, `A-ATOMIC-SPECTRA`, `A-DE-BROGLIE`, `A-HAMILTONIAN-MECHANICS`, `A-LINEAR-ALGEBRA`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-BOHR-SOMMERFELD` | The old quantum theory that preserves classical orbits and phase-space motion but imposes discrete action-integral conditions to select allowed trajectories and energies. | Multi-electron atoms and transition intensities. |
+| `R-CLASSICAL-DEFINITE-TRAJECTORIES` | A classical state model in which every particle possesses one exact position and momentum at each time and follows a unique continuous trajectory determined by local equations of motion. | Interference, discrete spectra, and uncertainty cannot generally be represented by simultaneous exact \(x,p\). |
+| `R-MATRIX-MECHANICS-AS-UNIQUE-ONTOLOGY` | The view that Heisenberg's noncommuting transition matrices are not merely a representation but the uniquely fundamental formulation, with wave mechanics a rival theory. | See the full pathway record above. |
+| `R-LITERAL-THREE-DIMENSIONAL-MATTER-WAVE` | The interpretation of every many-particle wavefunction as an ordinary material wave propagating only in physical three-dimensional space. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Trajectory prediction reframed as amplitude prediction. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 State evolution:
 
@@ -125,6 +148,81 @@ $$
 \langle A\rangle=\langle\psi|\hat A|\psi\rangle.
 $$
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Hamiltonians generate spectra and time evolution
+
+- `P-03` — **Reframe the inherited problem:** Trajectory prediction reframed as amplitude prediction
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Superposition and noncommuting observables accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Microscopic states, observables, and probabilities). The case-specific unification was: Waves, particles, spectra, and probability unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Waves, particles, spectra, and probability unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Hamiltonians generate spectra and time evolution
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Classical mechanics retained as a limit. Its quantitative or otherwise discriminating test strategy is: Spectral values and interference probabilities test the theory. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Classical mechanics retained as a limit
+
+- `P-06` — **Prioritize discriminating tests:** Spectral values and interference probabilities test the theory
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Waves, particles, spectra, and probability unified |
+| `P-02` | Transformative move and generative deduction | Hamiltonians generate spectra and time evolution |
+| `P-03` | Diagnosis of interpolation failure and reframing | Trajectory prediction reframed as amplitude prediction |
+| `P-04` | Transformative representation, ontology, or mechanism | Superposition and noncommuting observables accepted |
+| `P-05` | Retention and limiting recovery | Classical mechanics retained as a limit |
+| `P-06` | Prediction, discrimination, and validation network | Spectral values and interference probabilities test the theory |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-QUANTUM-MECHANICS-1925-1927` |
+| Focal date | 1925–1927 |
+| Central claim | Quantum mechanics replaced classical phase-space trajectories with states in Hilbert space, noncommuting observables, unitary evolution, and probabilistic measurement outcomes. Matrix and wave formulations were shown to be equivalent representations. |
+| Domain | Microscopic states, observables, and probabilities |
+| Epistemic status | Foundational nonrelativistic quantum framework; relativistic quantum field theory extends it |
+| Generative role | Hamiltonians generate spectra and time evolution |
+| Retained structure | Classical mechanics retained as a limit |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle
+=\hat H|\psi(t)\rangle.
+$$
+
+$$
+i\hbar\frac{\partial\psi}{\partial t}
+=\left[
+-\frac{\hbar^2}{2m}\nabla^2+V
+\right]\psi.
+$$
+
+$$
+\hat H\phi_n=E_n\phi_n.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
 ## Historically novel predictions and deductions
 
 ### `NP-QM-01` — Barrier penetration and alpha decay
@@ -163,33 +261,6 @@ Atomic spectra, tunneling, chemical bonds, diffraction of matter, Stern–Gerlac
 ## Limitations and retained status
 
 Nonrelativistic quantum mechanics does not allow particle creation and is not a quantum theory of spacetime. Interpretations disagree about ontology and measurement while sharing empirical structure. Quantum field theory combines quantum principles with special relativity; quantum gravity remains incomplete.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Waves, particles, spectra, and probability unified |
-| `P-02` | Hamiltonians generate spectra and time evolution |
-| `P-03` | Trajectory prediction reframed as amplitude prediction |
-| `P-04` | Superposition and noncommuting observables accepted |
-| `P-05` | Classical mechanics retained as a limit |
-| `P-06` | Spectral values and interference probabilities test the theory |
-
-## Edge list
-
-```text
-A-DE-BROGLIE --contributes-to--> D-WAVE-MECHANICS
-A-ATOMIC-SPECTRA --constrains--> D-QUANTUM-MECHANICS-1925-1927
-D-MATRIX-MECHANICS --equivalent-to--> D-WAVE-MECHANICS
-D-HAMILTONIAN-MECHANICS-1834 --provides-formal-structure-for--> D-QUANTUM-MECHANICS-1925-1927
-BORN-RULE --maps--> QUANTUM-STATE
-BORN-RULE --maps-to--> OUTCOME-PROBABILITIES
-NONCOMMUTATION --implies--> UNCERTAINTY-RELATION
-D-QUANTUM-MECHANICS-1925-1927 --supersedes--> R-BOHR-SOMMERFELD
-D-QUANTUM-MECHANICS-1925-1927 --retains-limit--> CLASSICAL-MECHANICS
-D-QUANTUM-MECHANICS-1925-1927 --is-extended-to-quantized-fields-by--> D-QFT-FIELD-QUANTIZATION-1927
-D-QUANTUM-MECHANICS-1925-1927 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -425,6 +496,8 @@ The Schrödinger equation is nonrelativistic and assumes fixed particle number. 
 
 ## Additional quantitative and epistemic notes
 
+### Additional quantitative and epistemic notes
+
 Matrix mechanics began from observable transition frequencies and amplitudes; wave mechanics used a differential equation and continuous wavefunction. Their equivalence showed that representation could change while physical predictions remained. Canonical commutation,
 
 $$
@@ -440,6 +513,22 @@ $$
 through a general variance inequality—not through unavoidable mechanical disturbance alone. Born's rule maps amplitudes to probabilities, while unitary evolution preserves total probability.
 
 The framework explained spectra, chemical bonding, tunneling, and scattering, but its interpretation was contested from the start. Copenhagen-family views were not one perfectly uniform doctrine; Einstein, Schrödinger, de Broglie, Bohm, Everett, and others developed objections or alternatives. Experimental success establishes the operational structure with extraordinary precision, not one unique account of measurement or ontology. Classical mechanics emerges through decoherence, coarse graining, and action scales large relative to \(\hbar\), with additional conditions rather than by setting \(\hbar\) literally to zero in every expression.
+
+## Edge list
+
+```text
+A-DE-BROGLIE --contributes-to--> D-WAVE-MECHANICS
+A-ATOMIC-SPECTRA --constrains--> D-QUANTUM-MECHANICS-1925-1927
+D-MATRIX-MECHANICS --equivalent-to--> D-WAVE-MECHANICS
+D-HAMILTONIAN-MECHANICS-1834 --provides-formal-structure-for--> D-QUANTUM-MECHANICS-1925-1927
+BORN-RULE --maps--> QUANTUM-STATE
+BORN-RULE --maps-to--> OUTCOME-PROBABILITIES
+NONCOMMUTATION --implies--> UNCERTAINTY-RELATION
+D-QUANTUM-MECHANICS-1925-1927 --supersedes--> R-BOHR-SOMMERFELD
+D-QUANTUM-MECHANICS-1925-1927 --retains-limit--> CLASSICAL-MECHANICS
+D-QUANTUM-MECHANICS-1925-1927 --is-extended-to-quantized-fields-by--> D-QFT-FIELD-QUANTIZATION-1927
+D-QUANTUM-MECHANICS-1925-1927 --instantiates--> P-03
+```
 
 ## Sources
 

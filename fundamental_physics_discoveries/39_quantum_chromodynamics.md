@@ -15,6 +15,10 @@
 
 QCD is a non-Abelian \(SU(3)_c\) gauge theory in which quarks carry color and gluons themselves carry color charge. Its coupling weakens at short distance— asymptotic freedom—while confinement dominates at long distance.
 
+## Historical problem
+
+Before the focal discovery (1973 asymptotic-freedom formulation), the case confronted a linked set of pressures: Hadron multiplets explained; Extra quantum number resolves statistics. The pathways `R-STRONG-COUPLING-AT-ALL-SCALES`, `R-ABELIAN-COLOR-FORCE`, `R-HADRONIC-BOOTSTRAP`, `R-PARTON-MODEL-WITHOUT-DYNAMICS` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Strong interaction of quarks and gluons was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem/development | Transition |
@@ -25,6 +29,14 @@ QCD is a non-Abelian \(SU(3)_c\) gauge theory in which quarks carry color and gl
 | `TS-NONABELIAN` | Early 1970s | Color gauge theory formulated | Gluons mediate force |
 | `TS-ASYMPTOTIC-FREEDOM` | 1973 | Negative beta function derived | Scaling behavior explained |
 | `TS-JETS-LATTICE` | 1970s onward | Gluon jets and numerical QCD | Precision strong-interaction program |
+
+## Knowledge assets
+
+- `A-QUARKS`: fractional-charge constituents.
+- `A-COLOR`: three-valued gauge charge.
+- `A-YANG-MILLS`: non-Abelian gauge fields.
+- `A-SCALING`: parton behavior.
+- `A-RENORMALIZATION-GROUP`: scale-dependent couplings.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -69,15 +81,26 @@ QCD is a non-Abelian \(SU(3)_c\) gauge theory in which quarks carry color and gl
 
 Asymptotic freedom was the discriminator that reconciled parton freedom with strong binding. It did not analytically prove confinement. Acceptance grew through logarithmic scaling violations, three-jet gluon evidence, color factors, quarkonium, and lattice calculations. This staged evidence should replace a single edge from “beta function negative” to “all QCD established.”
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-QUARKS`: fractional-charge constituents.
-- `A-COLOR`: three-valued gauge charge.
-- `A-YANG-MILLS`: non-Abelian gauge fields.
-- `A-SCALING`: parton behavior.
-- `A-RENORMALIZATION-GROUP`: scale-dependent couplings.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-QUARKS`, `A-COLOR`, `A-YANG-MILLS`, `A-SCALING`, `A-RENORMALIZATION-GROUP`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-STRONG-COUPLING-AT-ALL-SCALES` | A scale-independent picture in which the quark interaction remains intrinsically large at both long and arbitrarily short distances, with no weakening at high momentum transfer. | Deep-inelastic scattering shows near-free short-distance behavior. |
+| `R-ABELIAN-COLOR-FORCE` | A QED-like color theory whose gauge bosons do not themselves carry color charge and therefore lack the non-Abelian gluon self-interactions of \(SU(3)_c\). | Does not naturally yield gluon self-interaction and asymptotic freedom needed by data. |
+| `R-HADRONIC-BOOTSTRAP` | “Nuclear democracy” in which no hadron is fundamental and the hadron S-matrix self-consistently generates resonances without quark/gluon constituents. | See the full pathway record above. |
+| `R-PARTON-MODEL-WITHOUT-DYNAMICS` | A kinematic picture of nearly free pointlike constituents inside fast hadrons without a specified gauge interaction governing their radiation and scale dependence. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Strong confinement reframed as scale-dependent interaction. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 QCD Lagrangian:
 
@@ -111,7 +134,7 @@ $$
 
 for the observed number of active flavors. Hence \(\alpha_s\) decreases as momentum scale \(Q\) increases.
 
-### Self-contained running-coupling inference
+#### Self-contained running-coupling inference
 
 Write the one-loop coefficient without absorbing factors of \(\pi\):
 
@@ -154,6 +177,83 @@ For \(n_f<17\), \(\beta_0>0\), so increasing \(Q\) decreases \(\alpha_s\): asymp
 | Derived ultraviolet result | Logarithmically decreasing \(\alpha_s(Q)\) for the observed flavor count. |
 | Empirical bridge | Approximate parton scaling plus calculable logarithmic violations and jets. |
 | Separate nonperturbative claim | Confinement is supported by spectrum, lattice calculations, and phenomenology; it does not follow from one-loop running alone. |
+
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Gauge dynamics generates running coupling and jets
+
+- `P-03` — **Reframe the inherited problem:** Strong confinement reframed as scale-dependent interaction
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Self-interacting gauge bosons accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Strong interaction of quarks and gluons). The case-specific unification was: Quarks, partons, color, and strong force unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Quarks, partons, color, and strong force unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Gauge dynamics generates running coupling and jets
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Quark model retained as low-energy structure. Its quantitative or otherwise discriminating test strategy is: Scaling violations and jet shapes quantitatively test QCD. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Quark model retained as low-energy structure
+
+- `P-06` — **Prioritize discriminating tests:** Scaling violations and jet shapes quantitatively test QCD
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Quarks, partons, color, and strong force unified |
+| `P-02` | Transformative move and generative deduction | Gauge dynamics generates running coupling and jets |
+| `P-03` | Diagnosis of interpolation failure and reframing | Strong confinement reframed as scale-dependent interaction |
+| `P-04` | Transformative representation, ontology, or mechanism | Self-interacting gauge bosons accepted |
+| `P-05` | Retention and limiting recovery | Quark model retained as low-energy structure |
+| `P-06` | Prediction, discrimination, and validation network | Scaling violations and jet shapes quantitatively test QCD |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-QCD-1973` |
+| Focal date | 1973 asymptotic-freedom formulation |
+| Central claim | QCD is a non-Abelian \(SU(3)_c\) gauge theory in which quarks carry color and gluons themselves carry color charge. Its coupling weakens at short distance— asymptotic freedom—while confinement dominates at long distance. |
+| Domain | Strong interaction of quarks and gluons |
+| Epistemic status | Fundamental Standard Model gauge theory of the strong interaction |
+| Generative role | Gauge dynamics generates running coupling and jets |
+| Retained structure | Quark model retained as low-energy structure |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\mathcal{L}_{\mathrm{QCD}}
+=-\frac14F^a_{\mu\nu}F^{a\mu\nu}
++\sum_f\bar q_f(i\gamma^\mu D_\mu-m_f)q_f.
+$$
+
+$$
+F^a_{\mu\nu}
+=\partial_\mu A^a_\nu-\partial_\nu A^a_\mu
++g_sf^{abc}A^b_\mu A^c_\nu,
+$$
+
+$$
+\alpha_s(Q^2)
+\approx
+\frac{1}{b_0\ln(Q^2/\Lambda_{\mathrm{QCD}}^2)},
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
 
 ## Historically novel predictions and deductions
 
@@ -212,33 +312,6 @@ but includes field and kinetic energy.
 ## Limitations and retained status
 
 Confinement is strongly supported and reproduced in lattice calculations, but a full mathematical proof of Yang–Mills mass gap remains open. Perturbation theory fails near \(\Lambda_{\mathrm{QCD}}\); lattice and effective theories are required. Simple constituent-quark models remain useful but approximate.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Quarks, partons, color, and strong force unified |
-| `P-02` | Gauge dynamics generates running coupling and jets |
-| `P-03` | Strong confinement reframed as scale-dependent interaction |
-| `P-04` | Self-interacting gauge bosons accepted |
-| `P-05` | Quark model retained as low-energy structure |
-| `P-06` | Scaling violations and jet shapes quantitatively test QCD |
-
-## Edge list
-
-```text
-A-QUARKS --contributes-to--> D-QCD-1973
-A-COLOR --defines--> SU3C
-A-YANG-MILLS --enables--> D-QCD-1973
-D-YANG-MILLS-1954 --provides-nonabelian-gauge-structure-for--> D-QCD-1973
-GLUON-SELF-INTERACTION --causes--> ASYMPTOTIC-FREEDOM
-ASYMPTOTIC-FREEDOM --explains--> A-SCALING
-D-QCD-1973 --supersedes--> R-ABELIAN-COLOR-FORCE
-D-QCD-1973 --constitutes-strong-sector-of--> D-STANDARD-MODEL-1970S
-V-THREE-JET --supports--> GLUON
-LATTICE-QCD --tests-nonperturbatively--> D-QCD-1973
-D-QCD-1973 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -316,7 +389,9 @@ Confinement should not be paraphrased as a conventional force that merely gets l
 - Treat lattice evidence and mathematical proof as different epistemic nodes.
 - Preserve effective hadron models as useful reductions rather than rivals at all scales.
 
-## Further nonperturbative structure
+## Additional quantitative and epistemic notes
+
+### Further nonperturbative structure
 
 Wilson loops provide a gauge-invariant diagnostic of confinement. An area law,
 
@@ -329,6 +404,22 @@ corresponds to a potential growing approximately as \(V(r)\sim\sigma r\) for hea
 Chiral symmetry supplies another low-energy bridge. Small light-quark masses make the QCD Lagrangian approximately chiral, while the vacuum breaks that symmetry spontaneously; pions behave as pseudo-Goldstone bosons. Chiral perturbation theory then organizes corrections in momenta and quark masses.
 
 QCD also permits a CP-violating \(\theta\) term, yet neutron electric-dipole limits require its coefficient to be extremely small. This strong-CP problem is not a failure of QCD predictions when \(\theta\) is fitted, but it is a major unexplained naturalness feature and motivates axion models.
+
+## Edge list
+
+```text
+A-QUARKS --contributes-to--> D-QCD-1973
+A-COLOR --defines--> SU3C
+A-YANG-MILLS --enables--> D-QCD-1973
+D-YANG-MILLS-1954 --provides-nonabelian-gauge-structure-for--> D-QCD-1973
+GLUON-SELF-INTERACTION --causes--> ASYMPTOTIC-FREEDOM
+ASYMPTOTIC-FREEDOM --explains--> A-SCALING
+D-QCD-1973 --supersedes--> R-ABELIAN-COLOR-FORCE
+D-QCD-1973 --constitutes-strong-sector-of--> D-STANDARD-MODEL-1970S
+V-THREE-JET --supports--> GLUON
+LATTICE-QCD --tests-nonperturbatively--> D-QCD-1973
+D-QCD-1973 --instantiates--> P-03
+```
 
 ## Sources
 

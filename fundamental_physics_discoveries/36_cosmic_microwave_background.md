@@ -15,6 +15,10 @@
 
 An approximately isotropic microwave background discovered as excess antenna temperature matched predictions of relic radiation from a hot early universe. Its spectrum and anisotropies turned cosmology into precision inference about cosmic contents, geometry, and initial fluctuations.
 
+## Historical problem
+
+Before the focal discovery (1964 observation; 1965 publication and interpretation), the case confronted a linked set of pressures: Relic radiation estimated; Persistent excess noise found. The pathways `R-RECEIVER-THERMAL-NOISE`, `R-GROUND-ATMOSPHERE-PICKUP`, `R-GALACTIC-RADIO-FOREGROUND`, `R-STEADY-STATE-NO-PRIMORDIAL-RELIC` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Early-universe relic radiation was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Development | Transition |
@@ -24,6 +28,14 @@ An approximately isotropic microwave background discovered as excess antenna tem
 | `TS-PRINCETON-CONNECTION` | 1965 | Excess linked to cosmological prediction | Discovery papers published jointly in context |
 | `TS-COBE` | 1989–1992 | Black-body spectrum and anisotropy measured | Precision cosmology begins |
 | `TS-WMAP-PLANCK` | 2001 onward | Full-sky spectra measured precisely | Cosmological parameters tightly constrained |
+
+## Knowledge assets
+
+- `A-HOT-BIG-BANG`: early thermal plasma.
+- `A-MICROWAVE-RADIOMETRY`: calibrated antenna temperature.
+- `A-BLACKBODY`: spectral prediction.
+- `A-RECOMBINATION`: photon decoupling.
+- `A-ANGULAR-SPECTRUM`: statistical map analysis.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -75,15 +87,26 @@ An approximately isotropic microwave background discovered as excess antenna tem
 
 Penzias and Wilson's single-frequency excess identified a residual, not by itself a precise black-body spectrum. The cosmological interpretation drew on prior hot-universe prediction and Princeton analysis; FIRAS later supplied the decisive spectral shape. Local-noise elimination and cosmological model comparison are thus separate pathway layers. The steady-state alternative deserves inclusion because it was a coherent expanding cosmology, unlike a static universe, but the CMB made its repair burden severe.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-HOT-BIG-BANG`: early thermal plasma.
-- `A-MICROWAVE-RADIOMETRY`: calibrated antenna temperature.
-- `A-BLACKBODY`: spectral prediction.
-- `A-RECOMBINATION`: photon decoupling.
-- `A-ANGULAR-SPECTRUM`: statistical map analysis.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-HOT-BIG-BANG`, `A-MICROWAVE-RADIOMETRY`, `A-BLACKBODY`, `A-RECOMBINATION`, `A-ANGULAR-SPECTRUM`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-RECEIVER-THERMAL-NOISE` | The specific hypothesis that internal electronics and thermal components generate the excess antenna temperature. | See the full pathway record above. |
+| `R-GROUND-ATMOSPHERE-PICKUP` | The hypothesis that sidelobes, ground emission, or atmospheric microwaves create the excess. | See the full pathway record above. |
+| `R-GALACTIC-RADIO-FOREGROUND` | The hypothesis that unresolved Galactic or extragalactic radio emission accounts for the nearly uniform background. | See the full pathway record above. |
+| `R-STEADY-STATE-NO-PRIMORDIAL-RELIC` | The pre-1965 steady-state cosmology in which the universe has no hot, dense beginning and therefore supplies no primordial thermal relic corresponding to the later CMB interpretation. | A near-isotropic thermal microwave background was naturally predicted by hot-universe calculations but had no comparably specific pre-discovery origin in the steady-state model. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** Instrumental noise reframed as relic signal. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 Planck spectral radiance:
 
@@ -114,6 +137,87 @@ $$
 
 Acoustic-peak positions and heights constrain curvature, baryon density, dark matter, primordial fluctuations, and expansion history.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Expansion and recombination generate spectrum and anisotropies
+
+- `P-03` — **Reframe the inherited problem:** Instrumental noise reframed as relic signal
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** Observable fossil radiation from early universe accepted
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Early-universe relic radiation). The case-specific unification was: Radio noise, thermodynamics, and cosmic history unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Radio noise, thermodynamics, and cosmic history unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Expansion and recombination generate spectrum and anisotropies
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Black-body physics retained on cosmological scales. Its quantitative or otherwise discriminating test strategy is: Spectrum and angular power provide quantitative tests. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Black-body physics retained on cosmological scales
+
+- `P-06` — **Prioritize discriminating tests:** Spectrum and angular power provide quantitative tests
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Radio noise, thermodynamics, and cosmic history unified |
+| `P-02` | Transformative move and generative deduction | Expansion and recombination generate spectrum and anisotropies |
+| `P-03` | Diagnosis of interpolation failure and reframing | Instrumental noise reframed as relic signal |
+| `P-04` | Transformative representation, ontology, or mechanism | Observable fossil radiation from early universe accepted |
+| `P-05` | Retention and limiting recovery | Black-body physics retained on cosmological scales |
+| `P-06` | Prediction, discrimination, and validation network | Spectrum and angular power provide quantitative tests |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-CMB-1964-1965` |
+| Focal date | 1964 observation; 1965 publication and interpretation |
+| Central claim | An approximately isotropic microwave background discovered as excess antenna temperature matched predictions of relic radiation from a hot early universe. Its spectrum and anisotropies turned cosmology into precision inference about cosmic contents, geometry, and initial fluctuations. |
+| Domain | Early-universe relic radiation |
+| Epistemic status | CMB is a near-perfect black-body relic from the hot early universe with measured anisotropies |
+| Generative role | Expansion and recombination generate spectrum and anisotropies |
+| Retained structure | Black-body physics retained on cosmological scales |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+B_\nu(T)
+=\frac{2h\nu^3}{c^2}
+\frac{1}{e^{h\nu/(k_BT)}-1}.
+$$
+
+$$
+T(z)=T_0(1+z).
+$$
+
+$$
+\frac{\Delta T}{T}(\hat{\mathbf n})
+=\sum_{\ell m}a_{\ell m}Y_{\ell m}(\hat{\mathbf n}),
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Cosmic Microwave Background: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 - COBE/FIRAS measured an extraordinarily precise black-body spectrum near \(2.725\ \mathrm{K}\).
@@ -124,30 +228,6 @@ Acoustic-peak positions and heights constrain curvature, baryon density, dark ma
 ## Limitations and retained status
 
 The CMB did not alone prove every detail of a specific Big Bang model. Foreground dust, synchrotron emission, lensing, and calibration require separation. Inflationary interpretation of primordial perturbations is strongly supported but particular inflation models remain under test.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Radio noise, thermodynamics, and cosmic history unified |
-| `P-02` | Expansion and recombination generate spectrum and anisotropies |
-| `P-03` | Instrumental noise reframed as relic signal |
-| `P-04` | Observable fossil radiation from early universe accepted |
-| `P-05` | Black-body physics retained on cosmological scales |
-| `P-06` | Spectrum and angular power provide quantitative tests |
-
-## Edge list
-
-```text
-A-HOT-BIG-BANG --predicts--> RELIC-RADIATION
-A-MICROWAVE-RADIOMETRY --detects--> EXCESS-ANTENNA-TEMPERATURE
-R-LOCAL-NOISE --tested-against--> EXCESS-ANTENNA-TEMPERATURE
-EXCESS-ANTENNA-TEMPERATURE --identified-as--> D-CMB-1964-1965
-V-COBE-SPECTRUM --validates--> CMB-BLACKBODY
-V-CMB-ANISOTROPY --supports--> STRUCTURE-SEEDS
-D-CMB-1964-1965 --supports--> HOT-EXPANDING-UNIVERSE
-D-CMB-1964-1965 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -217,7 +297,9 @@ Inflation offers an influential mechanism for producing nearly scale-invariant, 
 - Distinguish the monopole spectrum, kinematic dipole, intrinsic temperature anisotropy, polarization, and lensing maps.
 - Do not infer a unique early-universe mechanism from consistency with a broad class of primordial spectra.
 
-## Further data interpretation
+## Additional quantitative and epistemic notes
+
+### Further data interpretation
 
 The angular spectrum is not a literal plot of objects at multipole \(\ell\); roughly, \(\ell\) corresponds to angular scales near \(180^\circ/\ell\). Cosmic variance limits precision at low \(\ell\) because only finitely many independent sky modes exist:
 
@@ -229,6 +311,19 @@ $$
 for an ideal full-sky Gaussian field. This uncertainty cannot be removed merely by building a quieter instrument.
 
 Spectral-distortion bounds are also historical evidence. Energy injection too late to thermalize would create \(\mu\)- or \(y\)-type departures from a black body; FIRAS's tight limits constrain many exotic histories. The CMB therefore tests both the standard thermal narrative and proposed new particles or energy release. Parameter inference combines a likelihood with priors and a cosmological model, so values quoted as “measured by Planck” should retain that conditional structure.
+
+## Edge list
+
+```text
+A-HOT-BIG-BANG --predicts--> RELIC-RADIATION
+A-MICROWAVE-RADIOMETRY --detects--> EXCESS-ANTENNA-TEMPERATURE
+R-LOCAL-NOISE --tested-against--> EXCESS-ANTENNA-TEMPERATURE
+EXCESS-ANTENNA-TEMPERATURE --identified-as--> D-CMB-1964-1965
+V-COBE-SPECTRUM --validates--> CMB-BLACKBODY
+V-CMB-ANISOTROPY --supports--> STRUCTURE-SEEDS
+D-CMB-1964-1965 --supports--> HOT-EXPANDING-UNIVERSE
+D-CMB-1964-1965 --instantiates--> P-03
+```
 
 ## Sources
 

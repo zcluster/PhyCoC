@@ -15,6 +15,10 @@
 
 De Broglie proposed that the wave–quantum relation known for radiation should be reciprocal: a material particle with energy \(E\) and momentum \(p\) is associated with frequency and wavelength satisfying \(E=\hbar\omega\) and \(p=\hbar k\), hence \(\lambda=h/p\). This supplied a phase-based explanation for quantum conditions and directly stimulated Schrödinger's wave mechanics. Electron diffraction later confirmed the predicted wavelength. Modern quantum theory retains the relations while replacing the picture of a localized classical particle accompanied by an ordinary mechanical wave with a quantum state whose amplitudes generate interference and whose localized detections exchange particle-like energy and momentum.
 
+## Historical problem
+
+Before the focal discovery (1923 notes; 25 November 1924 thesis defense), the case confronted a linked set of pressures: Matter is particulate; light and fields are wave-like; Planck, Einstein and Compton show discrete radiation exchange. The pathways `R-CLASSICAL-MATTER-PARTICLES-ONLY`, `R-WAVES-REQUIRE-MATERIAL-MEDIUM`, `R-BOHR-SOMMERFELD-QUANTIZATION-AS-POSTULATE`, `R-RADIATION-DUALITY-WITHOUT-MATTER-RECIPROCITY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Quantum foundations, matter-wave kinematics, electron diffraction, and the transition from old quantum theory to wave mechanics was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Problem | Transition |
@@ -25,6 +29,15 @@ De Broglie proposed that the wave–quantum relation known for radiation should 
 | `TS-DE-BROGLIE` | 1923–1924 | Seek a relativistically coherent reciprocity between matter and radiation | Every free material quantum receives a phase wave with \(\lambda=h/p\) |
 | `TS-ELECTRON-DIFFRACTION` | 1927 | Test whether electron beams possess the predicted wavelength | Crystal diffraction validates matter-wave kinematics |
 | `TS-WAVE-MECHANICS` | 1926 onward | Convert matter-wave phase into a general dynamical theory | Schrödinger states, Born probabilities, and later quantum fields supersede a literal classical-wave picture |
+
+## Knowledge assets
+
+- `A-PLANCK-EINSTEIN`: radiation quanta obey \(E=h\nu=\hbar\omega\).
+- `A-PHOTON-MOMENTUM`: Einstein and Compton associate radiation momentum with wavelength.
+- `A-SPECIAL-RELATIVITY`: energy and momentum form a four-vector.
+- `A-BOHR-SOMMERFELD`: atomic stability and spectra require integer quantum conditions.
+- `A-WAVE-PHASE`: interference depends on phase differences and wavelength.
+- `A-BRAGG-DIFFRACTION`: crystals provide calibrated periodic structures for wavelength measurement.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -92,16 +105,26 @@ De Broglie proposed that the wave–quantum relation known for radiation should 
 | Radiation duality without matter reciprocity | Restrict wave–quantum complementarity to light | Misses electron wavelength and the matter–radiation symmetry | Photon energy and momentum |
 | **Discovery/current: de Broglie matter-wave relations** | Associate phase \(p_\mu x^\mu/\hbar\) with every free quantum and test \(\lambda=h/p\) | Relations do not alone provide measurement theory, interactions, or a complete ontology | Fundamental kinematics inside quantum mechanics and QFT |
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-PLANCK-EINSTEIN`: radiation quanta obey \(E=h\nu=\hbar\omega\).
-- `A-PHOTON-MOMENTUM`: Einstein and Compton associate radiation momentum with wavelength.
-- `A-SPECIAL-RELATIVITY`: energy and momentum form a four-vector.
-- `A-BOHR-SOMMERFELD`: atomic stability and spectra require integer quantum conditions.
-- `A-WAVE-PHASE`: interference depends on phase differences and wavelength.
-- `A-BRAGG-DIFFRACTION`: crystals provide calibrated periodic structures for wavelength measurement.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and equations
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-PLANCK-EINSTEIN`, `A-PHOTON-MOMENTUM`, `A-SPECIAL-RELATIVITY`, `A-BOHR-SOMMERFELD`, `A-WAVE-PHASE`, `A-BRAGG-DIFFRACTION`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-CLASSICAL-MATTER-PARTICLES-ONLY` | A mechanical framework in which matter consists exclusively of localized corpuscles following definite trajectories, with state specified by positions and momenta and with no wavelength, phase, or self-interference associated with a freely moving particle. | See the full pathway record above. |
+| `R-WAVES-REQUIRE-MATERIAL-MEDIUM` | The doctrine that every genuine wave must be a deformation or oscillation of a material carrier, analogous to sound in air or elastic waves in a solid, so a matter wave would require a mechanical ether or literal distributed material substance. | See the full pathway record above. |
+| `R-BOHR-SOMMERFELD-QUANTIZATION-AS-POSTULATE` | The old quantum theory in which electrons occupy selected classical orbits and allowed motions satisfy imposed action conditions such as \(\oint p_i\,dq_i=n_i h\), without a general wave-phase mechanism explaining why nonintegral orbits are excluded. | See the full pathway record above. |
+| `R-RADIATION-DUALITY-WITHOUT-MATTER-RECIPROCITY` | An asymmetric quantum picture in which electromagnetic radiation can exhibit both interference and localized quanta, but massive particles remain exclusively corpuscular and receive no reciprocal frequency or wavelength relation. | See the full pathway record above. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Why are only some orbits allowed?” becomes “Which matter-wave phases satisfy the boundary condition?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 De Broglie's proposal can be written
 
@@ -164,6 +187,87 @@ $$
 
 when relativistic corrections are negligible.
 
+**Patterns demonstrated:**
+
+- `P-02` — **Make the new structure generative:** Bohr's integer orbit conditions become consequences of phase closure
+
+- `P-03` — **Reframe the inherited problem:** “Why are only some orbits allowed?” becomes “Which matter-wave phases satisfy the boundary condition?”
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** A wavelength and phase are assigned to entities previously treated as particles only
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Quantum foundations, matter-wave kinematics, electron diffraction, and the transition from old quantum theory to wave mechanics). The case-specific unification was: Relativity, radiation quanta, atomic quantization, and wave phase are unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Relativity, radiation quanta, atomic quantization, and wave phase are unified
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Bohr's integer orbit conditions become consequences of phase closure
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Classical momentum, optical interference, and old action quantization survive in a broader framework. Its quantitative or otherwise discriminating test strategy is: \(\lambda=h/p\) predicts diffraction angles from independently measured voltage and lattice spacing. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Classical momentum, optical interference, and old action quantization survive in a broader framework
+
+- `P-06` — **Prioritize discriminating tests:** \(\lambda=h/p\) predicts diffraction angles from independently measured voltage and lattice spacing
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Relativity, radiation quanta, atomic quantization, and wave phase are unified |
+| `P-02` | Transformative move and generative deduction | Bohr's integer orbit conditions become consequences of phase closure |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Why are only some orbits allowed?” becomes “Which matter-wave phases satisfy the boundary condition?” |
+| `P-04` | Transformative representation, ontology, or mechanism | A wavelength and phase are assigned to entities previously treated as particles only |
+| `P-05` | Retention and limiting recovery | Classical momentum, optical interference, and old action quantization survive in a broader framework |
+| `P-06` | Prediction, discrimination, and validation network | \(\lambda=h/p\) predicts diffraction angles from independently measured voltage and lattice spacing |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-DE-BROGLIE-MATTER-WAVES-1924` |
+| Focal date | 1923 notes; 25 November 1924 thesis defense |
+| Central claim | De Broglie proposed that the wave–quantum relation known for radiation should be reciprocal: a material particle with energy \(E\) and momentum \(p\) is associated with frequency and wavelength satisfying \(E=\hbar\omega\) and \(p=\hbar k\), hence \(\lambda=h/p\). This supplied a phase-based explanation for quantum conditions and directly stimulated Schrödinger's wave mechanics. Electron diffraction later confirmed the predicted wavelength. Modern quantum theory retains the relations while replacing the picture of a localized classical particle accompanied by an ordinary mechanical wave with a quantum state whose amplitudes generate interference and whose localized detections exchange particle-like energy and momentum. |
+| Domain | Quantum foundations, matter-wave kinematics, electron diffraction, and the transition from old quantum theory to wave mechanics |
+| Epistemic status | Matter-wave interference and diffraction are experimentally established; “wave–particle duality” is a historically useful but potentially misleading label rather than two alternating classical substances |
+| Generative role | Bohr's integer orbit conditions become consequences of phase closure |
+| Retained structure | Classical momentum, optical interference, and old action quantization survive in a broader framework |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+E=\hbar\omega,
+\qquad
+\mathbf p=\hbar\mathbf k,
+$$
+
+$$
+\lambda=\frac{2\pi}{|\mathbf k|}
+=\frac{h}{|\mathbf p|}.
+$$
+
+$$
+E^2=p^2c^2+m^2c^4.
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** De Broglie Matter Waves and Wave–Particle Duality: Historical Knowledge Graph.
+
 ## Validation and explanatory gains
 
 Davisson and Germer observed sharply structured scattering of electrons from nickel crystals in 1927. For electrons near \(54\,\mathrm{eV}\), the de Broglie wavelength is approximately
@@ -184,31 +288,6 @@ The de Broglie relations are kinematic and do not by themselves specify a wave e
 “Wave–particle duality” should not be encoded as an object switching secretly between a tiny classical ball and a classical material wave. A quantum state evolves and interferes according to amplitudes; experimental arrangements produce localized detection records with quantized energy and momentum. Which-path information can suppress observable interference because alternatives become distinguishable or entangled with an environment.
 
 The phase velocity \(c^2/v\) is not a superluminal particle or information speed. A plane wave is completely delocalized, whereas a localized packet requires a range of \(k\) values and normally spreads. De Broglie's later pilot-wave program is a distinct interpretive theory with additional guidance structure; experimental confirmation of \(\lambda=h/p\) does not uniquely validate that ontology over other empirically equivalent quantum interpretations.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Relativity, radiation quanta, atomic quantization, and wave phase are unified |
-| `P-02` | Bohr's integer orbit conditions become consequences of phase closure |
-| `P-03` | “Why are only some orbits allowed?” becomes “Which matter-wave phases satisfy the boundary condition?” |
-| `P-04` | A wavelength and phase are assigned to entities previously treated as particles only |
-| `P-05` | Classical momentum, optical interference, and old action quantization survive in a broader framework |
-| `P-06` | \(\lambda=h/p\) predicts diffraction angles from independently measured voltage and lattice spacing |
-
-## Edge list
-
-```text
-A-PLANCK-EINSTEIN --is-reciprocally-extended-by--> D-DE-BROGLIE-MATTER-WAVES-1924
-A-SPECIAL-RELATIVITY --constrains--> MATTER-WAVE-FOUR-PHASE
-A-BOHR-SOMMERFELD --is-reframed-by--> PHASE-CLOSURE
-D-DE-BROGLIE-MATTER-WAVES-1924 --predicts--> ELECTRON-DIFFRACTION
-DAVISSON-GERMER-1927 --validates--> DE-BROGLIE-WAVELENGTH
-G-P-THOMSON-1927 --independently-validates--> ELECTRON-DIFFRACTION
-D-DE-BROGLIE-MATTER-WAVES-1924 --contributes-to--> SCHRODINGER-WAVE-MECHANICS
-CLASSICAL-TRAJECTORY --emerges-when--> WAVELENGTH-AND-COHERENCE-ARE-UNRESOLVED
-D-DE-BROGLIE-MATTER-WAVES-1924 --instantiates--> P-03
-```
 
 ## Extended historical investigation
 
@@ -326,6 +405,24 @@ Classical particle mechanics is therefore retained as an emergent approximation 
 - Represent diffraction as a comparison among independently measured voltage, lattice spacing, angle, and intensity—not as a bare visual resemblance.
 - Preserve Bohr–Sommerfeld action quantization as a retained semiclassical structure while rejecting exact classical atomic orbits.
 - Separate empirical confirmation of matter-wave kinematics from later pilot-wave interpretation.
+
+## Additional quantitative and epistemic notes
+
+No separate supplemental note block was present before this schema migration. Case-specific equations, provenance cautions, approximation domains, and historical qualifications remain in the discovery-process reconstruction, extended investigation, and limitations sections.
+
+## Edge list
+
+```text
+A-PLANCK-EINSTEIN --is-reciprocally-extended-by--> D-DE-BROGLIE-MATTER-WAVES-1924
+A-SPECIAL-RELATIVITY --constrains--> MATTER-WAVE-FOUR-PHASE
+A-BOHR-SOMMERFELD --is-reframed-by--> PHASE-CLOSURE
+D-DE-BROGLIE-MATTER-WAVES-1924 --predicts--> ELECTRON-DIFFRACTION
+DAVISSON-GERMER-1927 --validates--> DE-BROGLIE-WAVELENGTH
+G-P-THOMSON-1927 --independently-validates--> ELECTRON-DIFFRACTION
+D-DE-BROGLIE-MATTER-WAVES-1924 --contributes-to--> SCHRODINGER-WAVE-MECHANICS
+CLASSICAL-TRAJECTORY --emerges-when--> WAVELENGTH-AND-COHERENCE-ARE-UNRESOLVED
+D-DE-BROGLIE-MATTER-WAVES-1924 --instantiates--> P-03
+```
 
 ## Sources
 

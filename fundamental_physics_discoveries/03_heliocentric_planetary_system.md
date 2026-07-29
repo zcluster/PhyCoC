@@ -16,6 +16,10 @@
 
 Copernicus reorganized the known planetary system by treating Earth as a rotating planet orbiting the Sun. This explained the ordering of planets and retrograde motion through relative motion. It was not yet modern celestial mechanics: the model retained circular motions and epicyclic devices and initially did not decisively outperform all geocentric predictions.
 
+## Historical problem
+
+Before the focal discovery (1543 (*De revolutionibus*)), the case confronted a linked set of pressures: Geocentric mathematical astronomy; Aristarchus offered an early heliocentric proposal; Deferents, epicycles, and equant fit planetary longitude. The pathways `R-PTOLEMAIC-GEOCENTRIC`, `R-ARISTARCHAN-HELIOCENTRISM`, `R-HERACLIDEAN-PARTIAL-GEOKINETIC` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Planetary ordering and kinematic astronomy was to construct a more generative account without importing later validation evidence into the original inference.
+
 ## Time slices
 
 | Node | Period | Framework | Transition |
@@ -26,6 +30,14 @@ Copernicus reorganized the known planetary system by treating Earth as a rotatin
 | `TS-TYCHONIC` | Late 16th century | Planets orbit Sun; Sun orbits stationary Earth | Preserved observational advantages without terrestrial motion |
 | `TS-TELESCOPIC-KEPLERIAN` | 1609–1630s | Phases of Venus, Jovian moons, elliptical laws | Undermined simple Ptolemaic structure and corrected Copernican circles |
 | `TS-NEWTONIAN` | 1687 onward | Universal dynamics explains heliocentric approximations | Barycentric, interacting system replaces a literally fixed Sun |
+
+## Knowledge assets
+
+- `A-PLANETARY-TABLES`: accumulated positional astronomy.
+- `A-RETROGRADE`: patterned apparent reversals of outer planets.
+- `A-PERIODS`: synodic and sidereal cycles.
+- `A-GREEK-GEOMETRY`: circles, epicycles, and geometrical model construction.
+- `A-PRINT`: reliable dissemination of tables and arguments.
 
 ## Alternative, incomplete, or superseded pathways
 
@@ -69,15 +81,25 @@ Copernicus reorganized the known planetary system by treating Earth as a rotatin
 
 The phases of Venus later ruled out the simplest Ptolemaic arrangement but were compatible with Tycho's post-1543 system; they did not single-handedly prove Earth's motion. Tycho's system is therefore discussed in the later validation narrative, not misclassified here as a predecessor. Likewise, early Copernican tables were not uniformly more accurate because Copernicus retained circles and many parameters. The winning pathway accumulated advantages across planetary ordering, telescope observations, dynamics, and eventually direct terrestrial-motion signatures. This prevents a knowledge graph from drawing a false one-edge transition from `VENUS-PHASES` to `EARTH-MOVES`.
 
-## Knowledge assets
+## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
-- `A-PLANETARY-TABLES`: accumulated positional astronomy.
-- `A-RETROGRADE`: patterned apparent reversals of outer planets.
-- `A-PERIODS`: synodic and sidereal cycles.
-- `A-GREEK-GEOMETRY`: circles, epicycles, and geometrical model construction.
-- `A-PRINT`: reliable dissemination of tables and arguments.
+This section reconstructs the case as a sequence of discovery operations. **Interpolation** extends or repairs inherited models while leaving their main assumptions intact. **Transformation** changes the representation, ontology, mechanism, or question. **Extrapolation** applies the transformed structure beyond the observations used to construct it. Pattern labels are attached only after the case evidence that supports them.
 
-## Discovery node and mathematical inference
+### Starting ingredients
+
+The admissible pre-discovery input nodes are `A-PLANETARY-TABLES`, `A-RETROGRADE`, `A-PERIODS`, `A-GREEK-GEOMETRY`, `A-PRINT`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+
+### What interpolation could and could not achieve
+
+| Pathway | What the inherited search retained | Why it remained insufficient |
+|---|---|---|
+| `R-PTOLEMAIC-GEOCENTRIC` | A geocentric mathematical astronomy with a stationary Earth near the center, in which planets move on deferents, epicycles, eccentrics, and equant-governed circles chosen to reproduce observed longitudes. | See the full pathway record above. |
+| `R-ARISTARCHAN-HELIOCENTRISM` | Aristarchus of Samos's third-century-BCE proposal that Earth rotates and travels around the Sun, known mainly through later reports and not developed into the predictive planetary system Copernicus published. | No surviving quantitative model connects the proposal to a complete set of planetary tables or a dynamics. |
+| `R-HERACLIDEAN-PARTIAL-GEOKINETIC` | Ancient and late-medieval partial-motion schemes associated with a rotating Earth or with Mercury and Venus circling the Sun while the Sun circles Earth, without making Earth an orbiting planet. | They did not unify all planets through Earth's annual orbital motion. |
+
+**Pattern demonstrated — `P-03` (reframe the inherited question):** “Why does Mars reverse?” reframed through observer motion. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+
+### Transformative move
 
 `D-COPERNICAN-SYSTEM-1543` reclassified Earth from fixed center to moving planet. In modern vector notation, apparent geocentric direction depends on relative position:
 
@@ -98,12 +120,82 @@ $$
 
 where \(S\) is the interval between repeated alignments, \(P_E\) Earth's sidereal period, and \(P_P\) the planet's sidereal period. This modern expression captures the Copernican inference that observed cycles encode relative orbital rates.
 
-## Conceptual transformations
+**Patterns demonstrated:**
 
-1. `CT-EARTH-PLANET`: Earth becomes one planet among others.
-2. `CT-RELATIVE-RETROGRADE`: apparent reversal becomes an observer-motion effect.
-3. `CT-PLANET-ORDER`: orbital periods and elongations determine a coherent ordering.
-4. `CT-SCALE-PARALLAX`: absent observed stellar parallax implies very distant stars rather than necessarily a stationary Earth.
+- `P-02` — **Make the new structure generative:** Periodic appearances generated by relative orbital motion
+
+- `P-03` — **Reframe the inherited problem:** “Why does Mars reverse?” reframed through observer motion
+
+- `P-04` — **Permit a new representation, ontology, or mechanism:** A moving Earth tolerated despite counterintuitive ontology
+
+### Extrapolative generalization
+
+The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Planetary ordering and kinematic astronomy). The case-specific unification was: Earth and planets unified as one class of orbiting bodies. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+
+**Patterns demonstrated:**
+
+- `P-01` — **Unify previously separated domains or phenomena:** Earth and planets unified as one class of orbiting bodies
+
+- `P-02` — **Generate consequences rather than merely redescribe inputs:** Periodic appearances generated by relative orbital motion
+
+### Retention, predictions, and discriminating tests
+
+The reconstruction preserves rather than erases successful predecessor content: Ptolemaic geometrical and observational assets retained. Its quantitative or otherwise discriminating test strategy is: Model comparison shifted toward tables, phases, parallax, and dynamics. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+
+**Patterns demonstrated:**
+
+- `P-05` — **Recover valid predecessor structure or limiting behavior:** Ptolemaic geometrical and observational assets retained
+
+- `P-06` — **Prioritize discriminating tests:** Model comparison shifted toward tables, phases, parallax, and dynamics
+
+### Discovery-pattern synthesis
+
+This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+
+| Pattern | Process stage | Case-specific instantiation |
+|---|---|---|
+| `P-01` | Extrapolative generalization | Earth and planets unified as one class of orbiting bodies |
+| `P-02` | Transformative move and generative deduction | Periodic appearances generated by relative orbital motion |
+| `P-03` | Diagnosis of interpolation failure and reframing | “Why does Mars reverse?” reframed through observer motion |
+| `P-04` | Transformative representation, ontology, or mechanism | A moving Earth tolerated despite counterintuitive ontology |
+| `P-05` | Retention and limiting recovery | Ptolemaic geometrical and observational assets retained |
+| `P-06` | Prediction, discrimination, and validation network | Model comparison shifted toward tables, phases, parallax, and dynamics |
+
+## Discovery node and consolidated formalism
+
+This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
+
+| Field | Canonical content |
+|---|---|
+| Node | `D-COPERNICAN-SYSTEM-1543` |
+| Focal date | 1543 (*De revolutionibus*) |
+| Central claim | Copernicus reorganized the known planetary system by treating Earth as a rotating planet orbiting the Sun. This explained the ordering of planets and retrograde motion through relative motion. It was not yet modern celestial mechanics: the model retained circular motions and epicyclic devices and initially did not decisively outperform all geocentric predictions. |
+| Domain | Planetary ordering and kinematic astronomy |
+| Epistemic status | The claim that Earth is a planet orbiting the Sun is correct; Copernicus's uniform circular machinery was superseded |
+| Generative role | Periodic appearances generated by relative orbital motion |
+| Retained structure | Ptolemaic geometrical and observational assets retained |
+
+Key formal relations, consolidated from the derivation above:
+
+$$
+\mathbf{r}_{P/E}(t)=\mathbf{r}_{P/S}(t)-\mathbf{r}_{E/S}(t).
+$$
+
+$$
+\frac{1}{S}
+=\left|
+\frac{1}{P_E}-\frac{1}{P_P}
+\right|,
+$$
+
+The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
+
+## Historically novel predictions and deductions
+
+This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+
+- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
+- **Case:** Heliocentric Planetary System: Historical Knowledge Graph.
 
 ## Validation and explanatory gains
 
@@ -121,34 +213,6 @@ $$
 ## Limitations and retained status
 
 Copernicus retained uniform circular motion, used epicyclic constructions, and did not possess a gravitational dynamics. The Solar System is not exactly “Sun-centered”: all bodies interact, and coordinate origins can be chosen for convenience. The invariant physical achievement is Earth's planetary motion and the explanatory use of relative motion, not a privileged absolute center.
-
-## Discovery patterns
-
-| ID | Instantiation |
-|---|---|
-| `P-01` | Earth and planets unified as one class of orbiting bodies |
-| `P-02` | Periodic appearances generated by relative orbital motion |
-| `P-03` | “Why does Mars reverse?” reframed through observer motion |
-| `P-04` | A moving Earth tolerated despite counterintuitive ontology |
-| `P-05` | Ptolemaic geometrical and observational assets retained |
-| `P-06` | Model comparison shifted toward tables, phases, parallax, and dynamics |
-
-## Edge list
-
-```text
-A-PLANETARY-TABLES --constrains--> D-COPERNICAN-SYSTEM-1543
-A-RETROGRADE --explained-by--> CT-RELATIVE-RETROGRADE
-R-PTOLEMAIC-GEOCENTRIC --competes-with--> D-COPERNICAN-SYSTEM-1543
-R-TYCHONIC --competes-with--> D-COPERNICAN-SYSTEM-1543
-D-COPERNICAN-SYSTEM-1543 --reclassifies--> CT-EARTH-PLANET
-D-COPERNICAN-SYSTEM-1543 --precedes--> D-KEPLER-LAWS
-D-KEPLER-LAWS --repairs-circular-orbits-of--> D-COPERNICAN-SYSTEM-1543
-V-VENUS-PHASES --supports-solar-orbit-of--> VENUS
-V-STELLAR-ABERRATION --supports--> CT-EARTH-PLANET
-V-STELLAR-PARALLAX --supports--> CT-EARTH-PLANET
-D-COPERNICAN-SYSTEM-1543 --instantiates--> P-03
-D-COPERNICAN-SYSTEM-1543 --instantiates--> P-05
-```
 
 ## Extended historical investigation
 
@@ -276,6 +340,32 @@ Historical acceptance was distributed over astronomy, mechanics, optics, instrum
 - Keep `TYCHONIC` as a serious observational competitor in the relevant time slice.
 - Distinguish `HELIOCENTRIC-COORDINATES` from `ABSOLUTE-SOLAR-CENTER`.
 - Link acceptance to a cumulative evidence network rather than a single telescope observation.
+
+## Additional quantitative and epistemic notes
+
+### Conceptual transformations
+
+1. `CT-EARTH-PLANET`: Earth becomes one planet among others.
+2. `CT-RELATIVE-RETROGRADE`: apparent reversal becomes an observer-motion effect.
+3. `CT-PLANET-ORDER`: orbital periods and elongations determine a coherent ordering.
+4. `CT-SCALE-PARALLAX`: absent observed stellar parallax implies very distant stars rather than necessarily a stationary Earth.
+
+## Edge list
+
+```text
+A-PLANETARY-TABLES --constrains--> D-COPERNICAN-SYSTEM-1543
+A-RETROGRADE --explained-by--> CT-RELATIVE-RETROGRADE
+R-PTOLEMAIC-GEOCENTRIC --competes-with--> D-COPERNICAN-SYSTEM-1543
+R-TYCHONIC --competes-with--> D-COPERNICAN-SYSTEM-1543
+D-COPERNICAN-SYSTEM-1543 --reclassifies--> CT-EARTH-PLANET
+D-COPERNICAN-SYSTEM-1543 --precedes--> D-KEPLER-LAWS
+D-KEPLER-LAWS --repairs-circular-orbits-of--> D-COPERNICAN-SYSTEM-1543
+V-VENUS-PHASES --supports-solar-orbit-of--> VENUS
+V-STELLAR-ABERRATION --supports--> CT-EARTH-PLANET
+V-STELLAR-PARALLAX --supports--> CT-EARTH-PLANET
+D-COPERNICAN-SYSTEM-1543 --instantiates--> P-03
+D-COPERNICAN-SYSTEM-1543 --instantiates--> P-05
+```
 
 ## Sources
 
