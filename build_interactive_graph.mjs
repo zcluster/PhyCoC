@@ -10,29 +10,29 @@ const historyDir = path.dirname(fileURLToPath(import.meta.url));
 const corpusDir = path.join(historyDir, "fundamental_physics_discoveries");
 const outputPath = path.join(historyDir, "index.html");
 const mainlineFiles = new Set([
-  "55_fermat_principle.md",
-  "08_newtonian_mechanics.md",
-  "56_lagrangian_mechanics.md",
-  "57_hamiltonian_mechanics.md",
+  "06_fermat_principle.md",
+  "07_newtonian_mechanics.md",
+  "08_lagrangian_mechanics.md",
+  "10_hamiltonian_mechanics.md",
   "11_thermodynamics_and_energy_conservation.md",
-  "58_second_law_of_thermodynamics.md",
-  "12_classical_statistical_mechanics.md",
+  "12_second_law_of_thermodynamics.md",
+  "15_classical_statistical_mechanics.md",
   "13_maxwell_electromagnetic_field_theory.md",
-  "19_special_relativity.md",
-  "24_general_relativity.md",
-  "26_quantum_mechanics.md",
-  "27_quantum_statistics.md",
-  "32_quantum_electrodynamics.md",
+  "17_special_relativity.md",
+  "19_general_relativity.md",
+  "24_quantum_mechanics.md",
+  "22_quantum_statistics.md",
+  "30_quantum_electrodynamics.md",
   "38_electroweak_theory.md",
-  "39_quantum_chromodynamics.md",
+  "37_quantum_chromodynamics.md",
   "40_standard_model.md",
-  "47_quantum_field_theory.md",
-  "50_yang_mills_gauge_theory.md",
+  "23_quantum_field_theory.md",
+  "31_yang_mills_gauge_theory.md",
 ]);
 const categoryOverrides = new Map([
-  ["55_fermat_principle.md", "Quantum & radiation"],
-  ["56_lagrangian_mechanics.md", "Mechanics & astronomy"],
-  ["57_hamiltonian_mechanics.md", "Mechanics & astronomy"],
+  ["06_fermat_principle.md", "Quantum & radiation"],
+  ["08_lagrangian_mechanics.md", "Mechanics & astronomy"],
+  ["10_hamiltonian_mechanics.md", "Mechanics & astronomy"],
 ]);
 const files = fs
   .readdirSync(corpusDir)
@@ -155,7 +155,7 @@ function parsePatterns(text) {
   const output = [];
   for (const row of parseTable(body)) {
     const id = row[0]?.match(/P-\d{2}/)?.[0];
-    if (id) output.push({ id, detail: row[2] || row.slice(1).join(" — ") });
+    if (id) output.push({ id, detail: row[3] || row[2] || row.slice(1).join(" — ") });
   }
   return output;
 }

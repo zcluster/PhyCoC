@@ -87,7 +87,7 @@ The admissible pre-discovery input nodes are `A-LEVERS`, `A-GEOMETRY`, `A-DENSIT
 | `R-SHAPE-ONLY-FLOATING` | A qualitative model that treats an object's external geometry or intrinsic “lightness” as the direct cause of floating, without balancing its weight against the weight of displaced fluid. | It misses density ratios and the role of displaced fluid. |
 | `R-ELEMENTAL-PLACE` | The Aristotelian theory that each terrestrial element has a natural region in the cosmos and that unforced bodies rise or fall because their dominant element tends toward that natural place. | It did not give a precise magnitude for buoyant support. |
 
-**Pattern demonstrated — `P-03` (reframe the inherited question):** “Why is the object light in water?” reframed as a fluid-force balance. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+**Pattern demonstrated — `P-01` (reframe the inherited question):** “Why is the object light in water?” reframed as a fluid-force balance. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
 
@@ -132,11 +132,11 @@ Here \(\mathbf n\) is the outward normal and \(\mathbf g\) is the downward gravi
 
 **Patterns demonstrated:**
 
-- `P-02` — **Make the new structure generative:** Practical regularities upgraded to a force-generating pressure account
+- `P-01` — **Reframe the inherited problem:** “Why is the object light in water?” reframed as a fluid-force balance
 
-- `P-03` — **Reframe the inherited problem:** “Why is the object light in water?” reframed as a fluid-force balance
+- `P-02` — **Permit a new representation, ontology, or mechanism:** Distributed pressure accepted as the effective mechanism
 
-- `P-04` — **Permit a new representation, ontology, or mechanism:** Distributed pressure accepted as the effective mechanism
+- `P-03` — **Make the new structure generative:** Practical regularities upgraded to a force-generating pressure account
 
 ### Extrapolative generalization
 
@@ -144,9 +144,9 @@ The transformative move became a broader physical discovery when it was asserted
 
 **Patterns demonstrated:**
 
-- `P-01` — **Unify previously separated domains or phenomena:** Floating and sinking unified by density and displacement
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** Practical regularities upgraded to a force-generating pressure account
 
-- `P-02` — **Generate consequences rather than merely redescribe inputs:** Practical regularities upgraded to a force-generating pressure account
+- `P-04` — **Unify previously separated domains or phenomena:** Floating and sinking unified by density and displacement
 
 ### Retention, predictions, and discriminating tests
 
@@ -160,17 +160,16 @@ The reconstruction preserves rather than erases successful predecessor content: 
 
 ### Discovery-pattern synthesis
 
-This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+Pattern IDs are ordered by their typical first role in the reconstructed discovery process, not by an arbitrary vocabulary-list order. The canonical definition is identical across the corpus; the final three columns record how that fixed operation appears and where its supporting evidence is located in this case.
 
-| Pattern | Process stage | Case-specific instantiation |
-|---|---|---|
-| `P-01` | Extrapolative generalization | Floating and sinking unified by density and displacement |
-| `P-02` | Transformative move and generative deduction | Practical regularities upgraded to a force-generating pressure account |
-| `P-03` | Diagnosis of interpolation failure and reframing | “Why is the object light in water?” reframed as a fluid-force balance |
-| `P-04` | Transformative representation, ontology, or mechanism | Distributed pressure accepted as the effective mechanism |
-| `P-05` | Retention and limiting recovery | Geometric volume and balance reasoning retained |
-| `P-06` | Prediction, discrimination, and validation network | Predictions are directly testable by weighing and volume measurement |
-
+| Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
+|---|---|---|---|---|
+| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | “Why is the object light in water?” reframed as a fluid-force balance | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Distributed pressure accepted as the effective mechanism | [Transformative move](#transformative-move) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Practical regularities upgraded to a force-generating pressure account | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Floating and sinking unified by density and displacement | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Geometric volume and balance reasoning retained | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
+| `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Predictions are directly testable by weighing and volume measurement | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
 
 This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
@@ -358,7 +357,7 @@ R-ELEMENTAL-PLACE --superseded-by--> D-ARCHIMEDES-BUOYANCY
 EQ-HYDROSTATIC-PRESSURE --derives--> EQ-BUOYANT-FORCE
 EQ-BUOYANT-FORCE --explains--> V-FLOATING
 D-ARCHIMEDES-BUOYANCY --retained-within--> S-CONTINUUM-HYDROSTATICS
-D-ARCHIMEDES-BUOYANCY --instantiates--> P-02
+D-ARCHIMEDES-BUOYANCY --instantiates--> P-03
 D-ARCHIMEDES-BUOYANCY --instantiates--> P-06
 ```
 

@@ -93,7 +93,7 @@ The admissible pre-discovery input nodes are `A-GR-COSMOLOGY`, `A-QFT-VACUUM`, `
 | `R-UNEXPLAINED-SPECIAL-INITIAL-CONDITIONS` | A non-dynamical cosmological account that takes the early universe's extreme homogeneity, near-flatness, and absence of unwanted relics as specially chosen initial boundary conditions. | See the full pathway record above. |
 | `R-MIXMASTER-CHAOTIC-COSMOLOGY` | Misner's late-1960s Mixmaster/chaotic-cosmology program, which sought to erase primordial anisotropy and homogenize the universe through complex pre-expansion gravitational dynamics without an inflationary phase. | Dissipation and causal mixing were insufficient to generate the observed large-scale homogeneity under generic conditions. |
 
-**Pattern demonstrated — `P-03` (reframe the inherited question):** Initial coincidences reframed as dynamical outcomes. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+**Pattern demonstrated — `P-01` (reframe the inherited question):** Initial coincidences reframed as dynamical outcomes. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
 
@@ -144,11 +144,11 @@ $$
 
 **Patterns demonstrated:**
 
-- `P-02` — **Make the new structure generative:** Accelerated dynamics generates flatness and perturbations
+- `P-01` — **Reframe the inherited problem:** Initial coincidences reframed as dynamical outcomes
 
-- `P-03` — **Reframe the inherited problem:** Initial coincidences reframed as dynamical outcomes
+- `P-02` — **Permit a new representation, ontology, or mechanism:** Vacuum-like negative pressure accepted
 
-- `P-04` — **Permit a new representation, ontology, or mechanism:** Vacuum-like negative pressure accepted
+- `P-03` — **Make the new structure generative:** Accelerated dynamics generates flatness and perturbations
 
 ### Extrapolative generalization
 
@@ -156,9 +156,9 @@ The transformative move became a broader physical discovery when it was asserted
 
 **Patterns demonstrated:**
 
-- `P-01` — **Unify previously separated domains or phenomena:** Particle fields, gravity, and cosmic initial conditions unified
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** Accelerated dynamics generates flatness and perturbations
 
-- `P-02` — **Generate consequences rather than merely redescribe inputs:** Accelerated dynamics generates flatness and perturbations
+- `P-04` — **Unify previously separated domains or phenomena:** Particle fields, gravity, and cosmic initial conditions unified
 
 ### Retention, predictions, and discriminating tests
 
@@ -172,17 +172,16 @@ The reconstruction preserves rather than erases successful predecessor content: 
 
 ### Discovery-pattern synthesis
 
-This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+Pattern IDs are ordered by their typical first role in the reconstructed discovery process, not by an arbitrary vocabulary-list order. The canonical definition is identical across the corpus; the final three columns record how that fixed operation appears and where its supporting evidence is located in this case.
 
-| Pattern | Process stage | Case-specific instantiation |
-|---|---|---|
-| `P-01` | Extrapolative generalization | Particle fields, gravity, and cosmic initial conditions unified |
-| `P-02` | Transformative move and generative deduction | Accelerated dynamics generates flatness and perturbations |
-| `P-03` | Diagnosis of interpolation failure and reframing | Initial coincidences reframed as dynamical outcomes |
-| `P-04` | Transformative representation, ontology, or mechanism | Vacuum-like negative pressure accepted |
-| `P-05` | Retention and limiting recovery | Hot Big Bang retained after reheating |
-| `P-06` | Prediction, discrimination, and validation network | Spectral tilt, Gaussianity, curvature, and tensors test models |
-
+| Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
+|---|---|---|---|---|
+| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | Initial coincidences reframed as dynamical outcomes | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Vacuum-like negative pressure accepted | [Transformative move](#transformative-move) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Accelerated dynamics generates flatness and perturbations | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Particle fields, gravity, and cosmic initial conditions unified | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Hot Big Bang retained after reheating | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
+| `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Spectral tilt, Gaussianity, curvature, and tensors test models | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
 
 This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
@@ -332,7 +331,7 @@ ACCELERATED-EXPANSION --suppresses--> SPATIAL-CURVATURE
 QUANTUM-FLUCTUATIONS --stretched-by--> ACCELERATED-EXPANSION
 STRETCHED-FLUCTUATIONS --seed--> CMB-ANISOTROPY
 R-OLD-INFLATION --superseded-by--> SLOW-ROLL-VARIANTS
-D-COSMIC-INFLATION-1980S --instantiates--> P-02
+D-COSMIC-INFLATION-1980S --instantiates--> P-03
 ```
 
 ## Sources

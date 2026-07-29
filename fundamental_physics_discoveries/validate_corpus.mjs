@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 import { chronology } from "./chronology_data.mjs";
 
 const corpusDir = path.dirname(fileURLToPath(import.meta.url));
-const newtonFile = "08_newtonian_mechanics.md";
+const newtonFile = "07_newtonian_mechanics.md";
 const files = fs
   .readdirSync(corpusDir)
   .filter((name) => /^\d{2}_.+\.md$/.test(name))
@@ -18,24 +18,24 @@ const canonicalFiles = files.filter((name) => name !== newtonFile);
 // The additional checks guard against future edits collapsing a generative case into
 // a list of final formulas with no reproducible inference chain.
 const coreBackboneFiles = [
-  "08_newtonian_mechanics.md",
+  "07_newtonian_mechanics.md",
   "11_thermodynamics_and_energy_conservation.md",
-  "12_classical_statistical_mechanics.md",
+  "15_classical_statistical_mechanics.md",
   "13_maxwell_electromagnetic_field_theory.md",
-  "19_special_relativity.md",
-  "24_general_relativity.md",
-  "26_quantum_mechanics.md",
-  "27_quantum_statistics.md",
-  "32_quantum_electrodynamics.md",
+  "17_special_relativity.md",
+  "19_general_relativity.md",
+  "24_quantum_mechanics.md",
+  "22_quantum_statistics.md",
+  "30_quantum_electrodynamics.md",
   "38_electroweak_theory.md",
-  "39_quantum_chromodynamics.md",
+  "37_quantum_chromodynamics.md",
   "40_standard_model.md",
-  "47_quantum_field_theory.md",
-  "50_yang_mills_gauge_theory.md",
-  "55_fermat_principle.md",
-  "56_lagrangian_mechanics.md",
-  "57_hamiltonian_mechanics.md",
-  "58_second_law_of_thermodynamics.md",
+  "23_quantum_field_theory.md",
+  "31_yang_mills_gauge_theory.md",
+  "06_fermat_principle.md",
+  "08_lagrangian_mechanics.md",
+  "10_hamiltonian_mechanics.md",
+  "12_second_law_of_thermodynamics.md",
 ];
 
 const requiredHeadings = [
@@ -58,6 +58,12 @@ const requiredHeadings = [
 ];
 
 const errors = [];
+const fileSet = new Set(files);
+for (const chronologyFile of Object.keys(chronology)) {
+  if (!fileSet.has(chronologyFile)) {
+    errors.push(`${chronologyFile}: stale chronology record without a canonical case file`);
+  }
+}
 const graphIds = new Map();
 const centralNodes = new Map();
 let pathwayCount = 0;
@@ -65,6 +71,54 @@ let sourceCount = 0;
 
 function fail(file, message) {
   errors.push(`${file}: ${message}`);
+}
+
+const patternDefinitions = new Map([
+  ["P-01", "Reframe the inherited question after diagnosing interpolation failure"],
+  ["P-02", "Admit a new representation, ontology, or mechanism form"],
+  ["P-03", "Upgrade empirical regularities into a generative mechanism"],
+  ["P-04", "Unify previously separated domains"],
+  ["P-05", "Retain valid structures of predecessor theories"],
+  ["P-06", "Prioritize quantitative testability"],
+]);
+
+function checkPatternSchema(file, text) {
+  const processStart = text.indexOf("## Discovery-process reconstruction: interpolation, transformation, and extrapolation");
+  const processEnd = processStart < 0 ? -1 : text.indexOf("\n## ", processStart + 3);
+  const processBlock = processStart < 0 ? "" : text.slice(processStart, processEnd < 0 ? text.length : processEnd);
+  const firstAppearance = [];
+  for (const match of processBlock.matchAll(/P-0[1-6]/g)) {
+    if (!firstAppearance.includes(match[0])) firstAppearance.push(match[0]);
+  }
+  if (firstAppearance.join(",") !== [...patternDefinitions.keys()].join(",")) {
+    fail(file, `first pattern appearances are not process ordered: ${firstAppearance.join(" → ")}`);
+  }
+  const start = text.indexOf("### Discovery-pattern synthesis");
+  const end = start < 0 ? -1 : text.indexOf("\n## ", start);
+  if (start < 0 || end < 0) {
+    fail(file, "missing bounded Discovery-pattern synthesis section");
+    return;
+  }
+  const block = text.slice(start, end);
+  const header = "| Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |";
+  if (!block.includes(header)) {
+    fail(file, "discovery-pattern synthesis does not use the canonical five-column header");
+  }
+  const rows = block.split("\n").filter((line) => /^\| `P-0[1-6]` \|/.test(line));
+  if (rows.length !== patternDefinitions.size) {
+    fail(file, `discovery-pattern synthesis has ${rows.length} rows instead of 6`);
+    return;
+  }
+  [...patternDefinitions].forEach(([id, definition], index) => {
+    const expectedPrefix = `| \`${id}\` | ${definition} |`;
+    if (!rows[index]?.startsWith(expectedPrefix)) {
+      fail(file, `pattern row ${index + 1} does not encode canonical ${id} definition or order`);
+    }
+    const cells = rows[index]?.replace(/^\||\|$/g, "").split(/(?<!\\)\|/).map((cell) => cell.trim()) || [];
+    if (cells.length !== 5 || cells.some((cell) => cell === "")) {
+      fail(file, `${id} synthesis row must contain five non-empty cells`);
+    }
+  });
 }
 
 function checkMathBlocks(file, text) {
@@ -146,6 +200,7 @@ for (const file of canonicalFiles) {
       fail(file, `missing discovery-pattern label ${pattern}`);
     }
   }
+  checkPatternSchema(file, text);
 
   const pathwayIndexes = [];
   lines.forEach((line, index) => {
@@ -303,12 +358,18 @@ if (new Set(readmeCaseLinks).size !== readmeCaseLinks.length) {
 const chronologicalFiles = [...files].sort(
   (left, right) => chronology[left].discovery[1] - chronology[right].discovery[1],
 );
+chronologicalFiles.forEach((file, index) => {
+  const expectedPrefix = `${String(index + 1).padStart(2, "0")}_`;
+  if (!file.startsWith(expectedPrefix)) {
+    fail("corpus", `${file} should carry chronological prefix ${expectedPrefix.slice(0, 2)}`);
+  }
+});
 if (readmeCaseLinks.join("\u0000") !== chronologicalFiles.join("\u0000")) {
   fail("README.md", "ordered discovery list does not follow sortable focal chronology");
 }
 
-if (files.length !== 58) {
-  fail("corpus", `expected 58 case files, found ${files.length}`);
+if (files.length !== 41) {
+  fail("corpus", `expected 41 theory-centered case files, found ${files.length}`);
 }
 
 const historyDir = path.dirname(corpusDir);
@@ -433,6 +494,7 @@ function escapeForHtmlCheck(value) {
 const newtonPath = path.join(corpusDir, newtonFile);
 const newton = fs.readFileSync(newtonPath, "utf8");
 const newtonLines = newton.split("\n");
+checkPatternSchema(newtonFile, newton);
 const newtonGraphId = newton.match(/\| Graph ID \| `([^`]+)` \|/)?.[1];
 const newtonCentralNode = newton.match(/\| Central node \| `([^`]+)`/)?.[1];
 if (!newtonGraphId) {

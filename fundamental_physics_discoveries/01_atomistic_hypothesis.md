@@ -88,7 +88,7 @@ The admissible pre-discovery input nodes are `A-PARMENIDEAN-PROBLEM`, `A-ELEATIC
 | `R-CONTINUOUS-MATTER` | A continuum theory in which a material body fills space continuously and can be divided without reaching discrete, physically indivisible constituents. | It did not by itself explain discrete chemical combination or Brownian fluctuations. |
 | `R-FOUR-ELEMENTS` | An Aristotelian material theory in which terrestrial substances are mixtures or transformations of earth, water, air, and fire, characterized by combinations of hot/cold and wet/dry qualities. | It lacked quantitative composition laws and stable microscopic entities. |
 
-**Pattern demonstrated — `P-03` (reframe the inherited question):** “How can being change?” reframed as “How can persistent units rearrange?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+**Pattern demonstrated — `P-01` (reframe the inherited question):** “How can being change?” reframed as “How can persistent units rearrange?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
 
@@ -112,11 +112,11 @@ The inference pattern is explanatory compression: many changes can be represente
 
 **Patterns demonstrated:**
 
-- `P-02` — **Make the new structure generative:** Qualitative regularities recast as consequences of configurations
+- `P-01` — **Reframe the inherited problem:** “How can being change?” reframed as “How can persistent units rearrange?”
 
-- `P-03` — **Reframe the inherited problem:** “How can being change?” reframed as “How can persistent units rearrange?”
+- `P-02` — **Permit a new representation, ontology, or mechanism:** Void and invisible constituents accepted as new ontology
 
-- `P-04` — **Permit a new representation, ontology, or mechanism:** Void and invisible constituents accepted as new ontology
+- `P-03` — **Make the new structure generative:** Qualitative regularities recast as consequences of configurations
 
 ### Extrapolative generalization
 
@@ -124,9 +124,9 @@ The transformative move became a broader physical discovery when it was asserted
 
 **Patterns demonstrated:**
 
-- `P-01` — **Unify previously separated domains or phenomena:** Diverse material changes unified as constituent rearrangements
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** Qualitative regularities recast as consequences of configurations
 
-- `P-02` — **Generate consequences rather than merely redescribe inputs:** Qualitative regularities recast as consequences of configurations
+- `P-04` — **Unify previously separated domains or phenomena:** Diverse material changes unified as constituent rearrangements
 
 ### Retention, predictions, and discriminating tests
 
@@ -140,17 +140,16 @@ The reconstruction preserves rather than erases successful predecessor content: 
 
 ### Discovery-pattern synthesis
 
-This table is the compact output of the reconstruction above. It records where each transferable operation occurs; it is not an independent replacement for the historical reasoning.
+Pattern IDs are ordered by their typical first role in the reconstructed discovery process, not by an arbitrary vocabulary-list order. The canonical definition is identical across the corpus; the final three columns record how that fixed operation appears and where its supporting evidence is located in this case.
 
-| Pattern | Process stage | Case-specific instantiation |
-|---|---|---|
-| `P-01` | Extrapolative generalization | Diverse material changes unified as constituent rearrangements |
-| `P-02` | Transformative move and generative deduction | Qualitative regularities recast as consequences of configurations |
-| `P-03` | Diagnosis of interpolation failure and reframing | “How can being change?” reframed as “How can persistent units rearrange?” |
-| `P-04` | Transformative representation, ontology, or mechanism | Void and invisible constituents accepted as new ontology |
-| `P-05` | Retention and limiting recovery | Permanence retained while observable change was reinterpreted |
-| `P-06` | Prediction, discrimination, and validation network | Weak in antiquity; later atomism became scientific only through quantitative tests |
-
+| Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
+|---|---|---|---|---|
+| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | “How can being change?” reframed as “How can persistent units rearrange?” | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Void and invisible constituents accepted as new ontology | [Transformative move](#transformative-move) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Qualitative regularities recast as consequences of configurations | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Diverse material changes unified as constituent rearrangements | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Permanence retained while observable change was reinterpreted | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
+| `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Weak in antiquity; later atomism became scientific only through quantitative tests | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
 
 This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
@@ -300,9 +299,9 @@ D-ATOMISM-ANCIENT --precedes--> D-CHEMICAL-ATOMISM
 D-CHEMICAL-ATOMISM --quantitatively-reframes--> D-ATOMISM-ANCIENT
 D-MODERN-ATOMIC-PHYSICS --retains-structure-of--> D-ATOMISM-ANCIENT
 D-MODERN-ATOMIC-PHYSICS --rejects-literal-indivisibility-of--> O-ATOMS
-D-ATOMISM-ANCIENT --instantiates--> P-01
-D-ATOMISM-ANCIENT --instantiates--> P-03
 D-ATOMISM-ANCIENT --instantiates--> P-04
+D-ATOMISM-ANCIENT --instantiates--> P-01
+D-ATOMISM-ANCIENT --instantiates--> P-02
 ```
 
 ## Sources
