@@ -6,13 +6,17 @@ The long-term research goal is to help discovery-oriented AI **propose new conce
 
 ## Preview
 
-Explore the [live knowledge graph](https://phy-coc.vercel.app/) or open a [rendered case study](https://phy-coc.vercel.app/case_pages/17_special_relativity.html). These screenshots show the graph filtered to cosmos and spacetime, followed by the Chain of Concepts and extrapolative-generalization sections of the special-relativity case.
+Explore the [live knowledge graph](https://phy-coc.vercel.app/) or open the [special-relativity case](https://phy-coc.vercel.app/case_pages/17_special_relativity.html). Click a screenshot to view it at full size.
 
-[![PhyCoC cross-case knowledge graph filtered to cosmos and spacetime](assets/screenshots/knowledge-graph.png)](https://phy-coc.vercel.app/)
+| Full discovery graph | Timeline with edge labels |
+|:---:|:---:|
+| [![All 41 discovery cases in the cross-case graph](assets/screenshots/overview-graph.png)](assets/screenshots/overview-graph.png) | [![All cases arranged chronologically with edge labels enabled](assets/screenshots/timeline-edge-labels.png)](assets/screenshots/timeline-edge-labels.png) |
+| Cosmos and spacetime filter | Special relativity expanded into its local branches |
+| [![Graph filtered to cosmos and spacetime discoveries](assets/screenshots/knowledge-graph.png)](assets/screenshots/knowledge-graph.png) | [![Special relativity expanded to show concept states, transformations, evidence, and competing paths](assets/screenshots/expanded-special-relativity.png)](assets/screenshots/expanded-special-relativity.png) |
 
-[![Special relativity Chain of Concepts with concept states](assets/screenshots/concept-chain.png)](https://phy-coc.vercel.app/case_pages/17_special_relativity.html#chain-of-concepts)
-
-[![Special relativity extrapolative generalization with source and target domains, novel consequences, and failure conditions](assets/screenshots/extrapolative-generalization.png)](https://phy-coc.vercel.app/case_pages/17_special_relativity.html#extrapolative-generalization)
+| Chain of Concepts in the case reader | Extrapolative generalization in the case reader |
+|:---:|:---:|
+| [![Special relativity Chain of Concepts with concept states](assets/screenshots/concept-chain.png)](assets/screenshots/concept-chain.png) | [![Special relativity extrapolative generalization with source and target domains, novel consequences, and failure conditions](assets/screenshots/extrapolative-generalization.png)](assets/screenshots/extrapolative-generalization.png) |
 
 ## What a case contains
 
