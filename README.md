@@ -4,6 +4,16 @@ PhyCoC is a source-grounded corpus and interactive graph of **41 theory-centered
 
 The long-term research goal is to help discovery-oriented AI **propose new conceptual shifts and disciplined extrapolations**, not merely reproduce the historical answers in this corpus. The historical cases are examples for studying and evaluating those operations; completing a case template is not evidence that an AI can independently discover a new theory.
 
+## Preview
+
+Explore the [live knowledge graph](https://phy-coc.vercel.app/) or open a [rendered case study](https://phy-coc.vercel.app/case_pages/17_special_relativity.html). These screenshots show the graph filtered to cosmos and spacetime, followed by the Chain of Concepts and extrapolative-generalization sections of the special-relativity case.
+
+[![PhyCoC cross-case knowledge graph filtered to cosmos and spacetime](assets/screenshots/knowledge-graph.png)](https://phy-coc.vercel.app/)
+
+[![Special relativity Chain of Concepts with concept states](assets/screenshots/concept-chain.png)](https://phy-coc.vercel.app/case_pages/17_special_relativity.html#chain-of-concepts)
+
+[![Special relativity extrapolative generalization with source and target domains, novel consequences, and failure conditions](assets/screenshots/extrapolative-generalization.png)](https://phy-coc.vercel.app/case_pages/17_special_relativity.html#extrapolative-generalization)
+
 ## What a case contains
 
 Each case begins with a dated problem and the knowledge available at that time. It then records plausible predecessor pathways and why their successes were insufficient. The discovery-process reconstruction has three distinct layers:
