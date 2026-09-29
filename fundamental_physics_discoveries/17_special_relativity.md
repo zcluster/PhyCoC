@@ -95,7 +95,9 @@ These ingredients did not uniquely force Einstein's interpretation. Lorentz ethe
 
 **Unification prerequisite:** The juxtaposition of `A-MAXWELL` and `A-RELATIVITY-PRINCIPLE` created the unification target later realized in the extrapolative-generalization stage. At this point it was a problem constraint, not yet an achieved discovery pattern, so no pattern ID is assigned prematurely.
 
-### Assumption-versus-conclusion ledger
+#### Assumption-versus-conclusion ledger
+
+This cross-stage ledger distinguishes starting resources from the focal postulates, deductions, extrapolations, and later tests; its later rows are not additional 1905 starting ingredients.
 
 | Logical role | Content |
 |---|---|
@@ -144,6 +146,120 @@ If distant clocks are synchronized using exchanged light signals, observers in r
 **Pattern demonstrated — `P-01` (reframe the inherited question):** The failure was not merely an incorrect coefficient within Galilean or ether kinematics. It exposed that “How is absolute time concealed?” presupposed the contested structure. The productive replacement was “How do inertial observers operationally assign space and time using physical clocks and signals?”
 
 ### Transformative move
+
+The transformation is recorded in two layers: the Chain of Concepts reconstructs the reinterpretation of Lorentz-form coordinates, and the formal consolidation states the resulting kinematics and derivation without repeating that conceptual search. The displayed chain is one selected path through an underlying concept-evolution graph, not a claim that the historical process was strictly linear.
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by resources available at that step; later validation and canonical endpoint language are excluded from its justification. This chain exhibits one historically admissible route through the conceptual gap, not a transcript of Einstein's or a model's hidden reasoning and not a claim that the endpoint was logically forced. Concept states are graph nodes; transitions are typed, auditable edges.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-SR-01` | Galilean spacetime and Newtonian absolute time coexist uneasily with Maxwellian light propagation. |
+| `CS-SR-02` | The spacetime transformation law is opened for revision under relativity and light-propagation constraints. |
+| `CS-SR-03` | Lorentz covariance organizes the effects, while ether and non-ether interpretations remain open. |
+| `CS-SR-04` | Lorentz local time is identified with readings of operationally synchronized clocks. |
+| `CS-SR-05` | Observable Lorentz coordinates are retained while empirically idle absolute-time privilege is provisionally removed. |
+| `CS-SR-06` | Lorentz transformations relate inertial frames with equal physical status. |
+| `CS-SR-07` | Distant simultaneity is frame-relative, while local coincidences and causal signaling remain objective. |
+| `CS-SR-08` | Frame-dependent coordinates are organized by invariant spacetime relations and Lorentz symmetry. |
+
+##### `CT-SR-01`: `CS-SR-01` → `CS-SR-02` — Localize the Maxwell–Galileo conflict in kinematics
+
+- **Input model:** Newtonian absolute time and Galilean transformations organize inertial motion, while Maxwellian electrodynamics contains the finite speed (c).
+- **Pressure:** Galilean velocity addition maps a light ray from (c) to (c-v) and does not preserve the form of Maxwell's equations.
+- **Protected structure:** Inertial-frame equivalence in mechanics, Maxwell's successful field equations, spatial homogeneity, and the low-speed success of Galilean kinematics.
+- **Hidden assumption:** The transformation of space and time must remain Galilean even when it conflicts with the electromagnetic propagation law.
+- **Operation / change type:** `constraint_change` — Localize the anomaly in the inherited coordinate transformation rather than altering the measured value of (c) separately in each experiment.
+- **Output model:** The spacetime transformation law becomes an open theoretical variable constrained by both relativity and light propagation.
+- **Local justification:** The conflict follows directly from pre-1905 Maxwell equations and Galilean velocity composition; no later clock or particle tests are needed.
+- **Cost/uncertainty:** Ether dynamics or source-dependent light theories remain possible repairs; the diagnosis does not yet select Lorentz kinematics.
+- **Branch status:** `selected`; ether dynamics and source-dependent light theories remain live alternatives at this state.
+- **Next question:** Which transformation preserves both inertial-frame equivalence and the two directions (x=\pm ct)?
+
+##### `CT-SR-02`: `CS-SR-02` → `CS-SR-03` — Replace separate compensations with one covariance transformation
+
+- **Input model:** Ether-based repairs use local time, contraction, and dynamical effects to suppress observable motion through a preferred frame.
+- **Pressure:** Several physical systems must exhibit coordinated compensations, while the Lorentz-form equations already organize those effects together.
+- **Protected structure:** Maxwell covariance, linearity from homogeneity, reciprocity between uniformly moving descriptions, and the Galilean low-speed limit.
+- **Hidden assumption:** Each null result requires an independent material conspiracy rather than reflecting one common transformation rule.
+- **Operation / change type:** `coalescence` — Treat preservation of (x=\pm ct) as a constraint on a single linear coordinate map and derive its remaining scale from reciprocity, replacing several compensations with one covariance structure.
+- **Output model:** The Lorentz transformation supplies one generative covariance structure, although it may still be interpreted inside an ether theory.
+- **Local justification:** Lorentz's 1904 paper supplied the transformation and covariance setting; Poincaré's 5 June 1905 short note explicitly states that the transformations together with spatial rotations must form a group (printed p. 1505, PDF p. 3). These predate Einstein's June 1905 paper, but the later Palermo memoir is not a pre-Einstein input.
+- **Cost/uncertainty:** Mathematical economy alone does not determine whether transformed coordinates are apparent quantities or equally physical measurements.
+- **Branch status:** `selected`; Lorentz's ether interpretation and an equal-frame interpretation branch from the same formal result.
+- **Next question:** What time do actual observers construct when they synchronize spatially separated clocks?
+
+##### `CT-SR-03`: `CS-SR-03` → `CS-SR-04` — Take the clock-reading meaning of local time seriously
+
+- **Input model:** Lorentz theory distinguishes a hidden true ether time (t) from frame-dependent local time (t').
+- **Pressure:** An observer can read physical clocks and exchange signals but cannot directly inspect the stipulated ether time.
+- **Protected structure:** The Lorentz time coordinate, finite signal propagation, and reproducible comparison of distant events.
+- **Hidden assumption:** The clock-reading meaning of local time must remain subordinate to a separately privileged true time.
+- **Operation / change type:** `reinterpretation` — Start from the already available light-signal clock procedure and treat the time it displays as physically consequential, while leaving the status of a hidden true time for the next step.
+- **Output model:** Lorentz local time is recognized as the time physically displayed by synchronized clocks in that inertial frame; this alone does not yet remove ether time.
+- **Local justification:** Poincaré's 1900 paper explicitly described clocks synchronized by exchanged light signals as displaying local time to first order in the frame velocity, while still distinguishing that time from true time. This is a pre-1905 resource, not a procedure first invented in Einstein's 1905 paper; the exact transformation was supplied by later pre-1905 work, while equal-status reinterpretation belongs to `CT-SR-04` and `CT-SR-05`. This reconstructs an available conceptual path, not evidence that Einstein read that paper.
+- **Cost/uncertainty:** The equal one-way travel-time convention cannot by itself prove that no hidden preferred time exists.
+- **Branch status:** `selected`; a hidden preferred time remains an empirically equivalent interpretive branch.
+- **Next question:** What explanatory or predictive work remains for an additional true time that no clock records?
+
+##### `CT-SR-04`: `CS-SR-04` → `CS-SR-05` — Audit the empirical role of hidden absolute time
+
+- **Input model:** Observable rods and clocks instantiate Lorentz coordinates, while an extra ether coordinate system is declared uniquely true.
+- **Pressure:** The preferred quantities add an explanatory layer without changing the ordinary observable predictions generated by the Lorentz transformation.
+- **Protected structure:** All Lorentz-covariant empirical content and the possibility of comparing measurements between inertial frames.
+- **Hidden assumption:** A quantity can remain physically privileged solely because the inherited ontology names it true, even when it has no independent measurement rule.
+- **Operation / change type:** `reweighting` — Remove the empirically idle privilege provisionally and compare the reduced interpretation with the two-layer ether interpretation.
+- **Output model:** Every inertial frame's Lorentz coordinates become candidates for equally physical space and time descriptions.
+- **Local justification:** The audit uses the contemporary equivalence of observable predictions, not later experimental superiority attributed retrospectively to special relativity.
+- **Cost/uncertainty:** Lorentz ether theory remains empirically viable; ontological economy is an abductive advantage rather than a decisive experiment.
+- **Branch status:** `selected`; the Lorentz-ether branch is retained as an empirically viable competitor rather than marked refuted.
+- **Next question:** Does the mathematical relation between frames support equal status, or does it covertly identify one frame as fundamental?
+
+##### `CT-SR-05`: `CS-SR-05` → `CS-SR-06` — Elevate reciprocity from calculation to physical symmetry
+
+- **Input model:** Lorentz transformations relate two inertial frames, but the ether interpretation assigns only one of them fundamental rest.
+- **Pressure:** Reversing (v) gives the inverse transformation, and the observable laws do not identify which member of the reciprocal pair is truly stationary.
+- **Protected structure:** Relativity of uniform motion, Lorentz covariance, continuity at (v=0), and the group-like composition of transformations.
+- **Hidden assumption:** A preferred frame must be retained even though the operative transformation and observable laws treat the frames symmetrically.
+- **Operation / change type:** `reinterpretation` — Promote the manifest reciprocity of the formalism into the principle that all inertial frames have equal physical status.
+- **Output model:** The Lorentz transformation is read as a relation between equally valid observers rather than between true quantities and distorted appearances.
+- **Local justification:** The transformation's inverse structure and the relativity principle were pre-1905 resources; Minkowski geometry is not required for this step.
+- **Cost/uncertainty:** Symmetry can be interpreted instrumentally, so this promotion still involves a substantive physical judgment.
+- **Branch status:** `selected`; an instrumental use of Lorentz covariance remains a possible weaker commitment.
+- **Next question:** If both time coordinates are physical, which separated events can both observers call simultaneous?
+
+##### `CT-SR-06`: `CS-SR-06` → `CS-SR-07` — Accept frame-dependent simultaneity
+
+- **Input model:** Each inertial frame uses physically realized Lorentz coordinates, yet universal simultaneity remains an inherited expectation.
+- **Pressure:** The term (-vx/c^2) in (t') makes two spatially separated events with (Delta t=0) generally satisfy (Delta t'\ne0).
+- **Protected structure:** Local clock readings, causal signal exchange, and agreement on events where clocks meet.
+- **Hidden assumption:** Different observers must share one global simultaneity relation even when their operational synchronization rules do not produce it.
+- **Operation / change type:** `differentiation` — Treat simultaneity as a frame-relative relation defined by each inertial synchronization procedure, separating local coincidence from distant simultaneity.
+- **Output model:** Coordinate time and distant simultaneity become frame-dependent without treating either observer's clocks as malfunctioning.
+- **Local justification:** This follows algebraically from the Lorentz time coordinate once both frames' measurements are granted equal physical status.
+- **Cost/uncertainty:** Everyday temporal intuition is surrendered, and causal objectivity must be rebuilt from something other than universal time order.
+- **Branch status:** `selected`; absolute simultaneity survives only by adding unmeasured structure.
+- **Next question:** Which structure remains invariant when separate spatial distances and time intervals change between frames?
+
+##### `CT-SR-07`: `CS-SR-07` → `CS-SR-08` — Replace absolute coordinates with invariant spacetime relations
+
+- **Input model:** Space, time, and simultaneity depend on inertial frame, creating the risk that the theory has discarded objective structure altogether.
+- **Pressure:** Direct substitution shows that (c^2t^2-x^2-y^2-z^2) is unchanged by Lorentz transformations.
+- **Protected structure:** Observer-independent event coincidences, causal relations, invariant light propagation, and the recovered Galilean regime for (v/c\ll1).
+- **Hidden assumption:** Objectivity must reside in separately absolute spatial and temporal coordinates rather than in relations preserved across frames.
+- **Operation / change type:** `replacement` — Substitute the invariant interval and Lorentz symmetry for absolute space, absolute time, and absolute simultaneity.
+- **Output model:** An ether-independent relativistic kinematics with frame-dependent coordinates and invariant spacetime structure.
+- **Local justification:** Interval invariance is an algebraic consequence of the already derived transformation; the later Minkowski geometric representation is helpful but not construction input here.
+- **Cost/uncertainty:** This establishes inertial kinematics, not gravitation, and it does not yet prove that every non-electromagnetic law respects Lorentz symmetry.
+- **Branch status:** `selected`; extension from inertial kinematics to all physical laws is deferred to explicit extrapolative tests.
+- **Next question:** Should the same symmetry constrain mechanics, energy, momentum, clocks, and every admissible inertial-frame law?
+
+#### Formal consolidation
 
 Einstein reorganized the theory around two principles:
 
@@ -230,65 +346,35 @@ $$
 s^2=c^2t^2-x^2-y^2-z^2.
 $$
 
-The key transformation was interpretive: Lorentz-form coordinates ceased to be merely distorted measurements relative to hidden absolute quantities and became the spacetime coordinates physically instantiated by inertial rods, clocks, and synchronization procedures.
+The consolidated result is an ether-independent kinematics: Lorentz-form coordinates are the spacetime coordinates physically instantiated by inertial rods, clocks, and synchronization procedures, while the interval supplies invariant structure.
 
 **Patterns demonstrated:**
 
 - `P-01` — **Reframe the question:** operational spacetime construction replaces explanation by an empirically inaccessible ether frame.
 - `P-02` — **Accept a new representation while preserving invariants:** coordinate time and simultaneity become frame-dependent, while the spacetime interval supplies invariant structure.
-- `P-03` — **Make one mathematical structure generative:** the Lorentz transformation produces relative simultaneity and, when applied systematically, the clock, length, and velocity consequences below.
+- `P-03` — **Make one mathematical structure generative:** the Lorentz transformation produces relative simultaneity and constrains further clock, length, and velocity consequences.
 
 ### Extrapolative generalization
 
-The postulates were elevated from a way of organizing electrodynamics to universal constraints on physical law. This was the principal extrapolative commitment: not only Maxwell's equations, but mechanics, clocks, particle dynamics, energy, momentum, and every admissible inertial-frame law should respect Lorentz symmetry.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
 
-That commitment generated consequences beyond the immediate construction problem:
+**Risk rule:** Success in the source domain makes an extension worth testing but does not license it automatically. Each record separates the supported domain, the proposed target, a novel consequence, and an explicit failure condition.
 
-#### Time dilation
+#### `EG-SR-01` — Extend Lorentz kinematics from light to all rods, clocks, and motions
 
-For a clock at rest in $S'$, $\Delta x'=0$. Interval invariance gives
+- **Source domain:** Maxwellian light propagation, inertial-frame covariance, synchronization, and the Lorentz transformation constructed from them.
+- **Target domain:** Material rods, physical clocks, massive-particle velocities, and nongravitational processes in arbitrary inertial frames.
+- **Novel consequence:** One transformation should generate time dilation $\Delta t=\gamma\Delta\tau$, length contraction $L=L_0/\gamma$, and velocity composition $u'=(u-v)/(1-uv/c^2)$ rather than requiring separate material compensations.
+- **Failure condition:** The extension fails if a reproducible inertial-frame experiment finds a class of ideal rods, clocks, or nongravitational motions that follows a preferred-frame or non-Lorentz transformation after known environmental and gravitational effects are controlled.
 
-$$
-\Delta t=\gamma\Delta\tau,
-$$
+#### `EG-SR-02` — Extend Lorentz symmetry from kinematics into mechanics and energy
 
-where $\Delta\tau$ is the proper time recorded by the clock.
+- **Source domain:** Lorentz-covariant electrodynamics and the invariant spacetime kinematics consolidated above.
+- **Target domain:** Momentum, energy, radiation exchange, inertia, and the dynamical laws of massive particles.
+- **Novel consequence:** Mechanics should admit the invariant relation $E^2-p^2c^2=m^2c^4$, with rest energy $E_0=mc^2$ and the historically specific prediction that emission of energy $L$ changes inertia by $L/c^2$.
+- **Failure condition:** The extension fails if isolated systems conserve energy and momentum only through a reproducible non-Lorentz law, or if controlled energy transfer changes inertia by an amount incompatible with $\Delta m=\Delta E/c^2$ within the theory's nongravitational domain.
 
-#### Length contraction
-
-For a rod with proper length $L_0$, comparing its endpoints simultaneously in the measuring frame gives
-
-$$
-L=\frac{L_0}{\gamma}.
-$$
-
-#### Velocity composition
-
-Differentiating the Lorentz transformation gives
-
-$$
-u'=\frac{u-v}{1-uv/c^2},
-$$
-
-which maps $u=c$ to $u'=c$ rather than $c-v$.
-
-#### Energy and inertia
-
-Lorentz-covariant mechanics leads to
-
-$$
-E^2-p^2c^2=m^2c^4,
-$$
-
-and therefore
-
-$$
-E_0=mc^2
-$$
-
-for a body at rest. Einstein's separate 1905 radiation-emission argument established the more historically specific result that losing energy $L$ changes a body's inertia by $L/c^2$. Nuclear reactions and annihilation were later tests, not construction inputs.
-
-The extrapolation was risky because these claims applied to physical clocks, unstable particles, radiation, and high-energy matter far beyond the nineteenth-century optical and ether-drift situations that motivated the spacetime problem.
+These commitments reached far beyond the optical and ether-drift situations that motivated the original problem. Later clock, particle, accelerator, nuclear, and annihilation evidence belongs to validation, not to the construction input for either record.
 
 **Patterns demonstrated:**
 
@@ -583,6 +669,25 @@ D-SPECIAL-RELATIVITY-1905 --retains-limit--> R-GALILEAN-TRANSFORMATION
 LORENTZ-SYMMETRY --preserves--> SPACETIME-INTERVAL
 D-SPECIAL-RELATIVITY-1905 --is-locally-embedded-in--> D-GENERAL-RELATIVITY-1915
 
+A-MAXWELL --pressures--> CS-SR-01
+CS-SR-01 --revised-by--> CT-SR-01
+CT-SR-01 --produces--> CS-SR-02
+CS-SR-02 --revised-by--> CT-SR-02
+CT-SR-02 --produces--> CS-SR-03
+CS-SR-03 --revised-by--> CT-SR-03
+CT-SR-03 --produces--> CS-SR-04
+CS-SR-04 --revised-by--> CT-SR-04
+CT-SR-04 --produces--> CS-SR-05
+CS-SR-05 --revised-by--> CT-SR-05
+CT-SR-05 --produces--> CS-SR-06
+CS-SR-06 --revised-by--> CT-SR-06
+CT-SR-06 --produces--> CS-SR-07
+CS-SR-07 --revised-by--> CT-SR-07
+CT-SR-07 --produces--> CS-SR-08
+CS-SR-08 --hands-off-to--> EG-SR-01
+EG-SR-01 --extends-further-to--> EG-SR-02
+EG-SR-02 --is-tested-by--> V-LORENTZ-TEST-NETWORK
+
 A-MAXWELL --is-unified-with--> A-RELATIVITY-PRINCIPLE
 D-SPECIAL-RELATIVITY-1905 --unifies--> MECHANICS-AND-ELECTRODYNAMICS
 MECHANICS-AND-ELECTRODYNAMICS --evidences--> P-04
@@ -621,7 +726,11 @@ D-SPECIAL-RELATIVITY-1905 --instantiates--> P-06
 
 ## Sources
 
-- Einstein Papers Project, [“On the Electrodynamics of Moving Bodies”](https://einsteinpapers.press.princeton.edu/vol2-trans/154).
+- Einstein, [“Zur Elektrodynamik bewegter Körper” (1905 original)](https://doi.org/10.1002/andp.19053221004). The former Einstein Papers Project translation link now redirects to a portal landing page, so this original publisher record is the stable primary anchor.
+- Lorentz, [*Versuch einer Theorie der electrischen und optischen Erscheinungen in bewegten Körpern* (1895; original text)](https://de.wikisource.org/wiki/Versuch_einer_Theorie_der_electrischen_und_optischen_Erscheinungen_in_bewegten_K%C3%B6rpern).
+- Poincaré, [“La Théorie de Lorentz et le principe de réaction” (1900; original text, especially the local-time clock passage)](https://fr.wikisource.org/wiki/La_th%C3%A9orie_de_Lorentz_et_le_principe_de_r%C3%A9action).
+- Lorentz, [“Electromagnetic phenomena in a system moving with any velocity smaller than that of light” (1904; original scan)](https://pages.jh.edu/rrynasi1/PhysicalPrinciples/literature/Lorentz1904ElectromagneticPhenomenaInASystemMovingWithAnyVelocitySmallerThanThatOfLight.pdf).
+- Poincaré, [“Sur la dynamique de l'électron” (5 June 1905 short note; Académie des sciences facsimile)](https://www.academie-sciences.fr/pdf/dossiers/Poincare/Poincare_pdf/Poincare_CR1905.pdf#page=3), printed p. 1505 on the transformation group. This is the pre-Einstein short note, not the later Palermo memoir.
 - AAPT ComPADRE, [English translation of Einstein's 1905 mass–energy paper](https://www.compadre.org/relativity/items/detail.cfm?Attached=1&ID=2134).
 - Stanford Encyclopedia of Philosophy, [“Einstein's Philosophy of Science”](https://plato.stanford.edu/entries/einstein-philscience/).
 - Einstein Online, [“Special Relativity”](https://www.einstein-online.info/en/category/elementary/special-relativity/).

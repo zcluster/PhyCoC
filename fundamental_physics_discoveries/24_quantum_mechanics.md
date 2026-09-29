@@ -17,7 +17,7 @@ Quantum mechanics replaced classical phase-space trajectories with states in Hil
 
 ## Historical problem
 
-Before the focal discovery (1925–1927), the case confronted a linked set of pressures: Quanta explain selected spectra; de Broglie assigns wavelength to matter. The pathways `R-BOHR-SOMMERFELD`, `R-CLASSICAL-DEFINITE-TRAJECTORIES`, `R-MATRIX-MECHANICS-AS-UNIQUE-ONTOLOGY`, `R-LITERAL-THREE-DIMENSIONAL-MATTER-WAVE` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Microscopic states, observables, and probabilities was to construct a more generative account without importing later validation evidence into the original inference.
+By 1925, the Bohr–Sommerfeld orbit rules captured some atomic spectra but required system-specific quantum conditions and did not provide a general account of transitions and intensities. De Broglie's matter-wave proposal offered a different starting point, while spectroscopy supplied discrete frequencies that any successor theory had to preserve. Heisenberg's 1925 move was to organize observable transition quantities without assigning every electron a classical orbit; Schrödinger's 1926 wave equation instead made bound-state modes central. The two formalisms then had to be related, and Born's probabilistic scattering interpretation changed what a wave amplitude meant. The 1925–1927 framework was a sequence of competing and converging proposals, not one pre-existing package of Hilbert-space axioms or an inference from later quantum-field successes.
 
 ## Time slices
 
@@ -69,7 +69,7 @@ Before the focal discovery (1925–1927), the case confronted a linked set of pr
 
 ### Pathway comparison ledger
 
-**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (1925–1927). The proposed/active period is stored in each pathway record.
+**Chronology rule:** Old quantum theory and classical trajectories predate the 1925–1927 reconstruction; matrix-only and literal matter-wave interpretations emerge during that interval, before the later formal and probabilistic synthesis. The proposed/active period is stored in each pathway record.
 
 | Incomplete route | Strength | Repair/failure | Retained structure |
 |---|---|---|---|
@@ -94,13 +94,129 @@ The admissible pre-discovery input nodes are `A-PLANCK-EINSTEIN`, `A-ATOMIC-SPEC
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
 | `R-BOHR-SOMMERFELD` | The old quantum theory that preserves classical orbits and phase-space motion but imposes discrete action-integral conditions to select allowed trajectories and energies. | Multi-electron atoms and transition intensities. |
-| `R-CLASSICAL-DEFINITE-TRAJECTORIES` | A classical state model in which every particle possesses one exact position and momentum at each time and follows a unique continuous trajectory determined by local equations of motion. | Interference, discrete spectra, and uncertainty cannot generally be represented by simultaneous exact \(x,p\). |
-| `R-MATRIX-MECHANICS-AS-UNIQUE-ONTOLOGY` | The view that Heisenberg's noncommuting transition matrices are not merely a representation but the uniquely fundamental formulation, with wave mechanics a rival theory. | See the full pathway record above. |
-| `R-LITERAL-THREE-DIMENSIONAL-MATTER-WAVE` | The interpretation of every many-particle wavefunction as an ordinary material wave propagating only in physical three-dimensional space. | See the full pathway record above. |
+| `R-CLASSICAL-DEFINITE-TRAJECTORIES` | A classical state model in which every particle possesses one exact position and momentum at each time and follows a unique continuous trajectory determined by local equations of motion. | Interference and discrete spectra supplied earlier pressure; the 1927 uncertainty relation later sharpened the conflict with simultaneous exact \(x,p\). |
+| `R-MATRIX-MECHANICS-AS-UNIQUE-ONTOLOGY` | The view that Heisenberg's noncommuting transition matrices are not merely a representation but the uniquely fundamental formulation, with wave mechanics a rival theory. | Schrödinger's equivalence results showed that the rival calculations could represent the same quantum structure, so exclusivity added no explanatory necessity. |
+| `R-LITERAL-THREE-DIMENSIONAL-MATTER-WAVE` | The interpretation of every many-particle wavefunction as an ordinary material wave propagating only in physical three-dimensional space. | A joint wavefunction for several particles depends on all their coordinates, not one ordinary three-dimensional material density. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** Trajectory prediction reframed as amplitude prediction. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+The transformation is recorded in two layers: the Chain of Concepts reconstructs the representational changes from orbit rules to states and operators, and the formal consolidation states the resulting predictive framework without repeating that search history. The underlying concept-evolution graph branches into matrix and wave routes before they merge; no single linear chain is implied.
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by resources available at that step; later validation and canonical endpoint language are excluded from its justification. The graph orders resources and moves from 1924 through 1927 through admissible branches; it is not a transcript of a founder's or a model's hidden reasoning, nor a claim that the surviving interpretation was uniquely determined. Concept states are graph nodes; transitions are typed, auditable edges.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-QM-01` | Old quantum theory retains classical orbits and appends system-specific quantization rules. |
+| `CS-QM-02` | The microscopic state representation is opened for revision while spectra and correspondence remain constraints. |
+| `CS-QM-03` | Observable transitions are represented by indexed amplitude arrays. |
+| `CS-QM-04` | Matrix mechanics treats noncommuting observables as kinematic structure. |
+| `CS-QM-05` | Wave mechanics represents states by linearly evolving amplitudes and obtains spectra as eigenvalues. |
+| `CS-QM-06` | Born's scattering interpretation connects wave amplitudes to probabilities of observed outcomes. |
+| `CS-QM-07` | Matrix mechanics and probabilistically interpreted wave mechanics are recognized as representations of a shared state-and-operator framework. |
+| `CS-QM-08` | Quantum prediction is organized by states, operators, compatible observables, and uncertainty constraints. |
+
+##### `CT-QM-01`: `CS-QM-01` → `CS-QM-02` — Diagnose orbit quantization as a rule-selection problem
+
+- **Input model:** Bohr–Sommerfeld theory retains classical electron orbits and selects allowed motions with additional action-quantization conditions.
+- **Pressure:** Quantization rules work for selected integrable systems but proliferate without a general invariant prescription for multi-electron spectra and transition intensities.
+- **Protected structure:** Discrete spectral frequencies, Planck's constant, energy conservation, Hamiltonian methods, and the correspondence with successful classical limits.
+- **Hidden assumption:** Exact classical orbits must remain the fundamental state description even when they are neither directly observed nor governed by a general quantization rule.
+- **Operation / change type:** `reweighting` — Localize the failure in the orbit representation rather than adding another system-specific condition to the old quantum theory.
+- **Output model:** The microscopic state representation becomes open, while observed spectral relations and classical correspondence remain hard constraints.
+- **Local justification:** The anomalies and rule proliferation were visible by 1924; no later Bell, decoherence, or quantum-information concepts are required.
+- **Cost/uncertainty:** Abandoning orbit primacy does not yet specify a replacement and does not prove that every possible trajectory ontology is impossible.
+- **Branch status:** `selected`; multiple replacement representations remain open.
+- **Next question:** Which quantities are directly tied to spectral observations and can be used to construct dynamics without unobserved orbits?
+
+##### `CT-QM-02`: `CS-QM-02` → `CS-QM-03` — Re-index mechanics by observable transitions
+
+- **Input model:** Atomic models describe stationary orbits, while experiments record emitted and absorbed transition frequencies and intensities.
+- **Pressure:** The theory calculates inaccessible orbital details more confidently than the transition quantities actually compared with spectra.
+- **Protected structure:** Ritz combination relations, energy differences, Fourier methods, and the Hamiltonian role of energy in evolution.
+- **Hidden assumption:** A theory must first assign a continuous classical trajectory before it can represent transitions between stationary states.
+- **Operation / change type:** `representation_shift` — Replace orbit variables with arrays whose two indices label initial and final states and whose time dependence follows observed transition frequencies.
+- **Output model:** A mechanics of transition amplitudes is constructed directly from observable spectral organization.
+- **Local justification:** Heisenberg's 1925 reorientation used contemporary spectroscopy, correspondence reasoning, and the multiplication rule inherited from Fourier components.
+- **Cost/uncertainty:** The new arrays are formally unfamiliar, and restricting construction to observables does not by itself settle what exists between measurements.
+- **Branch status:** `selected`; the wave-mechanical branch begins independently from the same open-state pressure.
+- **Next question:** What algebra results when transition arrays are multiplied according to their intermediate-state indices?
+
+##### `CT-QM-03`: `CS-QM-03` → `CS-QM-04` — Accept noncommuting quantities as kinematic structure
+
+- **Input model:** Transition quantities are represented by indexed arrays, but classical mechanics assumes ordinary commuting numerical variables (x) and (p).
+- **Pressure:** Array multiplication depends on order, and the quantum condition organizes the resulting mismatch in products of conjugate quantities.
+- **Protected structure:** Hamiltonian equations in correspondence form, spectral predictions, and the classical limit as actions become large relative to (\hbar).
+- **Hidden assumption:** Every physical quantity must possess a simultaneously assignable context-independent numerical value and obey commutative multiplication.
+- **Operation / change type:** `constraint_change` — Treat noncommutative multiplication as a physical feature of the representation rather than an algebraic defect to be removed.
+- **Output model:** Observables become operators or matrices with relations such as ([\hat x,\hat p]=i\hbar).
+- **Local justification:** Matrix mechanics and its canonical quantum condition were explicit by 1925–1926 and could be assessed through spectral calculations.
+- **Cost/uncertainty:** Noncommutativity changes the formal state description but does not uniquely determine a measurement interpretation or ontology.
+- **Branch status:** `selected`; this matrix route later merges with, rather than simply precedes, wave mechanics.
+- **Next question:** Is there an alternative continuous representation that generates the same discrete spectra and clarifies the state object?
+
+##### `CT-QM-04`: `CS-QM-02` → `CS-QM-05` — Convert matter-wave and Hamiltonian clues into a wave equation
+
+- **Input model:** De Broglie associates wavelength with momentum, while Hamilton–Jacobi mechanics links action, momentum, and energy.
+- **Pressure:** A literal orbit with appended wavelength does not provide a general dynamical law for bound states, interference, or quantized energies.
+- **Protected structure:** (\lambda=h/p), classical Hamiltonians, boundary conditions, and the observed discrete energy spectrum.
+- **Hidden assumption:** Wave ideas can influence particles only as an auxiliary condition imposed on otherwise classical trajectories.
+- **Operation / change type:** `representation_shift` — Seek a linear wave equation whose stationary modes are eigenfunctions of the classical energy expression promoted to a differential operator.
+- **Output model:** Schrödinger wave mechanics makes amplitudes evolve linearly and obtains discrete energies as boundary-value eigenvalues.
+- **Local justification:** De Broglie's 1924 relation, Hamiltonian optics–mechanics analogies, and known spectral constraints supplied the ingredients in 1926.
+- **Cost/uncertainty:** The wavefunction's physical meaning is unresolved, especially for many particles where it is defined on configuration space rather than ordinary three-space.
+- **Branch status:** `selected`; this is a parallel branch from `CS-QM-02`, not a consequence of accepting matrix noncommutativity.
+- **Next question:** Are wave mechanics and matrix mechanics rival physical theories or different representations of one structure?
+
+##### `CT-QM-05`: `CS-QM-05` → `CS-QM-06` — Interpret scattering amplitudes through outcome probabilities
+
+- **Input model:** Schrödinger's complex wavefunction evolves deterministically, but a simple literal material-wave reading is strained by scattering and many-particle configuration space.
+- **Pressure:** Experiments register localized outcomes and statistical frequencies, while the wave amplitude determines interference and scattering structure.
+- **Protected structure:** Linear wave evolution, superposition, interference phases, and normalization of outcome probabilities.
+- **Hidden assumption:** The wavefunction must describe a continuously distributed material substance in ordinary three-dimensional space.
+- **Operation / change type:** `reinterpretation` — Interpret squared amplitude as the probability density for possible outcomes rather than as literal material density.
+- **Output model:** Deterministic amplitude evolution is connected to probabilistic measurement statistics through the Born rule.
+- **Local justification:** Born's 1926 scattering analysis supplied the probabilistic interpretation in direct response to the available wave formalism and collision problem.
+- **Cost/uncertainty:** The rule does not by itself explain individual outcomes, define measurement dynamics uniquely, or select one quantum interpretation.
+- **Branch status:** `selected`; the matrix route remains a parallel formal branch, while literal matter-wave interpretations remain competitors.
+- **Next question:** How can this probabilistic wave account and matrix mechanics be expressed within one predictive structure?
+
+##### `CT-QM-06`: `CS-QM-04` + `CS-QM-06` → `CS-QM-07` — Abstract away from matrix-versus-wave representation
+
+- **Input model:** Matrix mechanics and probabilistically interpreted wave mechanics use different mathematical objects yet reproduce overlapping spectral and transition results.
+- **Pressure:** Treating them as unrelated theories duplicates successful structure and obscures transformations connecting their state bases.
+- **Protected structure:** Eigenvalues, transition amplitudes, Born probabilities, linear superposition, time evolution, and operator composition.
+- **Hidden assumption:** The concrete appearance of a representation—an infinite matrix or a wave in coordinates—must itself be the unique physical content.
+- **Operation / change type:** `coalescence` — Identify representation-invariant relations and transformations between bases, treating matrices and wavefunctions as realizations of states and operators.
+- **Output model:** A shared linear state-and-operator framework connects the matrix and wave accounts without settling their ontology.
+- **Local justification:** Schrödinger's early-1926 equivalence argument preceded Born's probabilistic scattering interpretation; the later 1926–1927 Dirac–Jordan transformation theory helped place both calculational routes and outcome probabilities in one framework. These were overlapping developments, not one author's linear deduction.
+- **Cost/uncertainty:** Formal equivalence fixes shared predictions but leaves competing ontological and measurement accounts open.
+- **Branch status:** `merged`; the matrix and wave branches converge while their interpretive differences remain unresolved.
+- **Next question:** How do noncommuting observables constrain the simultaneous sharpness of the outcome distributions they generate?
+
+##### `CT-QM-07`: `CS-QM-07` → `CS-QM-08` — Replace simultaneous classical values with compatible probability constraints
+
+- **Input model:** States generate probability distributions for observables represented by generally noncommuting operators.
+- **Pressure:** The commutator prevents arbitrary simultaneous concentration of the position and momentum distributions.
+- **Protected structure:** Operator algebra, Born probabilities, state evolution, and controlled recovery of classical behavior in appropriate regimes.
+- **Hidden assumption:** A complete instantaneous state must assign exact simultaneous values to every classical phase-space variable.
+- **Operation / change type:** `constraint_change` — Use the algebra of observables to derive uncertainty relations and reframe prediction around state-dependent distributions and compatible measurement arrangements.
+- **Output model:** Quantum states, amplitudes, noncommuting observables, unitary dynamics, and probabilistic outcomes form one operational framework.
+- **Local justification:** The 1925–1927 operator formalism and uncertainty analysis suffice; later no-go theorems are not construction inputs.
+- **Cost/uncertainty:** The framework constrains predictions without uniquely resolving collapse, realism, nonlocality, or the classical measurement boundary.
+- **Branch status:** `selected`; unresolved interpretations are deferred rather than erased by the operational framework.
+- **Next question:** Can this structure be extrapolated consistently across atoms, molecules, scattering, chemistry, and eventually relativistic fields?
+
+#### Formal consolidation
+
+The Dirac notation and general Robertson uncertainty bound below are later compact formulations of this 1925–1927 development, not equations all of its contributors used at the start.
 
 State evolution:
 
@@ -124,7 +240,7 @@ $$
 \hat H\phi_n=E_n\phi_n.
 $$
 
-Born probability:
+Born probability for normalized \(\psi\):
 
 $$
 P(x\in[a,b])=\int_a^b|\psi(x)|^2dx.
@@ -158,7 +274,25 @@ $$
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Microscopic states, observables, and probabilities). The case-specific unification was: Waves, particles, spectra, and probability unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes an extension worth testing but does not license it automatically. Each record separates the supported domain, the proposed target, a novel consequence, and an explicit failure condition.
+
+#### `EG-QM-01` — Extend atomic state mechanics to general bound microscopic systems
+
+- **Source domain:** Atomic transition frequencies, simple bound-state spectra, and the equivalent matrix and wave descriptions constructed from them.
+- **Target domain:** Multi-electron atoms, molecules, chemical bonding, and other nonrelativistic bound systems governed by a Hamiltonian.
+- **Novel consequence:** The same state-and-operator framework should generate new discrete energies, selection-dependent transition amplitudes, and stable molecular structures without adding orbit-specific quantization rules.
+- **Failure condition:** The extension fails for a target system if no Hamiltonian state model with the shared superposition and Born structure can reproduce its reproducible spectrum and transition statistics within the declared nonrelativistic regime.
+
+#### `EG-QM-02` — Extend bound-state amplitudes to scattering and interference statistics
+
+- **Source domain:** Bound-state amplitudes and Born's 1926 scattering analysis in its construction setting.
+- **Target domain:** Independently prepared collision potentials, barriers, and diffraction arrangements not used to build the initial wave/scattering rule.
+- **Novel consequence:** Evolved amplitudes should determine cross-sections and outcome-frequency patterns, including interference terms that are not separately fitted as classical alternatives.
+- **Failure condition:** The extension fails if repeated experiments under controlled preparation yield stable distributions incompatible with the evolved amplitudes and Born rule, after experimental uncertainty and the stated Hamiltonian approximation are accounted for.
+
+The relativistic-field domain is deliberately not folded into these records: failure of fixed-particle nonrelativistic mechanics at particle creation energies motivates a successor framework rather than an unlimited extrapolation of this one.
 
 **Patterns demonstrated:**
 
@@ -527,10 +661,35 @@ D-QUANTUM-MECHANICS-1925-1927 --supersedes--> R-BOHR-SOMMERFELD
 D-QUANTUM-MECHANICS-1925-1927 --retains-limit--> CLASSICAL-MECHANICS
 D-QUANTUM-MECHANICS-1925-1927 --is-extended-to-quantized-fields-by--> D-QFT-FIELD-QUANTIZATION-1927
 D-QUANTUM-MECHANICS-1925-1927 --instantiates--> P-01
+A-ATOMIC-SPECTRA --pressures--> CS-QM-01
+CS-QM-01 --revised-by--> CT-QM-01
+CT-QM-01 --produces--> CS-QM-02
+CS-QM-02 --revised-by--> CT-QM-02
+CT-QM-02 --produces--> CS-QM-03
+CS-QM-03 --revised-by--> CT-QM-03
+CT-QM-03 --produces--> CS-QM-04
+CS-QM-02 --revised-in-parallel-by--> CT-QM-04
+CT-QM-04 --produces--> CS-QM-05
+CS-QM-05 --reinterpreted-by--> CT-QM-05
+CT-QM-05 --produces--> CS-QM-06
+CS-QM-04 --merged-by--> CT-QM-06
+CS-QM-06 --merged-by--> CT-QM-06
+CT-QM-06 --produces--> CS-QM-07
+CS-QM-07 --revised-by--> CT-QM-07
+CT-QM-07 --produces--> CS-QM-08
+CS-QM-08 --hands-off-to--> EG-QM-01
+EG-QM-01 --extends-to--> EG-QM-02
+EG-QM-02 --is-tested-by--> SPECTRAL-AND-INTERFERENCE-EVIDENCE
 ```
 
 ## Sources
 
+- Werner Heisenberg, [1925 reinterpretation of kinematic and mechanical relations](https://doi.org/10.1007/BF01328377); [English translation of the original](https://neo-classical-physics.info/uploads/3/4/3/6/34363841/heisenberg_-_qm_interp_of_kin_and_mech.pdf), opening and §§1–2 checked for observable transitions and the replacement of orbital variables.
+- Erwin Schrödinger, [1926 wave-mechanics eigenvalue paper](https://doi.org/10.1002/andp.19263840602).
+- Erwin Schrödinger, [1926 relation to matrix mechanics](https://doi.org/10.1002/andp.19263840804).
+- Max Born, [1926 scattering interpretation](https://doi.org/10.1007/BF01397477).
+- P. A. M. Dirac, [1927 physical interpretation and transformation theory](https://doi.org/10.1098/rspa.1927.0012).
+- Werner Heisenberg, [1927 uncertainty analysis](https://doi.org/10.1007/BF01397280).
 - Stanford Encyclopedia of Philosophy, [“Quantum Mechanics”](https://plato.stanford.edu/entries/qm/).
 - Nobel Prize, [The 1932 Physics Prize](https://www.nobelprize.org/prizes/physics/1932/summary/).
 - Nobel Prize, [The 1933 Physics Prize](https://www.nobelprize.org/prizes/physics/1933/summary/).

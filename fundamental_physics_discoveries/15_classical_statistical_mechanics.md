@@ -17,7 +17,7 @@ Classical statistical mechanics explains thermodynamic regularities through prob
 
 ## Historical problem
 
-Before the focal discovery (1859–1902 (Maxwell/Boltzmann through Gibbs)), the case confronted a linked set of pressures: Gas pressure associated with molecular motion; Velocity distribution and transport theory. The pathways `R-PURE-MECHANICAL-DEDUCTION`, `R-ENERGETICS-WITHOUT-ATOMS`, `R-RECURRENCE-REFUTES-STATISTICS`, `R-NAIVE-ERGODICITY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Classical microscopic foundations of thermodynamics was to construct a more generative account without importing later validation evidence into the original inference.
+This 1859–1902 case has successive starting problems, not one pre-discovery snapshot. For Maxwell, molecular impacts could account for gas pressure, but a useful kinetic theory needed a distribution of speeds rather than one representative molecule or a tractable trajectory for every particle. For Boltzmann, the further question was how collision dynamics and microstate counting relate to equilibrium and entropy increase when underlying mechanics is reversible; Loschmidt's later reversal challenge and Zermelo's recurrence objection sharpened, but did not precede, that stage. By Gibbs's 1902 synthesis, ensembles offered a system-independent equilibrium language while atomic ontology and the justification of irreversibility remained contested. Neither quantum counting nor later Brownian confirmation was available as an input to the earlier steps.
 
 ## Time slices
 
@@ -54,7 +54,7 @@ Before the focal discovery (1859–1902 (Maxwell/Boltzmann through Gibbs)), the 
 - **Proposed/active period:** 1890s.
 - **Assumption:** Thermodynamics should avoid molecular ontology.
 - **Why reasonable:** Atoms were not directly observed and macroscopic laws stood independently.
-- **Limitation:** Could not naturally explain fluctuation scales or Brownian motion.
+- **Limitation:** The molecular account offered prospective fluctuation-scale explanations that a purely macroscopic program did not supply; quantitative Brownian confirmation came after the 1902 endpoint, not as Maxwell's starting evidence.
 - **Outcome:** Superseded as a complete account; phenomenological thermodynamics retained.
 
 ### `R-RECURRENCE-REFUTES-STATISTICS`
@@ -73,7 +73,7 @@ Before the focal discovery (1859–1902 (Maxwell/Boltzmann through Gibbs)), the 
 
 ### Pathway comparison ledger
 
-**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (1859–1902 (Maxwell/Boltzmann through Gibbs)). The proposed/active period is stored in each pathway record.
+**Chronology rule:** This 1859–1902 case has no single pre-discovery rival snapshot: the mechanical program predates Maxwell, while ergodic assumptions, energetics, and Zermelo's recurrence objection arise during the Maxwell–Boltzmann–Gibbs sequence. The proposed/active period is stored in each pathway record.
 
 | Objection or rival | Why serious | Statistical repair | Remaining caution |
 |---|---|---|---|
@@ -91,22 +91,130 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-THERMODYNAMICS`, `A-KINETIC-GAS`, `A-PROBABILITY`, `A-COMBINATORICS`, `A-ENSEMBLES`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+Because this case spans Maxwell, Boltzmann, and Gibbs, there is no single pre-discovery knowledge snapshot. The admissible resources expand by stage:
+
+| Stage | Available starting resources | Held-out development |
+|---|---|---|
+| Before Maxwell's 1859–1860 kinetic work | Thermodynamic gas regularities, molecular-impact reasoning (`A-THERMODYNAMICS`, `A-KINETIC-GAS`), and general probability mathematics | A quantitative molecular-velocity distribution and its transport consequences |
+| Boltzmann's later work | Maxwellian distributional methods, collision mechanics, combinatorics (`A-COMBINATORICS`), and thermodynamic entropy | The entropy–multiplicity and conditional-irreversibility moves being reconstructed |
+| Before Gibbs's 1902 synthesis | Earlier kinetic and probabilistic results, Hamiltonian phase space, and thermodynamic constraints | The consolidated, system-independent ensemble framework (`A-ENSEMBLES`) and its generating partition-function formulation |
+
+`A-PROBABILITY` therefore becomes an active physical representation only through the early transitions, while `A-ENSEMBLES` names a later outcome rather than an input to every stage. The knowledge-assets list above indexes resources used anywhere in the full case; it is not a single sealed input packet. Later atomic confirmation and quantum state counting are excluded from the construction stages.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-PURE-MECHANICAL-DEDUCTION` | The program of deriving irreversible thermodynamic evolution as an unconditional theorem of reversible microscopic mechanics, without probabilistic assumptions, coarse graining, or special boundary conditions. | Time reversal and recurrence objections expose missing assumptions. |
-| `R-ENERGETICS-WITHOUT-ATOMS` | A macroscopic research program that treats energy and thermodynamic relations as fundamental while declining to posit real atoms or molecules behind heat and matter. | Could not naturally explain fluctuation scales or Brownian motion. |
-| `R-RECURRENCE-REFUTES-STATISTICS` | The objection elevated into a rival conclusion that microscopic recurrence makes statistical entropy increase invalid rather than probabilistic and timescale-dependent. | Recurrence does not predict ordinary macroscopic evolution and typically occurs on astronomically large timescales. |
-| `R-NAIVE-ERGODICITY` | The unqualified assumption that every isolated system explores its entire energy surface uniformly, so one long time average automatically equals an ensemble average. | Many systems are nonergodic, finite, integrable, glassy, or otherwise fail the assumption. |
+| `R-PURE-MECHANICAL-DEDUCTION` (Boltzmann-stage challenge) | The program of deriving irreversible thermodynamic evolution as an unconditional theorem of reversible microscopic mechanics, without probabilistic assumptions, coarse graining, or special boundary conditions. | The later Loschmidt and Zermelo objections expose missing assumptions; they did not motivate Maxwell's 1859 opening step. |
+| `R-ENERGETICS-WITHOUT-ATOMS` (1890s rival) | A macroscopic research program that treats energy and thermodynamic relations as fundamental while declining to posit real atoms or molecules behind heat and matter. | It did not generate a molecular fluctuation-scale account; Brownian confirmation was still later and is not a pre-1902 discriminator. |
+| `R-RECURRENCE-REFUTES-STATISTICS` (1896 objection) | The objection elevated into a rival conclusion that microscopic recurrence makes statistical entropy increase invalid rather than probabilistic and timescale-dependent. | Recurrence constrains unconditional monotonic claims but does not predict ordinary macroscopic evolution; the typical timescale depends strongly on the system. |
+| `R-NAIVE-ERGODICITY` (later-stage assumption) | The unqualified assumption that every isolated system explores its entire energy surface uniformly, so one long time average automatically equals an ensemble average. | Integrable counterexamples and later nonergodic systems show that ensemble–time-average equality needs conditions; these are not inputs to Maxwell's first velocity-distribution inference. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** Exact trajectory prediction reframed as typical macrobehavior. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
 
-Boltzmann's entropy relation is:
+The transformation is recorded in two layers: the Chain of Concepts reconstructs how a probabilistic representation becomes admissible, and the formal consolidation states the resulting framework without repeating that search history. The displayed chain is one selected path through an underlying concept-evolution graph, not a claim that the historical process was strictly linear.
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by resources available at that step; later validation and canonical endpoint language are excluded from its justification. This chain connects developments from Maxwell through Boltzmann to Gibbs without claiming that it records a model's hidden reasoning, formed one actor's private sequence, or followed uniquely from nineteenth-century evidence. Concept states are graph nodes; transitions are typed, auditable edges.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-CSM-01` | Exact molecular trajectories are treated as the primary form of mechanical explanation. |
+| `CS-CSM-02` | A probability distribution over molecular velocities becomes the target of explanation. |
+| `CS-CSM-03` | Distributional moments and collision statistics directly generate macroscopic observables. |
+| `CS-CSM-04` | Entropy is related to the multiplicity of microstates compatible with a macrostate. |
+| `CS-CSM-05` | Irreversibility is understood as conditional typical behavior rather than a theorem for every trajectory. |
+| `CS-CSM-06` | Equilibrium is represented by probability measures over classical phase space. |
+| `CS-CSM-07` | A normalized partition function generates thermodynamic quantities from microscopic energies and constraints. |
+
+##### `CT-CSM-01`: `CS-CSM-01` → `CS-CSM-02` — Change the target from exact molecular histories to stable distributions
+
+- **Input model:** Mechanics describes gases through molecular positions, velocities, forces, and collisions, suggesting that a complete explanation would track every trajectory.
+- **Pressure:** A macroscopic sample contains overwhelmingly many unobserved degrees of freedom, while pressure and temperature remain stable, reproducible aggregate quantities.
+- **Protected structure:** Newtonian collision mechanics, conservation laws, measured gas regularities, and the kinetic interpretation of pressure.
+- **Hidden assumption:** A mechanical explanation must predict the exact history of every molecule before it can explain a macroscopic regularity.
+- **Operation / change type:** `representation_shift` — Reframe the target as a probability distribution over molecular velocities whose aggregate moments can be compared with observables.
+- **Output model:** Molecular mechanics supplies possible microstates, while a distribution over them becomes the immediate explanatory object for gas behavior.
+- **Local justification:** Probability theory, kinetic-gas reasoning, and repeatable bulk measurements were available to Maxwell without using later atomic confirmation.
+- **Cost/uncertainty:** A successful distribution need not establish whether probability is merely ignorance, ensemble frequency, or an objective typicality claim.
+- **Branch status:** `selected`; exact-trajectory reconstruction remains a limiting ideal rather than the working explanatory route.
+- **Next question:** Can the form of the velocity distribution be constrained by symmetry, independence, and collisions rather than fitted separately for each gas?
+
+##### `CT-CSM-02`: `CS-CSM-02` → `CS-CSM-03` — Make probability dynamically consequential
+
+- **Input model:** A velocity distribution summarizes a large population, but probability may still appear to be only a bookkeeping device external to mechanics.
+- **Pressure:** Collision rates, pressure, viscosity, diffusion, and heat transport depend on distributional moments rather than on any named molecule's path.
+- **Protected structure:** Microscopic dynamics and conservation of energy and momentum in collisions.
+- **Hidden assumption:** Only an individual trajectory can carry physical explanatory content; distributions merely report incomplete knowledge.
+- **Operation / change type:** `reweighting` — Calculate observable rates and equilibrium tendencies directly from distributions and collision statistics, promoting distributions from bookkeeping devices to explanatory objects.
+- **Output model:** Probability distributions become physically generative intermediaries connecting reversible collisions to reproducible macroscopic quantities.
+- **Local justification:** Maxwell's distribution and kinetic transport calculations provided contemporary quantitative examples of distribution-to-observable inference.
+- **Cost/uncertainty:** Molecular independence assumptions can fail, and agreement with bulk quantities does not by itself justify every factorization used in collision theory.
+- **Branch status:** `selected`; a purely epistemic reading of probability remains compatible with part of the formalism.
+- **Next question:** How can thermodynamic entropy be represented in terms of the number or weight of compatible microscopic arrangements?
+
+##### `CT-CSM-03`: `CS-CSM-03` → `CS-CSM-04` — Relate entropy to multiplicity rather than a single trajectory
+
+- **Input model:** Thermodynamics defines entropy macroscopically, while kinetic theory supplies many microscopic arrangements compatible with the same bulk state.
+- **Pressure:** The same energy and volume can be realized by vastly different numbers of molecular configurations, and equilibrium corresponds to overwhelmingly large compatible regions.
+- **Protected structure:** Thermodynamic state functions, microscopic conservation laws, and combinatorial counting.
+- **Hidden assumption:** Entropy must be an extra mechanical property attached to one exact microtrajectory in order to be physically real.
+- **Operation / change type:** `representation_shift` — Associate a macrostate's entropy with the logarithm of its compatible microstate multiplicity.
+- **Output model:** (S=k_B\ln\Omega) connects additive thermodynamic entropy to multiplicative microscopic state counts.
+- **Local justification:** Boltzmann's combinatorial reasoning and kinetic framework supplied the required concepts before twentieth-century fluctuation tests.
+- **Cost/uncertainty:** The counting depends on a chosen macrodescription, phase-space partition, and molecular ontology; the relation does not yet prove monotonic increase on every trajectory.
+- **Branch status:** `selected`; energetics without microscopic state counting remains a historical competitor.
+- **Next question:** How can entropy increase be reconciled with reversible microscopic equations?
+
+##### `CT-CSM-04`: `CS-CSM-04` → `CS-CSM-05` — Replace unconditional irreversibility with conditional typicality
+
+- **Input model:** Microscopic collisions are reversible, while thermodynamics describes robust entropy increase toward equilibrium.
+- **Pressure:** Reversing all velocities produces a mechanically allowed entropy-decreasing history, and recurrence prevents a universal monotonic theorem for finite systems.
+- **Protected structure:** Reversible dynamics, the empirical reliability of macroscopic irreversibility, and the entropy–multiplicity connection.
+- **Hidden assumption:** A macroscopic law is legitimate only if it holds without statistical, boundary, or coarse-graining qualifications for every microtrajectory.
+- **Operation / change type:** `constraint_change` — State the arrow as overwhelmingly typical behavior conditional on a low-entropy macrocondition and suitable assumptions about incoming correlations.
+- **Output model:** Irreversibility becomes a probabilistic, scale-dependent consequence of dynamics plus macroconditions rather than a contradiction of microscopic reversibility.
+- **Local justification:** Loschmidt's reversibility objection, Boltzmann's molecular-chaos reasoning, and Zermelo's recurrence objection were all internal to the nineteenth-century debate.
+- **Cost/uncertainty:** Molecular chaos and the low-entropy boundary condition are additional inputs; naïve presentations of the (H)-theorem can conceal their time-asymmetric role.
+- **Branch status:** `selected`; recurrence and reversibility objections are retained as constraints rather than discarded as refuted.
+- **Next question:** Can the framework be formulated without relying on the detailed collision model of a dilute gas?
+
+##### `CT-CSM-05`: `CS-CSM-05` → `CS-CSM-06` — Generalize from gas trajectories to ensembles over phase space
+
+- **Input model:** Kinetic theory explains dilute gases through velocity distributions and collision equations but is tied to a particular molecular mechanism.
+- **Pressure:** Thermodynamic reasoning applies to many systems for which a gas-specific collision description is unnatural or intractable.
+- **Protected structure:** Hamiltonian mechanics, conservation constraints, probability measures, and thermodynamic state variables.
+- **Hidden assumption:** Statistical explanation must be organized around a literal gas population evolving through binary collisions.
+- **Operation / change type:** `generalization` — Represent a physical preparation by an ensemble probability measure over all classical phase-space states compatible with stated constraints.
+- **Output model:** Microcanonical and canonical ensembles provide system-independent statistical representations of equilibrium.
+- **Local justification:** Gibbs's 1902 ensemble formulation drew on established mechanics, thermodynamics, and probability without requiring later quantum state counting.
+- **Cost/uncertainty:** An ensemble is not automatically a literal collection of worlds, and equality between ensemble, time, and measured averages requires separate conditions.
+- **Branch status:** `selected`; gas-specific kinetic descriptions remain useful inside their narrower domain.
+- **Next question:** Can one compact normalization object generate the thermodynamic quantities of an ensemble?
+
+##### `CT-CSM-06`: `CS-CSM-06` → `CS-CSM-07` — Turn the partition function into a generative bridge
+
+- **Input model:** An equilibrium ensemble assigns energy-dependent weights to phase-space states under macroscopic constraints.
+- **Pressure:** Computing each thermodynamic quantity independently would obscure the shared structure of energy, entropy, temperature, and response.
+- **Protected structure:** Normalization, mean-energy constraints, thermodynamic derivatives, and the classical phase-space description.
+- **Hidden assumption:** Statistical mechanics merely reproduces separate empirical laws rather than generating them from one mathematical object.
+- **Operation / change type:** `coalescence` — Normalize the canonical weights with (Z) and derive thermodynamic potentials and expectation values from (\ln Z), gathering several thermodynamic relations under one generator.
+- **Output model:** The partition function becomes a generative map from microscopic energies and constraints to macroscopic equilibrium relations.
+- **Local justification:** The ensemble formalism and thermodynamic Legendre structure available by the Gibbs endpoint support this construction; quantum statistics is not used.
+- **Cost/uncertainty:** The result is conditional on equilibrium, the chosen ensemble, and a valid classical state space; equivalence may fail for finite or long-range systems.
+- **Branch status:** `selected`; alternative ensembles remain necessary when their physical constraints differ.
+- **Next question:** Can equilibrium ensembles predict fluctuation sizes beyond mean thermodynamic values, and where would separate dynamical assumptions be needed?
+
+#### Formal consolidation
+
+In modern compact notation, Boltzmann's entropy relation is:
 
 $$
 S=k_B\ln\Omega,
@@ -118,7 +226,7 @@ $$
 S=-k_B\sum_i p_i\ln p_i.
 $$
 
-The canonical distribution follows by maximizing entropy subject to normalization and fixed mean energy:
+The discrete sums below are modern shorthand for a coarse-grained state set. Gibbs's classical phase-space formulation uses integrals with a specified measure; the sum must not be mistaken for intrinsic discrete classical microstates. The canonical distribution follows by maximizing entropy subject to normalization and fixed mean energy:
 
 $$
 p_i=\frac{e^{-\beta E_i}}{Z},
@@ -156,7 +264,25 @@ $$
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Classical microscopic foundations of thermodynamics). The case-specific unification was: Mechanics, probability, and thermodynamics unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes an extension worth testing but does not license it automatically. Each record separates the supported domain, the proposed target, a novel consequence, and an explicit failure condition.
+
+#### `EG-CSM-01` — Extend gas statistics to general classical equilibrium systems
+
+- **Source domain:** Velocity distributions, collisions, and equilibrium behavior in dilute classical gases.
+- **Target domain:** Classical many-body systems represented by probability measures over phase space under microcanonical or canonical constraints.
+- **Novel consequence:** A single partition function should generate thermodynamic state functions and response relations for systems not described by a dilute-gas collision model.
+- **Failure condition:** The extension fails in a stated regime if no probability measure on the proposed classical state space reproduces the measured equilibrium relations without system-specific repairs that destroy the common ensemble structure.
+
+#### `EG-CSM-02` — Test equilibrium energy fluctuations beyond mean values
+
+- **Source domain:** Canonical equilibrium ensembles that recover mean energy and thermodynamic response for systems with a specified classical Hamiltonian.
+- **Target domain:** Energy fluctuations in finite classical systems weakly coupled to a heat bath, where variation around the mean can be resolved rather than ignored.
+- **Novel consequence:** The same canonical weights give \(\operatorname{Var}(E)=k_BT^2C_V\) at fixed volume; Gibbs derived the corresponding relation in 1902 (Chapter VII, eq. 205), so this is an out-of-sample test of the ensemble framework, not a later invention of the formula.
+- **Failure condition:** With Hamiltonian, bath temperature, preparation, and heat capacity independently fixed, reproducible energy variance outside the predicted range after finite-size and measurement uncertainty are accounted for would defeat this canonical-model extension. Quantum, noncanonical, or nonequilibrium systems require a separate model before being counted as failures.
+
+Transport is not an output of equilibrium weights alone: it needs dynamics or time-correlation assumptions, and Maxwell had already derived gas-transport results before Gibbs's 1902 synthesis. It remains in the earlier kinetic branch and the case's distinct transport prediction record, not this EG step.
 
 **Patterns demonstrated:**
 
@@ -249,7 +375,7 @@ $$
 $$
 
 so the explicit factor of $n$ cancels. Lower density supplies fewer carriers but lengthens each carrier's momentum-transport path by the inverse factor.
-- **Observable discriminator and outcome:** at fixed temperature, dilute-gas viscosity should change little as pressure changes over the kinetic regime. Maxwell's own experiments broadly supported the surprising density independence, though real intermolecular forces make the temperature law and exact coefficient more complicated than the simplest hard-sphere estimate.
+- **Observable discriminator and outcome:** at fixed temperature, dilute-gas viscosity should change little as pressure changes over the kinetic regime. Maxwell's later 1866 viscosity experiments broadly supported the surprising density independence; they were not a 1860 construction input. Real intermolecular forces make the temperature law and exact coefficient more complicated than the simplest hard-sphere estimate.
 - **Boundary:** this is not valid in dense fluids or so rarefied a gas that container size replaces the intermolecular mean free path.
 
 ## Validation and explanatory gains
@@ -529,10 +655,33 @@ D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902 --explains--> LAW-THERMODYNAMICS
 D-QUANTUM-STATISTICS-1924-1926 --reduces-to-in-dilute-limit--> D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902
 D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902 --is-generalized-by--> D-QUANTUM-STATISTICS-1924-1926
 D-CLASSICAL-STATISTICAL-MECHANICS-1859-1902 --instantiates--> P-03
+A-KINETIC-GAS --pressures--> CS-CSM-01
+CS-CSM-01 --revised-by--> CT-CSM-01
+CT-CSM-01 --produces--> CS-CSM-02
+CS-CSM-02 --revised-by--> CT-CSM-02
+CT-CSM-02 --produces--> CS-CSM-03
+CS-CSM-03 --revised-by--> CT-CSM-03
+CT-CSM-03 --produces--> CS-CSM-04
+CS-CSM-04 --revised-by--> CT-CSM-04
+CT-CSM-04 --produces--> CS-CSM-05
+CS-CSM-05 --revised-by--> CT-CSM-05
+CT-CSM-05 --produces--> CS-CSM-06
+CS-CSM-06 --revised-by--> CT-CSM-06
+CT-CSM-06 --produces--> CS-CSM-07
+CS-CSM-07 --hands-off-to--> EG-CSM-01
+EG-CSM-01 --extends-further-to--> EG-CSM-02
+EG-CSM-02 --is-tested-by--> ENERGY-FLUCTUATION-EVIDENCE
 ```
 
 ## Sources
 
+- James Clerk Maxwell, [“Illustrations of the Dynamical Theory of Gases,” Part I (1860)](https://doi.org/10.1080/14786446008642818).
+- James Clerk Maxwell, [“Illustrations of the Dynamical Theory of Gases,” continuation (1860)](https://doi.org/10.1080/14786446008642902).
+- James Clerk Maxwell, [“On the Viscosity or Internal Friction of Air and other Gases” (1866)](https://doi.org/10.1098/rstl.1866.0013), later experimental check of the earlier density-independence prediction.
+- Ludwig Boltzmann, [“Weitere Studien über das Wärmegleichgewicht unter Gas-molekülen” (1872), original-text reprint](https://www.cambridge.org/core/books/abs/wissenschaftliche-abhandlungen/weitere-studien-uber-das-warmegleichgewicht-unter-gasmolekulen/A5DBDBCADB8E78D27D1E8DFCFF31443D).
+- Ludwig Boltzmann, [1877 probability-and-entropy paper, English translation of the original](https://doi.org/10.3390/e17041971).
+- Josef Loschmidt, [“Über den Zustand des Wärmegleichgewichtes eines Systems von Körpern mit Rücksicht auf die Schwerkraft,” Part I (1876), p. 139 original scan](https://loschmidt.chemi.muni.cz/biography/pdf/warmegleichgewichtes.pdf#page=12) (PDF page 12 corresponds to printed p. 139; passage on reversing all atomic velocities).
+- Ernst Zermelo, [“Ueber einen Satz der Dynamik und die mechanische Wärmetheorie” (1896)](https://doi.org/10.1002/andp.18962930314).
 - Stanford Encyclopedia of Philosophy, [“Philosophy of Statistical Mechanics”](https://plato.stanford.edu/entries/statphys-statmech/).
 - NIST, [“Kelvin: Boltzmann Constant”](https://www.nist.gov/si-redefinition/kelvin/kelvin-boltzmann-constant).
-- Gibbs, [*Elementary Principles in Statistical Mechanics*](https://archive.org/details/elementaryprinci00gibbrich).
+- Gibbs, [*Elementary Principles in Statistical Mechanics*](https://archive.org/details/elementaryprinci00gibbrich), especially [Chapter VII, eqs. 204–211](https://en.wikisource.org/wiki/Elementary_Principles_in_Statistical_Mechanics/Chapter_VII), checked for the canonical energy-variance relation and its macroscopic relative-fluctuation limit.

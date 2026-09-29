@@ -17,7 +17,7 @@ Inflation proposes a period of accelerated early expansion that dynamically enla
 
 ## Historical problem
 
-Before the focal discovery (1981–1982 broad slow-roll/new-inflation formulation), the case confronted a linked set of pressures: Expansion and CMB established; Curvature-driven accelerated solution. The pathways `R-OLD-INFLATION`, `R-UNEXPLAINED-SPECIAL-INITIAL-CONDITIONS`, `R-MIXMASTER-CHAOTIC-COSMOLOGY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Very early universe and primordial perturbations was to construct a more generative account without importing later validation evidence into the original inference.
+The hot Big Bang accounted for expansion and a thermal relic background, but left horizon, near-flatness, and some relic-abundance questions as demanding initial conditions. Starobinsky's 1980 curvature-driven quasi-de Sitter model and Guth's 1981 false-vacuum proposal supplied distinct accelerated-expansion routes; Guth made the horizon/flatness motivation especially explicit. His first-order bubble exit, however, could not straightforwardly yield a smooth reheated universe. Linde and Albrecht–Steinhardt's 1982 new-inflation variants explored slow evolution and an exit, while Mukhanov–Chibisov and subsequent work developed primordial-fluctuation consequences. None of these early steps used precision CMB spectra as construction evidence, and later observational support does not identify one unique inflaton model.
 
 ## Time slices
 
@@ -26,7 +26,7 @@ Before the focal discovery (1981–1982 broad slow-roll/new-inflation formulatio
 | `TS-HOT-BIG-BANG` | 1960s–1970s | Expansion and CMB established | Initial-condition puzzles remain |
 | `TS-STAROBINSKY` | 1979–1980 | Curvature-driven accelerated solution | Early quasi-de Sitter phase |
 | `TS-GUTH` | 1981 | False-vacuum inflation addresses puzzles | Graceful-exit problem |
-| `TS-NEW-CHAOTIC` | 1982–1983 | Slow-roll variants proposed | Exit and perturbations improved |
+| `TS-NEW-CHAOTIC` | 1982–1983 | New-inflation slow-roll variants, followed by chaotic-inflation proposals | Exit and model options developed; these are not one identical mechanism |
 | `TS-QUANTUM-PERTURBATIONS` | 1980s | Vacuum fluctuations stretched | Structure seeds predicted |
 | `TS-CMB-PRECISION` | 1990s onward | Spectrum measured | Many models constrained |
 
@@ -66,7 +66,7 @@ Before the focal discovery (1981–1982 broad slow-roll/new-inflation formulatio
 
 ### Pathway comparison ledger
 
-**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (1981–1982 broad slow-roll/new-inflation formulation). The proposed/active period is stored in each pathway record.
+**Chronology rule:** Special initial conditions and Mixmaster dynamics predate inflation; Guth's 1980–1981 old-inflation proposal is an immediate predecessor that overlaps the start of the 1981–1982 slow-roll/new-inflation transition. The proposed/active period is stored in each pathway record; the graceful-exit problem was learned from this intermediate model.
 
 | Pathway | Strength | Failure or unresolved cost | Current status |
 |---|---|---|---|
@@ -83,19 +83,101 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-GR-COSMOLOGY`, `A-QFT-VACUUM`, `A-CMB`, `A-HORIZON-FLATNESS`, `A-PHASE-TRANSITIONS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+Available resources were relativistic scale-factor dynamics (`A-GR-COSMOLOGY`), quantum-field vacuum/phase-transition ideas (`A-QFT-VACUUM`, `A-PHASE-TRANSITIONS`), CMB isotropy as an explanatory target (`A-CMB`), and horizon/flatness problems (`A-HORIZON-FLATNESS`). Starobinsky's 1980 model and Guth's 1981 paper entered sequentially; slow-roll and fluctuation analyses matured during 1981–82. Precision \(n_s\), tensor, and non-Gaussianity constraints arrived much later.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
 | `R-OLD-INFLATION` | Guth's false-vacuum model in which the early universe remains temporarily trapped in a metastable high-energy state, expands exponentially, and exits through nucleated bubbles of a lower-energy phase. | Bubble nucleation does not end smoothly enough. |
-| `R-UNEXPLAINED-SPECIAL-INITIAL-CONDITIONS` | A non-dynamical cosmological account that takes the early universe's extreme homogeneity, near-flatness, and absence of unwanted relics as specially chosen initial boundary conditions. | See the full pathway record above. |
+| `R-UNEXPLAINED-SPECIAL-INITIAL-CONDITIONS` | A non-dynamical cosmological account that takes the early universe's extreme homogeneity, near-flatness, and absence of unwanted relics as specially chosen initial boundary conditions. | Stipulating smoothness and flatness reproduced the starting data but offered no causal mechanism relating them; inflation itself does not eliminate every initial-condition question. |
 | `R-MIXMASTER-CHAOTIC-COSMOLOGY` | Misner's late-1960s Mixmaster/chaotic-cosmology program, which sought to erase primordial anisotropy and homogenize the universe through complex pre-expansion gravitational dynamics without an inflationary phase. | Dissipation and causal mixing were insufficient to generate the observed large-scale homogeneity under generic conditions. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** Initial coincidences reframed as dynamical outcomes. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by cosmology and field-theory resources available by its 1980–82 date. This is an auditable path through distinct Starobinsky, Guth, new-inflation, and perturbation branches, not one inventor's hidden reasoning; later CMB fits cannot justify the original proposals.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-INF-01` | The hot Big Bang leaves horizon/flatness and some relic abundances sensitive to early conditions. **Open question:** Could a dynamical phase change the mapping between causal patches and today's sky? |
+| `CS-INF-02` | A sufficiently vacuum-like stress-energy can drive accelerated expansion and shrink the comoving Hubble radius; Starobinsky's curvature model is one antecedent. **Open question:** Can this mechanism solve several initial-condition puzzles? |
+| `CS-INF-03` | Guth's 1981 false-vacuum inflation can enlarge a small region and dilute curvature/relics. **Open question:** How does inflation end smoothly and recover a hot universe? |
+| `CS-INF-04` | First-order bubble exit is problematic; 1982 new-inflation routes allow a slower evolving field and a possible exit. **Open question:** How does this exit branch combine with the independently developing fluctuation account? |
+| `CS-INF-05` | In the 1981 curvature-driven de Sitter model, quantum curvature fluctuations acquire a nearly flat spectrum and can destabilize the nonsingular stage; an intermediate stage might leave structure-forming perturbations. **Open question:** Which spectrum and post-stage transfer survive in a viable model? |
+| `CS-INF-06` | Inflation is a family of accelerated-expansion models with exit, reheating, and perturbation tests, not an identified unique field. **Open question:** Which observations discriminate variants or refute a stated one? |
+
+##### `CT-INF-01`: `CS-INF-01` → `CS-INF-02` — Change the early expansion history
+
+- **Input model:** Hot-Big-Bang expansion, CMB isotropy, and horizon/flatness targets.
+- **Pressure:** Widely separated regions and near-critical curvature appear to demand special early conditions in a purely decelerating history.
+- **Protected structure:** General-relativistic cosmology and the later hot radiation era.
+- **Hidden assumption:** The early universe must have expanded only with ordinary decelerating matter/radiation.
+- **Operation / change type:** `constraint_change` — Permit a temporary vacuum-like or curvature-driven accelerated phase.
+- **Output model:** A quasi-de Sitter stage that changes comoving-horizon and curvature evolution.
+- **Local justification:** Starobinsky's 1980 paper supplied an early curvature-driven accelerated solution; Guth's later formulation addressed horizon/flatness directly.
+- **Cost/uncertainty:** Acceleration alone does not identify a field, establish suitable initial conditions, or ensure an exit.
+- **Next question:** How many e-folds and what physical realization are needed?
+
+##### `CT-INF-02`: `CS-INF-02` → `CS-INF-03` — Make expansion solve multiple puzzles
+
+- **Input model:** A possible accelerated phase and particle-physics vacuum/phase-transition ideas.
+- **Pressure:** A proposal should do more than add an arbitrary expansion episode.
+- **Protected structure:** Horizon and flatness targets, plus the hot Big Bang after the episode.
+- **Hidden assumption:** Today's smoothness and near-flatness must be independent coincidences.
+- **Operation / change type:** `coalescence` — Use false-vacuum expansion to address causal contact, curvature dilution, and relic dilution together.
+- **Output model:** Guth's 1981 old-inflation proposal.
+- **Local justification:** Guth's original paper frames horizon and flatness as motivation and examines supercooled false-vacuum expansion.
+- **Cost/uncertainty:** Required duration depends on subsequent thermal history; the original bubble exit becomes a major obstacle.
+- **Next question:** Can inflation end without destroying large-scale uniformity?
+
+##### `CT-INF-03`: `CS-INF-03` → `CS-INF-04` — Repair the graceful exit
+
+- **Input model:** Old inflation with first-order bubble nucleation.
+- **Pressure:** Bubbles that fail to percolate appropriately leave an unacceptable, highly inhomogeneous completion.
+- **Protected structure:** Accelerated smoothing/dilution and recovery of hot cosmology.
+- **Hidden assumption:** Any phase transition that ends the false vacuum supplies a smooth enough reheating.
+- **Operation / change type:** `replacement` — Explore slowly evolving scalar-field variants in which acceleration ends more continuously.
+- **Output model:** Linde's and Albrecht–Steinhardt's 1982 new-inflation routes, with distinct potentials and assumptions.
+- **Local justification:** The 1982 papers responded to first-order exit problems; chaotic inflation followed as another route, not a 1981 input.
+- **Cost/uncertainty:** Flat potentials and initial conditions can require tuning; reheating remains model-dependent.
+- **Branch status:** `rejected` for the original old-inflation exit, not for accelerated expansion as a whole.
+- **Next question:** Can the model generate primordial fluctuations?
+
+##### `CT-INF-04`: `CS-INF-02` → `CS-INF-05` — Let fluctuations survive the smoothing
+
+- **Input model:** Quasi-de Sitter scalar/curvature dynamics and quantum field fluctuations.
+- **Pressure:** An exactly smooth post-inflation universe would lack seeds for galaxies and CMB anisotropy.
+- **Protected structure:** Quantum-field perturbations and the accelerated background.
+- **Hidden assumption:** Rapid expansion erases all physically relevant inhomogeneity.
+- **Operation / change type:** `reinterpretation` — Quantize curvature perturbations of the accelerated background and follow their spectrum and possible growth, rather than assuming all inhomogeneity is erased.
+- **Output model:** A nearly flat fluctuation spectrum in the curvature-driven example, with a conditional route to structure-forming seeds.
+- **Local justification:** Mukhanov–Chibisov's 1981 paper calculates curvature-fluctuation correlations and a nearly flat spectrum, while warning that the fluctuations can terminate its nonsingular de Sitter stage (English translation, pp. 532–535). The later generic horizon-exit/reentry account is a broader consolidation, not that paper's sole argument; this branch does not descend from the 1982 new-inflation repair.
+- **Cost/uncertainty:** Survival into the later hot universe, amplitude, and spectrum depend on the driving sector and post-stage evolution; “nearly scale invariant” is not unique to one model.
+- **Next question:** Which statistical features are genuinely discriminating?
+
+##### `CT-INF-05`: `CS-INF-04` and `CS-INF-05` → `CS-INF-06` — Turn a scenario into model tests
+
+- **Input model:** Accelerated expansion, candidate exit, and fluctuation generation.
+- **Pressure:** Solving horizon/flatness qualitatively allows many models and does not settle the microscopic mechanism.
+- **Protected structure:** Later hot-Big-Bang success and quantifiable perturbation observables.
+- **Hidden assumption:** Any inflationary potential with enough e-folds is automatically validated.
+- **Operation / change type:** `differentiation` — Separate generic accelerated-history consequences from model-specific tilt, tensors, non-Gaussianity, and reheating claims.
+- **Output model:** A family of falsifiable inflationary realizations with explicit assumptions and open identification questions.
+- **Local justification:** The early 1980s proposals differed in mechanism and exit; precision CMB tests were future validation.
+- **Cost/uncertainty:** Broad inflation can be flexible, so individual models need fixed parameters and failure conditions.
+- **Next question:** What spectrum and post-inflation history does each model predict before comparison with data?
+
+#### Formal consolidation
+
+The slow-roll parameters and power-spectrum notation below are modern consolidation of a broad family. They are not formulas established for every 1980–82 proposal; Starobinsky curvature inflation and scalar new inflation have different microphysics.
 
 Accelerated expansion requires:
 
@@ -148,15 +230,33 @@ $$
 
 - `P-02` — **Permit a new representation, ontology, or mechanism:** Vacuum-like negative pressure accepted
 
-- `P-03` — **Make the new structure generative:** Accelerated dynamics generates flatness and perturbations
+- `P-03` — **Make the new structure generative:** Acceleration suppresses observable curvature; quantized fluctuations can seed perturbations
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Very early universe and primordial perturbations). The case-specific unification was: Particle fields, gravity, and cosmic initial conditions unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+An accelerated stage addresses background geometry, but that alone neither gives an acceptable hot-universe exit nor predicts the measured perturbation statistics. The following extensions are conditional on specified inflationary and reheating models.
+
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes a target worth testing, but horizon/flatness improvement cannot license arbitrary potential tuning after CMB data. Fix the driving sector, vacuum, number of e-folds, reheating assumptions, and predicted uncertainty range before comparing a model to new observables.
+
+#### `EG-INF-01` — Extend background inflation to CMB perturbations
+
+- **Source domain:** 1980–82 accelerated-expansion and exit proposals motivated by horizon, flatness, and relic problems; precise CMB anisotropy spectra were not construction inputs.
+- **Target domain:** Primordial scalar perturbations later inferred from CMB anisotropy and large-scale structure.
+- **Novel consequence:** A specified quasi-de Sitter fluctuation model predicts a nearly scale-invariant scalar spectrum with calculated amplitude/tilt and, in simple single-field cases, approximately adiabatic near-Gaussian statistics.
+- **Failure condition:** Once a potential, fluctuation state, reheating mapping, and parameter ranges are fixed, a measured spectrum, isocurvature fraction, or non-Gaussianity outside the model's predeclared uncertainty rejects that realization; broad inflation is not tested by one unparameterized slogan.
+
+#### `EG-INF-02` — Require a viable post-inflation hot universe
+
+- **Source domain:** Accelerated expansion can suppress observable curvature and dilute some relics; old inflation demonstrates that these benefits alone do not ensure a successful exit.
+- **Target domain:** Reheating, light-element production, and the later hot-plasma history in a concrete model.
+- **Novel consequence:** Inflation must end, transfer enough energy to a hot radiation bath, and leave perturbations/relic abundances compatible with the same cosmological history.
+- **Failure condition:** If a specified model cannot exit or reheat above its required thermal threshold, or necessarily produces forbidden inhomogeneity/relic abundance after all stated parameters are fixed, that model fails even if it solves the horizon problem.
 
 **Patterns demonstrated:**
 
-- `P-03` — **Generate consequences rather than merely redescribe inputs:** Accelerated dynamics generates flatness and perturbations
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** Acceleration suppresses observable curvature; quantized fluctuations can seed perturbations
 
 - `P-04` — **Unify previously separated domains or phenomena:** Particle fields, gravity, and cosmic initial conditions unified
 
@@ -178,7 +278,7 @@ Pattern IDs are ordered by their typical first role in the reconstructed discove
 |---|---|---|---|---|
 | `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | Initial coincidences reframed as dynamical outcomes | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
 | `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Vacuum-like negative pressure accepted | [Transformative move](#transformative-move) |
-| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Accelerated dynamics generates flatness and perturbations | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Acceleration suppresses observable curvature; quantized fluctuations can seed perturbations | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
 | `P-04` | Unify previously separated domains | Extrapolative unification | Particle fields, gravity, and cosmic initial conditions unified | [Extrapolative generalization](#extrapolative-generalization) |
 | `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Hot Big Bang retained after reheating | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
 | `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Spectral tilt, Gaussianity, curvature, and tensors test models | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
@@ -193,7 +293,7 @@ This node serializes the result of the preceding reconstruction. It is a compact
 | Central claim | Inflation proposes a period of accelerated early expansion that dynamically enlarges a small causally connected region and converts quantum fluctuations into primordial density perturbations. It addresses horizon, flatness, and relic problems while making statistical predictions tested with the CMB. |
 | Domain | Very early universe and primordial perturbations |
 | Epistemic status | Broad inflationary paradigm is strongly supported indirectly; its field content and detailed mechanism are not established |
-| Generative role | Accelerated dynamics generates flatness and perturbations |
+| Generative role | Acceleration suppresses observable curvature; quantized fluctuations can seed perturbations |
 | Retained structure | Hot Big Bang retained after reheating |
 
 Key formal relations, consolidated from the derivation above:
@@ -216,10 +316,14 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-INF-01` — Primordial fluctuations from accelerated expansion
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Cosmic Inflation: Historical Knowledge Graph.
+- **Classification:** `EARLY-DERIVED-PREDICTION`.
+- **Prediction/derivation period:** Mukhanov–Chibisov's 1981 analysis and related early-1980s inflationary fluctuation work; this is a parallel theoretical branch, not a sole deduction of Guth's old-inflation paper.
+- **Derivation provenance:** Mukhanov–Chibisov calculated quantum curvature-fluctuation correlations and a nearly flat spectrum in a curvature-driven de Sitter model, with structure formation conditional on an intermediate stage; later work recast perturbation generation in broader horizon-exit/reentry language.
+- **Construction-data independence:** Precision CMB anisotropy spectra were not used in the original 1981–82 derivations.
+- **Observable discriminator:** Scalar perturbation spectrum and correlations inferred from later CMB and structure data.
+- **Outcome and limitation:** Later observations support several broad spectral features, while ruling out some specific potentials; they do not identify a unique inflaton field or prove every inflationary variant.
 
 ## Validation and explanatory gains
 
@@ -326,6 +430,19 @@ Inflation also dilutes unwanted relics such as magnetic monopoles left by some g
 ```text
 A-HORIZON-FLATNESS --motivates--> D-COSMIC-INFLATION-1980S
 A-QFT-VACUUM --contributes-to--> INFLATON-DYNAMICS
+CS-INF-01 --revised-by--> CT-INF-01
+CT-INF-01 --produces--> CS-INF-02
+CS-INF-02 --revised-by--> CT-INF-02
+CT-INF-02 --produces--> CS-INF-03
+CS-INF-03 --revised-by--> CT-INF-03
+CT-INF-03 --produces--> CS-INF-04
+CS-INF-02 --branches-to--> CT-INF-04
+CT-INF-04 --produces--> CS-INF-05
+CS-INF-04 --merged-by--> CT-INF-05
+CS-INF-05 --merged-by--> CT-INF-05
+CT-INF-05 --produces--> CS-INF-06
+CS-INF-06 --hands-off-to--> EG-INF-01
+CS-INF-06 --hands-off-to--> EG-INF-02
 NEGATIVE-PRESSURE --generates--> ACCELERATED-EXPANSION
 ACCELERATED-EXPANSION --suppresses--> SPATIAL-CURVATURE
 QUANTUM-FLUCTUATIONS --stretched-by--> ACCELERATED-EXPANSION
@@ -336,7 +453,11 @@ D-COSMIC-INFLATION-1980S --instantiates--> P-03
 
 ## Sources
 
+- Alexei A. Starobinsky, [“A New Type of Isotropic Cosmological Models without Singularity”](https://www.sciencedirect.com/science/article/pii/037026938090670X), *Physics Letters B* 91 (1980), 99–102.
+- Alan H. Guth, [“Inflationary Universe: A Possible Solution to the Horizon and Flatness Problems”](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.23.347), *Physical Review D* 23 (1981), 347–356.
+- Andrei D. Linde, [“A New Inflationary Universe Scenario”](https://www.sciencedirect.com/science/article/pii/0370269382912199), *Physics Letters B* 108 (1982), 389–393.
+- Andreas Albrecht and Paul J. Steinhardt, [“Cosmology for Grand Unified Theories with Radiatively Induced Symmetry Breaking”](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.48.1220), *Physical Review Letters* 48 (1982), 1220–1223.
+- Viatcheslav F. Mukhanov and G. V. Chibisov, [“Quantum Fluctuations and a Nonsingular Universe”](https://s3.cern.ch/inspire-prod-files-4/46746cd8351e349e64c5d91b6f7db6df), *JETP Letters* 33 (1981), English translation pp. 532–535, checked for the nearly flat spectrum, possible de Sitter-stage instability, and conditional galaxy-seed claim.
 - NASA, [“Big Bang and the Evolution of the Universe,” including inflationary tests](https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/big-bang-and-the-evolution-of-the-universe/).
 - NASA Science, [Universe overview: cosmic inflation](https://science.nasa.gov/universe/overview/).
-- Guth, [“Inflationary Universe”](https://link.aps.org/doi/10.1103/PhysRevD.23.347).
 - Misner, [“Mixmaster Universe” (1969), U.S. Department of Energy OSTI record](https://www.osti.gov/biblio/4790606).

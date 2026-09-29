@@ -24,7 +24,7 @@ encode dynamics through a scalar Lagrangian and generalized forces. For conserva
 
 ## Historical problem
 
-Before the focal discovery (1788 publication of *Méchanique analitique*), the case confronted a linked set of pressures: Equilibrium of constrained systems; Extremal paths solve optics and fastest-descent problems. The pathways `R-CARTESIAN-COMPONENT-MECHANICS`, `R-EXPLICIT-CONSTRAINT-REACTIONS`, `R-MAUPERTUIS-METAPHYSICAL-ACTION`, `R-DALEMBERT-WITHOUT-SYSTEMATIC-COORDINATES` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Analytical mechanics, generalized coordinates, constraints, virtual work, and variational dynamics was to construct a more generative account without importing later validation evidence into the original inference.
+Before Lagrange's 1788 *Méchanique analitique*, Newtonian force equations worked well for simple bodies but could become cumbersome when constraints introduced dependent Cartesian coordinates and many unknown reactions. Virtual work already suppressed ideal constraint forces in statics, and d'Alembert had recast dynamics as an instantaneous virtual-work balance. The unresolved organizational task was to express allowed displacements through independent variables so that one analytical scheme handled many constrained systems while preserving their observable motions. Earlier optical and least-action problems supplied variational resources, but the modern fixed-endpoint Hamilton action principle was not the 1788 treatise's starting formula.
 
 ## Time slices
 
@@ -124,14 +124,100 @@ The admissible pre-discovery input nodes are `A-NEWTON-DYNAMICS`, `A-VIRTUAL-WOR
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-CARTESIAN-COMPONENT-MECHANICS` | A Newtonian calculation strategy that writes a separate vector force equation for every body in fixed spatial coordinates and then resolves all unknown reaction forces and accelerations component by component. | See the full pathway record above. |
-| `R-EXPLICIT-CONSTRAINT-REACTIONS` | A constrained-mechanics method in which every tension, normal force, hinge reaction or contact force is introduced as an additional unknown and solved together with Cartesian equations and constraint relations. | See the full pathway record above. |
-| `R-MAUPERTUIS-METAPHYSICAL-ACTION` | Maupertuis's 1744 program proposing that nature minimizes an “action” related to mass, speed and distance, often defended through economy or perfection and formulated most securely for restricted fixed-energy problems rather than arbitrary time-dependent dynamics. | See the full pathway record above. |
-| `R-DALEMBERT-WITHOUT-SYSTEMATIC-COORDINATES` | The d'Alembert virtual-work equation treating dynamics as equilibrium between applied and inertial forces, but applied case by case before a fully systematic generalized-coordinate calculus organizes all degrees of freedom. | See the full pathway record above. |
+| `R-CARTESIAN-COMPONENT-MECHANICS` | A Newtonian calculation strategy that writes a separate vector force equation for every body in fixed spatial coordinates and then resolves all unknown reaction forces and accelerations component by component. | Constrained systems proliferated dependent coordinates and internal-force unknowns; another component equation did not supply a reusable reduced description. |
+| `R-EXPLICIT-CONSTRAINT-REACTIONS` | A constrained-mechanics method in which every tension, normal force, hinge reaction or contact force is introduced as an additional unknown and solved together with Cartesian equations and constraint relations. | Ideal reactions do no work along allowed virtual displacements, so solving every one before finding the motion added avoidable unknowns. |
+| `R-MAUPERTUIS-METAPHYSICAL-ACTION` | Maupertuis's 1744 program proposing that nature minimizes an “action” related to mass, speed and distance, often defended through economy or perfection and formulated most securely for restricted fixed-energy problems rather than arbitrary time-dependent dynamics. | An asserted universal minimum did not specify the functional, constraints, and boundary conditions needed for general time-dependent dynamics. |
+| `R-DALEMBERT-WITHOUT-SYSTEMATIC-COORDINATES` | The d'Alembert virtual-work equation treating dynamics as equilibrium between applied and inertial forces, but applied case by case before a fully systematic generalized-coordinate calculus organizes all degrees of freedom. | Virtual equilibrium removed ideal reactions, but without independent coordinates its application remained problem-specific. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** “What are all constraint forces?” becomes “What are the independent degrees of freedom?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by resources available at that step; later validation and canonical endpoint language are excluded from its justification. This is an auditable rational reconstruction, not a transcript of a scientist's or model's hidden reasoning and not a claim that the endpoint was inevitable. Concept states are graph nodes; transitions are typed, auditable edges.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-LAG-01` | Newtonian equations in Cartesian components reproduce motion but proliferate unknown reactions for constrained systems. |
+| `CS-LAG-02` | Allowed virtual displacements eliminate ideal constraint reactions from an equilibrium balance. |
+| `CS-LAG-03` | d'Alembert's inertial terms extend the virtual-work balance from statics to dynamics. |
+| `CS-LAG-04` | Independent variables describe the allowed configuration and express virtual displacements without redundant Cartesian components. |
+| `CS-LAG-05` | Kinetic-energy derivatives and generalized forces give a common differential equation for each independent variable. |
+| `CS-LAG-06` | The analytical method handles classes of constrained systems while reproducing Newtonian motion under its stated constraint assumptions. |
+
+##### `CT-LAG-01`: `CS-LAG-01` → `CS-LAG-02` — Project away ideal reactions in statics
+
+- **Input model:** Cartesian force balances introduce tensions and support forces as unknowns alongside the wanted motion.
+- **Pressure:** In a linkage or machine, many reactions enforce constraints but do not directly determine the allowed displacement.
+- **Protected structure:** Real applied forces, geometry of the constraints, and Newtonian equilibrium results.
+- **Hidden assumption:** Every internal reaction must first be solved to obtain an equilibrium condition.
+- **Operation / change type:** `representation_shift` — Test forces against allowed virtual displacements on which ideal reactions do no work.
+- **Output model:** A reduced equilibrium condition can be written without explicit ideal reaction forces.
+- **Local justification:** The pre-1788 principle of virtual velocities supplied a statical tool; Lagrange made it a foundational analytical input, not a new force law.
+- **Cost/uncertainty:** Reaction elimination depends on ideal constraints and correctly identified allowable displacements.
+- **Branch status:** `selected`; explicit reactions remain useful when their values are the desired result.
+- **Next question:** Can the same projection be applied to accelerated systems?
+
+##### `CT-LAG-02`: `CS-LAG-02` → `CS-LAG-03` — Turn dynamics into virtual balance
+
+- **Input model:** Virtual work simplifies equilibrium but leaves accelerated motion outside the statical condition.
+- **Pressure:** Constrained bodies move while their instantaneous forces are not in ordinary equilibrium.
+- **Protected structure:** Newton's force–acceleration relation and the virtual-work cancellation of ideal reactions.
+- **Hidden assumption:** Virtual-work reasoning is confined to bodies at rest.
+- **Operation / change type:** `generalization` — Introduce inertial terms in d'Alembert's balance so applied and inertial contributions have zero virtual work.
+- **Output model:** Instantaneous constrained dynamics can be projected onto allowed virtual displacements.
+- **Local justification:** d'Alembert's 1743 dynamics predates the 1788 synthesis and supplies the dynamical extension used by Lagrange.
+- **Cost/uncertainty:** The step is an equivalent rearrangement of dynamics, not evidence for a new metaphysical force; nonideal constraint work remains.
+- **Branch status:** `selected`; direct Cartesian force equations remain mathematically valid.
+- **Next question:** How can the permitted displacements be represented systematically across different systems?
+
+##### `CT-LAG-03`: `CS-LAG-03` → `CS-LAG-04` — Choose independent configuration variables
+
+- **Input model:** d'Alembert's virtual balance still contains many Cartesian displacement components linked by constraints.
+- **Pressure:** Case-by-case elimination becomes cumbersome for multiple connected bodies.
+- **Protected structure:** The actual accessible configurations and the virtual-work balance.
+- **Hidden assumption:** The ambient Cartesian coordinates are the natural independent variables of every mechanical problem.
+- **Operation / change type:** `constraint_change` — Parameterize positions by independent coordinates and express each allowed virtual displacement through their independent variations.
+- **Output model:** Constraint geometry is absorbed into a coordinate map, leaving one variation per degree of freedom.
+- **Local justification:** Lagrange's 1788 analytical treatment reduces coordinates to independent variables; the original treatise's method is not simply later configuration-space language.
+- **Cost/uncertainty:** The coordinates may be local or singular, and velocity-dependent or nonholonomic constraints require separate care.
+- **Branch status:** `selected`; Cartesian variables are retained when convenient, not declared physically false.
+- **Next question:** Can this projection be converted into one common differential equation per coordinate?
+
+##### `CT-LAG-04`: `CS-LAG-04` → `CS-LAG-05` — Express inertial work through kinetic energy
+
+- **Input model:** The d'Alembert balance has independent variations but still contains particle-by-particle acceleration terms.
+- **Pressure:** A reusable analytical rule needs the inertial terms written using the chosen coordinate functions.
+- **Protected structure:** The same Newtonian trajectories, ideal virtual displacements, and kinetic energy of the particles.
+- **Hidden assumption:** Reduced dynamics must retain every Cartesian acceleration component explicitly.
+- **Operation / change type:** `coalescence` — Use the kinetic-energy derivative identity and generalized forces to collect each independent variation's coefficient.
+- **Output model:** Lagrange's differential equations determine reduced motion; for conservative natural systems they admit a modern `L=T−V` expression.
+- **Local justification:** The 1788 treatise organizes dynamics analytically from virtual work and independent variables. The kinetic-energy identity below shows the local algebra rather than invoking Hamilton's later fixed-endpoint action principle.
+- **Cost/uncertainty:** The equations need specified forces and regularity assumptions; the scalar `L` alone is not a new empirical force law.
+- **Branch status:** `selected`; a later stationary-action derivation is `deferred` as a distinct formal route.
+- **Next question:** Does the equation form remain useful for different constrained mechanical systems?
+
+##### `CT-LAG-05`: `CS-LAG-05` → `CS-LAG-06` — Reuse one equation form across systems
+
+- **Input model:** Reduced differential equations can be obtained from coordinates, kinetic energy, and generalized forces.
+- **Pressure:** A reformulation matters only if the same scheme solves more than the original simple linkage or particle example.
+- **Protected structure:** Newtonian motion, measurable trajectories, and the physical distinction between ideal and nonideal constraints.
+- **Hidden assumption:** Each pendulum, rigid body, or coupled system needs an unrelated set of dynamical principles.
+- **Operation / change type:** `generalization` — Change the coordinate map and system-specific energy/forces while keeping the analytical derivation form.
+- **Output model:** A general constrained-mechanics method, with reactions recoverable separately when needed.
+- **Local justification:** *Méchanique analitique* develops statics and dynamics as one analytical program; the method's equivalence is checked case by case against accepted mechanics.
+- **Cost/uncertainty:** Breadth of form does not guarantee a chosen model's force law is correct or that nonholonomic/dissipative systems fit the simplest equations.
+- **Branch status:** `selected`; direct force balances remain a check and sometimes the simpler calculation.
+- **Next question:** Which further constrained systems test whether the reduction genuinely transfers?
+
+#### Formal consolidation
+
+The first route below follows the virtual-work and d'Alembert construction. The later fixed-endpoint action route is shown separately as a modern formal reconstruction, not as the 1788 starting premise.
 
 Let particle positions depend on independent generalized coordinates,
 
@@ -149,6 +235,12 @@ d'Alembert's principle for ideal constraints is
 
 $$
 \sum_a(\mathbf F_a-m_a\mathbf a_a)\cdot\delta\mathbf r_a=0.
+$$
+
+$$
+\frac{d}{dt}\frac{\partial L}{\partial\dot q_i}
+-\frac{\partial L}{\partial q_i}=Q_i^{\rm nc}
+\quad (L=T-V\text{ for conservative natural systems}).
 $$
 
 Define generalized forces
@@ -297,7 +389,16 @@ Fixed endpoints make the bracket zero. The fundamental lemma of the calculus of 
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Analytical mechanics, generalized coordinates, constraints, virtual work, and variational dynamics). The case-specific unification was: Particles, rigid bodies, linkages and constrained systems share one coordinate-independent equation form. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes an extension worth testing but does not license it automatically. Each record separates the supported domain, the proposed target, a novel consequence, and an explicit failure condition.
+
+#### `EG-LAG-01` — Extend reduced dynamics across constrained systems
+
+- **Source domain:** Ideal holonomic systems for which virtual work, independent coordinates, and the kinetic-energy identity recover known Newtonian motion.
+- **Target domain:** More complex linkages, rigid bodies, and coupled oscillations described by their independent configuration variables.
+- **Novel consequence:** The same reduced equation form should reproduce measurable motions without solving each ideal reaction force first, while reactions can be recovered separately where needed.
+- **Failure condition:** Persistent disagreement with independently checked Newtonian trajectories under the same forces and correctly modeled ideal constraints would defeat the transfer. Disagreement caused by friction, nonholonomic constraints, or an incorrect applied-force model is a boundary diagnosis, not automatic refutation of the ideal method.
 
 **Patterns demonstrated:**
 
@@ -437,6 +538,18 @@ No separate supplemental note block was present before this schema migration. Ca
 
 ```text
 A-NEWTON-DYNAMICS --constrained-target-for--> D-LAGRANGIAN-MECHANICS-1788
+A-NEWTON-DYNAMICS --constrains--> CS-LAG-01
+CS-LAG-01 --revised-by--> CT-LAG-01
+CT-LAG-01 --produces--> CS-LAG-02
+CS-LAG-02 --revised-by--> CT-LAG-02
+CT-LAG-02 --produces--> CS-LAG-03
+CS-LAG-03 --revised-by--> CT-LAG-03
+CT-LAG-03 --produces--> CS-LAG-04
+CS-LAG-04 --revised-by--> CT-LAG-04
+CT-LAG-04 --produces--> CS-LAG-05
+CS-LAG-05 --revised-by--> CT-LAG-05
+CT-LAG-05 --produces--> CS-LAG-06
+CS-LAG-06 --hands-off-to--> EG-LAG-01
 T-NEWTON-1687 --is-reformulated-by--> D-LAGRANGIAN-MECHANICS-1788
 A-VIRTUAL-WORK --contributes-to--> D-LAGRANGIAN-MECHANICS-1788
 A-DALEMBERT --enables--> GENERALIZED-DYNAMICS
@@ -451,6 +564,7 @@ D-LAGRANGIAN-MECHANICS-1788 --instantiates--> P-01
 
 ## Sources
 
+- ETH Library, [Lagrange's first edition of *Méchanique analitique* (1788)](https://www.e-rara.ch/doi/10.3931/e-rara-8817).
 - Bibliothèque nationale de France, [catalogue record and Gallica scan of Lagrange's 1788 *Méchanique analitique*](https://catalogue.bnf.fr/ark:/12148/cb307191158).
 - Smithsonian Libraries, [digitized 1788 *Méchanique analitique*](https://library.si.edu/digital-library/book/meychaniqueanal00lagr).
 - Scholarpedia, [“Principle of least action”](https://www.scholarpedia.org/article/Principle_of_least_action).

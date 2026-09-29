@@ -17,7 +17,7 @@ Dirac constructed a quantum equation linear in time and space derivatives that w
 
 ## Historical problem
 
-Before the focal discovery (1928 theory; 1932 positron discovery), the case confronted a linked set of pressures: Nonrelativistic quantum dynamics successful; Relativistic scalar equation. The pathways `R-NONRELATIVISTIC-ELECTRON-ONLY`, `R-LITERAL-DIRAC-SEA`, `R-KLEIN-GORDON-SINGLE-PARTICLE-PROBABILITY`, `R-SQUARE-ROOT-RELATIVISTIC-SCHRODINGER` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Relativistic spin-\(\tfrac12\) particles and antiparticles was to construct a more generative account without importing later validation evidence into the original inference.
+At the start of the 1928–1932 sequence, the task was to reconcile quantum electron dynamics, spin, and relativistic energy. The Klein–Gordon and square-root routes were incomplete electron descriptions; Dirac's negative-energy states then created a *new* interpretation problem. His 1930 filled-sea proposal was therefore an intermediate response, not a pre-1928 rival or the modern ontology. Anderson's independent 1932 cosmic-ray observation later tested the particle claim; his search was not directed by Dirac's prediction, and the track was not an input to the 1928 or 1931 inference.
 
 ## Time slices
 
@@ -71,7 +71,7 @@ Before the focal discovery (1928 theory; 1932 positron discovery), the case conf
 
 ### Pathway comparison ledger
 
-**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (1928 theory; 1932 positron discovery). The proposed/active period is stored in each pathway record.
+**Chronology rule:** The nonrelativistic, Klein–Gordon, and square-root pathways precede Dirac's 1928 equation; the 1930 literal-sea pathway arises within the 1928–1932 discovery sequence, before the 1931 antielectron revision. Each proposed/active period is stored in its record.
 
 | Route | Why used | Difficulty | Modern retention |
 |---|---|---|---|
@@ -89,20 +89,103 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-SPECIAL-RELATIVITY`, `A-QUANTUM-MECHANICS`, `A-PAULI-MATRICES`, `A-CLOUD-CHAMBER`, `A-MAGNETIC-CURVATURE`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+The 1928 construction inputs are `A-SPECIAL-RELATIVITY`, `A-QUANTUM-MECHANICS`, and spin algebra related to `A-PAULI-MATRICES`. `A-CLOUD-CHAMBER` and `A-MAGNETIC-CURVATURE` belong to Anderson's independent 1932 observation, not to Dirac's equation or 1931 antielectron proposal. The developing filled-sea hypothesis is an intermediate concept within the focal sequence.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
 | `R-NONRELATIVISTIC-ELECTRON-ONLY` | A fixed-particle quantum model that describes a single electron with the nonrelativistic Schrödinger equation and contains neither relativistic spinor structure nor particle creation and antiparticles. | Omits Lorentz covariance, antiparticles, and intrinsic spin structure. |
-| `R-LITERAL-DIRAC-SEA` | The hole-theory ontology in which every negative-energy electron state in the vacuum is physically occupied and a missing electron in that infinite sea appears as a positron. | Infinite sea bookkeeping and generalization difficulties. |
-| `R-KLEIN-GORDON-SINGLE-PARTICLE-PROBABILITY` | The interpretation of a Klein–Gordon wavefunction as a one-particle probability amplitude with its conserved time component treated as a positive density. | See the full pathway record above. |
-| `R-SQUARE-ROOT-RELATIVISTIC-SCHRODINGER` | A fixed-particle equation using \(H=\sqrt{p^2c^2+m^2c^4}\) directly as the quantum Hamiltonian. | See the full pathway record above. |
+| `R-LITERAL-DIRAC-SEA` | The hole-theory ontology in which every negative-energy electron state in the vacuum is physically occupied and a missing electron in that infinite sea appears as a positron. | In 1930–31, identifying the electron-sea hole with a proton conflicted with its electron mass and matter stability; the literal infinite sea posed further later difficulties. |
+| `R-KLEIN-GORDON-SINGLE-PARTICLE-PROBABILITY` | The interpretation of a Klein–Gordon wavefunction as a one-particle probability amplitude with its conserved time component treated as a positive density. | Its conserved time component can be negative, so it cannot serve as a general positive one-particle probability density. |
+| `R-SQUARE-ROOT-RELATIVISTIC-SCHRODINGER` | A fixed-particle equation using \(H=\sqrt{p^2c^2+m^2c^4}\) directly as the quantum Hamiltonian. | The square-root operator is nonlocal in position space and did not yield a local first-order spinor equation for the electron. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** Negative energies reframed as new particle sector. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by information available at the focal discovery date; later confirmations, modern notation, and rival branches must be distinguished from contemporary inputs.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-DIR-01` | Schrödinger/Pauli electron theory works at low speed, but relativistic scalar and square-root equations do not supply a satisfactory electron equation. **Open question:** Can one equation be first order and relativistically consistent? |
+| `CS-DIR-02` | A matrix-linear Hamiltonian squares to the relativistic energy relation. **Open question:** Does it recover observed electron spin behavior? |
+| `CS-DIR-03` | Four-component spinor dynamics includes spin and a leading magnetic moment, yet admits both energy signs. **Open question:** How can negative-energy states be interpreted? |
+| `CS-DIR-04` | Filling negative-energy states blocks ordinary decay; a hole has positive charge and energy. **Open question:** Is the hole the known proton or a distinct particle? |
+| `CS-DIR-05` | Same-mass constraints and stability objections make the proton identification untenable. **Open question:** What new particle does the hole imply? |
+| `CS-DIR-06` | A positive electron of the electron's mass and opposite charge is proposed before Anderson's observation. **Open question:** Will its measured mass, charge, and interactions agree? |
+
+##### `CT-DIR-01`: `CS-DIR-01` → `CS-DIR-02` — Linearize relativistic energy
+
+- **Input model:** Relativistic energy–momentum relation and operator quantum mechanics.
+- **Pressure:** A second-order scalar equation has an unsuitable positive one-particle density for the electron, while a direct square-root Hamiltonian is awkward.
+- **Protected structure:** Lorentz-compatible dispersion and first-order time evolution.
+- **Hidden assumption:** A relativistic electron must be described by a scalar wavefunction.
+- **Operation / change type:** `representation_shift` — Introduce matrices multiplying momentum and mass so the first-order operator squares to the relativistic invariant.
+- **Output model:** A multi-component first-order electron equation.
+- **Local justification:** Dirac's 1928 paper explicitly starts from this linearization problem.
+- **Cost/uncertainty:** The required matrices create extra components whose physical interpretation must be worked out.
+- **Next question:** Do those components account for spin?
+
+##### `CT-DIR-02`: `CS-DIR-02` → `CS-DIR-03` — Interpret spinor structure and expose both energy signs
+
+- **Input model:** Matrix-linear relativistic electron dynamics.
+- **Pressure:** Electron fine structure and magnetic behavior demand spin-sensitive terms.
+- **Protected structure:** Low-speed Pauli behavior and relativistic dispersion.
+- **Hidden assumption:** The extra components are disposable algebra with no physical role.
+- **Operation / change type:** `enrichment` — Derive spin-related magnetic coupling and inspect the free equation's energy spectrum.
+- **Output model:** Spin and a leading magnetic moment emerge, but negative-energy solutions remain.
+- **Local justification:** These consequences are in or directly follow from the 1928 equation, before positron detection.
+- **Cost/uncertainty:** A naive single-electron picture appears unstable against transitions to ever-lower energy.
+- **Next question:** Can the unwanted states be given a consistent many-electron interpretation?
+
+##### `CT-DIR-03`: `CS-DIR-03` → `CS-DIR-04` — Stabilize the vacuum by filled negative states
+
+- **Input model:** A relativistic electron equation with negative-energy solutions and Pauli exclusion.
+- **Pressure:** An ordinary positive-energy electron should not fall into empty negative-energy states.
+- **Protected structure:** The equation's spinor structure and exclusion of duplicate electron states.
+- **Hidden assumption:** The vacuum is simply empty of electrons at every energy.
+- **Operation / change type:** `reinterpretation` — Fill the negative-energy levels and treat a vacancy as an observable positive-charge excitation.
+- **Output model:** Dirac's 1930 hole picture, initially tentatively associated with the proton.
+- **Local justification:** The filled-sea proposal responds to the 1928 spectrum before Anderson's 1932 observation.
+- **Cost/uncertainty:** The infinite sea and proton identification bring charge, mass, and stability difficulties.
+- **Branch status:** `deferred`; the proton-hole identification remains a testable but ultimately rejected branch.
+- **Next question:** Can the hole consistently have the proton's mass?
+
+##### `CT-DIR-04`: `CS-DIR-04` → `CS-DIR-05` — Reject the proton-hole identification
+
+- **Input model:** A positively charged hole in an electron's negative-energy sea.
+- **Pressure:** Charge-conjugation/mass arguments and electron–proton annihilation objections conflict with identifying that hole as a heavy proton.
+- **Protected structure:** The hole's opposite charge and positive observable energy.
+- **Hidden assumption:** Every positive charged particle already known must be the hole.
+- **Operation / change type:** `constraint_change` — Require the hole to retain electron mass and abandon the proton assignment.
+- **Output model:** A distinct positive electron becomes the coherent interpretation.
+- **Local justification:** Weyl's mass-symmetry reasoning and contemporary objections were available by Dirac's 1931 revision.
+- **Cost/uncertainty:** A new particle species had not yet been identified experimentally.
+- **Branch status:** `rejected` for the proton-hole identification; the positive-electron branch is selected.
+- **Next question:** Could a same-mass positive electron be produced or observed under suitable conditions?
+
+##### `CT-DIR-05`: `CS-DIR-05` → `CS-DIR-06` — Commit to an antielectron prediction
+
+- **Input model:** A hole with positive charge and electron mass, not the known proton.
+- **Pressure:** The theoretical interpretation must survive as a distinct observable claim.
+- **Protected structure:** Electron's mass magnitude, opposite charge, and energy–momentum conservation.
+- **Hidden assumption:** Negative-energy solutions must remain mathematical artifacts with no new physical sector.
+- **Operation / change type:** `generalization` — Predict a positive electron and its possible creation/annihilation behavior.
+- **Output model:** Dirac's 1931 antielectron proposal, prior to the 1932 positron track.
+- **Local justification:** The 1931 paper explicitly describes an as-yet unobserved particle with electron mass and opposite charge.
+- **Cost/uncertainty:** The literal filled-sea ontology may fail even if the positive-electron prediction succeeds.
+- **Next question:** Does cloud-chamber curvature reveal the predicted charge-to-mass combination?
+
+#### Formal consolidation
+
+The equations below use modern gamma-matrix notation and later QFT reaction notation. They consolidate the 1928 equation, the 1931 antiparticle inference, and the 1932 test; they are not a single contemporaneous derivation.
 
 Dirac's equation:
 
@@ -154,7 +237,23 @@ Opposite curvature at electron-like mass indicates opposite charge, supporting p
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Relativistic spin-\(\tfrac12\) particles and antiparticles). The case-specific unification was: Quantum mechanics, relativity, and spin unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain does not establish the target-domain claim; state the novel consequence and a possible failure condition before using later evidence as validation.
+
+#### `EG-DIR-01` — Quantify positive-electron production beyond the 1931 thought experiment
+
+- **Source domain:** Dirac's 1931 electron-hole inference, including its already stated electron–antielectron recombination and possible two-hard-γ production channel.
+- **Target domain:** Independently specified high-energy production and annihilation setups, including a photon interacting with a nuclear Coulomb field; their rates require additional interaction dynamics beyond the 1931 existence argument.
+- **Novel consequence:** After fixing the field, energies, and coupling, a model extending the antielectron claim should predict paired opposite-charge tracks and energy–momentum-consistent radiation signatures, not merely assert that pairs are possible.
+- **Failure condition:** Reproducible tracks and rates incompatible with the specified pair-process model after backgrounds and detector response are controlled would defeat that extension, even if a positive electron exists.
+
+#### `EG-DIR-02` — Extend antiparticle pairing beyond electrons
+
+- **Source domain:** Relativistic electron spinor structure and the 1931 antielectron claim; Dirac also tentatively mentioned an antiproton.
+- **Target domain:** Newly characterized charged spin-\(\tfrac12\) species beyond the electron and proton, with specified relativistic quantum-field descriptions.
+- **Novel consequence:** Corresponding opposite-charge partner excitations should occur, with matching mass under the relevant charge-conjugate theory.
+- **Failure condition:** A well-characterized charged Dirac field with no consistent antiparticle sector under a specified local relativistic theory would defeat the proposed generalization; the electron equation alone does not prove it.
 
 **Patterns demonstrated:**
 
@@ -216,13 +315,17 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-DIR-01` — An as-yet-unobserved positive electron
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Relativistic Quantum Theory and Antimatter: Historical Knowledge Graph.
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION`.
+- **Prediction date and provenance:** Dirac's 1931 revision proposed a distinct antielectron with electron mass and opposite charge after rejecting the proton-hole identification. He did not expect to find one in nature and considered production with then-available γ-ray intensities negligible.
+- **Independence from construction data:** The inference used his 1928 equation and subsequent hole interpretation; Anderson's 1932 cloud-chamber event was not among its inputs.
+- **Observable discriminator:** A charged track with positive sign and electron-like mass, not a proton's mass, under magnetic-field and energy-loss analysis. This is a retrospective discriminator, not a search protocol proposed by Dirac in 1931.
+- **Later outcome:** Anderson's independent 1932 positron observation supported the new-particle claim, while later QFT replaced the literal infinite filled sea.
 
 ## Validation and explanatory gains
 
+- Anderson later stated that Dirac's prediction played no part in his cosmic-ray search. The 1932 observation is independent evidential convergence, not a theory-directed experimental test.
 - Correct electron spin-\(\tfrac12\) structure and leading magnetic moment.
 - Fine-structure terms arise naturally.
 - Positron tracks and annihilation photons confirm antimatter.
@@ -378,8 +481,6 @@ The Dirac equation in an external classical field is useful when pair creation i
 
 ## Additional quantitative and epistemic notes
 
-### Additional quantitative and epistemic notes
-
 Dirac sought an equation first order in time and space whose square reproduced the relativistic energy relation. The required matrices obey
 
 $$
@@ -394,6 +495,18 @@ Antimatter was therefore not inferred from \(E=mc^2\) alone; it emerged from com
 
 ```text
 A-SPECIAL-RELATIVITY --constrains--> D-DIRAC-EQUATION
+CS-DIR-01 --revised-by--> CT-DIR-01
+CT-DIR-01 --produces--> CS-DIR-02
+CS-DIR-02 --revised-by--> CT-DIR-02
+CT-DIR-02 --produces--> CS-DIR-03
+CS-DIR-03 --revised-by--> CT-DIR-03
+CT-DIR-03 --produces--> CS-DIR-04
+CS-DIR-04 --revised-by--> CT-DIR-04
+CT-DIR-04 --produces--> CS-DIR-05
+CS-DIR-05 --revised-by--> CT-DIR-05
+CT-DIR-05 --produces--> CS-DIR-06
+CS-DIR-06 --hands-off-to--> EG-DIR-01
+CS-DIR-06 --hands-off-to--> EG-DIR-02
 A-QUANTUM-MECHANICS --contributes-to--> D-DIRAC-EQUATION
 D-DIRAC-EQUATION --generates--> NEGATIVE-ENERGY-SOLUTIONS
 NEGATIVE-ENERGY-SOLUTIONS --reframed-as--> POSITRON
@@ -405,6 +518,9 @@ D-DIRAC-ANTIMATTER-1928-1932 --instantiates--> P-03
 
 ## Sources
 
+- Paul Dirac, [Quantised Singularities in the Electromagnetic Field (1931 scan; antielectron proposal)](https://wucj.lab.westlake.edu.cn/teach/CNYang/Lec7_dirac1931.pdf), especially printed pp. 61–62 for proton-hole rejection, the antielectron, and the conditional pair-production discussion.
+- Carl Anderson, [The Apparent Existence of Easily Deflectable Positives (1932)](https://pubmed.ncbi.nlm.nih.gov/17731542/).
+- Carl Anderson, [“Unraveling the Particle Content of Cosmic Rays” (1982 retrospective account)](https://calteches.library.caltech.edu/3352/), on the independent experimental route to the positron.
 - Stanford Encyclopedia of Philosophy, [“The History of Quantum Field Theory”](https://plato.stanford.edu/archives/fall2023/entries/quantum-field-theory/qft-history.html).
 - Nobel Prize, [Paul Dirac facts](https://www.nobelprize.org/prizes/physics/1933/dirac/facts/).
 - Nobel Prize, [Carl Anderson facts](https://www.nobelprize.org/prizes/physics/1936/anderson/facts/).

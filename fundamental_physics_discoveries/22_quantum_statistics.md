@@ -17,7 +17,7 @@ Quantum statistics replaces classical label-based counting with occupation count
 
 ## Historical problem
 
-Before the focal discovery (1924–1926), the case confronted a linked set of pressures: Radiation modes counted unusually; Photon statistics derived without labeling quanta. The pathways `R-MAXWELL-BOLTZMANN-ALL-PARTICLES`, `R-BOSE-STATISTICS-FOR-ALL-MATTER`, `R-PAULI-RULE-WITHOUT-STATE-ANTISYMMETRY`, `R-CLASSICAL-ROTATING-SPIN` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Bose–Einstein and Fermi–Dirac statistics, indistinguishability, exclusion and quantum many-body structure was to construct a more generative account without importing later validation evidence into the original inference.
+At the start of the 1924–1926 discovery interval, Planck radiation and classical label-based counting posed a counting problem; Bose's photon result, Einstein's material-gas extension, Pauli's exclusion rule, and Fermi–Dirac statistics then developed in overlapping but distinct branches. The pathways `R-MAXWELL-BOLTZMANN-ALL-PARTICLES`, `R-HEISENBERG-BOSE-PAULI-IDENTIFICATION`, `R-PAULI-RULE-WITHOUT-STATE-ANTISYMMETRY`, and `R-CLASSICAL-ROTATING-SPIN` capture competing or incomplete interpretations at their respective dates. The reconstruction must not treat the later spin–statistics theorem or modern exchange-symmetry notation as a shared 1924 starting point.
 
 ## Time slices
 
@@ -48,11 +48,13 @@ Before the focal discovery (1924–1926), the case confronted a linked set of pr
 - **Limitation:** Fails black-body radiation, electron structure, and low-temperature gases.
 - **Outcome:** Retained when occupation is low.
 
-### `R-BOSE-STATISTICS-FOR-ALL-MATTER`
+### `R-HEISENBERG-BOSE-PAULI-IDENTIFICATION`
 
-- **What it is:** A universal symmetric-state rule allowing every particle species unrestricted multiple occupation of a one-particle state.
-- **Proposed/active period:** 1924.
-- **Outcome:** Atomic shells and matter stability require fermionic antisymmetry for half-integer-spin particles.
+- **What it is:** Heisenberg's 1926 multi-electron attempt to connect Bose–Einstein counting with Pauli's ban on equivalent electron orbits through a reduction of statistical weights.
+- **Proposed/active period:** 1926.
+- **Why reasonable at the time:** Both problems seemed to concern how identical-particle states should be counted in the emerging quantum mechanics.
+- **Limitation:** Bose's unrestricted occupancy and Pauli's zero-or-one restriction are different statistics; the proposed identification does not derive their distinction.
+- **Outcome:** The search for a shared many-body description was retained, but Dirac's symmetric and antisymmetric alternatives separated the two counting families.
 
 ### `R-PAULI-RULE-WITHOUT-STATE-ANTISYMMETRY`
 
@@ -68,12 +70,12 @@ Before the focal discovery (1924–1926), the case confronted a linked set of pr
 
 ### Pathway comparison ledger
 
-**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (1924–1926). The proposed/active period is stored in each pathway record.
+**Chronology rule:** Classical label counting predates 1924, while Pauli's rule, the rotating-spin proposal, and Heisenberg's Bose–Pauli identification arise within the 1924–1926 discovery interval. They are staged branches, not shared inputs to Bose's first photon paper. The proposed/active period is stored in each pathway record.
 
 | Pathway | Repair | Discriminating phenomenon | Outcome |
 |---|---|---|---|
 | Classical distinguishable counting | Divide by \(N!\) to repair Gibbs mixing paradox | Does not generate Bose enhancement or Fermi blocking | Maxwell–Boltzmann recovered at low occupancy |
-| Bose statistics for all particles | Symmetrize every many-body state | Atomic shell structure and matter stability require exclusion | Applies to integer-spin species |
+| Heisenberg's Bose–Pauli identification | Relate reduced statistical weights to electron exclusion | Bose counting and zero-or-one electron occupancy are not the same rule | Shared many-body counting question |
 | Ad hoc Pauli exclusion | Forbid duplicate electron quantum numbers | Organized spectra but lacked relativistic basis | Retained, explained by fermionic antisymmetry |
 | Classical spin picture | Treat spin as literal rotating charged sphere | Required surface speeds/ moments inconsistent with such a body | Spin retained as intrinsic quantum degree |
 | **Discovery/current: quantum statistics** | Identical bosons occupy symmetric states; identical fermions occupy antisymmetric states | Spectra, bunching/antibunching, degeneracy, heat capacities, condensation, and matter stability | Retained; classical statistics recovered at low phase-space density |
@@ -86,20 +88,116 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-PLANCK-SPECTRUM`, `A-PERIODIC-TABLE`, `A-SPIN`, `A-INDISTINGUISHABILITY`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+The initial 1924 inputs are `A-PLANCK-SPECTRUM` and the label-counting problem; `A-PERIODIC-TABLE` constrains the subsequent electron branch. `A-SPIN` enters only in 1925–1926, and `A-INDISTINGUISHABILITY` names the counting insight developed within this discovery interval rather than an already established 1924 axiom. Later spin–statistics proof and condensation experiments are not construction inputs.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-MAXWELL-BOLTZMANN-ALL-PARTICLES` | A universal classical counting model that treats identical particles as individually labelable, statistically independent occupants of states governed by the Maxwell–Boltzmann distribution. | Fails black-body radiation, electron structure, and low-temperature gases. |
-| `R-BOSE-STATISTICS-FOR-ALL-MATTER` | A universal symmetric-state rule allowing every particle species unrestricted multiple occupation of a one-particle state. | See the full pathway record above. |
-| `R-PAULI-RULE-WITHOUT-STATE-ANTISYMMETRY` | Exclusion imposed as an independent occupancy prohibition without a general many-fermion antisymmetric state structure. | See the full pathway record above. |
-| `R-CLASSICAL-ROTATING-SPIN` | A literal model of electron spin as the surface rotation of an extended charged sphere. | See the full pathway record above. |
+| `R-MAXWELL-BOLTZMANN-ALL-PARTICLES` | A universal classical counting model that treats identical particles as individually labelable, statistically independent occupants of states governed by the Maxwell–Boltzmann distribution. | Classical label permutations did not generate Planck's photon count or Pauli's later zero-or-one electron rule; low-temperature gas behavior became an independent later test. |
+| `R-HEISENBERG-BOSE-PAULI-IDENTIFICATION` | Heisenberg's 1926 attempt to connect Bose–Einstein counting with Pauli's exclusion through reduced statistical weights. | Bose's unrestricted occupation cannot by itself supply Pauli's zero-or-one occupancy; symmetric and antisymmetric states had to be kept as distinct alternatives. |
+| `R-PAULI-RULE-WITHOUT-STATE-ANTISYMMETRY` | Exclusion imposed as an independent occupancy prohibition without a general many-fermion antisymmetric state structure. | A zero-or-one rule classified occupations but did not derive the exchange sign or many-particle amplitudes that make the restriction systematic. |
+| `R-CLASSICAL-ROTATING-SPIN` | A literal model of electron spin as the surface rotation of an extended charged sphere. | A small charged sphere rotating fast enough for the electron's angular momentum and magnetic moment strained a literal mechanical and relativistic account; an intrinsic quantum degree of freedom was needed. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** Particle counting reframed without individual labels. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by information available at the focal discovery date; later confirmations, modern notation, and rival branches must be distinguished from contemporary inputs.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-QS-01` | Planck radiation has a successful spectrum, but classical individually labeled light quanta do not reproduce its counting naturally. **Open question:** Can photon states be counted without labels? |
+| `CS-QS-02` | Bose counts photon occupancies of phase-space cells and recovers Planck's spectrum. **Open question:** Does the counting apply to massive particles? |
+| `CS-QS-03` | Einstein extends the photon-style counting to an ideal material gas and finds a possible low-temperature accumulation. **Open question:** Can this be universal for electrons? |
+| `CS-QS-04` | In a parallel atomic branch, Pauli's exclusion rule forbids duplicate complete electron states. **Open question:** What gas statistics follow from that restriction? |
+| `CS-QS-05` | Fermi's ideal-gas construction restricts each one-particle state to occupancy zero or one. **Open question:** How does this fit a general many-particle state description? |
+| `CS-QS-06` | Dirac's 1926 quantum-mechanical treatment distinguishes symmetric and antisymmetric state constructions. **Open question:** How do both counting families recover classical behavior? |
+| `CS-QS-07` | Bosonic and fermionic occupancy rules form distinct quantum-statistical sectors with a shared dilute limit. **Open question:** Which species belongs to which sector, and why? |
+
+##### `CT-QS-01`: `CS-QS-01` → `CS-QS-02` — Count photon occupation configurations
+
+- **Input model:** Planck's empirical radiation law and classical phase-space counting.
+- **Pressure:** Labeling light quanta as separate individuals yields the wrong multiplicity structure.
+- **Protected structure:** Photon energy hν, two polarization states, and the observed black-body spectrum.
+- **Hidden assumption:** Permuting identical light quanta between the same occupations creates a new physical arrangement.
+- **Operation / change type:** `representation_shift` — Count occupancies of radiation cells rather than label permutations.
+- **Output model:** Bose's 1924 photon-state counting generates Planck's distribution.
+- **Local justification:** Bose's original paper derives the spectrum by counting light-quanta distributions over phase space.
+- **Cost/uncertainty:** Radiation quanta have no conserved number; the rule's applicability to atoms is unproved.
+- **Next question:** What happens if this counting is extended to massive particles with conserved number?
+
+##### `CT-QS-02`: `CS-QS-02` → `CS-QS-03` — Risk extending Bose counting to material gas
+
+- **Input model:** An occupancy rule that works for massless radiation.
+- **Pressure:** The microscopic distinction between a light quantum and an atom is not obviously a reason to restore label permutations.
+- **Protected structure:** Particle number conservation for atoms and the classical dilute-gas limit.
+- **Hidden assumption:** The successful photon counting is necessarily peculiar to radiation.
+- **Operation / change type:** `generalization` — Apply occupancy counting to a monatomic ideal gas with fixed particle number.
+- **Output model:** Einstein's 1924–1925 gas theory, including a low-temperature condensate inference.
+- **Local justification:** Einstein's extension followed Bose's paper and preceded direct condensate observation.
+- **Cost/uncertainty:** It does not describe electrons with Pauli exclusion; the material-gas application was an empirical risk.
+- **Branch status:** `selected` for the material-boson branch; not asserted as universal for all species.
+- **Next question:** What independent evidence demands an alternative counting rule?
+
+##### `CT-QS-03`: `CS-QS-01` → `CS-QS-04` — Follow the parallel electron-exclusion constraint
+
+- **Input model:** Electron shells and spectral multiplicities resist unrestricted occupation, independently of the photon-counting route.
+- **Pressure:** The periodic table requires a limit on how many electrons share a complete quantum-state description.
+- **Protected structure:** Observed shell regularities and old quantum numbers.
+- **Hidden assumption:** A counting rule extended from radiation to a material gas must also describe electrons.
+- **Operation / change type:** `differentiation` — Treat electron exclusion as a separate empirical constraint on state occupancy.
+- **Output model:** Pauli's 1925 rule: no two electrons in an atom have identical complete quantum numbers.
+- **Local justification:** Pauli's rule preceded the general spin–statistics theorem and did not depend on a later QFT proof.
+- **Cost/uncertainty:** The rule organizes spectra without yet deriving a many-electron wavefunction or ideal-gas distribution.
+- **Branch status:** `selected`; electron exclusion rules out Bose's unrestricted occupancy for electrons.
+- **Next question:** What equilibrium distribution follows if each state holds at most one electron?
+
+##### `CT-QS-04`: `CS-QS-04` → `CS-QS-05` — Count occupancy with exclusion
+
+- **Input model:** Pauli's occupancy prohibition and quantum states of an ideal gas.
+- **Pressure:** Classical Maxwell–Boltzmann counting ignores the zero-or-one restriction.
+- **Protected structure:** Exclusion and the ordinary dilute limit.
+- **Hidden assumption:** Imposing exclusion changes only atomic shell labels, not gas thermodynamics.
+- **Operation / change type:** `constraint_change` — Restrict occupation numbers to zero or one and count permitted configurations.
+- **Output model:** Fermi's 1926 material-gas statistics with degeneracy effects.
+- **Local justification:** Fermi's 1926 paper applied Pauli's rule to ideal-gas quantization; no later spin–statistics theorem is needed.
+- **Cost/uncertainty:** The connection to general exchange symmetry still needs quantum-mechanical formulation.
+- **Next question:** Can both branches be expressed in one state language without identifying them?
+
+##### `CT-QS-05`: `CS-QS-03` and `CS-QS-05` → `CS-QS-06` — Express both counts through exchange symmetry
+
+- **Input model:** Unrestricted Bose–Einstein occupations and zero-or-one Fermi occupations, plus emerging quantum mechanics.
+- **Pressure:** Two separate combinatorial rules lack a shared state-space explanation.
+- **Protected structure:** Both distributions and the exclusion constraint.
+- **Hidden assumption:** Particle exchange necessarily creates a distinct labeled physical state.
+- **Operation / change type:** `coalescence` — Compare symmetric and antisymmetric multiparticle state constructions.
+- **Output model:** Dirac's 1926 framework relates the two counting families to alternative exchange behaviors.
+- **Local justification:** Dirac's paper treats symmetric and antisymmetric eigenfunctions for identical systems; it is later than Bose's and Fermi's separate derivations.
+- **Cost/uncertainty:** Why a given spin species chooses one sector remains a later relativistic-QFT question.
+- **Next question:** Where does classical statistics reappear?
+
+##### `CT-QS-06`: `CS-QS-06` → `CS-QS-07` — Recover the dilute limit without erasing the difference
+
+- **Input model:** Distinct symmetric and antisymmetric occupation rules.
+- **Pressure:** Both must explain why ordinary dilute gases obey Maxwell–Boltzmann approximations.
+- **Protected structure:** Previously successful classical gas results.
+- **Hidden assumption:** Quantum counting must contradict classical thermodynamics even at negligible occupancy.
+- **Operation / change type:** `enrichment` — Examine the low-occupation limit of both families.
+- **Output model:** Bose and Fermi distributions differ strongly at high occupation or degeneracy but converge toward classical counting when occupations are small.
+- **Local justification:** The asymptotic comparison follows from the 1924–1926 distributions; the later spin–statistics proof is not used.
+- **Cost/uncertainty:** The two-family classification still requires species assignments and physical tests in new regimes.
+- **Next question:** What consequences distinguish each branch beyond the construction examples?
+
+#### Formal consolidation
+
+The formulas below use modern occupation and exchange notation. They consolidate the 1924–1926 results but should not imply that Bose, Einstein, Pauli, Fermi, and Dirac all began from one common many-body formalism.
 
 Mean occupation at energy \(\epsilon\):
 
@@ -138,13 +236,29 @@ $$
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Bose–Einstein and Fermi–Dirac statistics, indistinguishability, exclusion and quantum many-body structure). The case-specific unification was: Spectra, chemistry, radiation, and matter stability unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain does not establish the target-domain claim; state the novel consequence and a possible failure condition before using later evidence as validation.
+
+#### `EG-QS-01` — Test condensate behavior beyond the ideal gas
+
+- **Source domain:** Einstein's noninteracting monatomic Bose gas, where excited states have finite particle capacity below a critical temperature.
+- **Target domain:** Real low-temperature material gases with interactions and trapping rather than an exactly ideal homogeneous gas.
+- **Novel consequence:** Under suitable conditions, a macroscopically occupied coherent mode or closely related low-temperature quantum collective behavior should emerge, though critical values shift.
+- **Failure condition:** Carefully controlled dilute bosonic gases showing no statistically consistent low-temperature occupation enhancement despite meeting the required density and temperature regime would challenge the extension.
+
+#### `EG-QS-02` — Apply fermion degeneracy to dense matter
+
+- **Source domain:** The zero-or-one occupancy rule and Fermi ideal-gas distribution for electrons.
+- **Target domain:** Dense electron matter under stellar-gravity compression, beyond ordinary laboratory gas conditions.
+- **Novel consequence:** Filled low-energy states imply a pressure that persists even as thermal energy becomes small, helping resist compression within a calculable density range.
+- **Failure condition:** A controlled dense-electron system whose low-temperature pressure follows only classical thermal scaling, after accounting for interactions and relativity, would defeat this use of Fermi statistics.
 
 **Patterns demonstrated:**
 
 - `P-03` — **Generate consequences rather than merely redescribe inputs:** Exchange symmetry generates occupation rules
 
-- `P-04` — **Unify previously separated domains or phenomena:** Spectra, chemistry, radiation, and matter stability unified
+- `P-04` — **Unify previously separated domains or phenomena:** Radiation counting, ideal-gas behavior, and electron exclusion enter a common quantum-statistical comparison; chemistry and matter stability are later applications
 
 ### Retention, predictions, and discriminating tests
 
@@ -165,7 +279,7 @@ Pattern IDs are ordered by their typical first role in the reconstructed discove
 | `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | Particle counting reframed without individual labels | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
 | `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Indistinguishability and antisymmetric states accepted | [Transformative move](#transformative-move) |
 | `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Exchange symmetry generates occupation rules | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
-| `P-04` | Unify previously separated domains | Extrapolative unification | Spectra, chemistry, radiation, and matter stability unified | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Radiation counting, ideal-gas behavior, and electron exclusion enter a common quantum-statistical comparison; chemistry and matter stability are later applications | [Extrapolative generalization](#extrapolative-generalization) |
 | `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Maxwell–Boltzmann statistics retained as dilute limit | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
 | `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Heat capacities, spectra, and degeneracy provide tests | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
@@ -544,8 +658,6 @@ Composite particles inherit effective statistics from constituent count only whe
 
 ## Additional quantitative and epistemic notes
 
-### Additional quantitative and epistemic notes
-
 For identical particles, exchanging labels cannot create a new physical state. Bosonic many-body states are symmetric and allow arbitrary occupation; fermionic states are antisymmetric and vanish when two fermions occupy the same one-particle state. The occupation factors are
 
 $$
@@ -562,6 +674,21 @@ These are not forces between particles. They are constraints on state space and 
 
 ```text
 A-PLANCK-SPECTRUM --motivates--> D-BOSE-STATISTICS
+CS-QS-01 --revised-by--> CT-QS-01
+CT-QS-01 --produces--> CS-QS-02
+CS-QS-02 --revised-by--> CT-QS-02
+CT-QS-02 --produces--> CS-QS-03
+CS-QS-01 --revised-by--> CT-QS-03
+CT-QS-03 --produces--> CS-QS-04
+CS-QS-04 --revised-by--> CT-QS-04
+CT-QS-04 --produces--> CS-QS-05
+CS-QS-03 --revised-by--> CT-QS-05
+CS-QS-05 --revised-by--> CT-QS-05
+CT-QS-05 --produces--> CS-QS-06
+CS-QS-06 --revised-by--> CT-QS-06
+CT-QS-06 --produces--> CS-QS-07
+CS-QS-07 --hands-off-to--> EG-QS-01
+CS-QS-07 --hands-off-to--> EG-QS-02
 D-BOSE-STATISTICS --generalized-by--> D-EINSTEIN-MATERIAL-BOSONS
 A-PERIODIC-TABLE --constrains--> D-PAULI-EXCLUSION
 ANTISYMMETRY --implies--> EXCLUSION
@@ -579,6 +706,13 @@ D-QUANTUM-STATISTICS-1924-1926 --instantiates--> P-04
 
 ## Sources
 
+- S. N. Bose, [“Planck's Law and the Light Quantum Hypothesis” (1924 translation)](https://www.informationphilosopher.com/solutions/scientists/bose/BOSE_1924.pdf).
+- Max Planck Institute for the History of Science, [archival index to Einstein's 1924 and 1925 “Quantentheorie des einatomigen idealen Gases” papers](https://einstein-annalen.mpiwg-berlin.mpg.de/related_texts/sitzungsberichte); the 1925 second paper develops the condensation claim. The scan service currently redirects, so the full original was not re-audited in this pass.
+- W. Pauli, [“On the Connection between the Completion of Electron Groups in an Atom and the Complex Structure of Spectra” (1925 translation)](https://www.chemteam.info/Chem-History/Pauli-1925/Pauli-1925.html), especially §2 for the occupied-state rule and its admitted limits.
+- Enrico Fermi, [“On the Quantization of the Monoatomic Ideal Gas” (1926 translation)](https://arxiv.org/abs/cond-mat/9912229).
+- P. A. M. Dirac, [“On the Theory of Quantum Mechanics” (1926)](https://en.wikisource.org/wiki/File:On_the_Theory_of_Quantum_Mechanics_by_Paul_Dirac_(1926).pdf).
+- W. Heisenberg, [“Mehrkörperproblem und Resonanz in der Quantenmechanik” (1926 scan)](https://gilles.montambaux.com/files/histoire-physique/Heisenberg-1926-1.pdf), especially printed p. 423 on Bose–Einstein counting and Pauli's exclusion rule.
+- Jo Borrelli, [“Early Interactions of Quantum Statistics and Quantum Mechanics”](https://www.mprl-series.mpg.de/proceedings/5/7/index.html), Max Planck Research Library, on Heisenberg's and Dirac's differing 1926 interpretations.
 - Nobel Prize, [Wolfgang Pauli facts](https://www.nobelprize.org/prizes/physics/1945/pauli/facts/).
 - Nobel Prize, [advanced scientific information on Bose–Einstein condensation](https://www.nobelprize.org/uploads/2018/06/advanced-physicsprize2001-4.pdf).
 - Nobel Prize, [The 2001 Physics Prize: Bose–Einstein condensation](https://www.nobelprize.org/prizes/physics/2001/summary/).

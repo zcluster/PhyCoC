@@ -38,9 +38,10 @@ Maxwell's field equations unified electric charge, current, magnetic induction, 
 ### `R-MECHANICAL-ETHER-MODELS`
 
 - **What it is:** Models that interpret electric and magnetic fields as stresses, rotations, or motions of a material ether whose microscopic mechanics is supposed to produce Maxwell-like equations.
-- **Proposed/active period:** seventeenth century–1850s.
+- **Proposed/active period:** seventeenth century–1860s.
+- **Historical overlap:** Maxwell's 1861–62 mechanical construction remained a live version of this program during his field-theory work.
 - **Why reasonable:** Known waves traveled through material media.
-- **Limitation:** No unique mechanical model was required by the equations; preferred-rest-frame evidence failed.
+- **Limitation:** The field relations did not uniquely select a mechanical carrier; preferred-rest-frame tests became a later, separate issue.
 - **Outcome:** Ether mechanics discarded; field equations retained.
 
 ### `R-INSTANTANEOUS-ELECTROMAGNETIC-ACTION`

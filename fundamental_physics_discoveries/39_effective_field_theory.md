@@ -17,7 +17,7 @@ Effective field theory states that low-energy predictions need not await an ulti
 
 ## Historical problem
 
-Before the focal discovery (1979 Weinberg phenomenological-Lagrangian synthesis), the case confronted a linked set of pressures: Describe low-energy weak, electromagnetic, and nuclear phenomena without microscopic completion; Control QFT divergences with finitely many parameters. The pathways `R-NONRENORMALIZABLE-MEANS-NONPREDICTIVE`, `R-ONE-PHENOMENOLOGICAL-VERTEX`, `R-UV-COMPLETION-FIRST`, `R-HARD-CUTOFF-AS-LITERAL-MICROPHYSICS` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Low-energy quantum field theory, scale separation, power counting, matching, and controlled approximation was to construct a more generative account without importing later validation evidence into the original inference.
+Fermi's weak interaction and other phenomenological Lagrangians had already made useful low-energy predictions without an ultimate theory. Yet treating every nonrenormalizable term as fatal, or fitting one interaction vertex at a time, obscured why a limited-domain calculation might still be systematic. Wilson's scale-dependent RG and the Appelquist–Carazzone decoupling result clarified how short-distance physics can enter long-distance observables under specified conditions. Weinberg's 1979 phenomenological-Lagrangian synthesis then argued that low-energy amplitudes can be organized from the relevant degrees of freedom, symmetries, all allowed interactions, and an explicit expansion. This is a staged methodological discovery, not the first appearance of an effective interaction or a guarantee that every system has a useful scale hierarchy.
 
 ## Time slices
 
@@ -110,20 +110,101 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-FERMI-THEORY`, `A-CHIRAL-SYMMETRY`, `A-WILSONIAN-RG`, `A-DECOUPLING`, `A-S-MATRIX`, `A-DIMENSIONAL-ANALYSIS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+Available by 1979 were successful low-energy interactions (`A-FERMI-THEORY`), chiral symmetry and pion amplitudes (`A-CHIRAL-SYMMETRY`), the 1966–1968 nonlinear pion-Lagrangian route, Wilsonian scale analysis (`A-WILSONIAN-RG`), conditional heavy-field decoupling (`A-DECOUPLING`), amplitude equivalence (`A-S-MATRIX`), and dimensional/power counting (`A-DIMENSIONAL-ANALYSIS`). Modern standardized Wilson-coefficient notation and later EFT applications are consolidation, not pre-1979 case evidence.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-NONRENORMALIZABLE-MEANS-NONPREDICTIVE` | The doctrine that a quantum field theory containing couplings of negative mass dimension is unacceptable because loop calculations require infinitely many counterterms, so only power-counting-renormalizable interactions can define any predictive theory. | See the full pathway record above. |
-| `R-ONE-PHENOMENOLOGICAL-VERTEX` | The use of one contact interaction or fitted vertex chosen to reproduce leading data, without including every operator of the same order allowed by the symmetries or estimating omitted terms. | See the full pathway record above. |
-| `R-UV-COMPLETION-FIRST` | A research policy that no trustworthy low-energy prediction should be made until the exact fundamental high-energy constituents and dynamics are known. | See the full pathway record above. |
-| `R-HARD-CUTOFF-AS-LITERAL-MICROPHYSICS` | The insertion of a momentum cutoff into loop integrals and identification of that regulator itself with a physical particle size or exact new-physics boundary, without ensuring regulator-independent low-energy observables. | See the full pathway record above. |
+| `R-NONRENORMALIZABLE-MEANS-NONPREDICTIVE` | The doctrine that a quantum field theory containing couplings of negative mass dimension is unacceptable because loop calculations require infinitely many counterterms, so only power-counting-renormalizable interactions can define any predictive theory. | Infinitely many all-order terms do not prevent a finite-order low-energy prediction once powers of energy over a high scale are ranked and truncated. |
+| `R-ONE-PHENOMENOLOGICAL-VERTEX` | The use of one contact interaction or fitted vertex chosen to reproduce leading data, without including every operator of the same order allowed by the symmetries or estimating omitted terms. | Loops produce other symmetry-allowed terms; omitting same-order operators leaves neither systematic corrections nor a defensible error estimate. |
+| `R-UV-COMPLETION-FIRST` | A research policy that no trustworthy low-energy prediction should be made until the exact fundamental high-energy constituents and dynamics are known. | Scale separation can suppress unknown high-energy details, so waiting for a complete microscopic theory discards testable low-energy symmetry constraints. |
+| `R-HARD-CUTOFF-AS-LITERAL-MICROPHYSICS` | The insertion of a momentum cutoff into loop integrals and identification of that regulator itself with a physical particle size or exact new-physics boundary, without ensuring regulator-independent low-energy observables. | Finite integrals still depended on arbitrary cutoff form and could violate symmetries until matching and counterterms separated regulator choice from observables. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** “What is the ultimate theory?” becomes “What degrees of freedom and accuracy are required at this scale?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by effective-interaction examples and scale/symmetry methods available by 1979. This is an auditable reconstruction across several authors and fields, not Weinberg's private reasoning; later operator-basis conventions and successful applications stay downstream.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-EFT-01` | Fermi interactions and soft-pion current algebra work in limited regimes despite lacking a complete microscopic strong theory; nonlinear chiral pion Lagrangians recover leading soft-pion results. **Open question:** Why can such nonrenormalizable constructions support systematic corrections? |
+| `CS-EFT-02` | Wilsonian scale separation classifies how short-distance effects change long-distance couplings and operators. **Open question:** Can heavy physics be encoded locally when \(E\) is small relative to its scale? |
+| `CS-EFT-03` | Decoupling and low-momentum expansion support local interactions with coefficients dependent on ultraviolet details, under stated conditions. **Open question:** How can infinitely many allowed terms yield finite predictive work? |
+| `CS-EFT-04` | Symmetry and an expansion parameter order all allowed terms, so only finitely many contribute through a specified accuracy. **Open question:** Can this method reproduce and extend low-energy pion amplitudes? |
+| `CS-EFT-05` | Weinberg's 1979 phenomenological-Lagrangian synthesis organizes low-energy pion processes by symmetry and momentum order; its general S-matrix claim is presented as a folk theorem, not a completed proof. **Open question:** How are truncation, loops, and new coefficients audited? |
+| `CS-EFT-06` | EFT is a domain-bounded prediction procedure: fit a finite set at one order, test further observables, and revise near thresholds. **Open question:** Where can this procedure transfer beyond its original strong-interaction example? |
+
+##### `CT-EFT-01`: `CS-EFT-01` → `CS-EFT-02` — Treat scale as an explanatory variable
+
+- **Input model:** Successful but limited low-energy interactions and a renormalizability-first prejudice.
+- **Pressure:** Nonlinear soft-pion Lagrangians reproduce leading current-algebra results, but their derivative interactions looked nonrenormalizable and seemingly barred reliable loop corrections.
+- **Protected structure:** Empirical low-energy amplitudes and quantum-field calculations.
+- **Hidden assumption:** Every interaction term must remain fundamental at arbitrarily high energy.
+- **Operation / change type:** `reinterpretation` — View couplings as dependent on the observation scale and omitted modes.
+- **Output model:** Wilsonian long-distance theory with relevant, marginal, and irrelevant contributions.
+- **Local justification:** Wilson's 1971 RG work makes scale transformations and operator relevance explicit. Weinberg's later first-person account identifies his 1966–1968 soft-pion construction and 1976 encounter with Wilson's variable-cutoff method as distinct steps leading toward the 1979 synthesis.
+- **Cost/uncertainty:** This does not identify the ultraviolet theory or guarantee a large enough hierarchy.
+- **Next question:** When can heavy degrees of freedom be replaced by local terms?
+
+##### `CT-EFT-02`: `CS-EFT-02` → `CS-EFT-03` — Separate heavy effects from light dynamics
+
+- **Input model:** Low-energy observables with heavier intermediate physics and a Wilsonian scale perspective.
+- **Pressure:** A naive hard cutoff risks being mistaken for a literal particle size or exact new-physics boundary.
+- **Protected structure:** Low-energy amplitudes and regulator-independent observables.
+- **Hidden assumption:** All microscopic modes must be kept explicitly at every scale.
+- **Operation / change type:** `representation_shift` — Expand heavy-mediated effects at \(E\ll M\) into local interactions with matched coefficients.
+- **Output model:** Conditional decoupling and a low-energy operator expansion.
+- **Local justification:** Appelquist and Carazzone (1975, pp. 2856, 2858–2860) show that heavy-field effects in renormalizable theories reduce at leading low momentum to renormalization of light-sector parameters, with inverse-heavy-mass corrections. They explicitly note that when symmetry forbids a leading light-field interaction, those suppressed, formally nonrenormalizable terms can be the first nonzero interactions. The Fermi limit of weak exchange is a separate earlier illustration, not a consequence first proved there.
+- **Cost/uncertainty:** Thresholds, light states, anomalies, or nondecoupling couplings can invalidate a simple local expansion.
+- **Next question:** How can an infinite operator list be predictive?
+
+##### `CT-EFT-03`: `CS-EFT-03` → `CS-EFT-04` — Order instead of forbid higher interactions
+
+- **Input model:** A local low-energy expansion containing many symmetry-allowed terms.
+- **Pressure:** Without an accuracy ordering, each loop may appear to demand arbitrary new fits.
+- **Protected structure:** Symmetry, low-energy degrees of freedom, and measurable amplitudes.
+- **Hidden assumption:** The mere existence of infinitely many terms means infinitely many inputs at every fixed accuracy.
+- **Operation / change type:** `constraint_change` — Use symmetry plus momentum/dimensional power counting to retain only terms contributing at the target order.
+- **Output model:** A finite-parameter calculation at each specified order with an omitted-order estimate.
+- **Local justification:** Wilsonian relevance and Weinberg's 1979 phenomenological-Lagrangian argument jointly support ordered interactions. Weinberg's original pion example gives the chiral order \(D=2+\sum_d N_d(d-2)+2N_L\) (p. 331): a fixed order selects finitely many derivative vertices and loop orders. In his later account, he identifies the intermediate test of including symmetry-allowed counterterms while retaining finitely many new constants per order.
+- **Cost/uncertainty:** The actual expansion parameter and counting differ by domain; canonical dimension alone is not sufficient for chiral EFT.
+- **Next question:** Does a concrete low-energy process obey the ordered construction?
+
+##### `CT-EFT-04`: `CS-EFT-04` → `CS-EFT-05` — Apply the rule to pion amplitudes
+
+- **Input model:** Chiral symmetry, pions as low-energy degrees of freedom, and ordered interactions.
+- **Pressure:** Current algebra made multi-soft-pion calculations cumbersome; an initial linear-sigma-model route allowed unwanted internal soft-pion emission, while a nonlinear derivative-coupling route reproduced leading results but still needed controlled loop corrections.
+- **Protected structure:** Current-algebra/soft-pion results and observable scattering amplitudes.
+- **Hidden assumption:** A phenomenological Lagrangian is merely an arbitrary fitting device.
+- **Operation / change type:** `coalescence` — Include the general symmetry-allowed pion interactions at the relevant momentum orders.
+- **Output model:** Weinberg's 1979 systematic low-energy strong-interaction synthesis.
+- **Local justification:** Weinberg's 1979 paper (pp. 327–338) recounts the earlier nonlinear construction, labels the broad S-matrix claim unproved, and explicitly computes that order-\(E^4\) pion scattering combines a four-derivative tree term with a two-derivative one-loop term. He then extends the counting to small explicit chiral-symmetry breaking when \(E\sim m_\pi\) (pp. 335–337), so the massless-pion formula is not universal. He calls the paper a review and doubts that any material is entirely new (p. 328); the focal node is a synthesis, not a priority claim for every ingredient.
+- **Cost/uncertainty:** New low-energy constants enter at higher order, convergence is bounded by resonances/thresholds, and the broad S-matrix claim is not itself a rigorous completeness theorem.
+- **Next question:** How should calibration and independent prediction be separated?
+
+##### `CT-EFT-05`: `CS-EFT-05` → `CS-EFT-06` — Make limited validity testable
+
+- **Input model:** A symmetry-complete Lagrangian truncated at a stated order.
+- **Pressure:** A fitted leading amplitude alone cannot establish that the error estimate or transferred predictions are sound.
+- **Protected structure:** Finite inputs per order and earlier low-energy successes.
+- **Hidden assumption:** The cutoff can be treated as an exact physical wall or changed after each mismatch without recording a revision.
+- **Operation / change type:** `differentiation` — Distinguish fitted coefficients, regulator choice, truncation error, and out-of-sample observables.
+- **Output model:** EFT as a controlled domain-bounded predictive method, not a claim of ultraviolet truth.
+- **Local justification:** The 1979 synthesis makes systematic corrections central; later matching/running language sharpens this audit.
+- **Cost/uncertainty:** If scales are not separated or degrees of freedom are missing, the expansion must be rebuilt.
+- **Next question:** Which new process or domain can be predicted at the claimed precision?
+
+#### Formal consolidation
+
+The modern dimension-\(d\) expression below is one common four-dimensional weakly coupled EFT organization. Weinberg's low-energy pion example instead uses chiral momentum counting; neither formula is universal without a specified regime and basis.
 
 In four spacetime dimensions, an EFT Lagrangian has the form
 
@@ -184,7 +265,25 @@ so matching at a high scale and RG evolution to a low scale separate short- and 
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Low-energy quantum field theory, scale separation, power counting, matching, and controlled approximation). The case-specific unification was: Low-energy phenomena, QFT, symmetry, and RG scale flow are unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+The 1979 synthesis is strongest as a method whose corrections can be ordered and tested. Transfer to another process or force requires a fresh choice of active fields, symmetries, expansion parameter, and coefficients; formal similarity alone is insufficient.
+
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes extrapolation worth testing but never guarantees the assumed hierarchy. Freeze the operator basis, fitted coefficients, counting order, and uncertainty estimate before examining target data; near thresholds or resonances, revisit the degrees of freedom rather than silently retune the cutoff.
+
+#### `EG-EFT-01` — Extend chiral amplitudes beyond calibration processes
+
+- **Source domain:** Low-energy pion/current-algebra amplitudes and the 1979 symmetry-based phenomenological Lagrangian, with some coefficients calibrated from existing data.
+- **Target domain:** Different low-momentum pion scattering or production channels not used to choose those coefficients.
+- **Novel consequence:** Symmetry relates leading amplitudes and organizes the first momentum-suppressed corrections using a finite coefficient set at each order.
+- **Failure condition:** With fitted constants and chiral order fixed, reproducible cross-channel deviations larger than the predeclared truncation and experimental errors undermine that EFT realization; a nearby resonance or missing light state requires an explicit revised theory.
+
+#### `EG-EFT-02` — Transfer scale separation to weak-mediator corrections
+
+- **Source domain:** The EFT scale-ordering logic and Fermi's successful low-energy contact term; the heavy-\(W\) theory, when specified, gives an independent matching example.
+- **Target domain:** Weak processes at energies higher than those used to calibrate the leading \(G_F\) contact interaction but still below the mediator mass.
+- **Novel consequence:** Momentum-dependent corrections should appear in an ordered \(q^2/m_W^2\) expansion, correlated across processes once matching coefficients are fixed.
+- **Failure condition:** If cross-process energy dependence fails the fixed-order expansion beyond estimated higher-order, radiative, and experimental errors while \(q^2\ll m_W^2\), the chosen matching/power counting fails; approaching the mediator pole is an announced domain boundary, not a surprise falsification.
 
 **Patterns demonstrated:**
 
@@ -254,10 +353,14 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-EFT-NONE` — Power counting without a clean 1979 process forecast
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Effective Field Theory and Scale Separation: Historical Knowledge Graph.
+- **Classification:** `NO-CLEAN-CONTEMPORANEOUS-PREDICTION`.
+- **Origin and date:** Weinberg's 1979 *Phenomenological Lagrangians*, especially pp. 327–334. He explicitly describes the article as a review and doubts that all its material is new; this case does not assign him priority for every component of the method.
+- **Structural deduction:** his pion power counting puts a tree contribution with four derivatives and a one-loop contribution built from two-derivative vertices at the same order, \(E^4\). A calculation that includes only one of these is not complete at that stated order. This is traced in `CT-EFT-03`–`04` and is a rule for constructing predictions, not itself an independently tested numerical prediction.
+- **Why no clean forecast is claimed:** higher-order local terms introduce low-energy constants whose values must be supplied or fitted. The 1979 review does not here provide a separately dated pion-process observable with all such inputs fixed before an independent test. Reproducing existing soft-pion results is explanation or retrodiction, not a novel forecast.
+- **Scope and failure condition:** the finite-order procedure requires valid low-energy degrees of freedom, symmetry assumptions, and a useful scale hierarchy. Persistent, well-measured deviations larger than the stated omitted-order estimate after coefficients are fixed on separate data would challenge that EFT application; one cannot save it by silently refitting every test observable.
+- **Discovery-AI significance:** distinguish a generative inference rule from a dated empirical success. A later application may supply a genuine out-of-sample prediction, but it needs its own process, fitted inputs, test data, and outcome record.
 
 ## Validation and explanatory gains
 
@@ -289,9 +392,9 @@ Euler–Heisenberg theory similarly encodes low-energy photon–photon interacti
 
 ### Wilsonian foundation and Weinberg's synthesis
 
-Wilsonian RG showed that integrating out high-momentum modes generates every interaction compatible with the retained symmetries. Operators suppressed by the cutoff become irrelevant at low energy in the RG sense. Weinberg's 1979 phenomenological-Lagrangian argument emphasized that the most general symmetry-respecting Lagrangian reproduces the allowed low-energy S-matrix and organizes corrections, particularly for soft pions.
+Wilsonian RG showed that integrating out high-momentum modes generates interactions compatible with the retained symmetries. Operators suppressed by the cutoff become irrelevant at low energy in the RG sense. Weinberg's 1979 phenomenological-Lagrangian argument proposed that the most general symmetry-respecting Lagrangian yields the most general low-energy S-matrix within its perturbative assumptions and organizes corrections, particularly for soft pions. His printed p. 336 modifies the massless-pion order count to include light-quark-mass insertions when \(E\) and \(m_\pi\) are treated as comparable small scales; the method does not simply apply one fixed derivative count to every regime. Weinberg later described the broader S-matrix claim as a folk theorem rather than a proved completeness result.
 
-No single 1979 paper created every component of modern EFT. The focal node is a synthesis: Wilsonian scale separation, symmetry-complete Lagrangians, and systematic low-energy power counting became a reusable research program.
+No single 1979 paper created every component of modern EFT; Weinberg himself called his contribution a review. The focal node is a synthesis: Wilsonian scale separation, symmetry-complete Lagrangians, and systematic low-energy power counting became a reusable research program. His proposed route from QCD to the phenomenological parameters remained explicitly speculative in 1979.
 
 ### Matching example
 
@@ -363,6 +466,18 @@ No separate supplemental note block was present before this schema migration. Ca
 ```text
 A-WILSONIAN-RG --enables--> D-MODERN-EFT-1979
 A-CHIRAL-SYMMETRY --constrains--> LOW-ENERGY-OPERATOR-BASIS
+CS-EFT-01 --revised-by--> CT-EFT-01
+CT-EFT-01 --produces--> CS-EFT-02
+CS-EFT-02 --revised-by--> CT-EFT-02
+CT-EFT-02 --produces--> CS-EFT-03
+CS-EFT-03 --revised-by--> CT-EFT-03
+CT-EFT-03 --produces--> CS-EFT-04
+CS-EFT-04 --revised-by--> CT-EFT-04
+CT-EFT-04 --produces--> CS-EFT-05
+CS-EFT-05 --revised-by--> CT-EFT-05
+CT-EFT-05 --produces--> CS-EFT-06
+CS-EFT-06 --hands-off-to--> EG-EFT-01
+CS-EFT-06 --hands-off-to--> EG-EFT-02
 HEAVY-FIELD --is-integrated-out-into--> WILSON-COEFFICIENTS
 POWER-COUNTING --orders--> EFT-PREDICTIONS
 D-MODERN-EFT-1979 --retains--> A-FERMI-THEORY
@@ -373,8 +488,10 @@ D-MODERN-EFT-1979 --instantiates--> P-01
 
 ## Sources
 
-- Steven Weinberg, [“Phenomenological Lagrangians”](https://cds.cern.ch/record/419611), *Physica A* (1979).
+- Steven Weinberg, [“Phenomenological Lagrangians”](https://doi.org/10.1016/0378-4371(79)90223-1), *Physica A* 96 (1979), 327–340. A [complete 14-page scan of the printed article](https://github.com/manjunath5496/Steven-Weinberg-Publications/blob/master/swb%287%29.pdf) was visually checked against the [publisher record](https://www.sciencedirect.com/science/article/pii/0378437179902231) for the review caveat (p. 328), unproved broad claim (p. 329), chiral count (p. 331, eq. 9), loop/counterterm example (p. 332), massive-pion extension (pp. 335–338), and speculative QCD route (p. 339). The scan is hosted by a third-party archive, not the publisher; numerical amplitude coefficients are not used elsewhere in this case.
+- Steven Weinberg, [“Effective Field Theory, Past and Future”](https://arxiv.org/pdf/0908.1964), 2009 first-person retrospective, especially pp. 3–11; used to reconstruct the earlier pathway, not as a substitute for the 1979 text.
+- Kenneth G. Wilson, [“Renormalization Group and Critical Phenomena. I”](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.4.3174), *Physical Review B* 4 (1971), 3174–3183.
+- Thomas Appelquist and J. Carazzone, [“Infrared Singularities and Massive Fields”](https://harvest.aps.org/v2/journals/articles/10.1103/PhysRevD.11.2856/fulltext), *Physical Review D* 11 (1975), 2856–2861; pp. 2856, 2858–2860 checked for the scope of decoupling and surviving inverse-mass interactions.
 - U.S. Department of Energy record, [“Phenomenological Lagrangians”](https://www.osti.gov/etdeweb/biblio/5120658).
 - CERN Yellow Reports, [lecture material on effective field theory and integrating out degrees of freedom](https://cds.cern.ch/record/2276651).
-- Steven Weinberg, [“Effective Field Theory, Past and Future”](https://arxiv.org/abs/0908.1964).
 - Nobel Prize, [Kenneth Wilson's lecture on the renormalization group](https://www.nobelprize.org/prizes/physics/1982/wilson/lecture/).

@@ -38,6 +38,83 @@ const coreBackboneFiles = [
   "12_second_law_of_thermodynamics.md",
 ];
 
+// Canonical cases with a structurally validated Chain of Concepts layer.
+const conceptChainCases = new Map([
+  ["01_atomistic_hypothesis.md", { statePrefix: "CS-ATM", transitionPrefix: "CT-ATM" }],
+  ["02_hydrostatics_and_buoyancy.md", { statePrefix: "CS-ARC", transitionPrefix: "CT-ARC" }],
+  ["03_heliocentric_planetary_system.md", { statePrefix: "CS-HEL", transitionPrefix: "CT-HEL" }],
+  ["04_keplers_laws_of_planetary_motion.md", { statePrefix: "CS-KEP", transitionPrefix: "CT-KEP" }],
+  ["05_galilean_kinematics.md", { statePrefix: "CS-GAL", transitionPrefix: "CT-GAL" }],
+  ["06_fermat_principle.md", { statePrefix: "CS-FER", transitionPrefix: "CT-FER" }],
+  ["07_newtonian_mechanics.md", { statePrefix: "CS-NEW", transitionPrefix: "CT-NEW" }],
+  ["08_lagrangian_mechanics.md", { statePrefix: "CS-LAG", transitionPrefix: "CT-LAG" }],
+  ["09_wave_theory_and_interference.md", { statePrefix: "CS-WAV", transitionPrefix: "CT-WAV" }],
+  ["10_hamiltonian_mechanics.md", { statePrefix: "CS-HAM", transitionPrefix: "CT-HAM" }],
+  ["11_thermodynamics_and_energy_conservation.md", { statePrefix: "CS-EN", transitionPrefix: "CT-EN" }],
+  ["12_second_law_of_thermodynamics.md", { statePrefix: "CS-SL", transitionPrefix: "CT-SL" }],
+  ["13_maxwell_electromagnetic_field_theory.md", { statePrefix: "CS-MAX", transitionPrefix: "CT-MAX" }],
+  ["14_energy_quantization.md", { statePrefix: "CS-PL", transitionPrefix: "CT-PL" }],
+  ["15_classical_statistical_mechanics.md", { statePrefix: "CS-CSM", transitionPrefix: "CT-CSM" }],
+  ["16_light_quanta_and_photoelectric_effect.md", { statePrefix: "CS-EIN", transitionPrefix: "CT-EIN" }],
+  ["17_special_relativity.md", { statePrefix: "CS-SR", transitionPrefix: "CT-SR" }],
+  ["18_quantized_atomic_structure.md", { statePrefix: "CS-BOH", transitionPrefix: "CT-BOH" }],
+  ["19_general_relativity.md", { statePrefix: "CS-GR", transitionPrefix: "CT-GR" }],
+  ["20_noethers_theorem_and_symmetry.md", { statePrefix: "CS-NOE", transitionPrefix: "CT-NOE" }],
+  ["21_de_broglie_matter_waves.md", { statePrefix: "CS-DB", transitionPrefix: "CT-DB" }],
+  ["22_quantum_statistics.md", { statePrefix: "CS-QS", transitionPrefix: "CT-QS" }],
+  ["23_quantum_field_theory.md", { statePrefix: "CS-QFT", transitionPrefix: "CT-QFT" }],
+  ["24_quantum_mechanics.md", { statePrefix: "CS-QM", transitionPrefix: "CT-QM" }],
+  ["25_expanding_universe.md", { statePrefix: "CS-COS", transitionPrefix: "CT-COS" }],
+  ["26_relativistic_quantum_theory_and_antimatter.md", { statePrefix: "CS-DIR", transitionPrefix: "CT-DIR" }],
+  ["27_quantum_entanglement.md", { statePrefix: "CS-ENT", transitionPrefix: "CT-ENT" }],
+  ["28_landau_phase_transitions_and_symmetry_breaking.md", { statePrefix: "CS-LAN", transitionPrefix: "CT-LAN" }],
+  ["29_nuclear_interactions_and_beta_decay.md", { statePrefix: "CS-NUC", transitionPrefix: "CT-NUC" }],
+  ["30_quantum_electrodynamics.md", { statePrefix: "CS-QED", transitionPrefix: "CT-QED" }],
+  ["31_yang_mills_gauge_theory.md", { statePrefix: "CS-YM", transitionPrefix: "CT-YM" }],
+  ["32_bcs_theory_of_superconductivity.md", { statePrefix: "CS-BCS", transitionPrefix: "CT-BCS" }],
+  ["33_quarks_and_strong_interaction.md", { statePrefix: "CS-QK", transitionPrefix: "CT-QK" }],
+  ["34_higgs_mechanism.md", { statePrefix: "CS-BEH", transitionPrefix: "CT-BEH" }],
+  ["35_bells_theorem.md", { statePrefix: "CS-BELL", transitionPrefix: "CT-BELL" }],
+  ["36_wilsonian_renormalization_group.md", { statePrefix: "CS-WRG", transitionPrefix: "CT-WRG" }],
+  ["37_quantum_chromodynamics.md", { statePrefix: "CS-QCD", transitionPrefix: "CT-QCD" }],
+  ["38_electroweak_theory.md", { statePrefix: "CS-EW", transitionPrefix: "CT-EW" }],
+  ["39_effective_field_theory.md", { statePrefix: "CS-EFT", transitionPrefix: "CT-EFT" }],
+  ["40_standard_model.md", { statePrefix: "CS-SM", transitionPrefix: "CT-SM" }],
+  ["41_cosmic_inflation.md", { statePrefix: "CS-INF", transitionPrefix: "CT-INF" }],
+]);
+
+const conceptualTransitionFields = [
+  "Input model",
+  "Pressure",
+  "Protected structure",
+  "Hidden assumption",
+  "Operation / change type",
+  "Output model",
+  "Local justification",
+  "Cost/uncertainty",
+];
+
+const conceptChangeTypes = new Set([
+  "enrichment",
+  "differentiation",
+  "coalescence",
+  "constraint_change",
+  "reweighting",
+  "reinterpretation",
+  "replacement",
+  "generalization",
+  "representation_shift",
+]);
+
+const branchStatuses = new Set(["selected", "rejected", "merged", "deferred"]);
+
+const extrapolativeFields = [
+  "Source domain",
+  "Target domain",
+  "Novel consequence",
+  "Failure condition",
+];
+
 const requiredHeadings = [
   "Graph metadata",
   "Central claim",
@@ -57,8 +134,23 @@ const requiredHeadings = [
   "Sources",
 ];
 
+const processHeadings = [
+  "Starting ingredients",
+  "What interpolation could and could not achieve",
+  "Transformative move",
+  "Extrapolative generalization",
+  "Retention, predictions, and discriminating tests",
+  "Discovery-pattern synthesis",
+];
+
 const errors = [];
 const fileSet = new Set(files);
+for (const file of files) {
+  if (!conceptChainCases.has(file)) errors.push(`${file}: missing concept-chain registration`);
+}
+for (const file of conceptChainCases.keys()) {
+  if (!fileSet.has(file)) errors.push(`${file}: stale concept-chain registration`);
+}
 for (const chronologyFile of Object.keys(chronology)) {
   if (!fileSet.has(chronologyFile)) {
     errors.push(`${chronologyFile}: stale chronology record without a canonical case file`);
@@ -71,6 +163,17 @@ let sourceCount = 0;
 
 function fail(file, message) {
   errors.push(`${file}: ${message}`);
+}
+
+function checkProcessOutline(file, text) {
+  const start = text.indexOf("## Discovery-process reconstruction: interpolation, transformation, and extrapolation");
+  const end = text.indexOf("\n## Discovery node and consolidated formalism", start);
+  const headings = text.slice(start, end).split("\n")
+    .filter((line) => line.startsWith("### "))
+    .map((line) => line.slice(4));
+  if (headings.join("\u0000") !== processHeadings.join("\u0000")) {
+    fail(file, `discovery-process sections differ from the shared template: ${headings.join(" → ")}`);
+  }
 }
 
 const patternDefinitions = new Map([
@@ -121,6 +224,221 @@ function checkPatternSchema(file, text) {
   });
 }
 
+function checkConceptChainSchema(file, text, { statePrefix, transitionPrefix }) {
+  const lines = text.split("\n");
+  const chainHeading = "#### Chain of Concepts";
+  const formalHeading = "#### Formal consolidation";
+  const chainHeadingCount = lines.filter((line) => line === chainHeading).length;
+  const formalHeadingCount = lines.filter((line) => line === formalHeading).length;
+  if (chainHeadingCount !== 1) {
+    fail(file, `expected one Chain of Concepts heading, found ${chainHeadingCount}`);
+    return;
+  }
+  if (formalHeadingCount !== 1) {
+    fail(file, `expected one formal-consolidation heading, found ${formalHeadingCount}`);
+    return;
+  }
+
+  const transformativeIndex = text.indexOf("\n### Transformative move");
+  const chainIndex = text.indexOf(`\n${chainHeading}`);
+  const formalIndex = text.indexOf(`\n${formalHeading}`);
+  const extrapolativeIndex = text.indexOf("\n### Extrapolative generalization");
+  if (
+    transformativeIndex < 0 ||
+    chainIndex < transformativeIndex ||
+    formalIndex < chainIndex ||
+    extrapolativeIndex < formalIndex
+  ) {
+    fail(file, "transformative move must contain Chain of Concepts followed by formal consolidation before extrapolation");
+    return;
+  }
+
+  const block = text.slice(chainIndex, formalIndex);
+  if (!block.includes("##### Concept states\n\n| State ID | Publicly inspectable conceptual state |\n|---|---|")) {
+    fail(file, "concept states must use the canonical two-column table");
+  }
+  if (!block.includes("**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`")) {
+    fail(file, "Chain of Concepts lacks the modern-rational-reconstruction label");
+  }
+  if (!block.includes("**Trace rule:** Each transition must be locally justified")) {
+    fail(file, "Chain of Concepts lacks the local-justification trace rule");
+  }
+
+  const statePattern = new RegExp(
+    "^\\| `(" + statePrefix + "-(\\d{2}))` \\| (.+) \\|$",
+    "gm",
+  );
+  const states = [...block.matchAll(statePattern)];
+  if (states.length < 2) {
+    fail(file, `concept chain has ${states.length} concept states instead of at least 2`);
+  }
+  const stateIds = new Set(states.map((state) => state[1]));
+  states.forEach((state, index) => {
+    const expectedNumber = String(index + 1).padStart(2, "0");
+    if (state[2] !== expectedNumber) {
+      fail(file, `concept state ${index + 1} is numbered ${state[2]} instead of ${expectedNumber}`);
+    }
+  });
+
+  const headingPattern = new RegExp(
+    "^##### `" + transitionPrefix + "-(\\d{2})`: (.+) → `(" + statePrefix + "-\\d{2})` — .+$",
+    "gm",
+  );
+  const transitions = [...block.matchAll(headingPattern)];
+  if (transitions.length < 5 || transitions.length > 9) {
+    fail(file, `concept chain has ${transitions.length} transitions instead of 5–9`);
+  }
+
+  const referencedStateIds = new Set();
+  const declaredTransitions = [];
+  transitions.forEach((transition, index) => {
+    const expectedNumber = String(index + 1).padStart(2, "0");
+    if (transition[1] !== expectedNumber) {
+      fail(file, `concept transition ${index + 1} is numbered ${transition[1]} instead of ${expectedNumber}`);
+    }
+    const sourceIds = [...transition[2].matchAll(new RegExp("`(" + statePrefix + "-\\d{2})`", "g"))]
+      .map((match) => match[1]);
+    const targetId = transition[3];
+    declaredTransitions.push({ id: `${transitionPrefix}-${transition[1]}`, sourceIds, targetId });
+    if (sourceIds.length === 0) {
+      fail(file, `${transitionPrefix}-${transition[1]} has no valid source concept state`);
+    }
+    [...sourceIds, targetId].forEach((stateId) => {
+      referencedStateIds.add(stateId);
+      if (!stateIds.has(stateId)) {
+        fail(file, `${transitionPrefix}-${transition[1]} references undefined state ${stateId}`);
+      }
+    });
+
+    const start = (transition.index ?? 0) + transition[0].length;
+    const end = transitions[index + 1]?.index ?? block.length;
+    const record = block.slice(start, end);
+    const fieldMatches = record
+      .split("\n")
+      .map((line) => line.match(/^- \*\*([^*]+):\*\* (.+)$/))
+      .filter(Boolean);
+    const fields = fieldMatches.map((match) => match[1]);
+    const fieldValues = new Map(fieldMatches.map((match) => [match[1], match[2]]));
+    const canonicalWithoutBranch = [...conceptualTransitionFields, "Next question"];
+    const canonicalWithBranch = [...conceptualTransitionFields, "Branch status", "Next question"];
+    const serializedFields = fields.join("\u0000");
+    if (
+      serializedFields !== canonicalWithoutBranch.join("\u0000") &&
+      serializedFields !== canonicalWithBranch.join("\u0000")
+    ) {
+      fail(
+        file,
+        `${transitionPrefix}-${transition[1]} fields are missing, duplicated, or out of canonical order: ${fields.join(", ")}`,
+      );
+    }
+    const changeType = fieldValues.get("Operation / change type")?.match(/^`([^`]+)` — /)?.[1];
+    if (!conceptChangeTypes.has(changeType)) {
+      fail(file, `${transitionPrefix}-${transition[1]} has invalid or missing change type: ${changeType ?? "none"}`);
+    }
+    const branchValue = fieldValues.get("Branch status");
+    if (branchValue) {
+      const branchStatus = branchValue.match(/^`([^`]+)`/)?.[1];
+      if (!branchStatuses.has(branchStatus)) {
+        fail(file, `${transitionPrefix}-${transition[1]} has invalid branch status: ${branchStatus ?? "none"}`);
+      }
+    }
+  });
+  states.forEach((state) => {
+    if (!referencedStateIds.has(state[1])) {
+      fail(file, `concept state ${state[1]} is not used by any transition`);
+    }
+  });
+
+  const edgeStart = text.indexOf("\n## Edge list");
+  const edgeEnd = edgeStart < 0 ? -1 : text.indexOf("\n## Sources", edgeStart);
+  const edgeBlock = edgeStart < 0 ? "" : text.slice(edgeStart, edgeEnd < 0 ? text.length : edgeEnd);
+  const directedEdges = new Set(
+    [...edgeBlock.matchAll(/^(\S+) --[^>]+--> (\S+)$/gm)]
+      .map((match) => `${match[1]}\u0000${match[2]}`),
+  );
+  declaredTransitions.forEach(({ id, sourceIds, targetId }) => {
+    sourceIds.forEach((sourceId) => {
+      if (!directedEdges.has(`${sourceId}\u0000${id}`)) {
+        fail(file, `missing directed concept edge ${sourceId} → ${id}`);
+      }
+    });
+    if (!directedEdges.has(`${id}\u0000${targetId}`)) {
+      fail(file, `missing directed concept edge ${id} → ${targetId}`);
+    }
+  });
+  transitions.forEach((transition) => {
+    const id = `${transitionPrefix}-${transition[1]}`;
+    if (!edgeBlock.includes(id)) {
+      fail(file, `concept transition ${id} is absent from the explicit edge list`);
+    }
+  });
+  states.forEach((state) => {
+    if (!edgeBlock.includes(state[1])) {
+      fail(file, `concept state ${state[1]} is absent from the explicit edge list`);
+    }
+  });
+}
+
+function checkExtrapolativeSchema(file, text, transitionPrefix) {
+  const prefix = transitionPrefix.replace(/^CT-/, "EG-");
+  const start = text.indexOf("\n### Extrapolative generalization");
+  const end = start < 0 ? -1 : text.indexOf("\n### Retention, predictions, and discriminating tests", start);
+  if (start < 0 || end < 0) {
+    fail(file, "missing bounded extrapolative-generalization section");
+    return;
+  }
+  const block = text.slice(start, end);
+  if (!block.includes("**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`")) {
+    fail(file, "extrapolative generalization lacks the extrapolative-commitment label");
+  }
+  if (!block.includes("**Risk rule:** Success in the source domain")) {
+    fail(file, "extrapolative generalization lacks the domain-risk rule");
+  }
+
+  const headingPattern = new RegExp(
+    "^#### `" + prefix + "-(\\d{2})` — .+$",
+    "gm",
+  );
+  const records = [...block.matchAll(headingPattern)];
+  if (records.length < 1 || records.length > 4) {
+    fail(file, `extrapolative generalization has ${records.length} records instead of 1–4`);
+  }
+
+  records.forEach((recordMatch, index) => {
+    const expectedNumber = String(index + 1).padStart(2, "0");
+    if (recordMatch[1] !== expectedNumber) {
+      fail(
+        file,
+        `extrapolative record ${index + 1} is numbered ${recordMatch[1]} instead of ${expectedNumber}`,
+      );
+    }
+    const recordStart = (recordMatch.index ?? 0) + recordMatch[0].length;
+    const recordEnd = records[index + 1]?.index ?? block.length;
+    const record = block.slice(recordStart, recordEnd);
+    const fields = record
+      .split("\n")
+      .map((line) => line.match(/^- \*\*([^*]+):\*\* (.+)$/))
+      .filter(Boolean)
+      .map((match) => match[1]);
+    if (fields.join("\u0000") !== extrapolativeFields.join("\u0000")) {
+      fail(
+        file,
+        `${prefix}-${recordMatch[1]} fields are missing, duplicated, or out of canonical order: ${fields.join(", ")}`,
+      );
+    }
+  });
+
+  const edgeStart = text.indexOf("\n## Edge list");
+  const edgeEnd = edgeStart < 0 ? -1 : text.indexOf("\n## Sources", edgeStart);
+  const edgeBlock = edgeStart < 0 ? "" : text.slice(edgeStart, edgeEnd < 0 ? text.length : edgeEnd);
+  records.forEach((recordMatch) => {
+    const id = `${prefix}-${recordMatch[1]}`;
+    if (!edgeBlock.includes(id)) {
+      fail(file, `extrapolative record ${id} is absent from the explicit edge list`);
+    }
+  });
+}
+
 function checkMathBlocks(file, text) {
   const blocks = text.split("$$");
   for (let index = 1; index < blocks.length; index += 2) {
@@ -157,6 +475,10 @@ for (const file of canonicalFiles) {
     if (count !== 1) {
       fail(file, `expected one “## ${heading}” heading, found ${count}`);
     }
+  }
+  checkProcessOutline(file, text);
+  if (text.includes("See the full pathway record above")) {
+    fail(file, "interpolation table still defers its insufficiency explanation to the pathway record");
   }
 
   const graphId = text.match(/\| Graph ID \| `([^`]+)` \|/)?.[1];
@@ -201,6 +523,11 @@ for (const file of canonicalFiles) {
     }
   }
   checkPatternSchema(file, text);
+  if (conceptChainCases.has(file)) {
+    const conceptChain = conceptChainCases.get(file);
+    checkConceptChainSchema(file, text, conceptChain);
+    checkExtrapolativeSchema(file, text, conceptChain.transitionPrefix);
+  }
 
   const pathwayIndexes = [];
   lines.forEach((line, index) => {
@@ -245,12 +572,11 @@ for (const file of canonicalFiles) {
   if (ledgerStart < 0) {
     fail(file, "missing pathway comparison ledger");
   } else {
-    const chronologyNote =
-      `**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above ` +
-      `that originated before the focal discovery (${chronologyRecord?.discovery?.[0]}). ` +
-      `The proposed/active period is stored in each pathway record.`;
-    if (!lines.slice(ledgerStart + 1, ledgerStart + 5).includes(chronologyNote)) {
-      fail(file, "pathway ledger lacks the canonical chronology rule");
+    const chronologyNote = lines
+      .slice(ledgerStart + 1, ledgerStart + 5)
+      .find((line) => line.startsWith("**Chronology rule:**"));
+    if (!chronologyNote?.includes("proposed/active period")) {
+      fail(file, "pathway ledger lacks a chronology rule with dated pathway records");
     }
     let ledgerEnd = lines.length;
     for (let index = ledgerStart + 1; index < lines.length; index += 1) {
@@ -495,6 +821,7 @@ const newtonPath = path.join(corpusDir, newtonFile);
 const newton = fs.readFileSync(newtonPath, "utf8");
 const newtonLines = newton.split("\n");
 checkPatternSchema(newtonFile, newton);
+checkProcessOutline(newtonFile, newton);
 const newtonGraphId = newton.match(/\| Graph ID \| `([^`]+)` \|/)?.[1];
 const newtonCentralNode = newton.match(/\| Central node \| `([^`]+)`/)?.[1];
 if (!newtonGraphId) {
@@ -655,6 +982,7 @@ for (const file of coreBackboneFiles) {
     "RETRODICTION-OR-EXPLANATION",
     "NO-CLEAN-CONTEMPORANEOUS-PREDICTION",
     "NOVEL-THEORETICAL-CONSTRAINT",
+    "PRECURSOR-OPTICS-PREDICTION",
   ]);
   for (const record of predictionRecords) {
     const start = record.index ?? 0;

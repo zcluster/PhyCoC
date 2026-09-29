@@ -17,7 +17,7 @@ Huygens supplied a wavefront construction, Young demonstrated interference, and 
 
 ## Historical problem
 
-Before the focal discovery (1801–1818 (Young interference through Fresnel diffraction)), the case confronted a linked set of pressures: Rays or particles explain rectilinear propagation and reflection; Secondary wavelets advance wavefronts. The pathways `R-NEWTONIAN-CORPUSCLES`, `R-LONGITUDINAL-LIGHT-WAVES`, `R-TRANSVERSE-ELASTIC-ETHER` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Interference, diffraction, refraction, and polarization was to construct a more generative account without importing later validation evidence into the original inference.
+At Young's opening stage around 1801, corpuscular rays handled straight propagation and reflection, while Huygens's older wavefront construction supplied a distinct account of propagation and refraction. Neither by itself made the recurring bright and dark features of thin films and diffraction a quantitative consequence of combining light from different routes. Young's step was to make relative phase explanatory; Fresnel later developed that wave route into calculations of diffraction patterns. Polarization posed a further constraint and motivated a transverse-wave branch during the later stage, not a pre-1801 input to Young's interference proposal. Maxwellian electromagnetism and single-photon interference were still future reinterpretations.
 
 ## Time slices
 
@@ -26,9 +26,10 @@ Before the focal discovery (1801–1818 (Young interference through Fresnel diff
 | `TS-CORPUSCULAR` | 17th–18th centuries | Rays or particles explain rectilinear propagation and reflection | Diffraction and interference remained difficult |
 | `TS-HUYGENS` | 1690 | Secondary wavelets advance wavefronts | Refraction obtains a wave construction |
 | `TS-YOUNG` | 1801–1804 | Two-path interference demonstrated | Phase differences explain fringes |
-| `TS-FRESNEL` | 1815–1818 | Diffraction integrals and transverse waves developed | Wave theory makes risky quantitative predictions |
-| `TS-MAXWELL` | 1860s | Light identified as electromagnetic wave | Mechanical ether becomes less central |
-| `TS-QUANTUM` | 1900 onward | Photons detected individually yet build interference | Probability amplitudes replace classical either/or ontology |
+| `TS-FRESNEL` | 1815–1818 | Phase-aware diffraction calculations developed | Wave theory makes risky quantitative predictions |
+| `TS-POLARIZATION` | 1817–1820s | Polarization pressures longitudinal wave pictures | Transverse-wave proposals and later analyses address a distinct constraint |
+| `TS-MAXWELL` | 1860s | Light identified as electromagnetic wave | Field equations supplied a new description; Maxwell's contemporaries still discussed an ether |
+| `TS-QUANTUM` | 20th century | Light quanta and later single-photon interference | Probability amplitudes replace classical either/or ontology |
 
 ## Knowledge assets
 
@@ -49,7 +50,7 @@ Before the focal discovery (1801–1818 (Young interference through Fresnel diff
 - **Anomalies:** Stable dark fringes and diffraction into shadows.
 - **Repair:** Postulated forces or “fits” near surfaces.
 - **Outcome:** Superseded as a complete classical account.
-- **Retained element:** Quantized photon detection and ray optics in suitable limits.
+- **Retained element:** Ray optics in suitable limits; localized photon detection is a later, non-identical analogy.
 
 ### Mechanical luminiferous-medium family
 
@@ -74,13 +75,13 @@ Before the focal discovery (1801–1818 (Young interference through Fresnel diff
 
 ### Pathway comparison ledger
 
-**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (1801–1818 (Young interference through Fresnel diffraction)). The proposed/active period is stored in each pathway record.
+**Chronology rule:** Corpuscular and longitudinal-wave pathways predate Young's 1801 interference work; the transverse-elastic-ether branch appears during the later 1817–1818 stage, not as a pre-1801 input or a cause of Young's inference. The proposed/active period is stored in each pathway record.
 
 Newtonian corpuscular optics could explain reflection and refraction by hypothesized surface forces and was reinforced by Newton's authority. It struggled to generate stable destructive interference: two contributions can cancel as amplitudes even though two streams of ordinary particles cannot simply erase one another. Young's fringes and Fresnel's diffraction calculations made phase a generative variable.
 
 | Rival/repair | What it explained | New difficulty | Retained content |
 |---|---|---|---|
-| Corpuscles plus surface forces and “fits” | Rays, reflection, colors phenomenology | Diffraction/fringe locations lacked a unified calculation | Ray limit and later photon discreteness |
+| Corpuscles plus surface forces and “fits” | Rays, reflection, colors phenomenology | Diffraction/fringe locations lacked a unified calculation | Ray limit; later photon discreteness is not a vindication of this model |
 | Longitudinal ether waves | Analogy with sound | Polarization indicated transverse structure | Superposition and phase |
 | Transverse elastic ether | Polarization and wave propagation | Required an elusive medium with extraordinary mechanical properties | Transverse electromagnetic degrees of freedom |
 | **Discovery/current: wave superposition and electromagnetic field** | Optical amplitudes carry phase and add before intensity is calculated, later without a mechanical carrier | Quantitative fringe, diffraction, polarization, and electromagnetic propagation | Retained in classical fields and quantum probability amplitudes |
@@ -93,21 +94,107 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-WATER-SOUND-WAVES`, `A-THIN-FILMS`, `A-DIFFRACTION`, `A-PHASE`, `A-POLARIZATION`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+For Young's opening stage, admissible inputs are `A-WATER-SOUND-WAVES`, `A-THIN-FILMS`, and `A-DIFFRACTION`; periodic-wave analogy makes phase a candidate relation, not an already established optical fact. `A-POLARIZATION` becomes a constraint for the later transverse-wave branch, not a pre-1801 reason for Young's interference move. Their definitions and provenance are recorded in **Knowledge assets** above; later confirmation must not be back-projected into an earlier stage.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-NEWTONIAN-CORPUSCLES` | A classical particle theory of light in which luminous bodies emit tiny corpuscles that travel along rays and are reflected, refracted, or color-separated by forces near material surfaces. | No consistent mechanical ether gained empirical support; relativity removed the need for a preferred rest medium. |
-| `R-LONGITUDINAL-LIGHT-WAVES` | An early optical-wave analogy in which light oscillations are longitudinal compressions and rarefactions of an ether, like sound waves in air. | Polarization requires a directional transverse degree of freedom that a simple longitudinal wave cannot supply. |
-| `R-TRANSVERSE-ELASTIC-ETHER` | A refined ether model in which light is a transverse shear vibration of an extremely rigid yet matter-penetrating elastic medium. | Its required mechanical properties were mutually difficult to reconcile and no preferred ether motion was established. |
+| `R-NEWTONIAN-CORPUSCLES` | A classical particle theory of light in which luminous bodies emit tiny corpuscles that travel along rays and are reflected, refracted, or color-separated by forces near material surfaces. | Surface forces and “fits” did not give a unified quantitative account of stable bright and dark fringes or diffraction into shadows. |
+| `R-LONGITUDINAL-LIGHT-WAVES` (early analogy; later test) | An early optical-wave analogy in which light oscillations are longitudinal compressions and rarefactions of an ether, like sound waves in air. | The polarization difficulty belongs to the later 1817–1820s transverse-wave stage, not Young's 1801 starting pressure. |
+| `R-TRANSVERSE-ELASTIC-ETHER` (later branch) | A refined ether model in which light is a transverse shear vibration of an extremely rigid yet matter-penetrating elastic medium. | This 1817 branch addresses polarization but adds difficult medium properties; it is not an input to Young's interference inference. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** “Which ray path?” reframed as “How do amplitudes combine?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
 
-For two coherent fields:
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by resources available at that step; later validation and canonical endpoint language are excluded from its justification. This is an auditable rational reconstruction, not a transcript of a scientist's or model's hidden reasoning and not a claim that the endpoint was inevitable. Concept states are graph nodes; transitions are typed, auditable edges.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-WAV-01` | Ray and corpuscular optics predict reflection and refraction, while Huygens's earlier wavefront construction offers a rival propagation geometry. |
+| `CS-WAV-02` | Secondary wavefronts can reproduce propagation and refraction, but alone do not specify the observed brightness of overlapping light. |
+| `CS-WAV-03` | Periodic optical disturbances from two paths may reinforce or oppose one another according to their relative phase. |
+| `CS-WAV-04` | Path difference generates a calculable sequence of bright and dark fringes under a stable phase relation. |
+| `CS-WAV-05` | A finite aperture or edge is treated as a distributed set of secondary contributions, extending two-path reasoning to diffraction. |
+| `CS-WAV-06` | The 1818 wave account predicts diffraction intensity patterns from phase-aware superposition, while medium and polarization questions remain open. |
+
+##### `CT-WAV-01`: `CS-WAV-01` → `CS-WAV-02` — Recast rays as wavefront normals
+
+- **Input model:** Straight rays and corpuscles track many optical paths, and Huygens's 1690 wavefront construction is an available alternative.
+- **Pressure:** Refraction and propagation need a common geometry that need not make light a succession of independent particles.
+- **Protected structure:** Rectilinear propagation in ordinary settings, reflection, and the measured refraction law.
+- **Hidden assumption:** A ray is an irreducible physical particle trajectory rather than an effective direction of propagation.
+- **Operation / change type:** `reinterpretation` — Generate a new front as the envelope of secondary wavelets and read rays as its local normals.
+- **Output model:** Wavefront propagation can recover geometrical optics in its appropriate regime.
+- **Local justification:** Huygens's *Treatise on Light* develops a secondary-wave construction for propagation, reflection, and refraction; it predates Young and Fresnel.
+- **Cost/uncertainty:** Huygens's construction by itself does not calculate coherent fringe intensity and assumes a wave-bearing medium in its historical form.
+- **Branch status:** `selected`; corpuscular rays remain a successful effective description of many observations.
+- **Next question:** What happens to brightness when two wave contributions reach the same place?
+
+##### `CT-WAV-02`: `CS-WAV-02` → `CS-WAV-03` — Admit phase-dependent overlap
+
+- **Input model:** Wavefronts describe where disturbances travel, but thin-film colors and neighboring light paths show structured brightness.
+- **Pressure:** Merely adding the positive brightnesses of two independent ray streams cannot naturally yield a dark band where both arrive.
+- **Protected structure:** Periodic-wave analogies, the observed color and fringe regularities, and positive measured intensity.
+- **Hidden assumption:** Contributions combine only as measured intensities, with no signed or phase-dependent disturbance to combine first.
+- **Operation / change type:** `representation_shift` — Combine periodic disturbances before calculating their measured brightness.
+- **Output model:** Relative phase becomes a physical variable; reinforcement and cancellation are possible.
+- **Local justification:** Young's 1802 Bakerian lecture articulates a general interference principle from the crossing of light contributions; later complex-field notation is not an historical premise.
+- **Cost/uncertainty:** Stable cancellation requires a sufficiently stable phase relation and does not by itself prove a particular mechanical ether.
+- **Branch status:** `selected`; corpuscular “fits” remain rival attempts until quantitative patterns are compared.
+- **Next question:** Can phase be related to path geometry and fringe positions rather than invoked after seeing each band?
+
+##### `CT-WAV-03`: `CS-WAV-03` → `CS-WAV-04` — Make interference geometrically predictive
+
+- **Input model:** Two periodic contributions can strengthen or weaken one another according to phase.
+- **Pressure:** The qualitative idea of cancellation does not yet fix where bright and dark regions occur.
+- **Protected structure:** Observed fringe order, optical path geometry, and wavelength-like periodicity.
+- **Hidden assumption:** Fringe locations are apparatus-specific effects that require a separate fitted rule for each arrangement.
+- **Operation / change type:** `constraint_change` — Relate phase difference to path difference and derive recurring maxima and minima.
+- **Output model:** Fringe locations and their geometry-dependent spacing become calculable for coherent two-path arrangements.
+- **Local justification:** Young used path differences to connect interference with observed optical fringes; the idealized double-slit formula below is a modern compact representation, not a claim about his exact apparatus.
+- **Cost/uncertainty:** Finite source size, bandwidth, unequal amplitudes, and imperfect coherence can wash out ideal fringes.
+- **Branch status:** `selected`; surface-force alternatives must now match a multivariable fringe pattern, not one isolated dark band.
+- **Next question:** Can the same phase rule account for shadows and fringes near continuous edges or apertures?
+
+##### `CT-WAV-04`: `CS-WAV-04` → `CS-WAV-05` — Replace two paths with a distributed aperture
+
+- **Input model:** Coherent two-path interference predicts discrete fringe positions, while edge diffraction involves many contributing points.
+- **Pressure:** Light reaches some geometrical shadows, and fringe details depend on edge or opening geometry.
+- **Protected structure:** Huygens's secondary wavelets, Young's phase-dependent superposition, and measured edge patterns.
+- **Hidden assumption:** Only two separated beams can interfere; each portion of an aperture acts independently in measured intensity.
+- **Operation / change type:** `coalescence` — Sum phase-sensitive secondary contributions from the unobstructed wavefront.
+- **Output model:** Diffraction becomes a calculable wave-interference problem for finite openings and straight edges.
+- **Local justification:** Fresnel's 1818 diffraction memoir combined secondary waves with interference in a quantitative treatment; it does not depend on Maxwell's later electromagnetic field theory.
+- **Cost/uncertainty:** The calculation depends on source coherence, aperture geometry, and approximations to propagation; the mechanical carrier remains unsettled.
+- **Branch status:** `selected`; straight-ray optics remains a useful short-wavelength limit.
+- **Next question:** Does the quantitative treatment track measured edge-fringe intensities rather than just their existence?
+
+##### `CT-WAV-05`: `CS-WAV-05` → `CS-WAV-06` — Test a diffraction calculation
+
+- **Input model:** A finite wavefront's contributions are summed with phase to calculate light beyond a geometrical ray boundary.
+- **Pressure:** Qualitative “bending” is too weak to distinguish the wave construction from ad hoc corpuscular edge forces.
+- **Protected structure:** Measured edge or slit geometry, fringe positions, and ray optics in the limit where diffraction is negligible.
+- **Hidden assumption:** The phase-sum model only redescribes an already observed fringe and has no independent numerical reach.
+- **Operation / change type:** `enrichment` — Compare predicted diffraction distributions with available straight-edge and aperture observations.
+- **Output model:** A quantitative wave-diffraction account exists by the 1818 submission, with further geometries left as risky extensions.
+- **Local justification:** Fresnel's prize memoir was submitted in 1818 with quantitative diffraction analysis; the circular-disk consequence arose in subsequent Academy discussion, not as a premise of the original straight-edge construction. Fresnel's added Note I (printed p. 456) says its circular-screen calculation was written after the Academy's judgment.
+- **Cost/uncertainty:** Agreement does not settle longitudinal versus transverse displacement or validate a preferred-rest mechanical ether.
+- **Branch status:** `selected`; corpuscular optics and alternative ether mechanics remain to be tested on new geometries and polarization.
+- **Next question:** What does the same calculation predict for a round opaque obstacle?
+
+#### Formal consolidation
+
+The equations below use modern field, coherence, and ideal double-slit notation to consolidate the historical wave-interference move. They are not verbatim equations from Huygens, Young, or Fresnel.
+
+For two coherent fields of the same polarization (or their aligned components):
 
 $$
 E=E_1+E_2.
@@ -119,7 +206,7 @@ $$
 I=I_1+I_2+2\sqrt{I_1I_2}\cos\delta,
 $$
 
-where \(\delta\) is phase difference. The cross term is the essential interference contribution. For equal intensities \(I_0\):
+where \(\delta\) is phase difference. The cross term is the essential interference contribution; orthogonally polarized components have no such term in a polarization-insensitive intensity measurement. For equal intensities \(I_0\):
 
 $$
 I=4I_0\cos^2\left(\frac{\delta}{2}\right).
@@ -143,19 +230,30 @@ Destructive interference is not two positive intensities canceling; signed or co
 
 - `P-01` — **Reframe the inherited problem:** “Which ray path?” reframed as “How do amplitudes combine?”
 
-- `P-02` — **Permit a new representation, ontology, or mechanism:** Extended waves and later probability amplitudes accepted
+- `P-02` — **Permit a new representation, ontology, or mechanism:** Extended optical disturbances and phase-dependent superposition accepted
 
 - `P-03` — **Make the new structure generative:** Fringe positions generated from phase relations
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Interference, diffraction, refraction, and polarization). The case-specific unification was: Refraction, diffraction, interference, and polarization joined. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes an extension worth testing but does not license it automatically. Each record separates the supported domain, the proposed target, a novel consequence, and an explicit failure condition.
+
+The initial Young–Fresnel construction joins refraction, interference, and diffraction; polarization adds a distinct later constraint on the wave's direction of vibration, not a free consequence of scalar phase summation.
+
+#### `EG-WAV-01` — Extend edge diffraction to a circular obstacle
+
+- **Source domain:** Phase-aware secondary-wave calculations for two-path fringes and straight-edge or slit diffraction.
+- **Target domain:** The center of the shadow of a round opaque disk under suitable coherent illumination.
+- **Novel consequence:** Contributions around the disk can add coherently to yield a bright central spot, despite the geometrical-shadow expectation.
+- **Failure condition:** A reliably dark center under the wave calculation's coherence, disk, alignment, and illumination assumptions would refute that extension. Poisson's later deduction and Arago's observation test it; they are not part of the initial fit.
 
 **Patterns demonstrated:**
 
 - `P-03` — **Generate consequences rather than merely redescribe inputs:** Fringe positions generated from phase relations
 
-- `P-04` — **Unify previously separated domains or phenomena:** Refraction, diffraction, interference, and polarization joined
+- `P-04` — **Unify previously separated domains or phenomena:** Refraction, two-path interference, and diffraction joined by wavefront propagation plus phase; polarization remained a separate transverse-wave constraint
 
 ### Retention, predictions, and discriminating tests
 
@@ -174,9 +272,9 @@ Pattern IDs are ordered by their typical first role in the reconstructed discove
 | Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
 |---|---|---|---|---|
 | `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | “Which ray path?” reframed as “How do amplitudes combine?” | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
-| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Extended waves and later probability amplitudes accepted | [Transformative move](#transformative-move) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Extended optical disturbances and phase-dependent superposition accepted | [Transformative move](#transformative-move) |
 | `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Fringe positions generated from phase relations | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
-| `P-04` | Unify previously separated domains | Extrapolative unification | Refraction, diffraction, interference, and polarization joined | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Refraction, two-path interference, and diffraction joined by wavefront propagation plus phase; polarization remained a separate transverse-wave constraint | [Extrapolative generalization](#extrapolative-generalization) |
 | `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Ray optics retained as a short-wavelength limit | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
 | `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Bright/dark fringe locations offered precise tests | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
@@ -211,10 +309,13 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-WAV-01` — Central bright spot behind an opaque disk
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Wave Theory and Interference of Light: Historical Knowledge Graph.
+- **Classification:** `CONTEMPORANEOUS-DERIVED-PREDICTION`.
+- **Prediction date and authorship:** After Fresnel's 29 July 1818 submission and by Arago's report read to the Academy on 15 March 1819, Poisson had identified the circular-disk consequence of its wave calculation and Arago had checked it. This brackets the reported deduction and test, not the date of Poisson's first communication. Fresnel's printed Note I (p. 456) places his own supplementary disk/aperture calculation after the Academy's judgment. This was not Young's 1801 prediction or part of the submitted straight-edge analysis.
+- **Construction-data independence:** Straight-edge and slit diffraction informed the wave construction; a circular disk's central shadow was a new geometry rather than a datum used to fit those cases.
+- **Derivation provenance:** `HISTORICAL-RECONSTRUCTION`. Secondary contributions from around the unobstructed circular wavefront arrive in phase at the symmetry axis, yielding nonzero central intensity; modern integrals compactly express this reasoning.
+- **Observable discriminator and outcome:** Under aligned coherent illumination, the center of the disk's geometrical shadow should be bright. Arago's observation supported the wave calculation, though it did not settle the later medium or polarization questions.
 
 ## Validation and explanatory gains
 
@@ -340,7 +441,7 @@ Diffraction is therefore not a device imperfection; it follows from wave propaga
 
 ### The Poisson–Arago spot as a risky prediction
 
-During evaluation of Fresnel's wave theory, Poisson noted that the mathematics implied a bright point at the center of the shadow of a circular disk—apparently an absurd consequence. Arago observed the spot. The episode is valuable because the theory produced an unexpected prediction chosen by a critic, reducing the risk of post hoc accommodation. The exact historical drama is sometimes simplified, but the predictive structure is genuine.
+Fresnel submitted his memoir on 29 July 1818. By the time Arago's committee report was read on 15 March 1819, it recorded Poisson's deduction of a bright point at the center of a circular disk's shadow and its experimental confirmation. Fresnel's later Note I (printed p. 456) also attributes the disk-center result to Poisson and says his supplementary calculation followed the Academy's judgment. These sources bound the reported deduction and test but do not date Poisson's first communication. The new circular geometry was not used to construct the submitted straight-edge account, so the prediction remains a useful test without relying on a dramatized critic-versus-theory sequence.
 
 ### Polarization and transverse waves
 
@@ -396,6 +497,18 @@ No separate supplemental note block was present before this schema migration. Ca
 
 ```text
 A-DIFFRACTION --challenges--> R-NEWTONIAN-CORPUSCLES
+A-DIFFRACTION --constrains--> CS-WAV-01
+CS-WAV-01 --revised-by--> CT-WAV-01
+CT-WAV-01 --produces--> CS-WAV-02
+CS-WAV-02 --revised-by--> CT-WAV-02
+CT-WAV-02 --produces--> CS-WAV-03
+CS-WAV-03 --revised-by--> CT-WAV-03
+CT-WAV-03 --produces--> CS-WAV-04
+CS-WAV-04 --revised-by--> CT-WAV-04
+CT-WAV-04 --produces--> CS-WAV-05
+CS-WAV-05 --revised-by--> CT-WAV-05
+CT-WAV-05 --produces--> CS-WAV-06
+CS-WAV-06 --hands-off-to--> EG-WAV-01
 A-THIN-FILMS --contributes-to--> D-WAVE-INTERFERENCE-1690-1818
 D-HUYGENS-WAVEFRONT --precedes--> D-YOUNG-INTERFERENCE
 D-YOUNG-INTERFERENCE --precedes--> D-FRESNEL-DIFFRACTION
@@ -409,6 +522,11 @@ D-WAVE-INTERFERENCE-1690-1818 --instantiates--> P-05
 
 ## Sources
 
+- Huygens, [*Treatise on Light* (1690), English translation](https://www.gutenberg.org/cache/epub/14725/pg14725-images.html).
+- Académie des sciences, [publication record of Fresnel's 1818 diffraction memoir](https://www.academie-sciences.fr/pdf/dossiers/Fresnel/Fresnel_pubd1.htm).
+- Arago, [1819 committee report, *Annales de chimie et de physique* XI, p. 16, original-volume text view](https://babel.hathitrust.org/cgi/ssd?id=iau.31858046217711&seq=22); the [reprint's opening note](https://fr.wikisource.org/wiki/Page:Fresnel_-_%C5%92uvres_compl%C3%A8tes_d%27Augustin_Fresnel_tome_1.djvu/331) dates its reading to 15 March 1819.
+- Fresnel, [*Mémoire sur la diffraction de la lumière*, added Note I, printed p. 456](https://www.academie-sciences.fr/pdf/dossiers/Fresnel/Fresnel_pdf/Mem1818_p339.pdf), Académie des sciences scan; the note credits Poisson's disk-center theorem and distinguishes the later supplement from the 1818 submission.
 - American Physical Society, [“Fresnel's Evidence for the Wave Theory of Light”](https://www.aps.org/apsnews/2016/07/fresnel-wave-theory-light).
 - American Physical Society, [“Particle-Wave Duality”](https://www.aps.org/learning-resources/particle-wave-duality).
 - Royal Society, [Thomas Young's Bakerian Lecture on light and colours](https://royalsocietypublishing.org/doi/10.1098/rstl.1802.0004).
+- Young, [1801 Bakerian lecture, published 1802, full text](https://www.gutenberg.org/cache/epub/79490/pg79490-images.html), Project Gutenberg transcription of the *Philosophical Transactions* original.

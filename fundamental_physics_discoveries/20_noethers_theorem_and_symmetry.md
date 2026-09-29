@@ -17,7 +17,7 @@ Noether showed that continuous symmetries of a variational problem imply identit
 
 ## Historical problem
 
-Before the focal discovery (July 1918 presentation and 1918 publication), the case confronted a linked set of pressures: Euler–Lagrange and Hamiltonian mechanics organize motion through stationary action; Transformation groups and invariants become systematic mathematical objects. The pathways `R-CASE-BY-CASE-CONSERVATION`, `R-COORDINATE-CYCLICITY-AS-ULTIMATE-CAUSE`, `R-ORDINARY-DIVERGENCE-GR-ENERGY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Variational mechanics, classical and quantum field theory, conservation laws, and gauge symmetry was to construct a more generative account without importing later validation evidence into the original inference.
+Variational mechanics already linked an ignorable coordinate to a conserved momentum, and Lie's group theory supplied a language for continuous transformations. Yet these were mostly special-case connections: they did not state what follows for an arbitrary invariant variational problem, especially when transformations depend on arbitrary functions. The immediate 1915–1918 pressure also came from general relativity, where familiar statements about gravitational energy and generally covariant field equations resisted a straightforward ordinary-divergence reading. Noether combined the calculus of variations with transformation-group methods, explicitly distinguishing finite-parameter from arbitrary-function groups in her 1918 paper. The first yielded conservation-law relations; the second yielded differential identities among field equations. Later uses in quantum field theory and gauge theory show the reach of the result, but were not premises of the 1918 derivation.
 
 ## Time slices
 
@@ -102,13 +102,94 @@ The admissible pre-discovery input nodes are `A-STATIONARY-ACTION`, `A-EULER-LAG
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-CASE-BY-CASE-CONSERVATION` | A practice in which energy, linear momentum, angular momentum, electric charge, and other conserved quantities are derived separately from the particular forces or equations of each model, without one theorem relating them to transformations of the action. | See the full pathway record above. |
-| `R-COORDINATE-CYCLICITY-AS-ULTIMATE-CAUSE` | The identification of a conserved canonical momentum \(p_i\) with the absence of a coordinate \(q_i\) from a chosen Lagrangian, treated as a coordinate-specific trick rather than an expression of an underlying continuous transformation group. | See the full pathway record above. |
-| `R-ORDINARY-DIVERGENCE-GR-ENERGY` | The attempt to represent gravitational energy in general relativity by an ordinary, unique local tensor density whose coordinate divergence vanishes in the same straightforward manner as the energy current of matter in a fixed background. | See the full pathway record above. |
+| `R-CASE-BY-CASE-CONSERVATION` | A practice in which energy, linear momentum, angular momentum, electric charge, and other conserved quantities are derived separately from the particular forces or equations of each model, without one theorem relating them to transformations of the action. | Separate proofs reproduced known constants but concealed their common dependence on continuous transformations of the action. |
+| `R-COORDINATE-CYCLICITY-AS-ULTIMATE-CAUSE` | The identification of a conserved canonical momentum \(p_i\) with the absence of a coordinate \(q_i\) from a chosen Lagrangian, treated as a coordinate-specific trick rather than an expression of an underlying continuous transformation group. | It worked in adapted coordinates but missed transformations that mix fields or change the Lagrangian by a boundary term. |
+| `R-ORDINARY-DIVERGENCE-GR-ENERGY` | The attempt to represent gravitational energy in general relativity by an ordinary, unique local tensor density whose coordinate divergence vanishes in the same straightforward manner as the energy current of matter in a fixed background. | An ordinary divergence did not capture the differential identities of general covariance or yield a unique covariant local gravitational-energy tensor. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** “Why is this quantity conserved?” becomes “Which action symmetry generates its current?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by information available at the focal discovery date; later confirmations, modern notation, and rival branches must be distinguished from contemporary inputs.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-NOE-01` | Mechanics has particular conservation laws, while general covariance makes gravitational energy difficult to express in the familiar way. **Open question:** Is there one structural account for both? |
+| `CS-NOE-02` | Variational problems can be classified by finite-parameter and arbitrary-function transformation groups. **Open question:** What does each kind of invariance imply? |
+| `CS-NOE-03` | The variation of an action decomposes into Euler–Lagrange expressions and a divergence. **Open question:** How does finite-parameter invariance use this identity? |
+| `CS-NOE-04` | Finite continuous symmetries generate divergence relations and on-shell conserved currents. **Open question:** Does a local symmetry simply supply more ordinary currents? |
+| `CS-NOE-05` | Arbitrary-function symmetries instead force differential identities among the field equations. **Open question:** How does this change the gravitational-energy question? |
+| `CS-NOE-06` | First- and second-theorem results distinguish global conservation from local gauge dependencies. **Open question:** Which parts generalize to new actions, fields, and boundary settings? |
+
+##### `CT-NOE-01`: `CS-NOE-01` → `CS-NOE-02` — Classify the transformation, not the desired energy formula
+
+- **Input model:** Separate mechanical conservation proofs and competing gravitational-energy expressions.
+- **Pressure:** General covariance complicates an ordinary local gravitational-energy current.
+- **Protected structure:** The variational formulation and established conservation results where they work.
+- **Hidden assumption:** All symmetry-related conservation questions have the same mathematical answer.
+- **Operation / change type:** `differentiation` — Separate finite-parameter groups from groups depending on arbitrary functions and their derivatives.
+- **Output model:** Two symmetry classes with potentially different consequences for the field equations.
+- **Local justification:** Lie-group methods, calculus of variations, and the Hilbert–Klein relativity problem were available by 1918.
+- **Cost/uncertainty:** Classification alone supplies neither a current nor an identity.
+- **Next question:** What common variational relation can support both cases?
+
+##### `CT-NOE-02`: `CS-NOE-02` → `CS-NOE-03` — Expose the universal variational identity
+
+- **Input model:** An action integral invariant under a specified continuous transformation group.
+- **Pressure:** Special coordinate tricks cannot handle arbitrary field transformations uniformly.
+- **Protected structure:** Euler–Lagrange equations and integration by parts.
+- **Hidden assumption:** A transformation's consequence must be derived anew from each particular action.
+- **Operation / change type:** `representation_shift` — Decompose the first variation into Euler–Lagrange terms plus a boundary divergence.
+- **Output model:** One off-shell identity connecting transformations, field equations, and divergences.
+- **Local justification:** Noether's original paper makes this integration-by-parts identity the basis of both theorems.
+- **Cost/uncertainty:** Boundary terms and regularity assumptions must be tracked, not discarded.
+- **Next question:** What follows when the transformation has finitely many constant parameters?
+
+##### `CT-NOE-03`: `CS-NOE-03` → `CS-NOE-04` — Recover conservation from finite symmetry
+
+- **Input model:** The off-shell variational identity and a finite-parameter action symmetry.
+- **Pressure:** Cyclic coordinates explain only adapted special cases.
+- **Protected structure:** Known mechanical first integrals and field-current divergence laws.
+- **Hidden assumption:** Conserved quantities need a preferred coordinate form.
+- **Operation / change type:** `generalization` — Use each independent finite generator to turn a combination of Euler–Lagrange expressions into a divergence.
+- **Output model:** On solutions, the corresponding current has vanishing divergence; cyclic-coordinate results become special cases.
+- **Local justification:** This is the first theorem in Noether's 1918 paper, stated with converse qualifications.
+- **Cost/uncertainty:** A local current need not yield a finite global charge without suitable boundaries.
+- **Next question:** What changes if the symmetry parameters are arbitrary functions of position?
+
+##### `CT-NOE-04`: `CS-NOE-04` → `CS-NOE-05` — Let arbitrariness constrain the equations
+
+- **Input model:** A variational symmetry whose transformation contains arbitrary functions and possibly their derivatives.
+- **Pressure:** Treating general covariance as merely many independent global translations misstates its consequence.
+- **Protected structure:** The same off-shell variational identity and the invariance of the action.
+- **Hidden assumption:** Every continuous symmetry produces only an independent ordinary current.
+- **Operation / change type:** `constraint_change` — Integrate by parts with arbitrary functions, then require their independent coefficients to vanish.
+- **Output model:** Differential identities among Euler–Lagrange expressions, rather than just additional first-theorem currents.
+- **Local justification:** Noether's second theorem explicitly treats arbitrary-function groups and relates them to general relativity.
+- **Cost/uncertainty:** A gauge identity does not itself define a unique local gravitational-energy tensor.
+- **Next question:** How should the original energy puzzle be reformulated?
+
+##### `CT-NOE-05`: `CS-NOE-05` → `CS-NOE-06` — Reinterpret the conservation puzzle
+
+- **Input model:** Finite groups yield on-shell divergence relations; arbitrary-function groups yield off-shell equation identities.
+- **Pressure:** The two conclusions were conflated when seeking a conventional gravitational-energy density from covariance alone.
+- **Protected structure:** Valid ordinary charges in special settings and useful boundary expressions.
+- **Hidden assumption:** General covariance guarantees a unique tensorial local energy density.
+- **Operation / change type:** `reweighting` — Treat identities, boundary terms, and global charges as distinct outputs of the variational structure.
+- **Output model:** A two-theorem framework that explains why GR's energy issue cannot be solved by repeating the elementary translation argument.
+- **Local justification:** The distinction follows from the 1918 theorems and the contemporary GR motivation, not later quantum gauge theory.
+- **Cost/uncertainty:** Which conserved quantity is physically meaningful still depends on fields, asymptotics, and boundaries.
+- **Next question:** Will the same classification constrain other field actions?
+
+#### Formal consolidation
+
+The equations below use modern mechanics and field notation to exhibit the two-theorem logic. They are a pedagogical specialization, not a literal transcription of Noether's original presentation.
 
 For generalized coordinates \(q_i(t)\), let
 
@@ -158,7 +239,7 @@ $$
 p_i=\frac{\partial L}{\partial\dot q_i}.
 $$
 
-The conserved Noether charge is \(Q=\sum_i p_iX_i-F\). Time translations yield energy when the relevant time-translation symmetry exists; spatial translations yield momentum; rotations yield angular momentum.
+The conserved Noether charge is \(Q=\sum_i p_iX_i-F\) for the fixed-time transformations displayed here. Time translations yield energy when the relevant time-translation symmetry exists, but their derivation requires also varying the time coordinate; spatial translations yield momentum and rotations yield angular momentum.
 
 For fields \(\phi_a(x)\) with Lagrangian density \(\mathcal L\), a global infinitesimal transformation gives the current
 
@@ -171,7 +252,7 @@ j^\mu
 \partial_\mu j^\mu=0
 $$
 
-on the equations of motion, where \(\delta\mathcal L=\partial_\mu K^\mu\). Noether's second theorem addresses transformations containing arbitrary functions \(\epsilon^\alpha(x)\); it produces identities among the Euler–Lagrange expressions. In electromagnetism, gauge invariance is related to the identity \(\partial_\mu\partial_\nu F^{\mu\nu}\equiv0\), which is consistent with charge conservation.
+on the equations of motion, where \(\delta\mathcal L=\partial_\mu K^\mu\). Noether's second theorem addresses transformations containing arbitrary functions \(\epsilon^\alpha(x)\); it produces identities among the Euler–Lagrange expressions. For a pure Maxwell field, the gauge identity reduces to \(\partial_\mu\partial_\nu F^{\mu\nu}\equiv0\); with charged matter, the full identity also contains its Euler–Lagrange expressions, so charge conservation is not obtained from antisymmetry alone.
 
 **Patterns demonstrated:**
 
@@ -183,7 +264,23 @@ on the equations of motion, where \(\delta\mathcal L=\partial_\mu K^\mu\). Noeth
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Variational mechanics, classical and quantum field theory, conservation laws, and gauge symmetry). The case-specific unification was: Mechanics, field theory, geometry, and conservation are linked by one variational structure. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain does not establish the target-domain claim; state the novel consequence and a possible failure condition before using later evidence as validation.
+
+#### `EG-NOE-01` — Apply the first theorem to new field actions
+
+- **Source domain:** Variational mechanics and the 1918 symmetry classification motivated in part by relativity.
+- **Target domain:** Other classical field actions with specified global continuous transformations.
+- **Novel consequence:** Explicitly varying an invariant action should construct a current whose divergence vanishes on its field equations, subject to boundary conditions.
+- **Failure condition:** A regular action genuinely invariant under the stated global group but lacking the theorem's local divergence relation would refute the claimed application; a non-invariant action or anomalous quantum theory would not.
+
+#### `EG-NOE-02` — Use local symmetry to audit candidate gauge theories
+
+- **Source domain:** General covariance as an arbitrary-function action symmetry yielding dependencies among field equations.
+- **Target domain:** Other actions proposed with local gauge-type redundancy.
+- **Novel consequence:** The Euler–Lagrange expressions should satisfy the corresponding off-shell differential identities, constraining permissible equations and source couplings.
+- **Failure condition:** Failure of the identity for an allegedly invariant classical action would reveal either broken symmetry, a missing field/boundary term, or an invalid model claim.
 
 **Patterns demonstrated:**
 
@@ -193,7 +290,7 @@ The transformative move became a broader physical discovery when it was asserted
 
 ### Retention, predictions, and discriminating tests
 
-The reconstruction preserves rather than erases successful predecessor content: Cyclic-coordinate and case-specific conservation results survive as special cases. Its quantitative or otherwise discriminating test strategy is: Candidate actions can be tested by explicit variation, current divergence, and selection rules. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+The reconstruction preserves rather than erases successful predecessor content: cyclic-coordinate and case-specific conservation results survive as special cases. Candidate actions can be checked by explicit variation and current divergence; quantum selection rules are a later application, not a 1918 construction test. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
 
 **Patterns demonstrated:**
 
@@ -229,30 +326,32 @@ This node serializes the result of the preceding reconstruction. It is a compact
 
 Key formal relations, consolidated from the derivation above:
 
-$$
-S[q]=\int_{t_1}^{t_2}L(q_i,\dot q_i,t)\,dt.
-$$
+For the fixed-time finite transformation derived above, the first theorem gives
 
 $$
-\delta L=\epsilon\frac{dF}{dt}.
+Q=\sum_i p_iX_i-F,
+\qquad \frac{dQ}{dt}=0\quad\text{on shell}.
 $$
 
+For a local vertical field transformation \(\delta\phi_a=R^a_\alpha\epsilon^\alpha+R^{a\mu}_\alpha\partial_\mu\epsilon^\alpha\), the second theorem gives the illustrative off-shell identity
+
 $$
-\delta L
-=\sum_i\left(
-\frac{\partial L}{\partial q_i}\delta q_i
-+\frac{\partial L}{\partial\dot q_i}\delta\dot q_i
-\right),
+\sum_a\left(E_aR^a_\alpha-\partial_\mu(E_aR^{a\mu}_\alpha)\right)\equiv0,
 $$
+
+where \(E_a=\delta S/\delta\phi_a\). General coordinate transformations can add further terms, as in Noether's original treatment.
 
 The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-NOE-01` — When an energy relation is “improper”
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Noether's Theorems and Symmetry Principles: Historical Knowledge Graph.
+- **Classification:** `NOVEL-THEORETICAL-CONSTRAINT`, not an empirical forecast or a claim that general relativity has no energy accounting.
+- **Deduction date and authorship:** Noether's 1918 paper, §6, derives a generalized form of Hilbert's observation: for the invariant variational integral she considers, the energy divergence relations associated with the displacement group are “improper” if and only if that finite group is contained in an invariant infinite group depending on arbitrary functions.
+- **Construction-data independence:** the result follows from the two variational theorems and the subgroup relation, not from later quantum gauge theory, later gravitational-energy constructions, or an experiment fitted to the theorem.
+- **Derivation provenance and scope:** “Improper” means the relevant current expression decomposes into Euler–Lagrange expressions and their derivatives plus an identically divergence-free contribution. It does not assert that every boundary charge vanishes, that all energy currents are unique, or that any arbitrary coordinate change by itself is a physical conservation law.
+- **Discriminator and outcome:** for a specified action, inspect its finite displacement symmetry and any containing arbitrary-function invariance; the latter determines whether the associated energy relation has Noether's improper form. This resolves the stated Hilbert–Klein variational puzzle under its assumptions, while leaving boundary conditions and physically meaningful global charges as separate questions.
 
 ## Validation and explanatory gains
 
@@ -341,6 +440,18 @@ No separate supplemental note block was present before this schema migration. Ca
 
 ```text
 A-STATIONARY-ACTION --enables--> D-NOETHER-THEOREMS-1918
+CS-NOE-01 --revised-by--> CT-NOE-01
+CT-NOE-01 --produces--> CS-NOE-02
+CS-NOE-02 --revised-by--> CT-NOE-02
+CT-NOE-02 --produces--> CS-NOE-03
+CS-NOE-03 --revised-by--> CT-NOE-03
+CT-NOE-03 --produces--> CS-NOE-04
+CS-NOE-04 --revised-by--> CT-NOE-04
+CT-NOE-04 --produces--> CS-NOE-05
+CS-NOE-05 --revised-by--> CT-NOE-05
+CT-NOE-05 --produces--> CS-NOE-06
+CS-NOE-06 --hands-off-to--> EG-NOE-01
+CS-NOE-06 --hands-off-to--> EG-NOE-02
 A-LIE-GROUPS --formalizes--> CONTINUOUS-SYMMETRY
 CONTINUOUS-GLOBAL-SYMMETRY --generates--> NOETHER-CURRENT
 LOCAL-GAUGE-SYMMETRY --implies--> DIFFERENTIAL-IDENTITY
@@ -353,7 +464,7 @@ D-NOETHER-THEOREMS-1918 --instantiates--> P-03
 
 ## Sources
 
-- Emmy Noether, [“Invariant Variation Problems”](https://arxiv.org/abs/physics/0503066), English translation of the 1918 paper.
+- Emmy Noether, [“Invariant Variation Problems”](https://arxiv.org/abs/physics/0503066), English translation of the 1918 paper; §6, translation pp. 11–13, checked for the conditional “improper” energy-relation criterion and its stated group-theoretic qualifications.
 - European Digital Mathematics Library, [original bibliographic record for “Invariante Variationsprobleme”](https://eudml.org/doc/59024).
 - U.S. Department of Energy, [“DOE Explains…Symmetry in Physics”](https://www.energy.gov/science/doe-explainssymmetry-physics).
 - American Physical Society, [“Conservation Laws and Symmetries. II”](https://journals.aps.org/pr/abstract/10.1103/PhysRev.150.1251), on converse structure and current equivalence.

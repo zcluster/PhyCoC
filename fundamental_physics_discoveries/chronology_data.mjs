@@ -2,16 +2,16 @@
 // BCE years are negative. Fractional keys order events within the same year.
 export const chronology = {
   "01_atomistic_hypothesis.md": {
-    discovery: ["c. 440 BCE (mature Leucippan–Democritean atomism)", -440],
+    discovery: ["fifth century BCE (c. 440 BCE display anchor, not a dated synthesis)", -440],
     pathways: {
-      "R-CONTINUOUS-MATTER": ["sixth–fifth centuries BCE antecedents; Aristotle's systematic version is later", -500],
-      "R-FOUR-ELEMENTS": ["c. 450 BCE (Empedocles)", -450],
+      "R-CONTINUOUS-MATTER": ["sixth–fifth centuries BCE antecedents; Aristotle's systematic continuum is later and is not a pre-atomist input", -500],
+      "R-FOUR-ELEMENTS": ["mid-fifth century BCE (Empedocles' four-root doctrine); its relative order versus early atomist formulations is uncertain, and the numerical key is only for display", -450],
     },
   },
   "02_hydrostatics_and_buoyancy.md": {
-    discovery: ["c. 250 BCE (Archimedes' mature hydrostatics)", -250],
+    discovery: ["third century BCE (c. 250 BCE display anchor; treatise date uncertain)", -250],
     pathways: {
-      "R-SHAPE-ONLY-FLOATING": ["practical shipbuilding tradition before the third century BCE", -400],
+      "R-SHAPE-ONLY-FLOATING": ["pre-third-century practical floating knowledge (analytic foil, not an attested school)", -400],
       "R-ELEMENTAL-PLACE": ["c. 350 BCE (Aristotelian natural-place theory)", -350],
     },
   },
@@ -40,7 +40,7 @@ export const chronology = {
     },
   },
   "07_newtonian_mechanics.md": {
-    discovery: ["1684–1687 synthesis; *Principia* published 5 July 1687", 1687],
+    discovery: ["1684–1687 synthesis; *Principia* issued in July 1687", 1687],
     pathways: {
       "T-ARISTOTELIAN-MOTION": ["Fourth century BCE onward; the core Aristotelian texts long predate 1687", -350],
       "T-IMPETUS": ["Sixth–fourteenth centuries CE, with major medieval formulations well before 1687", 550],
@@ -76,7 +76,7 @@ export const chronology = {
     discovery: ["1861–1865", 1865],
     pathways: {
       "R-SEPARATE-ELECTRIC-MAGNETIC-FLUIDS": ["eighteenth–early nineteenth centuries", 1730],
-      "R-MECHANICAL-ETHER-MODELS": ["seventeenth century–1850s", 1650],
+      "R-MECHANICAL-ETHER-MODELS": ["seventeenth century–1860s", 1650],
       "R-INSTANTANEOUS-ELECTROMAGNETIC-ACTION": ["1785–1850s", 1785],
       "R-AMPERE-WITHOUT-DISPLACEMENT-CURRENT": ["1820s", 1820],
     },
@@ -139,7 +139,7 @@ export const chronology = {
     discovery: ["1924–1926", 1926.9],
     pathways: {
       "R-MAXWELL-BOLTZMANN-ALL-PARTICLES": ["1860s–1870s", 1860],
-      "R-BOSE-STATISTICS-FOR-ALL-MATTER": ["1924", 1924],
+      "R-HEISENBERG-BOSE-PAULI-IDENTIFICATION": ["1926", 1926],
       "R-PAULI-RULE-WITHOUT-STATE-ANTISYMMETRY": ["1925", 1925],
       "R-CLASSICAL-ROTATING-SPIN": ["1925–1926", 1925.5],
     },
@@ -159,6 +159,7 @@ export const chronology = {
       "R-NUCLEAR-ELECTRONS": ["1910s–1932", 1910],
       "R-ELECTROMAGNETIC-BINDING-ONLY": ["pre-1932", 1920],
       "R-MICROSCOPIC-ENERGY-NONCONSERVATION": ["1930", 1930],
+      "R-WENZEL-BOSE-FIELD": ["1937", 1937],
       "R-ELEMENTARY-YUKAWA-MESON-AS-FUNDAMENTAL-FORCE": ["1935", 1935],
     },
   },
@@ -173,7 +174,7 @@ export const chronology = {
     },
   },
   "33_quarks_and_strong_interaction.md": {
-    discovery: ["February 1964 quark-model papers", 1964.15],
+    discovery: ["January–February 1964 quark-model manuscripts and publication", 1964.08],
     pathways: {
       "R-ELEMENTARY-HADRON-ZOO": ["1940s–early 1960s", 1945],
       "R-SAKATA-HADRON-CONSTITUENTS": ["1956", 1956],
@@ -185,7 +186,7 @@ export const chronology = {
     discovery: ["1964 BEH-mechanism papers", 1964.7],
     pathways: {
       "R-EXPLICIT-VECTOR-MASS": ["1936 (Proca)", 1936],
-      "R-GLOBAL-BREAKING-FOR-WEAK-MASS": ["1960–1962", 1960],
+      "R-GLOBAL-BROKEN-SYMMETRY": ["1960–1962", 1960],
       "R-STUECKELBERG-MASS": ["1938", 1938],
     },
   },
@@ -208,7 +209,7 @@ export const chronology = {
     discovery: ["1973 asymptotic-freedom formulation", 1973.5],
     pathways: {
       "R-STRONG-COUPLING-AT-ALL-SCALES": ["1950s–1960s", 1950],
-      "R-ABELIAN-COLOR-FORCE": ["1960s–early 1970s", 1965],
+      "R-COLOR-SINGLET-GLUON": ["1960s–1972", 1965],
       "R-HADRONIC-BOOTSTRAP": ["late 1950s–1960s", 1958],
       "R-PARTON-MODEL-WITHOUT-DYNAMICS": ["1969", 1969],
     },
@@ -265,9 +266,7 @@ export const chronology = {
     discovery: ["October 1954 publication", 1954.75],
     pathways: {
       "R-GLOBAL-ISOSPIN-ONLY": ["1932–1953", 1932],
-      "R-ABELIAN-GAUGE-COPY": ["1929–1953", 1929],
       "R-YUKAWA-MESON-FUNDAMENTAL-FORCE": ["1935–1953", 1935],
-      "R-MASSIVE-NONABELIAN-VECTOR-BY-HAND": ["1936–1953 antecedent vector-meson reasoning", 1936],
     },
   },
   "32_bcs_theory_of_superconductivity.md": {
@@ -283,9 +282,7 @@ export const chronology = {
     discovery: ["November 1971 Wilson renormalization-group papers", 1971.83],
     pathways: {
       "R-LANDAU-MEAN-FIELD-EXACT-CRITICALITY": ["1937–1960s", 1937],
-      "R-MICROSCOPIC-DETAIL-DETERMINES-CRITICAL-EXPONENT": ["nineteenth century–1960s", 1850],
       "R-SCALING-HYPOTHESIS-WITHOUT-FLOW": ["1959–1970", 1959],
-      "R-PERTURBATIVE-RENORMALIZATION-AS-SUBTRACTION-ONLY": ["late 1940s–1960s", 1947],
     },
   },
   "39_effective_field_theory.md": {

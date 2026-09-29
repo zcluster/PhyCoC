@@ -17,7 +17,7 @@ Bohr combined Rutherford's nucleus with quantum postulates to explain hydrogen's
 
 ## Historical problem
 
-Before the focal discovery (July 1913 (Bohr trilogy begins)), the case confronted a linked set of pressures: Atoms emit discrete line series; Compact nucleus established. The pathways `R-CLASSICAL-PLANETARY-ATOM`, `R-THOMSON-DIFFUSE-ATOM`, `R-NICHOLSON-PROTOQUANTIZED-ATOM` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Atomic energy levels and spectra was to construct a more generative account without importing later validation evidence into the original inference.
+Rutherford's 1911 scattering model concentrated positive charge in a small nucleus, but an electron orbit governed without alteration by classical mechanics and electrodynamics had no stable atomic size: an accelerating charge would radiate and its orbit shrink. Independently, Balmer–Rydberg line relations showed reproducible discrete frequencies that continuous orbital emission did not explain. Planck's constant made a new atomic scale available, while Nicholson's earlier quantum-like orbit constructions showed both promise and unresolved spectral difficulties. Bohr's July 1913 task was to retain the nuclear atom yet specify stationary configurations and transition radiation capable of generating hydrogen's line law; later wavefunctions and measured many-electron successes were not construction inputs.
 
 ## Time slices
 
@@ -70,7 +70,7 @@ Before the focal discovery (July 1913 (Bohr trilogy begins)), the case confronte
 | Classical planetary atom | Add radiation damping or special stability assumptions | Collapse and continuous spectra | Coulomb nucleus and correspondence regime |
 | Thomson diffuse atom | Embed electrons in extended positive charge | Rutherford scattering and hydrogen spectra | Atomic compositeness |
 | Nicholson proto-quantized atoms | Impose discrete angular momentum on speculative atomic systems | No general hydrogen or many-element theory | Quantized-angular-momentum precursor |
-| **Discovery/current: quantum-mechanical atomic states** | Replace paths with state vectors/operators and discrete eigenvalues | Spectra, intensities, many-electron structure, and chemistry | Retained quantum framework |
+| **Discovery/current: Bohr's 1913 stationary-state atom** | Keep Coulomb motion within selected nonradiating states; assign radiation to quantum transitions | Hydrogen wavelengths, ionization scale, and risky helium-ion extension; emission dynamics unresolved | Nuclear atom and discrete energies retained, literal orbits later superseded |
 
 The old quantum theory was not a useless wrong turn. It predicted the hydrogen energy scale, ionization energy, and spectral series, while correspondence arguments connected large quantum numbers to classical motion. Its failure became visible when researchers could not extend orbit quantization consistently across nonintegrable or many-electron systems. Matrix mechanics deliberately began with observable transition quantities; wave mechanics supplied eigenvalue problems. Both retained quantized stationary energies while discarding definite microscopic Kepler orbits.
 
@@ -86,13 +86,94 @@ The admissible pre-discovery input nodes are `A-RUTHERFORD-NUCLEUS`, `A-PLANCK-E
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-CLASSICAL-PLANETARY-ATOM` | A Rutherford-style classical atom in which electrons follow continuously allowed mechanical orbits around a compact positive nucleus under the Coulomb force. | See the full pathway record above. |
+| `R-CLASSICAL-PLANETARY-ATOM` | A Rutherford-style classical atom in which electrons follow continuously allowed mechanical orbits around a compact positive nucleus under the Coulomb force. | An orbiting charge should radiate continuously and lose orbital energy, giving neither stable atoms nor discrete hydrogen lines. |
 | `R-THOMSON-DIFFUSE-ATOM` | Thomson's pre-nuclear atom, with electrons embedded in extended positive charge and small oscillations used to model spectral behavior. | Rutherford scattering required concentrated positive charge, and the model did not generate the hydrogen spectrum. |
 | `R-NICHOLSON-PROTOQUANTIZED-ATOM` | Nicholson's 1911–1912 celestial and atomic models using discrete angular-momentum conditions to calculate selected spectral lines before Bohr's hydrogen theory. | The hypothetical substances and spectral assignments did not provide a general stable-atom theory. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** Radiation failure reframed by stationary states. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by information available at the focal discovery date; later confirmations, modern notation, and rival branches must be distinguished from contemporary inputs.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-BOH-01` | Rutherford's nucleus organizes scattering, but classical orbiting electrons radiate continuously while atoms persist. **Open question:** Which microscopic assumption must change? |
+| `CS-BOH-02` | Exceptional stationary atomic configurations can persist without continuous radiation. **Open question:** How can light nevertheless be emitted? |
+| `CS-BOH-03` | Radiation accompanies changes between stationary configurations and has frequency set by their energy difference. **Open question:** Which configurations are permitted? |
+| `CS-BOH-04` | Planck's h and a large-orbit correspondence condition constrain one-electron binding energies. **Open question:** Does this yield the observed line pattern? |
+| `CS-BOH-05` | A discrete Coulomb binding-energy sequence produces hydrogen transition frequencies. **Open question:** Does its coefficient match Rydberg's measured constant? |
+| `CS-BOH-06` | The coefficient and hydrogen spectrum match, although nonradiating orbits remain postulates. **Open question:** Can this survive beyond hydrogen? |
+
+##### `CT-BOH-01`: `CS-BOH-01` → `CS-BOH-02` — Exempt selected configurations from continuous radiation
+
+- **Input model:** Rutherford's nuclear atom with classical Coulomb motion and electrodynamic radiation.
+- **Pressure:** An accelerated electron should spiral inward, contrary to persistent atoms.
+- **Protected structure:** The compact nucleus and Coulomb binding.
+- **Hidden assumption:** Ordinary radiation theory applies unchanged to every microscopic orbit.
+- **Operation / change type:** `constraint_change` — Postulate nonradiating stationary configurations instead of decay along all classically allowed paths.
+- **Output model:** Atomic persistence becomes possible, but permitted configurations remain unspecified.
+- **Local justification:** Bohr's 1913 first paper contrasts classical orbital radiation with stable atomic dimensions before introducing exceptional states.
+- **Cost/uncertainty:** Stationarity is imposed, not derived from ordinary mechanics.
+- **Next question:** What produces the observed spectral radiation?
+
+##### `CT-BOH-02`: `CS-BOH-02` → `CS-BOH-03` — Assign radiation to transitions
+
+- **Input model:** Persistent states can exist without continuous radiation.
+- **Pressure:** Atoms still emit sharply defined spectral lines.
+- **Protected structure:** Energy conservation and the quantum energy–frequency relation.
+- **Hidden assumption:** Emitted-light frequency must equal the electron's instantaneous orbital frequency.
+- **Operation / change type:** `reinterpretation` — Attribute light frequency to the energy difference between two stationary configurations.
+- **Output model:** The transition rule hν = Ei − Ef replaces continuous in-orbit emission.
+- **Local justification:** Planck–Einstein energy-frequency ideas and line spectra were available before July 1913.
+- **Cost/uncertainty:** The mechanism and timing of a quantum jump remain unexplained.
+- **Next question:** Which state energies make the rule predictive?
+
+##### `CT-BOH-03`: `CS-BOH-03` → `CS-BOH-04` — Constrain states using h and correspondence
+
+- **Input model:** Rutherford's one-electron Coulomb system has a continuous classical range of binding energies.
+- **Pressure:** That range selects neither discrete lines nor a characteristic atomic size.
+- **Protected structure:** Coulomb mechanics within idealized stationary orbits, Planck's h, and slow-vibration classical behavior.
+- **Hidden assumption:** Classical mechanics alone selects the allowed binding energies.
+- **Operation / change type:** `constraint_change` — Introduce a discrete quantum condition whose large-orbit transition frequency approaches orbital frequency.
+- **Output model:** A selected sequence of one-electron binding energies; circular angular-momentum quantization is an equivalent familiar form.
+- **Local justification:** Bohr's 1913 paper discusses formation radiation and slow-vibration agreement before angular-momentum language; mvr = nħ was not his sole starting axiom.
+- **Cost/uncertainty:** The quantum condition lacks a general microscopic derivation.
+- **Next question:** What spectrum does the sequence generate?
+
+##### `CT-BOH-04`: `CS-BOH-04` → `CS-BOH-05` — Generate the hydrogen frequency pattern
+
+- **Input model:** Discrete Coulomb binding energies and the transition rule.
+- **Pressure:** Balmer–Rydberg reciprocal-square regularities need a physical interpretation.
+- **Protected structure:** Observed lines, Coulomb attraction, and a universal h.
+- **Hidden assumption:** Spectral integers are only fit labels, not atomic-state labels.
+- **Operation / change type:** `coalescence` — Combine binding-energy scaling with transition-energy differences.
+- **Output model:** Hydrogen frequencies proportional to 1/nf² − 1/ni².
+- **Local justification:** Balmer's 1885 hydrogen-line regularity predates Bohr's proposed state sequence; the form does not depend on later quantum mechanics.
+- **Cost/uncertainty:** Hydrogen agreement does not establish the same orbit rules for many-electron atoms.
+- **Next question:** Is the coefficient right without another arbitrary fit?
+
+##### `CT-BOH-05`: `CS-BOH-05` → `CS-BOH-06` — Compare the coefficient and retain the unresolved mechanism
+
+- **Input model:** A reciprocal-square formula whose coefficient depends on charge, electron mass, h, and light speed.
+- **Pressure:** Matching the pattern is weaker than matching its independently determined scale.
+- **Protected structure:** Previously measured constants and hydrogen wavelengths.
+- **Hidden assumption:** Any reciprocal-square expression automatically explains the measured Rydberg constant.
+- **Operation / change type:** `enrichment` — Compare the derived coefficient and atomic scale with independent measurements.
+- **Output model:** A constrained hydrogen atom with stable levels and line frequencies, not a full emission dynamics.
+- **Local justification:** Pre-1913 spectroscopy enabled the comparison; Franck–Hertz and later quantum mechanics are not construction inputs.
+- **Cost/uncertainty:** Fine structure, intensities, and many-electron structure remain open.
+- **Next question:** Which claims survive in hydrogen-like ions?
+
+#### Formal consolidation
+
+The following circular-orbit derivation uses modern notation. It is equivalent to part of Bohr's result but was not his sole historical route to the 1913 quantum condition.
 
 Bohr imposed:
 
@@ -148,7 +229,16 @@ $$
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Atomic energy levels and spectra). The case-specific unification was: Nuclear atom, spectra, and energy quanta unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain does not establish the target-domain claim; state the novel consequence and a possible failure condition before using later evidence as validation.
+
+#### `EG-BOH-01` — Extend the one-electron model to hydrogen-like ions
+
+- **Source domain:** Hydrogen's one-electron spectrum and the Coulomb stationary-state calculation.
+- **Target domain:** Singly ionized helium and other one-electron ions with nuclear charge Z greater than one.
+- **Novel consequence:** Line frequencies should scale approximately as Z² after reduced-mass corrections, allowing disputed spectral-series assignments to be tested.
+- **Failure condition:** Persistent one-electron ion series lacking the predicted charge scaling, beyond finite-mass and spectroscopic corrections, would defeat the extension.
 
 **Patterns demonstrated:**
 
@@ -213,10 +303,13 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-BOH-01` — Further hydrogen-like helium-ion series
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Quantized Atomic Structure: Historical Knowledge Graph.
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION`.
+- **Prediction date and provenance:** In the 1913 first paper, Bohr substituted nuclear charge 2e into his one-electron formula and inferred additional singly ionized helium series, including lines in the extreme ultraviolet and infrared.
+- **Independence from construction data:** Hydrogen's Balmer pattern constrained the original atom; the additional helium-ion series were a cross-element consequence. Already observed Pickering and Fowler lines were reassignments or retrodictions, not newly predicted observations.
+- **Observable discriminator:** Helium-ion lines should follow the corresponding Z²-scaled reciprocal-square pattern, subject to finite nuclear mass.
+- **Later outcome:** Subsequent spectroscopy supported the hydrogen-like ion structure; this did not rescue Bohr's literal circular-orbit ontology.
 
 ## Validation and explanatory gains
 
@@ -423,8 +516,6 @@ shows how one retained base model becomes a scaffold for successively smaller co
 
 ## Additional quantitative and epistemic notes
 
-### Additional quantitative and epistemic notes
-
 Bohr combined Rutherford's nucleus, Planck's constant, and the spectroscopic Rydberg regularity. For a Coulomb circular orbit plus \(L=n\hbar\),
 
 $$
@@ -443,6 +534,17 @@ Yet stationary classical orbits and ad hoc quantum jumps lacked a general dynami
 
 ```text
 A-RUTHERFORD-NUCLEUS --contributes-to--> D-BOHR-ATOM-1913
+CS-BOH-01 --revised-by--> CT-BOH-01
+CT-BOH-01 --produces--> CS-BOH-02
+CS-BOH-02 --revised-by--> CT-BOH-02
+CT-BOH-02 --produces--> CS-BOH-03
+CS-BOH-03 --revised-by--> CT-BOH-03
+CT-BOH-03 --produces--> CS-BOH-04
+CS-BOH-04 --revised-by--> CT-BOH-04
+CT-BOH-04 --produces--> CS-BOH-05
+CS-BOH-05 --revised-by--> CT-BOH-05
+CT-BOH-05 --produces--> CS-BOH-06
+CS-BOH-06 --hands-off-to--> EG-BOH-01
 A-PLANCK-EINSTEIN --enables--> QUANTUM-TRANSITION
 A-BALMER-RYDBERG --constrains--> D-BOHR-ATOM-1913
 R-CLASSICAL-PLANETARY-ATOM --superseded-by--> D-BOHR-ATOM-1913
@@ -454,6 +556,9 @@ D-BOHR-ATOM-1913 --instantiates--> P-05
 
 ## Sources
 
+- Johann Jakob Balmer, [“Notiz über die Spektrallinien des Wasserstoffs” (1885; digitized original)](https://www.e-rara.ch/bau_1/content/titleinfo/30070386).
+- Ernest Rutherford, [“The Scattering of α and β Particles by Matter and the Structure of the Atom” (1911)](https://doi.org/10.1080/14786440508637080), *Philosophical Magazine* 21, 669–688.
+- Niels Bohr, [On the Constitution of Atoms and Molecules (1913)](https://www.gutenberg.org/ebooks/72787).
 - Nobel Prize, [Niels Bohr facts](https://www.nobelprize.org/prizes/physics/1922/bohr/facts/).
 - Nobel Prize, [1924 presentation speech on atomic physics](https://www.nobelprize.org/prizes/physics/1924/ceremony-speech/).
 - Niels Bohr Archive, [Bohr's 1913 atomic papers](https://nbarchive.ku.dk/collections/bohr-publications/).

@@ -23,7 +23,7 @@ Internal energy $U$ is a state function, whereas heat and work depend on the pro
 
 ## Historical problem
 
-Before the focal discovery (1843–1850 mechanical equivalent of heat and first-law synthesis), the case confronted a linked set of pressures: Heat represented as a conserved weightless fluid; Friction and mechanical action generate heat. The pathways `R-CALORIC-CONSERVATION`, `R-HEAT-AS-SIMPLE-MOTION`, `R-PERPETUAL-MOTION-FIRST-KIND` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Heat, work, internal energy and energy conservation was to construct a more generative account without importing later validation evidence into the original inference.
+At the start of the 1840s, caloric bookkeeping described heat storage and transfer, but sustained frictional heating raised the question of how apparently consumed mechanical motion became heat without exhausting a conserved heat-fluid store. A verbal claim that heat is motion was not yet a common numerical accounting rule. Mayer's 1842 argument framed causes as conserved yet convertible, and the next empirical task was to compare mechanical, electrical, and gas processes for one work–heat equivalent. Joule's 1843–45 measurements supplied early quantitative routes; his 1849–50 precision series and Clausius's later state-versus-transfer formulation belong to subsequent consolidation, not to Mayer's starting evidence.
 
 ## Time slices
 
@@ -103,19 +103,105 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-CALORIMETRY`, `A-MECHANICAL-WORK`, `A-ELECTRICAL-HEATING`, `A-RUMFORD-FRICTION`, `A-JOULE-EXPERIMENTS`, `A-CONSERVATION-TRADITION`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+For the early 1840s stage, available inputs include `A-CALORIMETRY`, `A-MECHANICAL-WORK`, `A-ELECTRICAL-HEATING`, `A-RUMFORD-FRICTION`, and `A-CONSERVATION-TRADITION`. `A-JOULE-EXPERIMENTS` accumulated during the multi-stage 1843–1850 discovery and must enter only at the stage when each measurement existed; Joule's 1850 precision results are not pre-1843 premises. Their definitions and provenance are recorded in **Knowledge assets** above.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-CALORIC-CONSERVATION` | A substance theory in which a weightless material called caloric is stored in bodies and flows between them while its total quantity remains conserved in ordinary thermal processes. | See the full pathway record above. |
-| `R-HEAT-AS-SIMPLE-MOTION` | A qualitative kinetic hypothesis identifying heat with microscopic agitation but lacking a conserved energy quantity, a reliable conversion coefficient or a complete account of internal molecular modes. | See the full pathway record above. |
-| `R-PERPETUAL-MOTION-FIRST-KIND` | A proposed cyclic device that returns to its initial condition while delivering net work without an equivalent decrease of stored energy or an energy input from its surroundings. | See the full pathway record above. |
+| `R-CALORIC-CONSERVATION` | A substance theory in which a weightless material called caloric is stored in bodies and flows between them while its total quantity remains conserved in ordinary thermal processes. | Repeated work-driven heating could not be explained by a finite store of conserved caloric without an independently evidenced hidden source. |
+| `R-HEAT-AS-SIMPLE-MOTION` | A qualitative kinetic hypothesis identifying heat with microscopic agitation but lacking a conserved energy quantity, a reliable conversion coefficient or a complete account of internal molecular modes. | Naming microscopic motion did not give a measurable work–heat equivalent or a general balance across mechanical and electrical routes. |
+| `R-PERPETUAL-MOTION-FIRST-KIND` | A proposed cyclic device that returns to its initial condition while delivering net work without an equivalent decrease of stored energy or an energy input from its surroundings. | A complete cycle and reservoir audit exposed depleted storage or external input; mechanism tweaks could not create a net source. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** “Where did the caloric go?” becomes “What crossed the boundary and how did internal energy change?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by resources available at that step; later validation and canonical endpoint language are excluded from its justification. This is an auditable rational reconstruction, not a transcript of a scientist's or model's hidden reasoning and not a claim that the endpoint was inevitable. Concept states are graph nodes; transitions are typed, auditable edges.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-EN-01` | Caloric bookkeeping measures heating, while friction and work-driven warming strain strict conservation of a heat substance. |
+| `CS-EN-02` | Mechanical work input is made numerically comparable with an insulated system's temperature rise. |
+| `CS-EN-03` | Repeated work–heat comparisons support a conversion equivalent rather than an apparatus-specific hidden-caloric release. |
+| `CS-EN-04` | Mechanical, electrical, and gas routes are compared as transformations of a common conserved magnitude. |
+| `CS-EN-05` | Changes of a system property are distinguished from path-dependent heat and work transfers across its boundary. |
+| `CS-EN-06` | A closed-system energy balance accounts for conversions and cycles without deciding process direction or maximum engine efficiency. |
+
+##### `CT-EN-01`: `CS-EN-01` → `CS-EN-02` — Compare work input with thermal change
+
+- **Input model:** Calorimetry tracks thermal changes, but the caloric-fluid picture does not naturally account for sustained frictional heating.
+- **Pressure:** Repeated mechanical action can warm a body without an identifiable finite caloric reservoir being depleted.
+- **Protected structure:** Heat-capacity measurement, temperature change, and quantitative mechanical work.
+- **Hidden assumption:** Heat produced by work must be previously stored caloric released from matter.
+- **Operation / change type:** `constraint_change` — Measure both controlled work input and corrected thermal response within an explicit apparatus boundary.
+- **Output model:** Work and heating become commensurable experimental quantities, with conversion not yet established as universal.
+- **Local justification:** Rumford's frictional observations preceded Mayer and Joule; Joule's early mechanical/electrical investigations made quantitative comparison possible before the 1850 precision paper.
+- **Cost/uncertainty:** Friction outside the calorimeter, heat leakage, and apparatus heat capacity can mimic or distort a relation.
+- **Branch status:** `selected`; caloric bookkeeping remains operationally useful while its conserved-substance interpretation is tested.
+- **Next question:** Does the ratio between supplied work and thermal change stabilize across repeated runs?
+
+##### `CT-EN-02`: `CS-EN-02` → `CS-EN-03` — Test a mechanical equivalent of heat
+
+- **Input model:** Controlled work produces a measurable temperature rise under corrected conditions.
+- **Pressure:** A single warming experiment cannot distinguish a general conversion factor from apparatus-specific stored energy.
+- **Protected structure:** Measured work, calorimetric response, and explicit correction terms.
+- **Hidden assumption:** The amount of heating may depend on a hidden reservoir unrelated to the magnitude of work supplied.
+- **Operation / change type:** `generalization` — Repeat work-to-heat conversions at varied loads and compare a common numerical equivalent.
+- **Output model:** A mechanical equivalent becomes an empirically testable proportionality, not a mere qualitative analogy.
+- **Local justification:** Joule's 1843 magneto-electric result and 1845 fluid-friction work supplied pre-1847 numerical equivalents; his 1850 paper retrospectively distinguishes those early results from its later precision series. Mayer's 1842 conservation argument is an independent antecedent, not this experiment.
+- **Cost/uncertainty:** The measured temperature rise is small and the value depends on units and systematic corrections.
+- **Branch status:** `selected`; exact numerical convergence remains a measurement question.
+- **Next question:** Does the same equivalent survive conversion routes that do not use the paddle-wheel apparatus?
+
+##### `CT-EN-03`: `CS-EN-03` → `CS-EN-04` — Search for a route-independent conserved magnitude
+
+- **Input model:** Mechanical work can be matched to heating by a numerical equivalent in controlled arrangements.
+- **Pressure:** A universal principle requires more than one mechanism and must incorporate electrical and gas work.
+- **Protected structure:** Separate measurements of work and heat, and conserved-quantity reasoning from mechanics.
+- **Hidden assumption:** Each conversion mechanism has its own unrelated “heat-making” coefficient.
+- **Operation / change type:** `coalescence` — Compare mechanical, electrical, and gas routes under one energy-equivalence account.
+- **Output model:** The conversion ratio and conservation idea span multiple physical processes.
+- **Local justification:** Joule had compared magneto-electric, gas, and frictional routes by the mid-1840s; Mayer's 1842 argument supplies an earlier parallel conservation branch, and Helmholtz's 1847 treatment broadens it. Their convergence at this step does not imply that Mayer worked from Joule's later results.
+- **Cost/uncertainty:** Distinct apparatus have distinct error budgets; agreement supports but cannot logically prove universal scope.
+- **Branch status:** `selected`; a new route could still expose an unaccounted reservoir or a failed generalization.
+- **Next question:** What belongs to the system as stored energy, and what only crosses its boundary?
+
+##### `CT-EN-04`: `CS-EN-04` → `CS-EN-05` — Distinguish storage from transfer
+
+- **Input model:** Several processes suggest that thermal and mechanical changes exchange a conserved magnitude.
+- **Pressure:** Heat and work vary with process path, yet a system returning to its initial condition cannot retain a net unexplained energy change.
+- **Protected structure:** Calorimetric and work measurements, energy equivalence, and state-based system description.
+- **Hidden assumption:** Heat and work are both substances or state properties contained in the body.
+- **Operation / change type:** `differentiation` — Separate internal energy as a state-dependent accounting quantity from heat and work as modes of boundary transfer.
+- **Output model:** The state change can be compared across paths even when the two transfer totals differ.
+- **Local justification:** Clausius's 1850 theory integrated work–heat equivalence into heat-engine accounting; the exact/inexact differential notation below is a later precise expression of this distinction.
+- **Cost/uncertainty:** A boundary and all material/energy channels must be specified; microscopic content of internal energy was not yet fully known.
+- **Branch status:** `selected`; a kinetic account of heat remains compatible but is not required to define the balance.
+- **Next question:** What quantitative closed-system equation and cycle constraint follow?
+
+##### `CT-EN-05`: `CS-EN-05` → `CS-EN-06` — Consolidate the first-law balance
+
+- **Input model:** Internal energy changes with state, while heat and work are path-dependent transfers.
+- **Pressure:** Engines and conversions need an equation that prevents cyclic creation of work without conflating conservation with directionality.
+- **Protected structure:** Common equivalent, measured transfers, and the absence of a successful perpetual-motion machine of the first kind.
+- **Hidden assumption:** A balanced energy account by itself also tells which processes are spontaneous or which engine efficiency is possible.
+- **Operation / change type:** `enrichment` — Write a signed energy balance and apply it to a cycle, while leaving directionality as a separate problem.
+- **Output model:** For a closed system, change in internal energy equals heat in minus work out; cyclic net work requires an energy input.
+- **Local justification:** Clausius's 1850 synthesis brought work–heat conversion into thermodynamic engine theory; the second-law constraint remains distinct.
+- **Cost/uncertainty:** The law does not determine thermal flow direction, efficiency, reaction rate, or the properties needed for a specific process calculation.
+- **Branch status:** `selected`; Carnot's reversible-engine insight is retained but requires reformulation under nonconserved heat.
+- **Next question:** Does the conservation law also hold in conversion domains not used to establish the mechanical equivalent?
+
+#### Formal consolidation
+
+The formulas below use modern sign, state-function, and differential notation to consolidate a distributed 1842–1850 discovery; they are not attributed verbatim to any one contributor.
 
 For Joule's paddle-wheel arrangement, a descending mass transfers approximately
 
@@ -143,7 +229,7 @@ $$
 \Delta U=Q-W.
 $$
 
-For quasistatic pressure–volume work alone,
+For pressure–volume work against an external pressure (and no other work mode),
 
 $$
 \delta W=p_{\rm ext}\,dV,
@@ -215,7 +301,16 @@ Heat is thereby the residual energy transfer not classified as work, not a store
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Heat, work, internal energy and energy conservation). The case-specific unification was: Mechanical, thermal, electrical and chemical changes are unified by energy conservation. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes an extension worth testing but does not license it automatically. Each record separates the supported domain, the proposed target, a novel consequence, and an explicit failure condition.
+
+#### `EG-EN-01` — Test quantitative energy closure in independent chemical processes
+
+- **Source domain:** Quantified mechanical, electrical, and gas work converted into thermal change under measured system boundaries.
+- **Target domain:** Independently measured chemical reactions and fuel-driven engines not used to establish the mechanical equivalent. Mayer had already argued for chemical conversion in 1842; the extension here is quantitative cross-domain testing, not the first suggestion that chemistry involves energy.
+- **Novel consequence:** Once independently calibrated chemical stores and material flows are included, a complete cycle or reaction balance should close without an extra creation or destruction of energy.
+- **Failure condition:** A reproducible, well-bounded process with calibrated chemical, heat, and work inputs and outputs that leaves a persistent energy deficit or surplus beyond uncertainties would challenge the extension. A missing reservoir or mass-flow term is first a boundary error to investigate, not evidence for a new energy source.
 
 **Patterns demonstrated:**
 
@@ -271,6 +366,10 @@ $$
 
 $$
 W_{\mathrm{in}}=JQ_{\mathrm{cal}},
+$$
+
+$$
+dU=\delta Q-\delta W.
 $$
 
 The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
@@ -349,6 +448,18 @@ No separate supplemental note block was present before this schema migration. Ca
 
 ```text
 A-RUMFORD-FRICTION --challenges--> R-CALORIC-CONSERVATION
+A-RUMFORD-FRICTION --constrains--> CS-EN-01
+CS-EN-01 --revised-by--> CT-EN-01
+CT-EN-01 --produces--> CS-EN-02
+CS-EN-02 --revised-by--> CT-EN-02
+CT-EN-02 --produces--> CS-EN-03
+CS-EN-03 --revised-by--> CT-EN-03
+CT-EN-03 --produces--> CS-EN-04
+CS-EN-04 --revised-by--> CT-EN-04
+CT-EN-04 --produces--> CS-EN-05
+CS-EN-05 --revised-by--> CT-EN-05
+CT-EN-05 --produces--> CS-EN-06
+CS-EN-06 --hands-off-to--> EG-EN-01
 A-CALORIMETRY --measures--> THERMAL-CHANGE
 A-MECHANICAL-WORK --compares-with--> THERMAL-CHANGE
 A-JOULE-EXPERIMENTS --supports--> D-FIRST-LAW-1847-1850
@@ -362,6 +473,10 @@ D-FIRST-LAW-1847-1850 --instantiates--> P-04
 
 ## Sources
 
+- Julius Robert Mayer, [“Remarks on the Forces of Inorganic Nature” (1842), English translation](https://webserver.lemoyne.edu/giunta/mayer.html).
+- Humboldt University of Berlin, [Helmholtz, *Über die Erhaltung der Kraft* (1847)](https://edoc.hu-berlin.de/items/b7191669-1e14-4934-96d4-dae3182ab985).
+- Rudolf Clausius, [“Ueber die bewegende Kraft der Wärme” (1850)](https://onlinelibrary.wiley.com/doi/10.1002/andp.18501550403).
+- James Prescott Joule, [“On the calorific effects of magneto-electricity, and on the mechanical value of heat” (1843)](https://doi.org/10.1080/14786444308644730).
 - Royal Society, [catalogue record for Joule's “On the Mechanical Equivalent of Heat”](https://catalogues.royalsociety.org/CalmView/Record.aspx?id=PT%2F37%2F3&src=CalmView.Catalog).
 - James Prescott Joule, [“On the Mechanical Equivalent of Heat” (1850 scan)](https://commons.princeton.edu/josephhenry/wp-content/uploads/sites/71/2021/02/Joule.pdf).
 - Royal Society, [historical commentary on Joule's 1850 paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC4360093/).

@@ -33,7 +33,7 @@ The transformation is more than renaming energy: it places $q_i$ and $p_i$ on eq
 
 ## Historical problem
 
-Before the focal discovery (1834–1835 Hamiltonian dynamics synthesis), the case confronted a linked set of pressures: Generalized-coordinate equations organize constrained motion; Optical systems described by characteristic functions. The pathways `R-DIRECT-TRAJECTORY-INTEGRATION`, `R-CONFIGURATION-VELOCITY-ONLY`, `R-OPTICS-DYNAMICS-SEPARATION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Hamiltonian mechanics, phase space, canonical transformations, Hamilton–Jacobi theory, and dynamical generators was to construct a more generative account without importing later validation evidence into the original inference.
+Before Hamilton's 1834–35 dynamics papers, Lagrange's generalized-coordinate equations already described constrained motion, and direct integration could recover individual trajectories. Hamilton's earlier optical work offered a different resource: a characteristic function whose derivatives organize whole systems of rays. The question was whether a related generating-function method could organize families of mechanical paths and their momenta while retaining the successful Lagrangian equations. The 1834 characteristic-function program came before the 1835 canonical first-order formulation; later Poisson-bracket, symplectic and quantum language should not be supplied as the historical motivation for that transfer.
 
 ## Time slices
 
@@ -119,13 +119,101 @@ The admissible pre-discovery input nodes are `A-LAGRANGIAN-MECHANICS`, `A-LEGEND
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-DIRECT-TRAJECTORY-INTEGRATION` | A strategy that treats solving mechanics as direct integration of Newtonian or Lagrangian ordinary differential equations for each trajectory, without seeking a generating function whose derivatives encode whole families of solutions. | See the full pathway record above. |
-| `R-CONFIGURATION-VELOCITY-ONLY` | The complete Lagrangian description $L(q,\dot q,t)$ treated as the final natural state representation, with momenta used only as derived bookkeeping rather than independent canonical coordinates. | See the full pathway record above. |
-| `R-OPTICS-DYNAMICS-SEPARATION` | The view that geometrical optics and particle mechanics are mathematically analogous only in isolated examples, with optical characteristic functions and mechanical trajectories belonging to separate calculational theories. | See the full pathway record above. |
+| `R-DIRECT-TRAJECTORY-INTEGRATION` | A strategy that treats solving mechanics as direct integration of Newtonian or Lagrangian ordinary differential equations for each trajectory, without seeking a generating function whose derivatives encode whole families of solutions. | Integrating one initial-value problem at a time did not expose a function whose derivatives organize whole trajectory families and their transformations. |
+| `R-CONFIGURATION-VELOCITY-ONLY` | The complete Lagrangian description $L(q,\dot q,t)$ treated as the final natural state representation, with momenta used only as derived bookkeeping rather than independent canonical coordinates. | It reproduced motions but kept momenta dependent on velocities, obscuring the symmetric first-order canonical structure. |
+| `R-OPTICS-DYNAMICS-SEPARATION` | The view that geometrical optics and particle mechanics are mathematically analogous only in isolated examples, with optical characteristic functions and mechanical trajectories belonging to separate calculational theories. | Separate calculi left the parallel characteristic-function structures of rays and mechanical paths unused. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** “Which trajectory solves these equations?” becomes “Which generator or principal function encodes all trajectories?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+The 1834 essay foregrounds a characteristic function for families of motions; the 1835 second essay states the now-familiar first-order equations. The trace preserves that order, while the Legendre and Poisson-bracket derivations below are modern consolidation.
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by resources available at that step; later validation and canonical endpoint language are excluded from its justification. This is an auditable rational reconstruction, not a transcript of a scientist's or model's hidden reasoning and not a claim that the endpoint was inevitable. Concept states are graph nodes; transitions are typed, auditable edges.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-HAM-01` | Lagrange's differential equations describe mechanics; Hamilton's optical characteristic functions organize families of rays. |
+| `CS-HAM-02` | A mechanical characteristic function is proposed in place of integrating each trajectory separately. |
+| `CS-HAM-03` | Variations of the endpoint and action relate the function's derivatives to momenta and a family of motions. |
+| `CS-HAM-04` | A principal function obeys a first-order partial-differential relation that can encode mechanical evolution. |
+| `CS-HAM-05` | Conjugate momenta are used as independent dynamical variables alongside coordinates when the velocity relation is invertible. |
+| `CS-HAM-06` | First-order canonical equations and the principal-function method form a general 1834–1835 analytical program, with later phase-space language distinguished. |
+
+##### `CT-HAM-01`: `CS-HAM-01` → `CS-HAM-02` — Transfer the optical characteristic-function question
+
+- **Input model:** Lagrangian ordinary differential equations yield individual mechanical paths; optical characteristic functions already encode ray systems.
+- **Pressure:** Direct integration of many coupled trajectories does not itself expose one relation organizing an entire solution family.
+- **Protected structure:** Correct Lagrangian motions, initial-value prediction, and Hamilton's existing optical method.
+- **Hidden assumption:** Optical rays and material trajectories can share at most a loose analogy, not a transferable solution method.
+- **Operation / change type:** `generalization` — Seek a mechanical characteristic function whose differentiation recovers a system of motions.
+- **Output model:** Mechanical dynamics is posed as a generating-function problem, without yet replacing the underlying force laws.
+- **Local justification:** Hamilton's 1834 essay explicitly says the dynamical principle is another form of the idea already applied to optics and describes a single central function as its aim.
+- **Cost/uncertainty:** A new partial-differential problem need not be easier than the original ordinary differential equations, as Hamilton himself noted.
+- **Branch status:** `selected`; direct trajectory integration remains a valid competing calculation strategy.
+- **Next question:** What mechanical quantity should the central function encode, and how can its derivatives recover paths?
+
+##### `CT-HAM-02`: `CS-HAM-02` → `CS-HAM-03` — Let endpoint variation generate dynamical data
+
+- **Input model:** A characteristic function is sought, but it must be tied to motions rather than named abstractly.
+- **Pressure:** A single scalar must carry enough information to distinguish different endpoints and solution families.
+- **Protected structure:** Variational action methods, known equations of motion, and optical endpoint-derivative techniques.
+- **Hidden assumption:** A function of endpoints cannot encode momentum information needed to reconstruct trajectories.
+- **Operation / change type:** `representation_shift` — Define an action-related characteristic function and examine how it changes under variations of its endpoints and constants.
+- **Output model:** Derivatives of the function supply momentum-like endpoint relations and distinguish allowed motions.
+- **Local justification:** The 1834 paper defines the characteristic function as twice the time integral of kinetic energy along a motion, viewed as a function of endpoint configurations and energy. It also briefly introduces a related principal function; the two must not be silently identified with one another.
+- **Cost/uncertainty:** Multiple paths can connect endpoints, so a single smooth branch may not encode all motions globally.
+- **Branch status:** `selected`; individual ODE trajectories remain the empirical check on the generated family.
+- **Next question:** Which differential relation must the characteristic or principal function satisfy?
+
+##### `CT-HAM-03`: `CS-HAM-03` → `CS-HAM-04` — Turn trajectory construction into a PDE
+
+- **Input model:** Action-related endpoint derivatives recover momentum data for motion families.
+- **Pressure:** The function needs a governing equation rather than an unconstrained definition.
+- **Protected structure:** Existing mechanical equations, endpoint variation, and the energy relation in the regular systems considered.
+- **Hidden assumption:** Solving mechanics must always mean integrating one ODE trajectory at a time.
+- **Operation / change type:** `representation_shift` — Express the generating relation as a partial-differential equation for a principal function.
+- **Output model:** Mechanical solution families can be approached through a first-order PDE, later written in Hamilton–Jacobi form.
+- **Local justification:** The 1834 paper introduced the principal-function direction; the 1835 second essay developed the corresponding method. The fully standardized modern Hamilton–Jacobi notation below is retrospective.
+- **Cost/uncertainty:** A complete integral may be hard or impossible to find globally; the method can move rather than eliminate mathematical difficulty.
+- **Branch status:** `selected`; direct ODE methods remain valid and may be more practical.
+- **Next question:** Can the same dynamics be expressed locally as first-order equations in coordinates and momenta?
+
+##### `CT-HAM-04`: `CS-HAM-04` → `CS-HAM-05` — Promote conjugate momenta to state variables
+
+- **Input model:** Endpoint derivatives provide momenta, while the Lagrangian equations ordinarily use coordinates and velocities.
+- **Pressure:** To recover local motion from the principal-function method, momenta must vary with positions rather than appear only as derived labels.
+- **Protected structure:** The same regular Lagrangian trajectories and momentum–velocity relation.
+- **Hidden assumption:** Velocities are the only viable companions of coordinates in a state description.
+- **Operation / change type:** `replacement` — Use conjugate momenta as independent variables where the velocity-to-momentum map can be inverted.
+- **Output model:** A coordinate–momentum description becomes available for regular systems.
+- **Local justification:** Hamilton's 1835 second essay expresses the dynamical system through coordinate and momentum variables; modern Hessian regularity makes the hidden invertibility condition explicit.
+- **Cost/uncertainty:** Singular velocity maps and constrained systems need separate treatment; not every mechanical state admits these naive variables.
+- **Branch status:** `selected`; configuration–velocity mechanics remains equivalent wherever the transformation is valid.
+- **Next question:** What one scalar relation gives the evolution of both kinds of variable?
+
+##### `CT-HAM-05`: `CS-HAM-05` → `CS-HAM-06` — Consolidate paired first-order evolution
+
+- **Input model:** Coordinates and conjugate momenta form a regular local state description.
+- **Pressure:** A useful transformation must reproduce the Lagrange motions while expressing the new variables' time development coherently.
+- **Protected structure:** Euler–Lagrange trajectories, energy or force functions as appropriate, and the characteristic-function method.
+- **Hidden assumption:** Momentum equations and position equations need unrelated generating rules.
+- **Operation / change type:** `coalescence` — Express their time development as paired first-order equations generated by a transformed scalar.
+- **Output model:** Hamilton's 1835 equations and the principal-function approach describe the same regular mechanics in complementary forms.
+- **Local justification:** Trinity College Dublin's editions distinguish the 1834 characteristic-function paper from the 1835 second essay that states Hamilton's equations. The modern Legendre calculation below verifies equivalence.
+- **Cost/uncertainty:** The method is a reformulation, not an empirical force law; later Poisson brackets and symplectic geometry are further formal developments.
+- **Branch status:** `selected`; the Lagrangian representation remains fully valid.
+- **Next question:** How far does the generating-function architecture transfer beyond the freely moving attracting or repelling systems analyzed?
+
+#### Formal consolidation
+
+The Legendre, bracket, and modern phase-space formulas below organize the result mathematically. They should not be mistaken for a verbatim 1834 statement; Hamilton's first essay emphasized the characteristic function and his second essay developed the local canonical equations.
 
 For a regular Lagrangian, define
 
@@ -276,19 +364,30 @@ A complete integral containing $n$ constants $P_i$ generates a family of traject
 
 - `P-01` — **Reframe the inherited problem:** “Which trajectory solves these equations?” becomes “Which generator or principal function encodes all trajectories?”
 
-- `P-02` — **Permit a new representation, ontology, or mechanism:** Phase space, conjugate momentum, Poisson brackets and canonical transformations become primary ontology-like structures
+- `P-02` — **Permit a new representation, ontology, or mechanism:** Conjugate momentum and characteristic functions become dynamical variables and solution-generating structures
 
-- `P-03` — **Make the new structure generative:** Energy-like regularities become a function that generates the full phase-space flow
+- `P-03` — **Make the new structure generative:** An action-related function organizes solution families; a transformed scalar generates regular phase-space flow
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Hamiltonian mechanics, phase space, canonical transformations, Hamilton–Jacobi theory, and dynamical generators). The case-specific unification was: Optics, particle motion, statistical ensembles and later quantization share canonical generator structure. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes an extension worth testing but does not license it automatically. Each record separates the supported domain, the proposed target, a novel consequence, and an explicit failure condition.
+
+#### `EG-HAM-01` — Extend a characteristic function beyond free point systems
+
+- **Source domain:** The attracting or repelling point systems and optical ray families used to construct Hamilton's method.
+- **Target domain:** More general regular constrained mechanical systems and their families of trajectories.
+- **Novel consequence:** When a suitable complete integral exists, endpoint derivatives of one principal function should recover the same trajectories and conserved relations as direct equations, without a new dynamical law for each coordinate system.
+- **Failure condition:** A well-posed regular mechanical system for which the proposed function consistently fails to reproduce known trajectories under its stated domain assumptions would defeat the extension. Local multivaluedness, singular constraints, or nonintegrability instead mark limits of a global single-function solution and must be recorded explicitly.
+
+Later statistical ensembles and quantum commutators are further historical transfers, not consequences established by Hamilton in 1834–1835.
 
 **Patterns demonstrated:**
 
-- `P-03` — **Generate consequences rather than merely redescribe inputs:** Energy-like regularities become a function that generates the full phase-space flow
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** An action-related function organizes solution families; a transformed scalar generates regular phase-space flow
 
-- `P-04` — **Unify previously separated domains or phenomena:** Optics, particle motion, statistical ensembles and later quantization share canonical generator structure
+- `P-04` — **Unify previously separated domains or phenomena:** Optical ray systems and mechanical trajectory families share a characteristic-function method; statistical and quantum uses are later transfers
 
 ### Retention, predictions, and discriminating tests
 
@@ -307,9 +406,9 @@ Pattern IDs are ordered by their typical first role in the reconstructed discove
 | Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
 |---|---|---|---|---|
 | `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | “Which trajectory solves these equations?” becomes “Which generator or principal function encodes all trajectories?” | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
-| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Phase space, conjugate momentum, Poisson brackets and canonical transformations become primary ontology-like structures | [Transformative move](#transformative-move) |
-| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Energy-like regularities become a function that generates the full phase-space flow | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
-| `P-04` | Unify previously separated domains | Extrapolative unification | Optics, particle motion, statistical ensembles and later quantization share canonical generator structure | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Conjugate momentum and characteristic functions become dynamical variables and solution-generating structures | [Transformative move](#transformative-move) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | An action-related function organizes solution families; a transformed scalar generates regular phase-space flow | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Optical ray systems and mechanical trajectory families share a characteristic-function method; statistical and quantum uses are later transfers | [Extrapolative generalization](#extrapolative-generalization) |
 | `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | All regular Lagrangian and Newtonian trajectories are retained under the Legendre transformation | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
 | `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | A proposed Hamiltonian generates explicit flows, invariants, perturbations and measurable trajectories | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
@@ -323,7 +422,7 @@ This node serializes the result of the preceding reconstruction. It is a compact
 | Central claim | Hamilton reorganized regular Lagrangian dynamics as first-order flow in coordinates and conjugate momenta and linked dynamics to his earlier characteristic-function methods in optics. With $$ p_i=\frac{\partial L}{\partial\dot q_i}, \qquad H(q,p,t)=\sum_i p_i\dot q_i-L, $$ the equations of motion become $$ \dot q_i=\frac{\partial H}{\partial p_i}, \qquad \dot p_i=-\frac{\partial H}{\partial q_i}. $$ The transformation is more than renaming energy: it places $q_i$ and $p_i$ on equal canonical footing, represents evolution as a phase-space flow, and makes generators, Poisson brackets and canonical transformations central. Modern symplectic language is a later mathematical reconstruction, not Hamilton's own terminology. |
 | Domain | Hamiltonian mechanics, phase space, canonical transformations, Hamilton–Jacobi theory, and dynamical generators |
 | Epistemic status | An equivalent regular classical formulation with foundational extensions to statistical mechanics and quantization; constrained and dissipative systems require additional structure |
-| Generative role | Energy-like regularities become a function that generates the full phase-space flow |
+| Generative role | An action-related function organizes solution families; a transformed scalar generates regular phase-space flow |
 | Retained structure | All regular Lagrangian and Newtonian trajectories are retained under the Legendre transformation |
 
 Key formal relations, consolidated from the derivation above:
@@ -346,7 +445,7 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ### `NP-HAMILTON-01` — Conical refraction in biaxial crystals
 
-- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION`.
+- **Classification:** `PRECURSOR-OPTICS-PREDICTION`.
 - **Prediction date and authorship:** Hamilton predicted internal and external conical refraction in 1832 from Fresnel's wave-surface construction; Humphrey Lloyd observed the effect shortly afterward. This optics result immediately preceded Hamilton's 1834–1835 canonical mechanics and exemplifies the same characteristic-function style, but it is not a prediction extracted from $H(q,p)$ alone.
 - **Construction-data independence:** ordinary double refraction and Fresnel's biaxial-crystal surface were inputs; a narrow ray becoming a luminous cone or ring on an optic axis was the new output.
 - **Derivation provenance:** `HISTORICAL-RECONSTRUCTION` in geometrical language.
@@ -425,6 +524,18 @@ No separate supplemental note block was present before this schema migration. Ca
 
 ```text
 A-LAGRANGIAN-MECHANICS --enables--> D-HAMILTONIAN-MECHANICS-1834
+A-LAGRANGIAN-MECHANICS --constrains--> CS-HAM-01
+CS-HAM-01 --revised-by--> CT-HAM-01
+CT-HAM-01 --produces--> CS-HAM-02
+CS-HAM-02 --revised-by--> CT-HAM-02
+CT-HAM-02 --produces--> CS-HAM-03
+CS-HAM-03 --revised-by--> CT-HAM-03
+CT-HAM-03 --produces--> CS-HAM-04
+CS-HAM-04 --revised-by--> CT-HAM-04
+CT-HAM-04 --produces--> CS-HAM-05
+CS-HAM-05 --revised-by--> CT-HAM-05
+CT-HAM-05 --produces--> CS-HAM-06
+CS-HAM-06 --hands-off-to--> EG-HAM-01
 A-LEGENDRE-TRANSFORM --maps--> CONFIGURATION-VELOCITY-SPACE
 A-LEGENDRE-TRANSFORM --produces--> PHASE-SPACE
 A-HAMILTON-OPTICS --transfers-method-to--> D-HAMILTONIAN-MECHANICS-1834

@@ -17,7 +17,7 @@ Relativistic solutions and galaxy redshift–distance data established that cosm
 
 ## Historical problem
 
-Before the focal discovery (1922–1929 (Friedmann/Lemaître through Hubble)), the case confronted a linked set of pressures: Large-scale universe assumed static; \(\Lambda\) used for static model. The pathways `R-STATIC-UNIVERSE`, `R-DE-SITTER-STATIC-REDSHIFT` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Relativistic cosmology was to construct a more generative account without importing later validation evidence into the original inference.
+Einstein's 1917 static model treated a time-independent cosmos as a serious possibility, while de Sitter's solution showed that redshift interpretations were not straightforward. Meanwhile, Slipher's spectra accumulated large spiral-nebula radial velocities, and the extragalactic status and distances of many nebulae remained under investigation. Friedmann's 1922–1924 solutions showed that general relativity permitted evolving cosmic scale; Lemaître's 1927 model connected an expanding solution to the available velocities and estimated distances. Hubble's 1929 distance–velocity analysis strengthened the observational relation but did not, by itself, uniquely establish the modern expansion model or supply the entire redshift data set. The case therefore spans a theoretical possibility, an interpretive synthesis, and an empirical relation rather than one instantaneous discovery; later precision cosmology is validation outside this historical slice.
 
 ## Time slices
 
@@ -71,18 +71,115 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-GR`, `A-GALAXY-REDSHIFTS`, `A-DISTANCE-LADDER`, `A-HOMOGENEITY`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+Inputs are staged across the 1922–1929 interval. Friedmann's 1922 theoretical step uses `A-GR` and `A-HOMOGENEITY`, not the later galaxy-distance sample. `A-GALAXY-REDSHIFTS` accumulated through Slipher's spectroscopy, and `A-DISTANCE-LADDER` became usable for the 1927 Lemaître and 1929 Hubble comparisons. Neither the later precision distance scale nor CMB evidence is a construction input.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-STATIC-UNIVERSE` | A cosmological model in which the universe's large-scale geometry, matter distribution, and characteristic distances are constant in time rather than governed by an evolving scale factor. | Relativistic static solutions are non-generic and redshift–distance patterns indicate dynamics. |
-| `R-DE-SITTER-STATIC-REDSHIFT` | The interpretation that cosmological redshifts arise from static-coordinate properties of de Sitter spacetime rather than an evolving matter-filled scale factor. | See the full pathway record above. |
+| `R-STATIC-UNIVERSE` | A cosmological model in which the universe's large-scale geometry, matter distribution, and characteristic distances are constant in time rather than governed by an evolving scale factor. | Friedmann showed that GR did not require a static radius; the later redshift–distance pattern added observational pressure without uniquely identifying expansion in 1929. |
+| `R-DE-SITTER-STATIC-REDSHIFT` | The interpretation that cosmological redshifts arise from static-coordinate properties of de Sitter spacetime rather than an evolving matter-filled scale factor. | A static-coordinate redshift account in de Sitter's empty solution did not by itself model the density and evolution of a matter-filled universe. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** Galaxy recession reframed as metric expansion. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by information available at the focal discovery date; later confirmations, modern notation, and rival branches must be distinguished from contemporary inputs.
+
+This is a cross-contributor conceptual reconstruction, not a claim that Lemaître learned expansion from Friedmann or that Hubble endorsed a metric-expansion interpretation in 1929.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-COS-01` | Einstein and de Sitter supply static cosmological reference models; Slipher's nebular redshifts accumulate separately. **Open question:** Must GR's cosmic scale be fixed? |
+| `CS-COS-02` | Large-scale symmetry can coexist with a time-dependent spatial curvature radius. **Open question:** Do Einstein's equations permit such histories? |
+| `CS-COS-03` | Friedmann's field-equation solutions admit evolving scale factors, without yet identifying observed nebular redshifts as expansion. **Open question:** Can theory and observations be joined? |
+| `CS-COS-04` | Lemaître independently models an expanding homogeneous universe and interprets distant-nebula redshifts through its changing scale. **Open question:** Should redshift grow systematically with distance? |
+| `CS-COS-05` | Nearby comoving distances yield an approximately linear recession/redshift relation. **Open question:** Is the relation supported despite noisy distances? |
+| `CS-COS-06` | Lemaître's 1927 data estimate suggests the relation; Hubble's 1929 sample strengthens the empirical correlation. **Open question:** What alternatives and calibration errors remain? |
+| `CS-COS-07` | Dynamic relativistic cosmology becomes a testable program, distinct from a proven hot origin or precise expansion rate. **Open question:** What observations discriminate expansion across time? |
+
+##### `CT-COS-01`: `CS-COS-01` → `CS-COS-02` — Release the static-radius assumption
+
+- **Input model:** Static Einstein/de Sitter cosmological constructions within general relativity.
+- **Pressure:** Static balance is an imposed special choice, not required by the field equations.
+- **Protected structure:** General relativity and large-scale spatial symmetry.
+- **Hidden assumption:** Spatial homogeneity entails temporal stasis.
+- **Operation / change type:** `constraint_change` — Allow the symmetric spatial curvature scale to vary with cosmic time.
+- **Output model:** A time-dependent cosmological radius becomes an admissible unknown.
+- **Local justification:** Friedmann's 1922 paper explicitly contrasts prior static worlds with a variable-curvature-radius world.
+- **Cost/uncertainty:** Mathematical possibility alone says nothing about which solution describes observed nebulae.
+- **Next question:** Which time histories obey the field equations?
+
+##### `CT-COS-02`: `CS-COS-02` → `CS-COS-03` — Solve for dynamical histories
+
+- **Input model:** Homogeneous cosmological geometry with an unfixed scale and specified matter/curvature terms.
+- **Pressure:** A possible time-dependent metric must satisfy Einstein's equations.
+- **Protected structure:** Covariant gravitational dynamics and the static solutions as special or limiting cases.
+- **Hidden assumption:** Cosmological equations select only equilibrium configurations.
+- **Operation / change type:** `generalization` — Derive families of scale-factor evolution rather than one imposed static radius.
+- **Output model:** Expanding and contracting relativistic solutions become theoretically available.
+- **Local justification:** Friedmann's 1922–1924 results predate the 1927–1929 redshift–distance synthesis.
+- **Cost/uncertainty:** Choice of density, curvature, and cosmological constant remains underdetermined by theory alone.
+- **Next question:** What observable could connect the varying radius to distant galaxies?
+
+##### `CT-COS-03`: `CS-COS-01` and `CS-COS-03` → `CS-COS-04` — Interpret redshift within an expanding metric
+
+- **Input model:** Relativistic cosmological freedom plus Slipher-era nebular redshifts and emerging extragalactic distances.
+- **Pressure:** Static-coordinate redshift accounts and scattered velocities do not by themselves identify a coherent matter-filled cosmic history.
+- **Protected structure:** Spectroscopic shifts, large-scale symmetry, and relativistic light propagation.
+- **Hidden assumption:** Every redshift is merely motion through an unchanging cosmic geometry.
+- **Operation / change type:** `reinterpretation` — Relate a nebula's observed wavelength shift to changing cosmic scale during light propagation.
+- **Output model:** Lemaître's 1927 expanding interpretation connects theoretical dynamics to observed recession.
+- **Local justification:** Lemaître's original 1927 paper combines an increasing-radius solution with nebular velocities and distances; this is independent work, not documented uptake of Friedmann.
+- **Cost/uncertainty:** Peculiar velocities and poorly calibrated distances leave the inferred rate uncertain.
+- **Branch status:** `selected` as a physical interpretation; static de Sitter explanations remain contemporary competitors.
+- **Next question:** What low-distance relation follows from a smoothly changing scale?
+
+##### `CT-COS-04`: `CS-COS-04` → `CS-COS-05` — Derive a nearby distance–redshift relation
+
+- **Input model:** A smooth scale factor changing during photon propagation.
+- **Pressure:** The expanding interpretation needs an observable pattern, not just a flexible metric.
+- **Protected structure:** Local Doppler approximation at small redshift and the measured spectra.
+- **Hidden assumption:** Redshift and distance can vary independently even for a nearly homogeneous expanding flow.
+- **Operation / change type:** `enrichment` — Linearize the scale change for nearby sources to obtain recession speed approximately proportional to distance.
+- **Output model:** A small-redshift slope tied to the current expansion rate, not a universal velocity formula for all redshifts.
+- **Local justification:** Lemaître explicitly estimated a velocity–distance coefficient in 1927 from then-available data.
+- **Cost/uncertainty:** Distance-scale errors and local motions can dominate individual nearby objects.
+- **Next question:** Does a larger observational sample reveal the trend?
+
+##### `CT-COS-05`: `CS-COS-05` → `CS-COS-06` — Compare theory with noisy distance samples
+
+- **Input model:** A predicted nearby linear relation and early nebular distance/velocity estimates.
+- **Pressure:** A theoretical slope is not an established cosmic pattern until compared with data.
+- **Protected structure:** Independent spectroscopy and distance-ladder methods, with their uncertainty.
+- **Hidden assumption:** A few redshifts or a fitted line alone prove a precise expansion constant.
+- **Operation / change type:** `reweighting` — Treat scatter and calibration as limits while comparing Lemaître's 1927 estimate with Hubble's 1929 correlation.
+- **Output model:** Evidence for a large-scale positive distance–redshift trend, not an accurate modern Hubble constant.
+- **Local justification:** The original 1927 and 1929 papers document the early analysis and its limited data.
+- **Cost/uncertainty:** Hubble did not by this paper alone establish metric expansion or a hot Big Bang.
+- **Next question:** Which additional observations can distinguish expansion from alternate redshift mechanisms?
+
+##### `CT-COS-06`: `CS-COS-06` → `CS-COS-07` — Separate the supported claim from later cosmology
+
+- **Input model:** Dynamical GR solutions plus an empirical low-redshift distance–redshift trend.
+- **Pressure:** The observed slope has multiple possible interpretations and initially weak calibration.
+- **Protected structure:** The theoretical/observational link and distributed credit among Friedmann, Lemaître, Slipher, Hubble, and others.
+- **Hidden assumption:** A low-redshift correlation already proves a hot origin, precise cosmic age, or every FLRW parameter.
+- **Operation / change type:** `differentiation` — Limit the conclusion to a testable expanding-universe program and keep later hot-universe evidence separate.
+- **Output model:** Cosmic expansion is a live explanatory framework with unresolved model parameters and discriminating tests.
+- **Local justification:** The 1922–1929 sources support dynamics and a relation, while CMB, nucleosynthesis, and BAO are later validation nodes.
+- **Cost/uncertainty:** Static-coordinate alternatives, local motions, and distance calibration require further empirical discrimination.
+- **Next question:** Does the scale-factor model predict new effects outside the original nearby-galaxy sample?
+
+#### Formal consolidation
+
+The FLRW metric and equations below are modern standardized notation for the distributed 1922–1929 work. The precise modern interpretation of redshift and later parameter constraints should not be attributed wholesale to any one historical actor.
 
 The Friedmann–Lemaître–Robertson–Walker metric is:
 
@@ -135,7 +232,23 @@ Thus the observed expansion rate constrains density, curvature, and \(\Lambda\).
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Relativistic cosmology). The case-specific unification was: Relativity, spectroscopy, and distance measurement unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain does not establish the target-domain claim; state the novel consequence and a possible failure condition before using later evidence as validation.
+
+#### `EG-COS-01` — Extend the nearby relation to distant cosmic epochs
+
+- **Source domain:** Early low-redshift distance–velocity data and time-dependent relativistic cosmological solutions.
+- **Target domain:** More distant sources whose light traverses a substantial change in scale factor.
+- **Novel consequence:** Redshift should follow the ratio of cosmic scales at emission and observation; distances need not obey a globally linear velocity formula.
+- **Failure condition:** Well-calibrated distant-source redshifts and distance measures irreconcilable with any specified expanding metric plus controlled source evolution would defeat that model's extension.
+
+#### `EG-COS-02` — Test temporal stretching of distant events
+
+- **Source domain:** A scale factor that stretches propagating light wavelengths.
+- **Target domain:** Durations of comparable transient events observed at different redshifts.
+- **Novel consequence:** After correcting intrinsic event diversity, observed temporal intervals should be stretched by approximately the same 1+z factor as wavelengths.
+- **Failure condition:** A robust population of standardizable transients lacking the expected redshift-dependent time dilation would challenge the simple expansion interpretation.
 
 **Patterns demonstrated:**
 
@@ -203,10 +316,16 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-COS-01` — A changing cosmic radius yields a nearby distance–redshift relation
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Expanding Universe: Historical Knowledge Graph.
+- **Classification:** `NOVEL-THEORETICAL-CONSTRAINT`, `RETRODICTION-OR-EXPLANATION`.
+- **Origin and date:** Lemaître, 1927, original French paper, printed pp. 55–56, equations (20)–(24). Friedmann's 1922 non-static solutions established theoretical possibility, not this observed slope.
+- **Derivation and input:** For a light ray in Lemaître's expanding homogeneous solution, the received-to-emitted period ratio is \(R_2/R_1\) (his equation (22)). For a sufficiently nearby source, his equations (22)–(23) give an apparent recession velocity \(v\simeq (R'/R)r\), so the model constrains the local relation to be approximately linear. This is a model-dependent deduction, not a parameter-free numerical forecast.
+- **Construction-era comparison:** Lemaître then used already published nebular velocities and estimated distances to obtain about \(625\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\) from 42 objects (equation (24)); his footnote reports alternative weightings giving \(575\) or \(670\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\). These same observations cannot independently confirm the fitted coefficient.
+- **Later check and outcome:** Hubble's 1929 analysis of 24 individually distanced nebulae and nine grouped points gave slopes of about \(465\) and \(513\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\), respectively, and called for more distant data. It strengthened the local empirical relation, but overlapping earlier velocity material, distance-calibration uncertainty, and Hubble's stated de Sitter alternative prevent treating the numerical agreement as a clean, unique test of Lemaître's metric interpretation.
+- **Scope and failure condition:** a robust absence of a positive local distance–redshift trend in independently calibrated samples would have undermined this use of the expanding model. The relation alone did not determine the full cosmic expansion history or exclude every rival redshift mechanism.
+
+The later temporal-stretching and high-redshift consequences in `EG-COS-01` and `EG-COS-02` are retrospective extrapolations of the expanding framework; they should not be attributed as dated 1922–1929 forecasts without primary-source support.
 
 ## Validation and explanatory gains
 
@@ -387,8 +506,6 @@ can exceed \(c\) without local material motion through spacetime exceeding \(c\)
 
 ## Additional quantitative and epistemic notes
 
-### Additional quantitative and epistemic notes
-
 Friedmann and Lemaître found evolving solutions before a linear distance–redshift relation was observationally stabilized. For small redshift,
 
 $$
@@ -403,9 +520,24 @@ Expansion is not normally galaxies flying through static space from one central 
 
 ```text
 A-GR --permits--> D-FRIEDMANN-SOLUTIONS
+CS-COS-01 --revised-by--> CT-COS-01
+CT-COS-01 --produces--> CS-COS-02
+CS-COS-02 --revised-by--> CT-COS-02
+CT-COS-02 --produces--> CS-COS-03
+CS-COS-01 --revised-by--> CT-COS-03
+CS-COS-03 --revised-by--> CT-COS-03
+CT-COS-03 --produces--> CS-COS-04
+CS-COS-04 --revised-by--> CT-COS-04
+CT-COS-04 --produces--> CS-COS-05
+CS-COS-05 --revised-by--> CT-COS-05
+CT-COS-05 --produces--> CS-COS-06
+CS-COS-06 --revised-by--> CT-COS-06
+CT-COS-06 --produces--> CS-COS-07
+CS-COS-07 --hands-off-to--> EG-COS-01
+CS-COS-07 --hands-off-to--> EG-COS-02
 A-GALAXY-REDSHIFTS --contributes-to--> D-COSMIC-EXPANSION-1922-1929
 A-DISTANCE-LADDER --enables--> REDSHIFT-DISTANCE-RELATION
-D-LEMAITRE-1927 --connects--> D-FRIEDMANN-SOLUTIONS
+D-LEMAITRE-1927 --independent-parallel-solution-to--> D-FRIEDMANN-SOLUTIONS
 D-LEMAITRE-1927 --connects--> REDSHIFT-DISTANCE-RELATION
 REDSHIFT-DISTANCE-RELATION --supersedes--> R-STATIC-UNIVERSE
 V-CMB --supports--> HOT-EXPANDING-UNIVERSE
@@ -414,6 +546,9 @@ D-COSMIC-EXPANSION-1922-1929 --instantiates--> P-04
 
 ## Sources
 
+- Alexander Friedmann, [Über die Krümmung des Raumes (1922)](https://web.phys.ntnu.no/~mika/friedmann1.pdf).
+- Georges Lemaître, [Un univers homogène de masse constante et de rayon croissant (1927 original)](https://astro.ucla.edu/~wright/LeMaitre_1927_Annales_Societe_Scientifique_Bruxelles_47A_49-59.pdf).
+- Edwin Hubble, [A relation between distance and radial velocity among extra-galactic nebulae (1929)](https://pmc.ncbi.nlm.nih.gov/articles/PMC522427/), original article and page images.
 - NASA Science, [“What Is Dark Energy?—A Brief History”](https://science.nasa.gov/dark-energy/).
 - International Astronomical Union, [resolution on the Hubble–Lemaître law](https://www.iau.org/news/announcements/detail/ann18048/).
 - Lemaître, [1927 paper in English translation](https://academic.oup.com/mnras/article/91/5/483/985673).

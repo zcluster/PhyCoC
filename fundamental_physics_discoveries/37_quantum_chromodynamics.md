@@ -17,7 +17,7 @@ QCD is a non-Abelian \(SU(3)_c\) gauge theory in which quarks carry color and gl
 
 ## Historical problem
 
-Before the focal discovery (1973 asymptotic-freedom formulation), the case confronted a linked set of pressures: Hadron multiplets explained; Extra quantum number resolves statistics. The pathways `R-STRONG-COUPLING-AT-ALL-SCALES`, `R-ABELIAN-COLOR-FORCE`, `R-HADRONIC-BOOTSTRAP`, `R-PARTON-MODEL-WITHOUT-DYNAMICS` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Strong interaction of quarks and gluons was to construct a more generative account without importing later validation evidence into the original inference.
+By the early 1970s, quark flavor models and color accounting organized hadrons, while deep-inelastic scattering showed approximate scaling suggestive of weakly interacting constituents at short distances. That seemed to clash with the absence of isolated quarks and the strongly interacting hadron spectrum. Fritzsch and Gell-Mann had already discussed color-octet Yang–Mills gluons in 1972. The decisive 1973 Gross–Wilczek and Politzer bridge was that a suitable non-Abelian coupling weakens at high momentum transfer; Gross and Wilczek explicitly applied this to an SU(3) color-gauge candidate in June. Fritzsch, Gell-Mann, and Leutwyler's November paper developed advantages of that color-octet picture, rather than first supplying the gauge proposal. Short-distance asymptotic freedom did not by itself prove long-distance confinement; that remained a separate nonperturbative problem.
 
 ## Time slices
 
@@ -26,9 +26,10 @@ Before the focal discovery (1973 asymptotic-freedom formulation), the case confr
 | `TS-QUARK-MODEL` | 1964 | Hadron multiplets explained | Dynamics absent |
 | `TS-COLOR` | 1964–1965 | Extra quantum number resolves statistics | Three colors proposed |
 | `TS-PARTONS` | Late 1960s | Deep-inelastic scaling | Short-distance constituents appear free |
-| `TS-NONABELIAN` | Early 1970s | Color gauge theory formulated | Gluons mediate force |
+| `TS-NONABELIAN` | 1972 | Color-octet Yang–Mills gluons discussed as a candidate | Gauge dynamics remains unconfirmed |
 | `TS-ASYMPTOTIC-FREEDOM` | 1973 | Negative beta function derived | Scaling behavior explained |
-| `TS-JETS-LATTICE` | 1970s onward | Gluon jets and numerical QCD | Precision strong-interaction program |
+| `TS-LATTICE` | 1970s onward | Numerical QCD addresses long-distance hadrons | Nonperturbative calculations complement hard-scattering tests |
+| `TS-THREE-JET-TEST` | 1976–1979 | Ellis, Gaillard, and Ross proposed a hard-gluon three-jet search in 1976; PETRA experiments observed such events in 1979 | Gluon radiation becomes an independent test |
 
 ## Knowledge assets
 
@@ -48,12 +49,13 @@ Before the focal discovery (1973 asymptotic-freedom formulation), the case confr
 - **Limitation:** Deep-inelastic scattering shows near-free short-distance behavior.
 - **Outcome:** Replaced by running coupling.
 
-### `R-ABELIAN-COLOR-FORCE`
+### `R-COLOR-SINGLET-GLUON`
 
-- **What it is:** A QED-like color theory whose gauge bosons do not themselves carry color charge and therefore lack the non-Abelian gluon self-interactions of \(SU(3)_c\).
-- **Proposed/active period:** 1960s–early 1970s.
-- **Limitation:** Does not naturally yield gluon self-interaction and asymptotic freedom needed by data.
-- **Outcome:** Replaced by non-Abelian \(SU(3)\).
+- **What it is:** The neutral, color-singlet vector-gluon field used as a formal quark–gluon model for current-algebra calculations, not an independently established theory of the strong force.
+- **Proposed/active period:** 1960s–1972.
+- **Why reasonable:** It let theorists abstract useful current-algebra relations from a tractable field-theory model; Fritzsch and Gell-Mann still used it for convenience while discussing the octet alternative in 1972.
+- **Limitation:** Unlike a color-octet gluon, a singlet field could communicate with ordinary hadron channels despite the absence of isolated colored quarks; the model also lacks the non-Abelian gauge self-interaction behind asymptotic freedom.
+- **Outcome:** The octet Yang–Mills candidate displaced it as a proposed color dynamics, while singlet-gluon calculations remained a formal tool in the 1972 paper.
 
 ### `R-HADRONIC-BOOTSTRAP`
 
@@ -74,7 +76,7 @@ Before the focal discovery (1973 asymptotic-freedom formulation), the case confr
 | Candidate | Why plausible | Failure/repair | Retained scope |
 |---|---|---|---|
 | Permanently strong constituent force | Confinement and large hadronic cross sections | DIS scaling shows weak short-distance interaction | Strong long-distance regime |
-| Abelian color photons | Familiar QED template | No gluon self-coupling/antiscreening needed for observed running | Perturbative diagram methods |
+| Color-singlet vector-gluon model | Useful current-algebra abstraction in the 1972 paper | Singlet field can enter ordinary hadron channels; lacks non-Abelian gauge antiscreening | Formal current-algebra calculations |
 | Bootstrap/nuclear democracy | Hadrons dynamically generate one another; avoid unobserved constituents | Pointlike partons, jets, flavor/color systematics favor quark-gluon fields | S-matrix consistency and hadronic analyticity |
 | Parton model without specified dynamics | Explains approximate scaling | Cannot predict scaling violations or gluon processes | Leading intuitive factorization picture |
 | **Discovery/current: QCD** | Non-Abelian \(SU(3)_c\) color with running coupling | Scaling violations, jets, running, spectroscopy, lattice; nonperturbative calculations remain difficult | Retained strong theory |
@@ -87,20 +89,101 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-QUARKS`, `A-COLOR`, `A-YANG-MILLS`, `A-SCALING`, `A-RENORMALIZATION-GROUP`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+Available resources were quark/flavor spectroscopy (`A-QUARKS`), the color degree of freedom (`A-COLOR`), non-Abelian Yang–Mills dynamics (`A-YANG-MILLS`), approximate DIS scaling (`A-SCALING`), and renormalization-group calculation (`A-RENORMALIZATION-GROUP`). Later three-jet data, full perturbative evolution formalisms, and lattice confinement evidence are not starting premises.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
 | `R-STRONG-COUPLING-AT-ALL-SCALES` | A scale-independent picture in which the quark interaction remains intrinsically large at both long and arbitrarily short distances, with no weakening at high momentum transfer. | Deep-inelastic scattering shows near-free short-distance behavior. |
-| `R-ABELIAN-COLOR-FORCE` | A QED-like color theory whose gauge bosons do not themselves carry color charge and therefore lack the non-Abelian gluon self-interactions of \(SU(3)_c\). | Does not naturally yield gluon self-interaction and asymptotic freedom needed by data. |
-| `R-HADRONIC-BOOTSTRAP` | “Nuclear democracy” in which no hadron is fundamental and the hadron S-matrix self-consistently generates resonances without quark/gluon constituents. | See the full pathway record above. |
-| `R-PARTON-MODEL-WITHOUT-DYNAMICS` | A kinematic picture of nearly free pointlike constituents inside fast hadrons without a specified gauge interaction governing their radiation and scale dependence. | See the full pathway record above. |
+| `R-COLOR-SINGLET-GLUON` | A neutral, color-singlet vector-gluon field used as a formal model for current-algebra calculations. | Its field can communicate with ordinary hadron channels, and it lacks the non-Abelian gauge self-interaction behind asymptotic freedom. |
+| `R-HADRONIC-BOOTSTRAP` | “Nuclear democracy” in which no hadron is fundamental and the hadron S-matrix self-consistently generates resonances without quark/gluon constituents. | It organized scattering consistency but lacked a pointlike-constituent account of deep-inelastic scaling; jet evidence became a later discriminator. |
+| `R-PARTON-MODEL-WITHOUT-DYNAMICS` | A kinematic picture of nearly free pointlike constituents inside fast hadrons without a specified gauge interaction governing their radiation and scale dependence. | Near-free partons described leading scattering but supplied no interaction law to compute coupling running, radiation, or departures from exact scaling. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** Strong confinement reframed as scale-dependent interaction. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified from pre-1973 quark/color, DIS, gauge, and RG resources or identified 1973 calculations. The 1972 octet-gauge candidate precedes the June 1973 ultraviolet calculations; the November 1973 paper elaborates, rather than originates, that candidate. Independent papers are represented as converging contributions, not a single author's hidden reasoning; later gluon and confinement tests stay downstream.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-QCD-01` | Quark/color bookkeeping explains hadron families, but a dynamical force law is missing; DIS exhibits approximate scaling. **Open question:** How can constituents be nearly free in hard probes yet not isolated? |
+| `CS-QCD-02` | The 1972 color-octet Yang–Mills possibility supplies a candidate dynamics for colored quarks. **Open question:** Does its quantum coupling grow or shrink at high momentum? |
+| `CS-QCD-03` | Gauge and matter loops contribute with different signs to the beta function; self-interacting gauge fields can dominate. **Open question:** What sign and regime result for three-color QCD? |
+| `CS-QCD-04` | Gross–Wilczek and Politzer calculations establish a negative leading beta function for suitable non-Abelian theories. **Open question:** Can the color theory explain parton-like high-energy behavior? |
+| `CS-QCD-05` | The \(SU(3)_c\) quark–gluon candidate combines color dynamics with asymptotic freedom at high \(Q\). **Open question:** What new scale-dependent consequences follow, and is confinement proved? |
+| `CS-QCD-06` | QCD is a predictive short-distance strong theory; long-distance confinement requires separate nonperturbative justification. **Open question:** Which experiments and calculations test each regime independently? |
+
+##### `CT-QCD-01`: `CS-QCD-01` → `CS-QCD-02` — Promote color to a local interaction charge
+
+- **Input model:** Colored quark states, hadron flavor classification, and approximate parton scaling.
+- **Pressure:** A kinematic parton picture lacks a force law, while a permanently strong short-distance interaction strains the DIS evidence.
+- **Protected structure:** Color-singlet hadron bookkeeping and Yang–Mills covariance.
+- **Hidden assumption:** The convenient color-singlet vector-gluon model can also supply the physical strong-force dynamics.
+- **Operation / change type:** `representation_shift` — Treat color as a non-Abelian local gauge charge with an octet of vector fields.
+- **Output model:** A candidate \(SU(3)_c\) quark–gluon dynamics, developing in parallel with ultraviolet calculations.
+- **Local justification:** Fritzsch and Gell-Mann's 1972 conference paper (§II, printed pp. 3–5) explicitly considered a color octet of neutral vector gluons obeying Yang–Mills equations. An octet would remove the asymmetry of a color-singlet gluon able to propagate through ordinary hadron channels while colored quarks had no corresponding isolated channel. They treated color-singlet physical states as an assumption and left the hadron spectrum and confinement question open. The November 1973 Fritzsch–Gell-Mann–Leutwyler paper subsequently argued for the octet picture's advantages.
+- **Cost/uncertainty:** The proposed gauge field and color-singlet-state restriction were not empirical proof that the model dynamically confines quarks or reproduces the hadron spectrum.
+- **Next question:** How does its coupling change with scale?
+
+##### `CT-QCD-02`: `CS-QCD-02` → `CS-QCD-03` — Calculate rather than assume the ultraviolet behavior
+
+- **Input model:** Non-Abelian gauge fields with fermions and renormalization-group tools; the 1972 color-octet proposal was available before the June calculations.
+- **Pressure:** Classical self-interaction does not determine whether quantum corrections screen or antiscreen the color force.
+- **Protected structure:** Gauge covariance and a consistent perturbative expansion at high momentum.
+- **Hidden assumption:** All quantum gauge forces run like Abelian QED.
+- **Operation / change type:** `constraint_change` — Evaluate the sign of gauge, ghost, and matter loop contributions to the leading beta function.
+- **Output model:** A calculable competition between gauge-field and quark contributions.
+- **Local justification:** Gross–Wilczek (p. 1344) and Politzer (p. 1347) independently computed the leading non-Abelian coefficient, including the opposing gauge and fermion contributions.
+- **Cost/uncertainty:** The perturbative calculation controls only the sufficiently weak-coupling regime.
+- **Next question:** Is the total coefficient negative for the relevant theory?
+
+##### `CT-QCD-03`: `CS-QCD-03` → `CS-QCD-04` — Identify asymptotic freedom
+
+- **Input model:** The one-loop coefficient in a non-Abelian theory with sufficiently few fermion flavors.
+- **Pressure:** Near-free partons require weakening at short distance without simply deleting the strong interaction.
+- **Protected structure:** The quark–gluon interaction and renormalization-group consistency.
+- **Hidden assumption:** Color confinement at low energy requires large coupling at every scale.
+- **Operation / change type:** `reinterpretation` — Interpret a negative beta function as high-energy weakening of the same gauge interaction.
+- **Output model:** Asymptotic freedom at large momentum transfer.
+- **Local justification:** The June 1973 Gross–Wilczek (pp. 1344–1345) and Politzer (pp. 1347–1348) papers established this ultraviolet result for suitable non-Abelian theories. Politzer explicitly separated the high-momentum calculation from his hypothesis of dynamical symmetry breaking and an as-yet-unknown low-energy spectrum.
+- **Cost/uncertainty:** Running back to low energy invalidates the one-loop expansion; neither Politzer's proposed infrared scenario nor the infrared rise proves confinement.
+- **Next question:** Does \(SU(3)_c\) make the quark/parton picture quantitatively coherent?
+
+##### `CT-QCD-04`: `CS-QCD-04` → `CS-QCD-05` — Join ultraviolet result to the color-octet proposal
+
+- **Input model:** Asymptotically free non-Abelian dynamics and the candidate octet-gluon color theory.
+- **Pressure:** A general theorem needs a physical group, representations, and matter content to confront strong-interaction data.
+- **Protected structure:** Three-color quark assignments and the approximate scaling evidence.
+- **Hidden assumption:** Any asymptotically free theory automatically describes hadrons.
+- **Operation / change type:** `coalescence` — Specialize the gauge result to \(SU(3)_c\) quarks and gluons.
+- **Output model:** The 1973 QCD framework for high-\(Q\) strong processes.
+- **Local justification:** The 1972 color-octet possibility and June 1973 asymptotic-freedom calculations supply complementary ingredients; Gross and Wilczek's June paper already names the SU(3) color-gauge model. Fritzsch–Gell-Mann–Leutwyler's later article was received 1 October and published 26 November 1973; its archival abstract describes advantages of the octet Yang–Mills model, not a first proposal of it. Its uninspected body cannot support more specific claims here.
+- **Cost/uncertainty:** Hadronization and confinement are not derived by ultraviolet perturbation theory.
+- **Next question:** Which consequences go beyond the DIS pattern used to motivate the theory?
+
+##### `CT-QCD-05`: `CS-QCD-05` → `CS-QCD-06` — Separate perturbative success from infrared claims
+
+- **Input model:** \(SU(3)_c\) QCD with a falling high-energy coupling.
+- **Pressure:** Claiming that a one-loop infrared divergence proves confinement would overreach the calculation.
+- **Protected structure:** The successful high-\(Q\) perturbative regime and observed color-singlet hadrons.
+- **Hidden assumption:** One running-coupling formula is valid through its own low-energy breakdown.
+- **Operation / change type:** `differentiation` — Assign short-distance predictions and long-distance questions to separate evidential tracks.
+- **Output model:** QCD with testable logarithmic high-energy behavior and an explicit nonperturbative confinement problem.
+- **Local justification:** The original ultraviolet calculations establish only asymptotic behavior; later lattice and hadron-spectrum work address infrared dynamics.
+- **Cost/uncertainty:** High-energy agreement supports QCD but cannot by itself settle its full low-energy mathematical structure.
+- **Next question:** What independent observables test gluons and scaling violations?
+
+#### Formal consolidation
+
+The compact Lagrangian and running-coupling derivation below consolidate the 1973 results. The low-\(Q\) extrapolation of the one-loop expression is marked as loss of perturbative control, not a confinement theorem.
 
 QCD Lagrangian:
 
@@ -188,7 +271,25 @@ For \(n_f<17\), \(\beta_0>0\), so increasing \(Q\) decreases \(\alpha_s\): asymp
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Strong interaction of quarks and gluons). The case-specific unification was: Quarks, partons, color, and strong force unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+Asymptotic freedom explains why a color-gauge theory could be weak in hard probes. It becomes risky when that structure is pushed to detailed scale dependence, other high-energy processes, or nonperturbative hadrons.
+
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes extension worth testing but does not license every strong-interaction scale. Fix active flavors, factorization scheme, perturbative order, and nonperturbative inputs before treating a target mismatch as evidence for or against QCD.
+
+#### `EG-QCD-01` — Test correlated scaling violations
+
+- **Source domain:** Approximate DIS scaling and the 1973 negative leading beta function support a weak high-\(Q\) quark–gluon description; the detailed \(Q^2\) dependence was not used to establish that sign.
+- **Target domain:** Structure functions across a broader range of high momentum transfers and momentum fractions.
+- **Novel consequence:** Exact scaling should fail logarithmically, with correlated evolution governed by the same running coupling and parton-radiation kernels.
+- **Failure condition:** After fixing PDFs at an initial scale and controlling heavy-flavor thresholds, higher orders, and experimental errors, reproducible incompatible \(Q^2\) evolution would disfavor the stated perturbative-QCD realization.
+
+#### `EG-QCD-02` — Search for independently radiated gluons
+
+- **Source domain:** The \(SU(3)_c\) quark–gluon framework and asymptotically free high-energy coupling, initially motivated by spectroscopy and DIS.
+- **Target domain:** High-energy \(e^+e^-\) annihilation events not used to select the color-gauge architecture.
+- **Novel consequence:** Hard gluon radiation in \(e^+e^-\to q\bar qg\) first broadens the observed two-jet pattern and, with enough energy and angular separation, produces a three-jet topology. Ellis, Gaillard, and Ross made this concrete search proposal in 1976, after the 1973 QCD formulation and 1975 two-jet observations; their paper estimated that the effect might be marginal at SPEAR/DORIS but prominent at PETRA/PEP energies.
+- **Failure condition:** Given energy above threshold, jet definition, detector acceptance, and hadronization model fixed in advance, persistent absence or incompatible angular/rate structure rejects that QCD prediction; jet-model uncertainties must be assessed, not tuned after the fact.
 
 **Patterns demonstrated:**
 
@@ -266,7 +367,7 @@ For $n_f$ sufficiently small, the one-loop beta function is negative:
 
 $$
 \frac{d\alpha_s}{d\ln Q^2}
-=-\frac{\beta_0}{4\pi}\alpha_s^2+cdots,
+=-\frac{\beta_0}{4\pi}\alpha_s^2+\cdots,
 \qquad
 \beta_0=11-\frac{2n_f}{3}>0.
 $$
@@ -290,8 +391,9 @@ $$
 ### `NP-QCD-02` — Three-jet events from gluon radiation
 
 - **Classification:** `EARLY-DERIVED-PREDICTION`.
-- **Inference:** QCD permits $e^+e^-\to q\bar qg$ at order $\alpha_s$. A sufficiently energetic, wide-angle gluon hadronizes into its own collimated spray, converting the two-jet topology into three approximately coplanar jets.
-- **Outcome:** three-jet events observed at PETRA in 1979 supplied direct evidence for gluon bremsstrahlung and allowed tests of the gluon's spin and color coupling.
+- **Prediction date and authorship:** Ellis, Gaillard, and Ross, 1976, not the 1973 asymptotic-freedom papers. Their proposed search followed the observation of two-jet events and anticipated jet broadening before cleanly resolved three-jet topologies.
+- **Inference:** QCD permits $e^+e^-\to q\bar qg$ at order $\alpha_s$. A sufficiently energetic, wide-angle gluon hadronizes into its own collimated spray, converting the two-jet topology into three approximately coplanar jets; this is a conditional hadronization-level signature, not a direct sighting of a free gluon.
+- **Outcome:** three-jet events observed at PETRA in 1979 supplied direct evidence for gluon bremsstrahlung; follow-up analyses tested the gluon's spin and color-coupling structure.
 
 ## Validation and explanatory gains
 
@@ -409,11 +511,23 @@ QCD also permits a CP-violating \(\theta\) term, yet neutron electric-dipole lim
 ```text
 A-QUARKS --contributes-to--> D-QCD-1973
 A-COLOR --defines--> SU3C
+CS-QCD-01 --revised-by--> CT-QCD-01
+CT-QCD-01 --produces--> CS-QCD-02
+CS-QCD-02 --revised-by--> CT-QCD-02
+CT-QCD-02 --produces--> CS-QCD-03
+CS-QCD-03 --revised-by--> CT-QCD-03
+CT-QCD-03 --produces--> CS-QCD-04
+CS-QCD-04 --revised-by--> CT-QCD-04
+CT-QCD-04 --produces--> CS-QCD-05
+CS-QCD-05 --revised-by--> CT-QCD-05
+CT-QCD-05 --produces--> CS-QCD-06
+CS-QCD-06 --hands-off-to--> EG-QCD-01
+CS-QCD-06 --hands-off-to--> EG-QCD-02
 A-YANG-MILLS --enables--> D-QCD-1973
 D-YANG-MILLS-1954 --provides-nonabelian-gauge-structure-for--> D-QCD-1973
 GLUON-SELF-INTERACTION --causes--> ASYMPTOTIC-FREEDOM
 ASYMPTOTIC-FREEDOM --explains--> A-SCALING
-D-QCD-1973 --supersedes--> R-ABELIAN-COLOR-FORCE
+D-QCD-1973 --supersedes--> R-COLOR-SINGLET-GLUON
 D-QCD-1973 --constitutes-strong-sector-of--> D-STANDARD-MODEL-1970S
 V-THREE-JET --supports--> GLUON
 LATTICE-QCD --tests-nonperturbatively--> D-QCD-1973
@@ -422,6 +536,12 @@ D-QCD-1973 --instantiates--> P-01
 
 ## Sources
 
+- Harald Fritzsch and Murray Gell-Mann, [“Current Algebra: Quarks and What Else?”](https://arxiv.org/pdf/hep-ph/0208010), 1972 conference paper, later author-posted reprint, especially §II.
+- David J. Gross and Frank Wilczek, [“Ultraviolet Behavior of Non-Abelian Gauge Theories”](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.30.1343), *Physical Review Letters* 30 (1973), 1343–1346, especially pp. 1343–1345.
+- H. David Politzer, [“Reliable Perturbative Results for Strong Interactions?”](https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.30.1346), *Physical Review Letters* 30 (1973), 1346–1349, especially pp. 1346–1348.
+- Harald Fritzsch, Murray Gell-Mann, and Heinrich Leutwyler, [“Advantages of the Color Octet Gluon Picture”](https://authors.library.caltech.edu/records/e3j2v-atk45), *Physics Letters B* 47 (1973), 365–368; Caltech's metadata-only author record gives receipt on 1 October, publication on 26 November, and the abstract. The publisher article body remains inaccessible for page-level checking.
+- John Ellis, Mary K. Gaillard, and Graham G. Ross, [“Search for Gluons in e+e− Annihilation”](https://profchristophberger.com/wp-content/uploads/2015/02/ell76.pdf), *Nuclear Physics B* 111 (1976), 253–271, especially pp. 253, 255, 270.
+- Ilka Flegel and Paul Söding, [“Twenty-five years of gluons”](https://cern-courier.web.cern.ch/a/twenty-five-years-of-gluons/), *CERN Courier* (2004), for the 1979 PETRA observation chronology.
 - CERN Document Server, ['t Hooft, “The Evolution of Quantum Field Theory, From QED to Grand Unification”](https://cds.cern.ch/record/2003855).
 - Nobel Prize, [2004 scientific background on asymptotic freedom](https://www.nobelprize.org/prizes/physics/2004/popular-information/).
 - Nobel Prize, [The 2004 Physics Prize: asymptotic freedom](https://www.nobelprize.org/prizes/physics/2004/summary/).

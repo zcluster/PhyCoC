@@ -17,7 +17,7 @@ Landau represented a phase by an order parameter and constructed a free-energy e
 
 ## Historical problem
 
-Before the focal discovery (1937 Landau phase-transition theory), the case confronted a linked set of pressures: Classify melting, boiling, magnetism, and critical points macroscopically; Ising, Weiss, and lattice models explain selected collective phenomena. The pathways `R-EHRENFEST-DERIVATIVE-ORDER-CLASSIFICATION`, `R-WEISS-MOLECULAR-FIELD-AS-LITERAL-FIELD`, `R-MICROSCOPIC-MODEL-FOR-EACH-TRANSITION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Equilibrium phase transitions, collective order, symmetry breaking, and critical phenomena was to construct a more generative account without importing later validation evidence into the original inference.
+Thermodynamics classified discontinuities at phase changes, and specific microscopic or molecular-field models explained selected examples such as magnetism. What was missing was a common way to ask which collective quantity distinguishes two phases and how the symmetry of the high-temperature phase constrains its equilibrium free energy. Landau's 1937 construction treated that quantity as an order parameter and expanded the free energy in symmetry-allowed terms near a continuous transition. This organized possible transitions without solving every microscopic model, while relying on analyticity and a mean-field treatment whose limits were not yet resolved by the later renormalization group. Ginzburg–Landau superconductivity, Wilsonian criticality, and non-Landau phases are later extensions or limitations, not ingredients of the 1937 inference.
 
 ## Time slices
 
@@ -102,13 +102,96 @@ The admissible pre-discovery input nodes are `A-FREE-ENERGY`, `A-SYMMETRY-GROUP`
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-EHRENFEST-DERIVATIVE-ORDER-CLASSIFICATION` | A thermodynamic classification that labels a transition by the lowest derivative of free energy that is discontinuous, such as latent heat for a first-order transition or a discontinuity in heat capacity for a second-order transition. | See the full pathway record above. |
-| `R-WEISS-MOLECULAR-FIELD-AS-LITERAL-FIELD` | A ferromagnetic model in which each magnetic moment experiences an internal “molecular field” proportional to the bulk magnetization, \(H_{\mathrm{eff}}=H+\lambda M\), sometimes read as a literal additional local field rather than a mean-field representation of interactions. | See the full pathway record above. |
-| `R-MICROSCOPIC-MODEL-FOR-EACH-TRANSITION` | A research strategy requiring a detailed atomistic model and separate solution for every material before any phase-transition law or classification can be asserted. | See the full pathway record above. |
+| `R-EHRENFEST-DERIVATIVE-ORDER-CLASSIFICATION` | A thermodynamic classification that labels a transition by the lowest derivative of free energy that is discontinuous, such as latent heat for a first-order transition or a discontinuity in heat capacity for a second-order transition. | Derivative order named a thermodynamic symptom but did not identify what new ordered variable or symmetry changed across the transition. |
+| `R-WEISS-MOLECULAR-FIELD-AS-LITERAL-FIELD` | A ferromagnetic model in which each magnetic moment experiences an internal “molecular field” proportional to the bulk magnetization, \(H_{\mathrm{eff}}=H+\lambda M\), sometimes read as a literal additional local field rather than a mean-field representation of interactions. | The self-consistent field organized magnetism but its literal microscopic source was not established; neglected fluctuations were a later limit on critical accuracy. |
+| `R-MICROSCOPIC-MODEL-FOR-EACH-TRANSITION` | A research strategy requiring a detailed atomistic model and separate solution for every material before any phase-transition law or classification can be asserted. | Requiring an exact microscopic solution for every substance hid a common order-parameter and symmetry description available across different materials. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** “Which microscopic detail causes this transition?” becomes “Which order parameter and symmetry distinguish phases?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by information available at the focal discovery date; later confirmations, modern notation, and rival branches must be distinguished from contemporary inputs.
+
+The scalar magnetization example below is a transparent modern specialization. Landau's 1937 papers placed particular emphasis on continuous structural transitions and symmetry changes; the later Ginzburg gradient theory and Wilsonian fluctuation analysis are not construction inputs.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-LAN-01` | Ehrenfest classifies thermodynamic derivative behavior; Weiss and microscopic models explain selected collective transitions. **Open question:** What makes different systems share a transition structure? |
+| `CS-LAN-02` | A macroscopic variable that vanishes in the more symmetric phase can distinguish ordered and disordered states. **Open question:** Which free-energy terms can depend on it? |
+| `CS-LAN-03` | Symmetry restricts the allowed low-order terms in an analytic free-energy expansion near a proposed continuous transition. **Open question:** How does a phase change emerge from those terms? |
+| `CS-LAN-04` | A temperature-dependent quadratic coefficient can change sign while stabilizing higher terms remain positive. **Open question:** What happens to the equilibrium minima? |
+| `CS-LAN-05` | A symmetric free energy can acquire symmetry-related nonzero minima and mean-field scaling. **Open question:** Are all transitions of this form continuous and universal? |
+| `CS-LAN-06` | Order-parameter symmetry predicts qualitative phase structure but requires coefficients, stability, and fluctuation limits. **Open question:** Which other systems share the same allowed structure? |
+
+##### `CT-LAN-01`: `CS-LAN-01` → `CS-LAN-02` — Replace derivative labels with a phase-distinguishing variable
+
+- **Input model:** Thermodynamic singularity classifications and material-specific mean-field examples.
+- **Pressure:** Derivative order alone does not say what collective property changes.
+- **Protected structure:** Equilibrium free energy and observable order such as magnetization or structural distortion.
+- **Hidden assumption:** A phase transition can be understood solely by the order of a discontinuous derivative.
+- **Operation / change type:** `representation_shift` — Choose a macroscopic order parameter that distinguishes phase symmetries.
+- **Output model:** The phase question becomes how an order parameter appears or vanishes.
+- **Local justification:** Landau's 1937 Part I treats a small density change \(\delta\rho\) that alters crystal symmetry (English reprint, pp. 25–26).
+- **Cost/uncertainty:** The relevant order parameter must be chosen and may not exist for every kind of phase.
+- **Next question:** What form may the free energy take near the symmetric phase?
+
+##### `CT-LAN-02`: `CS-LAN-02` → `CS-LAN-03` — Constrain the expansion by symmetry
+
+- **Input model:** A small phase-distinguishing variable near a proposed continuous transition.
+- **Pressure:** An arbitrary polynomial would falsely allow terms incompatible with the high-symmetry phase.
+- **Protected structure:** Analytic local expansion where valid and invariance under the relevant transformations.
+- **Hidden assumption:** Every algebraic power is equally admissible.
+- **Operation / change type:** `constraint_change` — Retain only symmetry-allowed invariants in the free-energy expansion.
+- **Output model:** A low-order phenomenological potential with fewer independent terms.
+- **Local justification:** Part I expands the thermodynamic potential in symmetry invariants and identifies when odd powers vanish (pp. 26–27); the scalar even-power case is one specialization.
+- **Cost/uncertainty:** Analyticity and neglect of large fluctuations are assumptions; symmetry does not fix numerical coefficients.
+- **Next question:** Which coefficient change permits a new equilibrium phase?
+
+##### `CT-LAN-03`: `CS-LAN-03` → `CS-LAN-04` — Let a control parameter change stability
+
+- **Input model:** A symmetry-allowed expansion about zero order parameter.
+- **Pressure:** The symmetric state must lose stability at a transition without changing the underlying symmetry law.
+- **Protected structure:** Free-energy minimization and boundedness from stabilizing higher terms.
+- **Hidden assumption:** Symmetric free energy must always have its minimum at zero.
+- **Operation / change type:** `reweighting` — Let the quadratic coefficient vary through zero with temperature or another control parameter.
+- **Output model:** The shape of the potential changes from one central minimum to possible nonzero minima.
+- **Local justification:** Part I explicitly requires \(A(p,T)=0\) at a continuous-transition point and positive fourth-order terms when cubic invariants are absent (p. 27).
+- **Cost/uncertainty:** A cubic invariant or negative quartic coefficient can instead produce first-order behavior.
+- **Next question:** What stable minima and scaling follow in the simple even quartic case?
+
+##### `CT-LAN-04`: `CS-LAN-04` → `CS-LAN-05` — Derive asymmetric equilibrium from symmetric law
+
+- **Input model:** Even free energy with positive quartic term and a quadratic coefficient crossing zero.
+- **Pressure:** A phase theory must yield stable states and measurable onset behavior.
+- **Protected structure:** Symmetry of the potential and equilibrium minimization.
+- **Hidden assumption:** Broken-symmetry states require explicitly asymmetric governing equations.
+- **Operation / change type:** `enrichment` — Minimize the free energy and compare the zero and paired nonzero solutions.
+- **Output model:** Two symmetry-related ordered minima below the transition and square-root mean-field onset.
+- **Local justification:** Part I derives \(\eta^2=-A/(2B)\) from minimizing \(\Phi=\Phi_0+A\eta^2+B\eta^4\) (pp. 27–28); the paired scalar minima are a modern specialization.
+- **Cost/uncertainty:** The exponent is a mean-field result and need not equal the measured critical exponent near strong fluctuations.
+- **Next question:** Which conclusions survive when the order parameter or symmetry differs?
+
+##### `CT-LAN-05`: `CS-LAN-05` → `CS-LAN-06` — Turn the example into a scoped method
+
+- **Input model:** An order parameter, a symmetry-constrained potential, and a stable phase-minimum calculation.
+- **Pressure:** Microscopic constituents differ across the structural and magnetic transitions considered by Landau despite similar symmetry logic.
+- **Protected structure:** Material-specific coefficients and the possibility of first-order or fluctuation-dominated exceptions.
+- **Hidden assumption:** One mean-field polynomial supplies exact critical behavior for every material.
+- **Operation / change type:** `generalization` — Use symmetry and order-parameter content as transferable qualitative constraints across systems.
+- **Output model:** A phenomenological method for symmetry-breaking phase transitions, with explicit domain limits.
+- **Local justification:** Part I applies its symmetry argument to structural ordering and magnetic transitions (pp. 33–34); extension to other phase families remains a separate test.
+- **Cost/uncertainty:** Fluctuations, spatial gradients, and non-Landau order require later extensions or different theories.
+- **Next question:** Which new phase families obey the same symmetry restrictions, and where does the method fail?
+
+#### Formal consolidation
+
+The following Ising-like scalar polynomial and Ginzburg gradient functional are modern pedagogical consolidations. The gradient extension and critical-fluctuation corrections should not be back-projected into Landau's 1937 construction.
 
 For an Ising-like scalar order parameter \(\phi\) with symmetry \(\phi\rightarrow-\phi\), the uniform Landau free-energy density is
 
@@ -162,14 +245,14 @@ F[\phi]
 \right].
 $$
 
-The Gaussian correlation length scales as
+In the symmetric phase \(r>0\), the Gaussian correlation length is
 
 $$
-\xi=\sqrt{\frac{\kappa}{r}}
-\propto|T-T_c|^{-1/2}.
+\xi_+=\sqrt{\frac{\kappa}{r}}
+\propto(T-T_c)^{-1/2}.
 $$
 
-These exponents are mean-field predictions, not exact universal values below the upper critical dimension.
+Below the transition, expansion about a broken-symmetry minimum changes the curvature and the length's prefactor. The exponent remains a mean-field prediction, not an exact universal value below the upper critical dimension.
 
 **Patterns demonstrated:**
 
@@ -181,13 +264,29 @@ These exponents are mean-field predictions, not exact universal values below the
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Equilibrium phase transitions, collective order, symmetry breaking, and critical phenomena). The case-specific unification was: Magnetism, fluids, structural order, and later superconductivity share one symmetry framework. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain does not establish the target-domain claim; state the novel consequence and a possible failure condition before using later evidence as validation.
+
+#### `EG-LAN-01` — Transfer symmetry-constrained potentials to superconductivity
+
+- **Source domain:** Landau's 1937 order-parameter analysis of continuous transitions, especially structural and magnetic examples.
+- **Target domain:** A superconducting phase represented by a complex collective order parameter and coupled to electromagnetism, as developed later by Ginzburg and Landau.
+- **Novel consequence:** Symmetry and stability should restrict local free-energy terms; a nonzero equilibrium magnitude and characteristic response should follow near the transition.
+- **Failure condition:** No physically meaningful complex collective variable or symmetry-constrained functional reproducing superconducting near-transition behavior would defeat this extension, even if the original structural cases remained sound.
+
+#### `EG-LAN-02` — Compare other continuous transitions by symmetry class
+
+- **Source domain:** A transition described by a small order parameter and analytic free-energy expansion.
+- **Target domain:** Other materials whose order parameters transform under the same relevant symmetry despite different microscopic constituents.
+- **Novel consequence:** Allowed polynomial terms and qualitative phase bifurcations should match, though coefficients and critical ranges differ.
+- **Failure condition:** A continuous transition in the stated analytic mean-field regime with the same symmetry but incompatible allowed-term structure would challenge the transfer; fluctuation-dominated exponents test the approximation, not the symmetry constraint.
 
 **Patterns demonstrated:**
 
 - `P-03` — **Generate consequences rather than merely redescribe inputs:** Thermodynamic anomalies become generated by minima of an order-parameter free energy
 
-- `P-04` — **Unify previously separated domains or phenomena:** Magnetism, fluids, structural order, and later superconductivity share one symmetry framework
+- `P-04` — **Unify previously separated domains or phenomena:** Structural order and magnetism share symmetry constraints; superconductivity is a later extension
 
 ### Retention, predictions, and discriminating tests
 
@@ -208,7 +307,7 @@ Pattern IDs are ordered by their typical first role in the reconstructed discove
 | `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | “Which microscopic detail causes this transition?” becomes “Which order parameter and symmetry distinguish phases?” | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
 | `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Emergent collective variables and asymmetric states of symmetric laws are admitted | [Transformative move](#transformative-move) |
 | `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Thermodynamic anomalies become generated by minima of an order-parameter free energy | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
-| `P-04` | Unify previously separated domains | Extrapolative unification | Magnetism, fluids, structural order, and later superconductivity share one symmetry framework | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Structural ordering and magnetism share the 1937 symmetry method; superconductivity is a later extension | [Extrapolative generalization](#extrapolative-generalization) |
 | `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Weiss self-consistency and thermodynamic derivatives survive inside a broader effective theory | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
 | `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Coefficients, response functions, phase boundaries, and critical exponents make the theory testable | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
@@ -250,10 +349,13 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-LAN-01` — Conditional positive heat-capacity jump
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Landau Theory of Phase Transitions and Spontaneous Symmetry Breaking: Historical Knowledge Graph.
+- **Classification:** `NOVEL-THEORETICAL-CONSTRAINT`, not a universal forecast for every continuous transition or a claim that heat-capacity anomalies were unknown before 1937.
+- **Deduction date and authorship:** Landau's 1937 Part I, Eq. (8), derives the heat capacity below the Curie point from the symmetry-allowed quartic potential; the checked English reprint is in *Collected Papers*, pp. 198–199.
+- **Construction-data independence:** Once the coefficients are specified, the sign and expression of the jump follow from minimizing the free energy and differentiating the resulting equilibrium potential; they are not inferred from a later heat-capacity measurement used to construct the theory.
+- **Derivation provenance and scope:** With \(\Phi=\Phi_0+A(T)\eta^2+B(T)\eta^4\), \(A(T_c)=0\), \(B(T_c)>0\), \(A'(T_c)\ne0\), and a continuous ordered branch \(\eta^2=-A/(2B)\), the transition adds \(\Delta C=T_c[A'(T_c)]^2/[2B(T_c)]>0\) relative to the common regular background. This assumes the analytic quartic mean-field regime; it supplies no material-independent numerical jump and does not cover fluctuation-dominated or first-order transitions.
+- **Discriminator and outcome:** Compare the heat capacities on the two sides of an eligible symmetry-lowering transition using independently determined coefficients. A nonpositive or absent jump under those conditions would challenge this scoped model; divergent or rounded behavior outside its assumptions is a domain limit, not a direct refutation. This record establishes a contemporaneous deduction, not a case-by-case experimental confirmation.
 
 ## Validation and explanatory gains
 
@@ -340,6 +442,18 @@ No separate supplemental note block was present before this schema migration. Ca
 
 ```text
 A-FREE-ENERGY --is-expanded-by--> D-LANDAU-ORDER-PARAMETER-1937
+CS-LAN-01 --revised-by--> CT-LAN-01
+CT-LAN-01 --produces--> CS-LAN-02
+CS-LAN-02 --revised-by--> CT-LAN-02
+CT-LAN-02 --produces--> CS-LAN-03
+CS-LAN-03 --revised-by--> CT-LAN-03
+CT-LAN-03 --produces--> CS-LAN-04
+CS-LAN-04 --revised-by--> CT-LAN-04
+CT-LAN-04 --produces--> CS-LAN-05
+CS-LAN-05 --revised-by--> CT-LAN-05
+CT-LAN-05 --produces--> CS-LAN-06
+CS-LAN-06 --hands-off-to--> EG-LAN-01
+CS-LAN-06 --hands-off-to--> EG-LAN-02
 A-SYMMETRY-GROUP --constrains--> ALLOWED-LANDAU-TERMS
 ORDER-PARAMETER --distinguishes--> PHASES
 SYMMETRIC-FREE-ENERGY --can-have--> ASYMMETRIC-MINIMUM
@@ -351,6 +465,9 @@ D-LANDAU-ORDER-PARAMETER-1937 --instantiates--> P-04
 
 ## Sources
 
+- CERN Document Server, [Landau, “On the theory of phase transitions. I” (1937), original-publication record](https://cds.cern.ch/record/480039?ln=en); [2008 English reprint of Part I, archived journal PDF](https://web.archive.org/web/20151214124950id_/http://www.ujp.bitp.kiev.ua/files/journals/53/si/53SI08p.pdf), pp. 25–28 and 33–34 checked against the chain above. The reprint is a translation, not the 1937 original-language scan.
+- Elsevier, [Landau, “On the Theory of Phase Transitions” (English reprint of the 1937 papers in *Collected Papers*)](https://doi.org/10.1016/B978-0-08-010586-4.50034-1).
+- University of Maryland, [scan of Landau's *Collected Papers* English reprint of “On the Theory of Phase Transitions”](https://www.physics.umd.edu/courses/Phys798C/AnlageSpring24/Landau%20On%20the%20Theory%20of%20Phase%20Transitions%20Collected%20Papers%20of%20L%20D%20Landau.pdf), Part I, printed pp. 198–199, Eqs. (5)–(8) checked for the conditional heat-capacity deduction. This is a later translation/reprint, not the 1937 original-language scan.
 - CERN Document Server, [Landau, “On the theory of phase transitions. II”](https://cds.cern.ch/record/480041).
 - *Nature*, [“The Theory of Phase Transitions”](https://www.nature.com/articles/138840a0), contemporary discussion of Landau's program.
 - American Physical Society, [Wilson, “Renormalization Group and Critical Phenomena. II”](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.4.3184), the later scale-dependent treatment of the Landau functional.

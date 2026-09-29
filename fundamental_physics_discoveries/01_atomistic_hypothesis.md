@@ -6,7 +6,7 @@
 |---|---|
 | Graph ID | `KG-ATOMISM-01` |
 | Central node | `D-ATOMISM-ANCIENT` |
-| Focal discovery date | c. 440 BCE (mature Leucippan–Democritean atomism) |
+| Focal discovery date | fifth century BCE (c. 440 BCE display anchor, not a dated synthesis) |
 | Principal period | c. fifth century BCE |
 | Main contributors | Leucippus and Democritus; later Epicurus and Lucretius |
 | Domain | Ontology of matter and microscopic explanation |
@@ -19,7 +19,7 @@ Ancient atomism proposed that observable change arises from persistent microscop
 
 ## Historical problem
 
-Before the focal discovery (c. 440 BCE (mature Leucippan–Democritean atomism)), the case confronted a linked set of pressures: Change and permanence appeared philosophically incompatible; Atoms and void used to explain plurality and change. The pathways `R-CONTINUOUS-MATTER`, `R-FOUR-ELEMENTS` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Ontology of matter and microscopic explanation was to construct a more generative account without importing later validation evidence into the original inference.
+Before the fifth-century BCE atomist proposal, Eleatic arguments made plurality and motion difficult to reconcile with a stable account of what exists, while ordinary experience still presented change, separation, and growth. A continuous plenum and Empedocles' enduring roots supplied different live ways to protect permanence. The focal task was to make motion and apparent coming-to-be intelligible without using later chemical or microscopic evidence as a premise.
 
 ## Time slices
 
@@ -36,42 +36,42 @@ Before the focal discovery (c. 440 BCE (mature Leucippan–Democritean atomism))
 
 - `A-PARMENIDEAN-PROBLEM`: the tension between permanence and change.
 - `A-ELEATIC-ARGUMENTS`: challenges involving plurality, motion, and void.
-- `A-MATERIAL-TRANSFORMATION`: observations that matter changes form while some quantity appears conserved.
+- `A-MATERIAL-TRANSFORMATION`: visible alteration, mixture, separation, and growth; no quantitative conservation law is assumed for the fifth century BCE.
 - `A-GEOMETRIC-REASONING`: shapes, arrangements, and collisions as explanatory resources.
 
 ## Alternative, incomplete, or superseded pathways
 
 ### `R-CONTINUOUS-MATTER`
 
-- **What it is:** A continuum theory in which a material body fills space continuously and can be divided without reaching discrete, physically indivisible constituents.
-- **Proposed/active period:** sixth–fifth centuries BCE antecedents; Aristotle's systematic version is later.
-- **Assumption:** Matter is indefinitely divisible and contains no void.
-- **Why reasonable:** Macroscopic materials appear continuous, and no ancient instrument could resolve microscopic structure.
-- **Limitation:** It did not by itself explain discrete chemical combination or Brownian fluctuations.
-- **Outcome:** Continuum descriptions remain effective in fluids and fields, but are not a complete ontology of ordinary matter.
+- **What it is:** An Eleatic-style continuous or full reality that resists gaps and plurality; later continuum theories made distinct, more systematic claims about divisibility.
+- **Proposed/active period:** sixth–fifth centuries BCE antecedents; Aristotle's systematic continuum is later and is not a pre-atomist input.
+- **Assumption:** What fundamentally is remains full; admitting genuinely empty gaps threatens a strict account of being.
+- **Why reasonable:** Eleatic arguments made coming-to-be from non-being and motion through non-being philosophically problematic; ordinary materials also appear continuous.
+- **Limitation:** At the focal time, denying void and genuine plurality left an unresolved tension with perceived motion and changing aggregates; chemical and Brownian evidence came much later.
+- **Outcome:** The early no-void position was challenged by atomists; much later continuum models remain effective in fluids and fields without inheriting every Eleatic premise.
 - **Retained element:** Continuum models are indispensable emergent approximations.
 
 ### `R-FOUR-ELEMENTS`
 
-- **What it is:** An Aristotelian material theory in which terrestrial substances are mixtures or transformations of earth, water, air, and fire, characterized by combinations of hot/cold and wet/dry qualities.
-- **Proposed/active period:** c. 450 BCE (Empedocles).
-- **Assumption:** Material diversity arises from earth, water, air, and fire or combinations of elemental qualities.
+- **What it is:** Empedocles' four enduring roots—earth, water, air, and fire—whose mixtures and separations under Love and Strife account for apparent generation and destruction; Aristotle's later hot/cold and wet/dry analysis is not part of this predecessor.
+- **Proposed/active period:** mid-fifth century BCE (Empedocles' four-root doctrine); its relative order versus early atomist formulations is uncertain, and the numerical key is only for display.
+- **Assumption:** Material diversity arises from mixtures of four persistent roots.
 - **Why reasonable:** It systematized visible transformations and material properties.
-- **Limitation:** It lacked quantitative composition laws and stable microscopic entities.
+- **Limitation:** It did not require void or an open-ended inventory of differently shaped microscopic units, and it left many particular material differences underdetermined.
 - **Outcome:** Superseded in chemistry and physics.
 - **Retained element:** The search for a small basis set of constituents.
 
 ### Pathway comparison ledger
 
-**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (c. 440 BCE (mature Leucippan–Democritean atomism)). The proposed/active period is stored in each pathway record.
+**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above. The proposed/active period is stored in each pathway record; Empedocles is an approximately contemporary rival whose exact priority to early atomism is not established. Numeric chronology keys sort the display and do not establish a dated sequence of doctrinal invention.
 
 | Pathway | Repair strategy | Discriminating evidence | Final status |
 |---|---|---|---|
-| Aristotelian continuum | Explain mixture through qualities and potentially unlimited division | Stoichiometric integer ratios, kinetic theory, Brownian statistics, and diffraction require stable microscopic counting units | Rejected as a complete ontology; retained as continuum mechanics |
-| Four-element/quality theory | Multiply combinations of hot/cold and wet/dry; later add alchemical principles | Chemical elements retain reproducible masses and spectra through ordinary reactions | Superseded; the reduction-to-few-constituents ambition survives |
-| **Discovery/current: atomistic constituent model** | Connect stable constituent populations to chemical ratios, kinetic theory, Brownian motion, and diffraction | Independent microscopic estimates and structure measurements converge | Retained, with ancient indivisibility replaced by composite quantum atoms |
+| Early plenum/continuity alternative | Protect unbroken being and reject empty gaps | At the focal time: tension with ordinary plurality and motion; later tests of matter are retrospective only | Remained a serious philosophical alternative; modern continua have different commitments |
+| Empedoclean four roots | Preserve enduring constituents while explaining change by mixture and separation | At the focal time: both programs could accommodate visible change; no decisive microscopic discriminator existed | A live rival, not an already experimentally refuted theory |
+| **Discovery/current: ancient atomist proposal** | Use atoms and void to reconcile persistence, motion, plurality, and compound change | No decisive fifth-century BCE empirical discriminator; chemical and microscopic tests belong to later reformulations | Retained as a historical conceptual precursor, not as verified ancient atomic physics |
 
-The crucial failure was not that continuum reasoning was foolish. Aristotle offered arguments about divisibility and the impossibility of composing an extended continuum from extensionless points. Ancient atomists, meanwhile, could not calculate elemental mass ratios or particle sizes. Modern evidence changed the epistemic balance by linking one microscopic population to multiple independent observables. Even then, the “atom” was revised from indivisible corpuscle to composite quantum system. The retained node is therefore discrete constituent structure, not every Democritean property.
+No fifth-century BCE observation uniquely selected atomism over these rivals. Aristotle's later reports preserve arguments about void, plurality, divisibility, and composition, but his own objections are not a transcript of Leucippus' or Democritus' reasoning. Modern chemical and microscopic evidence changed a much later debate; it cannot be placed into the ancient interpolation failure. The retained modern analogy is discrete constituent structure, not every Democritean property.
 
 ## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
@@ -85,12 +85,100 @@ The admissible pre-discovery input nodes are `A-PARMENIDEAN-PROBLEM`, `A-ELEATIC
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-CONTINUOUS-MATTER` | A continuum theory in which a material body fills space continuously and can be divided without reaching discrete, physically indivisible constituents. | It did not by itself explain discrete chemical combination or Brownian fluctuations. |
-| `R-FOUR-ELEMENTS` | An Aristotelian material theory in which terrestrial substances are mixtures or transformations of earth, water, air, and fire, characterized by combinations of hot/cold and wet/dry qualities. | It lacked quantitative composition laws and stable microscopic entities. |
+| `R-CONTINUOUS-MATTER` | An Eleatic-style continuous or full reality without gaps protects permanence. | It leaves ordinary motion and plurality difficult to reconcile with the absence of void; it was not disproved by a fifth-century experiment. |
+| `R-FOUR-ELEMENTS` | Empedocles' enduring roots allow mixture and separation without creation from nothing. | It offers a genuine competing solution; it does not by itself motivate void or shape/order/position as a broad explanation of qualities. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** “How can being change?” reframed as “How can persistent units rearrange?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+The chain below is a possible conceptual route through the fifth-century BCE problem, assembled from later reports of atomist positions. Those reports document doctrines more securely than they document their order of discovery; no experimental selection of atomism is implied.
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by resources available at that step; later validation and canonical endpoint language are excluded from its justification. This is an auditable rational reconstruction, not a transcript of a scientist's or model's hidden reasoning and not a claim that the endpoint was inevitable. Concept states are graph nodes; transitions are typed, auditable edges.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-ATM-01` | Eleatic permanence confronts perceived motion, plurality, mixture, and apparent coming-to-be. |
+| `CS-ATM-02` | Enduring being is kept, while ordinary change is provisionally treated as change in the relations among enduring items. |
+| `CS-ATM-03` | Void is admitted as a real separation in which multiple full items can move. |
+| `CS-ATM-04` | The full items are taken as indivisible microscopic bodies rather than indefinitely divisible portions of one continuous plenum. |
+| `CS-ATM-05` | Apparent generation and destruction are reconstructed as assembly and separation of persistent bodies. |
+| `CS-ATM-06` | Shape, order, and position of bodies become candidate explanations for differences among perceptible compounds and qualities. |
+
+##### `CT-ATM-01`: `CS-ATM-01` → `CS-ATM-02` — Preserve being without denying ordinary change
+
+- **Input model:** Arguments for stable being make genuine creation from non-being problematic, while perception presents motion and alteration.
+- **Pressure:** Simply denying motion or declaring all apparent change illusory leaves ordinary plurality unexplained.
+- **Protected structure:** Persistence of what fundamentally exists and the undeniable appearance of changing things.
+- **Hidden assumption:** If fundamental entities endure, perceptible things must also be immutable wholes.
+- **Operation / change type:** `differentiation` — Separate fundamental persistence from changes in compound arrangements.
+- **Output model:** Change can be sought in relations among stable constituents rather than in their generation from nothing.
+- **Local justification:** Aristotle's later *On Generation and Corruption* I.8–I.9 reports Leucippus as reconciling perceived motion and plurality with an Eleatic constraint; this is testimony to a position, not a record of his private steps.
+- **Cost/uncertainty:** Empedocles' four enduring roots already provide another way to preserve persistence through mixing; atomism is not forced.
+- **Branch status:** `selected`; the Empedoclean mixture branch remains viable.
+- **Next question:** What makes separate enduring items and motion between them possible?
+
+##### `CT-ATM-02`: `CS-ATM-02` → `CS-ATM-03` — Admit void alongside the full
+
+- **Input model:** Multiple enduring items must separate and move, but an unbroken plenum leaves no evident gaps.
+- **Pressure:** If all space is full in one continuous sense, independent motion and separation are difficult to represent.
+- **Protected structure:** Enduring material being, visible motion, and plurality.
+- **Hidden assumption:** What is not a full body cannot be granted any explanatory reality.
+- **Operation / change type:** `replacement` — Add void as a distinct ontological condition for separation and motion without treating it as material stuff.
+- **Output model:** The full and the void jointly permit plurality and motion.
+- **Local justification:** Aristotle's *Metaphysics* I.4 and *On Generation and Corruption* I.8 report the atomists' full/empty contrast; the ancient inference is philosophical, not an observed vacuum measurement.
+- **Cost/uncertainty:** The reality of void was controversial and not independently established by ancient instruments.
+- **Branch status:** `selected`; no-void accounts of change remain live rivals.
+- **Next question:** What structure do the separated full items have if they are to persist through repeated change?
+
+##### `CT-ATM-03`: `CS-ATM-03` → `CS-ATM-04` — Give persistent fullness a lower limit of division
+
+- **Input model:** Full items move in void, but if each remains divisible without limit, a stable unit of composition is not yet specified.
+- **Pressure:** A decompositional account needs something that remains when compounds break apart.
+- **Protected structure:** Material extension, persistence, and the possibility of assembling multiple bodies.
+- **Hidden assumption:** Division of an extended body must always expose further distinct constituents, as geometrical division exposes further parts in thought.
+- **Operation / change type:** `constraint_change` — Postulate full magnitudes that are not further divided in the atomist explanatory scheme.
+- **Output model:** Atoms are enduring full bodies separated by void; their indivisibility is a postulate, not a demonstrated microscopic fact.
+- **Local justification:** Aristotle's later *On Generation and Corruption* I.2 and I.8 reports on indivisible magnitudes and discusses the division problem; these texts support the doctrine but not the exact historical route to it.
+- **Cost/uncertainty:** Indivisibility cannot be checked in the focal period; surviving reports do not settle whether the earliest atomists meant physical or theoretical indivisibility. Alternative accounts can preserve continuity or finite roots.
+- **Branch status:** `selected`; the continuum and Empedoclean-root branches are not empirically eliminated.
+- **Next question:** How can indivisible units account for apparent birth, growth, and destruction?
+
+##### `CT-ATM-04`: `CS-ATM-04` → `CS-ATM-05` — Reinterpret coming-to-be as rearrangement
+
+- **Input model:** Persistent indivisible bodies and void allow motion and encounters.
+- **Pressure:** Perceptible compounds appear to form and perish although basic bodies are said not to.
+- **Protected structure:** Apparent generation and destruction at the compound level and persistence at the fundamental level.
+- **Hidden assumption:** Coming-to-be of a compound requires creation of new fundamental material.
+- **Operation / change type:** `reinterpretation` — Treat joining, intertwining, and separation as the basis of compound formation and dissolution.
+- **Output model:** Ordinary generation and passing-away become changes in assembly, not creation or annihilation of atoms.
+- **Local justification:** Aristotle's reports explicitly attribute aggregation and separation to Leucippus and Democritus; no modern conservation equation is needed.
+- **Cost/uncertainty:** The account remains qualitative and offers no independently measured atom counts or interaction law.
+- **Branch status:** `selected`; other persistence-through-mixture theories can explain the same visible transformations.
+- **Next question:** Can the small ontology also explain why compounds differ in observable properties?
+
+##### `CT-ATM-05`: `CS-ATM-05` → `CS-ATM-06` — Explain variety through configuration
+
+- **Input model:** Persistent units assemble into different compounds, but composition alone does not yet distinguish their many qualities.
+- **Pressure:** An ontology with only full bodies and void must account for differences in perceptible things without adding a new fundamental substance for every quality.
+- **Protected structure:** Diversity of observed compounds and the persistence of the small basic inventory.
+- **Hidden assumption:** Every perceptible quality must be an irreducible property of a fundamental constituent.
+- **Operation / change type:** `representation_shift` — Use differences in shape, order, and position as candidate explanatory variables for compound properties.
+- **Output model:** A broad qualitative configuration program emerges, not a quantitative ancient chemistry or a verified theory of perception.
+- **Local justification:** Aristotle's *Metaphysics* I.4 reports the atomists' shape/order/position distinctions; the report is later and critical, so it does not prove that Democritus followed this exact five-step route.
+- **Cost/uncertainty:** Many incompatible configurations can fit the same appearances, and no ancient measurement identifies the hidden units.
+- **Branch status:** `selected`; four-root, continuum, and other pluralist explanations remain live at the focal date.
+- **Next question:** Which further phenomena could this configuration account cover, and what evidence could ever discriminate it?
+
+#### Formal consolidation
+
+Ancient atomism is consolidated here as a set of ontological postulates, not as an ancient mathematical or experimentally confirmed theory. The full microscopic bodies and the void are assumed; their movement and rearrangement are used to redescribe compound change. The schematic expression below is explicitly modern and adds no measured ancient variables.
 
 `D-ATOMISM-ANCIENT` introduced three linked claims:
 
@@ -120,7 +208,20 @@ The inference pattern is explanatory compression: many changes can be represente
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Ontology of matter and microscopic explanation). The case-specific unification was: Diverse material changes unified as constituent rearrangements. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes an extension worth testing but does not license it automatically. Each record separates the supported domain, the proposed target, a novel consequence, and an explicit failure condition.
+
+Here the “source” is a dialectically coherent response to permanence, plurality, and ordinary compound change, not an experimentally fitted domain. This matters: an ancient ontological extrapolation must not be credited with the later evidential status of chemical atomism.
+
+#### `EG-ATM-01` — Extend rearrangement from compounds to perceptible qualities
+
+- **Source domain:** Philosophical accommodation of persistence, motion, and assembly/disassembly of visible compounds using atoms and void; no ancient atom size, count, or interaction law was independently established.
+- **Target domain:** Differences in perceptible qualities among compounds and changes in those qualities when compounds are rearranged.
+- **Novel consequence:** On the proposal, changing shape, order, position, or arrangement can change a compound's apparent properties without creating a new fundamental material kind. This is a qualitative explanatory commitment, not a documented precise ancient prediction.
+- **Failure condition:** No operational fifth-century BCE test could isolate the proposed units and configurations, so this broad ancient extension lacked a sharp contemporary falsifier. A later quantitative version would have to specify constituent/configuration variables independently and would fail locally if those fixed variables could not account for reproducible property changes without ad hoc additions.
+
+The breadth of this move explains atomism's generativity and its ancient underdetermination at the same time; it does not retroactively convert the Greek ontology into modern experimentally established matter theory.
 
 **Patterns demonstrated:**
 
@@ -157,7 +258,7 @@ This node serializes the result of the preceding reconstruction. It is a compact
 | Field | Canonical content |
 |---|---|
 | Node | `D-ATOMISM-ANCIENT` |
-| Focal date | c. 440 BCE (mature Leucippan–Democritean atomism) |
+| Focal date | fifth century BCE (c. 440 BCE display anchor, not a dated synthesis) |
 | Central claim | Ancient atomism proposed that observable change arises from persistent microscopic constituents—atoms—moving and rearranging in void. Its historical importance lies in decompositional and mechanistic explanation. Modern atoms are divisible quantum systems, so ancient “atoms” must not be identified directly with chemical atoms or elementary particles. |
 | Domain | Ontology of matter and microscopic explanation |
 | Epistemic status | A foundational metaphysical conjecture, not an experimentally established ancient physical theory |
@@ -178,10 +279,13 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-ATM-NONE` — No established contemporary discriminating prediction
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Atomistic Hypothesis: Historical Knowledge Graph.
+- **Classification:** `NO-CLEAN-CONTEMPORANEOUS-PREDICTION`.
+- **Reason:** Ancient atomism reconciled persistent constituents with visible change. Aristotle's report describes composition by indivisible bodies differing in shape, position, and grouping, but supplies no dated, independent measurement that discriminated this proposal from contemporary alternatives. This is a limit of the surviving record, not proof that no atomist ever proposed a test.
+- **Structural deduction:** aggregation and separation can account for apparent generation and destruction without creating or annihilating the underlying constituents. That explains familiar change rather than forecasting a new observation.
+- **Later tests are not ancient predictions:** multiple-proportion chemistry, kinetic theory, and Brownian-motion measurements belong to later quantitative theories with additional assumptions; they must not be credited retrospectively to Democritus.
+- **Discovery-AI significance:** a fertile conceptual reframe need not start with a clean empirical forecast. Preserve the gap between a generative ontology and a testable quantitative model.
 
 ## Validation and explanatory gains
 
@@ -291,6 +395,17 @@ No separate supplemental note block was present before this schema migration. Ca
 ```text
 A-PARMENIDEAN-PROBLEM --motivates--> D-ATOMISM-ANCIENT
 A-ELEATIC-ARGUMENTS --constrains--> D-ATOMISM-ANCIENT
+CS-ATM-01 --revised-by--> CT-ATM-01
+CT-ATM-01 --produces--> CS-ATM-02
+CS-ATM-02 --revised-by--> CT-ATM-02
+CT-ATM-02 --produces--> CS-ATM-03
+CS-ATM-03 --revised-by--> CT-ATM-03
+CT-ATM-03 --produces--> CS-ATM-04
+CS-ATM-04 --revised-by--> CT-ATM-04
+CT-ATM-04 --produces--> CS-ATM-05
+CS-ATM-05 --revised-by--> CT-ATM-05
+CT-ATM-05 --produces--> CS-ATM-06
+CS-ATM-06 --hands-off-to--> EG-ATM-01
 D-ATOMISM-ANCIENT --competes-with--> R-CONTINUOUS-MATTER
 D-ATOMISM-ANCIENT --competes-with--> R-FOUR-ELEMENTS
 D-ATOMISM-ANCIENT --introduces--> O-ATOMS
@@ -311,3 +426,5 @@ D-ATOMISM-ANCIENT --instantiates--> P-02
 - Stanford Encyclopedia of Philosophy, [“Ancient Atomism”](https://plato.stanford.edu/entries/atomism-ancient/).
 - Stanford Encyclopedia of Philosophy, [“Atomism from the 17th to the 20th Century”](https://plato.stanford.edu/entries/atomism-modern/).
 - Perseus Digital Library, [Lucretius, *De rerum natura*](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0131).
+- Aristotle, [*Metaphysics* I.4 (Ross translation)](https://en.wikisource.org/wiki/Page:Metaphysics_by_Aristotle_Ross_1908_(deannotated).djvu/31), reporting the atomists' full/void and shape/order/position distinctions.
+- Aristotle, [*On Generation and Corruption* I.2 and I.8 (J. L. Stocks translation)](https://classics.mit.edu/Aristotle/gener_corr.1.i.html), reporting indivisible magnitudes, plurality, motion, aggregation, and separation.

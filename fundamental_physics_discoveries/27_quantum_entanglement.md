@@ -17,7 +17,7 @@ An entangled state of a composite quantum system cannot be represented as a prod
 
 ## Historical problem
 
-Before the focal discovery (1935 EPR paper and Schrödinger's entanglement analysis), the case confronted a linked set of pressures: Tensor-product wavefunctions describe interacting systems; Perfect correlations confront locality and completeness. The pathways `R-SEPARABLE-COMPOSITE-STATE`, `R-WAVEFUNCTION-AS-COMPLETE-LOCAL-PROPERTIES`, `R-EPR-LOCAL-COMPLETE-QM` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Composite quantum systems, correlations, quantum foundations, and quantum information was to construct a more generative account without importing later validation evidence into the original inference.
+Before 1935, composite quantum wavefunctions already permitted nonfactorizable states, but their implications for separated subsystems, locality, and completeness were unsettled. EPR sharpened the dilemma in May 1935; Schrödinger then identified entanglement and steering as structural features. `R-SEPARABLE-COMPOSITE-STATE` and `R-WAVEFUNCTION-AS-COMPLETE-LOCAL-PROPERTIES` were inherited intuitions, whereas `R-EPR-LOCAL-COMPLETE-QM` names the conjunction tested *within* the 1935 argument, not a settled earlier rival. Bell tests and quantum-information applications are later consequences, not inputs.
 
 ## Time slices
 
@@ -81,7 +81,7 @@ Before the focal discovery (1935 EPR paper and Schrödinger's entanglement analy
 
 ### Pathway comparison ledger
 
-**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (1935 EPR paper and Schrödinger's entanglement analysis). The proposed/active period is stored in each pathway record.
+**Chronology rule:** The first two pathways predate 1935; `R-EPR-LOCAL-COMPLETE-QM` is the conjunction tested within EPR's 1935 argument, before Schrödinger's entanglement analysis. Each pathway's proposed/active period is stored in its record; the within-discovery EPR premise is not mislabeled as a pre-1935 rival.
 
 | Pathway | Repair strategy | Why inadequate or limited | Retained content |
 |---|---|---|---|
@@ -96,19 +96,101 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-TENSOR-PRODUCT`, `A-SUPERPOSITION`, `A-INCOMPATIBLE-OBSERVABLES`, `A-EPR-CORRELATIONS`, `A-DENSITY-OPERATOR`, `A-RELATIVISTIC-CAUSALITY`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+Pre-1935 ingredients include `A-TENSOR-PRODUCT`, `A-SUPERPOSITION`, `A-INCOMPATIBLE-OBSERVABLES`, von Neumann's `A-DENSITY-OPERATOR`, and a locality/separability intuition informed by `A-RELATIVISTIC-CAUSALITY`. `A-EPR-CORRELATIONS` are constructed in the focal 1935 argument, not a prior empirical input. Bell inequalities, qubit notation, and modern entanglement entropy are later analyses.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-SEPARABLE-COMPOSITE-STATE` | The assumption that after two systems separate, their complete joint physical state can always be written as a product \(\|\psi_A\rangle\otimes\|\psi_B\rangle\), or as an ordinary probabilistic mixture of such products, so all correlations arise from locally possessed states and shared classical randomness. | See the full pathway record above. |
-| `R-WAVEFUNCTION-AS-COMPLETE-LOCAL-PROPERTIES` | A reading in which the joint wavefunction is complete while each separated subsystem simultaneously possesses its own complete pure-state wavefunction and all correlations can be understood through those local pure properties. | See the full pathway record above. |
-| `R-EPR-LOCAL-COMPLETE-QM` | The conjunction used to sharpen the EPR dilemma: the quantum wavefunction is a complete description, and a measurement performed on one spatially separated system cannot affect the physical reality of the other. | See the full pathway record above. |
+| `R-SEPARABLE-COMPOSITE-STATE` | The assumption that after two systems separate, their complete joint physical state can always be written as a product \(\lvert\psi_A\rangle\otimes\lvert\psi_B\rangle\), or as an ordinary probabilistic mixture of such products, so all correlations arise from locally possessed states and shared classical randomness. | Generic joint quantum states preserve correlations after separation that no product-state assignment to each part reproduces. |
+| `R-WAVEFUNCTION-AS-COMPLETE-LOCAL-PROPERTIES` | A reading in which the joint wavefunction is complete while each separated subsystem simultaneously possesses its own complete pure-state wavefunction and all correlations can be understood through those local pure properties. | An entangled pure joint state need not assign a pure state to either subsystem; alternative conditional descriptions do not become simultaneous local properties. |
+| `R-EPR-LOCAL-COMPLETE-QM` | The conjunction used to sharpen the EPR dilemma: the quantum wavefunction is a complete description, and a measurement performed on one spatially separated system cannot affect the physical reality of the other. | Under EPR's own reality and no-disturbance premises, the conjunction demands properties that its complete wavefunction does not simultaneously represent; this is a conditional 1935 dilemma, not a Bell test. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** “What properties does each particle carry?” becomes “What joint and reduced states are defined?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by information available at the focal discovery date; later confirmations, modern notation, and rival branches must be distinguished from contemporary inputs.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-ENT-01` | Composite quantum systems admit joint wavefunctions that need not factor into autonomous subsystem wavefunctions. **Open question:** What does separation after interaction permit us to assign locally? |
+| `CS-ENT-02` | An EPR-type joint state predicts correlated outcomes for alternative incompatible quantities on separated systems. **Open question:** Can one infer either distant quantity without disturbing it? |
+| `CS-ENT-03` | Under EPR's reality and locality criteria, a choice of measurement on one side licenses alternative remote elements of reality. **Open question:** Can a complete wavefunction represent both? |
+| `CS-ENT-04` | EPR's conjunction of completeness with their locality/reality criteria yields an incompleteness dilemma. **Open question:** Is nonfactorization merely a flaw or a characteristic structure? |
+| `CS-ENT-05` | Schrödinger identifies entanglement: joint maximal knowledge need not give maximal knowledge of parts; remote conditional state assignment depends on a chosen measurement. **Open question:** Does this imply controllable distant signaling? |
+| `CS-ENT-06` | Nonseparable joint states are distinct from any assignment of pure states to separated parts, while empirical and interpretive questions remain open. **Open question:** Which operational tests or applications genuinely distinguish this structure? |
+
+##### `CT-ENT-01`: `CS-ENT-01` → `CS-ENT-02` — Construct incompatible cross-system predictions
+
+- **Input model:** Quantum superposition for two previously interacting systems and noncommuting observables.
+- **Pressure:** A joint state can predict correlations even when neither subsystem has a standalone pure wavefunction.
+- **Protected structure:** Quantum predictions and separation of the systems after preparation.
+- **Hidden assumption:** Spatial separation forces the joint wavefunction to factorize.
+- **Operation / change type:** `enrichment` — Construct an EPR state with alternative perfect correlations for separated systems.
+- **Output model:** Measuring one side permits a corresponding prediction for position or momentum of the distant side.
+- **Local justification:** The 1935 EPR paper explicitly develops this idealized correlated two-system argument.
+- **Cost/uncertainty:** Its ideal state and perfect correlations are theoretical idealizations, not a 1935 laboratory Bell test.
+- **Next question:** What does a distant prediction imply about physical reality?
+
+##### `CT-ENT-02`: `CS-ENT-02` → `CS-ENT-03` — Apply EPR's locality and reality criteria
+
+- **Input model:** Alternative distant predictions conditioned on which incompatible observable is measured locally.
+- **Pressure:** EPR assume that, once the systems no longer interact, a measurement on the first cannot physically change the reality of the second.
+- **Protected structure:** The EPR criterion of predictable-with-certainty reality and their strong locality premise.
+- **Hidden assumption:** Different possible measurement choices can be discussed without exposing a tension in the completeness claim.
+- **Operation / change type:** `constraint_change` — Infer remote elements of reality under EPR's explicit premises.
+- **Output model:** The same distant system appears to require definite counterparts for alternative incompatible quantities.
+- **Local justification:** This is the premise-sensitive step of EPR's 1935 argument, not an experimentally established simultaneous-value claim.
+- **Cost/uncertainty:** Rejecting or revising the reality criterion or separability premise changes the conclusion.
+- **Next question:** Can the quantum wavefunction encode the inferred elements simultaneously?
+
+##### `CT-ENT-03`: `CS-ENT-03` → `CS-ENT-04` — Expose the conditional incompleteness dilemma
+
+- **Input model:** EPR-inferred remote elements of reality and quantum restrictions on joint sharp values.
+- **Pressure:** The wavefunction cannot represent both incompatible quantities as simultaneously sharp in the proposed way.
+- **Protected structure:** The formal quantum predictions and the stated premises, without changing either silently.
+- **Hidden assumption:** A theory's successful probabilities alone settle the stronger completeness question.
+- **Operation / change type:** `differentiation` — Separate predictive adequacy from completeness under EPR's physical-reality criterion.
+- **Output model:** EPR conclude that the wavefunction is incomplete *if* their locality/reality premises are kept.
+- **Local justification:** The conclusion and its conditional structure appear in EPR's 1935 paper.
+- **Cost/uncertainty:** Bohr contested the criterion; later Bell analysis is neither available nor needed at this step.
+- **Branch status:** `deferred`; incompleteness is EPR's preferred interpretation, not an established theorem of 1935 physics.
+- **Next question:** What feature of the joint state creates the dilemma?
+
+##### `CT-ENT-04`: `CS-ENT-04` → `CS-ENT-05` — Name and analyze nonseparability
+
+- **Input model:** A joint pure state supporting alternative conditional descriptions of separated parts.
+- **Pressure:** Describing each part by its own pure wavefunction cannot preserve the joint predictions.
+- **Protected structure:** Quantum state composition and the empirical distinction between joint and local statistics.
+- **Hidden assumption:** Maximal knowledge of a composite entails maximal knowledge of its constituents.
+- **Operation / change type:** `reinterpretation` — Make entanglement, rather than only incompleteness, the object of analysis.
+- **Output model:** Schrödinger's 1935–1936 accounts describe correlated systems, mixtures, and steering.
+- **Local justification:** Schrödinger's response to EPR explicitly discusses separated systems and the failure of product-state assignment.
+- **Cost/uncertainty:** The term and analysis do not by themselves prove instantaneous causal influence.
+- **Next question:** What can a distant observer infer locally without receiving a classical message?
+
+##### `CT-ENT-05`: `CS-ENT-05` → `CS-ENT-06` — Distinguish joint structure from local control
+
+- **Input model:** A nonfactorizable joint state and different conditional ensembles for a remote subsystem.
+- **Pressure:** Conditional-state changes can be mistaken for a controllable distant signal.
+- **Protected structure:** The same local marginal statistics when the remote measurement result is not communicated.
+- **Hidden assumption:** Changing a conditional description automatically changes the unconditional local outcome distribution.
+- **Operation / change type:** `differentiation` — Separate joint correlations, conditional inference, and local marginal probabilities.
+- **Output model:** Entanglement is a structural property of the joint state, not a free signaling channel or a completed interpretation.
+- **Local justification:** The 1935 joint-probability framework allows the unchanged local marginal to be inferred by summing over unannounced remote outcomes; the explicit no-signaling formulation and partial-trace notation are later reconstructions, not claims attributed to Schrödinger.
+- **Cost/uncertainty:** Which physical ontology explains the correlations remains disputed; later Bell tests add independent constraints.
+- **Next question:** Can nonseparability be tested beyond idealized perfect-correlation arguments?
+
+#### Formal consolidation
+
+The qubit singlet, partial trace, Schmidt decomposition, and entropy below are modern pedagogical tools. EPR used continuous variables, and Bell-type spin tests and quantum-information measures arrived later.
 
 For two qubits, the Bell singlet is
 
@@ -178,13 +260,29 @@ otherwise it is entangled.
 
 - `P-01` — **Reframe the inherited problem:** “What properties does each particle carry?” becomes “What joint and reduced states are defined?”
 
-- `P-02` — **Permit a new representation, ontology, or mechanism:** Holistic quantum information without autonomous pure subsystem states is tolerated
+- `P-02` — **Permit a new representation, ontology, or mechanism:** The joint state need not reduce to a pure state for each separated part
 
 - `P-03` — **Make the new structure generative:** Perfect correlations become consequences of a nonfactorizable joint state
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Composite quantum systems, correlations, quantum foundations, and quantum information). The case-specific unification was: Composite-system probability, quantum state structure, and causal questions are unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain does not establish the target-domain claim; state the novel consequence and a possible failure condition before using later evidence as validation.
+
+#### `EG-ENT-01` — Seek nonseparability in other degrees of freedom
+
+- **Source domain:** EPR's ideal continuous-variable correlations and Schrödinger's 1935 analysis of separated subsystems.
+- **Target domain:** Joint spin, polarization, or other composite quantum states not used in the original EPR construction.
+- **Novel consequence:** Suitable preparations should show joint correlations and alternative conditional ensembles that cannot be reconstructed from autonomous pure subsystem states, while unconditional local marginals stay fixed.
+- **Failure condition:** A specified well-controlled composite preparation whose quantum joint-state calculation predicts nonfactorization but whose full observed joint statistics admit only separable descriptions would defeat that application; mere absence of signaling would not.
+
+#### `EG-ENT-02` — Extend from pure pairs to mixed composite preparations
+
+- **Source domain:** Nonfactorizable pure joint states of two separated systems.
+- **Target domain:** Noisy or mixed composite preparations described by density operators.
+- **Novel consequence:** Some mixed states should remain nonseparable even though each local marginal and many correlations resemble classical mixtures.
+- **Failure condition:** If every operationally prepared mixed state in the claimed regime admitted a convex decomposition into local product states under the stated observables, the proposed nonseparability there would fail.
 
 **Patterns demonstrated:**
 
@@ -194,13 +292,13 @@ The transformative move became a broader physical discovery when it was asserted
 
 ### Retention, predictions, and discriminating tests
 
-The reconstruction preserves rather than erases successful predecessor content: Product states and classical correlations remain the separable subset. Its quantitative or otherwise discriminating test strategy is: Entanglement witnesses, tomography, Bell inequalities, and operational tasks quantify the structure. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
+The reconstruction preserves rather than erases successful predecessor content: Product states and classical correlations remain the separable subset. EPR's 1935 test was a premise-sensitive theoretical dilemma; entanglement witnesses, tomography, Bell inequalities, and operational tasks became quantitative tests only in later work. The dedicated prediction and validation sections below keep proposed consequences distinct from the evidence later used to assess them.
 
 **Patterns demonstrated:**
 
 - `P-05` — **Recover valid predecessor structure or limiting behavior:** Product states and classical correlations remain the separable subset
 
-- `P-06` — **Prioritize discriminating tests:** Entanglement witnesses, tomography, Bell inequalities, and operational tasks quantify the structure
+- `P-06` — **Prioritize discriminating tests:** Later entanglement witnesses, tomography, and Bell tests quantify the structure
 
 ### Discovery-pattern synthesis
 
@@ -209,11 +307,11 @@ Pattern IDs are ordered by their typical first role in the reconstructed discove
 | Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
 |---|---|---|---|---|
 | `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | “What properties does each particle carry?” becomes “What joint and reduced states are defined?” | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
-| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Holistic quantum information without autonomous pure subsystem states is tolerated | [Transformative move](#transformative-move) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | The joint state need not reduce to a pure state for each separated part | [Transformative move](#transformative-move) |
 | `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Perfect correlations become consequences of a nonfactorizable joint state | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
 | `P-04` | Unify previously separated domains | Extrapolative unification | Composite-system probability, quantum state structure, and causal questions are unified | [Extrapolative generalization](#extrapolative-generalization) |
 | `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Product states and classical correlations remain the separable subset | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
-| `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Entanglement witnesses, tomography, Bell inequalities, and operational tasks quantify the structure | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
+| `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Later entanglement witnesses, tomography, and Bell tests quantify the structure | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
 
 This node serializes the result of the preceding reconstruction. It is a compact theory record, not a second historical derivation.
@@ -251,10 +349,13 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-ENT-01` — EPR's conditional completeness dilemma
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Quantum Entanglement and Nonseparability: Historical Knowledge Graph.
+- **Classification:** `NOVEL-THEORETICAL-CONSTRAINT`, not an empirical Bell-inequality prediction or a proof that quantum mechanics is in fact incomplete.
+- **Deduction date and authorship:** Einstein, Podolsky, and Rosen's paper, published 15 May 1935, constructs an ideal correlated two-system state and argues that wavefunction completeness conflicts with their reality criterion and the assumption that measuring one separated system does not disturb the other's physical reality.
+- **Construction-data independence:** The result follows from the stipulated perfect quantum correlations, alternative position/momentum measurements, and the stated premises. It does not use later spin-pair experiments, Bell's 1964 inequality, or quantum-information protocols as evidence.
+- **Derivation provenance and scope:** The dilemma is conditional: if a distant quantity predictable with certainty without disturbance is an element of reality, and a local choice cannot alter the remote real state, alternative measurements imply remote elements of reality not jointly represented by one wavefunction. Rejecting or reformulating a premise changes the conclusion; the 1935 argument alone does not identify which premise nature rejects.
+- **Discriminator and outcome:** A proposed complete account of the EPR state must say how it treats the remote reality criterion, locality/separability, and the joint quantum predictions without conflating them. Later Bell tests constrain specified local-causal completions, but their inequalities and empirical outcomes are later work and do not retrospectively turn this 1935 argument into a quantitative Bell forecast.
 
 ## Validation and explanatory gains
 
@@ -346,6 +447,18 @@ No separate supplemental note block was present before this schema migration. Ca
 
 ```text
 A-TENSOR-PRODUCT --enables--> D-ENTANGLEMENT-1935
+CS-ENT-01 --revised-by--> CT-ENT-01
+CT-ENT-01 --produces--> CS-ENT-02
+CS-ENT-02 --revised-by--> CT-ENT-02
+CT-ENT-02 --produces--> CS-ENT-03
+CS-ENT-03 --revised-by--> CT-ENT-03
+CT-ENT-03 --produces--> CS-ENT-04
+CS-ENT-04 --revised-by--> CT-ENT-04
+CT-ENT-04 --produces--> CS-ENT-05
+CS-ENT-05 --revised-by--> CT-ENT-05
+CT-ENT-05 --produces--> CS-ENT-06
+CS-ENT-06 --hands-off-to--> EG-ENT-01
+CS-ENT-06 --hands-off-to--> EG-ENT-02
 A-EPR-CORRELATIONS --exposes--> NONSEPARABILITY
 D-ENTANGLEMENT-1935 --implies--> MIXED-REDUCED-STATE
 SCHMIDT-RANK-GREATER-THAN-ONE --classifies--> PURE-STATE-ENTANGLEMENT
@@ -357,7 +470,9 @@ D-ENTANGLEMENT-1935 --instantiates--> P-01
 
 ## Sources
 
+- Erwin Schrödinger, [Discussion of Probability Relations between Separated Systems (1935)](https://www.informationphilosopher.com/solutions/scientists/schrodinger/Schrodinger-1935.pdf).
 - Einstein, Podolsky and Rosen, [“Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?”](https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777), *Physical Review* (1935).
+- Einstein, Podolsky and Rosen, [original 1935 facsimile](https://inters.org/files/einsteinetal1935.pdf), especially printed p. 779 on systems no longer interacting.
 - Stanford Encyclopedia of Philosophy, [“The Einstein–Podolsky–Rosen Argument in Quantum Theory”](https://plato.stanford.edu/entries/qt-epr/).
 - Nobel Prize, [advanced scientific information for the 2022 Physics Prize](https://www.nobelprize.org/prizes/physics/2022/advanced-information/).
 - Nobel Prize, [popular information on entanglement, Bell tests, and quantum information](https://www.nobelprize.org/prizes/physics/2022/popular-information/).

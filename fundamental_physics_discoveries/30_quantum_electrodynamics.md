@@ -17,7 +17,7 @@ QED combines quantum mechanics, special relativity, and electromagnetic gauge sy
 
 ## Historical problem
 
-Before the focal discovery (1947–1949 renormalized QED), the case confronted a linked set of pressures: Quantized radiation and Dirac electrons; Lamb shift and electron magnetic moment measured. The pathways `R-UNRENORMALIZED-POINT-PARTICLE-PERTURBATION`, `R-CLASSICAL-RADIATION-ONLY`, `R-HOLE-THEORY-QED`, `R-LITERAL-UV-CUTOFF-ELECTRON-SIZE`, `R-AD-HOC-INFINITY-SUBTRACTION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Quantum theory of charged particles and electromagnetic fields was to construct a more generative account without importing later validation evidence into the original inference.
+Quantized radiation and the Dirac electron supplied the basic ingredients of a relativistic electron–photon theory by the 1930s, but perturbative self-energy and other radiative corrections produced divergent intermediate expressions. The measured Lamb shift and anomalous magnetic moment in the 1940s made small radiative effects urgent quantitative targets. Bethe's 1947 calculation showed a limited but promising way to absorb a divergent contribution into the observed electron mass; Tomonaga, Schwinger, and Feynman developed broader relativistic methods with different formalisms. Dyson's 1949 comparison then clarified their common calculational content while explicitly leaving higher-order convergence and some foundational issues open. The task was controlled finite predictions within stated approximations, not a proof that every QED series converges or an inference from the later Standard Model.
 
 ## Time slices
 
@@ -84,7 +84,7 @@ Before the focal discovery (1947–1949 renormalized QED), the case confronted a
 | Ad hoc infinity subtraction | Remove each divergence independently | Risks unlimited fitting and symmetry violation | Replaced by finite counterterm set and renormalization conditions |
 | **Discovery/current: renormalized QED** | Gauge-constrained field theory expresses observables through finite measured parameters order by order | Lamb shift, \(g-2\), scattering, running coupling | Retained electromagnetic quantum theory |
 
-Renormalization did not show that “infinities cancel by magic.” Ward identities restrict counterterms, and the same measured mass, charge, and field normalization must predict many other observables. Competing formulations by Tomonaga, Schwinger, and Feynman were shown equivalent by Dyson. Their convergence transformed a repair program into a reusable theory architecture.
+Renormalization did not show that “infinities cancel by magic.” The same measured mass and charge must constrain other observables; later Ward identities sharpened the symmetry restrictions on counterterms. Competing formulations by Tomonaga, Schwinger, and Feynman were shown equivalent by Dyson. Their convergence transformed a repair program into a reusable theory architecture.
 
 ## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
@@ -100,13 +100,95 @@ The admissible pre-discovery input nodes are `A-DIRAC-FIELD`, `A-MAXWELL-GAUGE`,
 |---|---|---|
 | `R-UNRENORMALIZED-POINT-PARTICLE-PERTURBATION` | A direct perturbative quantum-field calculation using point electrons and photons in which bare masses and charges are inserted without a systematic regulator, counterterm, and renormalization-condition framework. | Loop integrals diverge without a consistent parameter relation. |
 | `R-CLASSICAL-RADIATION-ONLY` | A hybrid model in which charged matter may be quantized but the electromagnetic field remains a continuous classical wave with no photon creation, annihilation, or vacuum fluctuations. | Cannot explain spontaneous emission, vacuum corrections, or discrete scattering. |
-| `R-HOLE-THEORY-QED` | Early QED built around a physically filled Dirac sea whose holes represent positrons. | See the full pathway record above. |
-| `R-LITERAL-UV-CUTOFF-ELECTRON-SIZE` | The attempt to cure divergences by imposing an arbitrary maximum momentum interpreted as a literal unresolved electron size. | See the full pathway record above. |
-| `R-AD-HOC-INFINITY-SUBTRACTION` | Removing each divergent expression independently without a finite parameter set, symmetry constraints, and common renormalization conditions. | See the full pathway record above. |
+| `R-HOLE-THEORY-QED` | Early QED built around a physically filled Dirac sea whose holes represent positrons. | The literal infinite sea made vacuum and multiparticle bookkeeping cumbersome; field creation and annihilation retained antiparticles without requiring that ontology. |
+| `R-LITERAL-UV-CUTOFF-ELECTRON-SIZE` | The attempt to cure divergences by imposing an arbitrary maximum momentum interpreted as a literal unresolved electron size. | A cutoff made an integral finite but left predictions dependent on its arbitrary value and shape unless parameters were renormalized. |
+| `R-AD-HOC-INFINITY-SUBTRACTION` | Removing each divergent expression independently without a finite parameter set, symmetry constraints, and common renormalization conditions. | Independent cancellations gave no common measured mass and charge definitions that stayed consistent across different processes and perturbative orders. |
 
-**Pattern demonstrated — `P-01` (reframe the inherited question):** Divergences reframed through scale-dependent parameters. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+**Pattern demonstrated — `P-01` (reframe the inherited question):** Divergent self-energy reframed as a relation between the theoretical mass parameter and the measured electron mass. The comparison becomes a discovery operation only when the limitation changes the question or representation, rather than merely adding another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by information available at the focal discovery date; later confirmations, modern notation, and rival branches must be distinguished from contemporary inputs.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-QED-01` | Early electron–photon QFT describes interactions, but loop corrections diverge; 1947 precision anomalies demand finite calculations. **Open question:** Are divergences fatal or partly a misidentification of parameters? |
+| `CS-QED-02` | Bethe's 1947 Lamb-shift estimate subtracts a common self-energy contribution and relates a finite difference to the measured electron mass. **Open question:** Can such subtraction become systematic and covariant? |
+| `CS-QED-03` | Tomonaga's earlier covariant framework and Schwinger's 1948 program provide operator-based routes; Schwinger asks whether divergences can be isolated in unobservable factors while retaining observed mass and charge. **Open question:** How can distinct calculations be constrained and compared? |
+| `CS-QED-04` | Feynman's space-time representation provides a different calculational organization of the same electron–photon processes. **Open question:** Are its amplitudes equivalent to the operator treatments? |
+| `CS-QED-05` | Dyson's 1949 analysis maps the formulations and organizes a finite renormalized perturbation expansion. **Open question:** Does finite calibration leave independent empirical content? |
+| `CS-QED-06` | One measured parameter set supports multiple QED observables order by order; later symmetry identities and higher precision sharpen the framework. **Open question:** Where does the perturbative and domain limit lie? |
+
+##### `CT-QED-01`: `CS-QED-01` → `CS-QED-02` — Compare level differences rather than bare self-energy
+
+- **Input model:** Divergent electron self-energy and a measured hydrogen Lamb shift.
+- **Pressure:** Direct bare-parameter insertion gives no trustworthy finite level correction.
+- **Protected structure:** Dirac electron dynamics, quantum radiation, and the experimental mass.
+- **Hidden assumption:** An infinite correction to an unobservable bare mass is itself a measured failure.
+- **Operation / change type:** `reinterpretation` — Relate a self-energy difference to an experimentally calibrated electron mass.
+- **Output model:** Bethe's 1947 finite approximate Lamb-shift estimate.
+- **Local justification:** Bethe's original calculation explicitly used mass renormalization to isolate the shift.
+- **Cost/uncertainty:** The estimate was nonrelativistic and used a cutoff; it did not yet prove a complete covariant theory.
+- **Next question:** Can the same parameter logic work across processes and perturbative orders?
+
+##### `CT-QED-02`: `CS-QED-02` → `CS-QED-03` — Turn a successful subtraction into common parameter calibration
+
+- **Input model:** A finite Lamb-shift estimate and older divergent electron–photon perturbation theory.
+- **Pressure:** Independent ad hoc subtractions risk fitting each observation separately.
+- **Protected structure:** Relativistic covariance, field interactions, and a fixed measured charge/mass.
+- **Hidden assumption:** Every divergent diagram needs its own unrelated physical adjustment.
+- **Operation / change type:** `constraint_change` — Express calculations through common renormalized parameters and field normalizations.
+- **Output model:** Schwinger's covariant/operator radiative-correction program, alongside Tomonaga's independently developed earlier covariant formulation.
+- **Local justification:** Schwinger's 1948 formulation asks whether divergences can be isolated in unobservable factors while explaining measured deviations. Tomonaga's earlier work is a parallel precursor, not a result inferred from Bethe's 1947 estimate.
+- **Cost/uncertainty:** A regulator and subtraction convention remain intermediate; explicit finite predictions require consistent order-by-order work.
+- **Next question:** Can a different space-time formulation give the same amplitudes?
+
+##### `CT-QED-03`: `CS-QED-01` → `CS-QED-04` — Explore a parallel space-time calculation
+
+- **Input model:** Covariant renormalization goals and scattering/transition amplitudes.
+- **Pressure:** Operator calculations are technically difficult and their physical organization is opaque.
+- **Protected structure:** Relativistic quantum amplitudes and the same electron–photon interaction.
+- **Hidden assumption:** A single operator notation is the only workable implementation.
+- **Operation / change type:** `representation_shift` — Reexpress perturbative processes in Feynman's space-time/diagrammatic method.
+- **Output model:** A parallel calculational route for the same QED processes.
+- **Local justification:** Feynman's method circulated and was presented before Dyson's February 1949 comparison; its full papers appeared later in 1949. This route responds to the shared QED problem rather than deriving from Schwinger's operator formulation.
+- **Cost/uncertainty:** Diagrammatic convenience does not make internal lines literal observed particles or automatically remove divergences.
+- **Branch status:** `merged` later by Dyson; this was a parallel formulation, not a new electromagnetic interaction.
+- **Next question:** Are the diagrammatic and operator approaches physically equivalent?
+
+##### `CT-QED-04`: `CS-QED-03` and `CS-QED-04` → `CS-QED-05` — Prove a common perturbative architecture
+
+- **Input model:** Tomonaga–Schwinger and Feynman formulations of radiative processes.
+- **Pressure:** Agreement in selected calculations is weaker than a reusable map between formalisms.
+- **Protected structure:** Shared observable amplitudes, covariance, and calibrated parameters.
+- **Hidden assumption:** Different notation implies different physical theories.
+- **Operation / change type:** `coalescence` — Connect the formulations and organize diagrammatic perturbation and renormalization rules.
+- **Output model:** Dyson's 1949 unified working QED framework.
+- **Local justification:** Dyson's original 1949 paper expressly compares Tomonaga, Schwinger, and Feynman radiation theories.
+- **Cost/uncertainty:** Order-by-order usefulness does not prove convergence of the full series or validity at arbitrary energy.
+- **Next question:** What remains predictive after input observables fix mass and charge?
+
+##### `CT-QED-05`: `CS-QED-05` → `CS-QED-06` — Audit independent finite consequences
+
+- **Input model:** A renormalized perturbative framework with a finite common parameter set.
+- **Pressure:** If every outcome needs a new subtraction constant, the repair loses explanatory force.
+- **Protected structure:** Gauge symmetry, measured mass/charge, and the distinction between calibration and tests.
+- **Hidden assumption:** Reproducing the Lamb shift and magnetic anomaly after using them as stimuli proves all QED claims independently.
+- **Operation / change type:** `differentiation` — Separate calibrated inputs, retrospective explanations, and new order-dependent predictions.
+- **Output model:** QED as a constrained predictive theory, with later Ward identities and precision tests strengthening the audit.
+- **Local justification:** The 1947–1949 program fixed common parameters and compared multiple observables; the full Ward-identity formalism is later consolidation.
+- **Cost/uncertainty:** Perturbation theory is asymptotic and the electromagnetic sector does not include every interaction.
+- **Next question:** Can the architecture transfer to other quantum fields without losing control?
+
+#### Formal consolidation
+
+The compact gauge Lagrangian, modern regulator/counterterm language, and Ward identities below consolidate results across and after the 1947–1949 program. They are not a verbatim chain followed by one historical actor.
 
 In Heaviside–Lorentz natural units \(\hbar=c=1\), the QED Lagrangian is:
 
@@ -138,11 +220,11 @@ $$
 \alpha=\frac{e^2}{4\pi\epsilon_0\hbar c}\approx\frac{1}{137}.
 $$
 
-The electron magnetic moment is written:
+With \(e>0\) denoting the magnitude of the electron charge, its magnetic moment is:
 
 $$
-\boldsymbol{\mu}
-=g\frac{e}{2m}\mathbf{S},
+\boldsymbol{\mu}_e
+=-g\frac{e}{2m}\mathbf{S},
 \qquad
 a_e=\frac{g-2}{2}.
 $$
@@ -208,21 +290,37 @@ This is a constrained prediction pipeline, not “subtract infinity”: a finite
 
 **Patterns demonstrated:**
 
-- `P-01` — **Reframe the inherited problem:** Divergences reframed through scale-dependent parameters
+- `P-01` — **Reframe the inherited problem:** Divergent self-energy reframed through the distinction between theoretical and measured mass
 
-- `P-02` — **Permit a new representation, ontology, or mechanism:** Quantum fields and vacuum corrections accepted
+- `P-02` — **Permit a new representation, ontology, or mechanism:** Feynman's spacetime/diagrammatic calculation admitted alongside operator formulations
 
-- `P-03` — **Make the new structure generative:** Gauge Lagrangian generates interaction amplitudes
+- `P-03` — **Make the new structure generative:** A common calibrated mass and charge constrain multiple finite radiative corrections
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Quantum theory of charged particles and electromagnetic fields). The case-specific unification was: Relativity, quantum particles, and fields unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain does not establish the target-domain claim; state the novel consequence and a possible failure condition before using later evidence as validation.
+
+#### `EG-QED-01` — Carry one calibration into new electromagnetic observables
+
+- **Source domain:** Renormalized electron–photon calculations of the Lamb shift and electron magnetic anomaly using measured mass and charge.
+- **Target domain:** Other bound-state levels, scattering processes, and higher-order magnetic corrections not used to fix the same parameters.
+- **Novel consequence:** Finite radiative corrections should follow with no new arbitrary counterterm for each observable, within stated perturbative accuracy.
+- **Failure condition:** Reproducible discrepancies outside combined experimental and truncation errors that demand a new independent electromagnetic fit parameter for every process would undermine the predictive extension.
+
+#### `EG-QED-02` — Test QED with other charged leptons
+
+- **Source domain:** The renormalized electromagnetic coupling of electrons and photons.
+- **Target domain:** Electromagnetic processes involving another point-like charged lepton such as the muon.
+- **Novel consequence:** The same charge coupling and gauge structure should govern radiative corrections after replacing the lepton mass and accounting for additional sectors.
+- **Failure condition:** Precision muon electromagnetic data inconsistent with the specified QED contribution after separating weak and hadronic effects would challenge this transfer; a discrepancy in the total muon anomaly alone would not isolate QED.
 
 **Patterns demonstrated:**
 
-- `P-03` — **Generate consequences rather than merely redescribe inputs:** Gauge Lagrangian generates interaction amplitudes
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** One renormalized parameter set constrains further observables
 
-- `P-04` — **Unify previously separated domains or phenomena:** Relativity, quantum particles, and fields unified
+- `P-04` — **Unify previously separated domains or phenomena:** One calibrated QED framework addresses bound-state shifts, magnetic moments, and scattering
 
 ### Retention, predictions, and discriminating tests
 
@@ -240,10 +338,10 @@ Pattern IDs are ordered by their typical first role in the reconstructed discove
 
 | Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
 |---|---|---|---|---|
-| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | Divergences reframed through scale-dependent parameters | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
-| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Quantum fields and vacuum corrections accepted | [Transformative move](#transformative-move) |
-| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Gauge Lagrangian generates interaction amplitudes | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
-| `P-04` | Unify previously separated domains | Extrapolative unification | Relativity, quantum particles, and fields unified | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | Divergent self-energy reframed through theoretical versus measured mass | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
+| `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Feynman's spacetime/diagrammatic calculation admitted alongside operator formulations | [Transformative move](#transformative-move) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | A common calibrated mass and charge constrain multiple finite corrections | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Cross-phenomenon extension | One calibrated QED framework addresses bound-state shifts, magnetic moments, and scattering | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
 | `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Dirac and Maxwell theories retained as limits | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
 | `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Precision spectroscopy and \(g-2\) dominate validation | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
@@ -257,7 +355,7 @@ This node serializes the result of the preceding reconstruction. It is a compact
 | Central claim | QED combines quantum mechanics, special relativity, and electromagnetic gauge symmetry. Renormalization turns divergent intermediate expressions into finite relations among measured quantities, enabling predictions of unprecedented precision. |
 | Domain | Quantum theory of charged particles and electromagnetic fields |
 | Epistemic status | Exceptionally precise quantum field theory; electromagnetic sector of the Standard Model |
-| Generative role | Gauge Lagrangian generates interaction amplitudes |
+| Generative role | A common calibrated mass and charge constrain multiple finite radiative corrections |
 | Retained structure | Dirac and Maxwell theories retained as limits |
 
 Key formal relations, consolidated from the derivation above:
@@ -304,6 +402,14 @@ $$
 
 Spin and annihilation then split the singlet and triplet states and give different lifetimes; precision values require full QED corrections.
 - **Observable discriminator and outcome:** a neutral short-lived $e^-e^+$ atom should show hydrogen-like levels with half the leading Rydberg energy and annihilation-dependent lifetimes. Those signatures were found.
+
+### `NP-QED-02` — Bethe's conditional He⁺ level-shift estimate
+
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION` within the 1947 repair program, conditional on Bethe's stated approximations rather than a precision result of completed covariant QED.
+- **Prediction date and authorship:** Bethe's 1947 Lamb-shift paper, printed p. 341, projected that the He⁺ \(2s\) shift should be about 13 times the hydrogen shift, or about \(0.43\,\mathrm{cm}^{-1}\); it also estimated a smaller \(3s\) shift.
+- **Construction-data independence:** The hydrogen \(2s\) shift was used to assess the calculation, but the stated He⁺ numerical consequence was for a different ion and level. The paper itself says a relativistic calculation of the effective cutoff was still in progress.
+- **Derivation provenance and uncertainty:** The approximate \(Z^4\) scaling is modified by the logarithmic mean-excitation-energy factor, so \(13\times\) is not an exact universal ratio. The estimate inherits Bethe's nonrelativistic treatment and assumed effective cutoff \(K\sim mc^2\).
+- **Observable discriminator and outcome:** An independent He⁺ \(2S_{1/2}-2P_{1/2}\) measurement reported \(14{,}041.13(17)\,\mathrm{MHz}\) in 2000. Bethe's rounded \(0.43\,\mathrm{cm}^{-1}\) corresponds to about \(12.9\,\mathrm{GHz}\): it anticipated a substantial shift of the right order, but undershoots that later value by roughly 8%. The 1947 cutoff estimate must not be presented as a precision confirmation of the subsequently refined bound-state QED calculation.
 
 ### `NP-QED-NONE` — Renormalized QED's famous early numbers were not all predictions
 
@@ -411,6 +517,19 @@ No separate supplemental note block was present before this schema migration. Ca
 
 ```text
 A-DIRAC-FIELD --contributes-to--> D-QED-1940S
+CS-QED-01 --revised-by--> CT-QED-01
+CT-QED-01 --produces--> CS-QED-02
+CS-QED-02 --revised-by--> CT-QED-02
+CT-QED-02 --produces--> CS-QED-03
+CS-QED-01 --branches-to--> CT-QED-03
+CT-QED-03 --produces--> CS-QED-04
+CS-QED-03 --merged-by--> CT-QED-04
+CS-QED-04 --merged-by--> CT-QED-04
+CT-QED-04 --produces--> CS-QED-05
+CS-QED-05 --revised-by--> CT-QED-05
+CT-QED-05 --produces--> CS-QED-06
+CS-QED-06 --hands-off-to--> EG-QED-01
+CS-QED-06 --hands-off-to--> EG-QED-02
 A-MAXWELL-GAUGE --contributes-to--> D-QED-1940S
 D-MAXWELL-FIELD-1861-1865 --is-quantized-in--> D-QED-1940S
 D-QFT-FIELD-QUANTIZATION-1927 --is-specialized-as-electromagnetism-in--> D-QED-1940S
@@ -425,6 +544,12 @@ D-QED-1940S --instantiates--> P-06
 
 ## Sources
 
+- Hans Bethe, [The Electromagnetic Shift of Energy Levels (1947)](https://journals.aps.org/pr/abstract/10.1103/PhysRev.72.339); [original-page scan](https://www.physics.umd.edu/grt/taj/624c/Bethe1947.pdf), printed pp. 339–341 checked for mass subtraction, the assumed cutoff, the hydrogen calculation, and the conditional He⁺ estimate.
+- A. van Wijngaarden, F. Holuj, and G. W. F. Drake, [He⁺ Lamb-shift measurement](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.63.012505), *Physical Review A* 63 (published 2000), 012505; the publisher abstract reports \(14{,}041.13(17)\,\mathrm{MHz}\).
+- Julian Schwinger, [Quantum Electrodynamics I: A Covariant Formulation (1948)](https://journals.aps.org/pr/abstract/10.1103/PhysRev.74.1439).
+- Richard Feynman, [“Space-Time Approach to Non-Relativistic Quantum Mechanics” (1948)](https://doi.org/10.1103/RevModPhys.20.367).
+- Richard Feynman, [“Space-Time Approach to Quantum Electrodynamics” (1949)](https://doi.org/10.1103/PhysRev.76.769).
+- Freeman Dyson, [The Radiation Theories of Tomonaga, Schwinger, and Feynman (1949)](https://harvest.aps.org/v2/journals/articles/10.1103/PhysRev.75.486/fulltext).
 - Stanford Encyclopedia of Philosophy, [“The History of Quantum Field Theory”](https://plato.stanford.edu/archives/fall2023/entries/quantum-field-theory/qft-history.html).
 - Nobel Prize, [The 1965 Physics Prize](https://www.nobelprize.org/prizes/physics/1965/summary/).
 - Nobel Prize, [Richard Feynman lecture](https://www.nobelprize.org/prizes/physics/1965/feynman/lecture/).

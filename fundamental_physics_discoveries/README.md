@@ -68,7 +68,7 @@ All 41 canonical discovery files now use the same evidence-to-abstraction order:
 4. a historical time-slice table;
 5. inherited knowledge assets;
 6. failed, incomplete, or superseded pathways, including the comparison ledger;
-7. **Discovery-process reconstruction: interpolation, transformation, and extrapolation**, containing starting inputs, limits of inherited interpolation, the transformative move, extrapolative generalization, retention and testing, and an evidence-grounded, five-column `P-01`–`P-06` synthesis whose identifiers follow their typical first role in the discovery process;
+7. **Discovery-process reconstruction: interpolation, transformation, and extrapolation**, containing starting inputs, limits of inherited interpolation, the transformative move, extrapolative generalization, retention and testing, and an evidence-grounded, five-column `P-01`–`P-06` synthesis whose identifiers follow their typical first role in the discovery process; migrated CoC cases split the transformative move into **Chain of Concepts** and **Formal consolidation**, then serialize extrapolative risk as `EG-*` records;
 8. a compact **Discovery node and consolidated formalism** that serializes the result without repeating the full derivation;
 9. historically novel predictions and deductions, or an explicit machine-readable indication that no separately provenance-labeled prediction record is yet encoded;
 10. validation and explanatory gains;
@@ -84,6 +84,89 @@ The discovery-pattern labels are deliberately embedded inside the discovery-proc
 Each case also records a `Focal discovery date`. Every pathway in `Alternative, incomplete, or superseded pathways` has a `Proposed/active period` and must originate before that focal discovery. Later reactions, successor variants, experimental loophole programs, and modern alternatives belong in later-development, validation, or limitation sections instead. A same-year pathway is permitted only when the record identifies a pre-announcement or pre-acceptance hypothesis and its sortable chronology key is earlier than the focal event.
 
 Expanded cases also include a deeper investigation layer: historiographic cautions, reconstructed experiment or inference chains, worked quantitative examples, evidence-versus-alternative ledgers, approximation or regime maps, and AI-oriented notes that prevent common graph-merging errors. The target is normally about 1,500–2,500 words per case when the evidence and mathematical content support that length; narrower cases may be somewhat shorter, while broad syntheses may be longer. Added length must encode useful distinctions or derivations rather than repeat the summary.
+
+## Chain of Concepts corpus schema
+
+For a Chinese application guide with field explanations, a copyable Markdown skeleton, and validation instructions, see [Discovery 结构化模板：写作与应用指南](DISCOVERY_TEMPLATE_GUIDE_ZH.md).
+
+For the three frozen local-turn tasks, shared rubric, and six-case structural audit, see [CoC 试点评估包](../discovery_eval/README_ZH.md). The audit checks the current template; no independent model-comparison result is claimed.
+
+The `Chain of Concepts` is the human-readable path layer nested inside `Transformative move` for cases in which a discovery depends on a substantial representational or ontological change. Its underlying machine representation is a **Concept Evolution Graph (CEG)**: `CS-*` nodes record publicly inspectable conceptual states, while typed `CT-*` edges record locally defensible transformations that a discovery system can propose, compare, reject, merge, and test. A displayed CoC is one selected route through that graph, not a claim that discovery is intrinsically linear. A following `Formal consolidation` subsection states the resulting postulates, equations, invariants, or generative formalism without retelling the search path.
+
+The original six-case pilot covers three local-turn evaluation cases and three structural stress tests:
+
+- [`13_maxwell_electromagnetic_field_theory.md`](13_maxwell_electromagnetic_field_theory.md), with `CS-MAX-*` / `CT-MAX-*`;
+- [`15_classical_statistical_mechanics.md`](15_classical_statistical_mechanics.md), with state IDs `CS-CSM-*` and transition IDs `CT-CSM-*`;
+- [`17_special_relativity.md`](17_special_relativity.md), with state IDs `CS-SR-*` and transition IDs `CT-SR-*`;
+- [`19_general_relativity.md`](19_general_relativity.md), with `CS-GR-*` / `CT-GR-*`;
+- [`24_quantum_mechanics.md`](24_quantum_mechanics.md), with state IDs `CS-QM-*` and transition IDs `CT-QM-*`;
+- [`36_wilsonian_renormalization_group.md`](36_wilsonian_renormalization_group.md), with `CS-WRG-*` / `CT-WRG-*`.
+
+Corpus-wide migration now covers all 41 canonical cases, as tracked by the [validator's registered-case map](validate_corpus.mjs) and [expansion review](QA_REPORT.md#coc-expansion-review-in-progress-2026-09-29). The six frozen evaluation tasks remain separate; template completion does not establish a model-comparison result or independent historical approval.
+
+Every pilot chain must carry the epistemic label `MODERN-RATIONAL-RECONSTRUCTION`. A chain is one historically admissible route assembled from resources available at the indicated steps. It must not be presented as a transcript of an individual scientist's or model's hidden reasoning, as a proof that the accepted endpoint was inevitable, or as evidence that live contemporary alternatives were irrational.
+
+Each `CT-*` transition uses the following canonical fields in this order. `Branch status` is optional in the general schema but is included in the pilots to expose selection, rejection, merging, or deferral explicitly:
+
+| Field | Required interpretation |
+|---|---|
+| `Input model` | The scientific state before this local operation, stated without silently importing the endpoint |
+| `Pressure` | The anomaly, redundancy, asymmetry, or scope failure that motivates a revision |
+| `Protected structure` | Empirical success, mathematical relation, limit, or constraint that the revision must retain |
+| `Hidden assumption` | An inherited commitment made available for inspection rather than treated as fixed background |
+| `Operation / change type` | A controlled change type plus the local discovery action applied to the representation, question, mechanism, or model |
+| `Output model` | The revised candidate state produced by the operation; it may remain incomplete or branch into rivals |
+| `Local justification` | Evidence and formal resources available at that step, explicitly excluding later validation as construction input |
+| `Cost/uncertainty` | Lost intuitions, new assumptions, underdetermination, unresolved ontology, or empirical equivalence introduced by the move |
+| `Branch status` | Optional graph status such as `selected`, `rejected`, `merged`, or `deferred`, with any still-live competitor named |
+| `Next question` | The unresolved pressure handed to the next transition or to extrapolative testing |
+
+The local-validity criterion is:
+
+$$
+H_i + E_i + O_i \Longrightarrow H_{i+1}\text{ is admissible},
+$$
+
+not
+
+$$
+H_i + E_i \Longrightarrow H_{i+1}\text{ is uniquely true}.
+$$
+
+Here (H_i) is the current model, (E_i) the evidence and formal resources then available, and (O_i) the declared discovery operation. Competing outputs should remain live when the contemporary evidence does not discriminate them. Compression, symmetry, or ontological economy may rank candidates abductively, but the record must not manufacture an empirical victory.
+
+Chains should normally contain five to nine transitions. A concept state may feed more than one transition, and a transition may merge multiple source states. The final selected state should hand off an incomplete but generative framework to `Formal consolidation`; that framework then becomes the source structure for `Extrapolative generalization`. State and transition IDs must be sequential, and each must appear in the case's explicit edge list so the Concept Evolution Graph can be recovered as directed graph data.
+
+During corpus-wide expansion, each new chain must survive removal of canonical names, make each move locally assessable, expose where branching remains rational, and provide operations that could transfer to a held-out case or procedural universe. The six-case evaluation pilot remains unevaluated against independent model runs; expansion is not evidence of discovery capability. A chain is an auditable public reconstruction, not a transcript of an AI's latent reasoning. A chain that merely paraphrases the accepted theory in smaller sentences is not a valid discovery trace.
+
+## Extrapolative generalization corpus schema
+
+Conceptual transformation and extrapolation are different discovery operations. The Concept Evolution Graph searches inward when inherited concepts fail; extrapolative generalization searches outward after a new formal structure has been consolidated. A successful theory in one domain does not receive unlimited scope merely because its representation is elegant.
+
+Each pilot `Extrapolative generalization` section carries the epistemic label `EXTRAPOLATIVE-COMMITMENT` and one or more sequential `EG-*` records. Each record uses four canonical fields in this order:
+
+| Field | Required interpretation |
+|---|---|
+| `Source domain` | The phenomena and regime in which the consolidated structure currently has construction support |
+| `Target domain` | The new regime, system class, or observable to which the structure is being extended |
+| `Novel consequence` | A result not separately fitted in the source domain that follows if the extension succeeds |
+| `Failure condition` | A reproducible outcome that would reject the extension, or a declared boundary that prevents an out-of-domain mismatch from being misreported as total theory failure |
+
+The extrapolative cycle is:
+
+$$
+T\text{ supported in }D_0
+\;\longrightarrow\;
+T\stackrel{?}{\text{ extended to }}D_1
+\;\longrightarrow\;
+\text{novel consequence}
+\;\longrightarrow\;
+\text{test or boundary revision}.
+$$
+
+Later validation may assess an `EG-*` record but must not be inserted into its `Source domain` as if it motivated the original extension. Failure conditions should be scoped to the target and auxiliary assumptions: a failure of nonrelativistic quantum mechanics at particle-creation energies, for example, motivates a successor domain rather than retroactively erasing its atomic success.
+
+The original six cases carry extrapolation records under `EG-MAX-*`, `EG-CSM-*`, `EG-SR-*`, `EG-GR-*`, `EG-QM-*`, and `EG-WRG-*`; later migrated cases use their own stable `EG-*` prefixes. Each record must appear in the case's explicit edge list. The validator enforces structure and provenance labels; scientific quality still requires historical review, counterfactual controls, and held-out transfer tests.
 
 ## Pathway record schema
 

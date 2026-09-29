@@ -7,7 +7,7 @@
 | Graph ID | `KG-HIST-NEWTONIAN-MECHANICS-001` |
 | Graph type | Historical and epistemic knowledge graph in document form |
 | Central node | `T-NEWTON-1687` — Newton's synthesis in the *Principia* |
-| Focal discovery date | 1684–1687 synthesis; *Principia* published 5 July 1687 |
+| Focal discovery date | 1684–1687 synthesis; *Principia* issued in July 1687 |
 | Temporal coverage | Antiquity through modern assessments of Newtonian mechanics |
 | Primary domain | Mechanics, astronomy, and the history of scientific explanation |
 | Epistemic status | Newtonian mechanics is a correct and highly successful theory **within its ordinary domain: macroscopic bodies, speeds much lower than the speed of light, and weak gravitational fields**. It is not an ultimate theory of nature. |
@@ -23,7 +23,7 @@ For this graph, “correct” means reliable within a stated domain, not univers
 
 ## Historical problem
 
-Before the focal discovery (1684–1687 synthesis; *Principia* published 5 July 1687), the case confronted a linked set of pressures: Motion classified as natural or violent; terrestrial and celestial regions treated differently; A mover imparts an internal “impetus” that sustains a projectile after release. The pathways `T-ARISTOTELIAN-MOTION`, `T-IMPETUS`, `T-CARTESIAN-VORTICES` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Mechanics, astronomy, and the history of scientific explanation was to construct a more generative account without importing later validation evidence into the original inference.
+By 1684, Galilean fall and projectile regularities and Kepler's planetary laws were powerful but did not yet constitute one dynamics of terrestrial and celestial motion. Cartesian vortices offered a competing mechanical picture, while ancient natural/violent-motion and medieval impetus accounts formed older layers of the problem rather than Newton's only immediate rivals. The central task sharpened in Newton's 1684–87 work was reciprocal: infer forces from observed motions, then derive further motions from those forces under general laws. Testing a central inverse-square account against planetary and lunar behavior could link falling bodies to the heavens, but the universal mutual attraction and the theory's wider applications still had to be established; later precise confirmations were not starting evidence.
 
 ## Time slices
 
@@ -192,7 +192,107 @@ The admissible pre-discovery input nodes are `A-GALILEO`, `A-GALILEO-FALL`, `A-G
 
 ### Transformative move
 
-#### Constituent laws
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by resources available at that step; later validation and canonical endpoint language are excluded from its justification. This is an auditable rational reconstruction, not a transcript of a scientist's or model's hidden reasoning and not a claim that the endpoint was inevitable. Concept states are graph nodes; transitions are typed, auditable edges.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-NEW-01` | Galilean terrestrial kinematics and Keplerian planetary laws work in different domains, while vortices offer a contact-mechanical celestial rival. |
+| `CS-NEW-02` | Inertial continuation and impressed force are distinguished: force changes motion rather than sustaining uniform motion. |
+| `CS-NEW-03` | Kepler's area rule is related to a continuously central deflection of inertial motion, without yet fixing the force's radial dependence. |
+| `CS-NEW-04` | Planetary period and orbital geometry constrain a candidate inverse-square centripetal law; the inference still concerns idealized orbital motion. |
+| `CS-NEW-05` | The Moon's orbital deflection is compared quantitatively with terrestrial fall at different distances from Earth. |
+| `CS-NEW-06` | Gravitational interaction is treated as reciprocal and extended across planets, satellites, and terrestrial bodies. |
+| `CS-NEW-07` | Laws of motion and mutual gravitation form a mathematical framework that derives ideal paths and invites corrections for resistance and interaction. |
+
+##### `CT-NEW-01`: `CS-NEW-01` → `CS-NEW-02` — Separate persistence from impressed change
+
+- **Input model:** Projectile motion, near-Earth fall, and planetary paths have useful but separately framed regularities.
+- **Pressure:** Accounts that require a continuing mover or decaying impetus do not supply one quantitative rule for the change of motion.
+- **Protected structure:** Galilean idealized kinematics, observed persistence after release, and the real effects of resistance.
+- **Hidden assumption:** A sustained velocity itself needs a sustaining applied force.
+- **Operation / change type:** `reinterpretation` — Treat unforced rectilinear motion as a baseline and impressed force as a change of quantity of motion.
+- **Output model:** An inertial baseline and force law can be applied to both terrestrial and celestial motion.
+- **Local justification:** The 1684 *De motu* contains precursors of the first two laws; the 1687 *Principia* states the laws explicitly. This is not a claim that Galileo already had Newton's full rectilinear inertia.
+- **Cost/uncertainty:** Ideal inertial motion is not seen without environmental forces; reference-frame and absolute-space questions remain.
+- **Branch status:** `selected`; medium-based resistance remains relevant, while impetus is not identified with modern momentum.
+- **Next question:** What kind of force changes a planet's inertial motion while preserving its observed area rule?
+
+##### `CT-NEW-02`: `CS-NEW-02` → `CS-NEW-03` — Read the area law as a direction constraint
+
+- **Input model:** An otherwise inertial body changes direction along a planetary path; Kepler's equal-area rule supplies a time-dependent geometrical constraint.
+- **Pressure:** A descriptive ellipse and area rule do not themselves specify the required cause of deflection.
+- **Protected structure:** Keplerian area–time relation, observed orbital motion, and geometrical limiting arguments.
+- **Hidden assumption:** An orbital rule is only a curve-fitting description and cannot constrain force direction.
+- **Operation / change type:** `representation_shift` — Analyze short inertial segments and successive deflections to infer a force directed toward a center.
+- **Output model:** A central-force condition accounts for equal areas in equal times, without yet selecting a radial magnitude law.
+- **Local justification:** *De motu* and *Principia* Book I connect area–time behavior with centripetal force using geometric demonstrations.
+- **Cost/uncertainty:** A central direction is compatible with multiple radial force laws; the solar focus and moving bodies complicate the ideal construction.
+- **Branch status:** `selected`; vortex transport is still a competing physical mechanism, not logically excluded by this geometric relation alone.
+- **Next question:** Which distance dependence is compatible with the period and orbital constraints?
+
+##### `CT-NEW-03`: `CS-NEW-03` → `CS-NEW-04` — Constrain the magnitude of centripetal force
+
+- **Input model:** Planetary motion requires central deflection, and known periods scale with orbital sizes.
+- **Pressure:** Central direction alone leaves indefinitely many possible force magnitudes.
+- **Protected structure:** Kepler's period–size relation, elliptical geometry, and the inertial–centripetal distinction.
+- **Hidden assumption:** Describing an orbit gives no route to its force law, or a circular approximation is sufficient as a complete planetary proof.
+- **Operation / change type:** `constraint_change` — Use period scaling to motivate an inverse-square distance law in a circular limit, then test the stronger ellipse–focus relation geometrically.
+- **Output model:** Inverse-square centripetal action is a mathematically supported orbital candidate, not merely an analogy to a circular path.
+- **Local justification:** Newton's 1684 *De motu* linked a focal ellipse with inverse-square force; the *Principia* developed the corresponding demonstrations. The simple modern circular calculation below is pedagogical, not the whole original proof.
+- **Cost/uncertainty:** Orbit inference assumes accurate geometry and idealized isolated motion; it has not yet established that terrestrial gravity is the same interaction.
+- **Branch status:** `selected`; other force laws or vortex repairs require comparison against the full orbital evidence.
+- **Next question:** Does the candidate law connect the Moon's orbital acceleration to falling bodies near Earth?
+
+##### `CT-NEW-04`: `CS-NEW-04` → `CS-NEW-05` — Compare lunar deflection and terrestrial fall
+
+- **Input model:** An inverse-square centripetal law organizes idealized orbital motion, while near-Earth bodies accelerate downward.
+- **Pressure:** The terrestrial/celestial divide persists unless the two accelerations are quantitatively connected.
+- **Protected structure:** Galilean fall, the Moon's observed orbit, Earth-size estimates, and the candidate distance law.
+- **Hidden assumption:** The force that bends the Moon's path must be unlike the tendency that draws bodies toward Earth.
+- **Operation / change type:** `coalescence` — Compare lunar centripetal acceleration with surface gravity reduced by the squared Earth-radius-to-lunar-distance ratio.
+- **Output model:** Terrestrial fall and the Moon's continuing orbital fall become candidate instances of Earth-directed gravity.
+- **Local justification:** *Principia* Book III relates lunar centripetal force and terrestrial gravity through distance scaling; the numerical comparison depends on the available Earth radius and lunar-distance estimates.
+- **Cost/uncertainty:** Measurement and Earth-shape uncertainties affect the match; equality is a quantitative claim to check, not an analogy that proves itself.
+- **Branch status:** `selected`; the relation does not yet establish mutual attraction among all pairs of bodies.
+- **Next question:** Are Earth–Moon and Sun–planet attractions one-sided or reciprocal, and how far can the inference extend?
+
+##### `CT-NEW-05`: `CS-NEW-05` → `CS-NEW-06` — Make gravitation reciprocal and cross-system
+
+- **Input model:** Earthward gravity and planetary centripetal attraction have comparable distance-dependent mathematical roles.
+- **Pressure:** One-sided attractions toward fixed centers fail to respect the interaction law and leave satellite systems separately explained.
+- **Protected structure:** Action–reaction, lunar and planetary orbital constraints, and observations of planetary satellites.
+- **Hidden assumption:** Each central body uniquely attracts its companions while receiving no corresponding action, or Earth gravity is a special terrestrial property.
+- **Operation / change type:** `generalization` — Treat attraction as mutual and test the same kind of relation across Earth–Moon, Sun–planet, and planet–satellite systems.
+- **Output model:** A universal pairwise gravitational framework replaces domain-specific central tendencies.
+- **Local justification:** Newton's third law and *Principia* Book III support the reciprocal extension across observed systems; Newton Project's account of the 1685 drafts records the move to mutual attraction before publication.
+- **Cost/uncertainty:** The material mediation of gravity is not specified, and extending from observed systems to every body is stronger than each local orbital fit.
+- **Branch status:** `selected`; Cartesian contact-mechanical objections remain intelligible even if their orbital predictions are weaker.
+- **Next question:** Can one set of principles generate multiple motions without erasing perturbations and resistance?
+
+##### `CT-NEW-06`: `CS-NEW-06` → `CS-NEW-07` — Consolidate laws with controlled idealization
+
+- **Input model:** Inertia, impressed force, reciprocal interaction, and inverse-square gravity have been connected through orbital and terrestrial comparisons.
+- **Pressure:** Real planets interact; comets have diverse paths; terrestrial and celestial media can resist motion.
+- **Protected structure:** Keplerian regularities, Galilean fall, and measurable departures from ideal two-body behavior.
+- **Hidden assumption:** A successful general law must make all real trajectories exact isolated ellipses or specify gravity's contact medium first.
+- **Operation / change type:** `enrichment` — Derive ideal dynamics, then model perturbations, resistance, and deviations as explicit further problems.
+- **Output model:** The 1687 *Principia* offers a generative, testable mechanics with distinct ideal and corrected domains.
+- **Local justification:** The *Principia* preface describes inferring forces from observed motions and deriving other phenomena, while Books I–III treat ideal motion, resisting media, and the world system.
+- **Cost/uncertainty:** Lunar theory and tides remain technically imperfect, and the physical cause of gravitation is not settled.
+- **Branch status:** `selected`; further empirical tests and mechanistic alternatives remain open.
+- **Next question:** Which consequences in less-used domains expose the reach or limits of universal gravitation?
+
+#### Formal consolidation
+
+The following laws and equations present the resulting framework. Modern vector, momentum, energy, and gravitational-constant notation should not be read back verbatim into the 1687 text.
+
+##### Constituent laws
 
 - `L-NEWTON-1` — **Law of inertia:** A body remains at rest or in uniform rectilinear motion unless compelled to change that state by impressed forces.
 - `L-NEWTON-2` — **Dynamical law:** Change of motion is proportional to the impressed motive force and occurs along the line in which the force is impressed. In modern restricted notation this is often rendered as `F = ma`, but Newton's text is formulated in terms of change of “quantity of motion” (momentum), so the modern equation is an interpretation, not a verbatim statement.
@@ -302,15 +402,6 @@ $$
 
 The connection is generative: an inverse-square central force does not merely restate Kepler's laws; together with the laws of motion it explains why conic-section orbits and the relevant area and period relations arise under idealized conditions.
 
-#### Core conceptual transformations
-
-1. `CT-01-UNIVERSAL-DOMAIN`: Replaced the strong terrestrial/celestial divide with laws intended to apply to falling bodies, the Moon, planets, and comets alike.
-2. `CT-02-FORCE-CHANGES-MOTION`: Reframed force as a cause of acceleration or change in momentum, not as something required to maintain uniform motion.
-3. `CT-03-ORBIT-AS-FALL`: Interpreted an orbit as inertial motion continually deflected by centripetal attraction—continuous fall around a central body.
-4. `CT-04-MUTUAL-GRAVITY`: Treated gravity as reciprocal and universal rather than as a one-sided terrestrial tendency.
-5. `CT-05-GENERATIVE-MATHEMATICS`: Turned descriptive orbital rules into consequences of a dynamical model and enabled novel deductions from common principles.
-6. `CT-06-IDEALIZATION-CORRECTION`: Separated idealized two-body results from perturbations, resistance, non-sphericity, and measurement limits, creating a framework for successive approximation.
-
 Newton did not provide a settled underlying material mechanism for gravity in the *Principia*. The mathematically specified force law was extraordinarily productive, but contemporaries could reasonably regard the absence of a contact mechanism as a conceptual cost. Claims that Newton simply endorsed unexplained “action at a distance” should therefore be made with care.
 
 **Patterns demonstrated:**
@@ -323,7 +414,25 @@ Newton did not provide a settled underlying material mechanism for gravity in th
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Mechanics, astronomy, and the history of scientific explanation). The case-specific unification was: Terrestrial fall and celestial orbit became cases governed by common laws. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes an extension worth testing but does not license it automatically. Each record separates the supported domain, the proposed target, a novel consequence, and an explicit failure condition.
+
+Terrestrial fall and lunar orbit are linked during construction. The records below instead ask what the consolidated law risks in less-constraining domains.
+
+#### `EG-NEW-01` — Extend orbital mechanics to comets
+
+- **Source domain:** Planetary and satellite motions organized by central inverse-square gravitation and inertial dynamics.
+- **Target domain:** Comets with highly eccentric or differently inclined observed arcs.
+- **Novel consequence:** Their trajectories should admit conic-orbit reconstructions under the same solar force law, rather than needing transport by a planet-carrying vortex. A sufficiently well-constrained bound orbit permits a return-period estimate.
+- **Failure condition:** Reliable comet arcs systematically requiring incompatible forces or directions after observation and perturbation uncertainties are accounted for would defeat this extension. Halley's 1705 return prediction is a later use, not 1687 construction data.
+
+#### `EG-NEW-02` — Extend gravitation to Earth's global figure
+
+- **Source domain:** Universal gravitation, terrestrial weight, and the motion of a rotating Earth.
+- **Target domain:** The equilibrium shape and geodetically measurable polar–equatorial difference of Earth.
+- **Novel consequence:** Rotation together with gravity favors an equatorial bulge and polar flattening, with a calculable order of magnitude.
+- **Failure condition:** Reliable geodetic and rotational measurements showing polar elongation, after accounting for Earth-density and measurement uncertainties, would challenge the model's shape consequence. Later meridian-arc expeditions are validation, not an input to the 1687 inference.
 
 **Patterns demonstrated:**
 
@@ -360,7 +469,7 @@ This node serializes the result of the preceding reconstruction. It is a compact
 | Field | Canonical content |
 |---|---|
 | Node | `T-NEWTON-1687` — Newton's synthesis in the *Principia* |
-| Focal date | 1684–1687 synthesis; *Principia* published 5 July 1687 |
+| Focal date | 1684–1687 synthesis; *Principia* issued in July 1687 |
 | Central claim | `T-NEWTON-1687` unified terrestrial and celestial motion through general laws of motion and universal gravitation. Its achievement lay not merely in fitting known facts, but in deriving, connecting, and extending them within a quantitatively testable framework. For this graph, “correct” means reliable within a stated domain, not universally or metaphysically final. Newtonian mechanics remains an excellent approximation for macroscopic systems moving slowly relative to light in weak gravitational fields. Relativity is required for high speeds, strong gravity, and high-precision relativistic effects; quantum theory is required at atomic and subatomic scales. |
 | Domain | Mechanics, astronomy, and the history of scientific explanation |
 | Epistemic status | Newtonian mechanics is a correct and highly successful theory **within its ordinary domain: macroscopic bodies, speeds much lower than the speed of light, and weak gravitational fields**. It is not an ultimate theory of nature. |
@@ -386,6 +495,12 @@ $$
 \sum \mathbf{F}_{\mathrm{ext}}=m\mathbf{a}.
 $$
 
+$$
+\mathbf{F}_{12}=-\mathbf{F}_{21},
+\qquad
+\mathbf{F}_{1\leftarrow2}=-G\frac{m_1m_2}{r^2}\hat{\mathbf r}_{12}.
+$$
+
 The complete derivation, inferential provenance, and interpretation of these relations remain in **Transformative move** above.
 
 ## Historically novel predictions and deductions
@@ -393,10 +508,10 @@ The complete derivation, inferential provenance, and interpretation of these rel
 ### `NP-NEWTON-01` — A rotating Earth should be oblate
 
 - **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION`.
-- **Prediction date and authorship:** Newton argued in the *Principia* (1687), independently alongside Huygens's rotational analysis, that Earth should be flattened at the poles rather than elongated there.
+- **Prediction date and authorship:** Newton argued in the *Principia* (1687) that Earth should be flattened at the poles rather than elongated there; Huygens independently developed a different rotational analysis published in 1690.
 - **What was new:** the qualitative figure and a quantitative scale of flattening followed from mechanics and universal gravitation before the decisive eighteenth-century geodetic expeditions. Newton's numerical estimate was not exact, so the durable prediction is the sign and approximate magnitude, not his particular ratio.
-- **Construction-data independence:** planetary and terrestrial dynamics helped construct the theory; measured polar-versus-equatorial arc lengths did not.
-- **Derivation provenance:** `HISTORICAL-RECONSTRUCTION`. The following compact balance uses Newtonian ingredients but modern notation.
+- **Construction-data independence:** planetary and terrestrial dynamics and Richer's latitude-dependent pendulum result informed Newton's figure calculation; the later decisive polar-versus-equatorial meridian-arc comparison did not. This is a novel geodetic consequence conditional on those inputs, not a datum-free forecast.
+- **Derivation provenance:** `MODERN-SCHEMATIC-CHECK`. The following point-mass effective-potential balance shows the sign and scale, but it is not Newton's self-gravitating-fluid derivation or his numerical coefficient.
 
 At the equator, rotation reduces effective weight by Ω²R while it does not do so at the pole. An equipotential surface satisfies
 
@@ -455,7 +570,7 @@ a_{\mathrm{Moon}}
 =g\left(\frac{R_{\oplus}}{r_{\mathrm{Moon}}}\right)^2.
 $$
 
-This is the quantitative form of `CT-03-ORBIT-AS-FALL`: surface fall and lunar orbital acceleration differ primarily by inverse-square distance scaling. Likewise, the leading tidal acceleration across a body of radius \(R\), caused by an external mass \(M\) at distance \(r\) with \(R\ll r\), scales approximately as:
+This is the quantitative form of `CT-NEW-04`: surface fall and lunar orbital acceleration differ primarily by inverse-square distance scaling. Likewise, the leading tidal acceleration across a body of radius \(R\), caused by an external mass \(M\) at distance \(r\) with \(R\ll r\), scales approximately as:
 
 $$
 \Delta g_{\mathrm{tidal}}\sim\frac{2GMR}{r^3}.
@@ -525,6 +640,21 @@ The case is not “one genius replaces error with truth.” It is a graph of inh
 
 ```text
 T-ARISTOTELIAN-MOTION --precedes--> T-IMPETUS
+A-KEPLER --constrains--> CS-NEW-01
+CS-NEW-01 --revised-by--> CT-NEW-01
+CT-NEW-01 --produces--> CS-NEW-02
+CS-NEW-02 --revised-by--> CT-NEW-02
+CT-NEW-02 --produces--> CS-NEW-03
+CS-NEW-03 --revised-by--> CT-NEW-03
+CT-NEW-03 --produces--> CS-NEW-04
+CS-NEW-04 --revised-by--> CT-NEW-04
+CT-NEW-04 --produces--> CS-NEW-05
+CS-NEW-05 --revised-by--> CT-NEW-05
+CT-NEW-05 --produces--> CS-NEW-06
+CS-NEW-06 --revised-by--> CT-NEW-06
+CT-NEW-06 --produces--> CS-NEW-07
+CS-NEW-07 --hands-off-to--> EG-NEW-01
+CS-NEW-07 --hands-off-to--> EG-NEW-02
 T-IMPETUS --precedes--> A-GALILEO-INERTIA
 T-ARISTOTELIAN-MOTION --superseded-by--> T-NEWTON-1687
 T-IMPETUS --superseded-by--> T-NEWTON-1687
@@ -582,7 +712,12 @@ T-NEWTON-1687 --instantiates--> P-06
 
 ## Sources
 
+- Isaac Newton, [*Principia* (1687), authorial preface and stated method, Newton Project transcription](https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00074).
+- Newton Project, [introduction to the 1684 *De motu* and 1685–1687 *Principia* drafts](https://www.newtonproject.ox.ac.uk/texts/introduction).
+- Isaac Newton, [*De motu corporum in gyrum* (1684), Newton Project diplomatic transcription](https://www.newtonproject.ox.ac.uk/view/texts/diplomatic/NATP00089), especially the inertial hypothesis, area theorem, and period/force corollaries.
 - Isaac Newton, [*The Mathematical Principles of Natural Philosophy*: “General Scholium” (1729 English translation), Newton Project, University of Oxford](https://www.newtonproject.ox.ac.uk/view/texts/diplomatic/NATP00056). A primary text, including Newton's critique of vortex hypotheses.
 - Library of Congress, [*Principia. Philosophiæ naturalis principia mathematica*](https://www.loc.gov/item/2021667054/). Authoritative catalog description and digitized 1687 Latin edition.
 - Stanford Encyclopedia of Philosophy, [“Galileo Galilei”](https://plato.stanford.edu/entries/galileo/). Scholarly overview of Galileo's mechanics, free fall, projectile studies, and the interpretive issue of Galilean inertia.
 - NASA Science, [“Orbits and Kepler's Laws”](https://science.nasa.gov/solar-system/orbits-and-keplers-laws/). Authoritative overview of Kepler's three laws, their observational background, and their relation to Newtonian gravitation.
+- American Physical Society, [“How Newton Derived Shape of Earth”](https://www.aps.org/apsnews/2022/10/newton-earth-shape), on the 1687 oblate-Earth argument, its later geodetic test, and the distinct 1690 Huygens account.
+- NASA Science, [“1P/Halley”](https://science.nasa.gov/solar-system/comets/1p-halley/), on Halley's 1705 inference and 1758 return prediction.

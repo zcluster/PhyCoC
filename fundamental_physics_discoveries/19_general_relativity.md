@@ -17,7 +17,7 @@ General relativity replaces gravitational force in fixed Euclidean space with dy
 
 ## Historical problem
 
-Before the focal discovery (25 November 1915 field equations), the case confronted a linked set of pressures: Highly successful inverse-square force; No faster-than-light causal influence. The pathways `R-SCALAR-GRAVITY`, `R-NEWTONIAN-ABSOLUTE-GRAVITY`, `R-FLAT-SPACETIME-RELATIVISTIC-FORCE-GRAVITY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Gravitation and dynamical spacetime was to construct a more generative account without importing later validation evidence into the original inference.
+Newton's inverse-square law remained highly successful, but its absolute time and instantaneous gravitational interaction sat uneasily with special relativity. Einstein's 1907 equivalence insight connected free fall and acceleration; by 1912–1915, the metric and curvature calculus offered candidate language for a gravitational field. The task was not simply to make gravity propagate more slowly: a viable theory also had to recover Newtonian gravity, describe freely falling motion, and handle matter and energy consistently. Scalar gravity and the 1913 Einstein–Grossmann *Entwurf* theory were live alternatives or intermediate constructions, not obviously futile steps. Einstein's November 1915 sequence revised the field equations while confronting covariance, conservation, and Mercury's perihelion; the 25 November paper itself describes the final change to the matter term. The 1919 eclipse and later precision tests belong to validation, not to the evidence available for that final inference.
 
 ## Time slices
 
@@ -53,7 +53,7 @@ Before the focal discovery (25 November 1915 field equations), the case confront
 - **What it is:** Newton's gravitational model of instantaneous attraction \(F=Gm_1m_2/r^2\) acting within absolute Euclidean space and universal time.
 - **Proposed/active period:** 1687.
 - **Scope:** Excellent when \(v/c\ll1\) and \(GM/(rc^2)\ll1\).
-- **Limitation:** Cannot explain relativistic precession, gravitational time dilation, horizons, or gravitational waves.
+- **Limitation:** Universal time and instantaneous interaction conflict with a relativistic completion; Mercury's known residual remained unexplained. Clock effects, horizons, and gravitational waves became later discriminators.
 - **Outcome:** Retained as weak-field, slow-motion limit.
 
 ### `R-FLAT-SPACETIME-RELATIVISTIC-FORCE-GRAVITY`
@@ -68,10 +68,10 @@ Before the focal discovery (25 November 1915 field equations), the case confront
 
 | Pathway | Motivation | Repair attempt | Discriminator/outcome |
 |---|---|---|---|
-| Newtonian instantaneous potential | Accurate celestial mechanics and simple scalar \(\Phi\) | Add special-relativistic retardation | Did not naturally preserve equivalence or observed relativistic effects; retained weak-field limit |
+| Newtonian instantaneous potential | Accurate celestial mechanics and simple scalar \(\Phi\) | Add special-relativistic retardation | Did not naturally preserve equivalence or resolve Mercury's known residual; retained weak-field limit |
 | Nordström-type scalar gravity | Lorentz-covariant simplest field | Couple scalar to matter's trace and conformal metric | Predicted inadequate/zero light bending in key formulations |
 | Variable-speed/light or flat-spacetime force models | Preserve more conventional background | Tune couplings to redshift and perihelion | Lacked the unified metric account and later broad test network |
-| **Discovery/current: general-relativistic metric tensor** | Equivalence, covariance, conservation | Mercury, light, clocks, pulsars, and waves | Retained classical gravity theory |
+| **Discovery/current: general-relativistic metric tensor** | Equivalence, covariance, conservation | Dynamical metric field equation with free motion in the metric | Mercury retrodiction; optical and clock tests prospective; pulsars and waves much later |
 
 Einstein explored several candidate equations between 1907 and 1915 and temporarily adopted the non-generally-covariant “Entwurf” theory. The final field equations were constrained by the Newtonian limit, energy–momentum conservation, and mathematical identities, not guessed in one step. Newtonian gravity was not empirically poor in its ordinary domain; its failure appeared in small residuals and new regimes. A graph should therefore encode `NEWTONIAN-GRAVITY --limit-of--> GENERAL-RELATIVITY`, while scalar and Entwurf pathways are genuinely superseded attempts at the relativistic completion.
 
@@ -81,28 +81,134 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-EQUIVALENCE-PRINCIPLE`, `A-SPECIAL-RELATIVITY`, `A-RIEMANN-GEOMETRY`, `A-MERCURY-RESIDUAL`, `A-CONSERVATION`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+The admissible pre-discovery input nodes are `A-EQUIVALENCE-PRINCIPLE`, `A-SPECIAL-RELATIVITY`, `A-RIEMANN-GEOMETRY`, `A-MERCURY-RESIDUAL`, `A-CONSERVATION`. Their definitions and historical provenance are recorded in **Knowledge assets** above. Special relativity and the equivalence insight belong to the 1907 stage; the Riemannian toolkit enters Einstein's program in 1912–13, while conservation, the Newtonian limit, and Mercury's known residual constrain candidate equations through 1915. Later eclipse results and gravitational-wave detections are not inputs.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-SCALAR-GRAVITY` | A relativistic gravity theory in which gravitation is represented by a single scalar field or potential on a fixed spacetime background, rather than by a dynamical tensor metric. | Fails to capture observed light bending and full equivalence structure. |
-| `R-NEWTONIAN-ABSOLUTE-GRAVITY` | Newton's gravitational model of instantaneous attraction \(F=Gm_1m_2/r^2\) acting within absolute Euclidean space and universal time. | Cannot explain relativistic precession, gravitational time dilation, horizons, or gravitational waves. |
-| `R-FLAT-SPACETIME-RELATIVISTIC-FORCE-GRAVITY` | Relativistic force models that retain a fixed spacetime background while modifying propagation speed or force laws to mimic redshift and orbital corrections. | See the full pathway record above. |
+| `R-SCALAR-GRAVITY` | A relativistic gravity theory in which gravitation is represented by a single scalar field or potential on a fixed spacetime background, rather than by a dynamical tensor metric. | At the decision point, it still had to account for light, clocks, equivalence, and conservation; later tests must not be treated as already decisive. |
+| `R-NEWTONIAN-ABSOLUTE-GRAVITY` | Newton's gravitational model of instantaneous attraction \(F=Gm_1m_2/r^2\) acting within absolute Euclidean space and universal time. | Universal time and instantaneous interaction conflicted with special relativity, while Mercury's known residual remained; clocks, horizons, and waves were later tests, not 1915 inputs. |
+| `R-FLAT-SPACETIME-RELATIVISTIC-FORCE-GRAVITY` | Relativistic force models that retain a fixed spacetime background while modifying propagation speed or force laws to mimic redshift and orbital corrections. | Fitting individual effects on a fixed background did not make freely falling motion, clock behavior, and gravitational field dynamics consequences of one metric structure. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** Force in space reframed as curved spacetime. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
 
-Einstein's field equations are:
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`. This is an inspectable route through publicly available constraints and candidate theories, not a claim to recover Einstein's private thought sequence.
+
+**Trace rule:** Each transition must be locally justified by its input, pressure, protected structure, explicit assumption change, cost, and next question. Formal equivalence and later empirical success do not substitute for a bridge.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-GR-01` | Newtonian gravity works in its domain; special relativity makes instantaneous force and universal time problematic. |
+| `CS-GR-02` | Local free fall removes the experienced gravitational force, suggesting a local equivalence between gravity and acceleration. |
+| `CS-GR-03` | Tidal differences survive a freely falling frame, so gravity cannot be removed globally by a coordinate choice. |
+| `CS-GR-04` | A variable spacetime metric, using the 1912–13 mathematical toolkit, can encode intervals and free fall; curvature becomes a candidate for non-removable gravitational structure. |
+| `CS-GR-05` | A relativistic scalar or fixed-background force account remains a live nongeometric completion, with its own empirical and structural obligations. |
+| `CS-GR-06` | A metric theory needs two separately specified pillars: an equation for the gravitational field and an equation for free motion in a given metric. |
+| `CS-GR-07` | The 1913 *Entwurf* supplies a provisional, restricted-covariance metric field equation with geodesic motion, but leaves important consistency and orbital tensions. |
+| `CS-GR-08` | The November 1915 revision replaces the *Entwurf* field equation; its final trace term gives the now-standard matter coupling, without making the equation of motion a 1915 deduction from the field equation alone. |
+
+##### `CT-GR-01`: `CS-GR-01` → `CS-GR-02` — take local free fall seriously
+
+- **Input model:** Successful Newtonian gravity, 1905 special relativity, and the equality of inertial and gravitational mass.
+- **Pressure:** Gravity as an ordinary force does not sit comfortably with local inertial physics and universal-time assumptions.
+- **Protected structure:** Newtonian free-fall regularities and locally valid special relativity.
+- **Hidden assumption:** A gravitational force must be locally distinguishable from accelerated motion.
+- **Operation / change type:** `reinterpretation` — treat freely falling motion as locally inertial, not as motion under a felt force.
+- **Output model:** `CS-GR-02`.
+- **Local justification:** The 1907 equivalence insight makes the comparison available before a curvature theory exists.
+- **Cost/uncertainty:** Local equivalence does not determine a global theory or field equation.
+- **Next question:** What gravitational content remains when the local force is transformed away?
+
+##### `CT-GR-02`: `CS-GR-02` → `CS-GR-03` — distinguish local removal from tidal residue
+
+- **Input model:** Local equivalence of free fall and inertial motion.
+- **Pressure:** Nearby falling bodies can accelerate relative to one another; one freely falling frame cannot remove those differences everywhere.
+- **Protected structure:** Local special relativity and observable relative acceleration.
+- **Hidden assumption:** Removing gravity at one point removes gravitational structure across an extended region.
+- **Operation / change type:** `differentiation` — separate coordinate-dependent acceleration from non-removable tidal effects.
+- **Output model:** `CS-GR-03`.
+- **Local justification:** A spatially varying gravitational field already supplies the distinction; no later eclipse result is needed.
+- **Cost/uncertainty:** Tidal residue identifies a problem for simple force removal but not its mathematical representation.
+- **Next question:** What structure can encode both local inertial frames and their non-global mismatch?
+
+##### `CT-GR-03`: `CS-GR-03` → `CS-GR-04` — represent gravity geometrically
+
+- **Input model:** Local inertial frames with persistent tidal differences; analysis of rotating frames; and the Riemannian toolkit accessed with Grossmann in 1912–13.
+- **Pressure:** A fixed spacetime metric does not express how measured intervals and inertial trajectories vary; rotating-frame analyses also expose limits of a globally Euclidean spatial picture.
+- **Protected structure:** Local Lorentz behavior, invariant intervals, and tidal observables.
+- **Hidden assumption:** Spacetime geometry must remain a fixed stage while gravity acts on it.
+- **Operation / change type:** `representation_shift` — use a variable metric and curvature to organize gravitational effects.
+- **Output model:** `CS-GR-04`.
+- **Local justification:** Rotating-frame measurements and variable gravitational intervals motivate a metric; Grossmann's mathematical resources make its tensor treatment available. Tidal residue is a compatible modern bridge, not the sole documented historical route.
+- **Cost/uncertainty:** Many geometric field equations remain possible, and mathematical generality may outrun physical constraints.
+- **Next question:** How is metric geometry tied to matter and energy?
+
+##### `CT-GR-04`: `CS-GR-02` → `CS-GR-05` — retain a nongeometric competitor
+
+- **Input model:** Local equivalence and the need for a relativistic gravitational influence.
+- **Pressure:** Equivalence alone does not logically require a dynamical tensor metric.
+- **Protected structure:** Relativistic locality and the successful Newtonian approximation.
+- **Hidden assumption:** Every relativistic completion must change spacetime geometry.
+- **Operation / change type:** `enrichment` — explore scalar or fixed-background force degrees of freedom as alternative completions.
+- **Output model:** `CS-GR-05`.
+- **Local justification:** Such approaches were live historical possibilities; their later shortcomings must not be read back as impossibility at the branch point.
+- **Cost/uncertainty:** They must still account for light, clocks, free fall, and conservation consistently.
+- **Branch status:** `deferred` — the 1907 insight alone does not eliminate them.
+- **Next question:** Which constraints discriminate a metric theory from these alternatives?
+
+##### `CT-GR-05`: `CS-GR-04` → `CS-GR-06` — make geometry dynamical
+
+- **Input model:** A variable metric and curvature as a representation of gravity.
+- **Pressure:** Geometry as mere kinematics cannot explain why different matter distributions yield different gravitational fields.
+- **Protected structure:** Local free fall, tidal curvature, and the Newtonian source-response intuition.
+- **Hidden assumption:** A geometric description can remain independent of material sources.
+- **Operation / change type:** `coalescence` — specify both a matter-sourced metric field law and a geodesic law for freely moving bodies, without treating general test-particle motion as derived from the field equation alone.
+- **Output model:** `CS-GR-06`.
+- **Local justification:** The 1913 *Entwurf* explicitly uses ten metric components and a variational motion law (original pp. 6–7), then poses the separate task of finding a matter-sourced gravitational field equation (p. 11). In §4 (pp. 9–10), it defines the stress–energy of incoherent mass flow and states that its balance equation (10) recovers the point-particle motion equation by integration along flow lines. In modern notation and for nonzero dust density, \(\nabla_\mu(\rho u^\mu u^\nu)=0\) separates into mass continuity and \(u^\mu\nabla_\mu u^\nu=0\); this is a reconstruction of that special case, not a 1913 proof for arbitrary matter.
+- **Cost/uncertainty:** The general motion law remains a separate pillar: the dust result uses a separately formulated stress–energy balance law, not the gravitational field equation alone, and the metric field equation is far from unique.
+- **Next question:** Which candidate field equation preserves the desired limits and conservation behavior?
+
+##### `CT-GR-06`: `CS-GR-06` → `CS-GR-07` — provisionally choose the Entwurf equation
+
+- **Input model:** Metric and geodesic framework with candidate curvature-based field equations, including a Ricci-tensor candidate examined in the 1912 Zurich work.
+- **Pressure:** The Zurich notebook tests Ricci-based candidates against the Newtonian limit and conservation. A Newtonian-looking limit was obtained under a coordinate condition, but the static special case and the status of that restriction remained troublesome; the curvature route was therefore not accepted as a settled field equation.
+- **Protected structure:** The weak-field Newtonian limit and their contemporary conservation requirements.
+- **Hidden assumption:** The most generally covariant curvature candidate would automatically satisfy those physical requirements as then understood.
+- **Operation / change type:** `constraint_change` — choose the restricted-covariance *Entwurf* equation as a provisional physical completion.
+- **Output model:** `CS-GR-07`.
+- **Local justification:** Notebook pages 14L, 19L, 21R, and 22R record the curvature candidates, a conditional Newtonian-limit calculation, and subsequent doubts; the 1913 *Entwurf* explicitly declines general covariance for its field equations (original p. 12) and presents its provisional equation (p. 17). The notebooks do not license the simpler claim that Einstein never found any Newtonian limit for a Ricci candidate.
+- **Cost/uncertainty:** Restricted covariance was already a concern; the *Entwurf* calculation did not reproduce Mercury's known anomalous advance.
+- **Branch status:** `rejected` — provisionally adopted in 1913, abandoned during the 1915 revision, not ruled out by the 1907 equivalence insight alone.
+- **Next question:** Can the discarded curvature candidate be reconsidered once the objections and failed checks are re-examined?
+
+##### `CT-GR-07`: `CS-GR-07` → `CS-GR-08` — revise the field equation in November 1915
+
+- **Input model:** The *Entwurf* metric framework, its restricted-covariance field equation, the known Mercury residual, and 1915 criticisms and rotating-frame checks.
+- **Pressure:** The *Entwurf* derivation and rotating-frame behavior failed key consistency tests; its Mercury result was wrong.
+- **Protected structure:** Metric free motion, local special relativity, Newtonian weak-field success, and energy–momentum accounting.
+- **Hidden assumption:** The earlier rejection of generally covariant curvature equations had definitively settled their physical admissibility.
+- **Operation / change type:** `replacement` — return to curvature-based candidates and add the final matter-trace term after the intermediate November equations.
+- **Output model:** `CS-GR-08`.
+- **Local justification:** The November 4, 11, 18, and 25 sequence documents successive revisions. In the November 25 paper Einstein explicitly adds a matter-trace term and says this leaves the vacuum equations used for Mercury unchanged; the orbital calculation therefore preceded the final matter equation.
+- **Cost/uncertainty:** The final equation was not inevitable from equivalence or covariance alone; new optical and dynamical tests still remained.
+- **Next question:** Does the resulting geometry govern light, clocks, and dynamic gravitational systems beyond the fitted constraints?
+
+#### Formal consolidation
+
+The November 1915 field equations, in modern notation and without the later cosmological term, are:
 
 $$
-G_{\mu\nu}+\Lambda g_{\mu\nu}
-=\frac{8\pi G}{c^4}T_{\mu\nu}.
+G_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}.
 $$
 
-\(G_{\mu\nu}\) encodes curvature, \(T_{\mu\nu}\) stress–energy, \(g_{\mu\nu}\) the metric, and \(\Lambda\) the cosmological constant. Free-fall paths satisfy:
+The modern extension adds \(\Lambda g_{\mu\nu}\) to the left side; Einstein introduced that term in 1917, so it is not part of the 1915 discovery input. \(G_{\mu\nu}\) encodes curvature, \(T_{\mu\nu}\) stress–energy, and \(g_{\mu\nu}\) the metric. Free-fall paths satisfy:
 
 $$
 \frac{d^2x^\mu}{d\tau^2}
@@ -139,7 +245,25 @@ recovering Newtonian gravity.
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Gravitation and dynamical spacetime). The case-specific unification was: Gravitation, inertia, geometry, and time unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`.
+
+**Risk rule:** Success in the source domain does not logically guarantee success in the target domain; record the new consequence and a result that would defeat the extension.
+
+#### `EG-GR-01` — carry gravity into optics and clock behavior
+
+- **Source domain:** Local equivalence, metric dynamics, the Newtonian limit, and the known Mercury residual used to constrain the 1915 theory.
+- **Target domain:** Light propagation and timing in gravitational fields not used to choose the final equations.
+- **Novel consequence:** The full 1915 metric predicts a definite light-deflection magnitude and linked gravitational clock effects, not merely an adjustable correction to planetary orbits.
+- **Failure condition:** With the gravitating mass, geometry, and instrumental corrections independently fixed, reproducible light deflection or gravitational clock-rate differences outside the 1915 metric's predicted uncertainty would defeat this application; the earlier equivalence-only light estimate must not be substituted for the final metric prediction.
+
+#### `EG-GR-02` — dynamical curvature outside near-static gravity
+
+- **Source domain:** The 1915 metric field equations and their successful weak-field limit.
+- **Target domain:** Time-dependent, strong, or radiative gravitational systems.
+- **Novel consequence:** Evolving mass distributions can generate propagating changes in curvature; the explicit gravitational-wave derivation followed in 1916 and is not an input to the 1915 chain.
+- **Failure condition:** For a specified radiating system with independently constrained masses and orbit, a reproducible orbital-decay rate or wave phase/amplitude incompatible with the field-equation prediction beyond stated source-model and detector uncertainties would defeat that radiative application; the 1915 equation alone does not fix an unmodeled source.
+
+The unification of gravitation, inertia, geometry, and time is therefore a risky claim about new domains, not a free consequence of fitting the inherited data.
 
 **Patterns demonstrated:**
 
@@ -491,8 +615,6 @@ General relativity is nonrenormalizable as a straightforward perturbative quantu
 
 ## Additional quantitative and epistemic notes
 
-### Additional quantitative and epistemic notes
-
 The equivalence principle connected uniform acceleration with a homogeneous gravitational field locally, motivating a geometry in which freely falling bodies follow geodesics:
 
 $$
@@ -517,11 +639,33 @@ FIELD-EQUATIONS --generate--> SPACETIME-CURVATURE
 SPACETIME-CURVATURE --governs--> GEODESIC-MOTION
 D-GENERAL-RELATIVITY-1915 --enables--> D-EXPANDING-UNIVERSE
 D-GENERAL-RELATIVITY-1915 --instantiates--> P-01
+CS-GR-01 --motivates--> CT-GR-01
+CT-GR-01 --produces--> CS-GR-02
+CS-GR-02 --motivates--> CT-GR-02
+CT-GR-02 --produces--> CS-GR-03
+CS-GR-03 --motivates--> CT-GR-03
+CT-GR-03 --produces--> CS-GR-04
+CS-GR-02 --motivates--> CT-GR-04
+CT-GR-04 --produces--> CS-GR-05
+CS-GR-04 --motivates--> CT-GR-05
+CT-GR-05 --produces--> CS-GR-06
+CS-GR-06 --motivates--> CT-GR-06
+CT-GR-06 --produces--> CS-GR-07
+CS-GR-07 --motivates--> CT-GR-07
+CT-GR-07 --produces--> CS-GR-08
+CS-GR-08 --supports--> EG-GR-01
+CS-GR-08 --supports--> EG-GR-02
 ```
 
 ## Sources
 
-- Einstein Papers Project, [Einstein's 1916 review of general relativity](https://einsteinpapers.press.princeton.edu/vol6-trans/158).
+- Einstein, [“Die Grundlage der allgemeinen Relativitätstheorie” (1916 review, original)](https://doi.org/10.1002/andp.19163540702); later synthesis, not a 1915 construction input.
+- Einstein, [“The Field Equations of Gravitation” (25 November 1915)](https://cds.cern.ch/record/632320).
+- Einstein, [“Die Feldgleichungen der Gravitation” (25 November 1915), proofread original-language transcription](https://de.wikisource.org/wiki/Die_Feldgleichungen_der_Gravitation).
+- Einstein and Grossmann, [1913 *Entwurf* facsimile](https://zenodo.org/records/7092832), original printed pp. 6–7, 9–12, and 17 checked for the metric, motion law, dust stress–energy and balance equation (10), restricted covariance, and field equation; these checks do not cover the entire work.
+- John D. Norton, [annotated Zurich-notebook facsimile excerpts and commentary](https://sites.pitt.edu/~jdnorton/Goodies/Zurich_Notebook/) (especially 14L, 19L, 21R, and 22R; distinguish manuscript marks from the historian's interpretation).
+- Einstein Papers Project, [discussion of the separate field and motion equations in 1915](https://www.einstein.caltech.edu/news/the-genesis-of-einsteins-work-on-the-problem-of-motion-in-general-relativity).
+- Einstein Papers Project, [*Collected Papers* vol. 15 introduction, p. xlviii](https://assets.press.princeton.edu/chapters/i11327.pdf#page=10), on the pressureless-dust exception in the 1913 *Entwurf* and the still-separate general motion postulate; the original §4, pp. 9–10, has now also been checked against this reading.
 - Einstein Online, [“Gravitational deflection of light”](https://www.einstein-online.info/en/spotlight/light_deflection/).
 - Einstein Online, [“General Relativity”](https://www.einstein-online.info/en/category/elementary/general-relativity/).
 - Stanford Encyclopedia of Philosophy, [“Early Philosophical Interpretations of General Relativity”](https://plato.stanford.edu/entries/genrel-early/).

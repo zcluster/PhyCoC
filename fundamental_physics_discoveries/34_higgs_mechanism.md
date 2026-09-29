@@ -13,17 +13,17 @@
 
 ## Central claim
 
-A gauge theory can preserve its underlying local symmetry while its vacuum state selects a nonzero field value. Gauge bosons then acquire longitudinal modes and mass; matter fields can acquire masses through Yukawa couplings. A physical scalar excitation remains.
+A scalar–gauge system can retain local gauge organization while its physical spectrum contains massive vector modes instead of a separate massless Goldstone mode. Higgs's simple 1964 model also contains a massive scalar excitation. Fermion masses from Yukawa couplings belong to the later electroweak implementation, not to this 1964 result.
 
 ## Historical problem
 
-Before the focal discovery (1964 BEH-mechanism papers), the case confronted a linked set of pressures: Explicit gauge-boson mass breaks gauge structure; Spontaneous breaking yields massless Goldstone bosons. The pathways `R-EXPLICIT-VECTOR-MASS`, `R-GLOBAL-BREAKING-FOR-WEAK-MASS`, `R-STUECKELBERG-MASS` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Spontaneous symmetry breaking in gauge theory was to construct a more generative account without importing later validation evidence into the original inference.
+By 1964, attempts to describe particle interactions with gauge fields faced a mass puzzle: direct vector mass terms conflicted with local gauge structure, while spontaneous breaking of a *global* continuous symmetry produced a massless Goldstone mode. Massive vectors were of interest for short-range interactions; the original Englert–Brout paper explicitly considered strong-interaction applications, and Higgs discussed an SU(3) model. Earlier Abelian compensator constructions and Anderson's superconductivity analogy showed that gauge fields might change the mode counting, but neither supplied a realistic particle-interaction theory. Brout–Englert, Higgs, and Guralnik–Hagen–Kibble independently explored how scalar-coupled gauge fields could have a massive vector spectrum without simply abandoning local gauge covariance. Their 1964 mechanism must be separated from later electroweak embedding, quantum consistency proofs, and the 2012 scalar observation.
 
 ## Time slices
 
 | Node | Period | Problem | Transition |
 |---|---:|---|---|
-| `TS-GAUGE-MASSLESS` | 1950s | Explicit gauge-boson mass breaks gauge structure | Weak force needs massive mediator |
+| `TS-GAUGE-MASSLESS` | 1950s | Explicit gauge-boson mass breaks gauge structure | Particle-interaction models seek massive vectors |
 | `TS-GLOBAL-SSB` | Early 1960s | Spontaneous breaking yields massless Goldstone bosons | Gauge case reexamined |
 | `TS-1964-PAPERS` | 1964 | Gauge field absorbs Goldstone mode | Massive vector theory possible |
 | `TS-ELECTROWEAK` | 1967 onward | Mechanism embedded in \(SU(2)_L\times U(1)_Y\) | Renormalizable theory built |
@@ -47,11 +47,11 @@ Before the focal discovery (1964 BEH-mechanism papers), the case confronted a li
 - **Outcome:** Replaced in electroweak theory by spontaneous symmetry breaking.
 - **Retained element:** Low-energy massive-vector behavior.
 
-### `R-GLOBAL-BREAKING-FOR-WEAK-MASS`
+### `R-GLOBAL-BROKEN-SYMMETRY`
 
-- **What it is:** Applying spontaneous breaking of a global continuous symmetry directly to weak-boson mass generation.
+- **What it is:** Pre-1964 broken-global-symmetry field models and the associated Goldstone theorem, examined as a resource and obstacle for a gauge-vector mass mechanism.
 - **Proposed/active period:** 1960–1962.
-- **Outcome:** Produces unwanted massless Goldstone modes; global theorem retained in its domain.
+- **Outcome:** Correctly predicts massless modes in its global-symmetry domain; it does not by itself construct massive gauge vectors.
 
 ### `R-STUECKELBERG-MASS`
 
@@ -68,7 +68,7 @@ Before the focal discovery (1964 BEH-mechanism papers), the case confronted a li
 | Pathway | Why attractive | Repair or failure | Status |
 |---|---|---|---|
 | Explicit Proca mass for weak vectors | Directly produces short range | Non-Abelian high-energy amplitudes and renormalizability fail without further structure | Retained only in low-energy effective descriptions |
-| Global spontaneous breaking | Generates ordered vacuum | Goldstone theorem leaves unwanted massless scalars | Correct for global symmetries, incomplete for weak gauge bosons |
+| Global spontaneous breaking | Supplies a broken-state field model | Goldstone theorem leaves massless scalars rather than a gauge-vector mass construction | Correct for global symmetries; a distinct local-gauge analysis is needed |
 | Stueckelberg vector mass | Restore gauge redundancy with a compensating scalar | Does not by itself generate the observed non-Abelian electroweak mass and coupling pattern | Retained in restricted gauge theories |
 | **Discovery/current: BEH gauge mechanism** | Gauge field absorbs a Goldstone mode, gaining longitudinal polarization and mass while a scalar remains | Renormalizability, \(W/Z\), precision data, Higgs-like scalar | Retained electroweak mechanism |
 
@@ -80,19 +80,100 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-GAUGE-SYMMETRY`, `A-SPONTANEOUS-BREAKING`, `A-GOLDSTONE`, `A-WEAK-RANGE`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+Available resources were gauge covariance (`A-GAUGE-SYMMETRY`), broken-state field models (`A-SPONTANEOUS-BREAKING`), and the global Goldstone result (`A-GOLDSTONE`). Short-range interaction phenomenology, including the weak-force range (`A-WEAK-RANGE`), motivated massive vectors; Englert–Brout explicitly discussed strong-interaction applications. Anderson's gauge/superconductor analogy and Abelian compensator ideas were also antecedents. The \(W/Z\) mass formulas, Yukawa fermion-mass relations, renormalizability proofs, and Higgs-boson measurement are later developments, not 1964 premises.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
 | `R-EXPLICIT-VECTOR-MASS` | A massive-gauge-boson model that inserts a Proca term \(m^2A_\mu A^\mu/2\) directly into the Lagrangian rather than generating the mass through a gauge-compatible vacuum and scalar field. | Destroys the gauge structure needed for high-energy consistency in non-Abelian theories. |
-| `R-GLOBAL-BREAKING-FOR-WEAK-MASS` | Applying spontaneous breaking of a global continuous symmetry directly to weak-boson mass generation. | See the full pathway record above. |
+| `R-GLOBAL-BROKEN-SYMMETRY` | Broken-global-symmetry field models and the Goldstone theorem. | Breaking a global continuous symmetry yielded a massless scalar mode, not a gauge-compatible mass for the vector field; the gauge case required separate analysis. |
 | `R-STUECKELBERG-MASS` | The 1938 Stueckelberg construction that introduces an additional compensating scalar degree of freedom so an Abelian vector field can be massive while retaining a gauge-like redundancy. | Straightforward non-Abelian extensions did not provide the economical electroweak symmetry-breaking structure later supplied by the BEH mechanism. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** Explicit mass reframed as vacuum-state effect. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified from pre-1964 gauge, scalar, and Goldstone resources. This is an auditable conceptual reconstruction of partly parallel 1964 papers, not the hidden reasoning of one author; the electroweak implementation and later empirical tests cannot justify the original transitions.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-BEH-01` | Short-range particle-interaction models favor massive vectors, but a direct non-Abelian gauge-field mass term damages local invariance. **Open question:** Can the vector spectrum change without inserting that term? |
+| `CS-BEH-02` | Scalar spontaneous breaking changes the ground state, yet a broken global continuous symmetry carries a massless mode. **Open question:** Does coupling the scalar to a local gauge field change the physical mode count? |
+| `CS-BEH-03` | A scalar with nonzero-amplitude ground state is coupled through a covariant derivative. **Open question:** What term appears when the kinetic energy is expanded around that state? |
+| `CS-BEH-04` | The expansion yields a vector mass scale and combines the would-be angular mode with the vector's longitudinal polarization. **Open question:** Is a physical scalar excitation left, and are degrees of freedom conserved? |
+| `CS-BEH-05` | A gauge-compatible massive-vector construction and, in some 1964 formulations, a surviving scalar mode are identified. **Open question:** Does this specific mechanism describe weak interactions? |
+| `CS-BEH-06` | The mechanism is a reusable architecture, not yet the completed electroweak model or its experimental confirmation. **Open question:** Which group, scalar representation, couplings, and tests will realize it? |
+
+##### `CT-BEH-01`: `CS-BEH-01` → `CS-BEH-02` — Reframe the mass problem as a spectrum problem
+
+- **Input model:** A gauge-organized particle interaction whose short-range application calls for massive vector states.
+- **Pressure:** An explicit vector mass spoils the local gauge form and leaves high-energy consistency unclear.
+- **Protected structure:** Gauge covariance and the empirical motivation for a finite-range interaction.
+- **Hidden assumption:** Mass must be supplied by a bare vector term.
+- **Operation / change type:** `reinterpretation` — Ask whether a nontrivial ground state can alter physical excitations.
+- **Output model:** A scalar symmetry-breaking candidate, constrained by the global Goldstone result.
+- **Local justification:** Broken-state field models and Goldstone's theorem were established resources before the 1964 gauge papers.
+- **Cost/uncertainty:** Global breaking alone creates a massless mode rather than the sought massive gauge-vector spectrum.
+- **Next question:** What changes when the symmetry is local rather than global?
+
+##### `CT-BEH-02`: `CS-BEH-02` → `CS-BEH-03` — Couple the broken-state scalar to a gauge field
+
+- **Input model:** A scalar with a nonzero-amplitude ground state and a massless gauge field.
+- **Pressure:** A global Goldstone mode is not the required massive-vector longitudinal mode.
+- **Protected structure:** Local gauge covariance and the scalar's dynamical degrees of freedom.
+- **Hidden assumption:** The global-symmetry particle count applies unchanged in a gauge theory.
+- **Operation / change type:** `enrichment` — Replace ordinary scalar derivatives with a gauge-covariant derivative.
+- **Output model:** A scalar–gauge system in which phase and vector fluctuations are coupled.
+- **Local justification:** Anderson's prior plasmon analogy and the independent 1964 papers motivated this route; Guralnik–Hagen–Kibble focused especially on why the global-charge premise of Goldstone's theorem need not apply to the gauge model.
+- **Cost/uncertainty:** A toy gauge model does not yet specify the physical weak group or scalar representation.
+- **Next question:** Does the scalar kinetic term generate a vector mass?
+
+##### `CT-BEH-03`: `CS-BEH-03` → `CS-BEH-04` — Read the mass from the covariant kinetic term
+
+- **Input model:** A covariantly coupled scalar expanded around a nonzero-amplitude ground state.
+- **Pressure:** Merely proposing a scalar does not demonstrate a consistent massive vector.
+- **Protected structure:** Gauge-covariant action and its physical degree count.
+- **Hidden assumption:** A gauge-compatible vector mass must be written as an explicit Proca term.
+- **Operation / change type:** `representation_shift` — Express scalar fluctuations as amplitude and phase and identify the resulting vector–phase combination.
+- **Output model:** A massive-vector mode whose longitudinal polarization is supplied by the would-be global Goldstone degree.
+- **Local justification:** Englert–Brout obtained a gauge-vector mass in lowest-order quantum perturbation theory around a broken vacuum (1964, pp. 321–322); Higgs exhibited the massive vector in linearized classical field equations (1964, p. 508). These are distinct, limited demonstrations, not an all-orders proof.
+- **Cost/uncertainty:** The phase is not a separately observed massless particle in this gauge realization; gauge fixing is not a physical breaking of redundancy.
+- **Next question:** What physical scalar content remains?
+
+##### `CT-BEH-04`: `CS-BEH-04` → `CS-BEH-05` — Count surviving excitations
+
+- **Input model:** Massive-vector spectrum from the scalar–gauge system.
+- **Pressure:** A viable mechanism must neither lose degrees of freedom nor require an unwanted massless scalar.
+- **Protected structure:** The original field degrees and gauge-invariant observables.
+- **Hidden assumption:** The missing global Goldstone mode has vanished without a physical account.
+- **Operation / change type:** `differentiation` — Separate the longitudinal vector polarization from radial scalar excitation.
+- **Output model:** A massive vector and, for the simple complex-scalar realization, a physical massive scalar.
+- **Local justification:** Higgs's 1964 paper displays a massive scalar excitation alongside the massive vector in its simple model (p. 508), while explicitly leaving the quantized-theory conclusion conjectural (p. 509). The independent papers overlap but differ in method and emphasis.
+- **Cost/uncertainty:** The scalar's mass and detailed couplings are model-dependent; not every 1964 paper made the same phenomenological claim.
+- **Next question:** Can the architecture be embedded in a realistic weak-interaction gauge theory?
+
+##### `CT-BEH-05`: `CS-BEH-05` → `CS-BEH-06` — Separate mechanism from application and proof
+
+- **Input model:** A gauge-compatible vector-mass mechanism in simple field models.
+- **Pressure:** A toy construction does not choose the electroweak group, matter representations, Yukawa values, or quantum consistency.
+- **Protected structure:** Gauge covariance and the derived mode-counting mechanism.
+- **Hidden assumption:** Solving the formal vector-mass puzzle already specifies a realistic weak-interaction theory and its scalar spectrum.
+- **Operation / change type:** `differentiation` — Separate the general gauge–scalar mass mechanism from any particular weak-interaction implementation.
+- **Output model:** A candidate transferable BEH mechanism whose gauge group, matter content, couplings, and empirical tests remain to be chosen.
+- **Local justification:** The independent 1964 papers demonstrate the mechanism in deliberately limited models; Higgs explicitly leaves its quantized-theory conclusion conjectural (p. 509), and none supplies a complete weak-interaction fermion assignment or fixes the scalar mass.
+- **Cost/uncertainty:** The mechanism does not fix all particle masses or establish that the minimal scalar sector is unique.
+- **Next question:** Which concrete realization yields independent mass and coupling relations?
+
+#### Formal consolidation
+
+The compact potential and Standard Model equations below are modern consolidation. The Abelian mode argument can illustrate the 1964 mechanism, but \(m_W\), \(m_Z\), and Yukawa relations belong to its later electroweak realization.
 
 For a complex scalar:
 
@@ -144,15 +225,33 @@ $$
 
 - `P-02` — **Permit a new representation, ontology, or mechanism:** Nonempty symmetry-breaking vacuum accepted
 
-- `P-03` — **Make the new structure generative:** Vacuum expectation value generates masses and couplings
+- `P-03` — **Make the new structure generative:** A chosen scalar vacuum links gauge-boson masses to specified couplings
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Spontaneous symmetry breaking in gauge theory). The case-specific unification was: Symmetry, vacuum structure, and particle mass unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+The 1964 papers established a mechanism in simple gauge-field models; applying it to the observed weak interaction and to fermion masses required further choices. The later Higgs-boson search tested a specific scalar-sector consequence, not every imaginable gauge-mass mechanism.
+
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes a new gauge realization worth testing, but a toy-model mass term does not license all observed masses. State the group, scalar representation, matter couplings, and failure condition before treating a target-domain match as evidence.
+
+#### `EG-BEH-01` — Transfer the mechanism to weak gauge bosons
+
+- **Source domain:** The 1964 scalar–gauge constructions demonstrate a formal massive-vector spectrum while preserving the underlying local gauge organization; they did not empirically establish weak-boson masses.
+- **Target domain:** A later electroweak \(SU(2)_L\times U(1)_Y\) model with specified scalar representation and matter assignments.
+- **Novel consequence:** A concrete realization links charged and neutral vector masses, mixing, and couplings rather than assigning unrelated masses to each weak mediator.
+- **Failure condition:** Once the model's group, scalar sector, and calibration inputs are fixed, reproducible \(W/Z\) masses or couplings incompatible with its linked relations disfavor that realization; adding fields or changing representations must be logged as a revised model.
+
+#### `EG-BEH-02` — Search for the scalar-sector consequence
+
+- **Source domain:** A simple complex-scalar gauge model yields a massive vector plus a radial scalar excitation; its scalar mass remains a free model parameter.
+- **Target domain:** Particle production and decay in a specified electroweak realization, far beyond the 1964 formal construction.
+- **Novel consequence:** A physical scalar with spin/parity and gauge-boson/fermion coupling patterns tied to the chosen symmetry-breaking field should be observable, although its exact mass is not fixed by the mechanism alone.
+- **Failure condition:** After specifying accessible mass range, production channels, backgrounds, and model couplings, persistent absence of the predicted scalar signatures or incompatible coupling ratios rejects that *specific* scalar realization, not every conceivable source of gauge-boson mass.
 
 **Patterns demonstrated:**
 
-- `P-03` — **Generate consequences rather than merely redescribe inputs:** Vacuum expectation value generates masses and couplings
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** A chosen scalar vacuum links gauge-boson masses to specified couplings
 
 - `P-04` — **Unify previously separated domains or phenomena:** Symmetry, vacuum structure, and particle mass unified
 
@@ -174,7 +273,7 @@ Pattern IDs are ordered by their typical first role in the reconstructed discove
 |---|---|---|---|---|
 | `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | Explicit mass reframed as vacuum-state effect | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
 | `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Nonempty symmetry-breaking vacuum accepted | [Transformative move](#transformative-move) |
-| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Vacuum expectation value generates masses and couplings | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | A chosen scalar vacuum links gauge-boson masses to specified couplings | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
 | `P-04` | Unify previously separated domains | Extrapolative unification | Symmetry, vacuum structure, and particle mass unified | [Extrapolative generalization](#extrapolative-generalization) |
 | `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Gauge symmetry retained rather than discarded | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
 | `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Boson masses and scalar couplings provide tests | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
@@ -186,10 +285,10 @@ This node serializes the result of the preceding reconstruction. It is a compact
 |---|---|
 | Node | `D-BEH-MECHANISM-1964` |
 | Focal date | 1964 BEH-mechanism papers |
-| Central claim | A gauge theory can preserve its underlying local symmetry while its vacuum state selects a nonzero field value. Gauge bosons then acquire longitudinal modes and mass; matter fields can acquire masses through Yukawa couplings. A physical scalar excitation remains. |
+| Central claim | A scalar–gauge system can retain local gauge organization while its physical spectrum contains massive vector modes instead of a separate massless Goldstone mode. Higgs's simple 1964 model also contains a massive scalar excitation. Fermion masses from Yukawa couplings belong to the later electroweak implementation, not to this 1964 result. |
 | Domain | Spontaneous symmetry breaking in gauge theory |
 | Epistemic status | Core mechanism of electroweak symmetry breaking; does not explain all mass |
-| Generative role | Vacuum expectation value generates masses and couplings |
+| Generative role | A chosen scalar vacuum links gauge-boson masses to specified couplings |
 | Retained structure | Gauge symmetry retained rather than discarded |
 
 Key formal relations, consolidated from the derivation above:
@@ -214,10 +313,13 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-BEH-01` — A surviving massive scalar in Higgs's gauge model
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Higgs Mechanism: Historical Knowledge Graph.
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION` for Higgs's specified 1964 scalar–gauge construction, not for every possible gauge-mass mechanism.
+- **Prediction date and authorship:** Higgs's October 1964 paper, printed pp. 508–509, derives a massive scalar excitation alongside the massive vector in its simple model and identifies incomplete scalar/vector multiplets as a characteristic prediction of this type of theory.
+- **Construction-data independence:** no scalar-particle observation was used to choose the 1964 model or its parameters. The scalar follows from the field content and linearized mode count; its mass was not predicted numerically.
+- **Derivation provenance and uncertainty:** the original argument quantizes linearized classical modes only conjecturally, as Higgs explicitly cautioned. Its illustrative \(U(1)\) and \(SU(3)\) models are not the later minimal \(SU(2)_L\times U(1)_Y\) electroweak model.
+- **Observable discriminator and outcome:** a concrete electroweak realization must specify a scalar sector and test its neutral-scalar production, decay, spin, and gauge-boson couplings. ATLAS and CMS observed a new boson near \(125\,\mathrm{GeV}\) in 2012, supporting the later minimal electroweak realization; this does not verify the original illustrative \(SU(3)\) spectrum or prove that all gauge-mass mechanisms leave the same scalar.
 
 ## Validation and explanatory gains
 
@@ -234,9 +336,9 @@ Most proton and neutron mass arises from QCD energy, not directly from Higgs cou
 
 ### The consistency problem behind the mechanism
 
-The short range of the weak interaction suggested heavy mediators, but inserting a mass term for a non-Abelian gauge field by hand spoils the gauge structure that controls high-energy behavior. A massive spin-1 particle has three physical polarizations, while a massless one has two. The theoretical problem was therefore not merely “where does mass come from?” It was how to supply the longitudinal polarization without losing the organizing and consistency benefits of a gauge theory.
+Short-range particle interactions suggested heavy mediators, but inserting a mass term for a non-Abelian gauge field by hand spoils the gauge structure that controls high-energy behavior. A massive spin-1 particle has three physical polarizations, while a massless one has two. The theoretical problem was therefore not merely “where does mass come from?” It was how to supply the longitudinal polarization without losing the organizing and consistency benefits of a gauge theory.
 
-Spontaneous symmetry breaking was familiar from condensed matter and global-symmetry field models. If a continuous global symmetry is spontaneously broken, Goldstone's theorem implies a massless scalar mode. Such a particle was not wanted in the proposed weak theory. Anderson's analysis of superconductivity helped show that long-range gauge forces alter this conclusion. In 1964, Brout and Englert; Higgs; and Guralnik, Hagen, and Kibble published independent relativistic gauge-theory formulations. Their papers overlap but are not identical, so the graph should retain multiple contribution nodes.
+Spontaneous symmetry breaking was familiar from condensed matter and global-symmetry field models. If a continuous global symmetry is spontaneously broken, Goldstone's theorem implies a massless scalar mode, rather than the sought massive-vector spectrum. Anderson's analysis of superconductivity helped show that long-range gauge forces alter this conclusion. In 1964, Brout and Englert; Higgs; and Guralnik, Hagen, and Kibble published independent relativistic gauge-theory formulations. Their papers overlap but are not identical, so the graph should retain multiple contribution nodes.
 
 ### Abelian model reconstructed
 
@@ -321,6 +423,18 @@ This connects low-energy muon decay to collider-scale masses. Nonminimal sectors
 ```text
 A-WEAK-RANGE --requires--> MASSIVE-WEAK-BOSONS
 R-EXPLICIT-VECTOR-MASS --conflicts-with--> A-GAUGE-SYMMETRY
+CS-BEH-01 --revised-by--> CT-BEH-01
+CT-BEH-01 --produces--> CS-BEH-02
+CS-BEH-02 --revised-by--> CT-BEH-02
+CT-BEH-02 --produces--> CS-BEH-03
+CS-BEH-03 --revised-by--> CT-BEH-03
+CT-BEH-03 --produces--> CS-BEH-04
+CS-BEH-04 --revised-by--> CT-BEH-04
+CT-BEH-04 --produces--> CS-BEH-05
+CS-BEH-05 --revised-by--> CT-BEH-05
+CT-BEH-05 --produces--> CS-BEH-06
+CS-BEH-06 --hands-off-to--> EG-BEH-01
+CS-BEH-06 --hands-off-to--> EG-BEH-02
 A-SPONTANEOUS-BREAKING --contributes-to--> D-BEH-MECHANISM-1964
 A-GOLDSTONE --reframed-by--> GAUGE-FIELD-ABSORPTION
 VACUUM-EXPECTATION-VALUE --generates--> W-Z-MASSES
@@ -332,6 +446,10 @@ D-BEH-MECHANISM-1964 --instantiates--> P-01
 
 ## Sources
 
+- François Englert and Robert Brout, [“Broken Symmetry and the Mass of Gauge Vector Mesons”](https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.13.321), *Physical Review Letters* 13 (1964), pp. 321–322 checked for the lowest-order polarization argument and its stated all-orders caveat.
+- Peter W. Higgs, [“Broken Symmetries and the Masses of Gauge Bosons”](https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.13.508), *Physical Review Letters* 13 (1964), pp. 508–509 checked for the linearized model, residual scalar, and quantum-theory caveat.
+- ATLAS Collaboration, [2012 observation of a new particle](https://arxiv.org/abs/1207.7214); CMS Collaboration, [2012 observation of a new boson](https://arxiv.org/abs/1207.7235). These are later tests of an electroweak scalar realization, not evidence available in 1964.
+- Gerald S. Guralnik, Carl R. Hagen, and Thomas W. B. Kibble, [“Global Conservation Laws and Massless Particles”](https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.13.585), *Physical Review Letters* 13 (1964), pp. 585–587 checked for the global-charge qualification of Goldstone's theorem and the soluble gauge example.
 - CERN, [“The origins of the Brout–Englert–Higgs mechanism”](https://home.web.cern.ch/science/physics/origins-brout-englert-higgs-mechanism/).
 - CERN, [“The Higgs Boson—How Do Particles Get Mass?”](https://home.cern/science/physics/higgs-boson).
 - Nobel Prize, [The 2013 Physics Prize](https://www.nobelprize.org/prizes/physics/2013/summary/).

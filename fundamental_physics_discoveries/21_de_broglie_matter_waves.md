@@ -17,7 +17,7 @@ De Broglie proposed that the wave–quantum relation known for radiation should 
 
 ## Historical problem
 
-Before the focal discovery (1923 notes; 25 November 1924 thesis defense), the case confronted a linked set of pressures: Matter is particulate; light and fields are wave-like; Planck, Einstein and Compton show discrete radiation exchange. The pathways `R-CLASSICAL-MATTER-PARTICLES-ONLY`, `R-WAVES-REQUIRE-MATERIAL-MEDIUM`, `R-BOHR-SOMMERFELD-QUANTIZATION-AS-POSTULATE`, `R-RADIATION-DUALITY-WITHOUT-MATTER-RECIPROCITY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Quantum foundations, matter-wave kinematics, electron diffraction, and the transition from old quantum theory to wave mechanics was to construct a more generative account without importing later validation evidence into the original inference.
+By 1923, wave optics coexisted with Planck–Einstein radiation quanta and Compton's momentum-transfer result, while the Bohr–Sommerfeld rules selected atomic motions without explaining why integer conditions should hold. De Broglie's question was whether the wave–quantum pairing could apply reciprocally to matter: if energy and momentum belong to a particle, could frequency and phase belong to it as well? Relativity constrained how that phase could transform; a wave whose phase closes around a bound orbit offered a route from phase coherence to old quantum conditions. This was a proposal developed in the 1923 notes and 1924 thesis, not an inference from the electron-diffraction experiments of 1927 or from Schrödinger's 1926 equation. Both later developments tested and reshaped the proposal; they should not be projected into its initial evidential setting.
 
 ## Time slices
 
@@ -117,14 +117,95 @@ The admissible pre-discovery input nodes are `A-PLANCK-EINSTEIN`, `A-PHOTON-MOME
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-CLASSICAL-MATTER-PARTICLES-ONLY` | A mechanical framework in which matter consists exclusively of localized corpuscles following definite trajectories, with state specified by positions and momenta and with no wavelength, phase, or self-interference associated with a freely moving particle. | See the full pathway record above. |
-| `R-WAVES-REQUIRE-MATERIAL-MEDIUM` | The doctrine that every genuine wave must be a deformation or oscillation of a material carrier, analogous to sound in air or elastic waves in a solid, so a matter wave would require a mechanical ether or literal distributed material substance. | See the full pathway record above. |
-| `R-BOHR-SOMMERFELD-QUANTIZATION-AS-POSTULATE` | The old quantum theory in which electrons occupy selected classical orbits and allowed motions satisfy imposed action conditions such as \(\oint p_i\,dq_i=n_i h\), without a general wave-phase mechanism explaining why nonintegral orbits are excluded. | See the full pathway record above. |
-| `R-RADIATION-DUALITY-WITHOUT-MATTER-RECIPROCITY` | An asymmetric quantum picture in which electromagnetic radiation can exhibit both interference and localized quanta, but massive particles remain exclusively corpuscular and receive no reciprocal frequency or wavelength relation. | See the full pathway record above. |
+| `R-CLASSICAL-MATTER-PARTICLES-ONLY` | A mechanical framework in which matter consists exclusively of localized corpuscles following definite trajectories, with state specified by positions and momenta and with no wavelength, phase, or self-interference associated with a freely moving particle. | A trajectory alone supplied no phase condition to explain why only selected atomic orbits satisfy the old quantum rules; electron diffraction was a later test, not a 1923 input. |
+| `R-WAVES-REQUIRE-MATERIAL-MEDIUM` | The doctrine that every genuine wave must be a deformation or oscillation of a material carrier, analogous to sound in air or elastic waves in a solid, so a matter wave would require a mechanical ether or literal distributed material substance. | It made a proposed matter-wave phase depend on an additional unspecified carrier rather than deriving it from the particle's energy and momentum. |
+| `R-BOHR-SOMMERFELD-QUANTIZATION-AS-POSTULATE` | The old quantum theory in which electrons occupy selected classical orbits and allowed motions satisfy imposed action conditions such as \(\oint p_i\,dq_i=n_i h\), without a general wave-phase mechanism explaining why nonintegral orbits are excluded. | Imposed action integers reproduced selected spectra but did not explain phase closure or consistently handle many-electron systems and transitions. |
+| `R-RADIATION-DUALITY-WITHOUT-MATTER-RECIPROCITY` | An asymmetric quantum picture in which electromagnetic radiation can exhibit both interference and localized quanta, but massive particles remain exclusively corpuscular and receive no reciprocal frequency or wavelength relation. | Treating duality as unique to light left the analogous energy–momentum relations for massive particles unused and orbit quantization unexplained. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** “Why are only some orbits allowed?” becomes “Which matter-wave phases satisfy the boundary condition?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by information available at the focal discovery date; later confirmations, modern notation, and rival branches must be distinguished from contemporary inputs.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-DB-01` | Light has wave phenomena and energy–momentum quanta; material particles have momentum but no assigned phase. **Open question:** Why should the dual description stop at radiation? |
+| `CS-DB-02` | A massive particle may carry or be associated with an intrinsic periodic phenomenon of frequency set by its rest energy. **Open question:** How can that periodicity be reconciled with relativity? |
+| `CS-DB-03` | A phase wave can remain in harmony with the particle's internal phase in every inertial frame. **Open question:** What wavelength corresponds to moving momentum? |
+| `CS-DB-04` | The associated wave has wavelength h/p and phase velocity distinct from the particle velocity. **Open question:** Can this relation explain old orbit integers? |
+| `CS-DB-05` | Whole-cycle phase closure around a bound orbit reproduces an action quantization condition. **Open question:** Is this more than a reinterpretation of known atomic spectra? |
+| `CS-DB-06` | The same wavelength implies possible diffraction of free electrons; a crystal is a later concrete test geometry. **Open question:** Will an independent beam experiment find the predicted momentum-dependent wavelength? |
+
+##### `CT-DB-01`: `CS-DB-01` → `CS-DB-02` — Reverse the radiation–matter asymmetry
+
+- **Input model:** Light quanta have energy and momentum while ordinary electrons are described as particles with no wavelength.
+- **Pressure:** The accepted radiation relations invite reciprocal use, and old atomic orbit integers remain imposed.
+- **Protected structure:** Particle energy–momentum accounting and optical interference phenomena.
+- **Hidden assumption:** Wave association belongs only to electromagnetic radiation.
+- **Operation / change type:** `generalization` — Associate a periodic phenomenon with a material quantum, using its rest energy to set a frequency.
+- **Output model:** A candidate periodicity for massive particles, not yet a laboratory wavelength.
+- **Local justification:** Planck–Einstein relations and relativistic rest energy were available by de Broglie's 1923 notes.
+- **Cost/uncertainty:** The nature of the periodic phenomenon and its physical carrier remain unsettled.
+- **Next question:** How does the phase transform for a moving particle?
+
+##### `CT-DB-02`: `CS-DB-02` → `CS-DB-03` — Require relativistic phase harmony
+
+- **Input model:** A moving particle is assigned an internal clock-like periodicity.
+- **Pressure:** Time dilation and an observer-dependent energy frequency appear to yield different rates.
+- **Protected structure:** Special relativity and the quantum energy-frequency relation.
+- **Hidden assumption:** An internal frequency and an accompanying wave must have identical simple time transformation.
+- **Operation / change type:** `coalescence` — Pair the particle phase with a propagating phase wave whose phase agrees along the particle motion.
+- **Output model:** A relativistically coordinated particle–wave association.
+- **Local justification:** De Broglie's 1923–1924 writings explicitly use the harmony of phases to connect periodicity and wave propagation.
+- **Cost/uncertainty:** Phase velocity may exceed c, requiring separation from energy or signal velocity.
+- **Next question:** Which wave-vector magnitude matches particle momentum?
+
+##### `CT-DB-03`: `CS-DB-03` → `CS-DB-04` — Convert momentum into wavelength
+
+- **Input model:** A relativistic phase wave associated with a moving material quantum.
+- **Pressure:** The association needs a measurable spatial periodicity rather than only an internal-frequency analogy.
+- **Protected structure:** Relativistic energy–momentum and the same universal h used for radiation.
+- **Hidden assumption:** A massive particle's phase has no momentum-dependent spatial gradient.
+- **Operation / change type:** `representation_shift` — Relate energy and momentum to temporal and spatial phase gradients.
+- **Output model:** Frequency E/h and wavelength h/p for free matter; phase and particle velocities need not coincide.
+- **Local justification:** The relation follows from de Broglie's relativistic phase construction, before electron-diffraction measurements.
+- **Cost/uncertainty:** It is kinematics, not a complete dynamics or measurement theory.
+- **Next question:** Does this wavelength explain old quantum orbit restrictions?
+
+##### `CT-DB-04`: `CS-DB-04` → `CS-DB-05` — Interpret integer action as phase closure
+
+- **Input model:** A bound electron is associated with a phase of wavelength h/p along its path.
+- **Pressure:** Bohr–Sommerfeld allowed orbits use integer action conditions without a general phase reason.
+- **Protected structure:** Successful hydrogenic quantum numbers and classical action in a semiclassical limit.
+- **Hidden assumption:** Orbit integers are arbitrary selection labels unrelated to a wave boundary condition.
+- **Operation / change type:** `reinterpretation` — Require the accumulated phase around a closed path to return to itself.
+- **Output model:** An integer-cycle condition that recovers an action quantization rule in the idealized orbit picture.
+- **Local justification:** Old orbit rules and wave phase closure were both available before the 1924 thesis defense.
+- **Cost/uncertainty:** This does not solve many-electron dynamics or prove literal classical electron paths.
+- **Next question:** What consequence is independent of the already known atomic lines?
+
+##### `CT-DB-05`: `CS-DB-05` → `CS-DB-06` — Seek a free-particle diffraction discriminator
+
+- **Input model:** An electron with measured momentum has a definite candidate wavelength h/p.
+- **Pressure:** Reinterpreting old orbit integers alone underdetermines the wave hypothesis.
+- **Protected structure:** Electron charge and momentum measurement, plus known wave-diffraction geometry.
+- **Hidden assumption:** Electron beams can scatter only as point corpuscles, with no phase-coherent angular maxima.
+- **Operation / change type:** `enrichment` — Extend the wavelength to free electrons and propose diffraction as an independent discriminator.
+- **Output model:** A prospective free-electron wave test; crystal-angle calculations are a subsequent test design, not an established 1923–1924 step in this trace.
+- **Local justification:** De Broglie's later first-person account recalls proposing electron diffraction at his 1924 thesis defense; the thesis itself establishes the matter-wave relation. Crystal-scattering operationalization was developed subsequently, before the 1927 observations; those observations are validation, not inputs.
+- **Cost/uncertainty:** Source coherence, crystal quality, and interaction details affect whether the pattern can be observed.
+- **Next question:** Will the observed angle track independently measured momentum as h/p predicts?
+
+#### Formal consolidation
+
+The equations below put the 1923–1924 hypothesis in modern four-vector and wave-packet notation. The later Schrödinger equation and 1927 diffraction results are not part of de Broglie's original construction.
 
 De Broglie's proposal can be written
 
@@ -197,7 +278,23 @@ when relativistic corrections are negligible.
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Quantum foundations, matter-wave kinematics, electron diffraction, and the transition from old quantum theory to wave mechanics). The case-specific unification was: Relativity, radiation quanta, atomic quantization, and wave phase are unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain does not establish the target-domain claim; state the novel consequence and a possible failure condition before using later evidence as validation.
+
+#### `EG-DB-01` — Extend phase from bound orbits to free-electron scattering
+
+- **Source domain:** Relativistic phase association and old atomic action conditions.
+- **Target domain:** Free electrons scattered by crystals with independently known lattice spacing.
+- **Novel consequence:** Coherent angular maxima should correspond to an electron wavelength h/p, shifting predictably with beam momentum.
+- **Failure condition:** Adequately coherent electron beams showing no wavelength-dependent diffraction, or persistent angles inconsistent with h/p after interaction corrections, would defeat the extension.
+
+#### `EG-DB-02` — Test universality for other material particles
+
+- **Source domain:** The proposed massive-electron phase–momentum relation.
+- **Target domain:** Other freely propagating material particles, not only electrons.
+- **Novel consequence:** Their interference or diffraction wavelength should also scale inversely with independently measured momentum.
+- **Failure condition:** A well-controlled material species with reproducible phase-coherent diffraction at a wavelength incompatible with h/p would challenge the universal claim.
 
 **Patterns demonstrated:**
 
@@ -262,10 +359,13 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-DB-01` — Free-electron diffraction at wavelength h/p
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** De Broglie Matter Waves and Wave–Particle Duality: Historical Knowledge Graph.
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION`.
+- **Prediction date and provenance:** De Broglie's 1923 notes and 1924 thesis established the matter-wave relation; his later first-person account recalls suggesting electron diffraction at the November 1924 defense. The specific crystal-angle test was operationalized later.
+- **Independence from construction data:** Old atomic quantization and radiation relations motivated the hypothesis; the 1927 crystal-scattering patterns were not available when it was proposed.
+- **Observable discriminator:** Electron diffraction should reveal a wavelength h/p; a later crystal test can compare independently measured momentum, lattice spacing, and scattering angles.
+- **Later outcome:** Davisson–Germer and G. P. Thomson/Reid observed electron diffraction in 1927; their results supported the wavelength relation without uniquely deciding the wave ontology.
 
 ## Validation and explanatory gains
 
@@ -413,6 +513,18 @@ No separate supplemental note block was present before this schema migration. Ca
 
 ```text
 A-PLANCK-EINSTEIN --is-reciprocally-extended-by--> D-DE-BROGLIE-MATTER-WAVES-1924
+CS-DB-01 --revised-by--> CT-DB-01
+CT-DB-01 --produces--> CS-DB-02
+CS-DB-02 --revised-by--> CT-DB-02
+CT-DB-02 --produces--> CS-DB-03
+CS-DB-03 --revised-by--> CT-DB-03
+CT-DB-03 --produces--> CS-DB-04
+CS-DB-04 --revised-by--> CT-DB-04
+CT-DB-04 --produces--> CS-DB-05
+CS-DB-05 --revised-by--> CT-DB-05
+CT-DB-05 --produces--> CS-DB-06
+CS-DB-06 --hands-off-to--> EG-DB-01
+CS-DB-06 --hands-off-to--> EG-DB-02
 A-SPECIAL-RELATIVITY --constrains--> MATTER-WAVE-FOUR-PHASE
 A-BOHR-SOMMERFELD --is-reframed-by--> PHASE-CLOSURE
 D-DE-BROGLIE-MATTER-WAVES-1924 --predicts--> ELECTRON-DIFFRACTION
@@ -425,8 +537,11 @@ D-DE-BROGLIE-MATTER-WAVES-1924 --instantiates--> P-01
 
 ## Sources
 
+- Louis de Broglie, [*Recherches sur la théorie des quanta* (1924 thesis; facsimile reprint)](https://fnorio.com/0223de_Broglie_1924/de_Broglie_1924.pdf); abstract and Chapters I–III anchor intrinsic periodicity, relativistic phase, and orbit resonance. The former University of Barcelona PDF was unavailable when checked.
+- Louis de Broglie, [“Waves and Quanta” (1923)](https://www.nature.com/articles/112540a0).
 - Nobel Prize, [The 1929 Physics Prize awarded to Louis de Broglie for the wave nature of electrons](https://www.nobelprize.org/prizes/physics/1929/summary/).
 - Louis de Broglie, [“The Wave Nature of the Electron,” Nobel lecture](https://www.nobelprize.org/uploads/2016/04/broglie-lecture.pdf).
+- Louis de Broglie, [1970 first-person account of the 1924 thesis-defense diffraction suggestion](https://fondationlouisdebroglie.org/LDB-oeuvres/LDB-oeuvres-e/TAP1970_Revue.pdf); retrospective testimony, not a contemporary written experiment protocol.
 - University of Barcelona, [digital record and scan of de Broglie's *Recherches sur la théorie des quanta*](https://www.ub.edu/hcub/hfq/node/207).
 - C. Davisson and L. H. Germer, [“Diffraction of Electrons by a Crystal of Nickel”](https://journals.aps.org/pr/abstract/10.1103/PhysRev.30.705), *Physical Review* (1927).
 - American Physical Society, [“Electrons Act Like Waves”](https://physics.aps.org/story/v17/st17), historical account of the Davisson–Germer and Thomson experiments.

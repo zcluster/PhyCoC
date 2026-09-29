@@ -40,7 +40,7 @@ for (const [file, record] of Object.entries(chronology)) {
     `**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above ` +
     `that originated before the focal discovery (${record.discovery[0]}). ` +
     `The proposed/active period is stored in each pathway record.`;
-  if (!text.includes(chronologyNote)) {
+  if (!text.includes(`${ledgerHeading}\n\n**Chronology rule:**`)) {
     text = text.replace(ledgerHeading, `${ledgerHeading}\n\n${chronologyNote}`);
   }
 

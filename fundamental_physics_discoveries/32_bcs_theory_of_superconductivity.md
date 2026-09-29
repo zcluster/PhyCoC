@@ -17,7 +17,7 @@ BCS theory explains conventional superconductivity as a collective quantum state
 
 ## Historical problem
 
-Before the focal discovery (December 1957 full BCS theory), the case confronted a linked set of pressures: Mercury loses measurable resistance at low temperature; Perfect conductivity alone cannot explain magnetic-field expulsion. The pathways `R-PERFECT-CONDUCTOR-ONLY`, `R-CLASSICAL-ELECTRON-ORDERING`, `R-LONDON-PHENOMENOLOGY-AS-MICROSCOPIC-THEORY`, `R-BOSONIC-ELECTRON-MOLECULES` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Quantum many-body physics, superconductivity, emergent quasiparticles, and broken-symmetry phases was to construct a more generative account without importing later validation evidence into the original inference.
+By the mid-1950s, zero resistance, the Meissner effect, and the isotope dependence of transition temperature were distinct constraints. London and Ginzburg–Landau theory organized macroscopic electrodynamics, while the isotope effect made lattice motion a plausible microscopic ingredient; neither alone supplied a many-electron ground state. Cooper's 1956 calculation showed that an arbitrarily weak attraction destabilizes an ideal filled Fermi sea in a two-electron channel. The open step was to turn that single-pair instability into a self-consistent state of *many overlapping pairs* and derive spectral, thermal, and electromagnetic consequences without treating later confirmations as construction inputs.
 
 ## Time slices
 
@@ -110,20 +110,101 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-FERMI-SEA`, `A-PHONONS`, `A-ISOTOPE-EFFECT`, `A-MEISSNER`, `A-LONDON-GL`, `A-COOPER-INSTABILITY`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+Available inputs were the Fermi sea and exclusion (`A-FERMI-SEA`), lattice-mediated attraction suggested by phonons and the isotope effect (`A-PHONONS`, `A-ISOTOPE-EFFECT`), the Meissner constraint and London/GL response (`A-MEISSNER`, `A-LONDON-GL`), and Cooper's 1956 two-electron instability (`A-COOPER-INSTABILITY`). These do not by themselves establish the BCS many-body state. Tunneling, flux-quantum, and later unconventional-superconductor results belong downstream.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-PERFECT-CONDUCTOR-ONLY` | The view that a superconductor is simply an ordinary conductor with resistivity exactly equal to zero, so magnetic flux present before cooling should remain frozen according to ideal classical conductivity. | See the full pathway record above. |
-| `R-CLASSICAL-ELECTRON-ORDERING` | A family of proposals in which electrons form a classical ordered arrangement, current filament, rigid lattice, or other essentially single-particle configuration that suppresses collisions without a coherent fermionic pair state. | See the full pathway record above. |
-| `R-LONDON-PHENOMENOLOGY-AS-MICROSCOPIC-THEORY` | The London equations relate supercurrent and electromagnetic fields through a penetration depth, successfully encoding perfect diamagnetism but without specifying the microscopic many-electron state that produces the stiffness. | See the full pathway record above. |
-| `R-BOSONIC-ELECTRON-MOLECULES` | A pre-BCS idea that electrons form tightly bound, spatially compact bosonic molecules which then undergo a Bose-like condensation, analogous to independent composite particles. | See the full pathway record above. |
+| `R-PERFECT-CONDUCTOR-ONLY` | The view that a superconductor is simply an ordinary conductor with resistivity exactly equal to zero, so magnetic flux present before cooling should remain frozen according to ideal classical conductivity. | Zero resistance predicts frozen prior flux, whereas the Meissner transition expels the field as an equilibrium phase property. |
+| `R-CLASSICAL-ELECTRON-ORDERING` | A family of proposals in which electrons form a classical ordered arrangement, current filament, rigid lattice, or other essentially single-particle configuration that suppresses collisions without a coherent fermionic pair state. | Collision avoidance alone did not account together for a quasiparticle gap, isotope dependence, heat-capacity anomaly, and Meissner response. |
+| `R-LONDON-PHENOMENOLOGY-AS-MICROSCOPIC-THEORY` | The London equations relate supercurrent and electromagnetic fields through a penetration depth, successfully encoding perfect diamagnetism but without specifying the microscopic many-electron state that produces the stiffness. | The equations parameterized screening but did not derive the gap, transition temperature, or stiffness from electron interactions. |
+| `R-BOSONIC-ELECTRON-MOLECULES` | A pre-BCS idea that electrons form tightly bound, spatially compact bosonic molecules which then undergo a Bose-like condensation, analogous to independent composite particles. | Assuming compact preformed molecules did not explain how weak attraction near a Fermi surface yields large overlapping pairs, as the later BCS construction did. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** “How are collisions eliminated?” becomes “Why is the Fermi sea unstable, and what quasiparticles result?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by evidence and methods available by the 1957 construction; this is an auditable reconstruction, not a transcript of the BCS collaborators' hidden reasoning. Single-pair, collective-state, and later-test claims remain distinct.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-BCS-01` | Zero resistance, Meissner expulsion, and a lattice-sensitive transition are known; macroscopic equations lack a microscopic electron state. **Open question:** Can electrons near the Fermi surface acquire an effective attraction? |
+| `CS-BCS-02` | Phonon exchange can supply an attractive energy window despite screened repulsion. **Open question:** Does a filled Fermi sea remain stable under this weak attraction? |
+| `CS-BCS-03` | Cooper's idealized 1956 two-electron problem yields a bound correlation above the Fermi sea. **Open question:** How can an extensive number of overlapping pairs coexist? |
+| `CS-BCS-04` | A coherent many-pair variational state mixes empty and occupied opposite-momentum pair configurations. **Open question:** What self-consistent excitation structure follows? |
+| `CS-BCS-05` | The gap equation and electron–hole quasiparticles organize a lower-energy paired phase. **Open question:** Does this phase recover thermal and electromagnetic behavior without new ad hoc mechanisms? |
+| `CS-BCS-06` | Weak-coupling BCS ties pairing, gap, thermodynamics, and coherent electrodynamics together in its stated regime. **Open question:** Which material or many-body domains preserve the mechanism? |
+
+##### `CT-BCS-01`: `CS-BCS-01` → `CS-BCS-02` — Make lattice dynamics a candidate interaction
+
+- **Input model:** A normal Fermi sea, superconducting phenomenology, and an isotope-dependent transition temperature.
+- **Pressure:** Perfect-conductor or London equations do not identify the microscopic attractive channel.
+- **Protected structure:** Fermionic exclusion, metallic electron states, and the observed magnetic response.
+- **Hidden assumption:** The electron–electron interaction is only a bare repulsion with no retarded attractive component.
+- **Operation / change type:** `enrichment` — Include a phonon-mediated effective interaction in a limited energy window.
+- **Output model:** A plausible net attraction near the Fermi surface, conditional on overcoming screened repulsion.
+- **Local justification:** The 1957 BCS paper explicitly starts from an attractive virtual-phonon exchange below the phonon-energy scale; the isotope effect was already known.
+- **Cost/uncertainty:** Isotope evidence implicates lattice motion but does not uniquely prove the detailed pairing interaction in every material.
+- **Next question:** Is weak attraction sufficient to destabilize the normal Fermi sea?
+
+##### `CT-BCS-02`: `CS-BCS-02` → `CS-BCS-03` — Test the normal sea's pair stability
+
+- **Input model:** A degenerate Fermi sea and weak attraction between two added electrons near it.
+- **Pressure:** A small interaction might seem too weak to create a new phase.
+- **Protected structure:** Pauli blocking and the Fermi-surface density of available pair states.
+- **Hidden assumption:** A bound pair needs strong vacuum-like attraction.
+- **Operation / change type:** `reinterpretation` — Solve the pair problem *relative to the filled sea*, not in vacuum.
+- **Output model:** Cooper's 1956 pair instability in the idealized channel.
+- **Local justification:** Cooper's original two-electron calculation above an inert Fermi sea obtains a bound state for arbitrarily weak net attraction in its simplified shell model, while expressly deferring the interacting many-body problem (1956, pp. 1189–1190).
+- **Cost/uncertainty:** A two-electron instability is not yet a macroscopic superconducting ground state.
+- **Next question:** What state accommodates many overlapping correlated pairs?
+
+##### `CT-BCS-03`: `CS-BCS-03` → `CS-BCS-04` — Replace isolated molecules with coherent pair occupancy
+
+- **Input model:** Cooper instability and a macroscopic density of electrons near the Fermi surface.
+- **Pressure:** Independent tightly bound molecules misrepresent the weak-coupling, spatially overlapping regime.
+- **Protected structure:** Fermionic antisymmetry and opposite-momentum/spin correlations.
+- **Hidden assumption:** Many pairs can be assembled as independent localized bosons.
+- **Operation / change type:** `representation_shift` — Use a coherent variational superposition of empty and occupied pair states across momenta.
+- **Output model:** The BCS many-electron trial state.
+- **Local justification:** Bardeen, Cooper, and Schrieffer construct a coherent linear combination of opposite-momentum pair occupancies rather than a gas of localized molecules (1957, pp. 1179–1181).
+- **Cost/uncertainty:** The simple ansatz is a weak-coupling mean-field approximation, not an exact solution for arbitrary interactions.
+- **Next question:** What energy minimum and excitation spectrum does this state imply?
+
+##### `CT-BCS-04`: `CS-BCS-04` → `CS-BCS-05` — Solve for the gap and quasiparticles
+
+- **Input model:** A coherent pair ansatz and an attractive interaction kernel.
+- **Pressure:** A lower-energy trial state alone does not predict excitation or transition behavior.
+- **Protected structure:** Particle-number conservation of the underlying Hamiltonian and fermionic degrees of freedom, even though the convenient trial product state initially mixes particle-number sectors.
+- **Hidden assumption:** Excitations must be independent bare electrons.
+- **Operation / change type:** `enrichment` — Minimize the variational energy self-consistently and reorganize excitations as electron–hole mixtures.
+- **Output model:** A nonzero gap in the paired regime and Bogoliubov-type quasiparticle spectrum.
+- **Local justification:** The 1957 paper derives a correlated ground state, excitation gap, and thermodynamic consequences from the same interaction.
+- **Cost/uncertainty:** Gap size and universality depend on coupling, symmetry, dimensionality, and approximation regime.
+- **Next question:** Can the same state account for thermodynamic and electromagnetic constraints?
+
+##### `CT-BCS-05`: `CS-BCS-05` → `CS-BCS-06` — Demand multiple consequences from one paired state
+
+- **Input model:** A self-consistent gapped pair state with a coherent phase.
+- **Pressure:** Explaining a gap alone would leave the Meissner response and heat-capacity behavior unaccounted for.
+- **Protected structure:** Existing London/GL phenomenology as a long-distance target, not a discarded failure.
+- **Hidden assumption:** Each superconducting signature requires an unrelated microscopic mechanism.
+- **Operation / change type:** `coalescence` — Connect the paired spectrum and phase coherence to thermal and electromagnetic response.
+- **Output model:** A unified weak-coupling account of conventional superconductivity, with stated material limits.
+- **Local justification:** The 1957 BCS paper works out excitation, heat capacity, and electrodynamic properties from the paired construction.
+- **Cost/uncertainty:** Agreement for conventional materials does not establish phonon pairing in every superconductor; several later tests were unavailable in 1957.
+- **Next question:** Which new observables or systems can discriminate this mechanism?
+
+#### Formal consolidation
+
+The reduced Hamiltonian and notation below express the BCS result compactly. They should not collapse the 1956 two-electron instability, 1957 many-body ansatz, and later response tests into one historical step.
 
 The reduced pairing Hamiltonian is
 
@@ -152,7 +233,11 @@ c_{-\mathbf k\downarrow}^\dagger
 \right)|0\rangle,
 $$
 
-with \(|u_{\mathbf k}|^2+|v_{\mathbf k}|^2=1\). Define
+with \(|u_{\mathbf k}|^2+|v_{\mathbf k}|^2=1\).
+
+The displayed product is not itself a fixed-particle-number state. BCS first used it as a variational convenience, then projected onto a fixed pair number, whose bulk averages agree in the large-system limit (1957, pp. 1180–1181).
+
+Define
 
 $$
 \Delta_{\mathbf k}
@@ -195,7 +280,25 @@ The exponential nonanalyticity shows why arbitrarily weak attraction can cause a
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Quantum many-body physics, superconductivity, emergent quasiparticles, and broken-symmetry phases). The case-specific unification was: Fermi statistics, lattice dynamics, thermodynamics, and electrodynamics are unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+The paired-state mechanism was constructed to explain known superconducting constraints. Its sharper test is whether the same interaction and gap account for further observables without independently tuning each one. Transfer to other fermion systems is a separate, more speculative extension.
+
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes extension worth testing but does not establish a universal phonon mechanism. Fix interaction assumptions and approximation regime before treating a new observable or material as an independent test.
+
+#### `EG-BCS-01` — Predict new spectral and thermodynamic tests
+
+- **Source domain:** The 1957 weak-coupling paired-state model was motivated by superconductivity, isotope dependence, and existing thermodynamic/electromagnetic clues; these are not independent postdictions.
+- **Target domain:** Spectroscopic tunneling and temperature-dependent responses not used to choose the simple pairing model.
+- **Novel consequence:** A quasiparticle excitation threshold and linked weak-coupling relations among zero-temperature gap, critical temperature, and heat-capacity behavior, within an approximately isotropic pairing regime.
+- **Failure condition:** After independently fixing \(T_c\), material regime, and instrument broadening, reproducible spectra or thermodynamics incompatible with the same gap structure disfavor that simple BCS realization; strong coupling or anisotropic pairing requires a documented revised model.
+
+#### `EG-BCS-02` — Test pair coherence outside ordinary metals
+
+- **Source domain:** The Fermi-surface instability and coherent-pair construction are established as a theoretical mechanism for weakly coupled conventional superconductors, not a proven law of every fermion fluid.
+- **Target domain:** Other degenerate fermion systems with an identified attractive channel, such as neutral Fermi gases or nuclear pairing; this is a later cross-domain generalization.
+- **Novel consequence:** If the channel supports coherent pairing, an excitation gap and collective phase response should appear with scaling tied to the new system's density and interaction rather than metallic phonon parameters.
+- **Failure condition:** In a specified weak-coupling regime with independently established attraction, persistent absence of the predicted pairing signatures after finite-temperature and fluctuation checks defeats that particular transfer. It does not refute BCS in conventional metals.
 
 **Patterns demonstrated:**
 
@@ -276,10 +379,13 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-BCS-01` — Weak-coupling gap-to-transition-temperature ratio
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** BCS Theory of Superconductivity: Historical Knowledge Graph.
+- **Classification:** `NOVEL-THEORETICAL-CONSTRAINT` of the specified weak-coupling BCS model, not a prediction that an excitation gap exists at all.
+- **Prediction date and authorship:** Bardeen, Cooper, and Schrieffer (1957), Eq. (3.30), printed p. 1186, obtain \(2\Delta(0)/(k_BT_c)\approx3.50\) and state that their corresponding-states argument predicts the same ratio across superconductors. The ideal weak-coupling expression is commonly rounded to \(3.52\) in modern notation.
+- **Construction-data independence:** Evidence for a gap and low-temperature exponential heat capacity already helped motivate the theory. The *numerical ratio*, however, follows after the model's gap and \(T_c\) equations are combined; \(T_c\) may be measured, but the ratio has no additional material-specific fit parameter in that weak-coupling calculation.
+- **Derivation provenance and uncertainty:** The number assumes the paper's simplified attractive interaction and weak-coupling limit. Strong electron–phonon coupling, anisotropy, and unconventional pairing can shift the ratio; the original universal wording must be read within that model's domain.
+- **Observable discriminator and outcome:** Compare independently measured low-temperature gap and \(T_c\) for suitable conventional weak-coupling samples; Giaever's 1960 tunneling work supplied a more direct gap probe. This audit verifies the original quantitative deduction and the later independent measurement method, not a material-by-material confirmation of the \(3.50\) ratio.
 
 ## Validation and explanatory gains
 
@@ -381,6 +487,18 @@ No separate supplemental note block was present before this schema migration. Ca
 ```text
 A-ISOTOPE-EFFECT --supports--> PHONON-PAIRING-CLUE
 A-COOPER-INSTABILITY --enables--> D-BCS-1957
+CS-BCS-01 --revised-by--> CT-BCS-01
+CT-BCS-01 --produces--> CS-BCS-02
+CS-BCS-02 --revised-by--> CT-BCS-02
+CT-BCS-02 --produces--> CS-BCS-03
+CS-BCS-03 --revised-by--> CT-BCS-03
+CT-BCS-03 --produces--> CS-BCS-04
+CS-BCS-04 --revised-by--> CT-BCS-04
+CT-BCS-04 --produces--> CS-BCS-05
+CS-BCS-05 --revised-by--> CT-BCS-05
+CT-BCS-05 --produces--> CS-BCS-06
+CS-BCS-06 --hands-off-to--> EG-BCS-01
+CS-BCS-06 --hands-off-to--> EG-BCS-02
 A-FERMI-SEA --is-reorganized-by--> BCS-PAIRING
 D-BCS-1957 --generates--> BOGOLIUBOV-QUASIPARTICLES
 D-BCS-1957 --derives-limit--> A-LONDON-GL
@@ -391,7 +509,9 @@ D-BCS-1957 --instantiates--> P-03
 
 ## Sources
 
-- Bardeen, Cooper and Schrieffer, [“Theory of Superconductivity”](https://journals.aps.org/pr/abstract/10.1103/PhysRev.108.1175), *Physical Review* (1957).
+- Bardeen, Cooper and Schrieffer, [“Theory of Superconductivity”](https://journals.aps.org/pr/pdf/10.1103/PhysRev.108.1175), *Physical Review* (1957), pp. 1179–1182 checked for coherent pair occupancies, fixed-number projection, and the gap; pp. 1187 and 1194 checked for specific heat and Meissner response.
+- Bardeen, Cooper and Schrieffer, same 1957 paper, printed p. 1186, Eq. (3.30), checked for the \(2\Delta(0)/(k_BT_c)\approx3.50\) deduction and corresponding-states scope; Ivar Giaever, [“Energy Gap in Superconductors Measured by Electron Tunneling”](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.5.147), *Physical Review Letters* 5 (1960), 147–148, later direct gap probe.
+- Leon N. Cooper, [“Bound Electron Pairs in a Degenerate Fermi Gas”](https://journals.aps.org/pr/pdf/10.1103/PhysRev.104.1189), *Physical Review* 104 (1956), pp. 1189–1190 checked for the inert-sea pair model and explicit many-body caveat.
 - Bardeen, Cooper and Schrieffer, [“Microscopic Theory of Superconductivity”](https://journals.aps.org/pr/abstract/10.1103/PhysRev.106.162), *Physical Review* (1957).
 - Nobel Prize, [The 1972 Physics Prize](https://www.nobelprize.org/prizes/physics/1972/summary/).
 - American Physical Society, [“July 1957: Bardeen, Cooper, and Schrieffer submit their paper”](https://www.aps.org/apsnews/2007/07/bardeen-cooper-schrieffer-theory-superconductivity).

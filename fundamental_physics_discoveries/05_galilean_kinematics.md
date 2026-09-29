@@ -18,7 +18,7 @@ Galileo made terrestrial motion mathematically analyzable by treating accelerati
 
 ## Historical problem
 
-Before the focal discovery (1638 synthesis in *Two New Sciences* (work developed from c. 1604)), the case confronted a linked set of pressures: Speed linked qualitatively to weight, motive power, and resistance; Impressed impetus carries motion after release. The pathways `R-SPEED-PROPORTIONAL-WEIGHT`, `R-PROJECTILE-TWO-STAGES`, `R-ARISTOTELIAN-NATURAL-VIOLENT-MOTION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Free fall, inclined planes, projectiles, and inertia-related motion was to construct a more generative account without importing later validation evidence into the original inference.
+Across the long program that culminated in *Two New Sciences* (1638), ordinary falls and projectiles could still be described by weight, resistance, natural versus imposed motion, or a decaying impressed impetus. Those accounts captured real appearances but did not give one measurable rule for how distance changes with elapsed time during fall, nor a quantitative trajectory formed by continued forward motion together with descent. Slower inclined-plane motion and geometrical comparisons made an ideal acceleration rule testable while separating it from air resistance. The subsequent projectile question was whether that vertical rule could be composed with ideal uniform horizontal motion; Galileo's published mathematical argument must not be read as Newton's later force law or a single tower demonstration.
 
 ## Time slices
 
@@ -76,7 +76,7 @@ Before the focal discovery (1638 synthesis in *Two New Sciences* (work developed
 | Speed proportional to weight | Paper, stones, and dust fall very differently in air | Add medium resistance within Aristotelian rules | Compare dense bodies and extrapolate toward negligible resistance | Ideal acceleration independent of composition; drag retained |
 | Natural/violent motion | Pushed bodies ordinarily stop | Medium or impressed mover continually sustains projectile | Inclined planes and horizontal limiting motion separate friction from state of motion | Replaced by inertial persistence |
 | Two-stage projectile | Launch and fall look phenomenologically different | Medieval impetus prolongs the violent stage | Compose uniform horizontal motion with accelerated vertical fall | Continuous parabola replaces abrupt handoff |
-| **Discovery/current: Galilean kinematics** | Motion is quantified by time-dependent velocity; uniform horizontal motion composes with accelerated fall | Inclined-plane ratios, fall laws, and parabolic trajectories | Retained in the low-speed, weak-drag domain |
+| **Discovery/current: Galilean kinematics** | Inclines, falls, and projectiles exhibit measurable patterns | Idealize resistance and derive time and range ratios | Compare timed inclines and controlled projectile trajectories | Retained in the low-speed, weak-drag domain |
 
 Medieval impetus theory was a genuine bridge: it placed a motive quantity in the projectile rather than requiring continuous pushing by surrounding air. It failed as a final theory because impetus decayed without a general force law and did not yield the quantitative parabolic trajectory. Galileo retained the insight that motion can persist, but his “inertia” was not yet Newton's full rectilinear law and often had a circular terrestrial context. The pathway should therefore be represented as a graded transformation rather than Aristotle → Galileo in one jump.
 
@@ -94,11 +94,99 @@ The admissible pre-discovery input nodes are `A-IMPETUS`, `A-INCLINED-PLANE`, `A
 |---|---|---|
 | `R-SPEED-PROPORTIONAL-WEIGHT` | An Aristotelian fall law according to which a body's downward speed in a given medium increases in direct proportion to its weight and decreases with the medium's resistance. | It confounds gravitational acceleration with resistance. |
 | `R-PROJECTILE-TWO-STAGES` | A projectile model that divides motion into an initially forced or “violent” forward phase and a later “natural” downward fall, rather than treating both components as simultaneous. | It predicts a sharp transition rather than continuous curvature. |
-| `R-ARISTOTELIAN-NATURAL-VIOLENT-MOTION` | Aristotle's classification in which natural motion carries elements toward their natural places, while violent motion is imposed externally and normally ceases when the mover no longer acts. | See the full pathway record above. |
+| `R-ARISTOTELIAN-NATURAL-VIOLENT-MOTION` | Aristotle's classification in which natural motion carries elements toward their natural places, while violent motion is imposed externally and normally ceases when the mover no longer acts. | Treating continued horizontal motion as requiring a continuing mover could not describe a projectile's smooth simultaneous forward motion and fall without a stage change. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** “What nature seeks” replaced by “How position changes with time”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+The selected route separates the time law of fall from its later composition with ideal horizontal motion. It is a rational reconstruction of Galileo's long program, not a dated transcript of his private reasoning.
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by resources available at that step; later validation and canonical endpoint language are excluded from its justification. This is an auditable rational reconstruction, not a transcript of a scientist's or model's hidden reasoning and not a claim that the endpoint was inevitable. Concept states are graph nodes; transitions are typed, auditable edges.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-GAL-01` | Natural fall and projectile motion are described mainly by qualitative causes and stages, not a shared quantitative time law. |
+| `CS-GAL-02` | Inclined descent is compared through distances and elapsed times; its relation to vertical fall remains open. |
+| `CS-GAL-03` | Uniform acceleration is proposed as equal increments of speed in equal times, without yet claiming that natural fall obeys it. |
+| `CS-GAL-04` | The proposed acceleration rule generates square-time distances and odd-number increments, creating observable discriminators. |
+| `CS-GAL-05` | Resistance is distinguished from an ideal law; accelerated fall and ideal horizontal persistence can be considered together. |
+| `CS-GAL-06` | A projectile is modeled by simultaneous uniform horizontal and accelerated vertical components, yielding an ideal parabola. |
+
+##### `CT-GAL-01`: `CS-GAL-01` → `CS-GAL-02` — Make elapsed time a measurable variable
+
+- **Input model:** Natural/violent-motion and impetus accounts explain motion qualitatively but do not yield a common distance–time law for fall and projectiles.
+- **Pressure:** Ordinary fall is rapid and air-affected, so its time dependence is difficult to compare directly.
+- **Protected structure:** Falling bodies speed up, resistance matters, and geometric ratios of distances can be compared.
+- **Hidden assumption:** One must settle the sustaining cause of motion before studying its time-dependent pattern mathematically.
+- **Operation / change type:** `reweighting` — Prioritize distance–time ratios and use slower inclined descent as a candidate analogue of fall.
+- **Output model:** Inclined descent becomes a tractable timing problem; transfer to vertical fall remains a hypothesis.
+- **Local justification:** Galileo's *Two New Sciences*, Third Day, reports timed incline descents and explicitly investigates acceleration without first determining its cause.
+- **Cost/uncertainty:** Rolling, friction, timing error, and the incline-to-fall transfer can distort the inference.
+- **Branch status:** `selected`; causal impetus and medium accounts remain possible companions to the kinematic analysis.
+- **Next question:** What simple quantitative rule describes how speed changes during the measured descent?
+
+##### `CT-GAL-02`: `CS-GAL-02` → `CS-GAL-03` — Define uniform acceleration through time
+
+- **Input model:** Incline and fall observations suggest continuous speeding up, but “uniform acceleration” lacks a settled quantitative meaning.
+- **Pressure:** Speed proportional to distance fallen is an available rival; intuition cannot choose the natural-fall law.
+- **Protected structure:** Speed increases continuously from rest, and equal elapsed-time intervals can be compared.
+- **Hidden assumption:** Equal increments of distance must define equal increments of speed.
+- **Operation / change type:** `constraint_change` — Define uniform acceleration as equal speed increments in equal times, while withholding the claim that all real falls follow it.
+- **Output model:** A definite candidate law is available for deduction and test.
+- **Local justification:** The Third Day states this definition and explicitly raises the question whether the abstract definition describes natural fall.
+- **Cost/uncertainty:** A definition is not an empirical proof; distance-based rivals and medium effects remain to be discriminated.
+- **Branch status:** `selected`; distance-proportional acceleration is not dismissed by definition alone.
+- **Next question:** Which measurable distance ratios follow from the time-proportional candidate?
+
+##### `CT-GAL-03`: `CS-GAL-03` → `CS-GAL-04` — Convert speed increments into distance ratios
+
+- **Input model:** Speed is hypothesized to rise by equal amounts in equal times from rest.
+- **Pressure:** Instantaneous speed is harder to measure directly than accumulated distance and elapsed time.
+- **Protected structure:** The equal-time speed rule and geometrical comparison of uniform and accelerated motion.
+- **Hidden assumption:** A speed rule cannot yield an apparatus-accessible distance test.
+- **Operation / change type:** `representation_shift` — Use the mean-speed theorem to derive distance proportional to time squared and odd-number increments in successive equal times.
+- **Output model:** The candidate predicts total-distance ratios of 1:4 at times 1:2 and interval-distance ratios of 1:3:5.
+- **Local justification:** The Third Day gives the mean-speed theorem, square-time rule, odd-number corollary, and reported incline-timing procedure.
+- **Cost/uncertainty:** Agreement within timing error supports an ideal kinematic rule, not a unique cause of acceleration.
+- **Branch status:** `selected`; empirical discrimination remains conditional on apparatus corrections.
+- **Next question:** Can the rule be carried from inclines toward fall despite resistance and differing geometry?
+
+##### `CT-GAL-04`: `CS-GAL-04` → `CS-GAL-05` — Separate ideal motion from resistance
+
+- **Input model:** Timed inclines support the square-time rule, while vertical fall and horizontal continuation occur under different practical conditions.
+- **Pressure:** Friction and air resistance obscure direct agreement, and actual projectiles need not follow exact mathematical curves.
+- **Protected structure:** Incline ratios, fall's increasing speed, and observed persistence after release.
+- **Hidden assumption:** A useful law must exactly match every uncorrected trajectory, with medium effects built into the law itself.
+- **Operation / change type:** `differentiation` — Distinguish ideal accelerated fall and ideal horizontal persistence from drag, friction, and geometrical boundary effects.
+- **Output model:** Conditional laws for accelerated fall and horizontal persistence can be combined without claiming resistance vanishes in nature.
+- **Local justification:** The Third Day relates incline and vertical motion and examines horizontal continuation; the resistance discussion in *Two New Sciences* limits exact projectile claims.
+- **Cost/uncertainty:** Ideal planes are not directly observed; Galileo's horizontal persistence is not Newton's later universal rectilinear inertia.
+- **Branch status:** `selected`; medium-dependent behavior remains a correction branch, not a refuted observation.
+- **Next question:** Must projectile motion pass through sequential violent and natural stages, or can two motions coexist?
+
+##### `CT-GAL-05`: `CS-GAL-05` → `CS-GAL-06` — Compose simultaneous motions and derive their curve
+
+- **Input model:** Ideal horizontal motion is uniform; ideal vertical fall follows the square-time law.
+- **Pressure:** A two-stage account supplies no equally economical quantitative explanation of a continuously curving trajectory.
+- **Protected structure:** Launch supplies horizontal displacement, gravity supplies downward change, and both are present during flight.
+- **Hidden assumption:** Only one kind of motion can govern a projectile at a time, or its path must be stipulated separately from component laws.
+- **Operation / change type:** `coalescence` — Pair horizontal and vertical displacements at the same elapsed time, then eliminate time to identify an ideal parabola.
+- **Output model:** One component construction generates a parabolic trajectory and calculable range relations under stated idealizations.
+- **Local justification:** *Two New Sciences*, Fourth Day, begins with simultaneous composition and Proposition I derives the semi-parabola; Newtonian force vectors are not construction input.
+- **Cost/uncertainty:** Component independence, nearly uniform gravity, and negligible drag are substantive idealizations; real gunfire may deviate.
+- **Branch status:** `selected`; the historical two-stage account and drag-affected trajectories are retained as distinct alternatives or boundary cases.
+- **Next question:** Do uncalibrated launch angles satisfy range relations generated by the same composition?
+
+#### Formal consolidation
+
+The formal result assumes a common elapsed-time parameter, constant downward acceleration, ideal uniform horizontal motion, and independent components. The following formulas are modern notation for Galilean kinematic results, not a claim about Galileo's algebra or Newtonian force theory.
 
 For constant acceleration \(a\):
 
@@ -150,7 +238,27 @@ The trajectory is parabolic under uniform gravity with air resistance neglected.
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Free fall, inclined planes, projectiles, and inertia-related motion). The case-specific unification was: Fall, incline, and projectile motion linked by common kinematics. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes an extension worth testing but does not license it automatically. Each record separates the supported domain, the proposed target, a novel consequence, and an explicit failure condition.
+
+Timed inclines and ideal horizontal projection motivate tests beyond the observations used to form their respective laws. Neither extension is guaranteed by the source measurements alone.
+
+#### `EG-GAL-01` — Extend timed incline ratios to other inclinations and free fall
+
+- **Source domain:** Timed descents on sufficiently smooth inclined channels and their square-time ratios, within the Third Day's reported measurement setting.
+- **Target domain:** Other inclinations and approximately resistance-free vertical fall from rest.
+- **Novel consequence:** For a fixed inclination, doubling elapsed time quadruples total distance, and successive equal-time distances follow 1:3:5; the acceleration scale may change with inclination without changing these ratios.
+- **Failure condition:** Stable departures from the square-time ratios across controlled inclinations or low-resistance falls, beyond independently estimated timing and friction effects, would defeat this extension in its declared regime.
+
+#### `EG-GAL-02` — Extend compound motion to oblique projectile ranges
+
+- **Source domain:** Ideal uniform horizontal motion composed with accelerated vertical fall, giving a semi-parabola for horizontal projection.
+- **Target domain:** Oblique launches at equal initial speed and equal launch/landing height, with approximately uniform gravity and negligible air resistance.
+- **Novel consequence:** Complementary launch angles have equal ideal range, and a 45-degree launch maximizes it under these conditions; the Fourth Day derives the complementary-angle relation. In modern notation, range is proportional to the sine of twice the launch angle.
+- **Failure condition:** Reproducible range asymmetry between complementary angles at fixed launch speed and level endpoints, after measured drag, wind, and launch variation are controlled, would reject this ideal extension within its stated regime.
+
+Together these extensions link fall, inclines, and projectiles by common kinematics while keeping their empirical conditions distinct. The Fourth Day's complementary-angle deduction is recorded separately as `NP-GAL-01` below.
 
 **Patterns demonstrated:**
 
@@ -218,10 +326,13 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-GAL-01` — Equal ideal ranges at complementary launch angles
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Galilean Kinematics: Historical Knowledge Graph.
+- **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION` as a conditional theoretical deduction, not a claim that Galileo newly discovered the already familiar approximate 45-degree maximum range.
+- **Deduction date and authorship:** Galileo's 1638 *Two New Sciences*, Fourth Day, Theorem/Proposition VIII derives equal ranges for shots of the same initial speed fired equally above and below 45 degrees; the dialogue explicitly separates this less familiar consequence from the maximum-range rule already reported by gunners.
+- **Construction-data independence:** The equality follows from composing uniform horizontal motion with uniformly accelerated vertical fall and the prior parabolic construction. The source presents it as a consequence of the model, not as a relation fitted to paired-range observations; no contemporaneous controlled test of equal initial speeds has been established here.
+- **Derivation provenance and scope:** For equal launch and landing height, common initial speed, approximately uniform gravity, negligible air resistance, and a locally level plane, complementary angles \(\theta\) and \(90^\circ-\theta\) give the same ideal range. The convenient modern expression \(R=v_0^2\sin(2\theta)/g\) consolidates Galileo's geometrical result; it is not his notation.
+- **Discriminator and outcome:** Compare paired launches after controlling initial speed, launch/landing height, drag, and wind. Unequal ranges beyond those effects would challenge the ideal composition model. The original text itself warns that air resistance and Earth's curvature perturb actual trajectories, so ordinary artillery asymmetry is not a clean refutation. This record establishes the dated deduction; it does not claim a separately verified 1638 experiment.
 
 ## Validation and explanatory gains
 
@@ -409,6 +520,18 @@ No separate supplemental note block was present before this schema migration. Ca
 ```text
 A-INCLINED-PLANE --enables-measurement-of--> D-GALILEAN-KINEMATICS-1604-1638
 A-IDEALIZATION --enables--> LAW-FREE-FALL
+CS-GAL-01 --revised-by--> CT-GAL-01
+CT-GAL-01 --produces--> CS-GAL-02
+CS-GAL-02 --revised-by--> CT-GAL-02
+CT-GAL-02 --produces--> CS-GAL-03
+CS-GAL-03 --revised-by--> CT-GAL-03
+CT-GAL-03 --produces--> CS-GAL-04
+CS-GAL-04 --revised-by--> CT-GAL-04
+CT-GAL-04 --produces--> CS-GAL-05
+CS-GAL-05 --revised-by--> CT-GAL-05
+CT-GAL-05 --produces--> CS-GAL-06
+CS-GAL-06 --hands-off-to--> EG-GAL-01
+CS-GAL-06 --hands-off-to--> EG-GAL-02
 R-SPEED-PROPORTIONAL-WEIGHT --superseded-by--> LAW-FREE-FALL
 R-PROJECTILE-TWO-STAGES --superseded-by--> LAW-COMPOSITION
 LAW-COMPOSITION --generates--> EQ-PARABOLA
@@ -422,4 +545,6 @@ D-GALILEAN-KINEMATICS-1604-1638 --instantiates--> P-06
 - Stanford Encyclopedia of Philosophy archive, [“Medieval Theories of Causation,” projectile-motion discussion](https://plato.stanford.edu/archives/win2003/entries/causation-medieval/).
 - Stanford Encyclopedia of Philosophy, [“Galileo Galilei”](https://plato.stanford.edu/entries/galileo/).
 - Library of Congress, [Galileo, *Discorsi e dimostrazioni matematiche intorno a due nuove scienze*](https://www.loc.gov/item/33027378/).
+- Galileo, [*Two New Sciences*, Third Day (Crew–de Salvio translation)](https://en.wikisource.org/wiki/Dialogues_Concerning_Two_New_Sciences/Third_Day), on acceleration, incline timing, square-time ratios, and resistance.
+- Galileo, [*Two New Sciences*, Fourth Day (Crew–de Salvio translation)](https://ganino.com/anteanus/dialogues_concerning_two_new_sciences_by_galileo_galilei_fourth_day), opening and Theorem/Propositions I and VIII checked for composition, the semi-parabola, complementary-angle ranges, the already familiar 45-degree rule, and Galileo's explicit drag/curvature caveats. The translation's modern editorial footnotes are not 1638 claims.
 - The Galileo Project, Rice University, [“Galileo's Mechanics”](https://galileo.rice.edu/lib/student_work/experiment95/inclined_plane.html).

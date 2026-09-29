@@ -17,7 +17,7 @@ Quantum field theory promotes fields—or their modes—to quantum operators and
 
 ## Historical problem
 
-Before the focal discovery (1927 Dirac radiation-field quantization), the case confronted a linked set of pressures: Electromagnetic and continuum fields carry energy and momentum; Light shows quantum exchange while wave equations remain indispensable. The pathways `R-FIXED-PARTICLE-RELATIVISTIC-QUANTUM-MECHANICS`, `R-QUANTIZED-MATTER-CLASSICAL-RADIATION`, `R-OSCILLATOR-QUANTA-WITHOUT-FIELD-OPERATORS` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Relativistic quantum fields, particle creation and annihilation, and many-body quantum theory was to construct a more generative account without importing later validation evidence into the original inference.
+For the focal 1927 step, the immediate pressure was to combine quantized atomic transitions with the wave modes, Bose occupations, and discrete exchange of radiation—especially spontaneous emission. `R-QUANTIZED-MATTER-CLASSICAL-RADIATION` and `R-OSCILLATOR-QUANTA-WITHOUT-FIELD-OPERATORS` capture incomplete pre-1927 responses. `R-FIXED-PARTICLE-RELATIVISTIC-QUANTUM-MECHANICS` identifies a broader limit that became decisive for later matter-field QFT; pair creation and antiparticle evidence must not be inserted into Dirac's 1927 radiation-side motivation.
 
 ## Time slices
 
@@ -88,7 +88,7 @@ Before the focal discovery (1927 Dirac radiation-field quantization), the case c
 | Fixed-particle relativistic quantum mechanics | Relativize a one-particle wave equation | Cannot generally represent creation, annihilation, or antiparticle sectors | One-particle approximation and field equations |
 | Quantized matter with classical radiation | Add quantum transitions to Maxwell driving | Misses intrinsic field fluctuations and photon-number dynamics | Semiclassical optics |
 | Oscillator quanta without field operators | Quantize energies or statistics alone | Lacks a unified operator dynamics of waves and variable quanta | Mode energies and occupation numbers |
-| **Discovery/current: quantized fields and Fock-space sectors** | Quantize field modes and couple them to matter with creation/annihilation operators | Individual QFTs require symmetry, regularization, renormalization, and a stated domain | General framework for relativistic quantum interactions and many-body systems |
+| **Discovery/current: quantized radiation modes and occupation changes** | Quantize radiation modes and couple their occupation changes to atomic transitions | The 1927 treatment was not yet a complete relativistic matter-field theory | Wave modes and quantum emission–absorption dynamics; later generalized to QFT |
 
 ## Discovery-process reconstruction: interpolation, transformation, and extrapolation
 
@@ -96,19 +96,100 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-CLASSICAL-FIELDS`, `A-HARMONIC-OSCILLATORS`, `A-MATRIX-MECHANICS`, `A-LIGHT-QUANTA`, `A-BOSE-STATISTICS`, `A-SPECIAL-RELATIVITY`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+The admissible 1927 inputs are `A-CLASSICAL-FIELDS`, `A-HARMONIC-OSCILLATORS`, `A-MATRIX-MECHANICS`, `A-LIGHT-QUANTA`, and `A-BOSE-STATISTICS`. `A-SPECIAL-RELATIVITY` constrains the broader field program, but the 1927 emission–absorption treatment was not yet a complete covariant interacting QFT. Born–Heisenberg–Jordan's 1926 field-quantization work is a real precursor, not a result invented by Dirac; later pair creation, antiparticles, and renormalization are excluded from the construction inputs.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-FIXED-PARTICLE-RELATIVISTIC-QUANTUM-MECHANICS` | A program that assigns a relativistic wave equation to a fixed number of particles and interprets its wavefunction as an ordinary probability amplitude, without field operators that create or annihilate quanta. | See the full pathway record above. |
-| `R-QUANTIZED-MATTER-CLASSICAL-RADIATION` | A semiclassical hybrid in which atoms obey quantum mechanics but the electromagnetic field remains a prescribed classical wave, so matter changes state without photon creation or quantum vacuum fluctuations. | See the full pathway record above. |
-| `R-OSCILLATOR-QUANTA-WITHOUT-FIELD-OPERATORS` | A model that assigns discrete energies \(E_n=nh\nu\) to radiation oscillators or counts light quanta statistically but does not construct operator-valued fields with explicit creation, annihilation, and matter-coupling dynamics. | See the full pathway record above. |
+| `R-FIXED-PARTICLE-RELATIVISTIC-QUANTUM-MECHANICS` | A program that assigns a relativistic wave equation to a fixed number of particles and interprets its wavefunction as an ordinary probability amplitude, without field operators that create or annihilate quanta. | A fixed number of radiation quanta could not model emission and absorption as occupation changes; later pair processes exposed the broader fixed-matter-number limit. |
+| `R-QUANTIZED-MATTER-CLASSICAL-RADIATION` | A semiclassical hybrid in which atoms obey quantum mechanics but the electromagnetic field remains a prescribed classical wave, so matter changes state without photon creation or quantum vacuum fluctuations. | A prescribed wave could drive transitions but did not itself supply spontaneous emission or photon-number fluctuations from an initially empty radiation field. |
+| `R-OSCILLATOR-QUANTA-WITHOUT-FIELD-OPERATORS` | A model that assigns discrete energies \(E_n=nh\nu\) to radiation oscillators or counts light quanta statistically but does not construct operator-valued fields with explicit creation, annihilation, and matter-coupling dynamics. | Discrete energy bookkeeping lacked dynamical operators coupling radiation-mode occupation changes to atomic transitions. |
 
-**Pattern demonstrated — `P-01` (reframe the inherited question):** “Is radiation a wave or particle?” becomes “Which field state and observable are being probed?”. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
+**Pattern demonstrated — `P-01` (reframe the inherited question):** “Must radiation be treated as either waves or light quanta?” becomes “Can quantized wave modes change occupation during atomic transitions?” The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified by information available at the focal discovery date; later confirmations, modern notation, and rival branches must be distinguished from contemporary inputs.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-QFT-01` | Atomic transitions are quantum, while electromagnetic radiation has classical waves and separately counted light quanta. **Open question:** Can the field's wave modes be quantum dynamical variables? |
+| `CS-QFT-02` | A radiation mode can be treated as a harmonic oscillator with quantized amplitude and occupation. **Open question:** How is photon number changed in a transition? |
+| `CS-QFT-03` | Mode operators connect neighboring occupation-number states rather than leaving photon number fixed. **Open question:** How do they couple to an atom? |
+| `CS-QFT-04` | Atom–field interaction matrix elements connect an atomic transition to gain or loss of one radiation quantum. **Open question:** Can this explain both induced and spontaneous emission? |
+| `CS-QFT-05` | Emission into mode occupation n has an n+1 factor, leaving a nonzero n=0 rate. **Open question:** Does the field picture also retain wave behavior? |
+| `CS-QFT-06` | One quantized radiation-mode framework organizes wave propagation, photon counts, and emission–absorption rates. **Open question:** Can the same method extend to matter fields and fully relativistic interactions? |
+
+##### `CT-QFT-01`: `CS-QFT-01` → `CS-QFT-02` — Quantize radiation-mode amplitudes
+
+- **Input model:** Maxwell radiation decomposes into modes; quantum mechanics can quantize oscillators.
+- **Pressure:** Photon counting and atomic transition theory remain detached from field-wave dynamics.
+- **Protected structure:** Classical mode frequencies and Planck's energy spacing.
+- **Hidden assumption:** Only material oscillators, not field amplitudes, may carry quantum operators.
+- **Operation / change type:** `representation_shift` — Treat each radiation mode as a quantum oscillator.
+- **Output model:** Radiation modes have quantized occupations and noncommuting amplitudes.
+- **Local justification:** The 1926 Born–Heisenberg–Jordan work and oscillator quantum mechanics supplied this precursor before Dirac's 1927 synthesis.
+- **Cost/uncertainty:** Field quantization by itself does not yet give atom–radiation transition rates.
+- **Next question:** How can a transition add or remove one field quantum?
+
+##### `CT-QFT-02`: `CS-QFT-02` → `CS-QFT-03` — Make occupation change dynamical
+
+- **Input model:** A quantum oscillator mode has integer occupancy.
+- **Pressure:** Absorption and emission require the radiation state to change, not just its energy to be labeled.
+- **Protected structure:** Oscillator matrix elements and Bose-compatible arbitrary occupancy.
+- **Hidden assumption:** Photon number is a fixed parameter external to dynamics.
+- **Operation / change type:** `reinterpretation` — Use raising and lowering transitions between neighboring mode occupations.
+- **Output model:** Radiation quanta become occupation changes of a field mode.
+- **Local justification:** Dirac's 1927 formalism explicitly tracks the numbers of light quanta in each mode.
+- **Cost/uncertainty:** The link to material transitions is not yet specified.
+- **Next question:** What interaction couples atomic and mode state changes?
+
+##### `CT-QFT-03`: `CS-QFT-03` → `CS-QFT-04` — Couple atomic transition amplitudes to occupation changes
+
+- **Input model:** Quantized atomic states and quantum radiation modes.
+- **Pressure:** Einstein's emission and absorption coefficients are phenomenological without unified microscopic transition amplitudes.
+- **Protected structure:** Atomic energy differences, photon energy, and perturbative quantum transition rules.
+- **Hidden assumption:** An atomic jump can be calculated while the field remains an unchanged classical background.
+- **Operation / change type:** `coalescence` — Combine an atom's transition matrix element with a one-quantum mode change.
+- **Output model:** Absorption and emission are transitions between joint atom–field states.
+- **Local justification:** Dirac's 1927 paper treats the emitting system and radiation field together.
+- **Cost/uncertainty:** The early treatment was not a complete relativistically covariant interacting theory.
+- **Next question:** Does it account for emission when the initial mode is empty?
+
+##### `CT-QFT-04`: `CS-QFT-04` → `CS-QFT-05` — Separate induced from spontaneous emission
+
+- **Input model:** Joint atom–field transitions with oscillator occupation matrix elements.
+- **Pressure:** Spontaneous emission occurs even without an incident classical radiation wave.
+- **Protected structure:** Stimulated processes and the quantized oscillator algebra.
+- **Hidden assumption:** Emission rate must vanish when the target mode initially contains zero photons.
+- **Operation / change type:** `enrichment` — Square the raising matrix element to expose its n+1 factor.
+- **Output model:** A term proportional to n for induced emission plus a nonzero vacuum-mode contribution at n=0.
+- **Local justification:** Dirac derived the spontaneous and induced terms within the 1927 radiation theory, without later QED precision results.
+- **Cost/uncertainty:** Interpreting the term as vacuum fluctuations is a later pedagogical gloss; rates still depend on a specified coupling and mode density.
+- **Next question:** Does the quantized construction preserve the successful wave description?
+
+##### `CT-QFT-05`: `CS-QFT-05` → `CS-QFT-06` — Retain waves and particles in one radiation description
+
+- **Input model:** Quantized modes with occupation-changing atom–field interactions.
+- **Pressure:** A theory of photons must not discard Maxwell interference and propagation.
+- **Protected structure:** Mode functions, superposition, energy–momentum exchange, and Bose occupation behavior.
+- **Hidden assumption:** A light quantum requires abandoning the underlying field-wave modes.
+- **Operation / change type:** `coalescence` — Interpret mode excitations as quanta while retaining wave-mode dynamics.
+- **Output model:** A working quantum radiation framework, not yet the mature QFT of all matter and interactions.
+- **Local justification:** The synthesis is supported by 1926 field-mode quantization and Dirac's 1927 emission–absorption calculation.
+- **Cost/uncertainty:** Matter-field quantization, antiparticles, divergences, and renormalization remain later problems.
+- **Next question:** Which non-radiation fields can sustain the same operator treatment?
+
+#### Formal consolidation
+
+The free scalar-field algebra below is a modern teaching model of the general mechanism, not the electromagnetic radiation construction used in Dirac's 1927 paper. Its Lorentz-covariant and Fock-space notation also consolidates later work.
 
 For a free real scalar field in modern notation and natural units \(\hbar=c=1\),
 
@@ -199,7 +280,7 @@ implementing exclusion. Interactions such as QED's \(-e\bar\psi\gamma^\mu A_\mu\
 
 **Patterns demonstrated:**
 
-- `P-01` — **Reframe the inherited problem:** “Is radiation a wave or particle?” becomes “Which field state and observable are being probed?”
+- `P-01` — **Reframe the inherited problem:** Ask whether quantized wave modes can change occupation during atomic transitions
 
 - `P-02` — **Permit a new representation, ontology, or mechanism:** Operator-valued fields, vacuum states, and variable particle number are admitted
 
@@ -207,13 +288,29 @@ implementing exclusion. Interactions such as QED's \(-e\bar\psi\gamma^\mu A_\mu\
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Relativistic quantum fields, particle creation and annihilation, and many-body quantum theory). The case-specific unification was: Wave fields, particles, quantum transitions, and relativity enter one framework. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain does not establish the target-domain claim; state the novel consequence and a possible failure condition before using later evidence as validation.
+
+#### `EG-QFT-01` — Quantize matter fields as well as radiation
+
+- **Source domain:** Quantized electromagnetic modes coupled to atomic transitions in the 1927 radiation theory.
+- **Target domain:** Dynamical matter fields whose particle number can change in relativistic interactions.
+- **Novel consequence:** Matter quanta should be representable as field excitations, with transitions between particle-number sectors and appropriately constrained exchange statistics.
+- **Failure condition:** A matter species whose creation or annihilation cannot be represented consistently by a local quantum-field model under the stated symmetries and energy assumptions would challenge the extension.
+
+#### `EG-QFT-02` — Reuse the mode method beyond electromagnetism
+
+- **Source domain:** Wave-mode quantization and occupation-changing couplings for radiation.
+- **Target domain:** Other candidate field-mediated interactions, with their own fields and couplings.
+- **Novel consequence:** A specified quantized model should yield transition amplitudes and occupation changes while recovering its classical-wave or low-energy limit where appropriate.
+- **Failure condition:** Failure of a particular model's predicted amplitudes or limiting behavior would reject that model; it would not alone falsify the abstract QFT framework.
 
 **Patterns demonstrated:**
 
 - `P-03` — **Generate consequences rather than merely redescribe inputs:** Spectral and transition regularities become amplitudes generated by field operators
 
-- `P-04` — **Unify previously separated domains or phenomena:** Wave fields, particles, quantum transitions, and relativity enter one framework
+- `P-04` — **Unify previously separated domains or phenomena:** Radiation wave modes, light-quanta occupations, and atomic transitions enter one 1927 framework; relativistic matter fields remain a later extension
 
 ### Retention, predictions, and discriminating tests
 
@@ -231,10 +328,10 @@ Pattern IDs are ordered by their typical first role in the reconstructed discove
 
 | Pattern ID | Canonical definition | Process role in this case | Case-specific instantiation | Evidence location(s) |
 |---|---|---|---|---|
-| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | “Is radiation a wave or particle?” becomes “Which field state and observable are being probed?” | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
+| `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | Ask whether quantized wave modes can change occupation during atomic transitions | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
 | `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Operator-valued fields, vacuum states, and variable particle number are admitted | [Transformative move](#transformative-move) |
 | `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Spectral and transition regularities become amplitudes generated by field operators | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
-| `P-04` | Unify previously separated domains | Extrapolative unification | Wave fields, particles, quantum transitions, and relativity enter one framework | [Extrapolative generalization](#extrapolative-generalization) |
+| `P-04` | Unify previously separated domains | Extrapolative unification | Radiation wave modes, light-quanta occupations, and atomic transitions enter one 1927 framework; relativistic matter fields remain a later extension | [Extrapolative generalization](#extrapolative-generalization) |
 | `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | Classical waves and fixed-particle quantum mechanics survive as controlled limits | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
 | `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Lagrangians generate quantitative decay rates, scattering cross sections, and radiative shifts | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
 ## Discovery node and consolidated formalism
@@ -294,7 +391,8 @@ generates correlations only after $S[\phi]$ is chosen. Pair production, antipart
 - **Generative deduction:** once a concrete action and vacuum are fixed,
 
 $$
-\left.\frac{\delta^n Z[J]}{i^n\delta J(x_1)\cdots\delta J(x_n)}\right|_{J=0}
+\left.\frac{1}{Z[0]}\left(\frac{\hbar}{i}\right)^n
+\frac{\delta^n Z[J]}{\delta J(x_1)\cdots\delta J(x_n)}\right|_{J=0}
 $$
 
 produces time-ordered $n$-point functions, which in turn yield transition amplitudes. This is a prediction engine, not itself an empirical prediction.
@@ -401,6 +499,18 @@ No separate supplemental note block was present before this schema migration. Ca
 
 ```text
 A-CLASSICAL-FIELDS --provides-modes-for--> D-QFT-FIELD-QUANTIZATION-1927
+CS-QFT-01 --revised-by--> CT-QFT-01
+CT-QFT-01 --produces--> CS-QFT-02
+CS-QFT-02 --revised-by--> CT-QFT-02
+CT-QFT-02 --produces--> CS-QFT-03
+CS-QFT-03 --revised-by--> CT-QFT-03
+CT-QFT-03 --produces--> CS-QFT-04
+CS-QFT-04 --revised-by--> CT-QFT-04
+CT-QFT-04 --produces--> CS-QFT-05
+CS-QFT-05 --revised-by--> CT-QFT-05
+CT-QFT-05 --produces--> CS-QFT-06
+CS-QFT-06 --hands-off-to--> EG-QFT-01
+CS-QFT-06 --hands-off-to--> EG-QFT-02
 A-HARMONIC-OSCILLATORS --is-quantized-by--> CREATION-ANNIHILATION-ALGEBRA
 A-LIGHT-QUANTA --motivates--> D-QFT-FIELD-QUANTIZATION-1927
 D-SPECIAL-RELATIVITY-1905 --provides-spacetime-symmetry-for--> D-QFT-FIELD-QUANTIZATION-1927
@@ -416,6 +526,8 @@ D-QFT-FIELD-QUANTIZATION-1927 --instantiates--> P-02
 
 ## Sources
 
+- M. Born, W. Heisenberg, and P. Jordan, [“Zur Quantenmechanik. II” (1926 scan)](https://gilles.montambaux.com/files/histoire-physique/Born-Heisenberg-Jordan-1925.pdf), *Zeitschrift für Physik* 35, 557–615; received November 1925, with its final section treating cavity-mode statistics before Dirac's 1927 paper.
+- P. A. M. Dirac, [The Quantum Theory of the Emission and Absorption of Radiation (1927 scan)](https://personal.lse.ac.uk/robert49/teaching/partiii/2020-2021/pdf/DiracQmThyEmissAbsptnRadiatnPRSA1927.pdf).
 - P. A. M. Dirac, [“The Quantum Theory of the Emission and Absorption of Radiation”](https://doi.org/10.1098/rspa.1927.0039), *Proceedings of the Royal Society A* (1927).
 - Stanford Encyclopedia of Philosophy, [“The History of Quantum Field Theory”](https://plato.stanford.edu/entries/quantum-field-theory/qft-history.html).
 - CERN Courier, [“Paul Dirac: a genius in the history of physics”](https://cern-courier.web.cern.ch/a/paul-dirac-a-genius-in-the-history-of-physics/).

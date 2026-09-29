@@ -17,7 +17,7 @@ Electromagnetism and the weak interaction arise from one \(SU(2)_L\times U(1)_Y\
 
 ## Historical problem
 
-Before the focal discovery (1961–1973 (gauge proposal through neutral-current discovery)), the case confronted a linked set of pressures: Contact interaction explains beta decay; Weak interaction found chiral. The pathways `R-FERMI-FUNDAMENTAL-CONTACT`, `R-EXPLICIT-MASSIVE-YANG-MILLS`, `R-CHARGED-INTERMEDIATE-BOSON-ONLY` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Unified electromagnetic and weak interactions was to construct a more generative account without importing later validation evidence into the original inference.
+Fermi's contact interaction worked at low weak-process energies, but it did not supply a high-energy mediator theory; the 1957 parity-violation result also made the weak current chiral. Glashow's 1961 \(SU(2)\times U(1)\) proposal linked weak and electromagnetic gauge fields and implied a neutral weak interaction, while treating vector masses as explicit partial-symmetry-breaking parameters rather than deriving their origin. The 1964 BEH mechanism enabled Weinberg's 1967 and Salam's 1968 broken-gauge realizations; 't Hooft and Veltman's 1971–72 work addressed quantum consistency. Gargamelle's 1973 neutral-current observation then tested a theory-building chain, rather than serving as an input to its earlier steps. The \(W/Z\) discoveries occurred still later.
 
 ## Time slices
 
@@ -28,7 +28,7 @@ Before the focal discovery (1961–1973 (gauge proposal through neutral-current 
 | `TS-GLASHOW` | 1961 | \(SU(2)\times U(1)\) gauge structure | Neutral current anticipated |
 | `TS-WEINBERG-SALAM` | 1967–1968 | Higgs mechanism added | Masses compatible with gauge theory |
 | `TS-RENORMALIZABILITY` | 1971–1972 | 't Hooft and Veltman establish consistency | Predictive quantum theory |
-| `TS-VALIDATION` | 1973–1983 | Neutral currents, \(W\), \(Z\) observed | Unification confirmed |
+| `TS-VALIDATION` | 1973–1983 | Hadronic neutral-current candidates, then \(W\) and \(Z\) observed | Evidence accumulated in stages |
 
 ## Knowledge assets
 
@@ -62,11 +62,11 @@ Before the focal discovery (1961–1973 (gauge proposal through neutral-current 
 
 ### Pathway comparison ledger
 
-**Chronology rule:** Every non-discovery row corresponds to a pathway detailed above that originated before the focal discovery (1961–1973 (gauge proposal through neutral-current discovery)). The proposed/active period is stored in each pathway record.
+**Chronology rule:** Fermi contact, explicit vector-mass, and charged-intermediate-boson routes originated before or near the 1961 gauge proposal, but the charged-only route remained a live contrast until the 1973 neutral-current evidence. The proposed/active period is stored in each pathway record; these routes are not all 1961 construction inputs.
 
 | Pathway | Repair | Decisive issue | Retained content |
 |---|---|---|---|
-| Fundamental Fermi contact interaction | Add higher-order corrections/cutoff | Cross sections grow and unitarity fails near the weak scale | Leading \(E^2/m_W^2\)-suppressed effective operator |
+| Fundamental Fermi contact interaction | Add higher-order corrections/cutoff | Cross sections grow and unitarity fails near the weak scale | Leading low-energy four-fermion operator; finite-\(W\)-mass corrections are suppressed by \(E^2/m_W^2\) |
 | Massive Yang–Mills by hand | Insert \(W/Z\) masses explicitly | Gauge cancellations and renormalizability lost | Massive-vector phenomenology |
 | Intermediate-vector-boson theory without neutral current | Mediate charged current only | Gargamelle neutral-current events | Charged-current sector |
 | **Discovery/current: electroweak gauge theory with BEH vacuum** | \(SU(2)_L\times U(1)_Y\) yields photon, \(W\), \(Z\), charged and neutral currents | Neutral currents, boson masses, precision loops | Retained |
@@ -79,19 +79,100 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-QED-GAUGE`, `A-V-A`, `A-HIGGS-MECHANISM`, `A-NONABELIAN-RENORMALIZATION`, `A-NEUTRINO-BEAMS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+Starting resources are stage-dependent. Glashow's 1961 step could use QED gauge theory (`A-QED-GAUGE`), the chiral \(V-A\) current (`A-V-A`), and Yang–Mills ideas. The BEH mechanism (`A-HIGGS-MECHANISM`) became available only in 1964 for the 1967–68 constructions; renormalization proofs (`A-NONABELIAN-RENORMALIZATION`) arrived in 1971–72 and must not justify 1961 or 1967 choices retroactively. Neutrino beams (`A-NEUTRINO-BEAMS`) supplied later tests.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
 | `R-FERMI-FUNDAMENTAL-CONTACT` | A theory that treats weak beta decay as a fundamental pointlike four-fermion interaction with coupling \(G_F\), rather than as the low-energy effect of exchanging a massive \(W\) boson. | Amplitudes grow and violate unitarity at high energy. |
-| `R-EXPLICIT-MASSIVE-YANG-MILLS` | A non-Abelian weak gauge theory with \(W/Z\) mass terms inserted directly rather than generated by a symmetry-breaking vacuum. | See the full pathway record above. |
-| `R-CHARGED-INTERMEDIATE-BOSON-ONLY` | A weak-mediator theory containing charged-current \(W\)-like exchange but no neutral weak current or unified photon–\(Z\) mixing. | See the full pathway record above. |
+| `R-EXPLICIT-MASSIVE-YANG-MILLS` | A non-Abelian weak gauge theory with \(W/Z\) mass terms inserted directly rather than generated by a symmetry-breaking vacuum. | Direct mass terms broke the gauge structure relied on for a controlled high-energy quantum theory. |
+| `R-CHARGED-INTERMEDIATE-BOSON-ONLY` | A weak-mediator theory containing charged-current \(W\)-like exchange but no neutral weak current or unified photon–\(Z\) mixing. | Charged exchange alone supplied no neutral-current channel required by the later unified construction; observation of that channel was a later test. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** Contact force reframed as heavy-boson exchange. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified with resources available at its own date between 1961 and 1972. This is an auditable reconstruction of distinct Glashow, Weinberg, Salam, and renormalization contributions, not a single person's internal trace; 1973 and 1983 evidence stays downstream.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-EW-01` | Low-energy Fermi \(V-A\) interaction and QED are successful but separately organized; Schwinger's charged-mediator-plus-photon triplet suggests a common vector-field language. **Open question:** Can that three-field scheme preserve the observed chiral weak currents and a useful symmetry? |
+| `CS-EW-02` | Glashow's 1961 \(SU(2)\times U(1)\) framework mixes neutral gauge fields and implies a neutral weak current. **Open question:** How can weak vectors be massive while the photon remains massless? |
+| `CS-EW-03` | A gauge structure with neutral-current content exists, but direct vector masses threaten its consistency. **Open question:** Can the later BEH mechanism select a viable vacuum? |
+| `CS-EW-04` | Weinberg/Salam broken-gauge realizations produce massive \(W/Z\), a massless photon, and related couplings; Weinberg's 1967 paper constructs the electron-type lepton sector, while Salam's 1968 account develops a lepton-sector proposal and leaves its hadron extension unsolved. **Open question:** Does the heavy-mediator limit recover the known contact law, and how is the model extended to other fermions? |
+| `CS-EW-05` | The model reduces to Fermi \(V-A\) behavior at low energy while retaining linked high-energy predictions. **Open question:** Can its quantum corrections be made predictive? |
+| `CS-EW-06` | Early-1970s renormalization work establishes the perturbative consistency of the broken gauge framework. **Open question:** Do neutral currents and vector masses pass independent experiment? |
+
+##### `CT-EW-01`: `CS-EW-01` → `CS-EW-02` — Organize the currents in a gauge structure
+
+- **Input model:** QED, chiral weak currents, and the limited Fermi four-fermion description.
+- **Pressure:** A contact interaction does not provide a controlled mediator theory at higher energies; Glashow's three-vector-field test could not combine the required parity-violating charged currents with the desired partial symmetry.
+- **Protected structure:** Electromagnetic charge conservation and left-handed weak-current phenomenology.
+- **Hidden assumption:** Electromagnetic and weak currents require wholly unrelated organizing symmetries.
+- **Operation / change type:** `coalescence` — Add a fourth, neutral vector field to the charged-mediator-plus-photon triplet and explore the resulting \(SU(2)\times U(1)\) partial-symmetry structure.
+- **Output model:** Glashow's 1961 partial-symmetry framework, including a neutral weak sector.
+- **Local justification:** Glashow's 1961 paper, pp. 579 and 582–585, explicitly rejects the three-field construction for the required lepton currents, introduces a fourth neutral field, and identifies a massless photon combination alongside a neutral weak current.
+- **Cost/uncertainty:** Gauge-boson mass generation and realistic symmetry breaking remain unsettled. Glashow left the charged and neutral weak-vector masses arbitrary and judged his leptonic construction to lack a decisive experimental consequence at that stage (1961, pp. 585–586).
+- **Next question:** Which neutral combination remains electromagnetic, and what happens to the other?
+
+##### `CT-EW-02`: `CS-EW-02` → `CS-EW-03` — Expose the gauge-mass obstacle
+
+- **Input model:** Mixed charged/neutral gauge fields intended to mediate weak and electromagnetic processes.
+- **Pressure:** Weak interactions are short ranged, yet direct massive non-Abelian vectors risk losing gauge control.
+- **Protected structure:** A massless photon, a charged weak current, and the candidate neutral current.
+- **Hidden assumption:** Adding explicit vector masses is an innocuous detail after choosing the gauge group.
+- **Operation / change type:** `differentiation` — Separate the gauge-current architecture from the unresolved mass mechanism.
+- **Output model:** A partial unification whose missing physical ingredient is explicit.
+- **Local justification:** Glashow's 1961 paper, pp. 580 and 584–587, allows mass-producing bilinears to break only the partial symmetry and leaves the charged and neutral weak-vector masses arbitrary; it predates the 1964 BEH mechanism used in later broken-gauge models.
+- **Cost/uncertainty:** Neutral-current prediction alone does not establish the correct mass and coupling pattern.
+- **Next question:** Can a scalar vacuum give masses without destroying the gauge structure?
+
+##### `CT-EW-03`: `CS-EW-03` → `CS-EW-04` — Add gauge-compatible mass generation
+
+- **Input model:** \(SU(2)\times U(1)\) current organization plus the post-1964 BEH mechanism.
+- **Pressure:** Weak vectors need masses, while the photon must stay massless.
+- **Protected structure:** Local gauge organization, chirality, and electromagnetic \(U(1)\).
+- **Hidden assumption:** A massive weak sector entails a massive photon or explicit gauge violation.
+- **Operation / change type:** `enrichment` — Use a scalar doublet vacuum to leave electromagnetic \(U(1)\) unbroken.
+- **Output model:** Weinberg's 1967 and Salam's 1968 electroweak constructions with linked \(W/Z\) masses and neutral currents.
+- **Local justification:** Weinberg's 1967 paper, pp. 1264–1265, applies a scalar doublet to the electron-type lepton model after the 1964 BEH work. Salam's 1968 symposium account (pp. 367, 371–375) explicitly limits his completed construction to leptons: it starts in an SU(3) notation including the muon, then recasts the electron sector as an \(SU(2)\) doublet plus singlet and states that the hadron problem is still unsolved. Weinberg assumes, rather than derives there, the extension of the charged weak coupling to muons and hadrons.
+- **Cost/uncertainty:** Fermion-sector extension and scalar details require further choices; Weinberg calls his model only possibly renormalizable and warns that its then-specific neutrino–electron predictions depend on arbitrary features. Salam claims a gauge-compatible renormalization route, but his 1968 discussion (pp. 375–376) leaves the explicit calculation dictionary unfinished; it is not the later general proof.
+- **Next question:** Does the low-energy limit reproduce Fermi's successful law?
+
+##### `CT-EW-04`: `CS-EW-04` → `CS-EW-05` — Recover the contact interaction
+
+- **Input model:** A heavy charged weak boson coupled to left-handed currents.
+- **Pressure:** A new theory must preserve accurate low-energy beta-decay phenomenology.
+- **Protected structure:** The measured \(G_F\), chiral current form, and charge assignments.
+- **Hidden assumption:** Gauge-boson exchange and Fermi's contact term are competing descriptions at every scale.
+- **Operation / change type:** `reinterpretation` — Take the heavy-\(W\), low-energy limit.
+- **Output model:** The Fermi \(V-A\) interaction as an effective limit of one gauge theory.
+- **Local justification:** The mediator relation follows from the 1967–68 model's charged-current coupling; compact effective-field notation below is modern.
+- **Cost/uncertainty:** The relation is approximate, with finite-mass and radiative corrections.
+- **Next question:** Can loops be organized without arbitrary new parameters?
+
+##### `CT-EW-05`: `CS-EW-05` → `CS-EW-06` — Establish quantum predictivity
+
+- **Input model:** A spontaneously broken non-Abelian gauge model reproducing low-energy weak data.
+- **Pressure:** A classical fit does not ensure controlled quantum predictions across processes.
+- **Protected structure:** Gauge constraints and a finite parameter set.
+- **Hidden assumption:** A vector theory with generated masses necessarily inherits the failures of ad hoc massive Yang–Mills.
+- **Operation / change type:** `constraint_change` — Require renormalizable broken-gauge calculations rather than arbitrary process-by-process subtraction.
+- **Output model:** The early-1970s perturbatively predictive electroweak framework.
+- **Local justification:** 't Hooft's 1971 paper constructs renormalizable, unitary spontaneously broken gauge models, including an SU(2) example with an unbroken U(1), and the 1971–72 't Hooft–Veltman program supplies the general perturbative consistency basis. That illustrative SU(2) model is not itself the full SU(2) × U(1) electroweak fermion theory.
+- **Cost/uncertainty:** Renormalizability is not empirical validation; neutral currents and vector bosons still needed tests.
+- **Next question:** Can neutrino scattering and later colliders discriminate the model?
+
+#### Formal consolidation
+
+The tree-level mass/mixing equations below summarize the mature broken-gauge realization. Loop corrections and 1973/1983 observations belong to subsequent layers.
 
 Gauge group:
 
@@ -201,15 +282,33 @@ $$
 
 - `P-02` — **Permit a new representation, ontology, or mechanism:** Chiral gauge symmetry and broken vacuum accepted
 
-- `P-03` — **Make the new structure generative:** Gauge structure generates particles and couplings
+- `P-03` — **Make the new structure generative:** Gauge structure and vacuum imply a vector spectrum and linked coupling relations
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Unified electromagnetic and weak interactions). The case-specific unification was: Electromagnetic and weak forces unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+The theory was built from known electromagnetic and charged-current phenomena. Its credibility depended on risking linked consequences outside those inputs, first neutral weak processes and later the actual charged/neutral vector spectrum.
+
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes new tests worth pursuing, but a gauge architecture alone does not guarantee the selected group, scalar sector, or fermion assignments are correct. Fix calibration inputs and radiative order before calling a target-domain agreement an independent success.
+
+#### `EG-EW-01` — Test neutral weak currents
+
+- **Source domain:** QED, Fermi \(V-A\) charged-current data, and the 1961–72 gauge/BEH/renormalization construction; neutral-current events did not select the initial theory. Glashow's 1961 neutral current was required within his partial-symmetry scheme, but its mediator mass was arbitrary. Weinberg's 1967 electron-type lepton model alone did not specify hadronic neutral couplings needed for the later neutrino–nucleon test.
+- **Target domain:** Neutrino scattering without an outgoing charged lepton, especially the later Gargamelle search.
+- **Novel consequence:** After specifying the quark/hadron assignments and mixing angle, a \(Z\)-mediated neutral weak interaction with rates related to the charged current. The 1967 paper explicitly proposed electron–neutrino scattering as a test of its lepton sector if the \(Z\) did not couple to hadrons; Gargamelle's later hadronic channel required an additional extension.
+- **Failure condition:** With flux, backgrounds, detector efficiencies, and coupling inputs fixed, robust absence of predicted neutral-current events or systematically incompatible neutral/charged ratios would disfavor the model; unknown backgrounds cannot be ignored.
+
+#### `EG-EW-02` — Test the correlated vector spectrum
+
+- **Source domain:** The broken-gauge electroweak model calibrated by low-energy weak and electromagnetic quantities, later strengthened by neutral-current evidence.
+- **Target domain:** Direct high-energy production and decay of \(W^\pm\) and \(Z^0\) bosons, observed after the 1961–73 focal construction.
+- **Novel consequence:** A charged and neutral vector family with linked masses and couplings, a massless photon, and channel-specific decays; the tree-level relation \(m_W=m_Z\cos\theta_W\) receives calculable radiative corrections.
+- **Failure condition:** Given a specified mixing-angle scheme, radiative order, and production/detector model, persistent mass or coupling incompatibility across the \(W/Z\) channels would reject that realization or require a documented extension.
 
 **Patterns demonstrated:**
 
-- `P-03` — **Generate consequences rather than merely redescribe inputs:** Gauge structure generates particles and couplings
+- `P-03` — **Generate consequences rather than merely redescribe inputs:** Gauge structure and vacuum imply a vector spectrum and linked coupling relations
 
 - `P-04` — **Unify previously separated domains or phenomena:** Electromagnetic and weak forces unified
 
@@ -231,7 +330,7 @@ Pattern IDs are ordered by their typical first role in the reconstructed discove
 |---|---|---|---|---|
 | `P-01` | Reframe the inherited question after diagnosing interpolation failure | Interpolation diagnosis → transformative reframing | Contact force reframed as heavy-boson exchange | [Interpolation limits](#what-interpolation-could-and-could-not-achieve); [transformative move](#transformative-move) |
 | `P-02` | Admit a new representation, ontology, or mechanism form | Transformative move | Chiral gauge symmetry and broken vacuum accepted | [Transformative move](#transformative-move) |
-| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Gauge structure generates particles and couplings | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
+| `P-03` | Upgrade empirical regularities into a generative mechanism | Transformative construction → generative deduction | Gauge structure and vacuum imply a vector spectrum and linked coupling relations | [Transformative move](#transformative-move); [extrapolative generalization](#extrapolative-generalization) |
 | `P-04` | Unify previously separated domains | Extrapolative unification | Electromagnetic and weak forces unified | [Extrapolative generalization](#extrapolative-generalization) |
 | `P-05` | Retain valid structures of predecessor theories | Retention and limiting recovery | QED and Fermi theory retained as sectors/limits | [Retention and limiting recovery](#retention-predictions-and-discriminating-tests); [limitations](#limitations-and-retained-status) |
 | `P-06` | Prioritize quantitative testability | Prediction → discrimination → validation | Neutral currents and boson masses were risky predictions | [Predictions](#historically-novel-predictions-and-deductions); [validation](#validation-and-explanatory-gains) |
@@ -246,7 +345,7 @@ This node serializes the result of the preceding reconstruction. It is a compact
 | Central claim | Electromagnetism and the weak interaction arise from one \(SU(2)_L\times U(1)_Y\) gauge structure whose vacuum is broken to \(U(1)_{\mathrm{em}}\). The theory predicted neutral weak currents and massive \(W^\pm,Z^0\) bosons while leaving the photon massless. |
 | Domain | Unified electromagnetic and weak interactions |
 | Epistemic status | Core, precisely tested sector of the Standard Model |
-| Generative role | Gauge structure generates particles and couplings |
+| Generative role | Gauge structure and vacuum imply a vector spectrum and linked coupling relations |
 | Retained structure | QED and Fermi theory retained as sectors/limits |
 
 Key formal relations, consolidated from the derivation above:
@@ -277,7 +376,7 @@ The complete derivation, inferential provenance, and interpretation of these rel
 ### `NP-EW-01` — Weak neutral currents
 
 - **Classification:** `NOVEL-CONTEMPORANEOUS-PREDICTION`.
-- **Prediction date and provenance:** the $SU(2)_L\times U(1)_Y$ theory developed in the 1960s contains a neutral weak interaction mediated by a massive $Z$ boson. Neutral-current neutrino events were reported at CERN in 1973, before direct $W$ and $Z$ production.
+- **Prediction date and provenance:** Glashow's 1961 lepton partial-symmetry model already required an extra neutral weak current, although it left the mediator masses arbitrary and did not yield a decisive test. Weinberg's 1967 broken-gauge model specified an electron-type lepton neutral coupling and proposed electron–neutrino scattering as a probe if the $Z$ lacked hadronic couplings. A neutrino–hadron prediction required additional fermion assignments; Gargamelle reported candidate events in 1973, before direct $W$ and $Z$ production.
 - **Derivation provenance:** `MODERN-PEDAGOGICAL-DERIVATION` from gauge mixing.
 
 After symmetry breaking, the neutral gauge fields mix:
@@ -305,7 +404,7 @@ $$
 $$
 
 even though no charged lepton appears in the final state.
-- **Observable discriminator and outcome:** neutral-current events had to be separated from missed-muon charged-current backgrounds. Their observation strongly supported the gauge structure rather than merely one fitted mass.
+- **Observable discriminator and outcome:** Gargamelle observed 102 no-muon/electron events versus 428 charged-current events in its neutrino sample before background subtraction; after estimating neutral-hadron backgrounds and beam contamination, it reported $\mathrm{NC}/\mathrm{CC}=0.21\pm0.03$ for neutrinos and $0.45\pm0.09$ for antineutrinos (statistical errors only). The paper judged these events compatible with a weak neutral current but also identified alternative penetrating-particle explanations requiring further exclusion. Thus the result strongly supported neutral-current dynamics, not the unique full electroweak model in isolation.
 
 ### `NP-EW-02` — Correlated masses of the charged and neutral weak bosons
 
@@ -339,7 +438,7 @@ Electroweak theory does not explain three generations, Yukawa values, matter asy
 
 Fermi's four-fermion interaction represented beta decay as a local contact process. At momentum transfers much smaller than the weak-boson mass it remains extraordinarily useful. Dimensional analysis, however, shows the problem with treating it as fundamental: \(G_F\) has negative mass dimension, so amplitudes grow with energy and perturbative unitarity must fail. A mediator theory was needed before that scale was reached.
 
-The discovery of parity violation and the development of \(V-A\) theory supplied another constraint: the weak interaction distinguishes chirality. Glashow's gauge construction combined a left-acting \(SU(2)\) with a hypercharge \(U(1)\), but gauge invariance initially left the vector bosons massless. The 1964 symmetry-breaking mechanism, applied by Weinberg and Salam, reconciled heavy weak bosons with a massless photon. 't Hooft's and Veltman's renormalizability work then made the scheme a calculable quantum theory. These are successive dependency nodes, not interchangeable discovery dates.
+The discovery of parity violation and the development of \(V-A\) theory supplied another constraint: the weak interaction distinguishes chirality. Glashow's partially symmetric construction combined a left-acting \(SU(2)\) with a \(U(1)\) current, adding a fourth neutral field after the three-vector attempt failed; it allowed explicit mass-producing terms and did not derive the weak-vector masses. The 1964 symmetry-breaking mechanism, applied in the later Weinberg and Salam lepton-sector constructions, reconciled heavy weak bosons with a massless photon. Salam explicitly left the hadronic extension unresolved and his renormalization argument was not yet a full proof. 't Hooft's and Veltman's later work made the broader broken-gauge framework calculable. These are successive dependency nodes, not interchangeable discovery dates.
 
 ### Charges, mixing, and currents
 
@@ -367,7 +466,7 @@ giving the effective Fermi relation already stated above. This derivation demons
 
 ### Empirical sequence
 
-The 1973 Gargamelle bubble-chamber observations of neutrino-induced events without a final charged lepton supplied evidence for neutral currents, a distinctive prediction that rival weak models did not all share. In 1983 CERN proton–antiproton collisions produced the \(W\) and \(Z\) directly; their reconstructed transverse-mass and dilepton-mass signatures agreed with the expected scale. Later precision measurements overconstrained the theory through the \(Z\) line shape, asymmetries, \(W\) mass, weak mixing angle, and loop sensitivity to heavy particles.
+The 1973 Gargamelle paper reported neutral-particle-induced hadronic events without a final muon or electron. Its neutral-hadron background estimates and event distributions supported a neutral-current interpretation, but the authors also listed other possible explanations and quoted only statistical errors on the background-subtracted NC/CC ratios; this was initial evidence, not by itself proof of the entire electroweak model. In 1983 CERN proton–antiproton collisions produced the \(W\) and \(Z\) directly; their reconstructed transverse-mass and dilepton-mass signatures agreed with the expected scale. Later precision measurements overconstrained the theory through the \(Z\) line shape, asymmetries, \(W\) mass, weak mixing angle, and loop sensitivity to heavy particles.
 
 Radiative corrections matter because a unified quantum theory relates measurements made at different energies. Schematically,
 
@@ -423,6 +522,18 @@ Historically, the Nobel recognition of Glashow, Salam, and Weinberg emphasized u
 ```text
 A-QED-GAUGE --contributes-to--> D-ELECTROWEAK-1961-1973
 D-QED-1940S --is-embedded-in--> D-ELECTROWEAK-1961-1973
+CS-EW-01 --revised-by--> CT-EW-01
+CT-EW-01 --produces--> CS-EW-02
+CS-EW-02 --revised-by--> CT-EW-02
+CT-EW-02 --produces--> CS-EW-03
+CS-EW-03 --revised-by--> CT-EW-03
+CT-EW-03 --produces--> CS-EW-04
+CS-EW-04 --revised-by--> CT-EW-04
+CT-EW-04 --produces--> CS-EW-05
+CS-EW-05 --revised-by--> CT-EW-05
+CT-EW-05 --produces--> CS-EW-06
+CS-EW-06 --hands-off-to--> EG-EW-01
+CS-EW-06 --hands-off-to--> EG-EW-02
 D-YANG-MILLS-1954 --provides-nonabelian-gauge-structure-for--> D-ELECTROWEAK-1961-1973
 A-V-A --constrains--> SU2L-STRUCTURE
 A-HIGGS-MECHANISM --generates--> W-Z-MASSES
@@ -437,6 +548,12 @@ D-ELECTROWEAK-1961-1973 --instantiates--> P-04
 
 ## Sources
 
+- Sheldon L. Glashow, [“Partial-Symmetries of Weak Interactions”](https://cdn.psiket.com/ds01/bd0679fafd3538e6d2106b4fb891bdc3.pdf), *Nuclear Physics* 22 (1961), 579–588, especially pp. 579–587; original journal facsimile mirrored by Psiket.
+- Steven Weinberg, [“A Model of Leptons”](https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.19.1264), *Physical Review Letters* 19 (1967), 1264–1266, especially pp. 1264–1266.
+- Abdus Salam, [“Weak and Electromagnetic Interactions”](https://www.nobelprize.org/uploads/2018/06/salam-lecture.pdf), Nobel lecture retrospective on the 1968 formulation.
+- Abdus Salam, [“Weak and Electromagnetic Interactions,” 1968 symposium account](https://www.scribd.com/document/584062927/ref-5), reprinted in *Selected Papers of Abdus Salam*, original pp. 367–377; pp. 367, 371–376 checked through a readable OCR transcription for the lepton-sector scope, hadron limitation, scalar construction, and uncompleted renormalization dictionary. Equations require facsimile verification because the OCR is noisy.
+- Gerard 't Hooft, [“Renormalizable Lagrangians for Massive Yang–Mills Fields”](https://www.staff.science.uu.nl/~hooft101/gthpub/massive.pdf), *Nuclear Physics B* 35 (1971), 167–188, especially pp. 167–174.
+- Gargamelle Collaboration, [“Observation of Neutrino-like Interactions without Muon or Electron in the Gargamelle Neutrino Experiment”](https://cours.ip2i.in2p3.fr/verdier/SymetriesEtParticules2015/Papiers/PhysLettB.46.140._1973.pdf), *Physics Letters B* 46 (1973), 138–140, original journal facsimile mirrored by IN2P3.
 - CERN Courier, [“Charm and synthesis,” historical account of electroweak unification](https://cern-courier.web.cern.ch/a/charm-and-synthesis/).
 - CERN Document Server, [“Forty years of neutral currents”](https://cds.cern.ch/record/1998137).
 - CERN Document Server, ['t Hooft, “The Evolution of Quantum Field Theory, From QED to Grand Unification”](https://cds.cern.ch/record/2003855).

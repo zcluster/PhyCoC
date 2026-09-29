@@ -13,11 +13,11 @@
 
 ## Central claim
 
-Bell showed that correlations satisfying specified local-causal factorization and auxiliary assumptions obey inequalities that quantum mechanics can violate. Experiments agree with quantum violations. The conclusion is not simply “faster-than-light messaging”: quantum correlations do not by themselves permit controllable superluminal signaling.
+Bell's 1964 argument used the singlet state's perfect anticorrelation and local, predetermined spin responses to derive an inequality incompatible with the full quantum angular correlation. He also showed that local-response correlations cannot approximate that quantum pattern arbitrarily closely. Later stochastic local-factorization formulations and the CHSH inequality broadened the experimental framework; experiments agree with quantum violations. The conclusion is not simply “faster-than-light messaging”: quantum correlations do not by themselves permit controllable superluminal signaling.
 
 ## Historical problem
 
-Before the focal discovery (November 1964 publication), the case confronted a linked set of pressures: Entanglement used to argue quantum incompleteness; Explicit nonlocal hidden-variable theory. The pathways `R-LOCAL-HIDDEN-VARIABLE-COMPLETION`, `R-BOHMIAN-NONLOCAL-COMPLETION` were historically reasonable attempts to organize parts of the problem, but they did not jointly satisfy the empirical, mathematical, and explanatory constraints represented by the time slices and knowledge assets. The discovery task in Quantum correlations, locality, and hidden-variable constraints was to construct a more generative account without importing later validation evidence into the original inference.
+EPR's 1935 argument made quantum incompleteness conditional on locality and a criterion of physical reality; Bohm's 1952 dynamics showed that hidden variables were possible if nonlocal dependence was allowed. The unresolved issue was whether a *local* completion could reproduce the full pattern of quantum correlations. Bell's 1964 paper turned that conditional possibility into a bound on correlations for separated spin measurements, then compared it with quantum predictions. The later CHSH inequality (1969) and optical experiments translated the theorem into an experimentally usable program; neither was an input to the 1964 proof.
 
 ## Time slices
 
@@ -72,18 +72,105 @@ This section reconstructs the case as a sequence of discovery operations. **Inte
 
 ### Starting ingredients
 
-The admissible pre-discovery input nodes are `A-ENTANGLEMENT`, `A-EPR`, `A-PROBABILITY`, `A-POLARIZATION-CORRELATION`, `A-RANDOM-SETTINGS`. Their definitions and historical provenance are recorded in **Knowledge assets** above. They are inputs to the reconstruction, not consequences of the focal discovery; later confirmation must not be silently back-projected into this starting set.
+Pre-1964 inputs were the EPR entangled-state dilemma (`A-EPR`, `A-ENTANGLEMENT`), ordinary probability, and Bohm's explicitly nonlocal hidden-variable counterexample. The original proof concerned spin correlations and locality; photon-polarization implementations, CHSH's four-setting inequality, and fast random setting choices (`A-POLARIZATION-CORRELATION`, `A-RANDOM-SETTINGS`) are later experimental-development assets, not Bell's original evidence.
 
 ### What interpolation could and could not achieve
 
 | Pathway | What the inherited search retained | Why it remained insufficient |
 |---|---|---|
-| `R-LOCAL-HIDDEN-VARIABLE-COMPLETION` | A completion of quantum mechanics in which an underlying state \(\lambda\) supplies the missing outcome probabilities or values, and joint results at separated detectors factor into local responses to their own settings. | Must satisfy Bell inequalities violated by quantum correlations and experiments. |
-| `R-BOHMIAN-NONLOCAL-COMPLETION` | A deterministic hidden-variable theory with particle configurations guided by a nonlocal wavefunction. | See the full pathway record above. |
+| `R-LOCAL-HIDDEN-VARIABLE-COMPLETION` | A completion of quantum mechanics in which an underlying state \(\lambda\) supplies the missing outcome probabilities or values, and joint results at separated detectors factor into local responses to their own settings. | Bell's 1964 comparison shows a conflict with specified quantum correlations under locality and distribution assumptions; experiments are later tests. |
+| `R-BOHMIAN-NONLOCAL-COMPLETION` | A deterministic hidden-variable theory with particle configurations guided by a nonlocal wavefunction. | It remains a viable hidden-variable branch, but its explicit nonlocal guidance cannot rescue the locality condition Bell tested. |
 
 **Pattern demonstrated — `P-01` (reframe the inherited question):** Interpretation dispute reframed as a statistical test. The comparison becomes a discovery operation only when the limitation is used to change the question or representation, rather than merely to add another adjustable repair.
 
 ### Transformative move
+
+#### Chain of Concepts
+
+**Epistemic status:** `MODERN-RATIONAL-RECONSTRUCTION`
+
+**Trace rule:** Each transition must be locally justified using EPR, Bohm, probability, and quantum spin predictions available by 1964. This is an auditable reconstruction, not Bell's hidden reasoning; CHSH's 1969 form, later photon tests, and loophole-closing methods remain downstream.
+
+##### Concept states
+
+| State ID | Publicly inspectable conceptual state |
+|---|---|
+| `CS-BELL-01` | EPR's locality/completeness dilemma and Bohm's nonlocal completion leave local hidden-variable theories open. **Open question:** Can locality be stated as a calculable constraint on correlations? |
+| `CS-BELL-02` | Given singlet perfect anticorrelation and the EPR locality premise, Bell's 1964 response functions \(A(a,\lambda),B(b,\lambda)=\pm1\) depend on a shared complete state but not the distant setting. **Open question:** What correlations can any such model produce? |
+| `CS-BELL-03` | Averaging the local responses over the common-state distribution imposes relations among multiple settings. **Open question:** Does quantum mechanics obey those relations? |
+| `CS-BELL-04` | Bell's 1964 inequality limits a class of local hidden-variable correlations. **Open question:** Are there quantum spin configurations that cross the bound? |
+| `CS-BELL-05` | Quantum singlet correlations conflict with that local bound; Bell's further approximation argument shows the conflict is not confined to an exact mathematical point. **Open question:** How can a real experiment test it? |
+| `CS-BELL-06` | A model-class discriminator exists, but experimental implementation and loophole control remain future work. **Open question:** Which measurement design can test the contrast fairly? |
+
+##### `CT-BELL-01`: `CS-BELL-01` → `CS-BELL-02` — Make locality operational in a completion
+
+- **Input model:** EPR's distant-prediction argument, singlet perfect anticorrelation, and Bohm's explicit but nonlocal hidden-variable theory.
+- **Pressure:** “Hidden variables” alone is too broad: Bohm shows that adding them does not automatically restore locality.
+- **Protected structure:** Reproducible measurement outcomes and separated-setting choices.
+- **Hidden assumption:** Any completion of quantum theory would satisfy the locality premise.
+- **Operation / change type:** `differentiation` — Follow the 1964 argument from perfect anticorrelation plus locality to predetermined local response functions, separate from nonlocal completions.
+- **Output model:** A constrained local hidden-variable class.
+- **Local justification:** Bell's 1964 paper explicitly contrasts the EPR locality demand with Bohm's nonlocal theory.
+- **Cost/uncertainty:** Whether nature or a future theory satisfies the locality and setting-distribution assumptions remains open.
+- **Next question:** What quantitative restriction follows for correlations?
+
+##### `CT-BELL-02`: `CS-BELL-02` → `CS-BELL-03` — Derive constraints across settings
+
+- **Input model:** Bell's local \(\pm1\) spin responses, singlet perfect anticorrelation, and a distribution of shared hidden states.
+- **Pressure:** Any one setting pair can be fitted; discrimination requires linked predictions across several settings.
+- **Protected structure:** Ordinary probability and a common hidden-state distribution independent of the chosen settings.
+- **Hidden assumption:** Each setting pair may be assigned an unrelated ensemble while still claiming one local completion.
+- **Operation / change type:** `constraint_change` — Require one model to account jointly for correlations at alternative settings.
+- **Output model:** An inequality-ready relation among averaged correlations.
+- **Local justification:** Bell's original proof uses local response functions and a shared distribution to constrain correlations.
+- **Cost/uncertainty:** Setting independence is an auxiliary premise; its empirical implementation later needs scrutiny.
+- **Next question:** What bound does this imply?
+
+##### `CT-BELL-03`: `CS-BELL-03` → `CS-BELL-04` — Turn locality into an inequality
+
+- **Input model:** Correlations generated by one locally responding hidden-state ensemble.
+- **Pressure:** An interpretive disagreement needs a result that whole model classes cannot evade by retuning parameters.
+- **Protected structure:** Locality, probability, and Bell's specified spin-correlation setup.
+- **Hidden assumption:** A local completion can match every quantum correlation if it is sufficiently elaborate.
+- **Operation / change type:** `representation_shift` — Express Bell's 1964 locality assumption as an inequality on correlations.
+- **Output model:** A mathematically testable inequality for the local model class.
+- **Local justification:** Bell's original 1964 article derives \(1+P(b,c)\geq|P(a,b)-P(a,c)|\) after using perfect same-setting anticorrelation; the CHSH expression displayed below is a later reformulation that does not require that exact-correlation premise.
+- **Cost/uncertainty:** The inequality is conditional on its premises; it is not a proof against all hidden-variable theories.
+- **Next question:** Does the singlet-state quantum prediction obey the local bound?
+
+##### `CT-BELL-04`: `CS-BELL-04` → `CS-BELL-05` — Compare with quantum spin correlations
+
+- **Input model:** The 1964 local bound and quantum predictions for entangled spin pairs.
+- **Pressure:** A bound without a competing prediction cannot discriminate theories.
+- **Protected structure:** The same measurement directions and correlation definitions across models.
+- **Hidden assumption:** Quantum and local-hidden-variable predictions differ only philosophically.
+- **Operation / change type:** `coalescence` — Put the local and quantum correlation formulas on a common setting domain.
+- **Output model:** A demonstrable setting choice where quantum correlations violate the local bound, plus a bound against arbitrarily close local approximation.
+- **Local justification:** Bell's paper compares the singlet correlation with his inequality (eq. 15), then averages over narrow angular ranges and derives a finite approximation gap (eqs. 16–22, pp. 198–199).
+- **Cost/uncertainty:** Quantum violation in a calculation is not yet an experimental result; apparatus assumptions require later design.
+- **Next question:** Can a feasible experiment access the discriminating correlations?
+
+##### `CT-BELL-05`: `CS-BELL-05` → `CS-BELL-06` — Separate theorem from measurement program
+
+- **Input model:** A logical incompatibility between local completion and specified quantum correlations.
+- **Pressure:** A mathematical separation does not by itself specify detector sampling, timing, and setting protocols for an empirical inference.
+- **Protected structure:** Conditional mathematical theorem and operational no-signaling.
+- **Hidden assumption:** The 1964 proof already settled every experimental and interpretive question.
+- **Operation / change type:** `differentiation` — Keep theorem, later inequality engineering, experiments, and interpretation as separate layers.
+- **Output model:** A testable research agenda without premature claims about signaling or one unique ontology.
+- **Local justification:** Bell's 1964 conclusion already points to changing settings while particles are in flight (p. 199), but his proof is not a complete experimental protocol; CHSH's 1969 realizable-experiment proposal and later loophole-controlled tests are distinct extensions.
+- **Cost/uncertainty:** No finite Bell test proves every auxiliary causal assumption metaphysically; loopholes must be specified and controlled.
+- **Next question:** Which inequalities and trial designs make the theory contrast experimentally robust?
+
+#### Formal consolidation
+
+Bell's 1964 derivation starts with \(A(a,\lambda),B(b,\lambda)\in\{-1,+1\}\), a common distribution \(\rho(\lambda)\), and the singlet's perfect same-setting anticorrelation \(A(a,\lambda)=-B(a,\lambda)\) almost everywhere. Writing \(P(a,b)=\int d\lambda\,\rho(\lambda)A(a,\lambda)B(b,\lambda)\), his original bound is
+
+$$
+1+P(b,c)\geq|P(a,b)-P(a,c)|.
+$$
+
+Quantum mechanics instead gives \(P_{\rm QM}(a,b)=-a\cdot b\), which violates this bound for suitable directions. Bell also considered correlations averaged over narrow angular ranges: if their deviation from the averaged quantum correlation is at most \(\epsilon\), and the angular averaging changes the dot products by at most \(\delta\), his eq. (22) gives \(4(\epsilon+\delta)\geq\sqrt2-1\) for the specified directions. Thus a local-response model cannot approach the full quantum angular pattern arbitrarily closely; this is still a theoretical constraint, not a finite-sample experimental protocol. The CHSH four-setting expression below is a 1969-and-later experimental reformulation, not Bell's 1964 derivation. It does not require perfect same-setting anticorrelation, but still needs the stated locality, setting, and sampling assumptions.
 
 For outcomes \(A(a,\lambda),B(b,\lambda)\in\{-1,+1\}\), CHSH combination:
 
@@ -122,7 +209,25 @@ and suitable entangled states reach \(2\sqrt2\). The experimental inference depe
 
 ### Extrapolative generalization
 
-The transformative move became a broader physical discovery when it was asserted beyond the immediate construction problem across the stated domain (Quantum correlations, locality, and hidden-variable constraints). The case-specific unification was: Foundations and laboratory correlations unified. This extrapolation is logically stronger than fitting the original inputs; its consequences must be separated from the later observations used to validate them.
+Bell's theorem supplies a conditional mathematical contrast. Applying it to new settings or real apparatus is an additional empirical commitment, not an automatic corollary of having written an inequality.
+
+**Epistemic status:** `EXTRAPOLATIVE-COMMITMENT`
+
+**Risk rule:** Success in the source domain makes a new test worthwhile, but local bounds and quantum predictions must use the same state, settings, and sampling assumptions. A measured violation counts against a declared local model class only after the relevant experimental loopholes have been bounded.
+
+#### `EG-BELL-01` — Extend the 1964 contrast to unfit spin settings
+
+- **Source domain:** Bell's 1964 EPR–Bohm spin-pair derivation and known quantum singlet correlation; these establish a conditional theorem, not an observed violation.
+- **Target domain:** Additional measurement-direction combinations not used to illustrate the original inequality.
+- **Novel consequence:** A single locally responding hidden-state ensemble must obey the linked bounds across the chosen settings, whereas quantum theory predicts specified angular correlations that can cross them.
+- **Failure condition:** If well-calibrated spin-pair measurements in the specified state consistently satisfy the local bounds but disagree with the quantum angular pattern beyond uncertainty, the quantum extrapolation fails; a violation with credible loophole control disfavors the stated local class instead.
+
+#### `EG-BELL-02` — Translate the contrast to photon experiments
+
+- **Source domain:** The 1964 spin-based theorem and its conditional model-class exclusion.
+- **Target domain:** Later optical polarization pairs and CHSH-style four-setting tests, developed after Bell's original paper.
+- **Novel consequence:** Properly mapped entangled-photon correlations can violate a local bound while each wing's marginal statistics remain independent of the distant choice.
+- **Failure condition:** With source state, detection selection, timing, setting independence, and statistical protocol specified, a reproducible failure of the quantum correlation/marginal predictions rejects that implementation; without such controls, a local-bound violation is not automatically decisive.
 
 **Patterns demonstrated:**
 
@@ -160,7 +265,7 @@ This node serializes the result of the preceding reconstruction. It is a compact
 |---|---|
 | Node | `D-BELL-THEOREM-1964` |
 | Focal date | November 1964 publication |
-| Central claim | Bell showed that correlations satisfying specified local-causal factorization and auxiliary assumptions obey inequalities that quantum mechanics can violate. Experiments agree with quantum violations. The conclusion is not simply “faster-than-light messaging”: quantum correlations do not by themselves permit controllable superluminal signaling. |
+| Central claim | Bell's 1964 local-response model obeys a correlation inequality incompatible with quantum singlet predictions and cannot approximate the full quantum angular pattern arbitrarily closely. Later local-factorization formulations and Bell tests broaden and confirm the contrast. Violations do not by themselves permit controllable superluminal signaling. |
 | Domain | Quantum correlations, locality, and hidden-variable constraints |
 | Epistemic status | Bell-inequality violations are established; interpretation of quantum ontology remains open |
 | Generative role | Local assumptions generate an inequality |
@@ -169,12 +274,11 @@ This node serializes the result of the preceding reconstruction. It is a compact
 Key formal relations, consolidated from the derivation above:
 
 $$
-S=E(a,b)+E(a,b')+E(a',b)-E(a',b').
+1+P(b,c)\geq|P(a,b)-P(a,c)|.
 $$
 
 $$
-A(a)[B(b)+B(b')]
-+A(a')[B(b)-B(b')]
+S=E(a,b)+E(a,b')+E(a',b)-E(a',b').
 $$
 
 $$
@@ -185,10 +289,14 @@ The complete derivation, inferential provenance, and interpretation of these rel
 
 ## Historically novel predictions and deductions
 
-This case does not currently contain a separately provenance-labeled record of a historically novel prediction or deduction. That absence is explicit: validation observations must not automatically be reclassified as predictions made before the discovery. A future record should identify the prediction date, derivation provenance, independence from construction data, observable discriminator, and eventual outcome.
+### `NP-BELL-01` — Locality bound conflicts with quantum spin correlations
 
-- **Machine-readable status:** `PREDICTION-RECORD-NOT-SEPARATELY-ENCODED`.
-- **Case:** Bell's Theorem: Historical Knowledge Graph.
+- **Classification:** `NOVEL-THEORETICAL-CONSTRAINT`.
+- **Prediction/derivation date:** Bell's 1964 paper.
+- **Derivation provenance:** In Bell's 1964 proof, singlet perfect anticorrelation plus the EPR locality premise motivates predetermined local \(\pm1\) response functions. Their common setting-independent hidden-state distribution then implies his original three-direction correlation inequality; the quantum singlet prediction violates it for suitable settings. Bell's subsequent angular-averaging argument (eqs. 16–22) also excludes arbitrarily close approximation of the full quantum angular pattern by that local class.
+- **Independence:** The bound is not fitted to later Bell-test data. The CHSH expression below is a separate 1969 reformulation, not the original proof.
+- **Observable discriminator:** Correlations measured at multiple independently chosen directions can favor the quantum prediction over the specified local-hidden-variable class.
+- **Outcome:** Later experiments, with progressively stronger loophole control, found violations consistent with quantum mechanics; this is subsequent validation, not a 1964 observation.
 
 ## Validation and explanatory gains
 
@@ -208,7 +316,7 @@ Bell tests cannot establish a unique interpretation. “Local realism” is ofte
 
 Einstein, Podolsky, and Rosen argued in 1935 that quantum mechanics was incomplete if one could predict a distant system's result with certainty without disturbing it and if each such predictable quantity corresponded to an element of reality. The debate was long treated as interpretive because alternative “hidden variables” might seemingly restore a more classical description. Bohm's 1952 theory demonstrated that hidden-variable theories were possible, but it was explicitly nonlocal. Bell asked the sharper question: can any theory satisfying an appropriate locality condition reproduce all quantum correlations?
 
-For settings \(a,b\), outcomes \(A,B\), and a proposed complete state \(\lambda\), local causal factorization is commonly written
+Bell's 1964 paper first uses perfect anticorrelation and locality to motivate predetermined local responses \(A(a,\lambda)\) and \(B(b,\lambda)\). Its own inequality appears in **Formal consolidation** above. In the broader modern stochastic formulation, for settings \(a,b\), outcomes \(A,B\), and a proposed complete state \(\lambda\), local causal factorization is commonly written
 
 $$
 p(A,B|a,b,\lambda)
@@ -221,7 +329,7 @@ $$
 \rho(\lambda|a,b)=\rho(\lambda),
 $$
 
-and ordinary probability theory, this yields Bell inequalities. Deterministic response functions are not the essential restriction; stochastic locally factorized models obey the same bounds after their local randomness is absorbed into an enlarged \(\lambda\).
+and ordinary probability theory, this yields Bell-type inequalities. Deterministic response functions are not the essential restriction in that broader formulation; stochastic locally factorized models obey corresponding bounds after their local randomness is absorbed into an enlarged \(\lambda\). This is a modern statement of the model class, not Bell's explicit 1964 starting notation.
 
 ### CHSH inference in detail
 
@@ -304,6 +412,18 @@ Quantum correlations also obey the Tsirelson rather than the algebraic CHSH maxi
 ```text
 A-EPR --motivates--> R-LOCAL-HIDDEN-VARIABLE-COMPLETION
 A-ENTANGLEMENT --contributes-to--> D-BELL-THEOREM-1964
+CS-BELL-01 --revised-by--> CT-BELL-01
+CT-BELL-01 --produces--> CS-BELL-02
+CS-BELL-02 --revised-by--> CT-BELL-02
+CT-BELL-02 --produces--> CS-BELL-03
+CS-BELL-03 --revised-by--> CT-BELL-03
+CT-BELL-03 --produces--> CS-BELL-04
+CS-BELL-04 --revised-by--> CT-BELL-04
+CT-BELL-04 --produces--> CS-BELL-05
+CS-BELL-05 --revised-by--> CT-BELL-05
+CT-BELL-05 --produces--> CS-BELL-06
+CS-BELL-06 --hands-off-to--> EG-BELL-01
+CS-BELL-06 --hands-off-to--> EG-BELL-02
 LOCAL-FACTORIZATION --implies--> CHSH-BOUND-TWO
 QUANTUM-MECHANICS --predicts--> CHSH-UP-TO-TWO-SQRT-TWO
 V-BELL-EXPERIMENTS --violate--> CHSH-BOUND-TWO
@@ -315,5 +435,8 @@ D-BELL-THEOREM-1964 --instantiates--> P-01
 ## Sources
 
 - Stanford Encyclopedia of Philosophy, [“Bell's Theorem,” including assumptions and hidden-variable alternatives](https://plato.stanford.edu/entries/bell-theorem/).
-- CERN-hosted scan, [Bell, “On the Einstein Podolsky Rosen Paradox”](https://cds.cern.ch/record/111654/files/vol1p195-200_001.pdf).
+- John S. Bell, [“On the Einstein Podolsky Rosen Paradox”](https://cds.cern.ch/record/111654/files/vol1p195-200_001.pdf), *Physics* 1 (1964), 195–200; the complete six-page facsimile checked for the perfect-anticorrelation premise, local response functions, original inequality (eq. 15), finite approximation gap (eqs. 16–22), and his proposal to change settings during particle flight (p. 199).
+- John F. Clauser, Michael A. Horne, Abner Shimony, and Richard A. Holt, [“Proposed Experiment to Test Local Hidden-Variable Theories”](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.23.880), *Physical Review Letters* 23 (1969), 880–884.
+- Bas Hensen et al., [“Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres”](https://www.nature.com/articles/nature15759), *Nature* 526 (2015), 682–686.
+- Lynden K. Shalm et al., [“Strong Loophole-Free Test of Local Realism”](https://www.nist.gov/publications/strong-loophole-free-test-local-realism), *Physical Review Letters* 115 (2015), 250402.
 - Nobel Prize, [The 2022 Physics Prize](https://www.nobelprize.org/prizes/physics/2022/summary/).

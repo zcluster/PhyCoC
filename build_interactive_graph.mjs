@@ -370,7 +370,7 @@ const html = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fundamental Physics Discovery Graph</title>
+<title>PhyCoC · Fundamental Physics Discovery Graph</title>
 <style>
 :root {
   color-scheme: light;
@@ -521,7 +521,7 @@ select { padding: 9px 30px 9px 10px; }
 <main class="app" aria-label="Interactive fundamental physics discovery knowledge graph">
   <header class="topbar">
     <div class="brand">
-      <h1>Fundamental Physics Discovery Graph</h1>
+      <h1>PhyCoC · Fundamental Physics Discovery Graph</h1>
       <p><span class="stats" id="summaryStats"></span> · click a discovery to reveal its local knowledge graph</p>
     </div>
     <div class="controls" aria-label="Graph controls">
